@@ -47,18 +47,66 @@
     <div id="B2">
       Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
     </div>
+    <div id="D">
+      Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
+    </div>
+    <div id="G">
+      Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
+    </div>
+    <div id="K1">
+      Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
+    </div>
+    <div id="K2">
+      Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
+    </div>
+    <div id="N">
+      Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
+    </div>
+    <div id="S">
+      Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
+    </div>
     <script src="js/CETEIcean/dist/CETEI.js"></script>
     <!-- <script src="js/viewer.js"></script> -->
     <script>
     var CETEIcean = new CETEI();
-    CETEIcean.getHTML5('xml/ManuscriptSnapshots/manuscript_B1_JennyKoerber.xml', function(data) {
+    CETEIcean.getHTML5('xml/ManuscriptSnapshots/manuscript_B1.xml', function(data) {
       document.getElementById("B1").innerHTML = "";
       document.getElementById("B1").appendChild(data);
       CETEIcean.addStyle(document, data);
     });
-    CETEIcean.getHTML5('xml/ManuscriptSnapshots/manuscript_B2_HansPech.xml', function(data) {
+    CETEIcean.getHTML5('xml/ManuscriptSnapshots/manuscript_B2.xml', function(data) {
       document.getElementById("B2").innerHTML = "";
       document.getElementById("B2").appendChild(data);
+      CETEIcean.addStyle(document, data);
+    });
+    CETEIcean.getHTML5('xml/ManuscriptSnapshots/manuscript_D.xml', function(data) {
+      document.getElementById("D").innerHTML = "";
+      document.getElementById("D").appendChild(data);
+      CETEIcean.addStyle(document, data);
+    });
+    CETEIcean.getHTML5('xml/ManuscriptSnapshots/manuscript_G.xml', function(data) {
+      document.getElementById("G").innerHTML = "";
+      document.getElementById("G").appendChild(data);
+      CETEIcean.addStyle(document, data);
+    });
+    CETEIcean.getHTML5('xml/ManuscriptSnapshots/manuscript_K1.xml', function(data) {
+      document.getElementById("K1").innerHTML = "";
+      document.getElementById("K1").appendChild(data);
+      CETEIcean.addStyle(document, data);
+    });
+    CETEIcean.getHTML5('xml/ManuscriptSnapshots/manuscript_K2.xml', function(data) {
+      document.getElementById("K2").innerHTML = "";
+      document.getElementById("K2").appendChild(data);
+      CETEIcean.addStyle(document, data);
+    });
+    CETEIcean.getHTML5('xml/ManuscriptSnapshots/manuscript_N.xml', function(data) {
+      document.getElementById("N").innerHTML = "";
+      document.getElementById("N").appendChild(data);
+      CETEIcean.addStyle(document, data);
+    });
+    CETEIcean.getHTML5('xml/ManuscriptSnapshots/manuscript_S.xml', function(data) {
+      document.getElementById("S").innerHTML = "";
+      document.getElementById("S").appendChild(data);
       CETEIcean.addStyle(document, data);
     });
     </script>
