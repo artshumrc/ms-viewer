@@ -37,7 +37,9 @@
         height: 400px;
         overflow: scroll;
         color: #000;
-        border: #
+        border-style: solid;
+        border-color: rgba(0,0,0,0.3);
+        border-width:thin;
       }
       .navbar {
         border:none;
@@ -52,6 +54,12 @@
       }
       #page-title{
         margin-top:30px;
+      }
+      .dropdown-menu.show {
+        padding-left: 10px;
+      }
+      .ms-row {
+        margin-top: 25px;
       }
     </style>
 
@@ -108,7 +116,7 @@
     </div>
 
     <div class="container-fluid" id ="texts">
-      <div class="row">
+      <div class="row ms-row">
         <div class="col ms-col" id="B1">
           Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
         </div>
@@ -122,7 +130,7 @@
           Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
         </div>
       </div>
-      <div class="row">
+      <div class="row ms-row">
         <div class="col ms-col" id="K1">
           Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
         </div>
