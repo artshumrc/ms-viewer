@@ -79,7 +79,7 @@
         <body>
             <p>
                 <pb/><ab xml:id="legend_title">Conversio beatae <name type="person" nymRef="Mary_Magdalene">Mariae Magdalenae</name></ab>
-                <lb/><ab xml:id="genealogy">Fuit in <name type="place" nymRef="Jerusalem">Jherusalem</name> nobilis quidam de stirpe regia, nomine <name type="person" nymRef="Lazarus">Lazarus</name>,
+                <lb/><ab xml:id="genealogy">Fuit in <name type="place" nymRef="Jerusalem">Jherusalem</name> nobilis quidam de stirpe regia, nomine <name type="person" nymRef="Lazarus">Lazarus</name></ab>,
                 <lb/>habens duas sorores, scilicet <name type="person" nymRef="Martha">Martham</name> virginem, vita et moribus religiosam,
                 <lb/>sed <name type="person" nymRef="Mary_Magdalene">Mariam</name>, lascivam puellam, ad mundi pompam totaliter deditam. Martha
                 <lb/>autem germanum, scilicet <name type="person" nymRef="Lazarus">Lazarum</name>, armis militaribus videns implicatum
@@ -128,7 +128,7 @@
 
                 <pb/>Joseph filius putativus, non naturalis fuit. Et multis doctrinis sororis
                 <lb/>cor madefaciens, lacrimata est <name type="person" nymRef="Mary_Magdalene">Maria</name>. Et ecce donum spiritus sancti repente
-                <lb/>super <name type="person" nymRef="Mary_Magdalene">Mariam</name> corruens, tangens eam dextro Dei digito. Stabat autem <<name type="person" nymRef="Mary_Magdalene">Maria</name>
+                <lb/>super <name type="person" nymRef="Mary_Magdalene">Mariam</name> corruens, tangens eam dextro Dei digito. Stabat autem <name type="person" nymRef="Mary_Magdalene">Maria</name>
                 <lb/>coram sorore sua, erecto collo, nitida facie, tamquam fantasiis obruta, tam-
                 <lb/>quam de raptu ad se rediens. Heu, heu, inquit, quid mihi vivere dulce fuit,
                 <lb/>quae aeternam merui mortem? Quae delectatio mundi ultra delectabit?
