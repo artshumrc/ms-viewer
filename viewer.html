@@ -1,6 +1,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="js/CETEIcean/test/CETEIcean.css" media="screen" charset="utf-8">
     <style media="screen">
       tei-g[ref="char:cmbAbbrStroke"] {
@@ -41,29 +42,35 @@
       <input type="checkbox" name="manuscript" value="N" checked> N<br>
       <input type="checkbox" name="manuscript" value="S" checked> S<br>
     </div>
-    <div id="B1">
-      Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
-    </div>
-    <div id="B2">
-      Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
-    </div>
-    <div id="D">
-      Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
-    </div>
-    <div id="G">
-      Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
-    </div>
-    <div id="K1">
-      Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
-    </div>
-    <div id="K2">
-      Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
-    </div>
-    <div id="N">
-      Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
-    </div>
-    <div id="S">
-      Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
+    <div class="container-fluid" id ="texts">
+      <div class="row">
+        <div class="col" id="B1">
+          Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
+        </div>
+        <div class="col" id="B2">
+          Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
+        </div>
+        <div class="col" id="D">
+          Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
+        </div>
+        <div class="col" id="G">
+          Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" id="K1">
+          Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
+        </div>
+        <div class="col" id="K2">
+          Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
+        </div>
+        <div class="col" id="N">
+          Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
+        </div>
+        <div class="col" id="S">
+          Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
+        </div>
+      </div>
     </div>
     <script src="js/CETEIcean/dist/CETEI.js"></script>
     <!-- <script src="js/viewer.js"></script> -->
@@ -110,5 +117,7 @@
       CETEIcean.addStyle(document, data);
     });
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
