@@ -1,5 +1,4 @@
 var CETEIcean = new CETEI();
-console.log(CETEIcean);
 var images = [];
 CETEIcean.addBehaviors({"handlers":
   {
