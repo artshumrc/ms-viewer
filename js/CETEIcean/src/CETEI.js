@@ -1,4 +1,4 @@
-import behaviors from './behaviors'
+import behaviors from './behaviors';
 class CETEI {
 
     constructor(base){

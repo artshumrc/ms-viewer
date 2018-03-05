@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="CETEIcean.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="js/CETEIcean/test/CETEIcean.css" media="screen" charset="utf-8">
     <style media="screen">
       tei-g[ref="char:cmbAbbrStroke"] {
         display: inline-block;
@@ -34,8 +34,9 @@
     <div id="TEI">
       Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
     </div>
-    <script src="../dist/CETEI.js"></script>
-    <script>
+    <script src="js/CETEIcean/src/CETEI.js"></script>
+    <script src="js/viewer.js"></script>
+    <!-- <script>
       var CETEIcean = new CETEI();
       var images = [];
       CETEIcean.addBehaviors({"handlers":
@@ -94,6 +95,6 @@
         }
         testimg.src = "http://eebo.chadwyck.com/fetchimage?vid=5891&page=1&width=100";
       });
-    </script>
+    </script> -->
   </body>
 </html>
