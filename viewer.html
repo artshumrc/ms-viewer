@@ -78,9 +78,21 @@
         </div>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/CETEIcean/dist/CETEI.js"></script>
     <!-- <script src="js/viewer.js"></script> -->
     <script>
+
+    $(":checkbox").change(function() {
+      var manuscript = $(this).val();
+      var checked = $(this).is(":checked");
+      if (checked) {
+        $("#"+manuscript).show();
+      } else {
+        $("#"+manuscript).hide();
+      }
+    });
+
     var CETEIcean = new CETEI();
     CETEIcean.getHTML5('xml/ManuscriptSnapshots/manuscript_B1.xml', function(data) {
       document.getElementById("B1").innerHTML = "";
