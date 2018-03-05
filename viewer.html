@@ -31,16 +31,34 @@
     </style>
   </head>
   <body>
-    <div id="TEI">
+    <div id="texts_checkbox">
+      <input type="checkbox" name="manuscript" value="B1" checked> B1<br>
+      <input type="checkbox" name="manuscript" value="B2" checked> B2<br>
+      <input type="checkbox" name="manuscript" value="D" checked> D<br>
+      <input type="checkbox" name="manuscript" value="G" checked> G<br>
+      <input type="checkbox" name="manuscript" value="K1" checked> K1<br>
+      <input type="checkbox" name="manuscript" value="K2" checked> K2<br>
+      <input type="checkbox" name="manuscript" value="N" checked> N<br>
+      <input type="checkbox" name="manuscript" value="S" checked> S<br>
+    </div>
+    <div id="B1">
+      Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
+    </div>
+    <div id="B2">
       Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
     </div>
     <script src="js/CETEIcean/dist/CETEI.js"></script>
     <!-- <script src="js/viewer.js"></script> -->
     <script>
     var CETEIcean = new CETEI();
-    CETEIcean.getHTML5('xml/ManuscriptSnapshots/latin_ZachHayworth.xml', function(data) {
-      document.getElementById("TEI").innerHTML = "";
-      document.getElementById("TEI").appendChild(data);
+    CETEIcean.getHTML5('xml/ManuscriptSnapshots/manuscript_B1_JennyKoerber.xml', function(data) {
+      document.getElementById("B1").innerHTML = "";
+      document.getElementById("B1").appendChild(data);
+      CETEIcean.addStyle(document, data);
+    });
+    CETEIcean.getHTML5('xml/ManuscriptSnapshots/manuscript_B2_HansPech.xml', function(data) {
+      document.getElementById("B2").innerHTML = "";
+      document.getElementById("B2").appendChild(data);
       CETEIcean.addStyle(document, data);
     });
     </script>
