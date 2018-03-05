@@ -1,8 +1,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-GxhP7S92hzaDyDJqbdpcHqV5cFflxAx0Yze/X7vUONp43KK1E8eUWaJIMkit3D0R" crossorigin="anonymous">
     <link rel="stylesheet" href="js/CETEIcean/test/CETEIcean.css" media="screen" charset="utf-8">
+
     <style media="screen">
       tei-g[ref="char:cmbAbbrStroke"] {
         display: inline-block;
@@ -30,24 +31,82 @@
         text-align: center;
       }
     </style>
+
     <style>
       .ms-col {
         height: 400px;
         overflow: scroll;
+        color: #000;
+        border: #
+      }
+      .navbar {
+        border:none;
+      }
+      .site-header {
+        border-right:none;
+        border-left:none;
+        border-top:none;
+      }
+      header#masthead {
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+      }
+      #page-title{
+        margin-top:30px;
       }
     </style>
+
   </head>
   <body>
-    <div id="texts_checkbox">
-      <input type="checkbox" name="manuscript" value="B1" checked> B1<br>
-      <input type="checkbox" name="manuscript" value="B2" checked> B2<br>
-      <input type="checkbox" name="manuscript" value="D" checked> D<br>
-      <input type="checkbox" name="manuscript" value="G" checked> G<br>
-      <input type="checkbox" name="manuscript" value="K1" checked> K1<br>
-      <input type="checkbox" name="manuscript" value="K2" checked> K2<br>
-      <input type="checkbox" name="manuscript" value="N" checked> N<br>
-      <input type="checkbox" name="manuscript" value="S" checked> S<br>
+    <header id="masthead" class="site-header navbar-static-top navbar-light bg-light" role="banner">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Exploring Medieval Mary Magdalene</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarColor03">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="http://digital-editing.fas.harvard.edu/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://digital-editing.fas.harvard.edu/introduction/">Introduction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://digital-editing.fas.harvard.edu/editorial-principles/">Editorial Principles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://digital-editing.fas.harvard.edu/manuscript-information/">Manuscript Information</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="http://digital-editing.fas.harvard.edu/text-editions/">Text Editions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://digital-editing.fas.harvard.edu/event/">Event</a>
+            </li>
+           </ul>
+         </div>
+       </nav>
+     </div>
+    </header>
+
+    <h1 id="page-title">Text Editions</h1>
+    <div class="row" id="options-menu">
+      <div class=".col-2 btn-group" id="texts_checkbox">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Manuscript Toggle <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <input type="checkbox" name="manuscript" value="B1" checked> B1<br>
+            <input type="checkbox" name="manuscript" value="B2" checked> B2<br>
+            <input type="checkbox" name="manuscript" value="D" checked> D<br>
+            <input type="checkbox" name="manuscript" value="G" checked> G<br>
+            <input type="checkbox" name="manuscript" value="K1" checked> K1<br>
+            <input type="checkbox" name="manuscript" value="K2" checked> K2<br>
+            <input type="checkbox" name="manuscript" value="N" checked> N<br>
+            <input type="checkbox" name="manuscript" value="S" checked> S<br>
+          </ul>
+      </div>
+
     </div>
+
     <div class="container-fluid" id ="texts">
       <div class="row">
         <div class="col ms-col" id="B1">
@@ -78,6 +137,7 @@
         </div>
       </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/CETEIcean/dist/CETEI.js"></script>
     <!-- <script src="js/viewer.js"></script> -->
