@@ -1,0 +1,41 @@
+.ms-col {
+  height: 400px;
+  overflow: scroll;
+  color: #000;
+  border-style: solid;
+  border-color: rgba(0,0,0,0.3);
+  border-width:thin;
+}
+.navbar {
+  border:none;
+}
+.site-header {
+  border-right:none;
+  border-left:none;
+  border-top:none;
+}
+header#masthead {
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+}
+#page-title{
+  margin-top:30px;
+}
+.dropdown-menu.show {
+  padding-left: 10px;
+}
+.ms-row {
+  margin-top: 25px;
+}
+#abbreviations-toggle-span {
+  margin-left:5px;
+  color: #000;
+}
+tei-choice > tei-expan {
+  display:none;
+}
+tei-choice > tei-expan:before{
+  content:none;
+}
+tei-choice > tei-expan:after{
+  content:none;
+}

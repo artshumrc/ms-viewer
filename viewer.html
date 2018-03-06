@@ -3,7 +3,8 @@
     <meta charset="utf-8">
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-GxhP7S92hzaDyDJqbdpcHqV5cFflxAx0Yze/X7vUONp43KK1E8eUWaJIMkit3D0R" crossorigin="anonymous">
     <link rel="stylesheet" href="js/CETEIcean/test/CETEIcean.css" media="screen" charset="utf-8">
-
+    <link rel="stylesheet" href="css/ti-ta-toggle/titatoggle-dist.css" />
+    <link rel="stylesheet" href="css/viewer.css" / />
     <style media="screen">
       tei-g[ref="char:cmbAbbrStroke"] {
         display: inline-block;
@@ -30,36 +31,9 @@
         display: block;
         text-align: center;
       }
-    </style>
-
-    <style>
-      .ms-col {
-        height: 400px;
-        overflow: scroll;
-        color: #000;
-        border-style: solid;
-        border-color: rgba(0,0,0,0.3);
-        border-width:thin;
-      }
-      .navbar {
-        border:none;
-      }
-      .site-header {
-        border-right:none;
-        border-left:none;
-        border-top:none;
-      }
-      header#masthead {
-        box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
-      }
-      #page-title{
-        margin-top:30px;
-      }
-      .dropdown-menu.show {
-        padding-left: 10px;
-      }
-      .ms-row {
-        margin-top: 25px;
+      /**Cole add **/
+      tei-del {
+        text-decoration: line-through;
       }
     </style>
 
@@ -148,6 +122,13 @@
             </div>
           </ul>
       </div>
+      <div class=".col-2" id="abbreviations">
+        <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
+	         <label>
+		           <input type="checkbox" name="abbreviations-toggle"><span id="abbreviations-toggle-span">Expanded Abbreviations</span>
+	         </label>
+         </div>
+      </div>
 
     </div>
 
@@ -187,7 +168,8 @@
     <!-- <script src="js/viewer.js"></script> -->
     <script>
 
-    $(":checkbox").change(function() {
+    //$(":checkbox").change(function() {
+    $("input[name='manuscript'").change(function(){
       var manuscript = $(this).val();
       var checked = $(this).is(":checked");
       if (checked) {
@@ -237,6 +219,26 @@
       document.getElementById("S").innerHTML = "";
       document.getElementById("S").appendChild(data);
       CETEIcean.addStyle(document, data);
+    });
+
+    var options = {
+      "abbreviations":true,
+    };
+    $("input[name='abbreviations-toggle'").change(function(){
+      console.log($(this).is(":checked"));
+      $("tei-choice").each(function(){
+        $(this).children("tei-expan").toggle();
+        $(this).children("tei-abbr").toggle();
+      })
+      options.abbreviations = $(this).is(":checked");
+      console.log(options.abbreviations)
+      //$( document ).ready(function() {
+        //console.log($(this).val())
+        // $("tei-choice").each(function(index){
+        //   console.log(index + " : " + $(this).text());
+        //   $(this).children("tei-expan").hide();
+        // })
+      //});
     });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
