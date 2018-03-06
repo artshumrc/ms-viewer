@@ -4,7 +4,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-GxhP7S92hzaDyDJqbdpcHqV5cFflxAx0Yze/X7vUONp43KK1E8eUWaJIMkit3D0R" crossorigin="anonymous">
     <link rel="stylesheet" href="js/CETEIcean/test/CETEIcean.css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="css/ti-ta-toggle/titatoggle-dist.css" />
-    <link rel="stylesheet" href="css/viewer.css" / />
+    <link rel="stylesheet" href="css/viewer.css"/>
     <style media="screen">
       tei-g[ref="char:cmbAbbrStroke"] {
         display: inline-block;
@@ -17,9 +17,9 @@
       tei-hi {
         font-style: italic;
       }
-      tei-pb + tei-pb {
+      /**tei-pb + tei-pb {
         display: none;
-      }
+      }**/
       tei-seg[rend="decorInit"] {
         font-family: cursive;
         font-size: 300%;
@@ -125,8 +125,15 @@
       <div class=".col-2" id="abbreviations">
         <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
 	         <label>
-		           <input type="checkbox" name="abbreviations-toggle"><span id="abbreviations-toggle-span">Expanded Abbreviations</span>
+		           <input type="checkbox" name="abbreviations-toggle"><span id="abbreviations-toggle-span" class="toggle">Expanded Abbreviations</span>
 	         </label>
+         </div>
+      </div>
+      <div class=".col-2" id="pagination">
+        <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
+           <label>
+               <input type="checkbox" name="pagination-toggle" checked><span id="pagination-toggle-span" class="toggle">Pagination</span>
+           </label>
          </div>
       </div>
 
@@ -168,7 +175,7 @@
     <!-- <script src="js/viewer.js"></script> -->
     <script>
 
-    //$(":checkbox").change(function() {
+    //Show and hide manuscripts
     $("input[name='manuscript'").change(function(){
       var manuscript = $(this).val();
       var checked = $(this).is(":checked");
@@ -180,50 +187,60 @@
     });
 
     var CETEIcean = new CETEI();
-    CETEIcean.getHTML5('xml/ManuscriptSnapshots/manuscript_B1.xml', function(data) {
-      document.getElementById("B1").innerHTML = "";
-      document.getElementById("B1").appendChild(data);
-      CETEIcean.addStyle(document, data);
-    });
-    CETEIcean.getHTML5('xml/ManuscriptSnapshots/manuscript_B2.xml', function(data) {
-      document.getElementById("B2").innerHTML = "";
-      document.getElementById("B2").appendChild(data);
-      CETEIcean.addStyle(document, data);
-    });
-    CETEIcean.getHTML5('xml/ManuscriptSnapshots/manuscript_D.xml', function(data) {
-      document.getElementById("D").innerHTML = "";
-      document.getElementById("D").appendChild(data);
-      CETEIcean.addStyle(document, data);
-    });
-    CETEIcean.getHTML5('xml/ManuscriptSnapshots/manuscript_G.xml', function(data) {
-      document.getElementById("G").innerHTML = "";
-      document.getElementById("G").appendChild(data);
-      CETEIcean.addStyle(document, data);
-    });
-    CETEIcean.getHTML5('xml/ManuscriptSnapshots/manuscript_K1.xml', function(data) {
-      document.getElementById("K1").innerHTML = "";
-      document.getElementById("K1").appendChild(data);
-      CETEIcean.addStyle(document, data);
-    });
-    CETEIcean.getHTML5('xml/ManuscriptSnapshots/manuscript_K2.xml', function(data) {
-      document.getElementById("K2").innerHTML = "";
-      document.getElementById("K2").appendChild(data);
-      CETEIcean.addStyle(document, data);
-    });
-    CETEIcean.getHTML5('xml/ManuscriptSnapshots/manuscript_N.xml', function(data) {
-      document.getElementById("N").innerHTML = "";
-      document.getElementById("N").appendChild(data);
-      CETEIcean.addStyle(document, data);
-    });
-    CETEIcean.getHTML5('xml/ManuscriptSnapshots/manuscript_S.xml', function(data) {
-      document.getElementById("S").innerHTML = "";
-      document.getElementById("S").appendChild(data);
-      CETEIcean.addStyle(document, data);
-    });
+    var manuscripts = {
+      "B1" : {
+        "name": "B1",
+        "resource" : "xml/ManuscriptSnapshots/manuscript_B1.xml"
+      },
+      "B2" : {
+        "name": "B2",
+        "resource" : "xml/ManuscriptSnapshots/manuscript_B2.xml"
+      },
+      "D" : {
+        "name": "D",
+        "resource" : "xml/ManuscriptSnapshots/manuscript_D.xml"
+      },
+      "G" : {
+        "name": "G",
+        "resource" : "xml/ManuscriptSnapshots/manuscript_G.xml"
+      },
+      "K1" : {
+        "name": "K1",
+        "resource" : "xml/ManuscriptSnapshots/manuscript_K1.xml"
+      },
+      "K2" : {
+        "name": "K2",
+        "resource" : "xml/ManuscriptSnapshots/manuscript_K2.xml"
+      },
+      "N" : {
+        "name": "N",
+        "resource" : "xml/ManuscriptSnapshots/manuscript_N.xml"
+      },
+      "S" : {
+        "name": "S",
+        "resource" : "xml/ManuscriptSnapshots/manuscript_S.xml"
+      }
+    };
 
+    function addManuscript(ms){
+      CETEIcean.getHTML5(ms.resource, function(data){
+        document.getElementById(ms.name).innerHTML = "";
+        document.getElementById(ms.name).appendChild(data);
+        CETEIcean.addStyle(document, data);
+      });
+    }
+
+    for (var ms in manuscripts) {
+      addManuscript(manuscripts[ms]);
+    }
+
+    //Object for all options
     var options = {
       "abbreviations":true,
+      "pagination":true,
     };
+
+    //Function to toggle abbreviations
     $("input[name='abbreviations-toggle'").change(function(){
       console.log($(this).is(":checked"));
       $("tei-choice").each(function(){
@@ -232,14 +249,28 @@
       })
       options.abbreviations = $(this).is(":checked");
       console.log(options.abbreviations)
-      //$( document ).ready(function() {
-        //console.log($(this).val())
-        // $("tei-choice").each(function(index){
-        //   console.log(index + " : " + $(this).text());
-        //   $(this).children("tei-expan").hide();
-        // })
-      //});
     });
+
+    //Add facs div to each pb (pagination) with valid attribute
+    //To-do: need to run this as callback after all manuscripts loaded
+    $(document).ready(function(){
+      $("tei-pb").each(function(){
+        var facs = $(this).attr("facs");
+        if(typeof(facs) != "undefined"){
+          $(this).html("<div class='page-break'>" + facs + "</div>");
+        }
+      })
+    });
+
+    //Function to toggle pagination
+    $("input[name='pagination-toggle'").change(function(){
+      console.log($(this).is(":checked"));
+      $(".page-break").toggle();
+      options.pagination = $(this).is(":checked");
+      console.log(options)
+    });
+
+
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

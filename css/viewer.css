@@ -26,16 +26,23 @@ header#masthead {
 .ms-row {
   margin-top: 25px;
 }
-#abbreviations-toggle-span {
+.toggle {
   margin-left:5px;
   color: #000;
+  font-size: 0.765625rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 tei-choice > tei-expan {
   display:none;
 }
 tei-choice > tei-expan:before{
-  content:none;
+  content:none !important;
 }
 tei-choice > tei-expan:after{
-  content:none;
+  content:none !important;
+}
+.page-break {
+  margin-left:25px;
+  color:grey;
 }
