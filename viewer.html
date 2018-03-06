@@ -96,9 +96,6 @@
             <div id="dl-B2">
               <a href="xml/ManuscriptSnapshots/manuscript_B2.xml" download>B2</a>
             </div>
-            <div id="dl-B2">
-              <a href="xml/ManuscriptSnapshots/manuscript_B2.xml" download>B2</a>
-            </div>
             <div id="dl-D">
               <a href="xml/ManuscriptSnapshots/manuscript_D.xml" download>D</a>
             </div>
@@ -203,11 +200,7 @@
     $("input[name='manuscript'").change(function(){
       var manuscript = $(this).val();
       var checked = $(this).is(":checked");
-      if (checked) {
-        $("#"+manuscript).show();
-      } else {
-        $("#"+manuscript).hide();
-      }
+      $("#"+manuscript).parent(".ms-col").toggle();
     });
 
     var CETEIcean = new CETEI();
