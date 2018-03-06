@@ -35,6 +35,14 @@
       tei-del {
         text-decoration: line-through;
       }
+
+      *[rend^="rubr"] {
+        color: red;
+      }
+
+      *[rend$="_underline"] {
+        text-decoration: underline;
+      }
     </style>
 
   </head>
@@ -130,6 +138,14 @@
         <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
            <label>
                <input type="checkbox" name="foliation-toggle" checked><span id="foliation-toggle-span" class="toggle">Foliation</span>
+           </label>
+         </div>
+      </div>
+
+      <div class="col-2" id="linebreak">
+        <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
+           <label>
+               <input type="checkbox" name="linebreak-toggle" checked><span id="linebreak-toggle-span" class="toggle">Line Beginnings</span>
            </label>
          </div>
       </div>
@@ -248,7 +264,6 @@
 
         //Add facs div to each cb (foliation) with valid attribute
         addFoliation(ms_el);
-
       });
     }
 
@@ -276,6 +291,7 @@
     var options = {
       "abbreviations":true,
       "foliation":true,
+      "linebreak":true,
     };
 
     //Function to toggle abbreviations
@@ -295,6 +311,12 @@
       $(".page-break").toggle();
       options.foliation = $(this).is(":checked");
       console.log(options)
+    });
+
+    //Function to toggle line breaks
+    $("input[name='linebreak-toggle'").change(function(){
+      $("tei-lb").toggle();
+      options.linebreak = $(this).is(":checked");
     });
 
 
