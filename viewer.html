@@ -74,7 +74,7 @@
     <h1 id="page-title">Text Editions</h1>
 
     <div class="row" id="options-menu">
-      <div class=".col-2 btn-group" id="texts_checkbox">
+      <div class="col-2 btn-group" id="texts_checkbox">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Manuscript Toggle <span class="caret"></span></button>
           <ul class="dropdown-menu">
             <input type="checkbox" name="manuscript" value="B1" checked> B1<br>
@@ -87,7 +87,7 @@
             <input type="checkbox" name="manuscript" value="S" checked> S<br>
           </ul>
       </div>
-      <div class=".col-2 btn-group" id="download_xml">
+      <div class="col-2 btn-group" id="download_xml">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Download XML <span class="caret"></span></button>
           <ul class="dropdown-menu">
             <div id="dl-B1">
@@ -122,17 +122,17 @@
             </div>
           </ul>
       </div>
-      <div class=".col-2" id="abbreviations">
+      <div class="col-2" id="abbreviations">
         <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
 	         <label>
 		           <input type="checkbox" name="abbreviations-toggle"><span id="abbreviations-toggle-span" class="toggle">Expanded Abbreviations</span>
 	         </label>
          </div>
       </div>
-      <div class=".col-2" id="pagination">
+      <div class="col-2" id="foliation">
         <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
            <label>
-               <input type="checkbox" name="pagination-toggle" checked><span id="pagination-toggle-span" class="toggle">Pagination</span>
+               <input type="checkbox" name="foliation-toggle" checked><span id="foliation-toggle-span" class="toggle">Foliation</span>
            </label>
          </div>
       </div>
@@ -261,7 +261,7 @@
     //Object for all options. Not currently used, but is updated in toggle functions
     var options = {
       "abbreviations":true,
-      "pagination":true,
+      "foliation":true,
     };
 
     //Function to toggle abbreviations
@@ -275,7 +275,7 @@
       console.log(options.abbreviations)
     });
 
-    //Add facs div to each pb (pagination) with valid attribute
+    //Add facs div to each pb (foliation) with valid attribute
     //To-do: need to run this as callback after all manuscripts loaded
     $(document).ready(function(){
       $("tei-pb").each(function(){
@@ -286,11 +286,11 @@
       })
     });
 
-    //Function to toggle pagination
-    $("input[name='pagination-toggle'").change(function(){
+    //Function to toggle foliation
+    $("input[name='foliation-toggle'").change(function(){
       console.log($(this).is(":checked"));
       $(".page-break").toggle();
-      options.pagination = $(this).is(":checked");
+      options.foliation = $(this).is(":checked");
       console.log(options)
     });
 
