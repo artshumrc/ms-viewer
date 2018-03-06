@@ -248,9 +248,25 @@
 
     function addManuscript(ms){
       CETEIcean.getHTML5(ms.resource, function(data){
-        document.getElementById(ms.name).innerHTML = "";
-        document.getElementById(ms.name).appendChild(data);
+        var ms_el = "#"+ms.name;
+        $(ms_el).html("");
+        $(ms_el).append(data);
         CETEIcean.addStyle(document, data);
+
+        //Add facs div to each cb (foliation) with valid attribute
+        $(ms_el+" tei-cb").each(function(){
+          var n = $(this).attr("n");
+          var pb = "";
+          if(typeof(n) === "undefined"){
+            var facs = $(this).attr("facs");
+            if(typeof(facs) != "undefined"){
+              pb = facs;
+            }
+          } else {
+            pb = n;
+          }
+          $(this).html("<div class='page-break'>" + pb + "</div>");
+        });
       });
     }
 
@@ -273,17 +289,6 @@
       })
       options.abbreviations = $(this).is(":checked");
       console.log(options.abbreviations)
-    });
-
-    //Add facs div to each pb (foliation) with valid attribute
-    //To-do: need to run this as callback after all manuscripts loaded
-    $(document).ready(function(){
-      $("tei-pb").each(function(){
-        var facs = $(this).attr("facs");
-        if(typeof(facs) != "undefined"){
-          $(this).html("<div class='page-break'>" + facs + "</div>");
-        }
-      })
     });
 
     //Function to toggle foliation
