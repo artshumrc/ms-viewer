@@ -1,10 +1,18 @@
 .ms-col {
   height: 400px;
-  overflow: scroll;
   color: #000;
   border-style: solid;
   border-color: rgba(0,0,0,0.3);
   border-width:thin;
+}
+.manuscript{
+  overflow: scroll;
+  max-height:360px;
+}
+.ms-title{
+  line-height: 30px;
+  padding:0px;
+  margin-bottom:0px;
 }
 .navbar {
   border:none;
