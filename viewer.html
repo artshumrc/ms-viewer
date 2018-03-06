@@ -36,12 +36,16 @@
         text-decoration: line-through;
       }
 
-      *[rend^="rubr"] {
+      *[rend*="rubr"] {
         color: red;
       }
 
-      *[rend$="_underline"] {
+      *[rend*="underline"] {
         text-decoration: underline;
+      }
+
+      *[rend*="init"] {
+        font-size: 150%;
       }
     </style>
 
