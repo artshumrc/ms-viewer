@@ -54,3 +54,7 @@ tei-choice > tei-expan:after{
   margin-left:25px;
   color:grey;
 }
+
+tei-cb::before {
+  content: none !important;
+}
