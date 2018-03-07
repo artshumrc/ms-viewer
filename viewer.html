@@ -47,6 +47,9 @@
       *[rend*="init"] {
         font-size: 150%;
       }
+      *[source*='manuscript']{
+        display: none;
+      }
     </style>
 
   </head>
@@ -153,6 +156,16 @@
            </label>
          </div>
       </div>
+      <div class="col-2" id="punctuation">
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary active">
+            <input type="radio" name="punctuation" id="editor-punctuation" autocomplete="off" checked> Editor Punc
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="punctuation" id="original-punctuation" autocomplete="off"> Orig Punct
+          </label>
+        </div>
+      </div>
 
     </div>
 
@@ -216,13 +229,6 @@
     <!-- <script src="js/viewer.js"></script> -->
     <script>
 
-    //Show and hide manuscripts
-    $("input[name='manuscript'").change(function(){
-      var manuscript = $(this).val();
-      var checked = $(this).is(":checked");
-      $("#"+manuscript).parent(".ms-col").toggle();
-    });
-
     var CETEIcean = new CETEI();
     var manuscripts = {
       "B1" : {
@@ -279,6 +285,7 @@
       });
     }
 
+
     function addFoliation(ms_el) {
       $(ms_el+" tei-cb").each(function(){
         var n = $(this).attr("n");
@@ -304,7 +311,15 @@
       "abbreviations":true,
       "foliation":true,
       "linebreak":true,
+      "editor_punctuation":true
     };
+
+    //Show and hide manuscripts
+    $("input[name='manuscript'").change(function(){
+      var manuscript = $(this).val();
+      var checked = $(this).is(":checked");
+      $("#"+manuscript).parent(".ms-col").toggle();
+    });
 
     //Function to toggle abbreviations
     $("input[name='abbreviations-toggle'").change(function(){
@@ -330,6 +345,22 @@
       $("tei-lb").toggle();
       options.linebreak = $(this).is(":checked");
     });
+
+    //Function to toggle punctuation
+    //Not yet finished. Need to add <choice> and <pc> nesting - not standardized? See #8
+    $("input[name='punctuation'").change(function(){
+      var editor_punctuation = $(this)[0].id.indexOf("editor") > -1;
+      console.log(editor_punctuation);
+      options.editor_punctuation == editor_punctuation;
+      if(editor_punctuation){
+        $("tei-pc[resp='editor']").show();
+        $("tei-pc[source='manuscript']").hide();
+      } else {
+        $("tei-pc[resp='editor']").hide();
+        $("tei-pc[source='manuscript']").show();
+      }
+    });
+
 
 
     </script>
