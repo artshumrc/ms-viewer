@@ -50,6 +50,17 @@
       *[source*='manuscript']{
         display: none;
       }
+      /**Remove ( and ) around editor punctuation**/
+      tei-pc > tei-choice > tei-reg::before {
+        content: none !important;
+      }
+      tei-pc > tei-choice > tei-reg::after {
+        content: none !important;
+      }
+      /** Default: editor punctuation shown, hide orig **/
+      tei-pc > tei-choice > tei-orig {
+        display:none;
+      }
     </style>
 
   </head>
@@ -347,7 +358,6 @@
     });
 
     //Function to toggle punctuation
-    //Not yet finished. Need to add <choice> and <pc> nesting - not standardized? See #8
     $("input[name='punctuation'").change(function(){
       var editor_punctuation = $(this)[0].id.indexOf("editor") > -1;
       console.log(editor_punctuation);
@@ -355,9 +365,13 @@
       if(editor_punctuation){
         $("tei-pc[resp='editor']").show();
         $("tei-pc[source='manuscript']").hide();
+        $("tei-pc > tei-choice > tei-reg[resp='editor'][type='punct']").show();
+        $("tei-pc > tei-choice > tei-orig").hide();
       } else {
         $("tei-pc[resp='editor']").hide();
         $("tei-pc[source='manuscript']").show();
+        $("tei-pc > tei-choice > tei-reg[resp='editor'][type='punct']").hide();
+        $("tei-pc > tei-choice > tei-orig").show();
       }
     });
 
