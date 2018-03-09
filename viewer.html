@@ -100,7 +100,7 @@
     <h1 id="page-title">Text Editions</h1>
 
     <div class="row" id="options-menu">
-      <div class="col-2 btn-group" id="texts_checkbox">
+      <div class="col-1 btn-group" id="texts_checkbox">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Manuscript Toggle <span class="caret"></span></button>
           <ul class="dropdown-menu">
             <input type="checkbox" name="manuscript" value="B1" checked> B1<br>
@@ -113,7 +113,7 @@
             <input type="checkbox" name="manuscript" value="S" checked> S<br>
           </ul>
       </div>
-      <div class="col-2 btn-group" id="download_xml">
+      <div class="col-1 btn-group" id="download_xml">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Download XML <span class="caret"></span></button>
           <ul class="dropdown-menu">
             <div id="dl-B1">
@@ -148,7 +148,7 @@
       <div class="col-2" id="abbreviations">
         <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
 	         <label>
-		           <input type="checkbox" name="abbreviations-toggle"><span id="abbreviations-toggle-span" class="toggle">Expanded Abbreviations</span>
+		           <input type="checkbox" name="abbreviations-toggle"><span id="abbreviations-toggle-span" class="toggle">Expand Abbrevs</span>
 	         </label>
          </div>
       </div>
@@ -177,6 +177,17 @@
           </label>
         </div>
       </div>
+      <div class="col-2" id="jump">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="jump-select">Go To</label>
+          </div>
+          <select class="custom-select" id="jump-select">
+            <option>Choose ...</option>
+          </select>
+        </div>
+      </div>
+
 
     </div>
 
@@ -237,7 +248,6 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/CETEIcean/dist/CETEI.js"></script>
-    <!-- <script src="js/viewer.js"></script> -->
     <script>
 
     //Variables
@@ -305,7 +315,8 @@
 
         //Add facs div to each cb (foliation) with valid attribute
         addFoliation(ms_el);
-        addSectionsToSet(ms_el);
+        //Add <ab> sections to jump menu
+        addSections(ms_el);
       });
     }
 
@@ -331,10 +342,19 @@
       addManuscript(manuscripts[ms]);
     }
 
-    //Add ms sections to Set
-    function addSectionsToSet(ms_el){
+    //Add ms sections to Set and jump menu
+    function addSections(ms_el){
       $(ms_el).find("tei-ab").each(function(index){
-        sectionsSet.add($(this)[0].getAttribute("xml:id"));
+        var xmlid = $(this)[0].getAttribute("xml:id");
+        if(xmlid !== null && xmlid !== ''){
+          if(!sectionsSet.has(xmlid) && xmlid !== null && xmlid !== ''){
+            $('#jump-select').append($('<option>', {
+              value: xmlid,
+              text: xmlid
+            }));
+          }
+          sectionsSet.add(xmlid);
+        }
       });
     }
 
@@ -347,21 +367,17 @@
 
     //Function to toggle abbreviations
     $("input[name='abbreviations-toggle'").change(function(){
-      console.log($(this).is(":checked"));
       $("tei-choice").each(function(){
         $(this).children("tei-expan").toggle();
         $(this).children("tei-abbr").toggle();
       })
       options.abbreviations = $(this).is(":checked");
-      console.log(options.abbreviations)
     });
 
     //Function to toggle foliation
     $("input[name='foliation-toggle'").change(function(){
-      console.log($(this).is(":checked"));
       $(".page-break").toggle();
       options.foliation = $(this).is(":checked");
-      console.log(options)
     });
 
     //Function to toggle line breaks
@@ -373,7 +389,6 @@
     //Function to toggle punctuation
     $("input[name='punctuation'").change(function(){
       var editor_punctuation = $(this)[0].id.indexOf("editor") > -1;
-      console.log(editor_punctuation);
       options.editor_punctuation == editor_punctuation;
       if(editor_punctuation){
         $("tei-pc[resp='editor']").show();
@@ -387,6 +402,27 @@
         $("tei-pc > tei-choice > tei-orig").show();
       }
     });
+
+    function scroll_manuscripts(xmlid){
+      for(ms in manuscripts){
+        var ms_el = "#" + manuscripts[ms].name;
+        if( $(ms_el).find("#"+xmlid).length > 0){
+          var topPosition = $("#"+xmlid).position().top;
+          //$(ms_el).scrollTop(topPosition);
+          $(ms_el).animate({
+            scrollTop: topPosition
+          }, 300)
+        }
+      }
+    }
+
+    //Jump menu change
+    $("#jump-select").change(function(){
+      var xmlid = $(this).val();
+      if(xmlid !== null && xmlid !== ''){
+        scroll_manuscripts(xmlid);
+      }
+    })
 
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
