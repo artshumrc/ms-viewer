@@ -61,6 +61,19 @@
       tei-pc > tei-choice > tei-orig {
         display:none;
       }
+
+      /** Remove ( and ) around editor capitalization **/
+      tei-choice > tei-reg[type="capit"]::before {
+        content: none !important;
+      }
+      tei-choice > tei-reg[type="capit"]::after {
+        content: none !important;
+      }
+
+      /** Default: editor cap shown, hide orig **/
+      tei-choice > tei-orig {
+        display:none;
+      }
     </style>
 
   </head>
@@ -99,8 +112,54 @@
 
     <h1 id="page-title">Text Editions</h1>
 
-    <div class="row" id="options-menu">
-      <div class="col-1 btn-group" id="texts_checkbox">
+    <div class="row" class="options-menu">
+      <div class="col-2" id="abbreviations">
+        <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
+	         <label>
+		           <input type="checkbox" name="abbreviations-toggle"><span id="abbreviations-toggle-span" class="toggle">Expand Abbrevs</span>
+	         </label>
+         </div>
+      </div>
+      <div class="col-2" id="foliation">
+        <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
+           <label>
+               <input type="checkbox" name="foliation-toggle" checked><span id="foliation-toggle-span" class="toggle">Foliation</span>
+           </label>
+         </div>
+      </div>
+
+      <div class="col-2" id="linebreak">
+        <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
+           <label>
+               <input type="checkbox" name="linebreak-toggle" checked><span id="linebreak-toggle-span" class="toggle">Line Beginnings</span>
+           </label>
+         </div>
+      </div>
+      <div class="col-2" id="punctuation">
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary active">
+            <input type="radio" name="punctuation" id="editor-punctuation" autocomplete="off" checked> Editor Punct
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="punctuation" id="original-punctuation" autocomplete="off"> Orig Punct
+          </label>
+        </div>
+      </div>
+
+      <div class="col-2" id="capitalization">
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary active">
+            <input type="radio" name="capitalization" id="editor-capitalization" autocomplete="off" checked> Editor Cap
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="capitalization" id="original-capitalization" autocomplete="off"> Orig Cap
+          </label>
+        </div>
+      </div>
+
+    </div>
+    <div class="row" class="options-menu">
+      <div class="col-2 btn-group" id="texts_checkbox">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Manuscript Toggle <span class="caret"></span></button>
           <ul class="dropdown-menu">
             <input type="checkbox" name="manuscript" value="B1" checked> B1<br>
@@ -113,7 +172,7 @@
             <input type="checkbox" name="manuscript" value="S" checked> S<br>
           </ul>
       </div>
-      <div class="col-1 btn-group" id="download_xml">
+      <div class="col-2 btn-group" id="download_xml">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Download XML <span class="caret"></span></button>
           <ul class="dropdown-menu">
             <div id="dl-B1">
@@ -145,38 +204,6 @@
             </div>
           </ul>
       </div>
-      <div class="col-2" id="abbreviations">
-        <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
-	         <label>
-		           <input type="checkbox" name="abbreviations-toggle"><span id="abbreviations-toggle-span" class="toggle">Expand Abbrevs</span>
-	         </label>
-         </div>
-      </div>
-      <div class="col-2" id="foliation">
-        <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
-           <label>
-               <input type="checkbox" name="foliation-toggle" checked><span id="foliation-toggle-span" class="toggle">Foliation</span>
-           </label>
-         </div>
-      </div>
-
-      <div class="col-2" id="linebreak">
-        <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
-           <label>
-               <input type="checkbox" name="linebreak-toggle" checked><span id="linebreak-toggle-span" class="toggle">Line Beginnings</span>
-           </label>
-         </div>
-      </div>
-      <div class="col-2" id="punctuation">
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-          <label class="btn btn-secondary active">
-            <input type="radio" name="punctuation" id="editor-punctuation" autocomplete="off" checked> Editor Punc
-          </label>
-          <label class="btn btn-secondary">
-            <input type="radio" name="punctuation" id="original-punctuation" autocomplete="off"> Orig Punct
-          </label>
-        </div>
-      </div>
       <div class="col-2" id="jump">
         <div class="input-group mb-3">
           <div class="input-group-prepend">
@@ -187,8 +214,6 @@
           </select>
         </div>
       </div>
-
-
     </div>
 
     <div class="container-fluid" id ="texts">
@@ -302,7 +327,8 @@
       "abbreviations":true,
       "foliation":true,
       "linebreak":true,
-      "editor_punctuation":true
+      "editor_punctuation":true,
+      "editor_capitalization":true
     };
 
     //Functions
@@ -400,6 +426,19 @@
         $("tei-pc[source='manuscript']").show();
         $("tei-pc > tei-choice > tei-reg[resp='editor'][type='punct']").hide();
         $("tei-pc > tei-choice > tei-orig").show();
+      }
+    });
+
+    //Function to toggle punctuation
+    $("input[name='capitalization'").change(function(){
+      var editor_capitalization = $(this)[0].id.indexOf("editor") > -1;
+      options.editor_capitalization == editor_capitalization;
+      if(editor_capitalization){
+        $("tei-choice > tei-reg[resp='editor'][type='capit']").show();
+        $("tei-choice > tei-orig").hide();
+      } else {
+        $("tei-choice > tei-reg[resp='editor'][type='capit']").hide();
+        $("tei-choice > tei-orig").show();
       }
     });
 
