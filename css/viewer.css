@@ -41,7 +41,7 @@ header#masthead {
   font-weight: 600;
   text-transform: uppercase;
 }
-tei-choice > tei-expan {
+tei-choice > tei-abbr {
   display:none;
 }
 tei-choice > tei-expan:before{
@@ -53,6 +53,7 @@ tei-choice > tei-expan:after{
 .page-break {
   margin-left:25px;
   color:grey;
+  display:none;
 }
 
 tei-cb::before {
