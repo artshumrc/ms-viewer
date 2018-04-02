@@ -135,10 +135,10 @@
          </div>
       </div>
 
-      <div class="col-2" id="linebreak" checked>
+      <div class="col-2" id="linebeginnings" checked>
         <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
            <label>
-               <input type="checkbox" name="linebreak-toggle"><span id="linebreak-toggle-span" class="toggle">Line Beginnings</span>
+               <input type="checkbox" name="linebeginnings-toggle"><span id="linebeginnings-toggle-span" class="toggle">Line Beginnings</span>
            </label>
          </div>
       </div>
@@ -333,7 +333,7 @@
     var options = {
       "expanded_abbreviations":true,
       "foliation":false,
-      "linebreak":true,
+      "linebeginnings":false,
       "editor_punctuation":true,
       "editor_capitalization":true
     };
@@ -350,6 +350,7 @@
         addFoliation(ms_el);
         //Add <ab> sections to jump menu
         addSections(ms_el);
+        $(ms_el + " tei-lb").toggle(); //Start off manuscripts with line beginnings off
       });
     }
 
@@ -413,10 +414,10 @@
       options.foliation = $(this).is(":checked");
     });
 
-    //Function to toggle line breaks
-    $("input[name='linebreak-toggle'").change(function(){
+    //Function to toggle line beginnings
+    $("input[name='linebeginnings-toggle'").change(function(){
       $("tei-lb").toggle();
-      options.linebreak = $(this).is(":checked");
+      options.linebeginnings = $(this).is(":checked");
     });
 
     //Function to toggle punctuation
@@ -436,7 +437,7 @@
       }
     });
 
-    //Function to toggle punctuation
+    //Function to toggle capitalization
     $("input[name='capitalization'").change(function(){
       var editor_capitalization = $(this)[0].id.indexOf("editor") > -1;
       options.editor_capitalization == editor_capitalization;
