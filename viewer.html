@@ -89,6 +89,16 @@
       tei-teiheader {
         display:none;
       }
+      /**Starting with line beginnings off; <ab> should flow in one unbroken text **/
+      tei-ab {
+        display:inline;
+      }
+
+      /**Removing space above and below foliation **/
+      tei-cb {
+        margin-top:0px;
+        margin-bottom:0px;
+      }
     </style>
 
   </head>
@@ -222,7 +232,7 @@
       <div class="col-2" id="jump">
         <div class="input-group mb-3">
           <div class="input-group-prepend">
-            <label class="input-group-text" for="jump-select">Go To</label>
+            <label class="input-group-text" for="jump-select">Go To Legend Episode</label>
           </div>
           <select class="custom-select" id="jump-select">
             <option>Choose ...</option>
@@ -346,6 +356,26 @@
       "editor_capitalization":true
     };
 
+    var legend_episodes = {
+      "legend_title": "Legend Title",
+      "genealogy": "Genealogy",
+      "heritage": "Inheritance",
+      "MaryMagdalene_mismanagement": "Mary Magdalene's heritage management",
+      "Martha_confronts_Mary": "Martha's reaction",
+      "MaryMagdalene_lovers": "Mary Magdaelene in the world",
+      "market_scene": "Martha and Mary Magdalene meet on the market",
+      "Mary_at_Marthas_house": "Mary Magdalene visits Martha",
+      "Jesus_enters": "Jesus visits Martha",
+      "Mary_retreats": "Mary Magdalene retreats",
+      "Martha_encourages_Mary": "Martha encourages Mary Magdalene to go to Jesus",
+      "Martha_in_Simons_house": "Martha in Simon's house",
+      "Gregory_comment": "Discursive comment attributed to Gregory the Great",
+      "Mary_in_Simons_house": "Mary Magdalene in Simon's house",
+      "VirginMary_visits": "Virgin Mary meets Mary Magdalene",
+      "Mary_rest_of_life": "Mary Magdalene after her conversion",
+      "epilogue": "Epilogue"
+    };
+
     //Functions
     function addManuscript(ms){
       CETEIcean.getHTML5(ms.resource, function(data){
@@ -375,7 +405,7 @@
         } else {
           pb = n;
         }
-        $(this).html("<div class='page-break'>" + pb + "</div>");
+        $(this).html("<span class='page-break'>" + pb + "</span>");
       });
     }
 

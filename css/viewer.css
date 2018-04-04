@@ -51,7 +51,6 @@ tei-choice > tei-expan:after{
   content:none !important;
 }
 .page-break {
-  margin-left:25px;
   color:grey;
   display:none;
 }
