@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="css/ti-ta-toggle/titatoggle-dist.css" />
     <link rel="stylesheet" href="css/viewer.css"/>
     <style media="screen">
+      @font-face{
+        font-family: "Embossed Germanica";
+        src: url("css/fonts/germanica_family/EmbossedGermanica.ttf")
+      }
+      @import url('https://fonts.googleapis.com/css?family=Germania+One');
       tei-g[ref="char:cmbAbbrStroke"] {
         display: inline-block;
         width: 0px;
@@ -48,6 +53,9 @@
 
       *[rend*="init"] {
         font-size: 150%;
+      }
+      *[rend*="lombard"]{
+        font-family: "Embossed Germanica", 'Germania One', serif;
       }
       *[source*='manuscript']{
         display: none;
