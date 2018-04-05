@@ -142,49 +142,9 @@
 
     <h1 id="page-title">Text Editions</h1>
 
-    <div class="row" class="options-menu">
-      <div class="col-2" id="abbreviations">
-        <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
-	         <label>
-		           <input type="checkbox" name="abbreviations-toggle" checked><span id="abbreviations-toggle-span" class="toggle">Expand Abbrevs</span>
-	         </label>
-         </div>
-      </div>
-      <div class="col-2" id="foliation">
-        <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
-           <label>
-               <input type="checkbox" name="foliation-toggle"><span id="foliation-toggle-span" class="toggle">Foliation</span>
-           </label>
-         </div>
-      </div>
+    <div class="row" class="options-menu" id="row1">
 
-      <div class="col-2" id="linebeginnings">
-        <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
-           <label>
-               <input type="checkbox" name="linebeginnings-toggle"><span id="linebeginnings-toggle-span" class="toggle">Line Beginnings</span>
-           </label>
-         </div>
-      </div>
-
-      <div class="col-2" id="punctuation">
-        <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
-           <label>
-               <input type="checkbox" name="editor-punctuation-toggle" checked><span id="editor-punctuation-span" class="toggle">Editor Punctuation</span>
-           </label>
-         </div>
-      </div>
-
-      <div class="col-2" id="capitalization">
-        <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
-           <label>
-               <input type="checkbox" name="editor-capitalization-toggle" checked><span id="editor-capitalization-span" class="toggle">Editor Capitalization</span>
-           </label>
-         </div>
-      </div>
-
-    </div>
-    <div class="row" class="options-menu">
-      <div class="col-2 btn-group" id="texts_checkbox">
+      <div class="col-3 btn-group" id="texts_checkbox">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Manuscript Toggle <span class="caret"></span></button>
           <ul class="dropdown-menu">
             <input type="checkbox" name="manuscript" value="B1" checked> B1<br>
@@ -197,7 +157,31 @@
             <input type="checkbox" name="manuscript" value="S" checked> S<br>
           </ul>
       </div>
-      <div class="col-2 btn-group" id="download_xml">
+      <div class="col-3" id="foliation">
+        <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
+           <label>
+               <input type="checkbox" name="foliation-toggle"><span id="foliation-toggle-span" class="toggle">Foliation</span>
+           </label>
+         </div>
+      </div>
+      <div class="col-3" id="abbreviations">
+        <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
+	         <label>
+		           <input type="checkbox" name="abbreviations-toggle" checked><span id="abbreviations-toggle-span" class="toggle">Expand Abbrevs</span>
+	         </label>
+         </div>
+      </div>
+      <div class="col-3" id="capitalization">
+        <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
+           <label>
+               <input type="checkbox" name="editor-capitalization-toggle" checked><span id="editor-capitalization-span" class="toggle">Editor Capitalization</span>
+           </label>
+         </div>
+      </div>
+    </div>
+
+    <div class="row" class="options-menu" id="row2">
+      <div class="col-3 btn-group" id="download_xml">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Download XML <span class="caret"></span></button>
           <ul class="dropdown-menu">
             <div id="dl-B1">
@@ -229,7 +213,24 @@
             </div>
           </ul>
       </div>
-      <div class="col-2" id="jump">
+      <div class="col-3" id="linebeginnings">
+        <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
+           <label>
+               <input type="checkbox" name="linebeginnings-toggle"><span id="linebeginnings-toggle-span" class="toggle">Line Beginnings</span>
+           </label>
+         </div>
+      </div>
+      <div class="col-3" id="punctuation">
+        <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
+           <label>
+               <input type="checkbox" name="editor-punctuation-toggle" checked><span id="editor-punctuation-span" class="toggle">Editor Punctuation</span>
+           </label>
+         </div>
+      </div>
+    </div>
+
+    <div class="row" class="options-menu" id="row2">
+      <div class="col-3" id="jump">
         <div class="input-group mb-3">
           <div class="input-group-prepend">
             <label class="input-group-text" for="jump-select">Go To Legend Episode</label>
