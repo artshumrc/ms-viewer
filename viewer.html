@@ -94,10 +94,11 @@
         display:inline;
       }
 
-      /**Removing space above and below foliation **/
+      /** No space above and below foliation; beginning hidden **/
       tei-cb {
         margin-top:0px;
         margin-bottom:0px;
+        display: none;
       }
     </style>
 
@@ -439,14 +440,32 @@
 
     //Function to toggle foliation
     $("input[name='foliation-toggle'").change(function(){
-      $(".page-break").toggle();
       options.foliation = $(this).is(":checked");
+      if(options.foliation){
+        if(options.linebeginnings){
+          $("tei-cb").css("display", "block");
+        } else {
+          $("tei-cb").css("display", "inline");
+        }
+      } else {
+        $("tei-cb").hide();
+      }
     });
 
     //Function to toggle line beginnings
     $("input[name='linebeginnings-toggle'").change(function(){
-      $("tei-lb").toggle();
       options.linebeginnings = $(this).is(":checked");
+      if(options.linebeginnings){
+        $("tei-lb").show();
+        if(options.foliation){
+          $("tei-cb").css("display", "block");
+        }
+      } else {
+        $("tei-lb").hide();
+        if(options.foliation){
+          $("tei-cb").css("display", "inline");
+        }
+      }
     });
 
     //Function to toggle punctuation

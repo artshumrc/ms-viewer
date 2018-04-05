@@ -52,7 +52,6 @@ tei-choice > tei-expan:after{
 }
 .page-break {
   color:grey;
-  display:none;
 }
 
 tei-cb::before {
