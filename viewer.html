@@ -38,7 +38,7 @@
         display: block;
         text-align: center;
       }
-      /**Cole add **/
+
       tei-del {
         text-decoration: line-through;
       }
@@ -61,12 +61,10 @@
         display: none;
       }
       /**Remove ( and ) around editor punctuation**/
-      tei-pc > tei-choice > tei-reg::before {
+      tei-pc > tei-choice > tei-reg::before, tei-pc > tei-choice > tei-reg::after, tei-choice > tei-reg::before, tei-choice > tei-reg::after {
         content: none !important;
       }
-      tei-pc > tei-choice > tei-reg::after {
-        content: none !important;
-      }
+
       /** Default: editor punctuation shown, hide orig **/
       tei-pc > tei-choice > tei-orig {
         display:none;
@@ -102,6 +100,9 @@
       }
       tei-pc::before {
         content: none;
+      }
+      tei-head {
+        font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
       }
     </style>
 
@@ -387,15 +388,14 @@
         addFoliation(ms_el);
 
         $(ms_el + " tei-lb").toggle(); //Start off manuscripts with line beginnings off
-        //if(ms_el == "#N"){
-        //  console.log($(ms_el)[0]);
-        //}
-        //Fix weird hard carriage returns - costly run
+
+        //Fix weird hard carriage returns - costly to run this regex
         //var s = $(ms_el).html();
         //var s2 = s.replace(/<\/tei-choice>[\s][\n\r\s\t]+</g,'</tei-choice><');
+        //var s2 = s.replace(/>[\n\r\s\t]+</g,'><');
         //$(ms_el).html(s2);
         //$(ms_el).html(s.replace(/[\n\r]+/g, " "));
-        console.log($(ms_el));
+        //console.log($(ms_el));
       });
     }
 
