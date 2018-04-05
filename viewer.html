@@ -100,6 +100,9 @@
         margin-bottom:0px;
         display: none;
       }
+      tei-pc::before {
+        content: none;
+      }
     </style>
 
   </head>
@@ -154,33 +157,28 @@
          </div>
       </div>
 
-      <div class="col-2" id="linebeginnings" checked>
+      <div class="col-2" id="linebeginnings">
         <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
            <label>
                <input type="checkbox" name="linebeginnings-toggle"><span id="linebeginnings-toggle-span" class="toggle">Line Beginnings</span>
            </label>
          </div>
       </div>
+
       <div class="col-2" id="punctuation">
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-          <label class="btn btn-secondary active">
-            <input type="radio" name="punctuation" id="editor-punctuation" autocomplete="off" checked> Editor Punct
-          </label>
-          <label class="btn btn-secondary">
-            <input type="radio" name="punctuation" id="original-punctuation" autocomplete="off"> Orig Punct
-          </label>
-        </div>
+        <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
+           <label>
+               <input type="checkbox" name="editor-punctuation-toggle" checked><span id="editor-punctuation-span" class="toggle">Editor Punctuation</span>
+           </label>
+         </div>
       </div>
 
       <div class="col-2" id="capitalization">
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-          <label class="btn btn-secondary active">
-            <input type="radio" name="capitalization" id="editor-capitalization" autocomplete="off" checked> Editor Cap
-          </label>
-          <label class="btn btn-secondary">
-            <input type="radio" name="capitalization" id="original-capitalization" autocomplete="off"> Orig Cap
-          </label>
-        </div>
+        <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
+           <label>
+               <input type="checkbox" name="editor-capitalization-toggle" checked><span id="editor-capitalization-span" class="toggle">Editor Capitalization</span>
+           </label>
+         </div>
       </div>
 
     </div>
@@ -389,6 +387,15 @@
         addFoliation(ms_el);
 
         $(ms_el + " tei-lb").toggle(); //Start off manuscripts with line beginnings off
+        //if(ms_el == "#N"){
+        //  console.log($(ms_el)[0]);
+        //}
+        //Fix weird hard carriage returns - costly run
+        //var s = $(ms_el).html();
+        //var s2 = s.replace(/<\/tei-choice>[\s][\n\r\s\t]+</g,'</tei-choice><');
+        //$(ms_el).html(s2);
+        //$(ms_el).html(s.replace(/[\n\r]+/g, " "));
+        console.log($(ms_el));
       });
     }
 
@@ -469,10 +476,10 @@
     });
 
     //Function to toggle punctuation
-    $("input[name='punctuation'").change(function(){
-      var editor_punctuation = $(this)[0].id.indexOf("editor") > -1;
-      options.editor_punctuation == editor_punctuation;
-      if(editor_punctuation){
+    $("input[name='editor-punctuation-toggle'").change(function(){
+      options.editor_punctuation = $(this).is(":checked");
+      console.log($(this).is(":checked"));
+      if(options.editor_punctuation){
         $("tei-pc[resp='editor']").show();
         $("tei-pc[source='manuscript']").hide();
         $("tei-pc > tei-choice > tei-reg[resp='editor'][type='punct']").show();
@@ -486,10 +493,9 @@
     });
 
     //Function to toggle capitalization
-    $("input[name='capitalization'").change(function(){
-      var editor_capitalization = $(this)[0].id.indexOf("editor") > -1;
-      options.editor_capitalization == editor_capitalization;
-      if(editor_capitalization){
+    $("input[name='editor-capitalization-toggle'").change(function(){
+      options.editor_capitalization = $(this).is(":checked");
+      if(options.editor_capitalization){
         $("tei-choice > tei-reg[resp='editor'][type='capit']").show();
         $("tei-choice > tei-orig").hide();
       } else {

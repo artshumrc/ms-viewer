@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?
+   <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+            <pb edRef="#S" facs="#S_350r"/>
+         <ab xml:id="legend_title" rend="rubr"><lb facs="#S_350r_a_1"/>Die bekeronge der selicher <name type="person"
+               nymRef="Mary_Magdalene">
+            <choice>
+                  <abbr>
+                     <choice>
+                        <orig>m</orig>
+                        <reg resp="editor" type="capit">M</reg>
+                     </choice>arie&#x305;</abbr>
+                  <expan>Marien</expan>
+               </choice>
+            <lb facs="#S_350r_a_2"/><choice>
+                  <choice>
+                     <orig>m</orig>
+                     <reg resp="editor" type="capit">M</reg>
+                  </choice><abbr>agdalene&#x305;</abbr>
+                  <expan>agdalenen</expan>
+            </choice></name> ist geschehet<pc resp="editor">,</pc> als die le<lb facs="#S_350r_a_3"/>rer schrybent<pc resp="editor">,</pc> vff den
+               <choice>
+                  <abbr>irste&#x305;</abbr>
+                  <expan>irsten</expan>
+               </choice> dags des mertze<pc resp="editor">.</pc></ab>
+            <ab xml:id="genealogy">
+               <lb facs="#S_350r_a_4"/><name type="person" nymRef="Mary_Magdalene"><hi rend="init_lombard">M</hi>aria
+                  <choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agdalena</name> <lb facs="#S_350r_a_5"/>was <choice><abbr>geborre&#x305;</abbr><expan>geborren</expan></choice>
+               van <choice><abbr>ey&#x305;</abbr><expan>eym</expan></choice> edelen <lb facs="#S_350r_a_6"/>stame vnd eirlichem geslecht der stait
+               <lb facs="#S_350r_a_7"/><choice><abbr>va&#x305;</abbr><expan>van</expan></choice> <name type="place" nymRef="Jerusalem">
+               <choice><abbr>jhrlm&#834;</abbr><expan>Jherusalem</expan></choice></name><pc resp="editor">.</pc>
+               <choice><orig>y</orig><reg type="capit" resp="editor">Y</reg></choice>re vader hieße <name
+                  type="person" nymRef="Syrus"><choice><orig>c</orig><reg type="capit" resp="editor">C</reg></choice>ierus</name> vnd <lb facs="#S_350r_a_8"/>jre moder <name type="person"
+                     nymRef="Eucharia"><choice><orig>enttkaria</orig><corr><supplied resp="editor">Euckaria</supplied></corr></choice></name><pc resp="editor">,</pc>
+               vnd sy <choice><abbr>hatte&#x305;</abbr><expan>haitten</expan></choice> zwe <lb facs="#S_350r_a_9"/>dochter
+               vnd <choice><abbr>eyne&#x305;</abbr><expan>eynen</expan></choice> sone<pc resp="editor">.</pc> Die eyne doch<lb facs="#S_350r_a_10"/>ter hieße
+            <name type="person"
+               nymRef="Martha">Martha</name> <choice><abbr>vn&#x305;</abbr><expan>vnd</expan></choice> die ander <name type="person"
+                  nymRef="Mary_Magdalene"><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria</name><pc resp="editor">.</pc>
+               <lb facs="#S_350r_a_11"/><choice><orig>d</orig><reg type="capit" resp="editor">D</reg></choice>er sone hieße <name
+                  type="person" nymRef="Lazarus"><choice><orig>l</orig><reg type="capit" resp="editor">L</reg></choice>azarus</name> vnd er was <lb facs="#S_350r_a_12"/>der<pc resp="editor">,</pc>
+               wylcher vnser here vff erwecket <lb facs="#S_350r_a_13"/>van dem dode<pc resp="editor">,</pc> da er vyer dage
+               doit <lb facs="#S_350r_a_14"/>jn dem grabe hait <choice><abbr>gelege&#x305;</abbr><expan>gelegen</expan></choice><pc resp="editor">.</pc></ab>
+         <ab xml:id="heritage"> Na dem <lb facs="#S_350r_a_15"/>dode yrer <choice><abbr>aldere&#x305;</abbr><expan>alderen</expan></choice> <choice><abbr>deylte&#x305;</abbr><expan>deylten</expan></choice>
+            die kynder yr <lb facs="#S_350r_a_16"/><choice><orig>jre</orig><corr type="repit" resp="editor"></corr></choice>vederliches erbe<pc resp="editor">.</pc>
+            <name type="person" nymRef="Lazarus"><choice><orig>l</orig><reg type="capit" resp="editor">L</reg></choice>azarus</name>
+            <choice><abbr><orig>n&#x305;ame</orig><corr resp="editor">nam&#x305;e</corr></abbr><expan>namme</expan></choice>
+            <choice><abbr>ey&#x305;</abbr><expan>eyn</expan></choice> <lb facs="#S_350r_a_17"/>groiße deylle yn der stait
+            <choice><abbr>va&#x305;</abbr><expan>van</expan></choice>
+            <name type="place" nymRef="Jerusalem"><choice><abbr>jhrlm&#834;</abbr><expan>Jherusalem</expan></choice></name> <lb facs="#S_350r_a_18"/>vnd er ubet sich yn
+            rytterschaifft<pc resp="editor">,</pc> <choice><abbr>wa&#x305;t</abbr><expan>want</expan></choice> <lb facs="#S_350r_a_19"/>er was
+            <choice><abbr>ey&#x305;</abbr><expan>eyn</expan></choice> rytter<pc resp="editor">.</pc>
+            <name type="person" nymRef="Martha">Martha</name> gelobet<pc resp="editor">,</pc>
+               <pb edRef="#S" facs="#S_350v"/><lb facs="#S_350v_a_1"/> got zo <choice><abbr>dyene&#x305;</abbr><expan>dyenen</expan></choice>
+            yn reynicheit<pc resp="editor">.</pc> <choice><orig>vnd</orig><reg type="capit" resp="editor">Vnd</reg></choice>
+            sie
+               <choice>
+               <orig></orig>
+                  <corr><app><lem type="conjecture-supplied"><supplied resp="editor" source="N B1 D">wart</supplied></lem>
+                     <rdg wit="N" corresp="#N">word</rdg><rdg wit="B1" corresp="#B1">word</rdg><rdg wit="D" corresp="D">word</rdg></app></corr>
+               </choice> <lb facs="#S_350v_a_2"/>eyne <choice><abbr>wyrttynne&#x305;</abbr><expan>wyrttynnen</expan></choice> vnd herbrycht die
+               <lb facs="#S_350v_a_3"/>pylger<pc resp="editor">,</pc> vnd
+            <choice><abbr>sonderlichn&#x305;</abbr><expan>sonderlichen</expan></choice> vmb yrs hail<lb facs="#S_350v_a_4"/>gen lebens
+            <choice><abbr>wille&#x305;</abbr><expan>willen</expan></choice> was sie wirdiche <lb facs="#S_350v_a_5"/>zo
+            <choice><abbr>herbryge&#x305;</abbr><expan>herbrygen</expan></choice>
+            <choice><abbr>vnsere&#x305;</abbr><expan>vnseren</expan></choice> <choice><abbr>lyebn&#x305;</abbr><expan>lyeben</expan></choice>
+            <choice><abbr>here&#x305;</abbr><expan>heren</expan></choice>
+            <name type="person" nymRef="Jesus_Christ"><choice><abbr>jhm&#834; <lb facs="#S_350v_a_6"/>xp&#834;m</abbr><expan>Jhesum Christum</expan></choice></name>
+            <choice><orig>Vnd</orig><reg type="capit" resp="editor">vnd</reg></choice> syne lyebe
+            moder <name type="person" nymRef="Virgin_Mary"><choice><orig>maria</orig><reg type="capit" resp="editor">Maria</reg></choice></name>
+            <lb facs="#S_350v_a_7"/><choice><abbr>vn&#x305;</abbr><expan>vnd</expan></choice> die heilgen <choice><abbr>apostele&#x305;</abbr><expan>apostelen</expan></choice>
+            <pc resp="editor">.</pc> Vnd yre deyl <lb facs="#S_350v_a_8"/>was das <choice><abbr>stetgy&#x305;</abbr><expan>stetgyn</expan></choice>
+            <choice><abbr>va&#x305;</abbr><expan>van</expan></choice> <name type="place"
+               nymRef="Bethany"><choice><abbr>bethanye&#x305;</abbr><expan>Bethanyen</expan></choice></name> gelegen <lb facs="#S_350v_a_9"/>by
+            <name type="place" nymRef="Jerusalem"
+                     ><choice><abbr>jhrlm&#834;</abbr><expan>Jherusalem</expan></choice></name><pc resp="editor">.</pc>
+            <choice><orig>vnd</orig><reg type="capit" resp="editor">Vnd</reg></choice> was yre vber <choice><abbr>verlyebn&#x305;</abbr><expan>verlyeben</expan></choice> <lb facs="#S_350v_a_10"/>van yrer
+            <choice><abbr>rente&#x305;</abbr><expan>renten</expan></choice><pc resp="editor">,</pc> das gaiffe sie den
+            <choice><abbr>ar<lb facs="#S_350v_a_11"/>me&#x305;</abbr><expan>armen</expan></choice> vmb got<pc resp="editor"
+               >.</pc>
+            <name type="person" nymRef="Mary_Magdalene">Maria</name>
+            <choice><abbr><orig>n&#x305;ame</orig><corr resp="editor">nam&#x305;e</corr></abbr><expan>namme</expan></choice> zo yrem <lb facs="#S_350v_a_12"/>deylle das sloiße
+            <choice><abbr>geheißn&#x305;</abbr><expan>geheißen</expan></choice>
+            <name type="place" subtype="residence" nymRef="Magdalum"><choice><abbr>magdalu&#x305;</abbr><expan>Magdalum</expan></choice></name>
+            <lb facs="#S_350v_a_13"/><choice><abbr>vn&#x305;</abbr><expan>vnd</expan></choice> da
+            <choice><abbr>va&#x305;</abbr><expan>van</expan></choice> wart yre der <choice><abbr>name&#x305;</abbr><expan>namen</expan></choice>
+            <choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>ag<lb facs="#S_350v_a_14"/>dalena <choice><abbr>gegebe&#x305;</abbr><expan>gegeben</expan></choice><pc resp="editor">.</pc></ab>
+            <ab xml:id="MaryMagdalene_mismanagement">
+               Alle yre gut vnd <lb facs="#S_350v_a_15"/><choice><abbr>rentte&#x305;</abbr><expan>rentten</expan></choice> bracht sie zo yn
+            <choice><abbr>groiße&#x305;</abbr><expan>groißen</expan></choice>
+               <choice><abbr>sunde&#x305;</abbr><expan>sunden</expan></choice> <lb facs="#S_350v_a_16"/>myt boißer geselschaifft<pc resp="editor">.</pc>
+            <choice><abbr>vn&#x305;</abbr><expan>Vnd</expan></choice> die
+               <choice><abbr>boiße&#x305;</abbr><expan>boißen</expan></choice> <lb facs="#S_350v_a_17"/>geist
+            <choice><abbr>brachte&#x305;</abbr><expan>brachten</expan></choice> sie zo falle durch yren
+               <lb facs="#S_350v_a_18"/><choice><abbr>boiße&#x305;</abbr><expan>boißen</expan></choice> <choice><abbr>wille&#x305;</abbr><expan>willen</expan></choice>
+            <choice><abbr>vn&#x305;</abbr><expan>vnd</expan></choice> <choice><abbr>ma&#x305;chueldige</abbr><expan>manchueldige</expan></choice>
+               sunden<pc resp="editor">:</pc> <lb facs="#S_350v_a_19"/><choice><orig>Zo</orig><reg type="capit" resp="editor">zo</reg></choice> dem <choice>
+               <abbr>irste&#x305;</abbr>
+               <expan>irsten</expan>
+            </choice> mail yn hoifferdicheit<pc resp="editor"
+               >,</pc>
+               <pb edRef="#S" facs="#S_351r"/> <lb facs="#S_351r_a_1"/>want sie was also houerdich van
+               <lb facs="#S_351r_a_12"/><choice><abbr>hertze&#x305;</abbr><expan>hertzen</expan></choice><pc resp="editor">,</pc> das
+            <choice>
+            <orig></orig>
+               <corr><app><lem type="conjecture-supplied"><supplied resp="editor" source="B1">yr</supplied></lem><rdg wit="B1" corresp="#B1_">yr</rdg></app></corr>
+            </choice> duchte<pc resp="editor">,</pc> das <choice><abbr>nyema&#x305;tz</abbr><expan>nyemantz</expan></choice>
+               <choice><abbr>ge<lb facs="#S_351r_a_3"/>lyche&#x305;</abbr><expan>gelychen</expan></choice> were
+               yn suberlicheit yn edel<lb facs="#S_351r_a_4"/>heit vnd yn rychheit<pc resp="editor">.</pc> Auch was sie <lb/>also
+            houerdich yn den <choice><abbr>wortte&#x305;</abbr><expan>wortten</expan></choice> vnd
+            <choice><abbr>wercke&#x305;</abbr><expan>wercken</expan></choice> myt
+               <lb facs="#S_351r_a_5"/><choice><abbr>cleytdere&#x305;</abbr><expan>cleytderen</expan></choice> vnd myt zyert<lb facs="#S_351r_a_6"/>heit yrs lychams<pc
+                  resp="editor">.</pc> Sie was auch sere <lb facs="#S_351r_a_7"/>gyrich yn <choice><abbr>tzijtliche&#x305;</abbr><expan>tzijtlichen</expan></choice>
+            <choice><abbr>dynge&#x305;</abbr><expan>dyngen</expan></choice><pc resp="editor"
+               >:</pc> gut<pc resp="editor">,</pc> ere <lb facs="#S_351r_a_8"/>vnd woilluste der werelt<pc resp="editor"
+                  >.</pc> Auch <lb facs="#S_351r_a_9"/>was sie vnkusche myt <choice><abbr>wortte&#x305;</abbr><expan>wortten</expan></choice> vnd <lb facs="#S_351r_a_10"/>myt
+            <choice><abbr>wercke&#x305;</abbr><expan>wercken</expan></choice><pc resp="editor">,</pc>
+               also <choice><abbr>dz</abbr><expan>daz</expan></choice> sie yre gut ge<lb facs="#S_351r_a_11"/>ruchte vnd
+            <choice><abbr>yre&#x305;</abbr><expan>yren</expan></choice> eygen
+               <choice><abbr>name&#x305;</abbr><expan>namen</expan></choice> verlo<lb facs="#S_351r_a_12"/>re<pc resp="editor">,</pc> vnd
+            auch also <choice><abbr>swerliche&#x305;</abbr><expan>swerlichen</expan></choice><pc resp="editor">,</pc>
+               <choice><abbr>dz</abbr><expan>daz</expan></choice> sie <lb facs="#S_351r_a_13"/>eyne vffenbair
+            <choice><abbr>sundersche&#x305;</abbr><expan>sunderschen</expan></choice> wart
+               <lb facs="#S_351r_a_14"/><choice><abbr>geheiße&#x305;</abbr><expan>geheißen</expan></choice><pc resp="editor">,</pc>
+               <choice><orig>Als</orig><reg type="capit" resp="editor">als</reg></choice> vns saget der
+               <choice><abbr>Ewa&#x305;<lb facs="#S_351r_a_15"/>gelysta</abbr><expan>ewan<lb facs="#S_351r_a_16"/>gelysta</expan></choice> <name type="person"
+               nymRef="Luke">
+                  <choice>
+                     <abbr>sc&#x305;s</abbr>
+                     <expan>Sanctus</expan>
+                  </choice> <choice><orig>l</orig><reg type="capit" resp="editor">L</reg></choice>ucas</name><pc resp="editor">,</pc>
+            <choice><abbr>wa&#x305;t</abbr><expan>want</expan></choice> sie sundiget
+               <lb facs="#S_351r_a_17"/><choice><abbr>swerlichn&#x305;</abbr><expan>swerlichen</expan></choice> myt
+            <choice><abbr>yre&#x305;</abbr><expan>yrem</expan></choice> gesicht
+               <choice><abbr>vn&#x305;</abbr><expan>vnd</expan></choice> myt <pb edRef="#S" facs="#S_351v"/> <lb facs="#S_351v_a_1"/>handelonge der
+            vngelicher
+            <choice>
+               <abbr>p&#42833;sone&#x305;</abbr>
+               <expan>personen</expan>
+            </choice><pc resp="editor">.</pc> <lb facs="#S_351v_a_2"/>Aber yre lyebe suster <name type="person"
+               nymRef="Martha">Martha</name> cla<lb facs="#S_351v_a_3"/>get daz
+            <choice><abbr>lebn&#x305;</abbr><expan>leben</expan>
+            </choice> yrer suster der <name type="person" nymRef="Virgin_Mary">moder <lb facs="#S_351v_a_4"/><choice><abbr>xp&#834;i</abbr><expan>Christi</expan></choice>
+            </name> myt <choice><abbr>schryende&#x305;</abbr><expan>schryenden</expan></choice>
+               <choice><abbr>auge&#x305;</abbr><expan>augen</expan></choice> vnd bayt <lb facs="#S_351v_a_5"/>sie<pc
+                     resp="editor">,</pc> <choice><abbr>dz</abbr><expan>daz</expan></choice> sye
+            <name type="person" nymRef="Jesus_Christ"><choice><abbr>xp&#834;m</abbr><expan>Christum</expan></choice></name>
+            wolde vor sie beden<pc resp="editor">.</pc> </ab>
+            <ab xml:id="Martha_confronts_Mary">
+               <lb facs="#S_351v_a_6"/>Der lerer <name type="person" nymRef="Pseudo_Isidore">Ysiderus</name>, der dyeße
+            <choice><abbr>lebn&#x305;</abbr><expan>leben</expan></choice>
+               <lb facs="#S_351v_a_7"/><choice><abbr>beschrebn&#x305;</abbr><expan>beschreben</expan></choice>
+            haitte yn <choice><abbr>de&#x305;</abbr><expan>dem</expan></choice>
+               buche<pc resp="editor">,</pc> das <lb facs="#S_351v_a_8"/>da ist <choice><abbr>geheiße&#x305;</abbr><expan>geheißen</expan></choice>
+            das buche <choice><abbr>va&#x305;</abbr><expan>van</expan></choice>
+               dem <lb facs="#S_351v_a_9"/>dode der <choice><abbr>heilge&#x305;</abbr><expan>heilgen</expan></choice><pc resp="editor">,</pc>
+               sprache also<pc resp="editor">,</pc> <choice><orig>D</orig><reg type="capit" resp="editor">d</reg></choice>as
+               <lb facs="#S_351v_a_10"/>dyeße <choice><abbr>sustere&#x305;</abbr><expan>susteren</expan></choice>
+            <choice><abbr>quame&#x305;</abbr><expan>quamen</expan></choice>
+            <choice><abbr>zosame&#x305;</abbr><expan>zosamen</expan></choice>
+               zo <name type="place" nymRef="Bethany"><choice><abbr>be<lb facs="#S_351v_a_11"/>thanie&#x305;</abbr><expan>Be<lb facs="#S_351v_a_11"/>thanien</expan></choice></name>
+               vnd <name type="person" nymRef="Mary_Magdalene">Maria <choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agdalena</name>
+               ge<lb facs="#S_351v_a_12"/>gynck <choice><abbr>sytze&#x305;</abbr><expan>sytzen</expan></choice>
+               vor <choice><abbr>eyne&#x305;</abbr><expan>eynen</expan></choice> spegel vnd sie <lb facs="#S_351v_a_13"/>flichet
+               yre schones haire vnd sie <lb facs="#S_351v_a_14"/>zieret <choice><abbr>yre&#x305;</abbr><expan>yren</expan></choice> lycham<pc
+               resp="editor">.</pc> Da sprache zo <lb facs="#S_351v_a_15"/>yre <name type="person" nymRef="Martha"
+               >Martha</name><pc resp="editor">,</pc> yre suster<pc resp="editor">,</pc> myt
+               clegeli<lb facs="#S_351v_a_16"/>cher <choice><abbr>styme&#x305;</abbr><expan>stymmen</expan></choice><pc resp="editor">:</pc>
+               <pc resp="editor">"</pc><choice><orig>a</orig><reg type="capit" resp="editor">A</reg></choice>lso zierestu dich na
+               <choice><abbr>de&#x305;</abbr><expan>dem</expan></choice> <lb facs="#S_351v_a_17"/>flesche <choice><abbr>vn&#x305;</abbr><expan>vnd</expan></choice>
+               dyne schone sele<pc resp="editor">,</pc> die da <lb facs="#S_351v_a_18"/><choice><abbr>geschaiffn&#x305;</abbr><expan>geschaiffen</expan></choice>
+            ist na <choice><abbr>de&#x305;</abbr><expan>dem</expan></choice> bylde godes<pc resp="editor">,</pc>
+               <pb edRef="#S" facs="#S_352r"/> <lb facs="#S_352r_a_1"/>befleckestu myt <choice><abbr>dyne&#x305;</abbr><expan>dynen</expan></choice>
+            <choice><abbr>groiße&#x305;</abbr><expan>groißen</expan></choice> sunden<pc resp="editor"
+               >.</pc> <lb facs="#S_352r_a_2"/>Jch <choice><abbr>bede&#x305;</abbr><expan>beden</expan></choice> dich<pc resp="editor">,</pc>
+            lyebe suster<pc resp="editor">,</pc>
+               gedencke<pc resp="editor">,</pc> <lb facs="#S_352r_a_3"/>das <choice><abbr>dy&#x305;</abbr><expan>dyn</expan></choice>
+               lycham hait schult van der selen<pc resp="editor">,</pc> <lb facs="#S_352r_a_4"/><choice><abbr>vn&#x305;</abbr><expan>vnd</expan></choice>
+               gedencke<pc resp="editor">,</pc> das dyne schone lycham<pc resp="editor">,</pc> <lb facs="#S_352r_a_5"/><choice><orig>D</orig><reg type="capit" resp="editor">d</reg></choice>
+               en du zyerst myt gultde vnd myt <lb facs="#S_352r_a_6"/>sylber<pc resp="editor">,</pc>
+            das der selbe saille <choice><abbr>werde&#x305;</abbr><expan>werden</expan></choice>
+               <choice><abbr>ey&#x305;</abbr><expan>eyn</expan></choice> <lb facs="#S_352r_a_7"/><choice><orig><choice><abbr>ey&#x305;</abbr><expan>eyn</expan></choice></orig><corr resp="editor"></corr></choice> spyße der worme<pc resp="editor">.</pc><pc resp="editor">"</pc>
+               Da antwert <lb facs="#S_352r_a_8"/><name type="person" nymRef="Mary_Magdalene">Maria</name> vnd
+            sprach<pc resp="editor">:</pc><pc resp="editor">"</pc><choice><abbr>My&#x305;</abbr><expan>Myn</expan></choice>
+            <choice><abbr>vßerkore&#x305;</abbr><expan>vßerkoren</expan></choice> <choice><abbr>sust'</abbr><expan>suster</expan></choice><pc resp="editor">,</pc>
+               <lb facs="#S_352r_a_9"/>na dem das ich so suberlich byn an dem <lb facs="#S_352r_a_10"/>lycham vnd yn rycheit
+               dyeßer werelt<pc resp="editor">,</pc> <lb facs="#S_352r_a_11"/>so <choice><abbr>bede&#x305;</abbr><expan>beden</expan></choice>
+               ich dich<pc resp="editor">,</pc> syst zofreden vnd <lb facs="#S_352r_a_12"/>laiße mych <choice><abbr>my&#x305;</abbr><expan>myn</expan></choice>
+               gut verzeren myt freu<lb facs="#S_352r_a_13"/>den vnd myt den <choice><abbr>lyebhauere&#x305;</abbr><expan>lyebhaueren</expan></choice> dyeßer
+            <choice>
+               <orig></orig>
+               <corr><app><lem type="conjecture-supplied"><supplied resp="editor" source="B1 N K1 D">werelt</supplied></lem>
+                  <rdg wit="B1" corresp="#B1">word</rdg><rdg wit="N" corresp="#N">word</rdg><rdg wit="K1" corresp="#K1">word</rdg><rdg wit="D" corresp="#D">word</rdg></app></corr>
+            </choice><pc resp="editor">.</pc> <lb facs="#S_352r_a_14"/>Vnd laiße vns nu&#878; froeliche <choice><abbr>syn&#x305;e</abbr><expan>synne</expan></choice>
+               myt <lb facs="#S_352r_a_15"/><choice><abbr>ey&#x305;ander</abbr><expan>eynander</expan></choice><pc resp="editor">,</pc> wer weyße wie lange<pc resp="editor">.</pc>
+            <pc resp="editor">"</pc> </ab>
+         <ab xml:id="MaryMagdalene_lovers">Des <lb facs="#S_352r_a_16"/><choice><abbr>andere&#x305;</abbr><expan>anderen</expan></choice> dags zoge <name type="person"
+            nymRef="Mary_Magdalene">Maria</name> zo huyße vnd <lb facs="#S_352r_a_17"/><name type="person" nymRef="Martha"
+               >Martha</name> schreye aller bytterlichs<pc resp="editor">,</pc> das <lb facs="#S_352r_a_18"/>jre suster also
+            wyllte was<pc resp="editor">.</pc> <choice><orig>d</orig><reg type="capit" resp="editor">D</reg></choice>ar na vber <pb edRef="#S" facs="#S_352v"/> <lb facs="#S_352v_a_1"/>zweyn
+            mande <choice><abbr>haitte&#x305;</abbr><expan>haitten</expan></choice> die
+            <choice><abbr>jongere&#x305;</abbr><expan>jongeren</expan></choice> <lb facs="#S_352v_a_2"/><choice><abbr>vn&#x305;</abbr><expan>van</expan></choice>
+            <name type="place" nymRef="Constantinople"><choice><abbr> co&#x305;stantin'</abbr><expan>Constantinopel</expan></choice></name>
+            <choice><abbr>yre&#x305;</abbr><expan>yren</expan></choice> hoiffe zo
+            <name type="place" nymRef="Jerusalem"><choice><abbr>jhrlm&#834;</abbr><expan>Jherusalem</expan></choice></name>
+            <choice><abbr>vn&#x305;</abbr><expan>vnd</expan></choice> <lb facs="#S_352v_a_3"/><choice><abbr>ware&#x305;</abbr><expan>waren</expan></choice>
+            da froelich<pc resp="editor">.</pc> Vnd dar zo wart <lb facs="#S_352v_a_4"/>auch
+            <choice><abbr>geroiffn&#x305;</abbr><expan>geroiffen</expan></choice>
+            <name type="person" nymRef="Mary_Magdalene">Maria <choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agdalena</name><pc resp="editor">.</pc>
+            <lb facs="#S_352v_a_5"/>Vnd sye <choice><abbr>qua&#x305;</abbr><expan>quam</expan></choice> auch dar myt groißer <lb facs="#S_352v_a_6"/>koistlicheit vnd zyerheit yres
+            <choice><abbr>lycha&#x305;s</abbr><expan>lychams</expan></choice> <lb facs="#S_352v_a_7"/>als <choice><abbr>ey&#x305;</abbr><expan>eyn</expan></choice>
+            lyebhaues dyeßer werelt<pc resp="editor">.</pc> <choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd <lb facs="#S_352v_a_8"/>sy
+            <choice><abbr>spronge&#x305;</abbr><expan>sprongen</expan></choice> vnd
+            <choice><abbr>dantzte&#x305;</abbr><expan>dantzten</expan></choice> zweyn dage <lb facs="#S_352v_a_9"/>vnd zwe
+            <choice><abbr>nachtte&#x305;</abbr><expan>nachtten</expan></choice><pc resp="editor">,</pc> also das sie nauwe die
+            <lb facs="#S_352v_a_10"/>spyße <choice><abbr>neme&#x305;</abbr><expan>nemen</expan></choice>
+            <choice><abbr>moichte&#x305;</abbr><expan>moichten</expan></choice> van groißer <lb facs="#S_352v_a_11"/>froelicheit vnd wyltdicheit<pc resp="editor">.</pc></ab>
+            <ab xml:id="market_scene">
+               <choice><orig>Ja</orig><corr resp="editor">Da</corr></choice> zo <lb facs="#S_352v_a_12"/>dyeßer zijt vername yre suster<pc resp="editor">,</pc> das <lb facs="#S_352v_a_13"/>vnser lyeber
+            herre <name type="person" nymRef="Jesus_Christ"><choice><abbr>jhu&#834;s xp&#834;s</abbr><expan>Jhesus Christus</expan></choice></name>
+            was yn <choice><abbr>de&#x305;</abbr><expan>dem</expan></choice>
+               <lb facs="#S_352v_a_14"/><choice><abbr>galyleeschn&#x305;</abbr><expan>galyleeschen</expan></choice>
+               lantde vnd er wultde zo yre <lb facs="#S_352v_a_15"/><choice><abbr>kome&#x305;</abbr><expan>komen</expan></choice> yn <name type="place" nymRef="Bethany"
+               ><choice><abbr>bethanye&#x305;</abbr><expan>Bethanyen</expan></choice></name><pc resp="editor">.</pc>
+            Da gynge <name type="person"
+               nymRef="Martha"><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>artha</name> <lb facs="#S_352v_a_16"/>vnd <name type="person" nymRef="Martilla"
+                  ><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>arttylla</name><pc resp="editor">,</pc> yre mayt<pc resp="editor">,</pc> des
+               morgens <lb facs="#S_352v_a_17"/>froe zo <name type="place" nymRef="Jerusalem"><choice><abbr>jhrlm&#834;</abbr><expan>Jherusalem</expan></choice></name> zo
+            <choice><abbr>kauffn&#x305;</abbr><expan>kauffen</expan></choice> spyße
+               vor <choice><abbr>de&#x305;</abbr><expan>den</expan></choice> <lb facs="#S_352v_a_18"/>heren<pc resp="editor">.</pc> Vnd als <name type="person" nymRef="Martha"
+                  ><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>artha</name> gynge vber <pb edRef="#S" facs="#S_353r"/> <lb facs="#S_353r_a_1"/>den
+            <choice><orig>martte</orig><corr resp="editor">markte</corr></choice><pc resp="editor"
+                  >,</pc> da <choice><abbr>qua&#x305;</abbr><expan>quam</expan></choice> <choice><abbr>va&#x305;</abbr><expan>van</expan></choice>
+               dem rayt huyß <lb facs="#S_353r_a_2"/>myt pyffen vnd <choice><abbr>besune&#x305;</abbr><expan>besunen</expan></choice> <name type="person"
+                  nymRef="Mary_Magdalene">Maria <choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agda<lb facs="#S_353r_a_3"/>lena</name> varen yn dem reye myt groißer
+               <lb facs="#S_353r_a_4"/>houerdicheit<pc resp="editor">.</pc> Da sache Martilla<pc resp="editor">,</pc> das
+               <lb facs="#S_353r_a_5"/><name type="person" nymRef="Mary_Magdalene"><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria
+                  <choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agdalena</name> geleyt wart yn
+               gro<lb facs="#S_353r_a_6"/>ißer eren vnd froelicheit<pc resp="editor">.</pc> Da sprache <lb facs="#S_353r_a_7"/>sy zo yrer
+            <choice><abbr>frauwe&#x305;</abbr><expan>frauwen</expan></choice> <name
+               type="person" nymRef="Martha">Martha</name><pc resp="editor">:</pc>
+               <pc resp="editor">"</pc>Sehet vmb <lb facs="#S_353r_a_8"/>uch<pc resp="editor">!</pc><pc resp="editor">"</pc>
+               <choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd als sie yre suster ersache<pc resp="editor">,</pc>
+               da wart <lb facs="#S_353r_a_9"/>sie <choice><abbr>bytterlichn&#x305;</abbr><expan>bytterlichen</expan></choice>
+            <choice><abbr>schrye&#x305;</abbr><expan>schryen</expan></choice><pc resp="editor">,</pc>
+               vnd sie wande yre <lb facs="#S_353r_a_10"/>hende <choice><abbr>zosame&#x305;</abbr><expan>zosamen</expan></choice> vnd sprache
+               <choice><abbr>ynwe&#x305;diche</abbr><expan>ynwendiche</expan></choice> <lb facs="#S_353r_a_11"/>jn yrem
+            <choice><abbr>hertze&#x305;</abbr><expan>hertzen</expan></choice><pc resp="editor">:</pc>
+            <pc resp="editor">"</pc>Ach got<pc resp="editor">,</pc> <choice><abbr>my&#x305;</abbr><expan>myn</expan></choice> here vnd
+               <lb facs="#S_353r_a_12"/><choice><abbr>my&#x305;</abbr><expan>myn</expan></choice> schepper<pc
+               resp="editor">,</pc> wee mych<pc resp="editor">,</pc> mych duncket<pc resp="editor"
+                  >,</pc> <lb facs="#S_353r_a_13"/>das <choice><abbr>my&#x305;</abbr><expan>myn</expan></choice> suster gedynt hait den boißen
+               <lb facs="#S_353r_a_14"/><choice><abbr>geiste&#x305;</abbr><expan>geisten</expan></choice><pc resp="editor">.</pc>
+            <choice><abbr>nochtan&#x305;t</abbr><expan>Nochtant</expan></choice> <choice><abbr>bede&#x305;</abbr><expan>beden</expan></choice>
+               ich dich<pc resp="editor">,</pc> dastu sie <lb facs="#S_353r_a_15"/>wullest <choice><abbr>ansehn&#x305;</abbr><expan>ansehen</expan></choice> myt
+            <choice><abbr>dyne&#x305;</abbr><expan>dynen</expan></choice>
+               <choice><abbr>barmhertz<lb facs="#S_353r_a_16"/>ichn&#x305;</abbr><expan>barmhertz<lb facs="#S_353r_a_16"/>ichen</expan></choice>
+            <choice><abbr>auge&#x305;</abbr><expan>augen</expan></choice><pc resp="editor">.</pc>
+               <choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd gyffe yre <choice><abbr>eyne&#x305;</abbr><expan>eynen</expan></choice>
+               anderen <lb facs="#S_353r_a_17"/>synne<pc resp="editor">,</pc> <choice><orig>A</orig><reg type="capit" resp="editor">a</reg></choice>lso
+            <choice><abbr>dz</abbr><expan>daz</expan></choice> sie beßer yre
+            <choice><abbr>lebn&#x305;</abbr><expan>leben</expan></choice><pc resp="editor">.</pc><pc
+               resp="editor">"</pc> Vnd <lb facs="#S_353r_a_18"/>also myt <choice><abbr>bedu&#x305;ge</abbr><expan>bedunge</expan></choice>
+               verleyffe <name type="person" nymRef="Martha">Martha</name><pb edRef="#S" facs="#S_353v"/> <lb facs="#S_353v_a_1"/>stayn vnd sy beytdet
+            yrer suster <name type="person" nymRef="Mary_Magdalene">Maria</name><pc resp="editor"
+               >.</pc> <lb facs="#S_353v_a_2"/><choice><abbr>Vn&#x305;</abbr><expan>Vnd</expan></choice> da
+               <name type="person" nymRef="Mary_Magdalene"><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria</name> naer quame zo
+               yrer su<lb facs="#S_353v_a_3"/>ster<pc resp="editor">,</pc> da sprach sie <name type="person" nymRef="Martha">Martha</name> zo
+               <choice><abbr>vn&#x305;</abbr><expan>vnd</expan></choice> fragt <lb facs="#S_353v_a_4"/>sie<pc resp="editor">,</pc> wie iß werre<pc resp="editor"
+                  >,</pc> das sie also froe yn die <lb facs="#S_353v_a_5"/>stait wultde gayn<pc resp="editor">.</pc>
+            <name type="person" nymRef="Martha">Martha</name><pc resp="editor">,</pc> die heilge
+               <lb facs="#S_353v_a_6"/>jonffrauwe<pc resp="editor">,</pc> myt groißer oitmodicheit <lb facs="#S_353v_a_7"/>antwert sy yrer suster
+               <choice><orig>V</orig><reg type="capit" resp="editor">v</reg></choice>nd sprach<pc resp="editor">,</pc>
+               daz <lb facs="#S_353v_a_8"/>sie dar vmb dar <choice><abbr>kome&#x305;</abbr><expan>komen</expan></choice>
+               were zo <choice><abbr>keuffn&#x305;</abbr><expan>keuffen</expan></choice> die <lb facs="#S_353v_a_9"/>spyße
+            <choice><abbr>yre&#x305;</abbr><expan>yren</expan></choice>
+            <choice><abbr>geste&#x305;</abbr><expan>gesten</expan></choice><pc resp="editor">.</pc> Vff die zijt
+               <choice><abbr>ey&#x305;</abbr><expan>eyn</expan></choice> haitten <lb facs="#S_353v_a_10"/>die zwe
+            <choice><abbr>sustere&#x305;</abbr><expan>susteren</expan></choice> nyt vyl
+               wort myt <choice><abbr>ey&#x305;<lb facs="#S_353v_a_11"/>ander</abbr><expan>eyn<lb facs="#S_353v_a_11"/>ander</expan></choice>
+            vmb des volcks <choice><abbr>wylle&#x305;</abbr><expan>wyllen</expan></choice>
+               <pc resp="editor">,</pc> das dar by <lb facs="#S_353v_a_12"/>stontde<pc
+                  resp="editor">.</pc> Aber <name type="person" nymRef="Mary_Magdalene"><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria</name>
+            sprache myt <choice><abbr>eyne&#x305;</abbr><expan>eynem</expan></choice>
+               <lb facs="#S_353v_a_13"/><choice><abbr>lachende&#x305;</abbr><expan>lachenden</expan></choice> montde<pc resp="editor">:</pc>
+               <pc resp="editor">"</pc><choice><orig>l</orig><reg type="capit" resp="editor">L</reg></choice>yebe suster<pc resp="editor">,</pc>
+               keuffe <lb facs="#S_353v_a_14"/>auch etwes vor mych<pc resp="editor">.</pc>
+               <choice><orig>i</orig><reg type="capit" resp="editor">J</reg></choice>ch wylle zo dyr
+               <lb facs="#S_353v_a_15"/><choice><abbr>kome&#x305;</abbr><expan>komen</expan></choice> vnd myt dyr essen<pc
+                  resp="editor">.</pc><pc resp="editor">"</pc> <choice><orig>h</orig><reg type="capit" resp="editor">H</reg></choice>er
+               <choice><abbr>va&#x305;</abbr><expan>van</expan></choice> sprecht <lb facs="#S_353v_a_16"/>der heilge lerer <name
+                  type="person" nymRef="Augustine"><choice>
+                     <abbr>Sc&#x305;s</abbr>
+                     <expan>Sanctus</expan>
+                  </choice> <choice><orig>a</orig><reg type="capit" resp="editor">A</reg></choice>ugustinus</name><pc resp="editor">,</pc>
+               <choice><orig>D</orig><reg type="capit" resp="editor">d</reg></choice>as
+               <lb facs="#S_353v_a_17"/><name type="person" nymRef="Mary_Magdalene"><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria</name> alle die dage yres lebens
+               nye beß<lb facs="#S_353v_a_18"/>er spyße aße dan vff die tzijt<pc resp="editor">,</pc>
+            <choice><abbr>wa&#x305;t</abbr><expan>want</expan></choice> da<pb edRef="#S"
+               facs="#S_354r"/> <lb facs="#S_354r_a_1"/>wart sie bekert <choice><abbr>va&#x305;</abbr><expan>van</expan></choice>
+            <choice><abbr>yre&#x305;</abbr><expan>yrem</expan></choice>
+            <choice><abbr>sundige&#x305;</abbr><expan>sundigen</expan></choice> leben<pc resp="editor">.</pc></ab>
+         <ab xml:id="Mary_at_Marthas_house"><lb facs="#S_354r_a_2"/>Des
+            <choice><abbr>andere&#x305;</abbr><expan>anderen</expan></choice> dags
+            <choice><abbr>va&#x305;</abbr><expan>van</expan></choice> groißer modicht
+            <lb facs="#S_354r_a_3"/><choice><abbr>wege&#x305;</abbr><expan>wegen</expan></choice> gynge <name type="person" nymRef="Mary_Magdalene"
+               >Maria</name> <choice><abbr>heymelichn&#x305;</abbr><expan>heymelichen</expan></choice> vßer <lb facs="#S_354r_a_4"/><name type="place" nymRef="Jerusalem"
+                  ><choice><abbr>jhrlm&#834;</abbr><expan>Jherusalem</expan></choice></name> vnd
+            <choice><abbr>qua&#x305;me</abbr><expan>quamme</expan></choice> zo <name type="person" nymRef="Martha">Martha</name>
+            yrer suster <lb facs="#S_354r_a_5"/>huße zo <name type="place" nymRef="Bethany"><choice><orig>b</orig><reg type="capit" resp="editor">B</reg></choice>ethanya</name><pc resp="editor"
+               >,</pc> <choice><orig>D</orig><reg type="capit" resp="editor">d</reg></choice>ie sie sere lyeblich <lb facs="#S_354r_a_6"/>entphynge myt groißer frolicheit vnd <lb facs="#S_354r_a_7"/>hyeße nyeder
+            <choice><abbr>sytze&#x305;</abbr><expan>sytzen</expan></choice><pc resp="editor">.</pc> Da sprache <name type="person" nymRef="Mary_Magdalene"
+               >Maria</name><pc resp="editor">:</pc>
+            <lb facs="#S_354r_a_8"/><pc resp="editor">"</pc><choice><orig>a</orig><reg type="capit" resp="editor">A</reg></choice>ch suster<pc resp="editor">,</pc> das doyt myr sere noyt vnd
+            be<lb facs="#S_354r_a_9"/>darffe iß gar woil<pc resp="editor">,</pc> das ich ruwe<pc resp="editor">,</pc>
+            <choice><abbr>wa&#x305;t</abbr><expan>want</expan></choice>
+            ich <lb facs="#S_354r_a_10"/><choice><abbr>hay&#x305;</abbr><expan>hayn</expan></choice> zweyn gantzer dage vnd zwe nacht
+            <lb facs="#S_354r_a_11"/><choice><abbr>gespronge&#x305;</abbr><expan>gesprongen</expan></choice> vnd gedantzet<pc resp="editor"
+               >.</pc> <choice><abbr>vn&#x305;</abbr><expan>Vnd</expan></choice> ich
+            <choice><abbr>by&#x305;</abbr><expan>byn</expan></choice> gantze <lb facs="#S_354r_a_12"/>froelich gewest myt den
+            <choice><abbr>Jongere&#x305;</abbr><expan>jongeren</expan></choice>
+            <choice><abbr>va&#x305;</abbr><expan>van</expan></choice> <name type="place"
+               nymRef="Jerusalem"><choice><abbr>jhr<lb facs="#S_354r_a_13"/>lem</abbr><expan>Jherusa<lb facs="#S_354r_a_13"/>lem</expan></choice>
+            </name><pc resp="editor">.</pc> Vnd ich <choice><abbr>ey&#x305;</abbr><expan>eyn</expan></choice>
+            <choice><abbr>by&#x305;</abbr><expan>byn</expan></choice> nye <choice><orig>yn alle yn alle&#x305;</orig><corr type="repit" resp="editor">yn allen</corr></choice>
+            den <lb facs="#S_354r_a_14"/><choice><abbr>dage&#x305;</abbr><expan>dagen</expan></choice> <choice><abbr>my&#x305;s</abbr><expan>myns</expan></choice>
+            lebens vff <choice><abbr>ey&#x305;</abbr><expan>eyn</expan></choice> tzijt also froelich <lb facs="#S_354r_a_15"/>gewest als da<pc resp="editor"
+               >.</pc> Vnd ich <choice><abbr>hay&#x305;</abbr><expan>hayn</expan></choice> die gantze <lb facs="#S_354r_a_16"/>stait
+            <choice><abbr>va&#x305;</abbr><expan>van</expan></choice> <name type="place" nymRef="Jerusalem"
+                  ><choice><abbr>jhrlm&#834;</abbr><expan>Jherusalem</expan></choice></name>
+            froeliche gemacht<pc resp="editor">.</pc><pc resp="editor">"</pc>
+            <choice><orig>r</orig><reg type="capit" resp="editor">R</reg></choice>echt <lb facs="#S_354r_a_17"/>abe sy <choice><abbr>sprechn&#x305;</abbr><expan>sprechen</expan></choice>
+            wultde<pc resp="editor">:</pc>
+            <pc resp="editor">"</pc>Nu <choice><abbr>ey&#x305;</abbr><expan>eyn</expan></choice> dantzen
+            <pb edRef="#S" facs="#S_354v"/><lb facs="#S_354v_a_1"/>ich <choice><abbr>nu&#x305;merme</abbr><expan>nummerme</expan></choice><pc
+               resp="editor">.</pc><pc resp="editor">"</pc> Dar vff antwert <name type="person"
+                  nymRef="Martha"><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>ar<lb facs="#S_354v_a_2"/>tha</name><pc resp="editor">,</pc>
+            die heilge jonffrauwe<pc resp="editor">,</pc> yrer suster <lb facs="#S_354v_a_3"/>vnd sprache zo yr<pc resp="editor">:</pc>
+            <pc resp="editor">"</pc><choice><orig>l</orig><reg type="capit" resp="editor">L</reg></choice>yebe suster<pc resp="editor">,</pc>
+            na dem <choice><abbr>dz</abbr><expan>daz</expan></choice> <lb facs="#S_354v_a_4"/>jre also
+            froelich syt gewest<pc resp="editor">,</pc> haittet yr <lb facs="#S_354v_a_5"/>auch den
+            <choice><abbr>kony&#x305;ck</abbr><expan>konynck</expan></choice> by vch<pc
+               resp="editor">,</pc> der alle <choice><abbr>hertze&#x305;</abbr><expan>hertzen</expan></choice>
+            <lb facs="#S_354v_a_6"/>froelich macht<pc resp="editor">,</pc> <choice><abbr>vn&#x305;</abbr><expan>vnd</expan></choice> der
+            da aller suber<lb facs="#S_354v_a_7"/>lichst ist vber alle <choice><abbr>kony&#x305;ck</abbr><expan>konynck</expan></choice>
+            <pc resp="editor">?</pc><pc resp="editor">"</pc> Da ant<lb facs="#S_354v_a_8"/>wert yre <name type="person" nymRef="Mary_Magdalene">Maria</name><pc
+               resp="editor">:</pc>
+            <pc resp="editor">"</pc>Myt vns <choice><abbr>ey&#x305;</abbr><expan>eyn</expan></choice>
+            waren <lb facs="#S_354v_a_9"/><choice><abbr>key&#x305;ne</abbr><expan>keynne</expan></choice>
+            <choice><abbr>kony&#x305;ck</abbr><expan>konynck</expan></choice><pc resp="editor">.</pc> Wenne
+            meynestu<pc resp="editor">,</pc> <choice><abbr>de&#x305;</abbr><expan>den</expan></choice> keyß<lb facs="#S_354v_a_10"/>er
+            <name type="person" role="emperor" nymRef="Tiberius"><choice><orig>t</orig><reg type="capit" resp="editor">T</reg></choice>yberius</name>
+            <pc resp="editor">?</pc><pc resp="editor">"</pc>
+            <name type="person" nymRef="Martha">Martha</name> sprach<pc resp="editor">:</pc>
+            <pc resp="editor">"</pc><choice><orig>ich</orig><reg type="capit" resp="editor">Jch</reg></choice> eyn
+            <lb facs="#S_354v_a_11"/><choice><abbr>meyne&#x305;</abbr><expan>meynen</expan></choice> nyt <name type="person" role="emperor"
+               nymRef="Tiberius"><choice><orig>t</orig><reg type="capit" resp="editor">T</reg></choice>yberi</name><pc resp="editor">,</pc>
+            der da ist <choice><abbr>ey&#x305;</abbr><expan>eyn</expan></choice> <choice><abbr>kony&#x305;ck</abbr><expan>konynck</expan></choice> <lb facs="#S_354v_a_12"/>der
+            <choice><abbr>men&#x305;schn&#x305;</abbr><expan>menschen</expan></choice><pc resp="editor">,</pc>
+            <choice><orig>S</orig><reg type="capit" resp="editor">s</reg></choice>onder ich <choice><abbr>meyne&#x305;</abbr><expan>meynen</expan></choice>
+            den <lb facs="#S_354v_a_13"/><choice><abbr>kony&#x305;ck</abbr><expan>konynck</expan></choice>
+            aller <choice><abbr>kony&#x305;ck</abbr><expan>konynck</expan></choice><pc resp="editor">,</pc>
+            <choice><orig>D</orig><reg type="capit" resp="editor">d</reg></choice>er da ist eyn <lb facs="#S_354v_a_14"/>rychter vber hemelrych vnd ertrich<pc
+               resp="editor">.</pc> <lb facs="#S_354v_a_15"/>Vnd der selbe ist <choice><abbr>ey&#x305;</abbr><expan>eyn</expan></choice>
+            erloißer der <name type="org" subtype="religion" nymRef="children_of_Israel">kyn<lb facs="#S_354v_a_16"/>der <choice><abbr>va&#x305;</abbr><expan>van</expan></choice>
+               <name type="place" nymRef="Israel"><choice><orig>israhel</orig><reg type="capit" resp="editor">Israhel</reg></choice></name></name> vnd er hait an yme <lb facs="#S_354v_a_17"/>alle die
+            suberlicheit alle der gantzer <pb edRef="#S" facs="#S_355r"/><lb facs="#S_355r_a_1"/>werelt<pc resp="editor"
+               >.</pc> Vnd syne vader ist got vnd <lb facs="#S_355r_a_2"/>syne moder ist eyne reyne jonffrau<lb facs="#S_355r_a_3"/>we<pc
+                  resp="editor">,</pc> die <choice><abbr>gebore&#x305;</abbr><expan>geboren</expan></choice> ist
+               <choice><abbr>va&#x305;</abbr><expan>van</expan></choice>
+               <name type="org" subtype="religion" nymRef="tribe_of_David">
+                  <choice><abbr>kony&#x305;ckliche&#x305;</abbr><expan>konyncklichem</expan></choice>
+                  <lb facs="#S_355r_a_4"/><choice><abbr>sta&#x305;me</abbr><expan>stamme</expan></choice>
+                  <choice>
+                     <orig>d</orig>
+                     <reg type="capit" resp="editor">D</reg>
+                  </choice>avitz</name><pc resp="editor">.</pc><pc resp="editor">"</pc>
+               Da fraget <name type="person" nymRef="Mary_Magdalene">
+                  <choice>
+                     <orig>m</orig>
+                     <reg type="capit" resp="editor">M</reg></choice>aria</name>
+            nach <lb facs="#S_355r_a_5"/>den <choice><abbr>lyebhabere&#x305;</abbr><expan>lyebhaberen</expan></choice> der werelt
+            <choice><abbr>vn&#x305;</abbr><expan>vnd</expan></choice> sprach <lb facs="#S_355r_a_6"/>also<pc resp="editor">:</pc>
+            <pc resp="editor">"</pc><choice><orig>a</orig><reg type="capit" resp="editor">A</reg></choice>ch lyebe suster<pc resp="editor">,</pc> sage myr<pc
+               resp="editor">,</pc> des be<lb facs="#S_355r_a_7"/>den ich dich<pc resp="editor">,</pc> wo ist dyeßer
+               <choice><abbr>kony&#x305;ck</abbr><expan>konynck</expan></choice><pc resp="editor">?</pc>
+            <choice><orig>i</orig><reg type="capit" resp="editor">J</reg></choice>st <lb facs="#S_355r_a_8"/>er also suberlich<pc resp="editor">,</pc> so
+            wylle ich yn myt <choice><abbr>my<lb facs="#S_355r_a_9"/>ne&#x305;</abbr><expan>my<lb facs="#S_355r_a_9"/>nem</expan></choice>
+               gelde vnd <choice>
+                  <orig></orig>
+                  <corr><app><lem type="conjecture-supplied"><supplied resp="editor" source="B1 N K1">goide</supplied></lem>
+                     <rdg wit="B1" corresp="#B1">word</rdg><rdg wit="N" corresp="#N">word</rdg><rdg wit="K1" corresp="#K1">word</rdg></app></corr>
+               </choice>
+               zo myr <choice><abbr>neme&#x305;</abbr><expan>nemen</expan></choice> zo
+               <choice><abbr>myne&#x305;</abbr><expan>mynem</expan></choice>
+            <lb facs="#S_355r_a_10"/><choice><abbr>lyebn&#x305;</abbr><expan>lyeben</expan></choice><pc resp="editor">,</pc>
+               vnd ich wylle <choice><abbr>sy&#x305;ne</abbr><expan>synne</expan></choice> fruntschaifft
+            <lb facs="#S_355r_a_11"/><choice><abbr>erkryege&#x305;</abbr><expan>erkryegen</expan></choice><pc resp="editor"
+               >.</pc><pc resp="editor">"</pc>
+               <name type="person" nymRef="Martha">Martha</name> antwert yre
+            <choice><abbr>vn&#x305;</abbr><expan>vnd</expan></choice> <lb facs="#S_355r_a_12"/>sprach<pc resp="editor">:</pc>
+            <pc resp="editor">"</pc><choice><orig>a</orig><reg type="capit" resp="editor">A</reg></choice>ller lyebste suster<pc resp="editor">,</pc>
+               den <choice><abbr>kony&#x305;ck</abbr><expan>konynck</expan></choice><pc resp="editor">,</pc>
+            <lb facs="#S_355r_a_13"/>den ich <choice><abbr>meyne&#x305;</abbr><expan>meynen</expan></choice>
+               <pc resp="editor">,</pc> daz ist <choice><abbr>my&#x305;</abbr><expan>myn</expan></choice>
+               lyeber here
+            <lb facs="#S_355r_a_14"/><name type="person" nymRef="Jesus_Christ"><choice><abbr>jhu&#834;s xp&#834;s</abbr><expan>Jhesus Christus</expan></choice>
+               </name><pc resp="editor">,</pc> der da ist <choice><abbr>ey&#x305;</abbr><expan>eyn</expan></choice>
+            meyster der <lb facs="#S_355r_a_15"/>selen<pc resp="editor">.</pc><pc resp="editor">"</pc>
+            <choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd myt den <choice><abbr>wortte&#x305;</abbr><expan>wortten</expan></choice>
+            wart <name type="person" nymRef="Martha"><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>artha</name>
+            <lb facs="#S_355r_a_16"/>beweget myt <choice><abbr>schrye&#x305;</abbr><expan>schryen</expan></choice><pc resp="editor">,</pc>
+            <choice><orig>D</orig><reg type="capit" resp="editor">d</reg></choice>ar vmb das <lb facs="#S_355r_a_17"/><name type="person"
+               nymRef="Mary_Magdalene"><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria</name>
+               dyße nyt <choice><abbr>ey&#x305;</abbr><expan>eyn</expan></choice> verstonde geistlich<pc resp="editor">,</pc>
+            <lb facs="#S_355r_a_18"/><choice>
+               <orig><damage agent="cut" degree="illegible"></damage></orig>
+               <corr ><supplied resp="editor">so</supplied></corr>
+            </choice>nder fleyßelich<pc resp="editor">.</pc> Da <name type="person"
+               nymRef="Mary_Magdalene"><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria</name> sach<pc resp="editor">,</pc>
+            daz <pb edRef="#S" facs="#S_355v"/><lb facs="#S_355v_a_1"/>jre suster schreye<pc resp="editor">,</pc>
+            <choice><orig>D</orig><reg type="capit" resp="editor">d</reg></choice>a fraget sie <lb facs="#S_355v_a_2"/>jre lyebe
+            suster vnd sprache<pc resp="editor">:</pc>
+            <pc resp="editor">"</pc><choice><orig>l</orig><reg type="capit" resp="editor">L</reg></choice>yebe <lb facs="#S_355v_a_3"/>suster<pc resp="editor">,</pc> war umb schryet yre alle
+            zijt<pc resp="editor">,</pc> <lb facs="#S_355v_a_4"/>als ich zo vch <choice><abbr>kome&#x305;</abbr><expan>komen</expan></choice>
+               <pc resp="editor">?</pc>
+            <choice><orig>i</orig><reg type="capit" resp="editor">J</reg></choice>st das <choice><abbr>my&#x305;</abbr><expan>myn</expan></choice>
+            schult<pc resp="editor">,</pc> <lb facs="#S_355v_a_5"/>so saget myr das selbe<pc resp="editor">,</pc> so
+            wille ich <lb facs="#S_355v_a_6"/>nyt me here <choice><abbr>kome&#x305;</abbr><expan>komen</expan></choice><pc resp="editor">.</pc><pc resp="editor">"</pc>
+            Da sprache sie <lb facs="#S_355v_a_7"/>zo yre<pc resp="editor">:</pc>
+            <pc resp="editor">"</pc>Ach lyebe suster<pc resp="editor">,</pc> ich mach woille
+            <lb facs="#S_355v_a_8"/><choice><abbr>schrye&#x305;</abbr><expan>schryen</expan></choice><pc resp="editor">,</pc>
+               <choice><abbr>wa&#x305;t</abbr><expan>want</expan></choice>
+               ich <choice><abbr>hoire&#x305;</abbr><expan>hoiren</expan></choice> alle tzijte<pc resp="editor">,</pc>
+            dastu <lb facs="#S_355v_a_9"/>dyne geru&#878;cht<pc resp="editor">,</pc> das da beßer ist dan <lb facs="#S_355v_a_10"/>gult vnd
+            sylber<pc resp="editor">,</pc> das haistu verloren<pc resp="editor">.</pc> Vnd <lb facs="#S_355v_a_11"/>dyne
+               geselschaifft <choice><abbr>ey&#x305;</abbr><expan>eyn</expan></choice>
+            ist nyt gut vnd du <lb facs="#S_355v_a_12"/>befleckest dyne schone sele myt dynen <lb facs="#S_355v_a_13"/>groißen
+               <choice><abbr>sunde&#x305;</abbr><expan>sunden</expan></choice><pc resp="editor">.</pc>
+            Vnd also moiße ich dyne <lb facs="#S_355v_a_14"/>boiße gerucht allezijt
+               <choice><abbr>hoire&#x305;</abbr><expan>hoiren</expan></choice>
+               <pc resp="editor">,</pc> wo ich <lb facs="#S_355v_a_15"/>hyn <choice><abbr>kome&#x305;</abbr><expan>komen</expan></choice>
+               <pc resp="editor">.</pc><pc resp="editor">"</pc> <name type="person"
+                  nymRef="Mary_Magdalene">Magdalena</name> <choice><abbr>ey&#x305;</abbr><expan>eyn</expan></choice>
+            konde sich <lb facs="#S_355v_a_16"/>nyt langer <choice><abbr>enthalde&#x305;</abbr><expan>enthalden</expan></choice><pc resp="editor"
+               >,</pc> da sy <name type="person" nymRef="Martha"><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>artha</name> <lb facs="#S_355v_a_17"/>sache
+               <choice><abbr>schrye&#x305;</abbr><expan>schryen</expan></choice><pc resp="editor">.</pc>
+            Da sprache sie myt <choice><abbr>schry<lb facs="#S_355v_a_18"/>ende&#x305;</abbr><expan>schry<lb/>enden</expan></choice>
+               <choice><abbr>auge&#x305;</abbr><expan>augen</expan></choice><pc resp="editor">:</pc>
+               <pc resp="editor">"</pc>Ach lyebe suster<pc resp="editor">,</pc> iß ist
+               <choice>
+                  <orig><damage agent="loss"></damage></orig>
+                  <corr resp="editor"><pc resp="editor">…</pc><pc resp="editor">"</pc></corr>
+               </choice></ab>
+      </body>
+   </text>
+</TEI>

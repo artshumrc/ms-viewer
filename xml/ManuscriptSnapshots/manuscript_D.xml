@@ -15,7 +15,7 @@
       <editionStmt>
         <edition>
           <title>Mary Magdalene Conversion Legend - Digital Edition</title>
-          <date when="2018-01-26">January 26, 2018</date>
+          <date when="2018-01-26">August 25, 2017</date>
         </edition>
       </editionStmt>
       <publicationStmt>
@@ -45,1790 +45,1540 @@
   </teiHeader>
   <text>
     <body>
-        <pb edRef="#D" facs="#D_230r"/>
-        <cb edRef="#D" facs="#D_230r-a"/>
-        <ab xml:id="legend_title"/>Dit is de bekeirunge sante
-        <lb/><name type="person" nymRef="Mary_Magdalene"><hi rend="init_lombard">M</hi>arien
+        <pb edRef="#D" facs="#D_230r" n="fol.230r"/>
+        <cb edRef="#D" facs="#D_230r_a" n="fol.230ra"/>
+        <ab xml:id="legend_title">
+        <lb edRef="#D" facs="#D_230r_a_1"/>Dit is de bekeirunge sante<metamark source="manuscript" type="stroke" function="line_filler">-</metamark>
+        <lb edRef="#D" facs="#D_230r_a_2"/><name type="person" nymRef="Mary_Magdalene"><hi rend="init_lombard">M</hi>arien 
         <choice>
           <orig>m</orig>
-          <corr resp="editor">M</corr>
-        </choice>agdalenen</name> der viur<metamark function="line_break">-</metamark>
-        <lb/>yger
-        <choice><abbr>vrundy<am>&#x305;</am>ne<am>&#x305;</am></abbr>
-          <expan>vrydy<ex>n</ex>nen</expan></choice> gotz<pc resp="editor">.</pc>
-        <lb/><ab xml:id="genealogy"/><name type="person" nymRef="Mary_Magdalene" rend = "underline"><hi rend="init_lombard">M</hi>aria
+          <reg type="capit" resp="editor">M</reg></choice>agdalenen</name> der viur<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_230r_a_3"/>yger 
+        <choice>
+          <abbr>vrund<am>y&#772;</am>n<am>e&#772;</am></abbr>
+          <expan>vrydy<ex>n</ex>ne<ex>n</ex></expan></choice> gotz<pc resp="editor">.</pc></ab>
+          <app from="#D_230r_a_01_01" to="#D_230r_a_03_02">
+            <rdg wit="#B1_legend_title">Dyt is dat leven der seliger Marien Magdalenen</rdg>
+            <rdg wit="#B2_legend_title">Hijr beghijnt de bekeringhe Sunte Marien Magdalenen</rdg>
+            <rdg wit="#K1_legend_title">Her begynt die bekeirunge Sanck Maria Magdalena der helger vruntynen uns lieuen heren</rdg>
+            <rdg wit="#K2_legend_title">Her nach volgt eyn schoene hystori von der hilger ionfferen Maria Magdalena</rdg>
+            <rdg wit="#N_legend_title">Dit is die bekeirynge sent Marien Magdalena als Ysiderus beschryfft</rdg>
+            <rdg wit="#S_legend_title">Die bekeronge der selicher Marien Magdalenen ist geschehet, als die lerer schrybent, vff den irsten dags des mertze</rdg>
+          </app>
+        <lb edRef="#D" facs="#D_230r_a_4"/><ab xml:id="genealogy"/><name type="person" nymRef="Mary_Magdalene" rend = "underline"><hi rend="init_lombard">M</hi>aria 
         <choice>
           <orig>m</orig>
-          <corr resp="editor">M</corr>
-        </choice>a<damage degree="low">gd</damage>alena</name>
-        <lb/>was geboren van
-        <lb/>edelem stamme jnd
-        <lb/>van eirlichem geslechte der stat
-        <lb/>Jherusalem<pc resp="editor">.</pc> Jr vader heischs <name type="person" nymRef="Syrus">Cir<metamark function="line_break">-</metamark>
-        <lb/>i<damage degree="medium">us</damage></name><pc resp="editor">.</pc> <damage degree="medium">Jr</damage> <damage degree="low">mod</damage>er heischs <name type="person" nymRef="Eucharia">Eukaria</name><pc resp="editor">,</pc> de
-        <lb/>hadden tzwae dochter<pc resp="editor">.</pc> De eyne
-        <lb/>heisch <name type="person" nymRef="Martha" rend="underline">Martha</name><pc resp="editor">.</pc> De ander heisch
-        <lb/><name type="person" nymRef="Mary_Magdalene">Maria</name><pc resp="editor">.</pc> Jnd sy hadden eynen son
-        <lb/>der heisch <name type = "person" nymRef="Lazarus" rend="underline">
+          <reg type="capit" resp="editor">M</reg></choice>a<damage degree="low">gd</damage>alena</name>
+        <lb edRef="#D" facs="#D_230r_a_5"/>was geboren van
+        <lb edRef="#D" facs="#D_230r_a_6"/>edelem stamme jnd
+        <lb edRef="#D" facs="#D_230r_a_7"/>van eirlichem geslechte der stat
+        <lb edRef="#D" facs="#D_230r_a_8"/>Jherusalem<pc resp="editor">.</pc> Jr vader heischs <name type="person" nymRef="Syrus">Cir<metamark source="manuscript" type="hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_230r_a_9"/>i<damage degree="medium">us</damage></name><pc resp="editor">.</pc> <damage degree="medium">Jr</damage> <damage degree="low">mod</damage>er heischs <name type="person" nymRef="Eucharia">Eukaria</name><pc resp="editor">,</pc> de
+        <lb edRef="#D" facs="#D_230r_a_10"/>hadden tzwae dochter<pc resp="editor">.</pc> De eyne
+        <lb edRef="#D" facs="#D_230r_a_11"/>heisch <name type="person" nymRef="Martha" rend="underline">Martha</name><pc resp="editor">.</pc> De ander heisch
+        <lb edRef="#D" facs="#D_230r_a_12"/><name type="person" nymRef="Mary_Magdalene">Maria</name><pc resp="editor">.</pc> Jnd sy hadden eynen son
+        <lb edRef="#D" facs="#D_230r_a_13"/>der heisch <name type = "person" nymRef="Lazarus" rend="underline">
           <choice>
             <orig>l</orig>
-            <corr>L</corr></choice>azarius</name><pc resp="editor">,</pc> jnd der
+            <reg type="capit" resp="editor">L</reg></choice>azarius</name><pc resp="editor">,</pc> jnd der 
         <choice>
-          <abbr>de<am>&#x305;</am></abbr>
-          <expan>den</expan>
-        </choice>
-        <lb/>vnse lieue here verweckde
+          <abbr>d<am>e&#772;</am></abbr>
+          <expan>de<ex>n</ex></expan></choice>
+        <lb edRef="#D" facs="#D_230r_a_14"/>vnse lieue here verweckde 
         <choice>
-          <abbr>va<am>&#x305;</am></abbr>
-          <expan>van</expan>
+          <abbr>v<am>a&#772;</am></abbr>
+          <expan>va<ex>n</ex></expan>
         </choice>
-        <lb/>dem dode<pc resp="editor">,</pc>
+        <lb edRef="#D" facs="#D_230r_a_15"/>dem dode<pc resp="editor">,</pc> 
         <choice>
           <orig>D</orig>
-          <corr resp="editor">d</corr>
-        </choice>o hei veir dage had<metamark function="line_break">-</metamark>
-        <lb/>de in dem graue doit geweist<pc resp="editor">.</pc>
-        <lb/><ab xml:id="heritage"/>De alderen deilten den kyn<metamark function="line_break">-</metamark>
-        <lb/>deren dat goit vnd ir veder<metamark function="line_break">-</metamark>
-        <lb/>liche erffe<pc resp="editor">.</pc> <name type="person" nymRef="Lazarus" rend="underline">Lazarius</name> nam eyn
-        <lb/>grois deil des goitz
+          <reg type="capit" resp="editor">d</reg>
+        </choice>o hei veir dage had<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_230r_a_16"/>de in dem graue doit geweist<pc resp="editor">.</pc>
+        <lb edRef="#D" facs="#D_230r_a_17"/><ab xml:id="heritage"/>De alderen deilten den kyn<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_230r_a_18"/>deren dat goit vnd ir veder<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_230r_a_19"/>liche erffe<pc resp="editor">.</pc> <name type="person" nymRef="Lazarus" rend="underline">Lazarius</name> nam eyn
+        <lb edRef="#D" facs="#D_230r_a_20"/>grois deil des goitz 
         <choice>
-          <abbr>byn<am>&#x305;</am>en</abbr>
-          <expan>bynnen</expan>
-        </choice>der
-        <lb/>staet <name type="place" nymRef="Jerusalem">Jherusalem</name><pc resp="editor">,</pc> jnd gaff sich
-        <lb/>tzo Ritterschaff<pc resp="editor">.</pc> <name type="person" nymRef="Martha" rend="underline">Martha</name> loiffde<pc resp="editor">,</pc>
-        <lb/>gode dem heren zo deynen in
-        <lb/>Reynicheit
+          <abbr>by<am>n&#772;</am>en</abbr>
+          <expan>byn<ex>n</ex>en</expan></choice> der
+        <lb edRef="#D" facs="#D_230r_a_21"/>staet <name type="place" nymRef="Jerusalem">Jherusalem</name><pc resp="editor">,</pc> jnd gaff sich
+        <lb edRef="#D" facs="#D_230r_a_22"/>tzo Ritterschaff<pc resp="editor">.</pc> <name type="person" nymRef="Martha" rend="underline">Martha</name> loiffde<pc resp="editor">,</pc>
+        <lb edRef="#D" facs="#D_230r_a_23"/>gode dem heren zo deynen in
+        <lb edRef="#D" facs="#D_230r_a_24"/>Reynicheit 
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nde wart eyn her<metamark function="line_break">-</metamark>
-        <lb/>bergerynne der pylgerinme<pc resp="editor">.</pc>
-        <lb/>Jnd sunderlichen vm eires hel<metamark function="line_break">-</metamark>
-        <lb/>gen leuens willen wart sy
-        <lb/>weirdich tzo herberigen
+          <reg type="capit" resp="editor">j</reg></choice>nde wart eyn her<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_230r_a_25"/>bergerynne der pylgerinme<pc resp="editor">.</pc>
+        <lb edRef="#D" facs="#D_230r_a_26"/>Jnd sunderlichen vm eires hel<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_230r_a_27"/>gen leuens willen wart sy
+        <lb edRef="#D" facs="#D_230r_a_28"/>weirdich tzo herberigen 
         <choice>
-          <abbr>vnse<am>&#x305;</am></abbr>
-          <expan>unse<ex>n</ex></expan>
-        </choice>
-        <lb/>heren <name type="person" nymRef="Jesus_Christ" rend="underline">
+          <abbr>vns<am>e&#772;</am></abbr>
+          <expan>unse<ex>n</ex></expan></choice>
+        <lb edRef="#D" facs="#D_230r_a_29"/>heren <name type="person" nymRef="Jesus_Christ" rend="underline"> 
           <choice>
-            <abbr>ih<am>&#x305;</am>m xp<am>&#x305;</am>m</abbr>
-            <expan>Jh<ex>esu</ex>m Ch<ex>ristu</ex>m</expan>
-          </choice></name> ind syn lieue
-        <lb/>moder <name type="person" nymRef= "Virgin_Mary">
+            <abbr>i<am>h&#772;</am>m &#43859;<am>p&#773;</am>m</abbr>
+            <expan>Jh<ex>esu</ex>m Ch<ex>ristu</ex>m</expan></choice></name> ind syn lieue
+        <lb edRef="#D" facs="#D_230r_a_30"/>moder <name type="person" nymRef= "Virgin_Mary">
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>aria</name>
-          <choice>
+            <reg type="capit" resp="editor">M</reg></choice>aria</name> 
+            <choice>
             <orig>J</orig>
-            <corr resp="editor">j</corr>
-          </choice>nde alle de heil<metamark function="line_break">-</metamark>
-        <lb/>ge <hi rend="underline">Apostellen</hi><pc resp="editor">.</pc>
+            <reg type="capit" resp="editor">j</reg></choice>nde alle de heil<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_230r_a_31"/>ge <hi rend="underline">Apostellen</hi><pc resp="editor">.</pc> 
         <choice>
           <orig>v</orig>
-          <corr resp="editor">V</corr>
-        </choice>nde ir deil des
-        <lb/>erffes was dat stetgen <name type="place" nymRef="Bethany">
+          <reg type="capit" resp="editor">V</reg></choice>nde ir deil des
+        <lb edRef="#D" facs="#D_230r_a_32"/>erffes was dat stetgen <name type="place" nymRef="Bethany">
           <choice>
-            <sic>b</sic>
-            <corr resp="editor">B</corr>
-          </choice>etha<metamark function="line_break">-</metamark>
-        <cb edRef="#D" facs="#D_230r-b"/>nia</name> neit verre gelegen van
-        <lb/><name type= "place" nymRef= "Jerusalem">Jherusalem</name><pc resp="editor">.</pc> Jnde wat ir ouer
-        <lb/>leiff van yrem goede<pc resp="editor">,</pc> dat gaff
-        <lb/>sy vmb gotz willen<pc resp="editor">.</pc> <name type="person" nymRef="Mary_Magdalene" rend="underline">Maria</name>
-        <lb/>nam zo yrem d<damage degree="low">ei</damage>ll eyn sloess
-        <lb/>dat heisch <name type="place" subtype="residence" nymRef="magdalum" rend="underline">
-          <choice>
-            <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>agdalon</name><pc resp="editor">.</pc> <ab xml:id="MaryMagdalene_mismanagement"/>Jnde alle
-        <lb/>ir goit ind renten brachte sy
-        <lb/>tzo in groissen
-        <choice>
-          <abbr>sunde<am>&#x305;</am></abbr>
-          <expan>sunde<ex>n</ex></expan>
-        </choice>ind mit
-        <lb/>boeser geselschafft<pc resp="editor">.</pc> Jnd sy heisch
-        <lb/>na dem slosse <name type="person" nymRef="Mary_Magdalene" rend="underline">
+            <orig>b</orig>
+            <reg type="capit" resp="editor">B</reg></choice>etha<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <cb edRef="#D" facs="#D_230r_b" n="fol.230rb"/>
+        <lb edRef="#D" facs="#D_230r_b_1"/>nia</name> neit verre gelegen van
+        <lb edRef="#D" facs="#D_230r_b_2"/><name type= "place" nymRef= "Jerusalem">Jherusalem</name><pc resp="editor">.</pc> Jnde wat ir ouer
+        <lb edRef="#D" facs="#D_230r_b_3"/>leiff van yrem goede<pc resp="editor">,</pc> dat gaff 
+        <lb edRef="#D" facs="#D_230r_b_4"/>sy vmb gotz willen<pc resp="editor">.</pc> <name type="person" nymRef="Mary_Magdalene" rend="underline">Maria</name>
+        <lb edRef="#D" facs="#D_230r_b_5"/>nam zo yrem d<damage degree="low">ei</damage>ll eyn sloess 
+        <lb edRef="#D" facs="#D_230r_b_6"/>dat heisch <name type="place" subtype="residence" nymRef="magdalum" rend="underline">
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>aria
+            <reg type="capit" resp="editor">M</reg></choice>agdalon</name><pc resp="editor">.</pc> <ab xml:id="MaryMagdalene_mismanagement"/>Jnde alle 
+        <lb edRef="#D" facs="#D_230r_b_7"/>ir goit ind renten brachte sy
+        <lb edRef="#D" facs="#D_230r_b_8"/>tzo in groissen 
         <choice>
-          <abbr>magdale<am>&#x305;</am>a</abbr>
+          <abbr>sund<am>e&#772;</am></abbr>
+          <expan>sunde<ex>n</ex></expan></choice>ind mit 
+        <lb edRef="#D" facs="#D_230r_b_9"/>boeser geselschafft<pc resp="editor">.</pc> Jnd sy heisch 
+        <lb edRef="#D" facs="#D_230r_b_10"/>na dem slosse <name type="person" nymRef="Mary_Magdalene" rend="underline">
+          <choice>
+            <orig>m</orig>
+            <reg type="capit" resp="editor">M</reg></choice>aria 
+        <choice>
+          <abbr>magdal<am>e&#772;</am>a</abbr>
           <expan>
             <choice>
               <orig>m</orig>
-              <corr resp="editor">M</corr>
-            </choice>agdale<ex>n</ex>a</expan></choice></name><pc resp="editor">.</pc>
-        <lb/>Jnd de boese geiste inde ir qua<metamark function="line_break">-</metamark>
-        <lb/>de wille brachten sy tzo valle
-        <lb/>in mainche groisse sunde<pc resp="editor">:</pc> Tzo
-        <lb/>dem eirsten jn <damage degree="medium">h</damage>ouerdie<pc resp="editor">,</pc>
+              <reg type="capit" resp="editor">M</reg></choice>agdale<ex>n</ex>a</expan></choice></name><pc resp="editor">.</pc>
+        <lb edRef="#D" facs="#D_230r_b_11"/>Jnd de boese geiste inde ir qua<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark> 
+        <lb edRef="#D" facs="#D_230r_b_12"/>de wille brachten sy tzo valle 
+        <lb edRef="#D" facs="#D_230r_b_13"/>in mainche groisse sunde<pc resp="editor">:</pc> Tzo 
+        <lb edRef="#D" facs="#D_230r_b_14"/>dem eirsten jn <damage degree="medium">h</damage>ouerdie<pc resp="editor">,</pc> 
         <choice>
-          <abbr>wa<am>&#x305;</am>t</abbr>
-          <expan>wa<ex>n</ex>t</expan>
-        </choice>
-        <lb/>sy was a<damage degree="medium">ls</damage>o houerdich ind ho<metamark function="line_break">-</metamark>
-        <lb/>moedich van hertzen<pc resp="editor">,</pc> dat sy
-        <lb/>sich duncken leisse<pc resp="editor">,</pc> dat
+          <abbr>w<am>a&#772;</am>t</abbr>
+          <expan>wa<ex>n</ex>t</expan></choice>
+        <lb edRef="#D" facs="#D_230r_b_15"/>sy was a<damage degree="medium">ls</damage>o houerdich ind ho<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_230r_b_16"/>moedich van hertzen<pc resp="editor">,</pc> dat sy 
+        <lb edRef="#D" facs="#D_230r_b_17"/>sich duncken leisse<pc resp="editor">,</pc> dat 
         <choice>
-          <abbr>nema<am>&#x305;</am>t</abbr>
-          <expan>nema<ex>n</ex>t</expan>
-        </choice>
-        <lb/>yr gelich en weire
+          <abbr>nem<am>a&#772;</am>t</abbr>
+          <expan>nema<ex>n</ex>t</expan></choice>
+        <lb edRef="#D" facs="#D_230r_b_18"/>yr gelich en weire 
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>n schoenhet
-        <lb/>
+          <reg type="capit" resp="editor">j</reg></choice>n schoenhet
+        <lb edRef="#D" facs="#D_230r_b_19"/>
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>n richeit vnd in edelheit<pc resp="editor">.</pc> Sy
-        <lb/>was houerdich van
+          <reg type="capit" resp="editor">j</reg></choice>n richeit vnd in edelheit<pc resp="editor">.</pc> Sy
+        <lb edRef="#D" facs="#D_230r_b_20"/>was houerdich van 
         <choice>
-          <abbr>worde<am>&#x305;</am></abbr>
-          <expan>worde<ex>n</ex></expan>
-        </choice>
-        <lb/>inde in wercken mit
+          <abbr>word<am>e&#772;</am></abbr>
+          <expan>worde<ex>n</ex></expan></choice>
+        <lb edRef="#D" facs="#D_230r_b_21"/>inde in wercken mit 
         <choice>
-          <abbr>cleidere<am>&#x305;</am></abbr>
-          <expan>cleideren</expan>
-        </choice>
-        <lb/>vnde mit zeirheit yrs liues<pc resp="editor">.</pc>
-        <lb/>Sy was ouch girich na tzitlich<metamark function="line_break">-</metamark>
-        <lb/>en dyngen<pc resp="editor">,</pc>
+          <abbr>cleider<am>e&#772;</am></abbr>
+          <expan>cleidere<ex>n</ex></expan></choice> 
+        <lb edRef="#D" facs="#D_230r_b_22"/>vnde mit zeirheit yrs liues<pc resp="editor">.</pc>
+        <lb edRef="#D" facs="#D_230r_b_23"/>Sy was ouch girich na tzitlich<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_230r_b_24"/>en dyngen<pc resp="editor">,</pc> 
         <choice>
           <orig>G</orig>
-          <corr resp="editor">g</corr>
-        </choice>oit<pc resp="editor">,</pc> inde ere ind
-        <lb/>wailluist irs liues<pc resp="editor">,</pc> ind der <damage degree="low">wer</damage><metamark function="line_break">-</metamark>
-        <lb/>elt<pc resp="editor">.</pc> Ouch was sy vnkuisch mit
-        <lb/>worden ind mit wercken<pc resp="editor">,</pc> also
-        <lb/>dat sy ir goede geruichte inde
-        <lb/>yr en eygen
+          <reg type="capit" resp="editor">g</reg></choice>oit<pc resp="editor">,</pc> inde ere ind
+        <lb edRef="#D" facs="#D_230r_b_25"/>wailluist irs liues<pc resp="editor">,</pc> ind der <damage degree="low">wer</damage><metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_230r_b_26"/>elt<pc resp="editor">.</pc> Ouch was sy vnkuisch mit
+        <lb edRef="#D" facs="#D_230r_b_27"/>worden ind mit wercken<pc resp="editor">,</pc> also
+        <lb edRef="#D" facs="#D_230r_b_28"/>dat sy ir goede geruichte inde 
+        <lb edRef="#D" facs="#D_230r_b_29"/>yr en eygen 
         <choice>
-          <abbr><damage degree="low">n</damage>ame<am>&#x305;</am></abbr>
-          <expan>name<ex>n</ex></expan>
-        </choice>verloer
+          <abbr><damage degree="low">n</damage>am<am>e&#772;</am></abbr>
+          <expan>name<ex>n</ex></expan></choice>verloer 
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nd
-        <lb/>wart geheischen de <sic>offenbarr</sic>
-        <lb/>sundersche<pc resp="editor">.</pc> Also vns saget der
-        <lb/><hi rend="underline">Ewangeliste</hi><name type="person" nymRef="Luke" rend="underline">Lucas</name><pc resp="editor">,</pc>
+          <reg type="capit" resp="editor">j</reg></choice>nd 
+        <lb edRef="#D" facs="#D_230r_b_30"/>wart geheischen de <sic>offenbarr</sic>
+        <lb edRef="#D" facs="#D_230r_b_31"/>sundersche<pc resp="editor">.</pc> Also vns saget der 
+        <lb edRef="#D" facs="#D_230r_b_32"/><hi rend="underline">Ewangeliste </hi><name type="person" nymRef="Luke" rend="underline">Lucas</name><pc resp="editor">,</pc> 
         <choice>
           <orig>W</orig>
-          <corr resp="editor">w</corr>
-        </choice>ant sy
-        <pb edRef="#D" facs="#D_231v"/>
-        <cb edRef="#D" facs="#D_231v-b"/>sundichde
+          <reg type="capit" resp="editor">w</reg></choice>ant sy
+        <pb edRef="#D" facs="#D_230v" n="fol.230v"/>
+        <cb edRef="#D" facs="#D_230v_a" n="fol.230va"/>
+        <lb edRef="#D" facs="#D_230v_a_1"/>sundichde 
         <choice>
-          <abbr>sweirliche<am>&#x305;</am></abbr>
-          <expan>sweirlichen</expan>
-        </choice> mit
+          <abbr>sweirlich<am>e&#772;</am></abbr>
+          <expan>sweirliche<ex>n</ex></expan></choice> mit 
         <choice>
-          <abbr>yre<am>&#x305;</am></abbr>
-          <expan>yrem</expan>
-        </choice>
-        <lb/>gesichte<pc resp="editor">,</pc> myt genoichlichem
-        <lb/>anseyn der vngelicher
+          <abbr>yr<am>e&#772;</am></abbr>
+          <expan>yre<ex>m</ex></expan></choice>
+        <lb edRef="#D" facs="#D_230v_a_2"/>gesichte<pc resp="editor">,</pc> myt genoichlichem 
+        <lb edRef="#D" facs="#D_230v_a_3"/>anseyn der vngelicher 
         <choice>
-          <abbr><am>&#7537;</am>ersone<am>&#x305;</am></abbr>
-          <expan>personen</expan></choice><pc resp="editor">.</pc>
-        <lb/>Jr suster <name type="person" nymRef="Martha" rend="underline">
+          <abbr><am>&#42833;</am>erson<am>e&#772;</am></abbr>
+          <expan>p<ex>er</ex>sone<ex>n</ex></expan></choice><pc resp="editor">.</pc>
+        <lb edRef="#D" facs="#D_230v_a_4"/>Jr suster <name type="person" nymRef="Martha" rend="underline">
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>artha</name> clagde ir
-        <lb/>sundige leuen <name type="person" nymRef="Virgin Mary" rend="underline">Marien</name> der
-        <lb/>moder vns heren <name type="person" nymRef="Jesus_Christ" rend="underline">
+            <reg type="capit" resp="editor">M</reg></choice>artha</name> clagde ir
+        <lb edRef="#D" facs="#D_230v_a_5"/>sundige leuen <name type="person" nymRef="Virgin Mary" rend="underline">Marien</name> der
+        <lb edRef="#D" facs="#D_230v_a_6"/>moder vns heren <name type="person" nymRef="Jesus_Christ" rend="underline">
         <choice>
-          <abbr>ihu<am>&#x305;</am> xp<am>&#x305;</am>i</abbr>
-          <expan>Jh<ex>es</ex>u Ch<ex>rist</ex>i</expan>
-        </choice></name><metamark function="line_break">-</metamark>
-        <lb/>mit schrienden ougen
+          <abbr>i<am>h&#774;</am>u &#43859;<am>p&#772;</am>i</abbr>
+          <expan>Jh<ex>es</ex>u Ch<ex>rist</ex>i</expan></choice></name><metamark source="manuscript" type="stroke" function="line_filler">-</metamark>
+        <lb edRef="#D" facs="#D_230v_a_7"/>mit schrienden ougen 
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nde
-        <lb/>bat<pc resp="editor">,</pc>
+          <reg type="capit" resp="editor">j</reg></choice>nde
+        <lb edRef="#D" facs="#D_230v_a_8"/>bat<pc resp="editor">,</pc> 
         <choice>
           <orig>D</orig>
-          <corr resp="editor">d</corr>
-        </choice>at <damage degree="low">sy</damage> yren lieuen soen
-        <lb/><name type="person" nymRef="Jesus_Christ" rend="underline">
+          <reg type="capit" resp="editor">d</reg></choice>at <damage degree="low">sy</damage> yren lieuen soen
+        <lb edRef="#D" facs="#D_230v_a_9"/><name type="person" nymRef="Jesus_Christ" rend="underline">
         <choice>
-          <abbr>xp<am>&#x305;</am>m</abbr>
-          <expan>Ch<ex>ristu</ex>m</expan>
-        </choice></name> den
+          <abbr>&#43859;<am>p&#773;</am>m</abbr>
+          <expan>Ch<ex>ristu</ex>m</expan></choice></name> den 
         <choice>
-          <abbr>here<am>&#x305;</am></abbr>
-          <expan>here<ex>n</ex></expan>
-        </choice>vur sy bidden
-        <lb/>wolde<pc resp="editor">.</pc> <ab xml:id="Martha_confronts_Mary"/>Der lerer <name type="person" nymRef="Pseudo_Isidore" rend="underline">
+          <abbr>her<am>e&#772;</am></abbr>
+          <expan>here<ex>n</ex></expan></choice>vur sy bidden
+        <lb edRef="#D" facs="#D_230v_a_10"/>wolde<pc resp="editor">.</pc> <ab xml:id="Martha_confronts_Mary"/>Der lerer <name type="person" nymRef="Pseudo_Isidore" rend="underline">
           <choice>
             <orig>y</orig>
-            <corr resp="editor">Y</corr>
-          </choice>sidorus</name><pc resp="editor">,</pc>
-        <lb/>de dit leuen beschreuen hait
-        <lb/>
+            <reg type="capit" resp="editor">Y</reg></choice>sidorus</name><pc resp="editor">,</pc>
+        <lb edRef="#D" facs="#D_230v_a_11"/>de dit leuen beschreuen hait
+        <lb edRef="#D" facs="#D_230v_a_12"/>
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>n dem boiche van den werck<metamark function="line_break">-</metamark>
-        <lb/>en der heilgen<pc resp="editor">,</pc> spricht<pc resp="editor">,</pc>
+          <reg type="capit" resp="editor">j</reg></choice>n dem boiche van den werck<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_230v_a_13"/>en der heilgen<pc resp="editor">,</pc> spricht<pc resp="editor">,</pc> 
         <choice>
           <orig>D</orig>
-          <corr resp="editor">d</corr>
+          <reg type="capit" resp="editor">d</reg>
         </choice>at
-        <lb/>dese tzwae
+        <lb edRef="#D" facs="#D_230v_a_14"/>dese tzwae 
         <choice>
-          <abbr><damage degree="low">su</damage>stere<am>&#x305;</am></abbr>
+          <abbr><damage degree="low">su</damage>ster<am>e&#772;</am></abbr>
           <expan>sustere<ex>n</ex></expan>
         </choice>zo samen
-        <lb/>quamen zo <name type="place" nymRef="Bethany">
+        <lb edRef="#D" facs="#D_230v_a_15"/>quamen zo <name type="place" nymRef="Bethany">
           <choice>
             <orig>b</orig>
-            <corr resp="editor">B</corr>
-          </choice>ethanien</name><pc resp="editor">,</pc> <name type="person" nymRef="Mary_Magdalene" rend="underline">Mari<add place="above">a</add>
-        <lb/>
+            <reg type="capit" resp="editor">B</reg></choice>ethanien</name><pc resp="editor">,</pc> <name type="person" nymRef="Mary_Magdalene" rend="underline">Mari<add place="above">a</add>
+        <lb edRef="#D" facs="#D_230v_a_16"/>
         <choice>
           <orig>m</orig>
-          <corr resp="editor">M</corr>
-        </choice>agdalena</name> geynck sitzen vur
-        <lb/>eynen spegel
+          <reg type="capit" resp="editor">M</reg></choice>agdalena</name> geynck sitzen vur 
+        <lb edRef="#D" facs="#D_230v_a_17"/>
+        <choice>
+          <abbr>eyn<am>e&#772;</am></abbr>
+          <expan>eyne<ex>n</ex></expan></choice> spegel 
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nde flechte yr
-        <lb/>suuerlich hair schoen
+          <reg type="capit" resp="editor">j</reg></choice>nde flechte yr 
+        <lb edRef="#D" facs="#D_230v_a_18"/>suuerlich hair schoen 
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nde sy
-        <lb/>zeirde sich kostlich<pc resp="editor">.</pc> Do
+          <reg type="capit" resp="editor">j</reg></choice>nde sy
+        <lb edRef="#D" facs="#D_230v_a_19"/>zeirde sich kostlich<pc resp="editor">.</pc> Do 
         <choice>
-          <abbr>sp<am>&#x305;</am>r</abbr>
-          <expan>sprach</expan>
-        </choice>yr
-        <lb/><name type="person" nymRef="Martha" rend="underline">
+          <abbr>s<am>p&#771;</am>r</abbr>
+          <expan>spr<ex>ach</ex></expan></choice>yr
+        <lb edRef="#D" facs="#D_230v_a_20"/><name type="person" nymRef="Martha" rend="underline">
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>artha</name><pc resp="editor">,</pc> zo mit clegelicher
-        <lb/>stymmen<pc resp="editor">:</pc> <pc resp="editor">"</pc>Myn lieue suster<pc resp="editor">,</pc> we
+            <reg type="capit" resp="editor">M</reg></choice>artha</name><pc resp="editor">,</pc> zo mit clegelicher
+        <lb edRef="#D" facs="#D_230v_a_21"/>
+        <choice>
+          <abbr>sty<am>m&#772;</am></abbr>
+          <expan>stym<ex>m</ex>en</expan></choice><pc resp="editor">:</pc> <pc resp="editor">"</pc>Myn lieue suster<pc resp="editor">,</pc> we
         <lb/>zeirstu dich
         <choice>
-          <abbr>dyne<am>&#x305;</am></abbr>
-          <expan>dyne<ex>n</ex></expan>
-        </choice>
+          <abbr>dyn<am>e&#772;</am></abbr>
+          <expan>dyne<ex>n</ex></expan></choice>
         <choice>
-          <abbr>sterffliche<am>&#x305;</am></abbr>
-          <expan>sterffliche<ex>m</ex></expan>
-        </choice>
-        <lb/>liff also seir na dem vleische
-        <lb/>
+          <abbr>sterfflich<am>e&#772;</am></abbr>
+          <expan>sterffliche<ex>m</ex></expan></choice> 
+        <lb edRef="#D" facs="#D_230v_a_22"/>liff also seir na dem vleische
+        <lb edRef="#D" facs="#D_230v_a_23"/>
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nd der werelt<pc resp="editor">,</pc>
+          <reg type="capit" resp="editor">j</reg></choice>nd der werelt<pc resp="editor">,</pc> 
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nde dyn edel
-        <lb/>sele<pc resp="editor">,</pc> de geschaffen is na dem
-        <lb/>bilde gotz<pc resp="editor">,</pc> beuleckestu myt so
-        <lb/>swarren groissen sunden<pc resp="editor">.</pc> Jch
-        <lb/>bidden dich<pc resp="editor">,</pc> myn alre lieffst <damage degree="high">s</damage>us<metamark function="line_break">-</metamark>
-        <lb/>ter<pc resp="editor">,</pc>
+          <reg type="capit" resp="editor">j</reg></choice>nde dyn edel 
+        <lb edRef="#D" facs="#D_230v_a_24"/>sele<pc resp="editor">,</pc> de geschaffen is na dem 
+        <lb edRef="#D" facs="#D_230v_a_25"/>bilde gotz<pc resp="editor">,</pc> beuleckestu myt so
+        <lb edRef="#D" facs="#D_230v_a_26"/>swarren groissen sunden<pc resp="editor">.</pc> Jch 
+        <lb edRef="#D" facs="#D_230v_a_27"/>bidden dich<pc resp="editor">,</pc> myn alre lieffst <damage degree="high">s</damage>us<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_230v_a_28"/>ter<pc resp="editor">,</pc> 
         <choice>
           <orig>G</orig>
-          <corr resp="editor">g</corr>
-        </choice>edencke doch<pc resp = "editor">,</pc> dat dyn
-        <lb/>licham<pc resp = "editor">,</pc> dat leuen hait van
+          <reg type="capit" resp="editor">g</reg></choice>edencke doch<pc resp ="editor">,</pc> dat dyn
+        <lb edRef="#D" facs="#D_230v_a_29"/>licham<pc resp = "editor">,</pc> dat leuen hait van 
         <choice>
-          <abbr>de<am>'</am></abbr>
-          <expan>d<ex>er</ex></expan>
-        </choice>
-        <lb/>selen<pc resp="editor">,</pc>
+          <abbr>d<am>e&#795;</am></abbr>
+          <expan>d<ex>er</ex></expan></choice>
+        <lb edRef="#D" facs="#D_230v_a_30"/>selen<pc resp="editor">,</pc> 
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nd dat dyn schoen
+          <reg type="capit" resp="editor">j</reg></choice>nd dat dyn schoen 
         <choice>
-          <abbr>licha<am>&#x305;</am></abbr>
+          <abbr>lich<am>a&#772;</am></abbr>
           <expan>licha<ex>m</ex></expan></choice><pc resp="editor">,</pc>
-        <lb/>dat getzeirt is mit golde ind
-        <cb edRef="#D" facs="#D_231v-b"/>siluer
+        <lb edRef="#D" facs="#D_230v_a_31"/>dat getzeirt is mit golde ind 
+        <cb edRef="#D" facs="#D_230v_b" n="fol.231vb"/>
+        <lb edRef="#D" facs="#D_230v_b_1"/>siluer 
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nde perlen ind anderen
-        <lb/>edelen
+          <reg type="capit" resp="editor">j</reg></choice>nde perlen ind anderen 
+        <lb edRef="#D" facs="#D_230v_b_2"/>edelen 
         <choice>
-          <abbr>gesteyntze<am>&#x305;</am></abbr>
-          <expan>gesteyntzen</expan></choice><pc resp="editor">,</pc>
-        moiss balde
-        <lb/>vergaen inde werden essche
-        <lb/>ind dreck<pc resp="editor">,</pc>
+          <abbr>gesteyntz<am>e&#772;</am></abbr>
+          <expan>gesteyntze<ex>n</ex></expan></choice><pc resp="editor">,</pc>
+        moiss balde 
+        <lb edRef="#D" facs="#D_230v_b_3"/>vergaen inde werden essche
+        <lb edRef="#D" facs="#D_230v_b_4"/>ind dreck<pc resp="editor">,</pc> 
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nd is eyn spisse der
-        <lb/>
+          <reg type="capit" resp="editor">j</reg></choice>nd is eyn spisse der 
+        <lb edRef="#D" facs="#D_230v_b_5"/>
         <choice>
-          <abbr>worm<am>&#x305;</am></abbr>
-          <expan>wormen</expan></choice><pc resp="editor">.</pc><pc resp="editor">"</pc>
+          <abbr>worm<am>e&#772;</am></abbr>
+          <expan>worme<ex>n</ex></expan></choice><pc resp="editor">.</pc><pc resp="editor">"</pc>
         Do antworde <name type="person" nymRef="Mary_Magdalene" rend="underline">Maria</name>
-        <lb/>
+        <lb edRef="#D" facs="#D_230v_b_6"/>
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nde
+          <reg type="capit" resp="editor">j</reg></choice>nde 
         <choice>
-          <abbr>sp<am>&#x305;</am></abbr>
-          <expan>spr<ex>ach</ex></expan>
-        </choice> mit zorne seir
+          <abbr>s<am>p&#771;</am>r</abbr>
+          <expan>spr<ex>ach</ex></expan></choice> mit zorne seir 
         <choice>
-          <abbr>zorliche<am>&#x305;</am></abbr>
-          <expan>zorlichen</expan></choice><pc resp="editor">:</pc>
-        <lb/><pc resp="editor">"</pc>
+          <abbr>zorlich<am>e&#772;</am></abbr>
+          <expan>zorliche<ex>n</ex></expan></choice><pc resp="editor">:</pc>
+        <lb edRef="#D" facs="#D_230v_b_7"/><pc resp="editor">"</pc>
         <choice>
           <orig>m</orig>
-          <corr resp="editor">M</corr>
-        </choice>yn lieue
+          <reg type="capit" resp="editor">M</reg></choice>yn lieue 
         <choice>
-          <abbr>sust<am>'</am></abbr>
+          <abbr>sus<am>t&#795;</am></abbr>
           <expan>sust<ex>er</ex></expan></choice><pc resp="editor">,</pc>
-        na dem maille
-        <lb/>dat ich also seir schoen byn in my<metamark function="line_break">-</metamark>
-        <lb/>me lich<damage degree="medium">a</damage>m ind in richdom <damage degree="high">de</damage>ser
-        <lb/>werelt ind in adel<pc resp="editor">,</pc>
+        na dem maille 
+        <lb edRef="#D" facs="#D_230v_b_8"/>dat ich also seir schoen byn in my<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_230v_b_9"/>me lich<damage degree="medium">a</damage>m ind in richdom <damage degree="high">de</damage>ser
+        <lb edRef="#D" facs="#D_230v_b_10"/>werelt ind in adel<pc resp="editor">,</pc> 
         <choice>
           <orig>S</orig>
-          <corr resp="editor">s</corr>
-        </choice>o bid ich dich<pc resp="editor">,</pc>
-        <lb/>bis du zo vreden
+          <reg type="capit" resp="editor">s</reg></choice>o bid ich dich<pc resp="editor">,</pc> 
+        <lb edRef="#D" facs="#D_231v_b_11"/>bis du zo vreden 
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nde lais mich
-        <lb/>myn goit mit vrouden vertzer<metamark function="line_break">-</metamark>
-        <lb/>en mit den
+          <reg type="capit" resp="editor">j</reg></choice>nde lais mich 
+        <lb edRef="#D" facs="#D_230v_b_12"/>myn goit mit vrouden vertzer<metamark source="manuscript" type="hyphen" function="word_division">-</metamark> 
+        <lb edRef="#D" facs="#D_230v_b_13"/>en mit den 
         <choice>
-          <abbr>leiffhauere<am>&#x305;</am></abbr>
-          <expan>leiffhauere<ex>n</ex></expan>
-        </choice>
-        deser wer<metamark function="line_break">-</metamark>
-        <lb/>elt<pc resp="editor">.</pc> Jnde laisse vns nu zo houff
-        <lb/>vroelich wesen wer weis we
-        <lb/>lange<pc resp="editor">.</pc><pc resp="editor">"</pc>
+          <abbr>leiffhauer<am>e&#772;</am></abbr>
+          <expan>leiffhauere<ex>n</ex></expan></choice> deser wer<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_230v_b_14"/>elt<pc resp="editor">.</pc> Jnde laisse vns nu zo houff 
+        <lb edRef="#D" facs="#D_230v_b_15"/>vroelich wesen wer weis we 
+        <lb edRef="#D" facs="#D_230v_b_16"/>lange<pc resp="editor">.</pc><pc resp="editor">"</pc> 
         <choice>
           <orig>d</orig>
-          <corr resp="editor">D</corr>
-        </choice>es
+          <reg type="capit" resp="editor">D</reg></choice>es 
         <choice>
-          <abbr>andere<am>&#x305;</am></abbr>
-          <expan>andere<ex>n</ex></expan>
-        </choice>
-        dages zoich
-        <lb/><name type="person" nymRef="Mary_Magdalene">
+          <abbr>ander<am>e&#772;</am></abbr>
+          <expan>andere<ex>n</ex></expan></choice> dages zoich 
+        <lb edRef="#D" facs="#D_230v_b_17"/><name type="person" nymRef="Mary_Magdalene">
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>aria</name> zo huisse <hi rend="underline">
+            <reg type="capit" resp="editor">M</reg></choice>aria</name> zo huisse <hi rend="underline">
             <choice>
               <orig>I</orig>
-              <corr resp="editor">i</corr>
-            </choice>nde</hi> <name type="person" nymRef="Martha" rend="underline">
+              <reg type="capit" resp="editor">i</reg></choice>nde</hi> <name type="person" nymRef="Martha" rend="underline">
             <choice>
               <orig>m</orig>
-              <corr resp="editor">M</corr>
-            </choice>artha</name> de
-        <lb/>schree zo maill bitterlichen seere
-        <lb/>dar umb<pc resp="editor">,</pc> dat <name type="person" nymRef="Mary_Magdalene" rend="underline">Maria</name> also wilde
-        <lb/>was<pc resp="editor">.</pc> <ab xml:id="MaryMagdalene_lovers"/>Dar na hadden de
+              <reg type="capit" resp="editor">M</reg></choice>artha</name> de 
+        <lb edRef="#D" facs="#D_230v_b_18"/>schree zo maill bitterlichen seere
+        <lb edRef="#D" facs="#D_230v_b_19"/>dar umb<pc resp="editor">,</pc> dat <name type="person" nymRef="Mary_Magdalene" rend="underline">Maria</name> also wilde
+        <lb edRef="#D" facs="#D_230v_b_20"/>was<pc resp="editor">.</pc> <ab xml:id="MaryMagdalene_lovers"/>Dar na hadden de 
         <choice>
-          <abbr>Jonckere<am>&#x305;</am></abbr>
-          <expan>Jonckere<ex>n</ex></expan></choice><metamark function="line_break">-</metamark>
-        <lb/>van <name type="place" nymRef="Jerusalem">Jherusalem</name>
+          <abbr>Jonck<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_230v_b_21"/>er<am>e&#772;</am></abbr>
+          <expan>Jonckere<ex>n</ex></expan></choice> van <name type="place" nymRef="Jerusalem">Jherusalem</name> 
         <choice>
-          <abbr>eyne<am>&#x305;</am></abbr>
-          <expan>eyne<ex>n</ex></expan>
-        </choice>
-        hoff
+          <abbr>eyn<am>e&#772;</am></abbr>
+          <expan>eyne<ex>n</ex></expan></choice> hoff
         <lb/>
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nde vroelicheit<pc resp="editor">.</pc> Dar wart ge<metamark function="line_break">-</metamark>
-        <lb/>beden <name type="person" nymRef="Mary_Magdalene" rend="underline">Maria
+          <reg type="capit" resp="editor">j</reg></choice>nde vroelicheit<pc resp="editor">.</pc> Dar wart ge<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_230v_b_22"/>beden <name type="person" nymRef="Mary_Magdalene" rend="underline">Maria 
         <choice>
           <orig>m</orig>
-          <corr resp="editor">M</corr></choice>agdalena</name><pc resp="editor">.</pc> Dar
-        <lb/>quam sy mit groisser kostlicheit
-        <lb/>
+          <reg type="capit" resp="editor">M</reg></choice>agdalena</name><pc resp="editor">.</pc> Dar 
+        <lb edRef="#D" facs="#D_230v_b_23"/>quam sy mit groisser kostlicheit 
+        <lb edRef="#D" facs="#D_230v_b_24"/>
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nd zeirheit eirs lichams<pc resp="editor">,</pc>
+          <reg type="capit" resp="editor">j</reg></choice>nd zeirheit eirs lichams<pc resp="editor">,</pc> 
         <choice>
           <orig>E</orig>
-          <corr resp="editor">e</corr>
-        </choice>yne
-        <lb/>leiffhauersche deser werelt<pc resp="editor">.</pc> Sy
-        <lb/>dantzden ind sprongen tzwen
-        <lb/>dage ind tzwae naicht<pc resp="editor">,</pc>
+          <reg type="capit" resp="editor">e</reg></choice>yne 
+        <lb edRef="#D" facs="#D_230v_b_25"/>leiffhauersche deser werelt<pc resp="editor">.</pc> Sy 
+        <lb edRef="#D" facs="#D_230v_b_26"/>dantzden ind sprongen tzwen 
+        <lb edRef="#D" facs="#D_230v_b_27"/>dage ind tzwae naicht<pc resp="editor">,</pc> 
         <choice>
           <orig>S</orig>
-          <corr resp="editor">s</corr>
-        </choice>o dat
-        <lb/>sy nau spisse nemen moichte
+          <reg type="capit" resp="editor">s</reg></choice>o dat 
+        <lb edRef="#D" facs="#D_230v_b_28"/>sy nau spisse nemen moichte 
         <choice>
-          <abbr>va<am>&#x305;</am></abbr>
-          <expan>va<ex>n</ex></expan>
-        </choice>
-        <lb/>groisser
+          <abbr>v<am>a&#772;</am></abbr>
+          <expan>va<ex>n</ex></expan></choice>
+        <lb edRef="#D" facs="#D_230v_b_29"/>groisser 
         <choice>
-          <abbr>vroude<am>&#x305;</am></abbr>
-          <expan>vroude<ex>n</ex></expan>
-        </choice>
-        ind wildicheit<pc resp="editor">.</pc>
-        <lb/><ab xml:id="market_scene"/>Jn deser seluer zit vernam yre
-        <lb/>suster <name type="person" nymRef="Martha" rend="underline">
+          <abbr>vroud<am>e&#772;</am></abbr>
+          <expan>vroude<ex>n</ex></expan></choice> ind wildicheit<pc resp="editor">.</pc>
+        <lb edRef="#D" facs="#D_230v_b_30"/><ab xml:id="market_scene"/>Jn deser seluer zit vernam yre 
+        <lb edRef="#D" facs="#D_230v_b_31"/>suster <name type="person" nymRef="Martha" rend="underline">
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr></choice>artha</name> boitschafft<pc resp="editor">,</pc> dat
-        <lb/>vnse here <name type="person" nymRef="Jesus_Christ" rend="underline">
+            <reg type="capit" resp="editor">M</reg></choice>artha</name> boitschafft<pc resp="editor">,</pc> dat 
+        <lb edRef="#D" facs="#D_230v_b_32"/>vnse here <name type="person" nymRef="Jesus_Christ" rend="underline">
         <choice>
           <abbr>ihs</abbr>
-          <expan>Jh<ex>esu</ex>s</expan>
-        </choice>
-        </name> was <damage degree="low">i</damage>n dem galli<metamark function="line_break">-</metamark>
-        <pb edRef="#D" facs="#D_231r"/>
-        <cb edRef="#D" facs="#D_231r-a"/>leschen lande
+          <expan>Jh<ex>esu</ex>s</expan></choice></name> was <damage degree="low">i</damage>n dem galli<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <pb edRef="#D" facs="#D_231r" n="fol.231r"/>
+        <cb edRef="#D" facs="#D_231r_a" n="fol.231ra"/>
+        <lb edRef="#D" facs="#D_231r_a_1"/>leschen lande 
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nde wolde tzo <name type="place" nymRef="Bethany">
+          <reg type="capit" resp="editor">j</reg></choice>nde wolde tzo <name type="place" nymRef="Bethany">
           <choice>
             <orig>b</orig>
-            <corr resp="editor">B</corr>
-          </choice>et<metamark function="line_break">-</metamark>
-        <lb/>thanien</name> comen<pc resp="editor">.</pc> Do geyngen
-        <lb/><name type="person" nymRef="Martha" rend="underline">Martha</name> ind <name type="person" nymRef="Martilla">
+            <reg type="capit" resp="editor">B</reg></choice>et<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_231r_a_2"/>thanien</name> comen<pc resp="editor">.</pc> Do geyngen 
+        <lb edRef="#D" facs="#D_231r_a_3"/><name type="person" nymRef="Martha" rend="underline">Martha</name> ind <name type="person" nymRef="Martilla">
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>arcella</name><pc resp="editor">,</pc> de ir
-        <lb/>maget was<pc resp="editor">,</pc> des morgens vroe
-        <lb/>in de staet <name type="place" nymRef="Jerusalem">
+            <reg type="capit" resp="editor">M</reg></choice>arcella</name><pc resp="editor">,</pc> de ir
+        <lb edRef="#D" facs="#D_231r_a_4"/>maget was<pc resp="editor">,</pc> des morgens vroe 
+        <lb edRef="#D" facs="#D_231r_a_5"/>in de staet <name type="place" nymRef="Jerusalem">
           <choice>
             <orig>i</orig>
-            <corr resp="editor">I</corr>
-          </choice>herusalem</name> ind wol<metamark function="line_break">-</metamark>
-        <lb/>de spisse gelden vur den
+            <reg type="capit" resp="editor">I</reg></choice>herusalem</name> ind wol<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_231r_a_6"/>de spisse gelden vur den 
         <choice>
-          <abbr>here<am>&#x305;</am></abbr>
+          <abbr>her<am>e&#772;</am></abbr>
           <expan>here<ex>n</ex></expan></choice><pc resp="editor">.</pc>
-        <lb/>Also sach do <name type="person" nymRef="Martha" rend="underline">Martha</name> <name type="person" nymRef="Mary_Magdalene" rend="underline">Maria</name>
-        <lb/>yr suster gaen ouer den mart<pc resp="editor">,</pc>
-        <lb/>
+        <lb edRef="#D" facs="#D_231r_a_7"/>Also sach do <name type="person" nymRef="Martha" rend="underline">Martha</name> <name type="person" nymRef="Mary_Magdalene" rend="underline">Maria</name> 
+        <lb edRef="#D" facs="#D_231r_a_8"/>yr suster gaen ouer den mart<pc resp="editor">,</pc> 
+        <lb edRef="#D" facs="#D_231r_a_9"/>
         <choice>
           <orig>J</orig>
-          <corr>j</corr>
-        </choice>nd quam van dem rait huisse
-        <lb/>mit piffen ind
+          <reg type="capit" resp="editor">j</reg></choice>nd quam van dem rait huisse 
+        <lb edRef="#D" facs="#D_231r_a_10"/>mit piffen ind 
         <choice>
-          <abbr>basune<am>&#x305;</am></abbr>
-          <expan>basune<ex>n</ex></expan>
-        </choice> vur
-        <lb/>in der ryen mit groisser ho<metamark function="line_break">-</metamark>
-        <lb/>uerdicht<pc resp="editor">.</pc> <hi rend="underline">Do</hi> <name type="person" nymRef="Martilla" rend="underline">
+          <abbr>basun<am>e&#772;</am></abbr>
+          <expan>basune<ex>n</ex></expan></choice> vur 
+        <lb edRef="#D" facs="#D_231r_a_11"/>in der ryen mit groisser ho<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_231r_a_12"/>uerdicht<pc resp="editor">.</pc> <hi rend="underline">Do</hi> <name type="person" nymRef="Martilla" rend="underline">
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>arcella</name> sach<pc resp="editor">,</pc> dat
-        <lb/><name type="person" nymRef="Mary_Magdalene">Maria</name> geleit wart in so groisser
-        <lb/>eren ind vroelicheit<pc resp="editor">,</pc>
+            <reg type="capit" resp="editor">M</reg></choice>arcella</name> sach<pc resp="editor">,</pc> dat 
+        <lb edRef="#D" facs="#D_231r_a_13"/><name type="person" nymRef="Mary_Magdalene">Maria</name> geleit wart in so groisser 
+        <lb edRef="#D" facs="#D_231r_a_14"/>eren ind vroelicheit<pc resp="editor">,</pc> 
         <choice>
           <orig>D</orig>
-          <corr resp="editor">d</corr>
-        </choice>o sprach
-        <lb/>sy zo irre <hi rend="underline">jonfferen</hi> <name type="person" nymRef="Martha" rend="underline">
+          <reg type="capit" resp="editor">d</reg></choice>o sprach 
+        <lb edRef="#D" facs="#D_231r_a_15"/>sy zo irre <hi rend="underline">jonfferen</hi> <name type="person" nymRef="Martha" rend="underline">
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>arthen</name><pc resp="editor">:</pc>
-        <lb/><pc resp="editor">"</pc>Jonffer<pc resp="editor">,</pc> seit vrre suster<pc resp="editor">.</pc><pc resp="editor">"</pc> Do sach
-        <lb/><name type="person" nymRef="Martha" rend="underline">Martha</name> noch umme jnd wart
-        <lb/>bitterlichen seir schriende<pc resp="editor">,</pc> jnde
-        <lb/>wranck ir herde ind
+            <reg type="capit" resp="editor">M</reg></choice>arthen</name><pc resp="editor">:</pc>
+        <lb edRef="#D" facs="#D_231r_a_16"/><pc resp="editor">"</pc>Jonffer<pc resp="editor">,</pc> seit vrre suster<pc resp="editor">.</pc><pc resp="editor">"</pc> Do sach
+        <lb edRef="#D" facs="#D_231r_a_17"/><name type="person" nymRef="Martha" rend="underline">Martha</name> noch umme jnd wart 
+        <lb edRef="#D" facs="#D_231r_a_18"/>bitterlichen seir schriende<pc resp="editor">,</pc> jnde 
+        <lb edRef="#D" facs="#D_231r_a_19"/>wranck ir herde ind 
         <choice>
-          <abbr>sp<am>&#x305;</am>r</abbr>
-          <expan>spr<ex>ach</ex></expan>
-        </choice>
+          <abbr>s<am>p&#771;</am>r</abbr>
+          <expan>spr<ex>ach</ex></expan></choice>
         <choice>
-          <abbr>yn<am>&#x305;</am>ent</abbr>
-          <expan>yn<ex>n</ex>ent</expan></choice><metamark function="line_break">-</metamark>
-        <lb/>lichen<pc resp="editor">:</pc> <pc resp="editor">"</pc>Och myn got<pc resp="editor">,</pc> myn
+          <abbr>y<am>n&#772;</am>ent</abbr>
+          <expan>yn<ex>n</ex>ent</expan></choice><metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_231r_a_20"/>lichen<pc resp="editor">:</pc> <pc resp="editor">"</pc>Och myn got<pc resp="editor">,</pc> myn 
         <choice>
-          <abbr>sche<am>&#7537;</am><am>&#7537;</am></abbr>
+          <abbr>sche<am>&#42833;</am><am>&#42833;</am></abbr>
           <expan>schepp<ex>er</ex></expan></choice><pc resp="editor">,</pc>
-        <lb/>we wail ich weis<pc resp="editor">,</pc> dat myn sus<metamark function="line_break">-</metamark>
-        <lb/>ter nu gedeynt <add place="above">hait</add> alzo groissen
-        <lb/>susiden inde den boesen
+        <lb edRef="#D" facs="#D_231r_a_21"/>we wail ich weis<pc resp="editor">,</pc> dat myn sus<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_231r_a_22"/>ter nu gedeynt <add place="above">hait</add> alzo groissen 
+        <lb edRef="#D" facs="#D_231r_a_23"/>susiden inde den boesen 
         <choice>
-          <abbr><damage degree="low">g</damage>eiste<am>&#x305;</am></abbr>
+          <abbr><damage degree="low">g</damage>eist<am>e&#772;</am></abbr>
           <expan>geiste<ex>n</ex></expan></choice><pc resp="editor">,</pc>
-        <lb/>
+        <lb edRef="#D" facs="#D_231r_a_24"/>
         <choice>
           <orig>N</orig>
-          <corr resp="editor">n</corr>
-        </choice>ochtant bidden ich dich<pc resp="editor">,</pc> da<damage degree="low">t</damage>
-        <lb/>du sy an seyn wils mit
+          <reg type="capit" resp="editor">n</reg></choice>ochtant bidden ich dich<pc resp="editor">,</pc> da<damage degree="low">t</damage>
+        <lb edRef="#D" facs="#D_231r_a_25"/>du sy an seyn wils mit 
         <choice>
-          <abbr>dyne<am>&#x305;</am></abbr>
-          <expan>dyne<ex>n</ex></expan>
-        </choice>
-        <lb/>barmhertzichen ougen<pc resp="editor">.</pc>
+          <abbr>dyn<am>e&#772;</am></abbr>
+          <expan>dyne<ex>n</ex></expan></choice>
+        <lb edRef="#D" facs="#D_231r_a_26"/>barmhertzichen ougen<pc resp="editor">.</pc> 
         <choice>
           <orig>j</orig>
-          <corr resp="editor">J</corr>
-        </choice>nde
-        <lb/>giff ir eynen anderen syn<pc resp="editor">,</pc>
+          <reg type="capit" resp="editor">J</reg></choice>nde 
+        <lb edRef="#D" facs="#D_231r_a_27"/>giff ir eynen anderen syn<pc resp="editor">,</pc> 
         <choice>
           <orig>D</orig>
-          <corr>d</corr>
-        </choice>at
-        <lb/>sy ir leuen besser<pc resp="editor">.</pc><pc resp="editor">"</pc> <hi rend="underline">Mit</hi> dem so
-        <lb/>bleiff <name type="person" nymRef="Martha">
+          <reg type="capit" resp="editor">d</reg></choice>at
+        <lb edRef="#D" facs="#D_231r_a_28"/>sy ir leuen besser<pc resp="editor">.</pc><pc resp="editor">"</pc> <hi rend="underline">Mit</hi> dem so
+        <lb edRef="#D" facs="#D_231r_a_29"/>bleiff <name type="person" nymRef="Martha">
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>artha</name> staen ind beidt
-        <lb/>na yrre suster <name type="person" nymRef="Mary_Magdalene" rend="underline">
+            <reg type="capit" resp="editor">M</reg></choice>artha</name> staen ind beidt
+        <lb edRef="#D" facs="#D_231r_a_30"/>na yrre suster <name type="person" nymRef="Mary_Magdalene" rend="underline">
         <choice>
-          <abbr>Marie<am>&#x305;</am></abbr>
-          <expan>Marie<ex>n</ex></expan></choice></name><pc resp="editor">.</pc> Do
+          <abbr>Mari<am>e&#772;</am></abbr>
+          <expan>Marie<ex>n</ex></expan></choice></name><pc resp="editor">.</pc> Do 
         <choice>
-          <abbr>qua<am>&#x305;</am></abbr>
-          <expan>qua<ex>m</ex></expan>
-        </choice>
-        <lb/>ir
+          <abbr>qu<am>a&#772;</am></abbr>
+          <expan>qua<ex>m</ex></expan></choice>
+        <lb edRef="#D" facs="#D_231r_a_31"/>ir 
         <choice>
-          <abbr>sust<am>'</am></abbr>
+          <abbr>sus<am>t&#795;</am></abbr>
           <expan>sust<ex>er</ex></expan></choice><pc resp="editor">,</pc>
-        bi sy jnd
+        bi sy jnd 
         <choice>
-          <abbr><damage degree="high">sp<am>&#x305;</am>r</damage></abbr>
-          <expan>spr<ex>ach</ex></expan>
-        </choice><damage degree="high">ir</damage> tzo inde
-        <lb/>sachte<pc resp="editor">,</pc>
+          <abbr><damage degree="high">s<am>p&#771;</am>r</damage></abbr>
+          <expan>spr<ex>ach</ex></expan></choice><damage degree="high">ir</damage> tzo inde 
+        <lb edRef="#D" facs="#D_231r_a_32"/>sachte<pc resp="editor">,</pc> 
         <choice>
           <orig>W</orig>
-          <corr resp="editor">w</corr>
-        </choice>at sy s<damage degree="medium">o vr</damage>oe in der
-        <cb edRef="#D" facs="#D_231r-b"/>stat dede<pc resp="editor">.</pc> <name type="person" nymRef="Martha" rend="underline">Martha</name><pc resp="editor">,</pc> <hi rend="underline">de heilge Jonf<metamark function="line_break">-</metamark>
-        <lb/>fer</hi><pc resp="editor">,</pc> ant<damage degree="low">w</damage>orde ir mit groisser
-        <lb/>oitmoedicheit<pc resp="editor">,</pc>
+          <reg type="capit" resp="editor">w</reg></choice>at sy s<damage degree="medium">o vr</damage>oe in der  
+        <cb edRef="#D" facs="#D_231r_b" n="fol.231rb"/>
+        <lb edRef="#D" facs="#D_231r_b_1"/>stat dede<pc resp="editor">.</pc> <name type="person" nymRef="Martha" rend="underline">Martha</name><pc resp="editor">,</pc> <hi rend="underline">de heilge Jonf<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_231r_b_2"/>fer</hi><pc resp="editor">,</pc> ant<damage degree="low">w</damage>orde ir mit groisser
+        <lb edRef="#D" facs="#D_231r_b_3"/>oitmoedicheit<pc resp="editor">,</pc> 
         <choice>
          <orig>D</orig>
-         <corr resp="editor">d</corr>
-        </choice>at sy dar weir
-        <lb/>gekomen
+         <reg type="capit" resp="editor">d</reg></choice>at sy dar weir 
+        <lb edRef="#D" facs="#D_231r_b_4"/>gekomen 
         <choice>
           <orig>S</orig>
-          <corr resp="editor">s</corr>
-        </choice>pisse zo kouffen
-        <lb/>vur ir geste<pc resp="editor">.</pc> Do en hadde de
-        <lb/>suster neit vil worde vmb des
-        <lb/>volcks willen<pc resp="editor">,</pc> dat da by stoent<pc resp="editor">.</pc>
-        <lb/><name type="person" nymRef="Mary_Magdalene" rend="underline">Maria</name>
+          <reg type="capit" resp="editor">s</reg></choice>pisse zo kouffen 
+        <lb edRef="#D" facs="#D_231r_b_5"/>vur ir geste<pc resp="editor">.</pc> Do en hadde de
+        <lb edRef="#D" facs="#D_231r_b_6"/>suster neit vil worde vmb des 
+        <lb edRef="#D" facs="#D_231r_b_7"/>volcks willen<pc resp="editor">,</pc> dat da by stoent<pc resp="editor">.</pc> 
+        <lb edRef="#D" facs="#D_231r_b_8"/><name type="person" nymRef="Mary_Magdalene" rend="underline">Maria</name> 
         <hi rend="underline"><choice>
-          <abbr>sp<am>&#x305;</am>r</abbr>
+          <abbr>s<am>p&#771;</am>r</abbr>
           <expan>spr<ex>ach</ex></expan></choice></hi><pc resp="editor">:</pc>
         <pc resp="editor">"</pc>
         <choice>
           <orig>l</orig>
-          <corr resp="editor">L</corr>
-        </choice>ieue suster<pc resp="editor">,</pc> koufft
-        <lb/>ouch <sic>war</sic> <del type="strikethrough">mit</del> vur mich<pc resp="editor">.</pc> Jch
-        <lb/>wil tzo uch comen <del type="strikethrough">ind</del>essen
-        <lb/>mit<pc resp="editor">.</pc><pc resp="editor">"</pc> Hir aff
+          <reg type="capit" resp="editor">L</reg></choice>ieue suster<pc resp="editor">,</pc> koufft 
+        <lb edRef="#D" facs="#D_231r_b_9"/>ouch <sic>war</sic> <del rend="strikethrough">mit</del> vur mich<pc resp="editor">.</pc> Jch 
+        <lb edRef="#D" facs="#D_231r_b_10"/>wil tzo uch comen <del rend="strikethrough">ind</del>essen
+        <lb edRef="#D" facs="#D_231r_b_11"/>mit<pc resp="editor">.</pc><pc resp="editor">"</pc> Hir aff 
         <choice>
-          <abbr>sp<am>&#x305;</am>r</abbr>
-          <expan>spr<ex>ach</ex></expan>
-        </choice>
-        <del type="strikethrough">der</del> heilge
-        <lb/>lerre <name type="person" nymRef="Augustine" rend="underline">Sancte Augustynus</name><pc resp="editor">,</pc>
-        <lb/><hi rend="underline">
+          <abbr>s<am>p&#x305;</am>r</abbr>
+          <expan>spr<ex>ach</ex></expan></choice>
+        <del rend="strikethrough">der</del> heilge 
+        <lb edRef="#D" facs="#D_231r_b_12"/>lerre <name type="person" nymRef="Augustine" rend="underline">Sancte Augustynus</name><pc resp="editor">,</pc>
+        <lb edRef="#D" facs="#D_231r_b_13"/><hi rend="underline">
           <choice>
             <orig>D</orig>
-            <corr>d</corr>
-          </choice>at</hi> <name type="person" nymRef="Mary_Magdalene" rend="underline"><damage degree="low">Ma</damage>ria</name> in alle irem le<metamark function="line_break">-</metamark>
-        <lb/>uen nee nutzer m<damage degree="low">ailtzit</damage> en
-        <lb/>d<damage degree="low">ede va</damage>n dese<pc resp="editor">,</pc> want hir wart
-        <lb/>sy bekert van yrem
+            <reg type="capit" resp="editor">d</reg></choice>at</hi> <name type="person" nymRef="Mary_Magdalene" rend="underline"><damage degree="low">Ma</damage>ria</name> in alle irem le<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_231r_b_14"/>uen nee nutzer m<damage degree="low">ailtzit</damage> en 
+        <lb edRef="#D" facs="#D_231r_b_15"/>d<damage degree="low">ede va</damage>n dese<pc resp="editor">,</pc> want hir wart 
+        <lb edRef="#D" facs="#D_231r_b_16"/>sy bekert van yrem 
         <choice>
-          <abbr><damage degree="low">su</damage>ntliche<am>&#x305;</am></abbr>
-          <expan>suntliche<ex>m</ex></expan>
-        </choice>
-        <lb/>leuen<pc resp="editor">.</pc><ab xml:id="Mary_at_Marthas_house"/> Des anderen da<damage degree="low">ge</damage>s
-        <lb/>van groisser mo<damage degree="medium">edichet</damage> so
+          <abbr><damage degree="low">su</damage>ntlich<am>e&#772;</am></abbr>
+          <expan>suntliche<ex>m</ex></expan></choice>
+        <lb edRef="#D" facs="#D_231r_b_17"/>leuen<pc resp="editor">.</pc><ab xml:id="Mary_at_Marthas_house"/> Des anderen da<damage degree="low">ge</damage>s
+        <lb edRef="#D" facs="#D_231r_b_18"/>van groisser mo<damage degree="medium">edichet</damage> so 
         <choice>
-          <abbr>ylle<am>&#x305;</am>de</abbr>
-          <expan>ylle<ex>n</ex>de</expan>
-        </choice>
-        de
-        <lb/>geynck <name type="person" nymRef="Mary_Magdalene" rend="underline">Maria</name> us <name type="place" nymRef="Jerusalem">
+          <abbr>yll<am>e&#772;</am>de</abbr>
+          <expan>ylle<ex>n</ex>de</expan></choice>
+        <lb edRef="#D" facs="#D_231r_b_19"/>geynck <name type="person" nymRef="Mary_Magdalene" rend="underline">Maria</name> us <name type="place" nymRef="Jerusalem">
           <choice>
             <abbr>
               <choice>
                 <orig>i</orig>
-                <corr resp="editor">I</corr>
-              </choice>herusale<am>&#x305;</am></abbr>
+                <reg type="capit" resp="editor">I</reg></choice>herusal<am>e&#772;</am></abbr>
             <expan>
               <choice>
                 <orig>i</orig>
-                <corr resp="editor">I</corr>
-              </choice>herusale<ex>m</ex></expan>
-          </choice></name> dat
-        <lb/>all heymilichen
+                <reg type="capit" resp="editor">I</reg></choice>herusale<ex>m</ex></expan></choice></name> dat 
+        <lb edRef="#D" facs="#D_231r_b_20"/>all heymilichen 
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nd quam tzo
-        <lb/><name type="person" nymRef="Martha" rend="underline">Marthen</name> yrre suster huiss zo
-        <lb/><name type="place" nymRef="Bethany">
+          <reg type="capit" resp="editor">j</reg></choice>nd quam tzo 
+        <lb edRef="#D" facs="#D_231r_b_21"/><name type="person" nymRef="Martha" rend="underline">Marthen</name> yrre suster huiss zo 
+        <lb edRef="#D" facs="#D_231r_b_22"/><name type="place" nymRef="Bethany">
           <choice>
             <orig>b</orig>
-            <corr resp="editor">B</corr>
-          </choice>ethanie<damage degree="low">n</damage></name><pc resp="editor">,</pc> <damage degree="low">
+            <reg type="capit" resp="editor">B</reg></choice>ethanie<damage degree="low">n</damage></name><pc resp="editor">,</pc> <damage degree="low">
             <choice>
               <orig>D</orig>
-              <corr resp="editor">d</corr>
-            </choice>e sy</damage> seir
+              <reg type="capit" resp="editor">d</reg></choice>e sy</damage> seir 
         <choice>
-          <abbr>leiffliche<am>&#x305;</am></abbr>
-          <expan>leiffliche<ex>n</ex></expan>
-        </choice>
-        <lb/>jntfeync<damage degree="low">k mit</damage> vroelicheit inde
-        <lb/>heisch sy wilkomen
+          <abbr>leifflich<am>e&#772;</am></abbr>
+          <expan>leiffliche<ex>n</ex></expan></choice> 
+        <lb edRef="#D" facs="#D_231r_b_23"/>jntfeync<damage degree="low">k mit</damage> vroelicheit inde 
+        <lb edRef="#D" facs="#D_231r_b_24"/>heisch sy wilkomen 
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nde heisch sy
-        <lb/>gaen sitzen<pc resp="editor">.</pc> <hi rend="underline">Do sprach</hi> <name type="person" nymRef="Mary_Magdalene" rend="underline">Maria</name><pc resp="editor">:</pc>
-        <lb/><pc resp="editor">"</pc>
+          <reg type="capit" resp="editor">j</reg></choice>nde heisch sy
+        <lb edRef="#D" facs="#D_231r_b_25"/>gaen sitzen<pc resp="editor">.</pc> <hi rend="underline">Do sprach</hi> <name type="person" nymRef="Mary_Magdalene" rend="underline">Maria</name><pc resp="editor">:</pc> 
+        <lb edRef="#D" facs="#D_231r_b_26"/><pc resp="editor">"</pc>
         <choice>
           <orig>o</orig>
-          <corr resp="editor">O</corr>
-        </choice>ch lieue suster<pc resp="editor">,</pc> des is groisse
-        <lb/>noit Jch behoeffe is des gar wal<pc resp="editor">,</pc>
-        <lb/>dat ich sitze ind raste<pc resp="editor">,</pc>
+          <reg type="capit" resp="editor">O</reg></choice>ch lieue suster<pc resp="editor">,</pc> des is groisse 
+        <lb edRef="#D" facs="#D_231r_b_27"/>noit Jch behoeffe is des gar wal<pc resp="editor">,</pc>
+        <lb edRef="#D" facs="#D_231r_b_28"/>dat ich sitze ind raste<pc resp="editor">,</pc> 
         <choice>
           <orig>W</orig>
-          <corr resp="editor">w</corr>
-        </choice>ant ich
-        <lb/>hayn tzweyn gantze dage ge<metamark function="line_break">-</metamark>
-        <lb/>dantzet inde gesprogen
+          <reg type="capit" resp="editor">w</reg></choice>ant ich 
+        <lb edRef="#D" facs="#D_231r_b_29"/>hayn tzweyn gantze dage ge<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_231r_b_30"/>dantzet inde gesprogen 
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nde
-        <lb/>so seyr vroelich gewest mit
+          <reg type="capit" resp="editor">j</reg></choice>nde 
+        <lb edRef="#D" facs="#D_231r_b_31"/>so seyr vroelich gewest mit 
         <choice>
-          <abbr>de<am>&#x305;</am></abbr>
-          <expan>de<ex>n</ex></expan>
-        </choice>
-        <lb/>Jonckeren zo <name type="place" nymRef="Jerusalem">
+          <abbr>d<am>e&#772;</am></abbr>
+          <expan>de<ex>n</ex></expan></choice>
+        <lb edRef="#D" facs="#D_231r_b_32"/>Jonckeren zo <name type="place" nymRef="Jerusalem">
           <choice>
             <orig>i</orig>
-            <corr resp="editor">I</corr>
-          </choice>herusalem</name> Jnde
-        <lb/>ich en byn nee van alle
+            <reg type="capit" resp="editor">I</reg>
+          </choice>herusalem</name> Jnde 
+        <lb edRef="#D" facs="#D_231r_b_33"/>ich en byn nee van alle 
         <choice>
-          <abbr>myne<am>&#x305;</am></abbr>
-          <expan>myne<ex>n</ex></expan>
-        </choice>
-        <pb edRef="#D" facs="#D_232v-a"/>
-        <lb/>leue dagen so vroelich gewest
-        <lb/>gantze stat vroelich gemacht<pc resp="editor">.</pc><pc resp="editor">"</pc>
-        <lb/>Recht off wolde sy sagen<pc resp="editor">:</pc> <pc resp="editor">"</pc>Jch en
-        <lb/>doyn des nu nummerme mee<pc resp="editor">.</pc><pc resp="editor">"</pc>
-        <lb/><name type="person" nymRef="Martha" rend="underline">Martha</name> de heilge Jonffer ant<metamark function="line_break">-</metamark>
-        <lb/>worde yrre suster und fraege
-        <lb/>de<pc resp="editor">:</pc> <pc resp="editor">"</pc>Myn lieue suster<pc resp="editor">,</pc> na deme
-        <lb/>maille du so vroelich bist
-        <choice>
-          <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nde
-        <lb/>so <del type="strikethrough">vrolich</del> gewest haist<pc resp="editor">,</pc> hadde
-        <lb/>ir ouch den koninck by uch<pc resp="editor">,</pc> der
-        <lb/>alle hertzen vroelich machet<pc resp="editor">,</pc>
-        <lb/>
+          <abbr>myn<am>e&#772;</am></abbr>
+          <expan>myne<ex>n</ex></expan></choice>
+        <pb edRef="#D" facs="#D_232v" n="fol.232v"/>
+        <cb edRef="#D" facs="#D_231v_a" n="fol.231va"/>
+        <lb edRef="#D" facs="#D_231v_a_1"/>leue dagen so vroelich gewest 
+        <lb edRef="#D" facs="#D_231v_a_2"/>gantze stat vroelich gemacht<pc resp="editor">.</pc><pc resp="editor">"</pc>
+        <lb edRef="#D" facs="#D_231v_a_3"/>Recht off wolde sy sagen<pc resp="editor">:</pc> <pc resp="editor">"</pc>Jch en 
+        <lb edRef="#D" facs="#D_231v_a_4"/>doyn des nu nummerme mee<pc resp="editor">.</pc><pc resp="editor">"</pc> 
+        <lb edRef="#D" facs="#D_231v_a_5"/><name type="person" nymRef="Martha" rend="underline">Martha</name> de heilge Jonffer ant<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_231v_a_6"/>worde yrre suster und fraege 
+        <lb edRef="#D" facs="#D_231v_a_7"/>de<pc resp="editor">:</pc> <pc resp="editor">"</pc>Myn lieue suster<pc resp="editor">,</pc> na deme 
+        <lb edRef="#D" facs="#D_231v_a_8"/>maille du so vroelich bist 
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nde der <add place="above">de</add> schoenste is bouen alle
-        <lb/>cony<damage degree="low">ncken</damage><pc resp="editor">?</pc><pc resp="editor">"</pc> Do
+          <reg type="capit" resp="editor">j</reg></choice>nde
+        <lb edRef="#D" facs="#D_231v_a_9"/>so <del rend="strikethrough">vrolich</del> gewest haist<pc resp="editor">,</pc> hadde 
+        <lb edRef="#D" facs="#D_231v_a_10"/>ir ouch den koninck by uch<pc resp="editor">,</pc> der
+        <lb edRef="#D" facs="#D_231v_a_11"/>alle hertzen vroelich machet<pc resp="editor">,</pc><metamark source="manuscript" type="stroke" function="line_filler">-</metamark>
+        <lb edRef="#D" facs="#D_231v_a_12"/>
         <choice>
-          <abbr>sp<am>&#x305;</am>r</abbr>
-          <expan>spr<ex>ach</ex></expan>
-        </choice>
+          <orig>J</orig>
+          <reg type="capit" resp="editor">j</reg></choice>nde der <add place="above">de</add> schoenste is bouen alle 
+        <lb edRef="#D" facs="#D_231v_a_13"/>cony<damage degree="low">ncken</damage><pc resp="editor">?</pc><pc resp="editor">"</pc> Do 
+        <choice>
+          <abbr>s<am>p&#771;</am>r</abbr>
+          <expan>spr<ex>ach</ex></expan></choice>
         <name type="person" nymRef="Mary_Magdalene" rend="underline">
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>aria</name><pc resp="editor">:</pc> <pc resp="editor">"</pc>
+            <reg type="capit" resp="editor">M</reg></choice>aria</name><pc resp="editor">:</pc> <pc resp="editor">"</pc>
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>it
-        <lb/>vns en wairen geyn <damage degree="low">cony</damage>ncke<pc resp="editor">.</pc>
-        <lb/>Meinstu<pc resp="editor">,</pc> den keiser <name type="person" role="emperor" nymRef="Tiberius">
+            <reg type="capit" resp="editor">M</reg></choice>it
+        <lb edRef="#D" facs="#D_231v_a_14"/>vns en wairen geyn <damage degree="low">cony</damage>ncke<pc resp="editor">.</pc>
+        <lb edRef="#D" facs="#D_231v_a_15"/>Meinstu<pc resp="editor">,</pc> den keiser <name type="person" role="emperor" nymRef="Tiberius">
           <choice>
             <orig>t</orig>
-            <corr resp="editor">T</corr>
-          </choice>iberius</name><pc resp="editor">?</pc><pc resp="editor">"</pc>
-        <lb/><name type="person" nymRef="Martha" rend="underline">Martha</name> antwerde inde
+            <reg type="capit" resp="editor">T</reg></choice>iberius</name><pc resp="editor">?</pc><pc resp="editor">"</pc>
+        <lb edRef="#D" facs="#D_231v_a_16"/><name type="person" nymRef="Martha" rend="underline">Martha</name> antwerde inde 
         <choice>
-          <abbr>sp<am>&#x305;</am>r</abbr>
+          <abbr>s<am>p&#771;</am>r</abbr>
           <expan>spr<ex>ach</ex></expan></choice><pc resp="editor">:</pc>
-        <lb/><pc resp="editor">"</pc>Jch en <damage degree="medium">meynen</damage> neit <name type="person" role="emperor" nymRef="Tiberius">
+        <lb edRef="#D" facs="#D_231v_a_17"/><pc resp="editor">"</pc>Jch en <damage degree="medium">meynen</damage> neit <name type="person" role="emperor" nymRef="Tiberius">
           <choice>
             <orig>t</orig>
-            <corr resp="editor">T</corr>
-          </choice>iberius</name><pc resp="editor">,</pc> de
-        <lb/>da is eyn <damage degree="medium">konynck d</damage>er mensch<metamark function="line_break">-</metamark>
-        <lb/>en<pc resp="editor">,</pc> me<damage degree="low">r ich</damage> meynen den
+            <reg type="capit" resp="editor">T</reg></choice>iberius</name><pc resp="editor">,</pc> de 
+        <lb edRef="#D" facs="#D_231v_a_18"/>da is eyn <damage degree="medium">konynck d</damage>er mensch<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_231v_a_19"/>en<pc resp="editor">,</pc> me<damage degree="low">r ich</damage> meynen den 
         <choice>
-          <abbr>kony<am>&#x305;</am>ck</abbr>
+          <abbr>kon<am>y&#772;</am>ck</abbr>
           <expan>kony<ex>n</ex>ck</expan></choice><pc resp="editor">,</pc>
-        <lb/>de da is eyn konynck hemel<metamark function="line_break">-</metamark>
-        <lb/>lrichs inde ertrichs
+        <lb edRef="#D" facs="#D_231v_a_20"/>de da is eyn konynck hemel<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_231v_a_21"/>lrichs inde ertrichs 
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nd de da
-        <lb/>is eyn verloeser der <name type="org" subtype="religion" nymRef="Children_of_Israel">kynder
-        <lb/>van <name type="place" nymRef="Israel">
+          <reg type="capit" resp="editor">j</reg></choice>nd de da 
+        <lb edRef="#D" facs="#D_231v_a_22"/>is eyn verloeser der <name type="org" subtype="religion" nymRef="Children_of_Israel">kynder
+        <lb edRef="#D" facs="#D_231v_a_23"/>van <name type="place" nymRef="Israel">
           <choice>
             <orig>y</orig>
-            <corr resp="editor">Y</corr>
-          </choice>srahel</name></name>
+            <reg type="capit" resp="editor">Y</reg></choice>srahel</name> 
           <choice>
             <orig>J</orig>
-            <corr resp="editor">j</corr>
-          </choice>nd de da an sich
-        <lb/>hait alle schonheit der werelt<pc resp="editor">.</pc>
-        <lb/>Want syn vader is got
+            <reg type="capit" resp="editor">j</reg></choice>nd de da an sich 
+        <lb edRef="#D" facs="#D_231v_a_24"/>hait alle schonheit der werelt<pc resp="editor">.</pc> 
+        <lb edRef="#D" facs="#D_231v_a_25"/>Want syn vader is got 
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nde
-        <lb/>syn mo<damage degree="low">d</damage>er is eyn reyne Jonffer<pc resp="editor">,</pc>
-        <lb/>
+          <reg type="capit" resp="editor">j</reg></choice>nde
+        <lb edRef="#D" facs="#D_231v_a_26"/>syn mo<damage degree="low">d</damage>er is eyn reyne Jonffer<pc resp="editor">,</pc> 
+        <lb edRef="#D" facs="#D_231v_a_27"/>
         <choice>
           <orig>D</orig>
-          <corr resp="editor">d</corr>
-        </choice>e da is geboren van deme
-        <lb/>konyncklichem stamme her
-        <lb/>dauitz<pc resp="editor">.</pc><pc resp="editor">"</pc> Do vragde <name type="person" nymRef="Mary_Magdalene" rend="underline">
+          <reg type="capit" resp="editor">d</reg></choice>e da is geboren van deme 
+        <lb edRef="#D" facs="#D_231v_a_28"/>konyncklichem stamme her
+        <lb edRef="#D" facs="#D_231v_a_29"/>dauitz<pc resp="editor">.</pc><pc resp="editor">"</pc> Do vragde <name type="person" nymRef="Mary_Magdalene" rend="underline">
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>aria</name> na
-        <lb/>den
+            <reg type="capit" resp="editor">M</reg></choice>aria</name> na 
+        <lb edRef="#D" facs="#D_231v_a_30"/>den 
         <choice>
-          <abbr>lieffhauere<am>&#x305;</am></abbr>
-          <expan>lieffhauere<ex>n</ex></expan>
-        </choice>
-        deser werelt
-        <lb/>
+          <abbr>lieffhauer<am>e&#772;</am></abbr>
+          <expan>lieffhauere<ex>n</ex></expan></choice> deser werelt 
+        <lb edRef="#D" facs="#D_231v_a_31"/>
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nde
+          <reg type="capit" resp="editor">j</reg></choice>nde 
         <choice>
-          <abbr>sp<am>&#x305;</am>r</abbr>
-          <expan>spr<ex>ach</ex></expan></choice><pc resp="editor">:</pc> <pc resp="editor">"</pc>Och lieue
+          <abbr>s<am>p&#771;</am>r</abbr>
+          <expan>spr<ex>ach</ex></expan></choice><pc resp="editor">:</pc> <pc resp="editor">"</pc>Och lieue 
         <choice>
-          <abbr>sust<am>'</am></abbr>
+          <abbr>sus<am>t&#795;</am></abbr>
           <expan>sust<ex>er</ex></expan></choice><pc resp="editor">,</pc>
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>ch bid<metamark function="line_break">-</metamark>
-        <lb/>den dich<pc resp="editor">,</pc> sach myr doch<pc resp="editor">,</pc>
+          <reg type="capit" resp="editor">j</reg></choice>ch bid<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_231v_a_32"/>den dich<pc resp="editor">,</pc> sach myr doch<pc resp="editor">,</pc> 
         <choice>
           <orig>W</orig>
-          <corr resp="editor">w</corr>
-        </choice>a is
-        <cb edRef="#D" facs="#D_232v-b"/>deser schoene
+          <reg type="capit" resp="editor">w</reg></choice>a is 
+        <cb edRef="#D" facs="#D_231v_b" n="fol.231vb"/>
+        <lb edRef="#D" facs="#D_231v_b_1"/>deser schoene 
         <choice>
-          <abbr>kony<am>&#x305;</am>ck</abbr>
+          <abbr>kon<am>y&#772;</am>ck</abbr>
           <expan>kony<ex>n</ex>ck</expan></choice><pc resp="editor">,</pc><pc resp="editor">"</pc> da du van
-        <lb/>sprichs<pc resp="editor">?</pc> Js hey schoene<pc resp="editor">,</pc> ich will<metamark function="line_filler">-</metamark>
-        <lb/>vmmes machen mit myme gel<metamark function="line_break">-</metamark>
-        <lb/>de inde goede<pc resp="editor">,</pc> dat ich en tzo myr
-        <lb/>krege<pc resp="editor">,</pc>
+        <lb edRef="#D" facs="#D_231v_b_2"/>sprichs<pc resp="editor">?</pc> Js hey schoene<pc resp="editor">,</pc> ich will<metamark source="manuscript" type="stroke" function="line_filler">-</metamark> 
+        <lb edRef="#D" facs="#D_231v_b_3"/>vmmes machen mit myme gel<metamark source="manuscript" type="hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_231v_b_4"/>de inde goede<pc resp="editor">,</pc> dat ich en tzo myr 
+        <lb edRef="#D" facs="#D_231v_b_5"/>krege<pc resp="editor">,</pc> 
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nde syne vruntschafft ha<metamark function="line_break">-</metamark>
-        <lb/>ue<pc resp="editor">.</pc><pc resp="editor">"</pc> <name type="person" nymRef="Martha">Martha</name> antworde<pc resp="editor">:</pc> <pc resp="editor">"</pc>
+          <reg type="capit" resp="editor">j</reg></choice>nde syne vruntschafft ha<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_231v_b_6"/>ue<pc resp="editor">.</pc><pc resp="editor">"</pc> <name type="person" nymRef="Martha">Martha</name> antworde<pc resp="editor">:</pc> <pc resp="editor">"</pc>
         <choice>
           <orig>l</orig>
-          <corr resp="editor">L</corr>
-        </choice>ieue
+          <reg type="capit" resp="editor">L</reg></choice>ieue 
         <choice>
-          <abbr>sust<am>'</am></abbr>
+          <abbr>sus<am>t&#795;</am></abbr>
           <expan>sust<ex>er</ex></expan></choice><pc resp="editor">,</pc>
-        <lb/>den konyck den ich meynen<pc resp="editor">,</pc>
-        <lb/>
+        <lb edRef="#D" facs="#D_231v_b_7"/>den konyck den ich meynen<pc resp="editor">,</pc>
+        <lb edRef="#D" facs="#D_231v_b_8"/>
         <choice>
           <orig>D</orig>
-          <corr resp="editor">d</corr>
-        </choice>at is myn lieue here
+          <reg type="capit" resp="editor">d</reg></choice>at is myn lieue here 
         <name type="person" nymRef="Jesus_Christ" rend="underline"><choice>
-          <abbr>ihs xp<am>&#x305;</am>s</abbr>
-          <expan>Ihesus Christus</expan></choice></name><pc resp="editor">,</pc>
-        <lb/>de da is eyn artzeder der selen<pc resp="editor">.</pc><pc resp="editor">"</pc>
-        <lb/>Jnde mit den worden wart
-        <lb/><name type="person" nymRef="Martha" rend="underline">
+          <abbr>ihs &#43859;<am>p&#772;</am>s</abbr>
+          <expan>Ihesus Ch<ex>ristu</ex>s</expan></choice></name><pc resp="editor">,</pc>
+        <lb edRef="#D" facs="#D_231v_b_9"/>de da is eyn artzeder der selen<pc resp="editor">.</pc><pc resp="editor">"</pc> 
+        <lb edRef="#D" facs="#D_231v_b_10"/>Jnde mit den worden wart
+        <lb edRef="#D" facs="#D_231v_b_11"/><name type="person" nymRef="Martha" rend="underline">
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>
-          martha</name> alzo bi<damage degree="low">tt</damage>erlichen seyr
-        <lb/>schriende<pc resp="editor">,</pc> dar vmb dat <name type="person" nymRef="Mary_Magdalene">
+            <reg type="capit" resp="editor">M</reg></choice>artha</name> alzo bi<damage degree="low">tt</damage>erlichen seyr
+        <lb edRef="#D" facs="#D_231v_b_12"/>schriende<pc resp="editor">,</pc> dar vmb dat <name type="person" nymRef="Mary_Magdalene">
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>aria</name>
-        <lb/>dit neit geistlich<pc resp="editor">,</pc> mer allet na
-        <lb/>deme vleische verstoent<pc resp="editor">.</pc> Doe
-        <lb/><name type="person" nymRef="Mary_Magdalene" rend="underline">Maria</name> sach<pc resp="editor">,</pc> dat ir suster <name type="person" nymRef="Martha">
+            <reg type="capit" resp="editor">M</reg></choice>aria</name>
+        <lb edRef="#D" facs="#D_231v_b_13"/>dit neit geistlich<pc resp="editor">,</pc> mer allet na 
+        <lb edRef="#D" facs="#D_231v_b_14"/>deme vleische verstoent<pc resp="editor">.</pc> Doe 
+        <lb edRef="#D" facs="#D_231v_b_15"/><name type="person" nymRef="Mary_Magdalene" rend="underline">Maria</name> sach<pc resp="editor">,</pc> dat ir suster <name type="person" nymRef="Martha">
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>artha</name>
-        <lb/>also seir schree<pc resp="editor">,</pc>
+            <reg type="capit" resp="editor">M</reg></choice>artha</name> 
+        <lb edRef="#D" facs="#D_231v_b_16"/>also seir schree<pc resp="editor">,</pc> 
         <choice>
           <orig>D</orig>
-          <corr resp="editor">d</corr>
-        </choice>o vragde <hi rend="underline">sy</hi> <name type="person" nymRef="Martha" rend="underline">
+          <reg type="capit" resp="editor">d</reg></choice>o vragde <hi rend="underline">sy</hi> <name type="person" nymRef="Martha" rend="underline">
         <choice>
           <orig>m</orig>
-          <corr resp="editor">M</corr>
-        </choice>ar<metamark function="line_break">-</metamark>
-        <lb/>then</name> ind
+          <reg type="capit" resp="editor">M</reg></choice>ar<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_231v_b_17"/>then</name> ind 
         <choice>
-          <abbr>sp<am>&#x305;</am>r</abbr>
+          <abbr>s<am>p&#771;</am>r</abbr>
           <expan>spr<ex>ach</ex></expan></choice><pc resp="editor">:</pc>
         <pc resp="editor">"</pc>
         <choice>
           <orig>m</orig>
-          <corr resp="editor">M</corr>
-        </choice>yn lieue suster<pc resp="editor">,</pc>
-        <lb/>warvmb schristu doch alletzit<pc resp="editor">,</pc>
-        <lb/><choice>
-          <abbr>wan<am>&#x305;</am>e</abbr>
-          <expan>wan<ex>n</ex>e</expan></choice>
-        ich tzo dir komen<pc resp="editor">?</pc> Js it
+          <reg type="capit" resp="editor">M</reg></choice>yn lieue suster<pc resp="editor">,</pc> 
+        <lb edRef="#D" facs="#D_231v_b_18"/>warvmb schristu doch alletzit<pc resp="editor">,</pc> 
+        <lb edRef="#D" facs="#D_231v_b_19"/><choice>
+          <abbr>wa<am>n&#772;</am>e</abbr>
+          <expan>wan<ex>n</ex>e</expan></choice> ich tzo dir komen<pc resp="editor">?</pc> Js it 
         <choice>
-          <abbr>my<am>&#x305;</am></abbr>
-          <expan>my<ex>n</ex></expan>
-        </choice>
-        <lb/>schult<pc resp="editor">,</pc> dat sage myr<pc resp="editor">,</pc>
+          <abbr>m<am>y&#772;</am></abbr>
+          <expan>my<ex>n</ex></expan></choice>
+        <lb edRef="#D" facs="#D_231v_b_20"/>schult<pc resp="editor">,</pc> dat sage myr<pc resp="editor">,</pc> 
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>ch wil waill
-        <lb/>van dir bliuen<pc resp="editor">.</pc><pc resp="editor">"</pc> <hi rend="underline">Do
+          <reg type="capit" resp="editor">j</reg></choice>ch wil waill
+        <lb edRef="#D" facs="#D_231v_b_21"/>van dir bliuen<pc resp="editor">.</pc><pc resp="editor">"</pc> <hi rend="underline">Do 
         <choice>
-          <abbr>sp<am>&#x305;</am>r</abbr>
-          <expan>spr<ex>ach</ex></expan>
-        </choice></hi>
+          <abbr>s<am>p&#771;</am>r</abbr>
+          <expan>spr<ex>ach</ex></expan></choice></hi>
         <name type="person" nymRef="Martha" rend="underline">
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>artha</name><pc resp="editor">:</pc>
-        <lb/><pc resp="editor">"</pc>Och lieue suster<pc resp="editor">,</pc> mach ich neit wail
-        <lb/>
+            <reg type="capit" resp="editor">M</reg></choice>artha</name><pc resp="editor">:</pc>
+        <lb edRef="#D" facs="#D_231v_b_22"/><pc resp="editor">"</pc>Och lieue suster<pc resp="editor">,</pc> mach ich neit wail 
+        <lb edRef="#D" facs="#D_231v_b_23"/>
         <choice>
-          <abbr>weyn<am>&#x305;</am>en</abbr>
-          <expan>weyn<ex>n</ex>en</expan>
-        </choice>
-        inde schrien<pc resp="editor">,</pc> want ich hor<metamark function="line_break">-</metamark>
-        <lb/>en altzit<pc resp="editor">,</pc> dat du dyn goede geruich<add place="above">t</add><pc resp="editor">,</pc>
-        <lb/>dat besser is dan golt inde siluer<pc resp="editor">,</pc>
-        <lb/><damage degree="low">
+          <abbr>wey<am>n&#772;</am>en</abbr>
+          <expan>weyn<ex>n</ex>en</expan></choice> inde schrien<pc resp="editor">,</pc> want ich hor<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_231v_b_24"/>en altzit<pc resp="editor">,</pc> dat du dyn goede geruich<add place="above">t</add><pc resp="editor">,</pc> 
+        <lb edRef="#D" facs="#D_231v_b_25"/>dat besser is dan golt inde siluer<pc resp="editor">,</pc> 
+        <lb edRef="#D" facs="#D_231v_b_26"/><damage degree="low">
           <choice>
             <orig>D</orig>
-            <corr resp="editor">d</corr>
-          </choice></damage>at haistu verloren<pc resp="editor">.</pc> Jnde dyne
-        <lb/>geselschafft en is neit goit
+            <reg type="capit" resp="editor">d</reg></choice></damage>at haistu verloren<pc resp="editor">.</pc> Jnde dyne 
+        <lb edRef="#D" facs="#D_231v_b_27"/>geselschafft en is neit goit 
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nde du
-        <lb/>beuleckes dyn schoen sele myt so
-        <lb/>
+          <reg type="capit" resp="editor">j</reg></choice>nde du 
+        <lb edRef="#D" facs="#D_231v_b_28"/>beuleckes dyn schoen sele myt so 
+        <lb edRef="#D" facs="#D_231v_b_29"/>
         <choice>
-          <abbr>manche<am>&#x305;</am></abbr>
-          <expan>manche<ex>n</ex></expan>
-        </choice>
-        groissen sunden<pc resp="editor">.</pc> Jnde altzit
-        <lb/>moisse ich dyn quade geruichte
-        <lb/>horen<pc resp="editor">,</pc> wae ich byn<pc resp="editor">.</pc><pc resp="editor">"</pc> <name type="person" nymRef="Mary_Magdalene" rend="underline">Maria</name> en
-        <lb/>konde sich neit langer inthalden<pc resp="editor">,</pc>
-        <lb/>do sy ir suster sach so bitterlich sere
-        <lb/>schrien
+          <abbr>manch<am>e&#772;</am></abbr>
+          <expan>manche<ex>n</ex></expan></choice> groissen sunden<pc resp="editor">.</pc> Jnde altzit 
+        <lb edRef="#D" facs="#D_231v_b_30"/>moisse ich dyn quade geruichte 
+        <lb edRef="#D" facs="#D_231v_b_31"/>horen<pc resp="editor">,</pc> wae ich byn<pc resp="editor">.</pc><pc resp="editor">"</pc> <name type="person" nymRef="Mary_Magdalene" rend="underline">Maria</name> en
+        <lb edRef="#D" facs="#D_231v_b_32"/>konde sich neit langer inthalden<pc resp="editor">,</pc> 
+        <lb edRef="#D" facs="#D_231v_b_33"/>do sy ir suster sach so bitterlich sere 
+        <lb edRef="#D" facs="#D_231v_b_34"/>schrien 
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nde <choice>
-          <abbr>sp<am>&#x305;</am>r</abbr>
+          <reg type="capit" resp="editor">j</reg></choice>nde 
+          <choice>
+          <abbr>s<am>p&#771;</am>r</abbr>
           <expan>spr<ex>ach</ex></expan></choice> mit schrienden
-        <pb edRef="#D" facs="#D_232r"/>
-        <cb edRef="#D" facs="#D_232r-a"/>ougen<pc resp="editor">:</pc> <pc resp="editor">"</pc>Och myn lieue suster<pc resp="editor">,</pc>
+        <pb edRef="#D" facs="#D_232r" n="fol.232r"/>
+        <cb edRef="#D" facs="#D_232r_a" n="fol.232ra"/>
+        <lb edRef="#D" facs="#D_232r_a_1"/>ougen<pc resp="editor">:</pc> <pc resp="editor">"</pc>Och myn lieue suster<pc resp="editor">,</pc> 
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>s it
-        <lb/>nu also<pc resp="editor">,</pc> dat ich myn goede geruich<metamark function="line_break">-</metamark>
-        <lb/>te verloren hayn<pc resp="editor">,</pc>
+          <reg type="capit" resp="editor">j</reg></choice>s it 
+        <lb edRef="#D" facs="#D_232r_a_2"/>nu also<pc resp="editor">,</pc> dat ich myn goede geruich<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark> 
+        <lb edRef="#D" facs="#D_232r_a_3"/>te verloren hayn<pc resp="editor">,</pc> 
         <choice>
           <orig>G</orig>
-          <corr resp="editor">g</corr>
-        </choice>iff myr doch
-        <lb/><del type="adapted">na</del>goeden rait<pc resp="editor">,</pc> dat ich myn <choice>
-          <abbr>leue<am>&#x305;</am></abbr>
+          <reg type="capit" resp="editor">g</reg></choice>iff myr doch 
+        <lb edRef="#D" facs="#D_232r_a_4"/><del rend="adapted">na</del>goeden rait<pc resp="editor">,</pc> dat ich myn <choice>
+          <abbr>leu<am>e&#772;</am></abbr>
           <expan>leue<ex>n</ex></expan></choice>
-        <lb/>moege <choice>
-          <abbr>bessere<am>&#x305;</am></abbr>
-          <expan>bessere<ex>n</ex></expan></choice>
-        Jnde myne groisse
-        <lb/>sunden<pc resp="editor">,</pc> da ich ynne byn<pc resp="editor">.</pc><pc resp="editor">"</pc> Do ant<metamark function="line_break">-</metamark>
-        <lb/>worde <name type="person" nymRef="Martha" rend="underline">Martha</name> ind<choice>
-          <abbr>sp<am>&#x305;</am>r</abbr>
+        <lb edRef="#D" facs="#D_232r_a_5"/>moege 
+        <choice>
+          <abbr>besser<am>e&#772;</am></abbr>
+          <expan>bessere<ex>n</ex></expan></choice> 
+        <choice>
+            <orig>J</orig>
+            <reg type="capit" resp="editor">j</reg></choice>nde myne groisse
+        <lb edRef="#D" facs="#D_232r_a_6"/>sunden<pc resp="editor">,</pc> da ich ynne byn<pc resp="editor">.</pc><pc resp="editor">"</pc> Do ant<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_232r_a_7"/>worde <name type="person" nymRef="Martha" rend="underline">Martha</name> ind<choice>
+          <abbr>s<am>p&#771;</am>r</abbr>
           <expan>spr<ex>ach</ex></expan></choice><pc resp="editor">:</pc>
         <pc resp="editor">"</pc>
         <choice>
           <orig>m</orig>
-          <corr resp="editor">M</corr>
-        </choice>yn lieue
-        <lb/>suster<pc resp="editor">,</pc> ich en kan dir geynen bes<metamark function="line_break">-</metamark>
-        <lb/>seren rait gegeuen<pc resp="editor">,</pc> dan beide
-        <lb/>inde bliff by myr eyn korte zit
-        <lb/>hude off morgen vroe<pc resp="editor">,</pc> So komp<add place="above">t</add>
-        <lb/>de artzeder der selen <name type="person" nymRef="Jesus_Christ" rend="underline"><choice>
-            <abbr>ih<am>&#x305;</am>s xp<am>&#x305;</am>s</abbr>
-            <expan>Ih<ex>esu</ex>s Ch<ex>ristu</ex>s</expan></choice></name><pc resp="editor">,</pc>
-        <lb/>myn hoichste troist Jnde myn
-        <lb/>alre liefster gast<pc resp="editor">.</pc> Bidde in<pc resp="editor">,</pc> dat
-        <lb/>hey dir affwesche dyne sunden<pc resp="editor">.</pc><pc resp="editor">"</pc>
-        <lb/><ab xml:id="Jesus_enters"/><hi rend="underline">Do</hi> <name type="person" nymRef="Mary_Magdalene" rend="underline">
+          <reg type="capit" resp="editor">M</reg></choice>yn lieue 
+        <lb edRef="#D" facs="#D_232r_a_8"/>suster<pc resp="editor">,</pc> ich en kan dir geynen bes<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_232r_a_9"/>seren rait gegeuen<pc resp="editor">,</pc> dan beide 
+        <lb edRef="#D" facs="#D_232r_a_10"/>inde bliff by myr eyn korte zit
+        <lb edRef="#D" facs="#D_232r_a_11"/>hude off morgen vroe<pc resp="editor">,</pc> So komp<add place="above">t</add> 
+        <lb edRef="#D" facs="#D_232r_a_12"/>de artzeder der selen <name type="person" nymRef="Jesus_Christ" rend="underline"><choice>
+            <abbr>i<am>h&#772;</am>s &#43859;<am>p&#772;</am>s</abbr>
+            <expan>Ih<ex>esu</ex>s Ch<ex>ristu</ex>s</expan></choice></name><pc resp="editor">,</pc> 
+        <lb edRef="#D" facs="#D_232r_a_13"/>myn hoichste troist Jnde myn
+        <lb edRef="#D" facs="#D_232r_a_14"/>alre liefster gast<pc resp="editor">.</pc> Bidde in<pc resp="editor">,</pc> dat
+        <lb edRef="#D" facs="#D_232r_a_15"/>hey dir affwesche dyne sunden<pc resp="editor">.</pc><pc resp="editor">"</pc>
+        <lb edRef="#D" facs="#D_232r_a_16"/><ab xml:id="Jesus_enters"/><hi rend="underline">Do</hi> <name type="person" nymRef="Mary_Magdalene" rend="underline">
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>aria</name> dese wort hoerde<pc resp="editor">,</pc> ee
-        <lb/>sy antworde<pc resp="editor">,</pc> sach de<del>se</del> maget
-        <lb/>uß der doren ind sach<pc resp="editor">,</pc> dat <name type="person" nymRef="Jesus_Christ" rend="underline">Jhesus</name>
-        <lb/>quam myt synen lieuen
-        <choice><abbr>heilge<am>&#x305;</am></abbr>
+            <reg type="capit" resp="editor">M</reg></choice>aria</name> dese wort hoerde<pc resp="editor">,</pc> ee 
+        <lb edRef="#D" facs="#D_232r_a_17"/>sy antworde<pc resp="editor">,</pc> sach de<del rend="strikethrough">se</del> maget
+        <lb edRef="#D" facs="#D_232r_a_18"/>uß der doren ind sach<pc resp="editor">,</pc> dat <name type="person" nymRef="Jesus_Christ" rend="underline">Jhesus</name>
+        <lb edRef="#D" facs="#D_232r_a_19"/>quam myt synen lieuen 
+        <choice><abbr>heilg<am>e&#772;</am></abbr>
           <expan>heilge<ex>n</ex></expan></choice>
-        <lb/><hi rend="underline"><choice><abbr>Jungere<am>&#x305;</am></abbr>
-          <expan>Jungere<ex>n</ex></expan></choice></hi><pc resp="editor">.</pc>
-        Do
-        <choice><abbr>sp<am>&#x305;</am>r</abbr>
-          <expan>spr<ex>ach</ex></expan></choice>
-        sy zo <name type="person" nymRef="Martha" rend="underline">
+        <lb edRef="#D" facs="#D_232r_a_20"/><hi rend="underline"><choice><abbr><choice><orig>J</orig><reg type="capit" resp="editor">j</reg></choice>unger<am>e&#772;</am></abbr>
+          <expan><choice><orig>J</orig><reg type="capit" resp="editor">j</reg></choice>ungere<ex>n</ex></expan></choice></hi><pc resp="editor">.</pc>Do 
+        <choice><abbr>s<am>p&#771;</am>r</abbr>
+          <expan>spr<ex>ach</ex></expan></choice> sy zo <name type="person" nymRef="Martha" rend="underline">
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>arthen</name><pc resp="editor">:</pc>
-        <lb/><pc resp="editor">"</pc>Jonffer<pc resp="editor">,</pc> der here kompt<pc resp="editor">.</pc><pc resp="editor">"</pc> Do
-        <choice><abbr>sto<am>&#x305;</am>t</abbr>
+            <reg type="capit" resp="editor">M</reg></choice>arthen</name><pc resp="editor">:</pc>
+        <lb edRef="#D" facs="#D_232r_a_21"/><pc resp="editor">"</pc>Jonffer<pc resp="editor">,</pc> der here kompt<pc resp="editor">.</pc><pc resp="editor">"</pc> Do 
+        <choice><abbr>st<am>o&#772;</am>t</abbr>
         <expan>sto<ex>n</ex>t</expan></choice>
-        <lb/><name type="person" nymRef="Martha" rend="underline">Martha</name> vp mit groisser vroe<metamark function="line_break">-</metamark>
-        <lb/>licheit ind ouch <name type="person" nymRef="Mary_Magdalene" rend="underline">Maria</name><pc resp="editor">.</pc> Do
-        <choice><abbr>spr<am>&#x305;</am></abbr>
+        <lb edRef="#D" facs="#D_232r_a_22"/><name type="person" nymRef="Martha" rend="underline">Martha</name> vp mit groisser vroe<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_232r_a_23"/>licheit ind ouch <name type="person" nymRef="Mary_Magdalene" rend="underline">Maria</name><pc resp="editor">.</pc> Do 
+        <choice><abbr>s<am>p&#771;</am>r</abbr>
           <expan>spr<ex>ach</ex></expan></choice>
-        <lb/><name type="person" nymRef="Martha" rend="underline">Martha</name><pc resp="editor">:</pc> <pc resp="editor">"</pc>
+        <lb edRef="#D" facs="#D_232r_a_24"/><name type="person" nymRef="Martha" rend="underline">Martha</name><pc resp="editor">:</pc> <pc resp="editor">"</pc>
         <choice>
           <orig>m</orig>
-          <corr resp="editor">M</corr>
-        </choice>yn lieue suster<pc resp="editor">,</pc> bis
-        <lb/>nu vroelich inde vervrouwe
-        <lb/>dich<pc resp="editor">,</pc>
+          <reg type="capit" resp="editor">M</reg></choice>yn lieue suster<pc resp="editor">,</pc> bis  
+        <lb edRef="#D" facs="#D_232r_a_25"/>nu vroelich inde vervrouwe 
+        <lb edRef="#D" facs="#D_232r_a_26"/>dich<pc resp="editor">,</pc> 
         <choice>
           <orig>W</orig>
-          <corr resp="editor">w</corr>
-        </choice>ant hey is also genoich<metamark function="line_break">-</metamark>
-        <lb/>lichen in synen worden<pc resp="editor">,</pc> dattu
-        <lb/>in alle dynen dagen des nee ge<metamark function="line_break">-</metamark>
-        <lb/>lich en haist gehort<pc resp="editor">.</pc><pc resp="editor">"</pc> Do
-        <choice><abbr>sp<am>&#x305;</am>r</abbr>
-          <expan>spr<ex>ach</ex></expan></choice>
-        <name type="person" nymRef="Mary_Magdalene" rend="underline">
+          <reg type="capit" resp="editor">w</reg></choice>ant hey is also genoich<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_232r_a_27"/>lichen in synen worden<pc resp="editor">,</pc> dattu 
+        <lb edRef="#D" facs="#D_232r_a_28"/>in alle dynen dagen des nee ge<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_232r_a_29"/>lich en haist gehort<pc resp="editor">.</pc><pc resp="editor">"</pc> Do 
+        <choice><abbr>s<am>p&#771;</am>r</abbr>
+          <expan>spr<ex>ach</ex></expan></choice> <name type="person" nymRef="Mary_Magdalene" rend="underline">
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice><damage degree="low">a</damage><metamark function="line_break">-</metamark>
-        <lb/>ria</name><pc resp="editor">:</pc> <pc resp="editor">"</pc>
+            <reg type="capit" resp="editor">M</reg></choice><damage degree="low">a</damage><metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_232r_a_30"/>ria</name><pc resp="editor">:</pc> <pc resp="editor">"</pc>
         <choice>
           <orig>w</orig>
-          <corr resp="editor">W</corr>
-        </choice>ilch is der here<pc resp="editor">?</pc><pc resp="editor">"</pc>
+          <reg type="capit" resp="editor">W</reg></choice>ilch is der here<pc resp="editor">?</pc><pc resp="editor">"</pc> 
         <choice>
           <orig>d</orig>
-          <corr resp="editor">D</corr>
-        </choice>o gaff
-        <lb/>ir <name type="person" nymRef="Martha">Martha</name> eyn
-        <choice><abbr>zeiche<am>&#x305;</am></abbr>
+          <reg type="capit" resp="editor">D</reg></choice>o gaff
+        <lb edRef="#D" facs="#D_232r_a_31"/>ir <name type="person" nymRef="Martha">Martha</name> eyn 
+        <choice><abbr>zeich<am>e&#772;</am></abbr>
           <expan>zeiche<ex>n</ex></expan></choice><pc resp="editor">,</pc>
-        dat sy in
-        <lb/>kente vur den anderen <hi rend="underline">Apos<metamark function="line_break">-</metamark>
-        <cb edRef="#D" facs="#D_232r-b"/>telen</hi><pc resp="editor">.</pc> <hi rend="underline">Do</hi> <name type="person" nymRef="Jesus_Christ" rend="underline">
-        <choice><abbr>ih<am>&#x305;</am>s xp<am>&#x305;</am>s</abbr>
+        dat sy in 
+        <lb edRef="#D" facs="#D_232r_a_32"/>kente vur den anderen <hi rend="underline">Apos<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <cb edRef="#D" facs="#D_232r_b" n="fol.232rb"/>
+        <lb edRef="#D" facs="#D_232r_b_1"/>telen</hi><pc resp="editor">.</pc> <hi rend="underline">Do</hi> <name type="person" nymRef="Jesus_Christ" rend="underline">
+        <choice><abbr>i<am>h&#773;</am>s &#43859;<am>p&#772;</am>s</abbr>
           <expan>Ih<ex>esu</ex>s Ch<ex>ristu</ex>s</expan></choice></name> quam in dat
-        <lb/>huiss<pc resp="editor">,</pc> <name type="person" nymRef="Virgin_Mary" rend="underline">Maria</name> stont
+        <lb edRef="#D" facs="#D_232r_b_2"/>huiss<pc resp="editor">,</pc> <name type="person" nymRef="Virgin_Mary" rend="underline">Maria</name> stont 
         <choice>
-          <abbr>beneue<am>&#x305;</am></abbr>
-          <expan>beneue<ex>n</ex></expan>
-        </choice>der
-        <lb/>doren vnde schamde sich sere<pc resp="editor">.</pc>
-        <lb/><name type="person" nymRef="Martha" rend="underline">Martha</name> geynck dem heren<metamark function="line_filler">-</metamark>
-        <lb/>intgegen mit gebogeden
-        <choice><abbr>knee<am>&#x305;</am></abbr>
+          <abbr>beneu<am>e&#772;</am></abbr>
+          <expan>beneue<ex>n</ex></expan></choice> der 
+        <lb edRef="#D" facs="#D_232r_b_3"/>doren vnde schamde sich sere<pc resp="editor">.</pc> 
+        <lb edRef="#D" facs="#D_232r_b_4"/><name type="person" nymRef="Martha" rend="underline">Martha</name> geynck dem heren<metamark source="manuscript" type="stroke" function="line_filler">-</metamark>
+        <lb edRef="#D" facs="#D_232r_b_5"/>intgegen mit gebogeden 
+        <choice><abbr>kne<am>e&#772;</am></abbr>
           <expan>knee<ex>n</ex></expan></choice>
-        <lb/>vnd heische in
+        <lb edRef="#D" facs="#D_232r_b_6"/>vnd heische in 
         <choice>
-          <abbr>wilkome<am>&#x305;</am></abbr>
-          <expan>wilkome<ex>n</ex></expan>
-        </choice>
-        Jnde
-        <lb/>intfeynck in mit groisser eir<metamark function="line_break">-</metamark>
-        <lb/>werdicheit inde mit <damage degree="low">lo</damage>ue in<hi rend="underline">d</hi>
-        <lb/>vroelicheit
+          <abbr>wilkom<am>e&#772;</am></abbr>
+          <expan>wilkome<ex>n</ex></expan></choice> 
+          <choice>
+            <orig>J</orig>
+            <reg type="capit" resp="editor">j</reg>
+          </choice>nde
+        <lb edRef="#D" facs="#D_232r_b_7"/>intfeynck in mit groisser eir<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark> 
+        <lb edRef="#D" facs="#D_232r_b_8"/>werdicheit inde mit <damage degree="low">lo</damage>ue in<hi rend="underline">d</hi>
+        <lb edRef="#D" facs="#D_232r_b_9"/>vroelicheit 
         <choice>
           <orig>V</orig>
-          <corr resp="editor">v</corr>
-        </choice>ns<damage degree="medium">e here</damage><pc resp="editor">.</pc> <name type="person" nymRef="Jesus_Christ" rend="underline">
+          <reg type="capit" resp="editor">v</reg></choice>ns<damage degree="medium">e here</damage><pc resp="editor">.</pc> <name type="person" nymRef="Jesus_Christ" rend="underline">
         <choice>
-          <abbr>ih<damage degree="medium"><am>&#x305;</am>s</damage> xp<am>&#x305;</am>s</abbr>
-          <expan>Ih<ex>esu</ex>s Ch<ex>ristu</ex>s</expan>
-          </choice></name>
-        <lb/>geynck vur hen in <damage degree="high">dat</damage> huiss
-        <lb/>
+          <abbr>i<damage degree="medium"><am>h&#772;</am>s</damage> &#43859;<am>p&#773;</am>s</abbr>
+          <expan>Ih<ex>esu</ex>s Ch<ex>ristu</ex>s</expan></choice></name> 
+        <lb edRef="#D" facs="#D_232r_b_10"/>geynck vur hen in <damage degree="high">dat</damage> huiss
+        <lb edRef="#D" facs="#D_232r_b_11"/>
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nde in
+          <reg type="capit" resp="editor">j</reg></choice>nde in
         <choice>
-          <abbr>sp<am>&#x305;</am>r</abbr>
-          <expan>spr<ex>ach</ex></expan>
-        </choice>
-        ir neit zo<pc resp="editor">.</pc> Do
+          <abbr>s<am>p&#771;</am>r</abbr>
+          <expan>spr<ex>ach</ex></expan></choice> ir neit zo<pc resp="editor">.</pc> Do 
         <choice>
-          <abbr>sp<am>&#x305;</am></abbr>
-          <expan>spr<ex>ach</ex></expan>
-        </choice>
-        <lb/><name type="person" nymRef="Martha">Martha</name> <damage degree="medium">zo d</damage>em <damage degree="medium">heren</damage> inde
-        <lb/>sachte<pc resp="editor">:</pc> <pc resp="editor">"</pc>Here<pc resp="editor">,</pc> suich<pc resp="editor">,</pc> <damage degree="low">da</damage>t is myn
-        <lb/>suster <name type="person" nymRef="Mary_Magdalene" rend="underline"><damage degree="low">M</damage>aria</name><pc resp="editor">.</pc><pc resp="editor">"</pc> Recht off sy wol<metamark function="line_break">-</metamark>
-        <lb/>de <damage degree="medium">sag</damage>en<pc resp="editor">:</pc><pc resp="editor">"</pc><damage degree="medium">Da</damage>t is sy<pc resp="editor">,</pc> dar ich soe
-        <lb/>dick vm schrien ind weynen<pc resp="editor">.</pc>
-        <lb/>Dit is sy<pc resp="editor">,</pc> de so
-        <choice><abbr>sweirliche<am>&#x305;</am></abbr>
-          <expan>sweirliche<ex>n</ex></expan></choice>ge<metamark function="line_break">-</metamark>
-        <lb/>sundiget hait<pc resp="editor">.</pc> Suich sy doch
-        <lb/>an mit dynen ougen der barm<metamark function="line_break">-</metamark>
-        <lb/>hertzi<damage degree="medium">chh</damage>eit
+          <abbr>s<am>p&#771;</am></abbr>
+          <expan>spr<ex>ach</ex></expan></choice>
+        <lb edRef="#D" facs="#D_232r_b_12"/><name type="person" nymRef="Martha">Martha</name> <damage degree="medium">zo d</damage>em <damage degree="medium">heren</damage> inde 
+        <lb edRef="#D" facs="#D_232r_b_13"/>sachte<pc resp="editor">:</pc> <pc resp="editor">"</pc>Here<pc resp="editor">,</pc> suich<pc resp="editor">,</pc> <damage degree="low">da</damage>t is myn 
+        <lb edRef="#D" facs="#D_232r_b_14"/>suster <name type="person" nymRef="Mary_Magdalene" rend="underline"><damage degree="low">M</damage>aria</name><pc resp="editor">.</pc><pc resp="editor">"</pc> Recht off sy wol<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_232r_b_15"/>de <damage degree="medium">sag</damage>en<pc resp="editor">:</pc><pc resp="editor">"</pc><damage degree="medium">Da</damage>t is sy<pc resp="editor">,</pc> dar ich soe 
+        <lb edRef="#D" facs="#D_232r_b_16"/>dick vm schrien ind weynen<pc resp="editor">.</pc> 
+        <lb edRef="#D" facs="#D_232r_b_17"/>Dit is sy<pc resp="editor">,</pc> de so 
+        <choice><abbr>sweirlich<am>e&#772;</am></abbr>
+          <expan>sweirliche<ex>n</ex></expan></choice>ge<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_232r_b_18"/>sundiget hait<pc resp="editor">.</pc> Suich sy doch 
+        <lb edRef="#D" facs="#D_232r_b_19"/>an mit dynen ougen der barm<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_232r_b_20"/>hertzi<damage degree="medium">chh</damage>eit 
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nde vergiff yr alle
-        <lb/>irre sunden<pc resp="editor">.</pc><pc resp="editor">"</pc> Doe <del type="strikethrough">kerte</del> sich
-        <choice><abbr>d<am>'</am></abbr>
+          <reg type="capit" resp="editor">j</reg></choice>nde vergiff yr alle
+        <lb edRef="#D" facs="#D_232r_b_21"/>irre sunden<pc resp="editor">.</pc><pc resp="editor">"</pc> Doe <del rend="strikethrough">kerte</del> sich 
+        <choice><abbr><am>d&#795;</am></abbr>
           <expan>d<ex>er</ex></expan></choice>
-        <lb/>here vmb inde sach <name type="person" nymRef="Mary_Magdalene" rend="underline">Marien</name> an
-        <lb/>mit den ougen der barmhertz<metamark function="line_break">-</metamark>
-        <lb/>icheit<pc resp="editor">,</pc> da hei mit an sach sante
-        <lb/>peter tzo der tzit<pc resp="editor">,</pc> do hei synre
-        <lb/>verlomde<pc resp="editor">.</pc> <ab xml:id="Mary_retreats"/><name type="person" nymRef="Mary_Magdalene" rend="underline">Maria</name> van groisser
-        <lb/>schemden<pc resp="editor">,</pc> de sy kreich in deme
-        <lb/>anseyn des heren<pc resp="editor">,</pc> geynck sy
-        <lb/>
+        <lb edRef="#D" facs="#D_232r_b_22"/>here vmb inde sach <name type="person" nymRef="Mary_Magdalene" rend="underline">Marien</name> an 
+        <lb edRef="#D" facs="#D_232r_b_23"/>mit den ougen der barmhertz<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_232r_b_24"/>icheit<pc resp="editor">,</pc> da hei mit an sach sante 
+        <lb edRef="#D" facs="#D_232r_b_25"/>peter tzo der tzit<pc resp="editor">,</pc> do hei synre
+        <lb edRef="#D" facs="#D_232r_b_26"/>verlomde<pc resp="editor">.</pc> <ab xml:id="Mary_retreats"/><name type="person" nymRef="Mary_Magdalene" rend="underline">Maria</name> van groisser 
+        <lb edRef="#D" facs="#D_232r_b_27"/>schemden<pc resp="editor">,</pc> de sy kreich in deme 
+        <lb edRef="#D" facs="#D_232r_b_28"/>anseyn des heren<pc resp="editor">,</pc> geynck sy
+        <lb edRef="#D" facs="#D_232r_b_29"/>
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>n de slaiff kamer irre suster
-        <lb/>
+          <reg type="capit" resp="editor">j</reg></choice>n de slaiff kamer irre suster
+        <lb edRef="#D" facs="#D_232r_b_30"/>
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nde veil mit groissen
+          <reg type="capit" resp="editor">j</reg></choice>nde veil mit groissen 
         <choice>
-          <abbr>weyne<am>&#x305;</am></abbr>
-          <expan>weyne<ex>n</ex></expan>
-        </choice>
-        <lb/>vp de erde
+          <abbr>weyn<am>e&#772;</am></abbr>
+          <expan>weyne<ex>n</ex></expan></choice>
+        <lb edRef="#D" facs="#D_232r_b_31"/>vp de erde 
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nde ir sunden war<metamark function="line_break">-</metamark>
-        <lb/>en ir leit van gronde ires hertz<metamark function="line_break">-</metamark>
-        <lb/>en
+          <reg type="capit" resp="editor">j</reg></choice>nde ir sunden war<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_232r_b_32"/>en ir leit van gronde ires hertz<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_232r_b_33"/>en 
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nde sy ouerdachte alle ire
-        <lb/>sunden<pc resp="editor">,</pc> de sy ee gedayn hadde<pc resp="editor">.</pc><metamark function="line_filler">-</metamark>
-        <lb/><name type="person" nymRef="Martha">Martha</name> beliff staende myt
-        <choice><abbr>de<am>&#x305;</am></abbr>
+          <reg type="capit" resp="editor">j</reg></choice>nde sy ouerdachte alle ire
+        <lb edRef="#D" facs="#D_232r_b_34"/>sunden<pc resp="editor">,</pc> de sy ee gedayn hadde<pc resp="editor">.</pc><metamark source="manuscript" type="stroke" function="line_filler">-</metamark> 
+        <lb edRef="#D" facs="#D_232r_b_35"/><name type="person" nymRef="Martha">Martha</name> beliff staende myt 
+        <choice><abbr>d<am>e&#772;</am></abbr>
           <expan>de<ex>n</ex></expan></choice>
-        <lb/>heren inde sprach mit eme alzo
-        <pb edRef="#D" facs="#D_233v"/>
-        <cb edRef="#D" facs="#D_233v-a"/>fruntliche<pc resp="editor">.</pc> Jn der seluer
+        <lb edRef="#D" facs="#D_232r_b_36"/>heren inde sprach mit eme alzo 
+        <pb edRef="#D" facs="#D_232v" n="fol.232v"/>
+        <cb edRef="#D" facs="#D_232v_a" n="fol.232va"/>
+        <lb edRef="#D" facs="#D_232v_a_1"/>
         <choice>
-          <abbr>stu<am>&#x305;</am>t</abbr>
-          <expan>stu<ex>n</ex>t</expan>
-        </choice>
-        <lb/>quam <name type="person" nymRef="Simon">
+          <abbr>fruntlich<am>e&#772;</am></abbr>
+          <expan>fruntliche<ex>m</ex></expan></choice><pc resp="editor">.</pc> Jn der seluer 
         <choice>
-          <abbr>Symeo<am>&#x305;</am></abbr>
-          <expan>Symeo<ex>n</ex></expan>
-        </choice></name>
+          <abbr>st<am>u&#772;</am>t</abbr>
+          <expan>stu<ex>n</ex>t</expan></choice>
+        <lb edRef="#D" facs="#D_232v_a_2"/>quam <name type="person" nymRef="Simon">
         <choice>
-          <abbr>lepros<am>&#42864;</am></abbr>
-          <expan>lepros<ex>us</ex></expan>
-        </choice>
-        inde
-        <lb/>bat den heren zo gaste mit
-        <lb/>
+          <abbr>Syme<am>o&#772;</am></abbr>
+          <expan>Symeo<ex>n</ex></expan></choice></name>
         <choice>
-          <abbr>syne<am>&#x305;</am></abbr>
-          <expan>syne<ex>n</ex></expan>
-        </choice>
-        <hi rend="underline">Jungeren</hi> Do it quam
-        <lb/>by de mailtzit do geynck der
-        <lb/>
+          <abbr>lepro<am>s&#42864;</am></abbr>
+          <expan>lepros<ex>us</ex></expan></choice> inde
+        <lb edRef="#D" facs="#D_232v_a_3"/>bat den heren zo gaste mit
+        <lb edRef="#D" facs="#D_232v_a_4"/>
         <choice>
-          <abbr>h<am>&#519;</am></abbr>
-          <expan>he<ex>re</ex></expan>
-        </choice>
-        in <name type="person" nymRef="Simon">Symons</name> huis<pc resp="editor">.</pc><ab xml:id="Martha_encourages_Mary"/> Jnd <name type="person" nymRef="Martha">
+          <abbr>syn<am>e&#772;</am></abbr>
+          <expan>syne<ex>n</ex></expan></choice> <hi rend="underline">Jungeren</hi> Do it quam 
+        <lb edRef="#D" facs="#D_232v_a_5"/>by de mailtzit do geynck der 
+        <lb edRef="#D" facs="#D_232v_a_6"/>
+        <choice>
+          <abbr>h<am>e&#785;</am></abbr>
+          <expan>he<ex>re</ex></expan></choice> in <name type="person" nymRef="Simon">Symons</name> huis<pc resp="editor">.</pc><ab xml:id="Martha_encourages_Mary"/> Jnd <name type="person" nymRef="Martha">
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>ar<metamark function="line_break">-</metamark>
-        <lb/>tha</name> geynck zo yrre
+            <reg type="capit" resp="editor">M</reg></choice>ar<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_232v_a_7"/>tha</name> geynck zo yrre 
         <choice>
-          <abbr>sust<am>'</am></abbr>
-          <expan>sust<ex>er</ex></expan>
-        </choice>
-        inde
-        <lb/>sac<damage degree="medium">ht</damage>e<pc resp="editor">,</pc> dat der
+          <abbr>sus<am>t&#795;</am></abbr>
+          <expan>sust<ex>er</ex></expan></choice> inde
+        <lb edRef="#D" facs="#D_232v_a_8"/>sac<damage degree="medium">ht</damage>e<pc resp="editor">,</pc> dat der
         <choice>
-          <abbr>h<am>&#519;</am></abbr>
-          <expan>he<ex>re</ex></expan>
-        </choice>
-        werre ewech
-        <lb/>gegan<damage degree="high">ge</damage>n<pc resp="editor">.</pc> <hi rend="underline">Do
+          <abbr>h<am>e&#785;</am></abbr>
+          <expan>he<ex>re</ex></expan></choice> werre ewech 
+        <lb edRef="#D" facs="#D_232v_a_9"/>gegan<damage degree="high">ge</damage>n<pc resp="editor">.</pc> <hi rend="underline">Do 
         <choice>
-          <abbr>sp<am>&#x305;</am>r</abbr>
-          <expan>spr<ex>ach</ex></expan>
-        </choice></hi>
-        <name type="person" nymRef="Mary_Magdalene" rend="underline">Maria<metamark function="line_filler">-</metamark>
-        <lb/>
+          <abbr>s<am>p&#771;</am>r</abbr>
+          <expan>spr<ex>ach</ex></expan></choice></hi> <name type="person" nymRef="Mary_Magdalene" rend="underline">Maria<metamark source="manuscript" type="stroke" function="line_filler">-</metamark> 
+        <lb edRef="#D" facs="#D_232v_a_10"/>
         <choice>
           <orig>m</orig>
-          <corr resp="editor">M</corr>
-        </choice>agdalena</name><pc resp="editor">:</pc> <pc resp="editor">"</pc>Och lieue suster<pc resp="editor">,</pc>
-        <lb/>
+          <reg type="capit" resp="editor">M</reg></choice>agdalena</name><pc resp="editor">:</pc> <pc resp="editor">"</pc>Och lieue suster<pc resp="editor">,</pc> 
+        <lb edRef="#D" facs="#D_232v_a_11"/>
         <choice>
           <orig>D</orig>
-          <corr resp="editor">d</corr>
-        </choice>u ha<damage degree="medium">ddes myr ge</damage>sacht<pc resp="editor">,</pc> dat
-        <lb/>hey also leifflich were in syme
-        <lb/>angesichte<pc resp="editor">.</pc> Jch sagen der<pc resp="editor">,</pc> dat ich
-        <lb/>jn alle m<damage degree="high">y</damage>nen d<damage degree="medium">ag</damage>en <damage degree="high">ne</damage>e gress<metamark function="line_break">-</metamark>
-        <lb/>licher angesichte en hayn<pc resp="editor">.</pc>
+          <reg type="capit" resp="editor">d</reg></choice>u ha<damage degree="medium">ddes myr ge</damage>sacht<pc resp="editor">,</pc> dat 
+        <lb edRef="#D" facs="#D_232v_a_12"/>hey also leifflich were in syme 
+        <lb edRef="#D" facs="#D_232v_a_13"/>angesichte<pc resp="editor">.</pc> Jch sagen der<pc resp="editor">,</pc> dat ich 
+        <lb edRef="#D" facs="#D_232v_a_14"/>jn alle m<damage degree="high">y</damage>nen d<damage degree="medium">ag</damage>en <damage degree="high">ne</damage>e gress<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_232v_a_15"/>licher angesichte en hayn<pc resp="editor">.</pc> 
         <choice>
-          <abbr>gesey<am>&#x305;</am></abbr>
-          <expan>gesey<ex>n</ex></expan>
-        </choice>
-        <lb/>
+          <abbr>gese<am>y&#772;</am></abbr>
+          <expan>gesey<ex>n</ex></expan></choice>
+        <lb edRef="#D" facs="#D_232v_a_16"/>
         <choice>
           <orig>A</orig>
-          <corr resp="editor">a</corr>
-        </choice>ls myr der
+          <reg type="capit" resp="editor">a</reg></choice>ls myr der 
         <choice>
-          <abbr>h<am>&#519;</am></abbr>
-          <expan>he<ex>re</ex></expan>
-        </choice>
-        bewisde<pc resp="editor">,</pc> do hey
-        <lb/>mich ansach<pc resp="editor">.</pc> Want hey sach<metamark function="line_filler">-</metamark>
-        <lb/>mich durc<damage degree="low">h</damage> alle <damage degree="mediu">m</damage>yn <damage degree="high">he</damage>rtz<pc resp="editor">,</pc>
+          <abbr>h<am>e&#785;</am></abbr>
+          <expan>he<ex>re</ex></expan></choice> bewisde<pc resp="editor">,</pc> do hey 
+        <lb edRef="#D" facs="#D_232v_a_17"/>mich ansach<pc resp="editor">.</pc> Want hey sach<metamark source="manuscript" type="stroke" function="line_filler">-</metamark> 
+        <lb edRef="#D" facs="#D_232v_a_18"/>mich durc<damage degree="low">h</damage> alle <damage degree="mediu">m</damage>yn <damage degree="high">he</damage>rtz<pc resp="editor">,</pc> 
         <choice>
           <orig>A</orig>
-          <corr resp="editor">a</corr>
-        </choice>lso
-        <lb/>dat ic<damage degree="high">h bek</damage>ennen alle
+          <reg type="capit" resp="editor">a</reg></choice>lso 
+        <lb edRef="#D" facs="#D_232v_a_19"/>dat ic<damage degree="high">h bek</damage>ennen alle 
         <choice>
-          <abbr>my<am>&#x305;</am></abbr>
-          <expan>my<ex>n</ex></expan>
-        </choice>
-        sun<metamark function="line_break">-</metamark>
-        <lb/>den<pc resp="editor">,</pc> de ich ee gedayn hayn<pc resp="editor">.</pc><pc resp="editor">"</pc> Do
-        <lb/><hi rend="underline"><choice><abbr>sp<am>&#x305;</am>r</abbr>
+          <abbr>m<am>y&#772;</am></abbr>
+          <expan>my<ex>n</ex></expan></choice> sun<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_232v_a_20"/>den<pc resp="editor">,</pc> de ich ee gedayn hayn<pc resp="editor">.</pc><pc resp="editor">"</pc> Do 
+        <lb edRef="#D" facs="#D_232v_a_21"/><hi rend="underline"><choice><abbr>s<am>p&#771;</am>r</abbr>
           <expan>spr<ex>ach</ex></expan></choice></hi><pc resp="editor">:</pc>
         <pc resp="editor">"</pc>
         <choice>
           <orig>l</orig>
-          <corr resp="editor">L</corr>
-        </choice>ieue suster<pc resp="editor">,</pc> verzage neit
+          <reg type="capit" resp="editor">L</reg></choice>ieue 
+        <choice>
+          <abbr>sus<am>t&#795;</am></abbr>
+          <expan>sust<ex>er</ex></expan></choice><pc resp="editor">,</pc> verzage neit 
         <choice>
           <orig>J</orig>
-          <corr resp="editor">j</corr>
-        </choice>nde
-        <lb/>halt dich wail<pc resp="editor">.</pc> Der here sal dir
-        <lb/>noch alle dyne sunden
-        <choice><abbr>vergue<am>&#x305;</am></abbr>
+          <reg type="capit" resp="editor">j</reg></choice>nde
+        <lb edRef="#D" facs="#D_232v_a_22"/>halt dich wail<pc resp="editor">.</pc> Der here sal dir 
+        <lb edRef="#D" facs="#D_232v_a_23"/>noch alle dyne sunden 
+        <choice><abbr>vergu<am>e&#772;</am></abbr>
           <expan>vergue<ex>n</ex></expan></choice><pc resp="editor">.</pc>
-        <lb/>Jch will gaen inde deynen eme
-        <lb/>zor taiffelen in <name type="person" nymRef="Simon">Symon<damage degree="low">s</damage></name> huisse<pc resp="editor">.</pc><pc resp="editor">"</pc>
-        <lb/>
+        <lb edRef="#D" facs="#D_232v_a_24"/>Jch will gaen inde deynen eme 
+        <lb edRef="#D" facs="#D_232v_a_25"/>zor taiffelen in <name type="person" nymRef="Simon">Symon<damage degree="low">s</damage></name> huisse<pc resp="editor">.</pc><pc resp="editor">"</pc> 
+        <lb edRef="#D" facs="#D_232v_a_26"/>
         <choice>
           <orig>d</orig>
-          <corr resp="editor">D</corr>
-        </choice>a sal hei essen<pc resp="editor">,</pc> kom <damage degree="medium">mich</damage> mit
-        <lb/>d<damage degree="low">a</damage>r<pc resp="editor">.</pc><pc resp="editor">"</pc> <hi rend="underline"><name type="person" nymRef="Mary_Magdalene" rend="underline">Maria</name></hi> sloich ir a<damage degree="medium">nges</damage>ichte
-        <lb/>tzo der erden inde en antwort
-        <lb/>ir neit<pc resp="editor">.</pc> <ab xml:id="Martha_in_Simons_house"/><hi rend="underline">Jr suster</hi> <name type="person" nymRef="Mary_Magdalene" rend="underline">Martha</name> geynck
-        <lb/>in <name type="person" nymRef="Simon">Symons</name> huiss<pc resp="editor">,</pc> inde wolde dem
-        <lb/>heren deynen<pc resp="editor">.</pc> Der here
+          <reg type="capit" resp="editor">D</reg></choice>a sal hei essen<pc resp="editor">,</pc> kom <damage degree="medium">mich</damage> mit
+        <lb edRef="#D" facs="#D_232v_a_27"/>d<damage degree="low">a</damage>r<pc resp="editor">.</pc><pc resp="editor">"</pc> <hi rend="underline"><name type="person" nymRef="Mary_Magdalene" rend="underline">Maria</name></hi> sloich ir a<damage degree="medium">nges</damage>ichte 
+        <lb edRef="#D" facs="#D_232v_a_28"/>tzo der erden inde en antwort 
+        <lb edRef="#D" facs="#D_232v_a_29"/>ir neit<pc resp="editor">.</pc> <ab xml:id="Martha_in_Simons_house"/><hi rend="underline">Jr suster</hi> <name type="person" nymRef="Mary_Magdalene" rend="underline">Martha</name> geynck 
+        <lb edRef="#D" facs="#D_232v_a_30"/>in <name type="person" nymRef="Simon">Symons</name> huiss<pc resp="editor">,</pc> inde wolde dem
+        <lb edRef="#D" facs="#D_232v_a_31"/>heren deynen<pc resp="editor">.</pc> Der here 
         <name type="person" nymRef="Jesus_Christ" rend="underline">
-        <choice><abbr>ihs<am>&#x305;</am></abbr>
-          <expan>Jhe<ex>esu</ex>s</expan></choice></name><metamark function="line_filler">-</metamark>
-        <lb/>vragde<pc resp="editor">:</pc> <pc resp="editor">"</pc><name type="person" nymRef="Martha" rend="underline">
+        <choice><abbr>ih<am>s&#774;</am></abbr>
+          <expan>Jhe<ex>esu</ex>s</expan></choice></name><metamark source="manuscript" type="stroke" function="line_filler">-</metamark>
+        <lb edRef="#D" facs="#D_232v_a_32"/>vragde<pc resp="editor">:</pc> <pc resp="editor">"</pc><name type="person" nymRef="Martha" rend="underline">
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>arthen</name><pc resp="editor">,</pc> w<damage degree="low">ae</damage> is dyn
-        <lb/>suster<pc resp="editor">?</pc>
+            <reg type="capit" resp="editor">M</reg></choice>arthen</name><pc resp="editor">,</pc> w<damage degree="low">ae</damage> is dyn
+        <lb edRef="#D" facs="#D_232v_a_33"/>suster<pc resp="editor">?</pc> 
         <choice>
           <orig>w</orig>
-          <corr resp="editor">W</corr>
-        </choice>ill sy ouch <damage degree="low">kom</damage>en<pc resp="editor">?</pc><pc resp="editor">"</pc> <name type="person" nymRef="Martha" rend="underline">Mar<metamark function="line_break">-</metamark>
-        <lb/>tha</name> antworde dem heren<metamark function="line_filler">-</metamark>
-        <cb edRef="#D" facs="#D_233v-b"/>ind sprach<pc resp="editor">:</pc><pc resp="editor">"</pc>
+          <reg type="capit" resp="editor">W</reg></choice>ill sy ouch <damage degree="low">kom</damage>en<pc resp="editor">?</pc><pc resp="editor">"</pc> <name type="person" nymRef="Martha" rend="underline">Mar<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_232v_a_34"/>tha</name> antworde dem heren<metamark source="manuscript" type="stroke" function="line_filler">-</metamark> 
+        <cb edRef="#D" facs="#D_232v_b" n="fol.233vb"/>
+        <lb edRef="#D" facs="#D_232v_b_1"/>ind sprach<pc resp="editor">:</pc><pc resp="editor">"</pc>
         <choice>
           <orig>o</orig>
-          <corr resp="editor">O</corr>
-        </choice>ch lieue here<pc resp="editor">,</pc> myn
-        <choice><abbr>sust<am>'</am></abbr>
+          <reg type="capit" resp="editor">O</reg></choice>ch lieue here<pc resp="editor">,</pc> myn 
+        <choice><abbr>sus<am>t&#795;</am></abbr>
           <expan>sust<ex>er</ex></expan></choice>
-        <lb/>liget ind schriet ind weynet
+        <lb edRef="#D" facs="#D_232v_b_2"/>liget ind schriet ind weynet 
         <choice>
           <orig>J</orig>
-          <reg type="capit" resp="editor">j</reg>
-        </choice>nd
-        <lb/>claget<pc resp="editor">,</pc>
+          <reg type="capit" resp="editor">j</reg></choice>nd
+        <lb edRef="#D" facs="#D_232v_b_3"/>claget<pc resp="editor">,</pc> 
         <choice>
           <orig>D</orig>
-          <reg type="capit" resp="editor">d</reg>
-        </choice>at du sy so strenglichen
-        <choice><abbr>a<am>&#x305;</am></abbr>
-          <expan>a<ex>n</ex></expan></choice><metamark function="line_break">-</metamark>
-        <lb/>geseyn haist<pc resp="editor">.</pc>
+          <reg type="capit" resp="editor">d</reg></choice>at du sy so strenglichen 
+        <choice><abbr><am>a&#772;</am></abbr>
+          <expan>a<ex>n</ex></expan></choice><metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_232v_b_4"/>geseyn haist<pc resp="editor">.</pc> 
         <choice>
           <orig>h</orig>
-          <reg type="capit" resp="editor">H</reg>
-        </choice>er vmb bidden ic<damage degree="low">h</damage> dich<pc resp="editor">,</pc>
-        <lb/>
+          <reg type="capit" resp="editor">H</reg></choice>er vmb bidden ic<damage degree="low">h</damage> dich<pc resp="editor">,</pc> 
+        <lb edRef="#D" facs="#D_232v_b_5"/>
         <choice>
           <orig>D</orig>
-          <reg type="capit" resp="editor">d</reg>
-        </choice>at du troister alre bedroiffder
-        <lb/>
-        <choice><abbr>hertze<am>&#x305;</am></abbr>
+          <reg type="capit" resp="editor">d</reg></choice>at du troister alre bedroiffder 
+        <lb edRef="#D" facs="#D_232v_b_6"/>
+        <choice><abbr>hertz<am>e&#772;</am></abbr>
           <expan>hertze<ex>n</ex></expan></choice><pc resp="editor">,</pc>
         <choice>
           <orig>J</orig>
-          <reg type="capit" resp="editor">j</reg>
-        </choice>s it sache<pc resp="editor">,</pc> dat sy her kompt<pc resp="editor">,</pc>
-        <lb/>Jr doch troistlichen worde tzo<pc resp="editor">.</pc>
-        <choice><abbr>spr<am>&#x305;</am></abbr>
+          <reg type="capit" resp="editor">j</reg></choice>s it sache<pc resp="editor">,</pc> dat sy her kompt<pc resp="editor">,</pc>
+        <lb edRef="#D" facs="#D_232v_b_7"/>Jr doch troistlichen worde tzo<pc resp="editor">.</pc>
+        <choice><abbr>sp<am>r&#771;</am></abbr>
           <expan>spr<ex>echen</ex></expan></choice>
-        <lb/>wils<pc resp="editor">.</pc><pc resp="editor">"</pc> Der here
-        <name type="person" nymRef="Jesus_Christ" rend="underline"><choice><abbr>xp<am>&#x305;</am>s ih<am>&#x305;</am>s</abbr>
-          <expan>Ch<ex>ristu</ex>s Ih<ex>esu</ex>s</expan></choice></name>
-        sachte ir<pc resp="editor">:</pc>
-        <lb/><pc resp="editor">"</pc><name type="person" nymRef="Martha" rend="underline">Martha</name><pc resp="editor">,</pc> myn lieue
+        <lb edRef="#D" facs="#D_232v_b_8"/>wils<pc resp="editor">.</pc><pc resp="editor">"</pc> Der here 
+        <name type="person" nymRef="Jesus_Christ" rend="underline"><choice><abbr>&#43859;<am>p&#773;</am>s i<am>h&#774;</am>s</abbr>
+          <expan>Ch<ex>ristu</ex>s Ih<ex>esu</ex>s</expan></choice></name> sachte ir<pc resp="editor">:</pc>
+        <lb edRef="#D" facs="#D_232v_b_9"/><pc resp="editor">"</pc><name type="person" nymRef="Martha" rend="underline">Martha</name><pc resp="editor">,</pc> myn lieue 
         <choice>
-          <abbr>vrundy<am>&#x305;</am>ne</abbr>
-          <expan>vrundy<ex>n</ex>ne</expan>
-        </choice><pc resp="editor">,</pc>
-        <lb/>ich louen dir<pc resp="editor">,</pc> is it<pc resp="editor">,</pc> dat dyn
-        <choice><abbr>sust<am>'</am></abbr>
+          <abbr>vrund<am>y&#772;</am>ne</abbr>
+          <expan>vrundy<ex>n</ex>ne</expan></choice><pc resp="editor">,</pc>
+        <lb edRef="#D" facs="#D_232v_b_10"/>ich louen dir<pc resp="editor">,</pc> is it<pc resp="editor">,</pc> dat dyn 
+        <choice><abbr>sus<am>t&#795;</am></abbr>
           <expan>sust<ex>er</ex></expan></choice><pc resp="editor">,</pc>
-        <lb/>her kompt<pc resp="editor">,</pc> Jch wil ir fruntlich zo
-        <lb/>sprechen<pc resp="editor">.</pc><ab xml:id="Gregory_comment"/><pc resp="editor">"</pc> <name type="person" nymRef="Gregory" rend="underline">
-        <choice><abbr>Gregori<am>&#42864;</am></abbr>
-          <expan>Gregori<ex>us</ex></expan></choice>
-        </name> <hi rend="underline">spricht<pc resp="editor">:</pc>
-        <pc resp="editor">"</pc><choice><abbr>
-          <orig>w</orig>
-          <reg type="capit" resp="editor">W</reg>a<am>&#x305;</am></abbr><metamark function="line_break">-</metamark>
+        <lb edRef="#D" facs="#D_232v_b_11"/>her kompt<pc resp="editor">,</pc> Jch wil ir fruntlich zo
+        <lb edRef="#D" facs="#D_232v_b_12"/>sprechen<pc resp="editor">.</pc><ab xml:id="Gregory_comment"/><pc resp="editor">"</pc> <name type="person" nymRef="Gregory" rend="underline">
+        <choice><abbr>Gregor<am>i&#42864;</am></abbr>
+          <expan>Gregori<ex>us</ex></expan></choice></name> <hi rend="underline">spricht<pc resp="editor">:</pc> 
+        <pc resp="editor">"</pc>
+        <choice>
+          <abbr>
+            <choice>
+             <orig>w</orig>
+             <reg type="capit" resp="editor">W</reg></choice><am>a&#772;</am></abbr><metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
           <expan>
             <orig>w</orig>
             <reg type="capit" resp="editor">W</reg>a<ex>n</ex></expan></choice></hi>
-        <lb/>ne ich gedencken<pc resp="editor">,</pc> <hi rend="underline">
+        <lb edRef="#D" facs="#D_232v_b_13"/>ne ich gedencken<pc resp="editor">,</pc> <hi rend="underline">
           <choice>
             <orig>W</orig>
-            <reg type="capit" resp="editor">w</reg>
-          </choice>e <name type="person" nymRef="Mary_Magdalene">
+            <reg type="capit" resp="editor">w</reg></choice>e <name type="person" nymRef="Mary_Magdalene">
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>aria</name></hi>
-        <lb/>quam jn dat huis <name type="person" nymRef="Simon">Symeonis</name>
-        <lb/>vngeladen<pc resp="editor">,</pc> inde vngebeden<metamark function="line_filler">-</metamark>
-        <lb/>we sy ir trane uß goess vp de vos<metamark function="line_break">-</metamark>
-        <lb/>se vns heren Jnde woische da mit
-        <lb/>de voisse des heren
+            <reg type="capit" resp="editor">M</reg></choice>aria</name></hi>
+        <lb edRef="#D" facs="#D_232v_b_14"/>quam jn dat huis <name type="person" nymRef="Simon">Symeonis</name> 
+        <lb edRef="#D" facs="#D_232v_b_15"/>vngeladen<pc resp="editor">,</pc> inde vngebeden<metamark source="manuscript" type="stroke" function="line_filler">-</metamark> 
+        <lb edRef="#D" facs="#D_232v_b_16"/>we sy ir trane uß goess vp de vos<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_232v_b_17"/>se vns heren Jnde woische da mit 
+        <lb edRef="#D" facs="#D_232v_b_18"/>de voisse des heren 
         <choice>
           <orig>J</orig>
-          <reg type="capit" resp="editor">j</reg>
-        </choice>nd drogde<pc resp="editor">,</pc>
-        <lb/>sy mit yren hairen<pc resp="editor">,</pc>
+          <reg type="capit" resp="editor">j</reg></choice>nd drogde<pc resp="editor">,</pc>
+        <lb edRef="#D" facs="#D_232v_b_19"/>sy mit yren hairen<pc resp="editor">,</pc> 
         <choice>
           <orig>S</orig>
-          <reg type="capit" resp="editor">s</reg>
-        </choice>o en kan
-        <lb/>ich myn hertz inde myn ougen
-        <lb/>neit langer inthalden
+          <reg type="capit" resp="editor">s</reg></choice>o en kan 
+        <lb edRef="#D" facs="#D_232v_b_20"/>ich myn hertz inde myn ougen 
+        <lb edRef="#D" facs="#D_232v_b_21"/>neit langer inthalden 
         <choice>
-          <abbr>va<am>&#x305;</am></abbr>
-          <expan>va<ex>n</ex></expan>
-        </choice>
-        schri<metamark function="line_break">-</metamark>
-        <lb/>en inde weynen<pc resp="editor">.</pc><pc resp="editor">"</pc><ab xml:id="Mary_in_Simons_house"/><name type="person" nymRef="Pseudo_Isidore">Jsidorus</name> schrifft<pc resp="editor">:</pc>
-        <lb/><add place="above">
+          <abbr>v<am>a&#772;</am></abbr>
+          <expan>va<ex>n</ex></expan></choice> schri<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_232v_b_22"/>en inde weynen<pc resp="editor">.</pc><pc resp="editor">"</pc><ab xml:id="Mary_in_Simons_house"/><name type="person" nymRef="Pseudo_Isidore">Jsidorus</name> schrifft<pc resp="editor">:</pc> 
+        <lb edRef="#D" facs="#D_232v_b_23"/><add place="above">
           <choice>
             <orig>e</orig>
-            <reg type="capit" resp="editor">E</reg>
-          </choice>e</add> dat der here geynck sitzen tzo
+            <reg type="capit" resp="editor">E</reg></choice>e</add> dat der here geynck sitzen tzo 
         <choice>
-          <abbr>d<am>'</am></abbr>
-          <expan>d<ex>er</ex></expan>
-        </choice>
-        <lb/>taiffelen<pc resp="editor">,</pc> do satte hey sich eirste
-        <lb/>vp syne gebenedide knee inde<metamark function="line_filler">-</metamark>
-        <lb/>louede synen hemelschen vader<pc resp="editor">.</pc>
-        <lb/>Jnd geynck <name type="person" nymRef="Mary_Magdalene">
+          <abbr><am>d&#795;</am></abbr>
+          <expan>d<ex>er</ex></expan></choice>
+        <lb edRef="#D" facs="#D_232v_b_24"/>taiffelen<pc resp="editor">,</pc> do satte hey sich eirste 
+        <lb edRef="#D" facs="#D_232v_b_25"/>vp syne gebenedide knee inde<metamark source="manuscript" type="stroke" function="line_filler">-</metamark> 
+        <lb edRef="#D" facs="#D_232v_b_26"/>louede synen hemelschen vader<pc resp="editor">.</pc>
+        <lb edRef="#D" facs="#D_232v_b_27"/>Jnd geynck <name type="person" nymRef="Mary_Magdalene">
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>aria</name> do in dat<metamark function="line_filler">-</metamark>
-        <lb/>huiss tzo dem heren<pc resp="editor">.</pc> Jnde als
-        <lb/>hey sas zo der taiffellen<pc resp="editor">,</pc> quam
-        <lb/>sy van achter zo mit groissem ru<metamark function="line_break">-</metamark>
-        <lb/>wen jnd hertzlicher
+            <reg type="capit" resp="editor">M</reg></choice>aria</name> do in dat<metamark source="manuscript" type="stroke" function="line_filler">-</metamark> 
+        <lb edRef="#D" facs="#D_232v_b_28"/>huiss tzo dem heren<pc resp="editor">.</pc> Jnde als 
+        <lb edRef="#D" facs="#D_232v_b_29"/>hey sas zo der taiffellen<pc resp="editor">,</pc> quam
+        <lb edRef="#D" facs="#D_232v_b_30"/>sy van achter zo mit groissem ru<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_232v_b_31"/>wen jnd hertzlicher 
         <choice>
-          <abbr>lieffde<am>&#x305;</am></abbr>
-          <expan>lieffde<ex>n</ex></expan>
-        </choice> storte
-        <lb/>sy de salue vp syn gebenedide
-        <lb/>hoifft<pc resp="editor">,</pc>
+          <abbr>lieffd<am>e&#772;</am></abbr>
+          <expan>lieffde<ex>n</ex></expan></choice> storte
+        <lb edRef="#D" facs="#D_232v_b_32"/>sy de salue vp syn gebenedide
+        <lb edRef="#D" facs="#D_232v_b_33"/>hoifft<pc resp="editor">,</pc> 
         <choice>
           <orig>J</orig>
-          <reg type="capit" resp="editor">j</reg>
-        </choice>nd veil neder vur de vois
-        <lb/>se des heren ind kussde de inde
-        <lb/>weynde bitterlichen sere<pc resp="editor">,</pc>
+          <reg type="capit" resp="editor">j</reg></choice>nd veil neder vur de vois
+        <lb edRef="#D" facs="#D_232v_b_34"/>se des heren ind kussde de inde 
+        <lb edRef="#D" facs="#D_232v_b_35"/>weynde bitterlichen sere<pc resp="editor">,</pc> 
         <choice>
           <orig>A</orig>
-          <reg type="capit" resp="editor">a</reg>
-        </choice>lso
-        <pb edRef="#D" facs="#D_233r"/>
-        <cb edRef="#D" facs="#D_233r-a"/>lange<pc resp="editor">,</pc> dat der here
-        <choice><abbr>spr<am>&#x305;</am></abbr>
+          <reg type="capit" resp="editor">a</reg></choice>lso 
+        <pb edRef="#D" facs="#D_233r" n="fol.233r"/>
+        <cb edRef="#D" facs="#D_233r_a" n="fol.233ra"/>
+        <lb edRef="#D" facs="#D_233r_a_1"/>lange<pc resp="editor">,</pc> dat der here 
+        <choice><abbr>sp<am>r&#771;</am></abbr>
           <expan>spr<ex>ach</ex></expan></choice><pc resp="editor">:</pc>
         <pc resp="editor">"</pc><name type="person" nymRef="Mary_Magdalene" rend="underline">Maria</name><pc resp="editor">,</pc>
-        <lb/>dyn sunden synt dyr
-        <choice><abbr>vergue<am>&#x305;</am></abbr>
+        <lb edRef="#D" facs="#D_233r_a_2"/>dyn sunden synt dyr 
+        <choice><abbr>vergu<am>e&#772;</am></abbr>
           <expan>vergue<ex>n</ex></expan></choice><pc resp="editor">.</pc>
-        <lb/>Ganck in vreden<pc resp="editor">.</pc><pc resp="editor">"</pc> <name type="person" nymRef="Mary_Magdalene" rend="underline">Maria</name>
-        <choice><abbr>sto<am>&#x305;</am>t</abbr>
+        <lb edRef="#D" facs="#D_233r_a_3"/>Ganck in vreden<pc resp="editor">.</pc><pc resp="editor">"</pc> <name type="person" nymRef="Mary_Magdalene" rend="underline">Maria</name> 
+        <choice><abbr>st<am>o&#772;</am>t</abbr>
           <expan>sto<ex>n</ex>t</expan></choice>
-        <lb/>vp in groisser
-        <choice><abbr>vroude<am>&#x305;</am></abbr>
-          <expan>vroude<ex>n</ex></expan></choice>
-        ind was
-        <lb/>gesont an selen ind an liue<pc resp="editor">.</pc> ind
-        <lb/>geynck in <name type="person" nymRef="Martha">
+        <lb edRef="#D" facs="#D_233r_a_4"/>vp in groisser 
+        <choice><abbr>vroud<am>e&#772;</am></abbr>
+          <expan>vroude<ex>n</ex></expan></choice> ind was
+        <lb edRef="#D" facs="#D_233r_a_5"/>gesont an selen ind an liue<pc resp="editor">.</pc> ind
+        <lb edRef="#D" facs="#D_233r_a_6"/>geynck in <name type="person" nymRef="Martha">
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>arthen</name> huis<pc resp="editor">,</pc> yrre
-        <lb/>suster<pc resp="editor">,</pc>
+            <reg type="capit" resp="editor">M</reg></choice>arthen</name> huis<pc resp="editor">,</pc> yrre
+        <lb edRef="#D" facs="#D_233r_a_7"/>suster<pc resp="editor">,</pc> 
         <choice>
           <orig>J</orig>
-          <reg type="capit" resp="editor">j</reg>
-        </choice>nde veil neder vp de<metamark function="line_filler">-</metamark>
-        <lb/>erde inde danckde gode mit
-        <choice><abbr>wey<am>&#x305;</am><metamark function="line_break">-</metamark>
-        <lb/>ende<am>&#x305;</am></abbr>
-          <expan>wey<ex>n</ex>ende<ex>n</ex></expan></choice>
-        ougen vur syne gotliche wael
-        <lb/>dait<pc resp="editor">.</pc> inde genade<pc resp="editor">.</pc><ab xml:id="VirginMary_visits"/>Jn der seluer zit
-        <lb/>hoirde <name type="person" nymRef="Virgin_Mary" rend="underline">
+          <reg type="capit" resp="editor">j</reg></choice>nde veil neder vp de<metamark source="manuscript" type="stroke" function="line_filler">-</metamark>
+        <lb edRef="#D" facs="#D_233r_a_8"/>erde inde danckde gode mit 
+        <choice>
+          <abbr>we<am>y&#772;</am><metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_233r_a_9"/>end<am>e&#772;</am></abbr>
+          <expan>wey<ex>n</ex>ende<ex>n</ex></expan></choice> ougen vur syne gotliche wael
+        <lb edRef="#D" facs="#D_233r_a_10"/>dait<pc resp="editor">.</pc> inde genade<pc resp="editor">.</pc><ab xml:id="VirginMary_visits"/>Jn der seluer zit
+        <lb edRef="#D" facs="#D_233r_a_11"/>hoirde <name type="person" nymRef="Virgin_Mary" rend="underline">
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>aria</name><pc resp="editor">,</pc> de moder <name type="person" nymRef="Jesus_Christ" rend="underline">
-        <choice><abbr>xp<am>&#x305;</am>i</abbr>
+            <reg type="capit" resp="editor">M</reg></choice>aria</name><pc resp="editor">,</pc> de moder <name type="person" nymRef="Jesus_Christ" rend="underline">
+        <choice><abbr>&#43859;<am>p&#772;</am>i</abbr>
           <expan>Ch<ex>rist</ex>i</expan></choice></name><pc resp="editor">,</pc> dat
-        <lb/>der her<damage degree="low">e</damage><pc resp="editor">,</pc> yr lieue soen<pc resp="editor">,</pc> was tzo
-        <lb/><name type="place" nymRef="Bethany">
+        <lb edRef="#D" facs="#D_233r_a_12"/>der her<damage degree="low">e</damage><pc resp="editor">,</pc> yr lieue soen<pc resp="editor">,</pc> was tzo
+        <lb edRef="#D" facs="#D_233r_a_13"/><name type="place" nymRef="Bethany">
           <choice>
             <orig>b</orig>
-            <corr resp="editor">B</corr>
-          </choice>ethanien</name><pc resp="editor">.</pc>
+            <reg type="capit" resp="editor">B</reg></choice>ethanien</name><pc resp="editor">.</pc> 
           <choice>
             <orig>d</orig>
-            <reg type="capit" resp="editor">D</reg>
-          </choice>o quam sy dar<pc resp="editor">,</pc> ind
-        <lb/>wolde den heren
+            <reg type="capit" resp="editor">D</reg></choice>o quam sy dar<pc resp="editor">,</pc> ind
+        <lb edRef="#D" facs="#D_233r_a_14"/>wolde den heren 
         <choice>
-          <abbr>ansp<am>&#x305;</am>r</abbr>
-          <expan>anspr<ex>echen</ex></expan>
-        </choice>
+          <abbr>ans<am>p&#771;</am>r</abbr>
+          <expan>anspr<ex>echen</ex></expan></choice>
         <choice>
           <orig>J</orig>
-          <reg type="capit" resp="editor">j</reg>
-        </choice>nde
-        <lb/>vernam doe<pc resp="editor">,</pc>
+          <reg type="capit" resp="editor">j</reg></choice>nde
+        <lb edRef="#D" facs="#D_233r_a_15"/>vernam doe<pc resp="editor">,</pc> 
         <choice>
           <orig>D</orig>
-          <reg type="capit" resp="editor">d</reg>
-        </choice>at der
-        <choice><abbr>h<am>&#519;</am></abbr>
-          <expan>he<ex>re</ex></expan></choice>
-        hadde
-        <lb/><name type="person" nymRef="Mary_Magdalene" rend="underline">
-        <choice><abbr>Marie<am>&#x305;</am>
+          <reg type="capit" resp="editor">d</reg></choice>at der 
+        <choice><abbr>h<am>e&#785;</am></abbr>
+          <expan>he<ex>re</ex></expan></choice> hadde
+        <lb edRef="#D" facs="#D_233r_a_16"/><name type="person" nymRef="Mary_Magdalene" rend="underline">
         <choice>
-          <orig>m</orig>
-          <reg type="capit" resp="editor">M</reg>
-        </choice>agdalene<am>&#x305;</am></abbr>
-          <expan>Marie<ex>n</ex> Magdalene<ex>n</ex></expan></choice></name>
-        alle yrre
-        <lb/>sunden vergeuen<pc resp="editor">.</pc> Doe
-        <choice><abbr>gey<am>&#x305;</am>ck</abbr>
+          <abbr>Mari<am>e&#772;</am></abbr> 
+          <expan>Marie<ex>n</ex></expan></choice>
+        <choice>
+          <abbr>
+            <choice>
+            <orig>m</orig>
+            <reg type="capit" resp="editor">M</reg></choice>agdalene<am>&#772;</am></abbr>
+          <expan>Magdalene<ex>n</ex></expan></choice></name> alle yrre
+        <lb edRef="#D" facs="#D_233r_a_17" />sunden vergeuen<pc resp="editor">.</pc> Doe 
+        <choice>
+          <abbr>ge<am>y&#772;</am>ck</abbr>
           <expan>gey<ex>n</ex>ck</expan></choice><pc resp="editor">,</pc>
-        <lb/>sy zo troisten inde tzo stercken
-        <lb/>sy
+        <lb edRef="#D" facs="#D_233r_a_18"/>sy zo troisten inde tzo stercken
+        <lb edRef="#D" facs="#D_233r_a_19"/>sy 
         <choice>
           <orig>I</orig>
-          <reg type="capit" resp="editor">i</reg>
-        </choice>n eyme gotlichen leuen<pc resp="editor">.</pc> <name type="person" nymRef="Mary_Magdalene" rend="underline">Ma<metamark function="line_break">-</metamark>
-        <lb/>ria</name> mit
+          <reg type="capit" resp="editor">i</reg></choice>n eyme gotlichen leuen<pc resp="editor">.</pc> <name type="person" nymRef="Mary_Magdalene" rend="underline">Ma<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_233r_a_20"/>ria</name> mit 
         <choice>
-          <abbr>vsgereckde<am>&#x305;</am></abbr>
-        </choice>
+          <abbr>vsgereckd<am>e&#772;</am></abbr>
+          <expan>vsgereckde<ex>n</ex></expan></choice>
         <choice>
-          <abbr>arme<am>&#x305;</am></abbr>
-          <expan>arme<ex>n</ex></expan>
-        </choice>
+          <abbr>arm<am>e&#772;</am></abbr>
+          <expan>arme<ex>n</ex></expan></choice>
         <choice>
-          <abbr>bego<am>&#x305;</am><lb/>de</abbr>
-          <expan>begonde</expan>
-        </choice>
-        <lb/>sy <name type="person" nymRef="Mary_Magdalene">
+          <abbr>beg<am>o&#772;</am>
+          <lb edRef="#D" facs="#D_233r_a_21"/>de</abbr>
+          <expan>begonde</expan></choice> sy <name type="person" nymRef="Mary_Magdalene">
         <choice>
-          <abbr>magdalene<am>&#x305;</am></abbr>
-          <expan>Magdalene<ex>n</ex></expan>
-        </choice></name>
-        zo
+          <abbr>magdalen<am>e&#772;</am></abbr>
+          <expan>Magdalene<ex>n</ex></expan></choice></name> zo 
         <choice>
-          <abbr>vmbvange<am>&#x305;</am></abbr>
+          <abbr>vmbvang<am>e&#772;</am></abbr>
           <expan>vmbvange<ex>n</ex></expan></choice><pc resp="editor">.</pc>
-        <lb/>Doe
+        <lb edRef="#D" facs="#D_233r_a_22"/>Doe 
         <choice>
-          <abbr>sp<am>&#x305;</am>r</abbr>
-          <expan>spr<ex>ach</ex></expan>
-        </choice>
+          <abbr>s<am>p&#771;</am>r</abbr>
+          <expan>spr<ex>ach</ex></expan></choice>
         <name type="person" nymRef="Mary_Magdalene" rend="underline">
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>aria
+            <reg type="capit" resp="editor">M</reg></choice>aria 
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>agdalena</name><pc resp="editor">:</pc>
-        <lb/><pc resp="editor">"</pc>O du alre heillichste
+            <reg type="capit" resp="editor">M</reg></choice>agdalena</name><pc resp="editor">:</pc>
+        <lb edRef="#D" facs="#D_233r_a_23"/><pc resp="editor">"</pc>O du alre heillichste 
         <choice>
           <orig>J</orig>
-          <reg type="capit" resp="editor">j</reg>
-        </choice>onffer<pc resp="editor">,</pc>
+          <reg type="capit" resp="editor">j</reg></choice>onffer<pc resp="editor">,</pc> 
         <choice>
           <orig>E</orig>
-          <reg type="capit" resp="editor">e</reg>
-        </choice>yn
-        <lb/>schryn des heilgen geistes<pc resp="editor">,</pc>
+          <reg type="capit" resp="editor">e</reg></choice>yn
+        <lb edRef="#D" facs="#D_233r_a_24"/>schryn des heilgen geistes<pc resp="editor">,</pc> 
         <choice>
-          <abbr>ga<am>&#x305;</am>ck</abbr>
-          <expan>ga<ex>n</ex>ck</expan>
-        </choice>
-        <lb/>van myr<pc resp="editor">,</pc>
+          <abbr>g<am>a&#772;</am>ck</abbr>
+          <expan>ga<ex>n</ex>ck</expan></choice>
+        <lb edRef="#D" facs="#D_233r_a_25"/>van myr<pc resp="editor">,</pc> 
         <choice>
           <orig>W</orig>
-          <reg type="capit" resp="editor">w</reg>
-        </choice>ant
+          <reg type="capit" resp="editor">w</reg></choice>ant 
         <choice>
-          <abbr>my<am>&#x305;</am>n</abbr>
-          <expan>my<ex>n</ex></expan>
-        </choice>
-        sundige
-        <lb/>licham en is neit weirdich<pc resp="editor">,</pc> an
-        <lb/>dich zo
+          <abbr>m<am>y&#772;</am>n</abbr>
+          <expan>my<ex>n</ex></expan></choice> sundige
+        <lb edRef="#D" facs="#D_233r_a_26"/>licham en is neit weirdich<pc resp="editor">,</pc> an 
+        <lb edRef="#D" facs="#D_233r_a_27"/>dich zo 
         <choice>
-          <abbr>roire<am>&#x305;</am></abbr>
-          <expan>roire<ex>n</ex></expan>
-        </choice><pc resp="editor">,</pc>
-        den licham<pc resp="editor">,</pc> da
+          <abbr>roir<am>e&#772;</am></abbr>
+          <expan>roire<ex>n</ex></expan></choice><pc resp="editor">,</pc>
+        den licham<pc resp="editor">,</pc> da 
         <choice>
-          <abbr>my<am>&#x305;</am></abbr>
-          <expan>my<ex>n</ex></expan>
-        </choice>
-        <lb/>selichmecher jnne beslossen is ge<metamark function="line_break">-</metamark>
-        <lb/>west<pc resp="editor">.</pc><pc resp="editor">"</pc> Do
+          <abbr>m<am>y&#772;</am></abbr>
+          <expan>my<ex>n</ex></expan></choice>
+        <lb edRef="#D" facs="#D_233r_a_28"/>selichmecher jnne beslossen is ge<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_233r_a_29"/>west<pc resp="editor">.</pc><pc resp="editor">"</pc> Do 
         <choice>
-          <abbr>sp<am>&#x305;</am>r</abbr>
-          <expan>spr<ex>ach</ex></expan>
-        </choice>
-        <hi rend="underline">de moder gotz</hi><pc resp="editor">,</pc> <name type="person" nymRef="Virgin_Mary" rend="underline">Maria</name><pc resp="editor">:</pc>
-        <lb/><pc resp="editor">"</pc>O du
+          <abbr>s<am>p&#771;</am>r</abbr>
+          <expan>spr<ex>ach</ex></expan></choice>
+        <hi rend="underline">de <name type="person" nymRef="Virgin_Mary">moder gotz</name></hi><pc resp="editor">,</pc> <name type="person" nymRef="Virgin_Mary" rend="underline">Maria</name><pc resp="editor">:</pc>
+        <lb edRef="#D" facs="#D_233r_a_30"/><pc resp="editor">"</pc>O du 
         <choice>
-          <abbr>fontey<am>&#x305;</am>ne</abbr>
-          <expan>fontey<ex>n</ex>ne</expan>
-        </choice>
-        myns kyndes ind
-        <lb/>myn<pc resp="editor">,</pc>
+          <abbr>fontey<am>n&#772;</am>e</abbr>
+          <expan>fonteyn<ex>n</ex>e</expan></choice> myns kyndes ind 
+        <lb edRef="#D" facs="#D_233r_a_31"/>myn<pc resp="editor">,</pc> 
         <choice>
           <orig>J</orig>
-          <reg type="capit" resp="editor">j</reg>
-        </choice>ch
+          <reg type="capit" resp="editor">j</reg></choice>ch 
         <choice>
-          <abbr>beken<am>&#x305;</am>en</abbr>
-          <expan>beken<ex>n</ex>en</expan>
-        </choice><pc resp="editor">,</pc>
-        dattu bist reyne
-        <lb/>
+          <abbr>beke<am>n&#772;</am>en</abbr>
+          <expan>beken<ex>n</ex>en</expan></choice><pc resp="editor">,</pc>
+        dattu bist reyne 
+        <lb edRef="#D" facs="#D_233r_a_32"/>
         <choice>
           <orig>A</orig>
-          <reg type="capit" resp="editor">a</reg>
-        </choice>n selen ind an liue van allen
-        <lb/>
+          <reg type="capit" resp="editor">a</reg></choice>n selen ind an liue van allen
+        <lb edRef="#D" facs="#D_233r_a_33"/>
         <choice>
-          <abbr>vlecke<am>&#x305;</am></abbr>
-          <expan>vlecke<ex>n</ex></expan>
-        </choice>
-        der sunden<pc resp="editor">.</pc><pc resp="editor">"</pc> Jnde de moder
-        <lb/>vns
+          <abbr>vleck<am>e&#772;</am></abbr>
+          <expan>vlecke<ex>n</ex></expan></choice> der sunden<pc resp="editor">.</pc><pc resp="editor">"</pc> Jnde de moder 
+        <lb edRef="#D" facs="#D_233r_a_34"/>vns 
         <choice>
-          <abbr>here<am>&#x305;</am></abbr>
-          <expan>here<ex>n</ex></expan>
-        </choice>
-        nam sye
+          <abbr>her<am>e&#772;</am></abbr>
+          <expan>here<ex>n</ex></expan></choice> nam sye 
         <choice>
-          <abbr>mynentliche<am>&#x305;</am></abbr>
-          <expan>mynentliche<ex>n</ex></expan>
-        </choice>
-        <lb/>vmb in yren arm inde kussde sy
-        <cb edRef="#D" facs="#D_233r-b"/>leifflichen<pc resp="editor">.</pc> Do sagen de tzwae
+          <abbr>mynentlich<am>e&#772;</am></abbr>
+          <expan>mynentliche<ex>n</ex></expan></choice>
+        <lb edRef="#D" facs="#D_233r_a_35"/>vmb in yren arm inde kussde sy 
+        <cb edRef="#D" facs="#D_233r_b" n="fol.233rb"/>
+        <lb edRef="#D" facs="#D_233r_b_1"/>
         <choice>
-          <abbr>suste<am>'</am></abbr>
-          <expan>suste<ex>r</ex></expan>
-        </choice>
-        <lb/>der moder gotz<pc resp="editor">,</pc> de mit yr dair
-        <lb/>
+          <abbr>
+            <choice>
+              <orig>L</orig>
+              <reg type="capit" resp="editor">l</reg></choice>eifflich<am>e&#772;</am>
+          </abbr>
+          <expan>leiffliche<ex>m</ex></expan></choice>
+        <pc resp="editor">.</pc> Do sagen de tzwae 
         <choice>
-          <abbr>kome<am>&#x305;</am></abbr>
-          <expan>kome<ex>n</ex></expan>
-        </choice>
-        wairen zo dem
+          <abbr>sust<am>e&#795;</am></abbr>
+          <expan>suste<ex>r</ex></expan></choice>
+        <lb edRef="#D" facs="#D_233r_b_2"/>der <name type="person" nymRef="Virgin_Mary">moder gotz</name><pc resp="editor">,</pc> de mit yr dair 
+        <lb edRef="#D" facs="#D_233r_b_3"/>
         <choice>
-          <abbr>here<am>&#x305;</am></abbr>
-          <expan>here<ex>n</ex></expan>
-        </choice>
-        inde<pc resp="editor">.</pc>
-        <lb/>Ind <name type="person" nymRef="Martilla">
+          <abbr>kom<am>e&#772;</am></abbr>
+          <expan>kome<ex>n</ex></expan></choice> wairen zo dem 
+        <choice>
+          <abbr>her<am>e&#772;</am></abbr>
+          <expan>here<ex>n</ex></expan></choice> inde<pc resp="editor">.</pc>
+        <lb edRef="#D" facs="#D_233r_b_4"/>Ind <name type="person" nymRef="Martilla">
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>arcella</name><pc resp="editor">,</pc>
+            <reg type="capit" resp="editor">M</reg></choice>arcella</name><pc resp="editor">,</pc> 
           <choice>
             <orig>D</orig>
-            <reg type="capit" resp="editor">d</reg>
-          </choice>at <name type="person" nymRef="Virgin_Mary" rend="underline">
+            <reg type="capit" resp="editor">d</reg></choice>at <name type="person" nymRef="Virgin_Mary"><hi rend="underline">
             <choice>
               <orig>m</orig>
-              <corr resp="editor">M</corr>
-            </choice>aria</name> <hi rend="underline">de
-        <lb/>moder</hi> gotz<pc resp="editor">,</pc> ind <name type="person" nymRef="Mary_Magdalene">
+              <reg type="capit" resp="editor">M</reg></choice>aria de 
+        <lb edRef="#D" facs="#D_233r_b_5"/> moder</hi> gotz</name><pc resp="editor">,</pc> ind <name type="person" nymRef="Mary_Magdalene">
         <choice>
-          <abbr>maria madgale<am>&#x305;</am></abbr>
-          <expan>Maria Magdale<ex>n</ex></expan></choice></name><metamark function="line_break">-</metamark>
-        <lb/>na<pc resp="editor">,</pc> vp gehauen
+          <abbr>maria madgal<am>e&#772;</am><metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+          <lb edRef="#D" facs="#D_233r_b_6"/>
+          na</abbr>
+          <expan>Maria Magdale<ex>n</ex>na</expan></choice></name><pc resp="editor">,</pc> vp gehauen 
         <choice>
-          <abbr>worde<am>&#x305;</am></abbr>
-          <expan>worde<ex>n</ex></expan>
-        </choice>
-        van der
-        <lb/>erden tzwae ellen hoege inde<metamark function="line_filler">-</metamark>
-        <lb/>worden weder neder gesat weir<metamark function="line_break">-</metamark>
-        <lb/>declichen zo der
+          <abbr>word<am>e&#772;</am></abbr>
+          <expan>worde<ex>n</ex></expan></choice> van der
+        <lb edRef="#D" facs="#D_233r_b_7"/>erden tzwae ellen hoege inde<metamark source="manuscript" type="stroke" function="line_filler">-</metamark>
+        <lb edRef="#D" facs="#D_233r_b_8"/>worden weder neder gesat weir<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_233r_b_9"/>declichen zo der 
         <choice>
-          <abbr>erde<am>&#x305;</am></abbr>
+          <abbr>erd<am>e&#772;</am></abbr>
           <expan>erde<ex>n</ex></expan></choice><pc resp="editor">.</pc>
-        <ab xml:id="Mary_rest_of_life"/>Dar na
-        <lb/>was <name type="person" nymRef="Mary_Magdalene" rend="underline">
+        <ab xml:id="Mary_rest_of_life"/>Dar na 
+        <lb edRef="#D" facs="#D_233r_b_10"/>was <name type="person" nymRef="Mary_Magdalene" rend="underline">
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>aria
+            <reg type="capit" resp="editor">M</reg></choice>aria 
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>agdalena</name> alle yre
-        <lb/>dage in deme deynste gotz
+            <reg type="capit" resp="editor">M</reg></choice>agdalena</name> alle yre
+        <lb edRef="#D" facs="#D_233r_b_11"/>dage in deme deynste gotz 
         <choice>
           <orig>J</orig>
-          <reg type="capit" resp="editor">j</reg>
-        </choice>nde
-        <lb/>volgde eme na
+          <reg type="capit" resp="editor">j</reg></choice>nde
+        <lb edRef="#D" facs="#D_233r_b_12"/>volgde eme na 
         <choice>
           <orig>J</orig>
-          <reg type="capit" resp="editor">j</reg>
-        </choice>nde hoirde syne
-        <lb/>heilge lerre inde was by eme bis
-        <lb/>den doit<pc resp="editor">.</pc> Jnde na dem dode vns
-        <lb/>
+          <reg type="capit" resp="editor">j</reg></choice>nde hoirde syne
+        <lb edRef="#D" facs="#D_233r_b_13"/>heilge lerre inde was by eme bis
+        <lb edRef="#D" facs="#D_233r_b_14"/>den doit<pc resp="editor">.</pc> Jnde na dem dode vns
+        <lb edRef="#D" facs="#D_233r_b_15"/>
         <choice>
-          <abbr>here<am>&#x305;</am></abbr>
-          <expan>here<ex>n</ex></expan>
-        </choice>
-        geynck sy in de woistenie<pc resp="editor">,</pc>
+          <abbr>her<am>e&#772;</am></abbr>
+          <expan>here<ex>n</ex></expan></choice> geynck sy in de woistenie<pc resp="editor">,</pc>
         <lb/>
         <choice>
           <orig>J</orig>
-          <reg type="capit" resp="editor">j</reg>
-        </choice>nde dede groisse penetencie
+          <reg type="capit" resp="editor">j</reg></choice>nde dede groisse penetencie 
         <choice>
           <orig>J</orig>
-          <reg type="capit" resp="editor">j</reg>
-        </choice>nd
-        <lb/>sy en nam geyn ertsche spisse zo
-        <lb/>sich in alle yren dagen
+          <reg type="capit" resp="editor">j</reg></choice>nd
+        <lb edRef="#D" facs="#D_233r_b_16"/>sy en nam geyn ertsche spisse zo 
+        <lb edRef="#D" facs="#D_233r_b_17"/>sich in alle yren dagen 
         <choice>
           <orig>M</orig>
-          <reg type="capit" resp="editor">m</reg>
-        </choice>er<pc resp="editor">.</pc>
+          <reg type="capit" resp="editor">m</reg></choice>er<pc resp="editor">.</pc> 
         <choice>
           <orig>d</orig>
-          <reg type="capit" resp="editor">D</reg>
-        </choice>e
-        <lb/>heilge engel
+          <reg type="capit" resp="editor">D</reg></choice>e
+        <lb edRef="#D" facs="#D_233r_b_18"/>heilge engel 
         <choice>
-          <abbr>name<am>&#x305;</am></abbr>
-          <expan>name<ex>n</ex></expan>
-        </choice>
-        sy vij werff
-        <lb/>den dach vp inde
+          <abbr>nam<am>e&#772;</am></abbr>
+          <expan>name<ex>n</ex></expan></choice> sy vij werff 
+        <lb edRef="#D" facs="#D_233r_b_19"/>den dach vp inde 
         <choice>
-          <abbr>songe<am>&#x305;</am></abbr>
-          <expan>songe<ex>n</ex></expan>
-        </choice>
-        inde
+          <abbr>song<am>e&#772;</am></abbr>
+          <expan>songe<ex>n</ex></expan></choice> inde 
         <choice>
-          <abbr>lo<metamark function="line_break">-</metamark>
-        <lb/>uede<am>&#x305;</am></abbr>
-          <expan>louede<ex>n</ex></expan>
-        </choice>
-        heren<pc resp="editor">.</pc> Dar na starff sy<pc resp="editor">.</pc>
+          <abbr>lo<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_233r_b_20"/>
+        ued<am>e&#772;</am></abbr>
+          <expan>louede<ex>n</ex></expan></choice> heren<pc resp="editor">.</pc> Dar na starff sy<pc resp="editor">.</pc> 
         <choice>
           <orig>d</orig>
-          <reg type="capit" resp="editor">D</reg>
-        </choice>o
-        <lb/>namen de heilge
-        <choice>
-          <abbr>engele<am>&#x305;</am></abbr>
-          <expan>engele<ex>n</ex></expan>
-        </choice>
-        ir sele
-        <lb/>
+          <reg type="capit" resp="editor">D</reg></choice>o
+        <lb edRef="#D" facs="#D_233r_b_21"/>namen de heilge engele ir sele
+        <lb edRef="#D" facs="#D_233r_b_22"/>
         <choice>
           <orig>J</orig>
-          <reg type="capit" resp="editor">j</reg>
-        </choice>nde vorden sy mit groisser eir<metamark function="line_break">-</metamark>
-        <lb/>weirdicheit in dat ewige
+          <reg type="capit" resp="editor">j</reg></choice>nde vorden sy mit groisser eir<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_233r_b_23"/>weirdicheit in dat ewige 
         <choice>
-          <abbr>leue<am>&#x305;</am></abbr>
-          <expan>leue<ex>n</ex></expan>
-        </choice>
-        <lb/>in dat gotliche
+          <abbr>leu<am>e&#772;</am></abbr>
+          <expan>leue<ex>n</ex></expan></choice>
+        <lb edRef="#D" facs="#D_233r_b_24"/>in dat gotliche 
         <choice>
-          <abbr>anschauwe<am>&#x305;</am></abbr>
-          <expan>anschauwe<ex>n</ex></expan></choice><pc resp="editor">.</pc>
-        <ab xml:id="epilogue"/>Jrre
-        <lb/>bekerrunge geschach vp den eirs<metamark function="line_break">-</metamark>
-        <lb/>ten dach des mertz<pc resp="editor">.</pc> <name type="person" nymRef="Mary_Magdalene">
+          <abbr>anschauw<am>e&#772;</am></abbr>
+          <expan>anschauwe<ex>n</ex></expan></choice><pc resp="editor">.</pc> <ab xml:id="epilogue"/>Jrre
+        <lb edRef="#D" facs="#D_233r_b_25"/>bekerrunge geschach vp den eirs<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_233r_b_26"/>ten dach des mertz<pc resp="editor">.</pc> <name type="person" nymRef="Mary_Magdalene">
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>aria
+            <reg type="capit" resp="editor">M</reg></choice>aria 
           <choice>
             <orig>m</orig>
-            <corr resp="editor">M</corr>
-          </choice>
-          mag<metamark function="line_break">-</metamark>
-        <lb/>dalena</name> plach zo sagen<pc resp="editor">: </pc><pc resp="editor">"</pc>Och hait
-        <lb/>myr got der
+            <reg type="capit" resp="editor">M</reg></choice>ag<metamark source="manuscript" type="double_hyphen" function="word_division">-</metamark>
+        <lb edRef="#D" facs="#D_233r_b_27"/>dalena</name> plach zo sagen<pc resp="editor">: </pc><pc resp="editor">"</pc>Och hait 
+        <lb edRef="#D" facs="#D_233r_b_28"/>myr got der 
         <choice>
-          <abbr>h<am>&#519;</am></abbr>
-          <expan>he<ex>re</ex></expan>
-        </choice>
-        all myn
+          <abbr>h<am>e&#785;</am></abbr>
+          <expan>he<ex>re</ex></expan></choice> all myn 
         <choice>
-          <abbr>sunde<am>&#x305;</am></abbr>
-          <expan>sunde<ex>n</ex></expan>
-        </choice>
-        <lb/>verguen<pc resp="editor">,</pc>
+          <abbr>sund<am>e&#772;</am></abbr>
+          <expan>sunde<ex>n</ex></expan></choice>
+        <lb edRef="#D" facs="#D_233r_b_29"/>verguen<pc resp="editor">,</pc> 
         <choice>
           <orig>J</orig>
-          <reg type="capit" resp="editor">j</reg>
-        </choice>ch en will sy myr
-        <lb/>seluer numer mee vergeuen<pc resp="editor">.</pc><pc resp="editor">"</pc>
-        <lb/><hi rend="underline">Deo gratias</hi>
+          <reg type="capit" resp="editor">j</reg></choice>ch en will sy myr
+        <lb edRef="#D" facs="#D_233r_b_30"/>seluer numer mee vergeuen<pc resp="editor">.</pc><pc resp="editor">"</pc>
+        <lb edRef="#D" facs="#D_233r_b_31"/><hi rend="underline">Deo gratias</hi> 
+    </name>
     </body>
   </text>
 </TEI>  
