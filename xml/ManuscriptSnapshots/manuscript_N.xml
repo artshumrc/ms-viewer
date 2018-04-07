@@ -5,7 +5,7 @@
         <!-- (file description) contains title, edition and publication statement as well as source description   -->
         <fileDesc>
             <!-- (title statement) groups information about the title of a work and those responsible for its content -->
-            <titleStmt> 
+            <titleStmt>
                 <title>Mary Magdalene Conversion Legend</title>
                 <author ref="#PseudoIsidor">Pseudo Isidor</author>
                 <respStmt>
@@ -50,7 +50,7 @@
 					            <msItem n="3">
 						            <locus>13ra-17vb</locus>
 						            <title>Legende der Hl. Maria Magdalena</title>
-						             <incipit> <locus>fol. 13ra</locus> Dit is die bekeirynge sent marien magdalena als ysiderus beschryfft 
+						             <incipit> <locus>fol. 13ra</locus> Dit is die bekeirynge sent marien magdalena als ysiderus beschryfft
 				                 </incipit>
 						             <explicit> <locus>fol. 17rv</locus> Ich in sal sy myr nummerme vergeuen
 							           </explicit>
@@ -102,14 +102,14 @@
                     <witness xml:id="N">N</witness>
                 </listWit>
             </sourceDesc>
-        </fileDesc>        
-        
+        </fileDesc>
+
         <!-- (encoding description) documents the relationship between an electronic text and the source or sources from which it was derived. -->
         <encodingDesc>
             <!-- (schema reference) describes or points to a related customization or schema file -->
             <schemaRef n="lbp-critical-1.0.0" url="https://raw.githubusercontent.com/lombardpress/lombardpress-schema/develop/src/out/critical.rng"/>
             <editorialDecl>
-                <!-- (editorial practice declaration) provides details of editorial principles and practices applied during the encoding of a text. -->  
+                <!-- (editorial practice declaration) provides details of editorial principles and practices applied during the encoding of a text. -->
                 <p>Encoding of this text has followed the published guidlines on...</p>
             </editorialDecl>
         </encodingDesc>
@@ -118,18 +118,18 @@
             <!-- listChange groups a number of change descriptions (in reverse order!) associated with either the creation of a source text or the revision of an encoded text. -->
             <listChange>
                 <change when="2017-08-28" status="draft" n="0.0.0"><p>Change date when editing file for the first time</p></change>
-                <change when="2017-08-25" status="draft" n="0.0.0"><p>Created file for the first time.</p></change>                
+                <change when="2017-08-25" status="draft" n="0.0.0"><p>Created file for the first time.</p></change>
             </listChange>
         </revisionDesc>
 </teiHeader>
 
     <text>
-        <body>           
-           <pb edRef="#N" facs="#N_013r" n="fol. 13r"/>   
+        <body>
+           <pb edRef="#N" facs="#N_013r" n="fol. 13r"/>
            <cb edRef="#N" facs="#N_013r_a" n="fol. 13ra"/>
-            
+
               <lb facs="#N_013r_a_01"/>
-            <ab xml:id="#N_legend_title" rend="rubr"><w xml:id="N_013r_a_01_01">Dit</w> is die bekeirynge
+            <ab xml:id="legend_title" rend="rubr"><w xml:id="N_013r_a_01_01">Dit</w> is die bekeirynge
               <lb facs="#N_013r_a_02"/>sent <name type="person" nymRef="Mary_Magdalene"><choice><orig>m</orig><reg resp="editor" type="capit">M</reg></choice>arien <choice><orig>m</orig><reg resp="editor" type="capit">M</reg></choice>agdalena</name>
               <lb facs="#N_013r_a_03"/>als <name type="person" nymRef="Pseudo_Isidore"><choice><orig>y</orig><reg resp="editor" type="capit">Y</reg></choice>siderus</name> <w xml:id="N_013r_a_03_03">beschryfft</w><pc resp="editor">.</pc>
                 <app from="#N_013r_a_01_01" to="#N_013r_a_03_03">
@@ -142,7 +142,7 @@
                 </app>
            </ab>
               <lb facs="#N_013r_a_04"/>
-            <ab xml:id="#N_genealogy"><name type="person" nymRef="Mary_Magdalene"><hi rend="init_lombard_rubr">M</hi>Aria</name> was gebor<metamark type="hyphen" source="manuscript" function="word_division">-</metamark>
+            <ab xml:id="genealogy"><name type="person" nymRef="Mary_Magdalene"><hi rend="init_lombard_rubr">M</hi>Aria</name> was gebor<metamark type="hyphen" source="manuscript" function="word_division">-</metamark>
               <lb facs="#N_013r_a_05"/>en van eyme
               <lb facs="#N_013r_a_06"/>edelen stam ind
               <lb facs="#N_013r_a_07"/>van eyrlichen geslecht
@@ -159,9 +159,9 @@
               <lb facs="#N_013r_a_18"/>dode<pc><choice><orig>.</orig><reg resp="editor" type="punct">,</reg></choice></pc> <choice><orig>d</orig><reg resp="editor" type="capit">D</reg></choice>o hei veir dage in
               <lb facs="#N_013r_a_19"/>dem graue hat gewest<pc source="manuscript">.</pc>
             </ab>
-            
+
               <lb facs="#N_013r_a_20"/>
-            <ab xml:id="N_heritage"><choice><orig>i</orig><reg resp="editor" type="capit">I</reg></choice>nd na deme dode yrre
+            <ab xml:id="heritage"><choice><orig>i</orig><reg resp="editor" type="capit">I</reg></choice>nd na deme dode yrre
               <lb facs="#N_013r_a_21"/><choice><abbr>aldere&#x304;</abbr><expan>alderen</expan></choice> deilten die kynder
               <lb facs="#N_013r_a_22"/>yr vederlich erue<pc source="manuscript">.</pc> <name type="person" nymRef="Lazarus"><choice><abbr><choice><orig>l</orig><reg resp="editor" type="capit">L</reg></choice>asar&#42864;</abbr><expan><choice><orig>l</orig><reg resp="editor" type="capit">L</reg></choice>asarus</expan></choice></name>
               <lb facs="#N_013r_a_23"/>nam eyn grois deil in
@@ -192,9 +192,9 @@
               <lb facs="#N_013r_b_19"/>van hat sy den namen
               <lb facs="#N_013r_b_20"/><choice><orig>m</orig><reg resp="editor" type="capit">M</reg></choice>agdalena aff <choice><abbr>gegeue&#x304;</abbr><expan>gegeuen</expan></choice><pc resp="editor">.</pc>
             </ab>
-            
+
               <lb facs="#N_013r_b_21"/>
-            <ab xml:id="#N_MaryMagdalene_mismanagement"><choice><orig>i</orig><reg resp="editor" type="capit">I</reg></choice>nd al yr goit ind <choice><abbr>rente&#x304;</abbr><expan>renten</expan></choice>
+            <ab xml:id="MaryMagdalene_mismanagement"><choice><orig>i</orig><reg resp="editor" type="capit">I</reg></choice>nd al yr goit ind <choice><abbr>rente&#x304;</abbr><expan>renten</expan></choice>
               <lb facs="#N_013r_b_22"/>bracht sy zo <del rend="strikethrough">m</del>groissen
               <lb facs="#N_013r_b_23"/><choice><abbr>swaire&#x304;</abbr><expan>swairen</expan></choice> sunden myt boe<metamark type="hyphen" source="manuscript" function="word_division">-</metamark>
               <lb facs="#N_013r_b_24"/>ser geselschaff<pc source="manuscript">.</pc> <choice><orig>i</orig><reg resp="editor" type="capit">I</reg></choice>nd die
@@ -238,8 +238,8 @@
               <lb facs="#N_013v_b_03"/>sy woilde <name type="person" nymRef="Jesus_Christ"><choice><abbr>x&#xA751;m&#x305;</abbr><expan>Christum</expan></choice></name> vur sy
               <lb facs="#N_013v_b_04"/><choice><abbr>bydde&#x304;</abbr><expan>bydden</expan></choice><pc resp="editor">.</pc>
             </ab>
-            
-            <ab xml:id="#N_Martha_confronts_Mary">Die leirre <name type="person" nymRef="Pseudo_Isidore"><choice><abbr><choice><orig>y</orig><reg resp="editor" type="capit">Y</reg></choice>sidor&#42864;</abbr><expan>Ysidorus</expan></choice></name><pc resp="editor">,</pc>
+
+            <ab xml:id="Martha_confronts_Mary">Die leirre <name type="person" nymRef="Pseudo_Isidore"><choice><abbr><choice><orig>y</orig><reg resp="editor" type="capit">Y</reg></choice>sidor&#42864;</abbr><expan>Ysidorus</expan></choice></name><pc resp="editor">,</pc>
               <lb facs="#N_013v_b_05"/>die dit <choice><abbr>leue&#x304;</abbr><expan>leuen</expan></choice> beschrift in
               <lb facs="#N_013v_b_06"/>deme boich<pc resp="editor">,</pc> <choice><abbr>geheische&#x304;</abbr><expan>geheischen</expan></choice> is
               <lb facs="#N_013v_b_07"/>dat boich van dem dode
@@ -285,8 +285,8 @@
               <lb facs="#N_014r_a_17"/>de<pc resp="editor">,</pc> dat ir suster so w<add place="above">e</add>ilde
               <lb facs="#N_014r_a_18"/>was<pc source="manuscript">.</pc>
             </ab>
-            
-            <ab xml:id="#N_MaryMagdalene_lovers"><choice><orig>d</orig><reg resp="editor" type="capit">D</reg></choice>ar na<pc resp="editor">,</pc> ouer <choice><abbr>tzwey&#x304;</abbr><expan>tzweyn</expan></choice>
+
+            <ab xml:id="MaryMagdalene_lovers"><choice><orig>d</orig><reg resp="editor" type="capit">D</reg></choice>ar na<pc resp="editor">,</pc> ouer <choice><abbr>tzwey&#x304;</abbr><expan>tzweyn</expan></choice>
               <lb facs="#N_014r_a_19"/>maende<pc resp="editor">,</pc> <choice><abbr>hatte&#x304;</abbr><expan>hatten</expan></choice> die joncker
               <lb facs="#N_014r_a_20"/>en van <name type="place" nymRef="Jerusalem"><choice><orig>j</orig><reg resp="editor" type="capit">J</reg></choice>herusalem</name> <choice><abbr>eyne&#x304;</abbr><expan>eynen</expan></choice>
               <lb facs="#N_014r_a_21"/>hoff ind eyn vroelicheit.
@@ -302,8 +302,8 @@
               <lb facs="#N_014r_b_02"/>spijse <choice><abbr>neme&#x304;</abbr><expan>nemen</expan></choice> mochte <choice><abbr>va&#x304;</abbr><expan>van</expan></choice>
               <lb facs="#N_014r_b_03"/>vroelicheiden<pc source="manuscript">.</pc>
             </ab>
-            
-            <ab xml:id="#N_market_scene">In deser
+
+            <ab xml:id="market_scene">In deser
               <lb facs="#N_014r_b_04"/>seluer tzijt vernam <name type="person" nymRef="Martha"><choice><orig>m</orig><reg resp="editor" type="capit">M</reg></choice>ar<metamark type="hyphen" source="manuscript" function="word_division">-</metamark>
               <lb facs="#N_014r_b_05"/>tha</name><pc resp="editor">,</pc> ir suster<pc resp="editor">,</pc> zijdynge<pc resp="editor">,</pc> dat
               <lb facs="#N_014r_b_06"/>der here <name type="person" nymRef="Jesus_Christ" rend="rubr_underline"><choice><abbr>Ihu&#x305;s</abbr><expan>Ihesus</expan></choice></name> was in deme
@@ -368,8 +368,8 @@
               <lb facs="#N_014v_b_06"/>want hie wart sy bekeirt
               <lb facs="#N_014v_b_07"/>van <choice><abbr>ire&#x304;</abbr><expan>iren</expan></choice> <choice><abbr>sundige&#x304;</abbr><expan>sundigen</expan></choice> <choice><abbr>leue&#x304;</abbr><expan>leuen</expan></choice><pc source="manuscript">.</pc>
             </ab>
-            
-            <ab xml:id="#N_Mary_at_Marthas_house"> Des
+
+            <ab xml:id="Mary_at_Marthas_house"> Des
               <lb facs="#N_014v_b_08"/><choice><abbr>andere&#x304;</abbr><expan>anderen</expan></choice> dages van grois<metamark type="hyphen" source="manuscript" function="word_division">-</metamark>
               <lb facs="#N_014v_b_09"/>ser moidicheit <choice><abbr>wege&#x304;</abbr><expan>wegen</expan></choice> <choice><abbr>gey&#x304;ck</abbr><expan>geynck</expan></choice>
               <lb facs="#N_014v_b_10"/><name type="person" nymRef="Mary_Magdalene"><choice><orig>m</orig><reg resp="editor" type="capit">M</reg></choice>aria</name> al <choice><abbr>heymliche&#x304;</abbr><expan>heymlichen</expan></choice> ws
@@ -490,9 +490,9 @@
               <lb facs="#N_015v_b_07"/>ste gast<pc source="manuscript">.</pc> bydde in<pc resp="editor">,</pc> dat hei
               <lb facs="#N_015v_b_08"/>dir aff welche dyn <choice><abbr>sunde&#x304;</abbr><expan>sunden</expan></choice><pc resp="editor">."</pc>
             </ab>
-            
+
               <lb facs="#N_015v_b_09"/>
-            <ab xml:id="#N_Jesus_enters">Do <name type="person" nymRef="Mary_Magdalene"><choice><orig>m</orig><reg resp="editor" type="capit">M</reg></choice>aria</name> dese worde hor<metamark type="hyphen" source="manuscript" function="word_division">-</metamark>
+            <ab xml:id="Jesus_enters">Do <name type="person" nymRef="Mary_Magdalene"><choice><orig>m</orig><reg resp="editor" type="capit">M</reg></choice>aria</name> dese worde hor<metamark type="hyphen" source="manuscript" function="word_division">-</metamark>
               <lb facs="#N_015v_b_10"/>te<pc resp="editor">,</pc> ee sy antworde<pc resp="editor">,</pc> so sach
               <lb facs="#N_015v_b_11"/>die maget ws der doren
               <lb facs="#N_015v_b_12"/><del rend="strikethrough" reason="repetition">ind sach</del> ind sach<pc resp="editor">,</pc> dat <name type="person" nymRef="Jesus_Christ"><choice><abbr>ih&#x312;s</abbr><expan>Ihesus</expan></choice></name>
@@ -545,8 +545,8 @@
              <cb edRef="#N" facs="#N_016r_b" n="fol. 16rb"/>
               <lb facs="#N_016r_b_01"/>hei in versacht hatte<pc source="manuscript">.</pc>
             </ab>
-            
-            <ab xml:id="#N_Mary_retreats"> <name type="person" nymRef="Mary_Magdalene">Ma<metamark type="hyphen" source="manuscript" function="word_division">-</metamark>
+
+            <ab xml:id="Mary_retreats"> <name type="person" nymRef="Mary_Magdalene">Ma<metamark type="hyphen" source="manuscript" function="word_division">-</metamark>
               <lb facs="#N_016r_b_02"/>ria</name><pc resp="editor">,</pc> van groisser <choice><abbr>schemde&#x304;</abbr><expan>schemden</expan></choice><pc resp="editor">,</pc>
               <lb facs="#N_016r_b_03"/>die sy krich in deme an<metamark type="hyphen" source="manuscript" function="word_division">-</metamark>
               <lb facs="#N_016r_b_04"/>seyn<pc><choice><orig>.</orig><reg resp="editor" type="punct">,</reg></choice></pc> geynck sy in die slayf<metamark type="hyphen" source="manuscript" function="word_division">-</metamark>
@@ -566,8 +566,8 @@
               <lb facs="#N_016r_b_18"/>mailtzijt<pc resp="editor">,</pc> geynck die here
               <lb facs="#N_016r_b_19"/>in <name type="person" nymRef="Simon"><choice><orig>s</orig><reg resp="editor" type="capit">S</reg></choice>ymons</name> huys<pc source="manuscript">.</pc>
             </ab>
-            
-            <ab xml:id="#N_Martha_encourages_Mary"> <choice><orig>i</orig><reg resp="editor" type="capit">I</reg></choice>nd <name type="person" nymRef="Martha"><choice><orig>m</orig><reg resp="editor" type="capit">M</reg></choice>artha</name>
+
+            <ab xml:id="Martha_encourages_Mary"> <choice><orig>i</orig><reg resp="editor" type="capit">I</reg></choice>nd <name type="person" nymRef="Martha"><choice><orig>m</orig><reg resp="editor" type="capit">M</reg></choice>artha</name>
               <lb facs="#N_016r_b_20"/>geynck zo irre suster ind
               <lb facs="#N_016r_b_21"/>sachte ir<pc resp="editor">,</pc> dat der here weire
               <lb facs="#N_016r_b_22"/>ewech <choice><abbr>gegange&#x304;</abbr><expan>gegangen</expan></choice><pc source="manuscript">.</pc> <choice><orig>d</orig><reg resp="editor" type="capit">D</reg></choice>o sachte
@@ -597,8 +597,8 @@
               <lb facs="#N_016v_a_16"/>der erden ind ni antowr<metamark type="hyphen" source="manuscript" function="word_division">-</metamark>
               <lb facs="#N_016v_a_17"/>ir neit<pc source="manuscript">.</pc>
             </ab>
-            
-            <ab xml:id="#N_Martha_in_Simons_house"> <name type="person" nymRef="Martha"><choice><orig>m</orig><reg resp="editor" type="capit">M</reg></choice>artha</name> geynck
+
+            <ab xml:id="Martha_in_Simons_house"> <name type="person" nymRef="Martha"><choice><orig>m</orig><reg resp="editor" type="capit">M</reg></choice>artha</name> geynck
               <lb facs="#N_016v_a_18"/>in <name type="person" nymRef="Simon"><choice><orig>sm</orig><reg resp="editor" type="capit">S</reg></choice>ymons</name> huys<pc resp="editor">,</pc> deme <choice><abbr>he<metamark type="hyphen" source="manuscript" function="word_division">-</metamark>
               <lb facs="#N_016v_a_19"/>re&#x304;</abbr><expan>heren</expan></choice> zo <choice><abbr>diene&#x304;</abbr><expan>dienen</expan></choice><pc source="manuscript">.</pc> <choice><orig>d</orig><reg resp="editor" type="capit">D</reg></choice>er here <name type="person" nymRef="Jesus_Christ"><choice><abbr>ih&#x312;s</abbr><expan>Ihesus</expan></choice></name>
               <lb facs="#N_016v_a_20"/>vragede <name type="person" nymRef="Martha"><choice><orig>m</orig><reg resp="editor" type="capit">M</reg></choice>arthen</name><pc resp="editor">: "</pc><choice><orig>w</orig><reg resp="editor" type="capit">W</reg></choice>as is
@@ -609,7 +609,7 @@
               <lb facs="#N_016v_a_25"/>licht ind schreyt ind clacht<pc resp="editor">,</pc>
               <lb facs="#N_016v_a_26"/>dattu sy also strenge an<metamark type="hyphen" source="manuscript" function="word_division">-</metamark>
               <lb facs="#N_016v_a_27"/>seichs<pc source="manuscript">.</pc> <choice><orig>h</orig><reg resp="editor" type="capit">H</reg></choice>er vmb <choice><abbr>bydde&#x304;</abbr><expan>bydden</expan></choice>
-              <lb facs="#N_016v_a_28"/>ich dich<pc resp="editor">,</pc> du troister alre 
+              <lb facs="#N_016v_a_28"/>ich dich<pc resp="editor">,</pc> du troister alre
              <cb edRef="#N" facs="#N_016v_b" n="fol. 16vb"/>
               <lb facs="#N_016v_b_01"/>bedroifder <choice><abbr>hertze&#x304;</abbr><expan>hertzen</expan></choice><pc resp="editor">,</pc> ist dat
               <lb facs="#N_016v_b_02"/>sy her cumpt<pc resp="editor">,</pc> sprich ir
@@ -620,8 +620,8 @@
               <lb facs="#N_016v_b_07"/>dyn suster<pc resp="editor">,</pc> ich wyl ir <choice><abbr>vru&#x304;t<metamark type="hyphen" source="manuscript" function="word_division">-</metamark>
               <lb facs="#N_016v_b_08"/>liche&#x304;</abbr><expan>vruntlichen</expan></choice> zo sprechen<pc source="manuscript">.</pc><pc resp="editor">"</pc>
             </ab>
-            
-            <ab xml:id="#N_Gregory_comment"> Sent
+
+            <ab xml:id="Gregory_comment"> Sent
               <lb facs="#N_016v_b_09"/><name type="person" nymRef="Gregory"><choice><abbr><choice><orig>g</orig><reg resp="editor" type="capit">G</reg></choice>regori&#42864;</abbr><expan><choice><orig>g</orig><reg resp="editor" type="capit">G</reg></choice>regorius</expan></choice></name> spricht<pc resp="editor">,</pc> als ich
               <lb facs="#N_016v_b_10"/>dencken<pc resp="editor">,</pc> we <name type="person" nymRef="Mary_Magdalene"><choice><orig>m</orig><reg resp="editor" type="capit">M</reg></choice>aria</name> <choice><abbr>gey&#x304;ck</abbr><expan>geynck</expan></choice>
               <lb facs="#N_016v_b_11"/>in <name type="person" nymRef="Simon"><choice><orig>s</orig><reg resp="editor" type="capit">S</reg></choice>ymons</name> huys <choice><abbr>vngleade&#x304;</abbr><expan>vngleaden</expan></choice>
@@ -635,8 +635,8 @@
               <lb facs="#N_016v_b_19"/>halden van schryen ind
               <lb facs="#N_016v_b_20"/>van <choice><abbr>weyne&#x304;</abbr><expan>weynen</expan></choice><pc resp="editor">.</pc>
             </ab>
-            
-            <ab xml:id="#N_Mary_in_Simons_house"> <name type="person" nymRef="Pseudo_Isidore">Isydorus</name> be<metamark type="hyphen" source="manuscript" function="word_division">-</metamark>
+
+            <ab xml:id="Mary_in_Simons_house"> <name type="person" nymRef="Pseudo_Isidore">Isydorus</name> be<metamark type="hyphen" source="manuscript" function="word_division">-</metamark>
               <lb facs="#N_016v_b_21"/>schryfft<pc resp="editor">,</pc> do de here woul<metamark type="hyphen" source="manuscript" function="word_division">-</metamark>
               <lb facs="#N_016v_b_22"/>de gayn <choice><abbr>sijtze&#x304;</abbr><expan>sijtzen</expan></choice> zo der taif<metamark type="hyphen" source="manuscript" function="word_division">-</metamark>
               <lb facs="#N_016v_b_23"/>fellen<pc resp="editor">,</pc> do veil hei eirste vp
@@ -666,8 +666,8 @@
               <lb facs="#N_017r_a_17"/><choice><abbr>weynende&#x304;</abbr><expan></expan></choice> <choice><abbr>ouge&#x304;</abbr><expan>ougen</expan></choice> vur syn
               <lb facs="#N_017r_a_18"/>groisse <choice><abbr>waildade&#x304;</abbr><expan>waildaden</expan></choice><pc source="manuscript">.</pc>
             </ab>
-            
-            <ab xml:id="#N_VirginMary_visits"> In der
+
+            <ab xml:id="VirginMary_visits"> In der
               <lb facs="#N_017r_a_19"/>seluer tzijt hoirte de <name type="person" nymRef="Virgin_Mary"><choice><abbr>mod&#795;</abbr><expan>moder</expan></choice>
               <lb facs="#N_017r_a_20"/><name type="person" nymRef="Jesus_Christ"><choice><abbr>xp&#x305;i</abbr><expan>Christi</expan></choice></name></name><pc resp="editor">,</pc> dat ir leiff kynt was
               <lb facs="#N_017r_a_21"/>zo <name type="place" nymRef="Bethany"><choice><orig>b</orig><reg resp="editor" type="capit">B</reg></choice>ethanien</name><pc resp="editor">.</pc> her vumb <choice><abbr>qua&#x304;</abbr><expan>quam</expan></choice>
@@ -677,7 +677,7 @@
               <lb facs="#N_017r_a_25"/>hat <choice><abbr>vergeue&#x304;</abbr><expan>vergeuen</expan></choice><pc source="manuscript">.</pc> <choice><orig>d</orig><reg resp="editor" type="capit">D</reg></choice>o geynck sy
               <lb facs="#N_017r_a_26"/>zo <name type="person" nymRef="Mary_Magdalene"><choice><orig>m</orig><reg resp="editor" type="capit">M</reg></choice>arien</name> in dat huys yr<metamark type="hyphen" source="manuscript" function="word_division">-</metamark>
               <lb facs="#N_017r_a_27"/>re suster<pc resp="editor">,</pc> vmb sy zo <choice><abbr>troiste&#x304;</abbr><expan>troisten</expan></choice>
-              <lb facs="#N_017r_a_28"/>zo eyme goden <choice><abbr>gotliche&#x304;</abbr><expan>gotlichen</expan></choice> <choice><abbr>leue&#x304;</abbr><expan>leuen</expan></choice><pc resp="editor">.</pc> 
+              <lb facs="#N_017r_a_28"/>zo eyme goden <choice><abbr>gotliche&#x304;</abbr><expan>gotlichen</expan></choice> <choice><abbr>leue&#x304;</abbr><expan>leuen</expan></choice><pc resp="editor">.</pc>
              <cb edRef="#N" facs="#N_017r_b" n="fol. 17rb"/>
               <lb facs="#N_017r_b_01"/><choice><orig>d</orig><reg resp="editor" type="capit">D</reg></choice>e <name type="person" nymRef="Virgin_Mary">moder <name type="person" nymRef="Jesus_Christ"><choice><abbr>xp&#x305;i</abbr><expan>Christi</expan></choice></name></name> geynck in
               <lb facs="#N_017r_b_02"/>dat huys ind woulde myt
@@ -714,8 +714,8 @@
               <lb facs="#N_017v_a_03"/>gesat eirwerdentlichen
               <lb facs="#N_017v_a_04"/>zo der erden<pc source="manuscript">.</pc>
             </ab>
-            
-            <ab xml:id="#N_Mary_rest_of_life"><choice><orig>d</orig><reg resp="editor" type="capit">D</reg></choice>a was <name type="person" nymRef="Mary_Magdalene"><choice><orig>m</orig><reg resp="editor" type="capit">M</reg></choice>a<metamark type="hyphen" source="manuscript" function="word_division">-</metamark>
+
+            <ab xml:id="Mary_rest_of_life"><choice><orig>d</orig><reg resp="editor" type="capit">D</reg></choice>a was <name type="person" nymRef="Mary_Magdalene"><choice><orig>m</orig><reg resp="editor" type="capit">M</reg></choice>a<metamark type="hyphen" source="manuscript" function="word_division">-</metamark>
               <lb facs="#N_017v_a_05"/>ria <choice><orig>m</orig><reg resp="editor" type="capit">M</reg></choice>agdalena</name> alle de
               <lb facs="#N_017v_a_06"/>tzijt irs leuens in deme
               <lb facs="#N_017v_a_07"/>dynste <choice><orig>g</orig><reg resp="editor" type="capit">G</reg></choice>otz<pc><choice><orig>.</orig><reg resp="editor"></reg></choice></pc> ind volgde
@@ -737,8 +737,8 @@
               <lb facs="#N_017v_a_23"/><choice><abbr>leue&#x304;</abbr><expan>leuen</expan></choice> in dat gotliche <choice><abbr>an<metamark type="hyphen" source="manuscript" function="word_division">-</metamark>
               <lb facs="#N_017v_a_24"/>schauwe&#x304;</abbr><expan>anschauwen</expan></choice><pc source="manuscript">.</pc>
             </ab>
-            
-            <ab xml:id="#N_epilogue">Ir bekeirynge
+
+            <ab xml:id="epilogue">Ir bekeirynge
               <lb facs="#N_017v_a_25"/>geschach<pc resp="editor">,</pc> als die leirers
               <lb facs="#N_017v_a_26"/><choice><abbr>schryue&#x304;</abbr><expan>schryuen</expan></choice><pc resp="editor">,</pc> vp den eirsten
               <lb facs="#N_017v_a_27"/>dach des mertz<pc resp="editor" source="manuscript">.</pc> Sent
@@ -749,7 +749,7 @@
               <lb facs="#N_017v_b_03"/>sy myr <choice><abbr>nu&#x304;merme</abbr><expan>nummerme</expan></choice> verge<metamark type="hyphen" source="manuscript" function="word_division">-</metamark>
               <lb facs="#N_017v_b_04"/>uen.<pc resp="editor">"</pc>
             </ab>
- 
+
         </body>
     </text>
 </TEI>
