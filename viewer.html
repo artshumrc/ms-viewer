@@ -192,31 +192,31 @@
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Download XML <span class="caret"></span></button>
           <ul class="dropdown-menu">
             <div id="dl-B1">
-              <a href="xml/ManuscriptSnapshots/manuscript_B1.xml" download>B1</a>
+              <a href="xml/manuscripts_2019-02-20/manuscript_B1_HP.xml" download>B1</a>
             </div>
             <div id="dl-B2">
-              <a href="xml/ManuscriptSnapshots/manuscript_B2.xml" download>B2</a>
+              <a href="xml/manuscripts_2019-02-20/manuscript_B2_HansPech_HP.xml" download>B2</a>
             </div>
             <div id="dl-D">
-              <a href="xml/ManuscriptSnapshots/manuscript_D.xml" download>D</a>
+              <a href="xml/manuscripts_2019-02-20/manuscript_D_AnnaKelner_HP.xml" download>D</a>
             </div>
             <div id="dl-G">
-                <a href="xml/ManuscriptSnapshots/manuscript_G.xml" download>G</a>
+                <a href="xml/manuscripts_2019-02-20/manuscript_G_EleanorGoerss_HP.xml" download>G</a>
             </div>
             <div id="dl-K1">
-                <a href="xml/ManuscriptSnapshots/manuscript_K1.xml" download>K1</a>
+                <a href="xml/manuscripts_2019-02-20/manuscript_K1_ZacharyHayworth_HP.xml" download>K1</a>
             </div>
             <div id="dl-K2">
-              <a href="xml/ManuscriptSnapshots/manuscript_K2.xml" download>K2</a>
+              <a href="xml/manuscripts_2019-02-20/manuscript_K2_EleanorGoerss_HP.xml" download>K2</a>
             </div>
             <div id="dl-N">
-                <a href="xml/ManuscriptSnapshots/manuscript_N.xml" download>N</a>
+                <a href="xml/manuscripts_2019-02-20/manuscript_N_SusanneZwierlein_HP.xml" download>N</a>
             </div>
             <div id="dl-S">
-              <a href="xml/ManuscriptSnapshots/manuscript_S.xml" download>S</a>
+              <a href="xml/manuscripts_2019-02-20/manuscript_S_RachaKirakosian_HP.xml" download>S</a>
             </div>
             <div id="dl-all">
-              <a href="xml/all-manuscripts.zip" download>All</a>
+              <a href="xml/manuscripts_2019-02-20/all-manuscripts.zip" download>All</a>
             </div>
           </ul>
       </div>
@@ -313,42 +313,42 @@
     var manuscripts = {
       "B1" : {
         "name": "B1",
-        "resource" : "xml/ManuscriptSnapshots/manuscript_B1.xml",
+        "resource" : "xml/manuscripts_2019_02_20/manuscript_B1_HP.xml",
         "manifest": "http://digital-editing.fas.harvard.edu/manifests/B1"
       },
       "B2" : {
         "name": "B2",
-        "resource" : "xml/ManuscriptSnapshots/manuscript_B2.xml",
+	"resource" : "xml/manuscripts_2019_02_20/manuscript_B2_HansPech_HP.xml",
         "manifest": "http://digital-editing.fas.harvard.edu/manifests/B2"
       },
       "D" : {
         "name": "D",
-        "resource" : "xml/ManuscriptSnapshots/manuscript_D.xml",
+	"resource" : "xml/manuscripts_2019_02_20/manuscript_D_AnnaKelner_HP.xml",
         "manifest": "http://digital-editing.fas.harvard.edu/manifests/D"
       },
       "G" : {
         "name": "G",
-        "resource" : "xml/ManuscriptSnapshots/manuscript_G.xml",
+	"resource" : "xml/manuscripts_2019_02_20/manuscript_G_EleanorGoerss_HP.xml",
         "manifest": "http://digital-editing.fas.harvard.edu/manifests/G"
       },
       "K1" : {
         "name": "K1",
-        "resource" : "xml/ManuscriptSnapshots/manuscript_K1.xml",
+	"resource" : "xml/manuscripts_2019_02_20/manuscript_K1_ZacharyHayworth_HP.xml",
         "manifest": "http://digital-editing.fas.harvard.edu/manifests/K1"
       },
       "K2" : {
         "name": "K2",
-        "resource" : "xml/ManuscriptSnapshots/manuscript_K2.xml",
+	"resource" : "xml/manuscripts_2019_02_20/manuscript_K2_EleanorGoerss_HP.xml",
         "manifest": "http://digital-editing.fas.harvard.edu/manifests/K2"
       },
       "N" : {
         "name": "N",
-        "resource" : "xml/ManuscriptSnapshots/manuscript_N.xml",
+	"resource" : "xml/manuscripts_2019_02_20/manuscript_N_SusanneZwierlein_HP.xml",
         "manifest": "http://digital-editing.fas.harvard.edu/manifests/N"
       },
       "S" : {
         "name": "S",
-        "resource" : "xml/ManuscriptSnapshots/manuscript_S.xml",
+	"resource" : "xml/manuscripts_2019_02_20/manuscript_S_RachaKirakosian_HP.xml",
         "manifest": "http://digital-editing.fas.harvard.edu/manifests/S"
       }
     };
@@ -515,8 +515,11 @@
     function scroll_manuscripts(xmlid){
       for(ms in manuscripts){
         var ms_el = "#" + manuscripts[ms].name;
-        if( $(ms_el).find("#"+xmlid).length > 0){
-          var topPosition = $("#"+xmlid).position().top;
+	var ms_name = manuscripts[ms].name;
+	var jump_position = "#" + ms_name + "_" + xmlid;
+	console.log("ms_el " + ms_el);
+        if( $(ms_el).find(jump_position).length > 0){
+          var topPosition = $(jump_position).position().top;
           //$(ms_el).scrollTop(topPosition);
           $(ms_el).animate({
             scrollTop: topPosition
@@ -528,6 +531,7 @@
     //Jump menu change
     $("#jump-select").change(function(){
       var xmlid = $(this).val();
+      console.log("xmlid " + xmlid);
       if(xmlid !== null && xmlid !== ''){
         scroll_manuscripts(xmlid);
       }

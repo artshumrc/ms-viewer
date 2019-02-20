@@ -6,7 +6,7 @@
 	  <fileDesc>
 		  <titleStmt>
 			  <title>Mary Magdalene Conversion Legend</title>
-			  <author ref="#PseudoIsidor">Pseudo Isidor</author>
+			  <author ref="#PseudoIsidore">Pseudo Isidore</author>
 			  <respStmt>
 				  <name xml:id="Hans_Pech">Hans Martin Pech</name>
 				  <resp>TEI encoder</resp>
@@ -44,7 +44,7 @@
 				  </msIdentifier>
 				  <history>
 					  <origin>
-						  <p>Written in the 15th Century</p>
+						  <p>Written in the <origDate>15th Century</origDate></p>
 					  </origin>
 				  </history>
 				  <physDesc>
@@ -54,8 +54,7 @@
 							  and <material>parchment</material></p>
 							  <extent>196 fols.</extent>
 							  <condition>
-								  <p>The manuscript cannot be opened again
-								  due to extensive mold</p>
+								  <p>Well preserved.</p>
 							  </condition>
 						  </supportDesc>
 						  <layout>
@@ -121,8 +120,9 @@
 	  <revisionDesc status="draft">
 		<!-- listChange groups a number of change descriptions (in reverse order!) associated with either the creation of a source text or the revision of an encoded text. -->
 		<listChange>
-			<change when="2017-08-28" status="draft" n="0.0.0"><p>Change date when editing file for the first time</p></change>
-			<change when="2017-08-25" status="draft" n="0.0.0"><p>Created file for the first time.</p></change>                
+			<change when="2017-08-25" status="draft" n="0.0.0"><p>Created file for the first time.</p></change>
+			<change when="2018-12-13" status="draft" n="0.0.0"><p>added name tag for David; changed attr value "organization" to "org"
+			"horizontalStrike" to "strikethrough"</p></change>                                
 		</listChange>
 	  </revisionDesc>
   </teiHeader>
@@ -131,7 +131,7 @@
 		<pb edRef="#B2" facs="#B2_159r" n="fol. 159ra"/>
 		<cb n="fol. 159r"/>
 		<lb facs="#B2_159r_a_08"/>
-        <ab xml:id="legend_title">
+        <ab xml:id="B2_legend_title">
           <head rend="rubr"><w xml:id="B2_159r_a_08_01">Hijr</w> beghijnt de bekeringhe
             <name type="person" nymRef="Mary_Magdalene">Sunte<lb facs="#B2_159r_a_09"/>
 				<choice>
@@ -152,10 +152,10 @@
         <!-- previous line different color and seperated from main text;
          also different hand? -->
         
-        <ab xml:id="genealogy">
+        <ab xml:id="B2_genealogy">
 			<lb facs="#B2_159r_a_10"/>
 			<name type="person" nymRef="Mary_Magdalene"><hi 
-			rend="init_lombard"><hi rend="rubr">M</hi></hi>aria
+			rend="init_lombard"><hi rend="rubr">M</hi></hi><hi rend="rubr">A</hi>ria
 				<choice>
 					<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agdalena
 			</name> was gheboren van
@@ -186,7 +186,7 @@
 				</expan>
 			</choice>
 			<choice>
-				<orig><hi rend="rubr">E</hi></orig><reg type="capit" resp="editor">e</reg></choice>er moder hette 
+				<orig>E</orig><reg type="capit" resp="editor">e</reg></choice>er moder hette 
 			<lb facs="#B2_159r_a_13"/><name type="person" nymRef="Eucharia"><hi rend="rubr">E</hi>ucharia</name>
 			<choice>
 				<abbr>
@@ -233,7 +233,7 @@
 			gra<lb facs="#B2_159r_a_17"/>ue
 			hadde ghewesen<pc resp="editor">.</pc>
         </ab>
-        <ab xml:id="heritage">
+        <ab xml:id="B2_heritage">
 			<choice>
 				<abbr><hi rend="rubr">V</hi><am>n&#x304;</am></abbr>
 				<expan><hi rend="rubr">V</hi><ex>nd</ex></expan>
@@ -372,7 +372,7 @@
 			bezahlen, abliefern; MLG Adverb af = NHG ab,
 			herunter, von, davon--> ghegeuen<pc resp="editor">.</pc>
         </ab>
-        <ab xml:id="MaryMagdalene_mismanagement">
+        <ab xml:id="B2_MaryMagdalene_mismanagement">
 			<choice>
 				<abbr><hi rend="rubr">V</hi><am>n&#x304;</am></abbr>
 				<expan><hi rend="rubr">V</hi><ex>nd</ex></expan>
@@ -517,7 +517,7 @@
 			</name>
 			<lb facs="#B2_159v_a_14"/>vor eer bidden<pc resp="editor">.</pc>
         </ab>
-        <ab xml:id="Martha_confronts_Mary"><hi rend="rubr">D</hi>e lerre
+        <ab xml:id="B2_Martha_confronts_Mary"><hi rend="rubr">D</hi>e lerre
         <name type="name" nymRef="Pseudo_Isodore">
 			<choice>
 				<orig>y</orig><reg type="capit" resp="editor">Y</reg></choice>sidorus</name><pc resp="editor">,</pc>
@@ -565,21 +565,17 @@
         suster<pc resp="editor">,</pc>
         <choice>
 			<orig><hi rend="rubr">N</hi></orig>
-			<reg type="capit" resp="editor">n</reg>
-		</choice>u sijrestu dynen lic<lb facs="#B2_159v_a_22"/>ham
+			<reg type="capit" resp="editor">n</reg></choice>u
+			sijrestu dynen lic<lb facs="#B2_159v_a_22"/>ham
         also seer na den vleesche<pc resp="editor">,</pc>
         <choice>
 			<abbr>
 				<choice>
-					<orig><hi rend="rubr">V</hi></orig>
-					<reg type="capit" resp="editor">v</reg>
-				</choice><am>n&#x304;</am>
+					<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><am>n&#x304;</am>
 			</abbr>
 			<expan>
 				<choice>
-					<orig><hi rend="rubr">V</hi></orig>
-					<reg type="capit" resp="editor">v</reg>
-				</choice><ex>nd</ex>
+					<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><ex>nd</ex>
 			</expan>
 		</choice>
 		dyne schone Zeile<pc resp="editor">,</pc>
@@ -601,31 +597,24 @@
         <choice>
 			<abbr>
 				<choice>
-					<orig><hi rend="rubr">V</hi></orig>
-					<reg type="capit" resp="editor">v</reg>
-				</choice><am>n&#x304;</am>
+					<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><am>n&#x304;</am>
 			</abbr>
 			<expan>
 				<choice>
-					<orig><hi rend="rubr">V</hi></orig>
-					<reg type="capit" resp="editor">v</reg>
-				</choice><ex>nd</ex>
+					<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><ex>nd</ex>
 			</expan>
 		</choice>
         ghedencke<pc resp="editor">,</pc>
         dat de schone licham<pc resp="editor">,</pc> dat du
         <lb facs="#B2_159v_a_27"/>cijrst myt golde
         <choice>
-			<abbr>v<am>n&#x304;</am></abbr>
-			<expan>v<ex>nd</ex></expan>
-		</choice>
+			<abbr>v<am>n&#x304;</am></abbr><expan>v<ex>nd</ex></expan></choice>
 		myt suluer<pc resp="editor">,</pc>
         sal werden en spise
         <lb facs="#B2_159v_a_28"/>der worme<pc resp="editor">."</pc>
         <hi rend="rubr">D</hi>o antworde
         <choice>
-			<orig><hi rend="rubr">E</hi></orig>
-			<reg type="capit" resp="editor">e</reg></choice>r
+			<orig>E</orig><reg type="capit" resp="editor">e</reg></choice>r
         <name type="person" nymRef="Mary_Magdalene">
 			<choice>
 				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria</name><pc resp="editor">: "</pc>myn 
@@ -659,15 +648,11 @@
         <choice>
 			<abbr>
 				<choice>
-					<orig><hi rend="rubr">V</hi></orig>
-					<reg type="capit" resp="editor">v</reg>
-				</choice><am>n&#x304;</am>
+					<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><am>n&#x304;</am>
 			</abbr>
 			<expan>
 				<choice>
-					<orig><hi rend="rubr">V</hi></orig>
-					<reg type="capit" resp="editor">v</reg>
-				</choice><ex>nd</ex>
+					<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><ex>nd</ex>
 			</expan>
 		</choice>
 		laet vns nu vrolick
@@ -707,12 +692,12 @@
         <lb facs="#B2_160r_a_01"/>dat eer suster so wilde
         was<pc resp="editor">.</pc>
         </ab>
-        <ab xml:id="MaryMagdalene_lovers"><hi rend="rubr">D</hi>ar na ouer twen
+        <ab xml:id="B2_MaryMagdalene_lovers"><hi rend="rubr">D</hi>ar na ouer twen
         <choice>
 			<abbr>maend<am>e&#x304;</am></abbr>
 			<expan>maend<ex>en</ex></expan>
 		</choice>
-        <lb facs="#B2_160r_a_02"/>hadden de <hi rend="rubr">J</hi>uncheren
+        <lb facs="#B2_160r_a_02"/>hadden de Juncheren
         <choice>
 			<abbr>v<am>n&#x304;</am></abbr>
 			<expan>v<ex>nd</ex></expan>
@@ -720,8 +705,8 @@
 		constaueren van 
         <name type="place" nymRef="Jerusalem">
 			<choice>
-				<abbr><hi rend="decor">J</hi>herusal<am>e&#x304;</am></abbr>
-				<expan><hi rend="decor">J</hi>herusal<ex>em</ex></expan>
+				<abbr><hi rend="rubr">J</hi>herusal<am>e&#x304;</am></abbr>
+				<expan><hi rend="rubr">J</hi>herusal<ex>em</ex></expan>
 			</choice>
 		</name>
         <lb facs="#B2_160r_a_03"/>een hof
@@ -778,13 +763,13 @@
 		</choice>
 		van wildicheit<pc resp="editor">.</pc>
 		</ab>
-		<ab xml:id="market_scene"><hi rend="rubr">J</hi>n
+		<ab xml:id="B2_market_scene"><hi rend="rubr">J</hi>n
         der soluen
         <lb facs="#B2_160r_a_09"/>tijd vornam 
         <name type="person" 
         nymRef="Martha"><hi rend="rubr">M</hi>artha</name><pc resp="editor">,</pc>
         eer suster<pc resp="editor">,</pc> 
-        <del rend="horizontalStrike"><!--which 
+        <del rend="strikethrough"><!--which 
 		attribute name?-->vor</del>tijdinghe<pc resp="editor">,</pc> dat
         <lb facs="#B2_160r_a_10"/>de here
         <name type="person" nymRef="Jesus_Christ">
@@ -876,7 +861,7 @@
 		se to erre vrouwen
         <hi rend="rubr">J</hi>uncfer<pc resp="editor">: "</pc><hi rend="rubr">S</hi>eit
         <choice>
-			<orig><hi rend="rubr">I</hi></orig>
+			<orig>I</orig>
 			<reg type="capit" resp="editor">i</reg></choice>u
         suster<pc resp="editor">."</pc>
         <lb facs="#B2_160r_a_20"/><hi rend="rubr">D</hi>o sach
@@ -1002,14 +987,14 @@
 		myt dy etten<pc resp="editor">."</pc> <hi rend="rubr">H</hi>ijr aff spre<lb facs="#B2_160v_a_04"/>ket
         de hillighe gloriose lerre
 		<choice>
-			<abbr><hi rend="rubr">S</hi><am>c&#x304;</am>
-				<del rend="erasure">
-					<unclear reason="illegible" cert="low">i
+			<abbr>S<am>c&#x304;</am>
+				<del rend="rubr_erasure">
+					<unclear reason="illegible" cert="high">i
 					</unclear>
-				</del><!--deletion? since i would be the wrong case ending, this seems reasonable-->
+				</del><!--since i would be the wrong case ending, this seems reasonable-->
 			</abbr>
-			<expan><hi rend="rubr">S</hi><ex>anct</ex>
-				<del rend="erasure"><unclear reason="illegible" cert="low">i</unclear></del></expan>
+			<expan>S<ex>anct</ex>
+				<del rend="rubr_erasure"><unclear reason="illegible" cert="high">i</unclear></del></expan>
 		</choice>
 		<name type="person" nymRef="Augustine"><hi rend="rubr">A</hi>ugustinus</name><pc resp="editor">,</pc>
         <choice>
@@ -1021,7 +1006,7 @@
         bekeert van eren sundighen
         <lb facs="#B2_160v_a_07"/>leuene<pc resp="editor">.</pc>
         </ab>
-        <ab xml:id="Mary_at_Marthas_house"><hi rend="rubr">D</hi>es anderen daghes ghenck
+        <ab xml:id="B2_Mary_at_Marthas_house"><hi rend="rubr">D</hi>es anderen daghes ghenck
         <name type="person" nymRef="Mary_Magdalene"><hi rend="rubr">M</hi>aria</name> van
         gro<lb facs="#B2_160v_a_08"/>ter
         moetheit al hemelike wt<!--resolve into 'ut'?-->
@@ -1056,8 +1041,8 @@
         resp="editor">: "</pc><choice><orig>o</orig><reg type="capit" resp="editor">O</reg></choice>ch
         leue suster<pc resp="editor">,</pc> des is my groet noet
         <lb facs="#B2_160v_a_12"/><choice>
-			<abbr>v<am>n&#x304;</am></abbr>
-			<expan>v<ex>nd</ex></expan>
+			<abbr><hi rend="rubr">v</hi><am>n&#x304;</am></abbr>
+			<expan><hi rend="rubr">v</hi><ex>nd</ex></expan>
 		</choice>
 		ick behouet wal<pc resp="editor">,</pc> dat ick
         my mochte
@@ -1114,7 +1099,7 @@
         mer<pc resp="editor">."</pc>
         <name type="person" nymRef="Martha"><hi rend="rubr">M</hi>artha</name><pc 
         resp="editor">,</pc> de
-        hillighe <hi rend="rubr">J</hi>uncfer<pc resp="editor">,</pc> antworde
+        hillighe Juncfer<pc resp="editor">,</pc> antworde
         <lb facs="#B2_160v_a_20"/>erre suster
         <choice>
 			<abbr>v<am>n&#x304;</am></abbr>
@@ -1134,7 +1119,7 @@
         gij<!--MLG gi = NHG ihr; Dutch gij = NHG du, ihr-->
         <lb facs="#B2_160v_a_22"/>nu ock den conynck
         <choice>
-			<abbr>leeff<am>&#x31b;</am></abbr>
+			<abbr>leeff<am>&#x31b;</am></abbr> <!-- is this actually an abbreviation or just the loop of the f?-->
 			<expan>leeff<ex>er</ex></expan></choice><pc resp="editor">,</pc>
         de alle herten vrolick ma<lb facs="#B2_160v_a_23"/>ket
         <choice>
@@ -1155,14 +1140,14 @@
 			<choice>
 				<orig>t</orig><reg type="capit" resp="editor">T</reg></choice>yberius</name><pc resp="editor">?"</pc> 
 		<name type="name" nymRef="Martha"><hi rend="rubr">M</hi>artha</name>
-        <del rend="horizontalStrike">de</del> ant<lb facs="#B2_160v_a_26"/>worde
+        <del rend="strikethrough">de</del> ant<lb facs="#B2_160v_a_26"/>worde
         eer
         <choice>
 			<abbr>v<am>n&#x304;</am></abbr>
 			<expan>v<ex>nd</ex></expan>
 		</choice>
 		seghede<pc resp="editor">: "</pc><hi rend="rubr">J</hi>ck
-        en meyne <del rend="horizontalStrike">nycht</del>
+        en meyne <del rend="rubr_strikethrough">nycht</del>
         <choice>
 			<abbr>
 				<choice>
@@ -1193,7 +1178,7 @@
 			<expan>v<ex>nd</ex></expan>
 		</choice>
 		de dar is en
-        <lb facs="#B2_160v_a_30"/>vorloser der <name type="organization" nymRef="Children_of_Israel">kynder
+        <lb facs="#B2_160v_a_30"/>vorloser der <name type="org" nymRef="Children_of_Israel">kynder
         van <name type="place" nymRef="Israel"><hi 
         rend="rubr">J</hi>srahel</name></name>
         <choice>
@@ -1222,8 +1207,8 @@
               <!-- next page -->
 		<pb edRef="#B2" facs="#B2_161r" n="fol. 161ra"/>
 		<cb n="fol. 161r"/><lb facs="#B2_161r_a_01"/>
-		<choice>
-			<orig>d</orig><reg type="capit" resp="editor">D</reg></choice>auytes</name><pc resp="editor">."</pc>
+		<name type="person" nymRef="David"><choice>
+			<orig>d</orig><reg type="capit" resp="editor">D</reg></choice>auytes</name></name><pc resp="editor">."</pc>
         <hi rend="rubr">D</hi>o vraghede
         <name type="person" nymRef="Mary_Magdalene"><hi rend="rubr">M</hi>aria</name>
         van den leefhebbers
@@ -1267,7 +1252,7 @@
 					<ex>
 						<choice>
 							<orig>c</orig><reg type="capit" resp="editor">C</reg></choice>ristu</ex>s</expan></choice></name><pc resp="editor">,</pc> de dar is eyn
-        arste der <hi rend="rubr">Z</hi>eilen<pc resp="editor">,"</pc>
+        arste der Zeilen<pc resp="editor">,"</pc>
         <choice>
 			<abbr>v<am>n&#x304;</am></abbr>
 			<expan>v<ex>nd</ex></expan>
@@ -1354,7 +1339,7 @@
 			<expan>v<ex>nd</ex></expan>
 		</choice>
 		dattu
-        <lb facs="#B2_161r_a_19"/>beuleckest dyne <hi rend="rubr">Z</hi>eile myt groten sunden<pc resp="editor">,</pc>
+        <lb facs="#B2_161r_a_19"/>beuleckest dyne Zeile myt groten sunden<pc resp="editor">,</pc>
         <choice>
 			<abbr>v<am>n&#x304;</am></abbr>
 			<expan>v<ex>nd</ex></expan>
@@ -1371,7 +1356,7 @@
         do se eer leuen suster
         <name type="person" nymRef="Martha">
 			<choice>
-				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>arthen
+				<orig><hi rend="rubr">m</hi></orig><reg type="capit" resp="editor">M</reg></choice>arthen
 		</name> so sere
         <lb facs="#B2_161r_a_23"/>sach weynen<pc resp="editor">.</pc>
         <hi rend="rubr">D</hi>o sprack se myt weynenden
@@ -1440,7 +1425,7 @@
 			<reg type="capit" resp="editor">B</reg></choice>idde em<pc resp="editor">,</pc> dat
         <lb facs="#B2_161r_a_33"/>he dy vorgheue all dyne sunde<pc resp="editor">."</pc>
         </ab>
-        <ab xml:id="Jesus_enters"><hi rend="rubr">D</hi>o
+        <ab xml:id="B2_Jesus_enters"><hi rend="rubr">D</hi>o
         <name type="person" nymRef="Mary_Magdalene">
 			<choice>
 				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria
@@ -1459,14 +1444,14 @@
 		sach<pc resp="editor">,</pc> dat
         <name type="person" nymRef="Jesus_Christ">
 			<choice>
-				<abbr><am><hi rend="rubr">J</hi>hu&#x304;</am>s</abbr>
-				<expan><ex><hi rend="rubr">J</hi>hesu</ex>s</expan>
+				<abbr><am>Jhu&#x304;</am>s</abbr>
+				<expan><ex>Jhesu</ex>s</expan>
 			</choice>
 		</name> quam
-        <lb facs="#B2_161v_a_03"/>myt synen hillighen <hi rend="rubr">J</hi>ungeren<pc resp="editor">.</pc>
+        <lb facs="#B2_161v_a_03"/>myt synen hillighen Jungeren<pc resp="editor">.</pc>
         <hi rend="rubr">D</hi>o sprack se to
         <lb facs="#B2_161v_a_04"/><name type="person" nymRef="Martha"><hi rend="rubr">M</hi>arthen</name><pc 
-        resp="editor">: "</pc><hi rend="rubr">J</hi>uncfer<pc resp="editor">,</pc>
+        resp="editor">: "</pc>Juncfer<pc resp="editor">,</pc>
         de here comet<pc resp="editor">."</pc>
         <choice>
 			<orig>d</orig><reg type="capit" resp="editor">D</reg></choice>o stont
@@ -1497,7 +1482,7 @@
 		</choice>
         <lb facs="#B2_161v_a_08"/>worden<pc resp="editor">,</pc> dattu
         in alle dynen daghen nu synes ghe<lb facs="#B2_161v_a_09"/>likes
-        enhebbest ghehoert<pc resp="editor">."</pc> Do sprack
+        enhebbest ghehoert<pc resp="editor">."</pc> <hi rend="rubr">D</hi>o sprack
         <hi rend="rubr">M</hi>aria<pc resp="editor">: "</pc><choice><orig>l</orig><reg type="capit" resp="editor">L</reg></choice>eue
         <lb facs="#B2_161v_a_10"/>suster<pc resp="editor">,</pc> welck is de
         here<pc resp="editor">?"</pc>
@@ -1573,7 +1558,7 @@
 		</choice>
 		en sprack
         <lb facs="#B2_161v_a_19"/>eer nycht to<pc resp="editor">.</pc> <hi rend="rubr">D</hi>o sprack
-        <name type="person" nymRef="Martha">Martha</name> to vnsen heren
+        <name type="person" nymRef="Martha"><hi rend="rubr">M</hi>artha</name> to vnsen heren
         <lb facs="#B2_161v_a_20"/><choice>
 			<abbr>v<am>n&#x304;</am></abbr>
 			<expan>v<ex>nd</ex></expan>
@@ -1583,7 +1568,7 @@
         <name type="person" nymRef="Mary_Magdalene">
 			<choice>
 				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria</name><pc resp="editor">,"</pc>
-        <lb facs="#B2_161v_a_21"/>recht ofte se segghen
+        <lb facs="#B2_161v_a_21"/><hi rend="rubr">r</hi>echt ofte se segghen
         wolde<pc resp="editor">: "</pc><hi rend="rubr">D</hi>ijt
         is se<pc resp="editor">,</pc> dar ick
         <lb facs="#B2_161v_a_22"/>
@@ -1637,7 +1622,7 @@
         <lb facs="#B2_161v_a_28"/>tijt<pc resp="editor">,</pc> do he em
         vorsakede<pc resp="editor">.</pc>
         </ab>
-        <ab xml:id="Mary_retreats">
+        <ab xml:id="B2_Mary_retreats">
         <name type="person" nymRef="Mary_Magdalene"><hi rend="rubr">M</hi>aria</name>
         van groter scha<lb facs="#B2_161v_a_29"/>mede<pc resp="editor">,</pc>
         de se krech in den anseyne vnses heren<pc resp="editor">,</pc>
@@ -1684,7 +1669,7 @@
 			<abbr>v<am>n&#x304;</am></abbr>
 			<expan>v<ex>nd</ex></expan>
 		</choice>
-		bat den heren to gaste myt synen <hi rend="rubr">J</hi>ungeren<pc resp="editor">.</pc>
+		bat den heren to gaste myt synen Jungeren<pc resp="editor">.</pc>
 		<choice>
 				<orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nde
         <lb facs="#B2_162r_a_04"/>do et quam bij der maeltijt<!--see D for similar, and
@@ -1696,7 +1681,7 @@
 		</name>
         <lb facs="#B2_162r_a_05"/>hues<pc resp="editor">.</pc>
         </ab>
-        <ab xml:id="Martha_encourages_Mary">
+        <ab xml:id="B2_Martha_encourages_Mary">
         <choice>
 			<abbr><hi rend="rubr">V</hi><am>n&#x304;</am></abbr>
 			<expan><hi rend="rubr">V</hi><ex>nd</ex></expan>
@@ -1773,7 +1758,7 @@
 		en antwor<lb facs="#B2_162r_a_17"/>de
         eer nycht<pc resp="editor">.</pc>
         </ab>
-        <ab xml:id="Martha_in_Simons_house"><hi rend="rubr">E</hi>er suster
+        <ab xml:id="B2_Martha_in_Simons_house"><hi rend="rubr">E</hi>er suster
         <name type="person" nymRef="Martha">
 			<choice>
 				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>artha
@@ -1847,7 +1832,7 @@
         <lb facs="#B2_162r_a_26"/>dyn suster<pc resp="editor">,</pc> ick wil eer vrentlike
         to spreken<pc resp="editor">."</pc>
         </ab>
-        <ab xml:id="Gregory_comment">
+        <ab xml:id="B2_Gregory_comment">
         <hi rend="rubr">S</hi>ante<name type="person" nymRef="Gregory">
         <choice>
 			<abbr><hi rend="rubr">G</hi>re<lb facs="#B2_162r_a_27"/>gori<am>&#42864;</am></abbr>
@@ -1894,8 +1879,8 @@
 		</choice>
 		van weynen<pc resp="editor">."</pc>
 		</ab>
-		<ab xml:id="Mary_in_Simons_house">
-        <name rend="underline" type="person"
+		<ab xml:id="B2_Mary_in_Simons_house">
+        <name rend="rubr_underline" type="person"
         nymRef="Pseudo_Isidore"><hi rend="rubr">J</hi>sodorus</name>
         be<lb facs="#B2_162r_a_34"/>schriuet<pc resp="editor">:</pc>
         <!-- should this be in quotation marks? -->
@@ -1941,7 +1926,7 @@
 			<expan>v<ex>nd</ex></expan>
 		</choice>
 		weynede
-        <del rend="horizontalStrike">ol</del> also
+        <del rend="strikethrough">ol</del> also
         <choice>
 			<abbr>o<am>u&#xa770;</am></abbr>
 			<expan>o<ex>uer</ex></expan></choice>ulodeliken<!-- MLG "overvlodelike" 
@@ -1972,7 +1957,7 @@
 			<expan>v<ex>nd</ex></expan>
 		</choice>
 		was ghesunt in
-        <lb facs="#B2_162v_a_10"/><hi rend="rubr">Z</hi>eile
+        <lb facs="#B2_162v_a_10"/>Zeile
         <choice>
 			<abbr>v<am>n&#x304;</am></abbr>
 			<expan>v<ex>nd</ex></expan>
@@ -1998,7 +1983,7 @@
         oghen <name type="person" nymRef="God">gode</name> vor
         syne waldade<pc resp="editor">.</pc>
         </ab>
-        <ab xml:id="VirginMary_visits">
+        <ab xml:id="B2_VirginMary_visits">
         <hi rend="rubr">J</hi>n der
         soluen tijd
         <lb facs="#B2_162v_a_13"/>hoerde
@@ -2030,7 +2015,7 @@
 			<expan>v<ex>nd</ex></expan>
 		</choice>
 		se vornam<pc resp="editor">,</pc> 
-        <del rend="horizontalStrike">h</del><!-- my guess is that the 
+        <del rend="strikethrough">h</del><!-- my guess is that the 
         scribe skipped the 'dat' --> dat he
         <name type="person" nymRef="Mary_Magdalene">
 			<choice>
@@ -2115,8 +2100,8 @@
         <lb facs="#B2_162v_a_29"/>vnses heren
         <name type="person" nymRef="Jesus_Christ">
 			<choice>
-				<abbr><am><hi rend="rubr">J</hi>hu&#x304;</am></abbr>
-				<expan><ex><hi rend="rubr">J</hi>hesu</ex></expan>
+				<abbr><am>Jhu&#x304;</am></abbr>
+				<expan><ex>Jhesu</ex></expan>
 			</choice>
 			<choice>
 				<abbr><am>xpi<!--same as before-->&#x304;</am></abbr>
@@ -2138,7 +2123,7 @@
 		</choice>
 		van <name type="person" nymRef="God">godes</name> 
         <lb facs="#B2_162v_a_31"/>weghen<pc resp="editor">,</pc> dattu
-        bijst reyne an <hi rend="rubr">Z</hi>eile
+        bijst reyne an Zeile
         <choice>
 			<abbr>v<am>n&#x304;</am></abbr>
 			<expan>v<ex>nd</ex></expan>
@@ -2201,15 +2186,15 @@
         vorheuen van der erden twe 
         <lb facs="#B2_163r_a_05"/>elen hoghe
         <choice>
-			<abbr>v<am>n&#x304;</am></abbr>
-			<expan>v<ex>nd</ex></expan>
+			<abbr><hi rend="rubr">v</hi><am>n&#x304;</am></abbr>
+			<expan><hi rend="rubr">v</hi><ex>nd</ex></expan>
 		</choice>
 		worden 
 		<choice>
 			<orig><hi rend="rubr">E</hi></orig><reg type="capit" resp="editor">e</reg></choice>erwerdeliken weder neder
         <lb facs="#B2_163r_a_06"/>ghesat to der eerden<pc resp="editor">.</pc>
         </ab>
-        <ab xml:id="Mary_rest_of_life"><hi rend="rubr">D</hi>ar na was
+        <ab xml:id="B2_Mary_rest_of_life"><hi rend="rubr">D</hi>ar na was
         <name type="person" nymRef="Mary_Magdalene"><hi rend="rubr">M</hi>aria
 			<choice>
 				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agdalena
@@ -2263,7 +2248,7 @@
 		loueden den
         heren<pc resp="editor">.</pc> <hi rend="rubr">D</hi>ar na
         <lb facs="#B2_163r_a_15"/>do se starff<pc resp="editor">,</pc> nemen
-        de hillighen engele err <hi rend="rubr">Z</hi>eile
+        de hillighen engele err Zeile
         <choice>
 			<abbr>v<am>n&#x304;</am></abbr>
 			<expan>v<ex>nd</ex></expan>
@@ -2272,7 +2257,7 @@
         <lb facs="#B2_163r_a_17"/>dat gotlike anschouwen<pc resp="editor">.</pc>
         <hi rend="rubr">A</hi>men <!-- there is a space here; tag: space quantity="4" unit="chars"/?-->
         </ab>
-        <ab xmli:id="epilogue"><hi rend="rubr">E</hi>er bekerin<lb facs="#B2_163r_a_18"/>ghe
+        <ab xml:id="B2_epilogue"><hi rend="rubr">E</hi>er bekerin<lb facs="#B2_163r_a_18"/>ghe
         ghescheide<pc resp="editor">,</pc> als de lerre beschriuen<pc resp="editor">,</pc>
         vp den ø
         <choice>

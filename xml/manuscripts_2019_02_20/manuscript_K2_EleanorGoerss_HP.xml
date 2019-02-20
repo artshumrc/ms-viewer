@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt> 
+                <title>Mary Magdalene Conversion Legend</title>
+                <author ref="#PseudoIsidore">Pseudo Isidore</author>
+                <respStmt>
+                    <name xml:id="NS">Eleanor Goerss</name>
+                    <resp>TEI encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <title>Mary Magdalene Conversion Legend - Digital Edition</title>
+                    <date when="2017-08-25">August 25, 2017</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <authority>
+                    <ref target=""></ref>
+                </authority>
+                <availability status="free"><p>Published under <ref target=""></ref></p></availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Cologne</settlement>
+                        <repository>Historisches Archiv der Stadt</repository>
+                        <idno>Best. 7020 (W*) 72</idno>
+                    </msIdentifier>
+                <physDesc>
+                  <objectDesc form="codex">
+                  <supportDesc>
+                   <support>Paper</support>
+                  <extent>211 folios
+                    <dimensions scope="all" type="folio" unit="millimeters">
+                      <height>145</height>
+                      <width>95</width>
+                   </dimensions>
+   				</extent>
+  			</supportDesc>
+ 		 	<layoutDesc columns="1" ruledLines="14">
+   				<layout >14 ruled lines.</layout>
+  			</layoutDesc>
+		   </objectDesc>
+		</physDesc>
+       <history>
+         <origin>
+           <p><origPlace>Germany, unknown</origPlace>,<origDate>1550-1579</origDate>
+           </p>
+          </origin>
+        <provenance>
+         <p>Previously owned by Johannes Henricus Lennep, 1601</p>
+        </provenance>
+        <acquisition>
+          <p></p>
+         </acquisition>
+        </history>
+     </msDesc>
+                <listWit>
+                    <witness xml:id="K2">K2</witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <schemaRef n="lbp-critical-1.0.0" url="https://raw.githubusercontent.com/lombardpress/lombardpress-schema/develop/src/out/critical.rng"/>
+            <editorialDecl>
+                <p>Encoding of this text has followed the published guidelines on http://www.tei-c.org, Guidelines for Electronic Text Encoding and Interchange, Version 3.2.0. Last updated on 10th July 2017, revision 0fcf651</p>
+            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc status="draft">
+            <listChange>
+                <change when="2017-08-25" status="draft" n="0.0.0"><p>Created file for the first time.</p></change>
+ 				<change when="2018-12-14" status="draft" n="0.0.1"><p>corrected some errors: attr. "souce" --> "source"; "xmli:id" --> "xml:id"
+				 attr value "red underline" --> "rubr_underline"; "gallilee" -->"galilee"; "Ierusalem" --> "Jerusalem"; "Mary_Magalene" --> "Mary_Magdalene"
+				 "bot-right" --> "bot_right"; "cross out" --> "strikethrough"; "edior" --> "editor"</p></change> 
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+  <text>
+    <body>
+      <pb edRef="#K2" facs="#K2_021r" n="fol. 21r"></pb> <cb n="fol. 21r"></cb>
+				<ab xml:id="K2_legend_title" rend="rubr"><choice><orig>h</orig><reg type="capit" resp="editor">H</reg></choice>er nach
+					<lb edRef="#K2" facs="#K2_021r_a_01"/>volgt <choice><abbr>e<am>y&#x305;</am></abbr><expan>e<ex>yn</ex></expan></choice> schoene hystori von
+					<lb edRef="#K2" facs="#K2_021r_a_02"/>der hilger <choice><abbr>ionffer<am>e&#x305;</am></abbr><expan>ionffer<ex>en</ex></expan></choice> <name type="person" nymRef="Mary_Magdalene">Maria <choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agdalena</name><pc resp="editor">.</pc>
+				</ab>
+				<ab xml:id="K2_genealogy">
+				<pb edRef="#K2" facs="#K2_021v" n="fol. 21v"></pb> <cb n="fol. 21v"></cb>
+				  <lb edRef="#K2" facs="#K2_021r_a_03"/><name type="person" nymRef="Mary_Magdalene" rend="rubr_underline"><hi rend="init">M</hi>aria <choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agdalena</name><pc resp="editor">,</pc>
+					<lb edRef="#K2" facs="#K2_021r_a_04"/>die da ist geboren van eddelen 
+					<lb edRef="#K2" facs="#K2_021r_a_05"/>lüiden in den Iüdeschen lande <choice><abbr>v<am>n&#x305;</am></abbr><expan>v<ex>nd</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_021r_a_06"/><choice><abbr>v<am>a&#x305;</am></abbr><expan>v<ex>an</ex></expan></choice> <choice><abbr>erlÿch<am>e&#x305;</am></abbr><expan>erlÿch<ex>en</ex></expan></choice> geslechte<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> ÿn der stat 
+					<lb edRef="#K2" facs="#K2_021r_a_07"/><name type="place" nymRef="Jerusalem" rend="rubr_underline">Iherüsalem</name><pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> ere vader der hieß
+					<lb edRef="#K2" facs="#K2_021r_a_08"/><name type="person" nymRef="Syrus" rend="rubr_underline">Cyrüs</name><pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd yre moder die hieß
+					<lb edRef="#K2" facs="#K2_021r_a_09"/><name type="person" nymRef="Eucharia" rend="rubr_underline">Eügana</name><pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Dysse tzweÿ <del rend="strikethrough">doechtere</del>
+					<lb edRef="#K2" facs="#K2_021r_a_10"/>erhlÿche ludt hadden tzweÿ
+					<lb edRef="#K2" facs="#K2_021r_a_11"/>doechter vnd <choice><abbr>eyn<am>e&#x305;</am></abbr><expan>eyn<ex>en</ex></expan></choice> son<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Dei
+					<lb edRef="#K2" facs="#K2_021r_a_12"/>eÿne dochter was genoempt <name type="person" nymRef="Martha" rend="rubr_underline">Mar</name><lb edRef="#K2" facs="#K2_021r_a_13"/><name rend="rubr_underline">ta</name><pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd die ander <name type="person" nymRef="Mary_Magdalene">Maria</name>
+					<lb edRef="#K2" facs="#K2_021r_a_14"/><name type="person" nymRef="Mary_Magdalene"><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agdalena</name><pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg>.</choice></pc> vnd der son hieß
+					<lb edRef="#K2" facs="#K2_021r_a_15"/><name type="person" nymRef="Lazarus" rend="rubr_underline"><choice><orig>l</orig><reg type="capit" resp="editor">L</reg></choice>azarüs</name><pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd dÿt was der
+					<lb edRef="#K2" facs="#K2_021r_a_16"/><name type="person" nymRef="Lazarus" rend="rubr_underline"><choice><orig>l</orig><reg type="capit" resp="editor">L</reg></choice>azarüs</name><pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> den vnser lieüer her
+				<pb edRef="#K2" facs="#K2_022r" n="fol. 22r"></pb> <cb n="fol. 22r"></cb>
+					<lb edRef="#K2" facs="#K2_022r_a_01"/><name type="person" nymRef="Jesus_Christ" rend="rubr_underline">Iesüs Chrÿstüs</name> operweckten <choice><abbr>v<am>o&#x305;</am></abbr><expan>v<ex>on</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_022r_a_02"/>dem dode<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc>
+				</ab>
+				<ab xml:id="K2_heritage">Die elteren<pc resp="editor">,</pc> die <choice><abbr>deÿlt<am>e&#x305;</am></abbr><expan>deÿlt<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_022r_a_03"/>den <choice><abbr>k<am>y&#x305;</am>der<am>e&#x305;</am></abbr><expan>k<ex>yn</ex>der<ex>en</ex></expan></choice> <add place="above">yre</add> vaderlÿche erüen
+					<lb edRef="#K2" facs="#K2_022r_a_04"/>vnd ÿr güt bÿ eren leüen<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd
+					<lb edRef="#K2" facs="#K2_022r_a_05"/><name type="person" nymRef="Lazarus" rend="rubr_underline">Lazaro</name> dem viel zo deÿle eÿn
+					<lb edRef="#K2" facs="#K2_022r_a_06"/>groiß deÿl ÿn der stat <name type="place" nymRef="Jerusalem" rend="rubr_underline">Jheru</name><lb edRef="#K2" facs="#K2_022r_a_07"/><name type="place" nymRef="Jerusalem" rend="rubr_underline">salem</name><pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><abbr><choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice><am>n&#x305;</am></abbr><expan>v<ex>nd</ex></expan></choice> heÿ oeffden sych in
+					<lb edRef="#K2" facs="#K2_022r_a_08"/>rÿtterschoff<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> want heÿ was <choice><abbr>e<am>y&#x305;</am></abbr><expan>e<ex>yn</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_022r_a_09"/>rÿtter<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd <name type="person" nymRef="Martha" rend="rubr_underline">Martha</name><pc resp="editor">,</pc> die gelo<lb edRef="#K2" facs="#K2_022r_a_10"/>uete gode ÿre jonfferschaff
+					<lb edRef="#K2" facs="#K2_022r_a_11"/>zu halden<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> vnd sÿ wart eÿn
+					<lb edRef="#K2" facs="#K2_022r_a_12"/><choice><abbr>wÿrd<am>y&#x305;</am>ne</abbr><expan>wÿrd<ex>yn</ex>ne</expan></choice> vnd hÿelt herberg
+					<lb edRef="#K2" facs="#K2_022r_a_13"/>op<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vur die pÿlgrim<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> want
+					<lb edRef="#K2" facs="#K2_022r_a_14"/>yhr was zu deÿl <choice><abbr>gefall<am>e&#x305;</am></abbr><expan>gefall<ex>en</ex></expan></choice><pc resp="editor">,</pc> dat stet <fw type="catch" place="bot_right">gen</fw>
+				<pb edRef="#K2" facs="#K2_022v" n="fol. 22v"></pb> <cb n="fol. 22v"></cb>
+					<lb edRef="#K2" facs="#K2_022v_a_01"/>gen <name rend="rubr_underline">Betania</name> dair wonden sÿ<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd
+					<lb edRef="#K2" facs="#K2_022v_a_02"/><name rend="rubr_underline">Betania</name> en was nyt vern van <name rend="rubr_underline">Ie</name><lb edRef="#K2" facs="#K2_022v_a_03"/><name rend="rubr_underline">rüsalem</name><pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd besonder vmb ÿres
+					<lb edRef="#K2" facs="#K2_022v_a_04"/>güiden heiligen leüens wÿllen<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc>
+					<lb edRef="#K2" facs="#K2_022v_a_05"/>so was sÿ werdÿch zo <choice><abbr>herberg<am>e&#x305;</am></abbr><expan>herberg<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_022v_a_06"/><choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nsen <choice><orig>l</orig><reg type="capit" resp="editor">L</reg></choice>ieuen <choice><orig>h</orig><reg type="capit" resp="editor">H</reg></choice>eren <name type="place" nymRef="Bethany" rend="rubr_underline">Ihesüm</name>
+					<lb edRef="#K2" facs="#K2_022v_a_07"/>vnd syn heilge moder <name type="place" nymRef="Bethany" rend="rubr_underline">Maria</name>
+					<lb edRef="#K2" facs="#K2_022v_a_08"/>vnd alle andere heilge <hi rend="rubr_underline"><choice><orig>A</orig><reg type="capit" resp="editor">a</reg></choice>post</hi><lb edRef="#K2" facs="#K2_022v_a_09"/><hi rend="rubr_underline">elen</hi> vnd jungeren<pc resp="editor">.</pc> <name type="person" nymRef="Jesus_Christ" rend="rubr_underline"><choice><abbr><am>xp&#x305;</am>i</abbr><expan><ex>Christ</ex>i</expan></choice></name><pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc><choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd
+					<lb edRef="#K2" facs="#K2_022v_a_10"/><name type="person" nymRef="Martha" rend="rubr_underline">Martha</name> had yre renten ader
+					<lb edRef="#K2" facs="#K2_022v_a_11"/><add place="lmargin">güt</add> vnd eruen ÿn dem stetgen
+					<lb edRef="#K2" facs="#K2_022v_a_12"/><name type="place" nymRef="Bethany" rend="rubr_underline">Betania</name><pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Dair ÿnnen sÿ <choice><orig>g</orig><reg type="capit" resp="editor">G</reg></choice>ot
+					<lb edRef="#K2" facs="#K2_022v_a_13"/>den <choice><orig>h</orig><reg type="capit" resp="editor">H</reg></choice>eren <choice><abbr>v<am>n&#x305;</am></abbr><expan>v<ex>nd</ex></expan></choice> alle pilgrum
+					<lb edRef="#K2" facs="#K2_022v_a_14"/>mÿt grossen vleÿss <choice><abbr>dient<am>e&#x305;</am></abbr><expan>dient<ex>en</ex></expan></choice><pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc>
+				</ab>
+				<ab xml:id="K2_MaryMagdalene_mismanagement">
+				<pb edRef="#K2" facs="#K2_023r" n="fol. 23r"></pb> <cb n="fol. 23r"></cb>
+					<lb edRef="#K2" facs="#K2_023r_a_01"/><choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd yhr suster fort eÿn sundich
+					<lb edRef="#K2" facs="#K2_023r_a_02"/>leuen<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd wart dair na <choice><abbr>e<am>y&#x305;</am></abbr><expan>e<ex>yn</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_023r_a_03"/>lieffhaüerschen <name type="person" nymRef="Jesus_Christ" rend="rubr_underline"><choice><abbr><am>xp&#x305;</am>i</abbr><expan><ex>Christ</ex>i</expan></choice></name><pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> <choice><orig>D</orig><reg type="capit" resp="editor">d</reg></choice>ürch
+					<lb edRef="#K2" facs="#K2_023r_a_04"/>bekentnysse ÿhrer sünden <choice><abbr>v<am>n&#x305;</am></abbr><expan>v<ex>nd</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_023r_a_05"/>bÿtteren tranen<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd <del rend="strikethrough">badt</del> <name rend="rubr_underline">Ma</name>
+					<lb edRef="#K2" facs="#K2_023r_a_06"/>rta badt <name type="person" nymRef="Virgin_Mary" rend="rubr_underline">Maria</name><pc resp="editor">,</pc> die moder
+					<lb edRef="#K2" facs="#K2_023r_a_07"/><name type="person" nymRef="Jesus_Christ" rend="rubr_underline"><choice><abbr><am>xp&#x305;</am>i</abbr><expan><ex>Christ</ex>i</expan></choice></name><pc resp="editor">,</pc> gar <choice><abbr>eÿnichlych<am>e&#x305;</am></abbr><expan>eÿnichlych<ex>en</ex></expan></choice><pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> <choice><orig>D</orig><reg type="capit" resp="editor">d</reg></choice>at sÿ
+					<lb edRef="#K2" facs="#K2_023r_a_08"/>doch wolde ehren<pc resp="editor">.</pc> <choice><orig>s</orig><reg type="capit" resp="editor">S</reg></choice>o <name type="person" nymRef="Jesus_Christ" rend="rubr_underline">Jhesüm</name>
+					<lb edRef="#K2" facs="#K2_023r_a_09"/>vur ÿhre suster <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Magdale</name><lb edRef="#K2" facs="#K2_023r_a_10"/><name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">nen</name> bydden<pc resp="editor">,</pc> dat hey sÿ doch
+					<lb edRef="#K2" facs="#K2_023r_a_11"/>wolde straiffen <choice><abbr>v<am>n&#x305;</am></abbr><expan>v<ex>nd</ex></expan></choice> bekeren sÿ
+					<lb edRef="#K2" facs="#K2_023r_a_12"/>van ÿren <choice><abbr>verdoemelÿch<am>e&#x305;</am></abbr><expan>verdoemelÿch<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_023r_a_13"/>vnd sündelÿchen stait<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> zo der
+					<lb edRef="#K2" facs="#K2_023r_a_14"/>genaden<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> op dat sÿ nÿt ver <fw type="catch" place="bot_right">doempt</fw>
+				<pb edRef="#K2" facs="#K2_023v" n="fol. 23v"></pb> <cb n="fol. 23v"></cb>
+					<lb edRef="#K2" facs="#K2_023v_a_01"/>doempt en moecht werden<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><abbr>w<am>a&#x305;</am>t</abbr><expan>w<ex>an</ex>t</expan></choice>
+					<lb edRef="#K2" facs="#K2_023v_a_02"/><name rend="rubr_underline">Marta</name> die gelocht vnd wÿst
+					<lb edRef="#K2" facs="#K2_023v_a_03"/>dat fast<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> <choice><orig>D</orig><reg type="capit" resp="editor">d</reg></choice>at <name type="person" nymRef="Jesus_Christ" rend="rubr_underline">Ihesüs</name> die ma<lb edRef="#K2" facs="#K2_023v_a_04"/>cht wol hadde<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> dat heÿ sÿ kont
+					<lb edRef="#K2" facs="#K2_023v_a_05"/>bekeren van ÿren <choice><abbr>sünd<am>e&#x305;</am></abbr><expan>sünd<ex>en</ex></expan></choice> <choice><abbr>v<am>n&#x305;</am></abbr><expan>v<ex>nd</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_023v_a_06"/>brengen yn den stait der
+					<lb edRef="#K2" facs="#K2_023v_a_07"/>genaden<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd dÿt dede <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Ma</name><lb edRef="#K2" facs="#K2_023v_a_08"/><name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">ria</name><pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc>
+				</ab>
+				<ab xml:id="K2_Martha_confronts_Mary"><pc source="manuscript">(</pc>Der werdÿger lerer <name type="person" nymRef="Pseudo_Isidore" rend="rubr_underline">Isido</name><lb edRef="#K2" facs="#K2_023v_a_09"/><name type="person" nymRef="Pseudo_Isidore" rend="rubr_underline">rus</name><pc resp="editor">,</pc> der dÿt leuen beschrÿfft
+					<lb edRef="#K2" facs="#K2_023v_a_10"/>ÿn eÿn boich<pc resp="editor">,</pc> dat dair <choice><abbr>gen<am>a&#x305;</am>t</abbr><expan>gen<ex>an</ex>t</expan></choice>
+					<lb edRef="#K2" facs="#K2_023v_a_11"/>wÿrt dat boich van den do<lb edRef="#K2" facs="#K2_023v_a_12"/>den heÿlgen<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> der sprycht al<lb edRef="#K2" facs="#K2_023v_a_13"/>süs<pc resp="editor">.</pc><pc source="manuscript">)</pc> Dat gefiel sÿch op eÿne
+					<lb edRef="#K2" facs="#K2_023v_a_14"/>zeÿt<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> dat dysse tzweÿ gesüste<pb edRef="#K2" facs="#K2_024r" n="fol. 24r"></pb><cb n="fol. 24r"></cb><lb edRef="#K2" facs="#K2_024r_a_01"/>ren<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> als nemlÿch die ionffrauue
+					<lb edRef="#K2" facs="#K2_024r_a_02"/><name rend="rubr_underline">Martha</name> vnd yre süster <name rend="rubr_underline">Maria</name>
+					<lb edRef="#K2" facs="#K2_024r_a_03"/><name type="person" nymRef="Mary_Magdalene" rend="rubr_underline"><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agdalena</name><pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> die do zer zeyt
+					<lb edRef="#K2" facs="#K2_024r_a_04"/>nyt <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline"><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria</name> en hieß<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> <choice><orig>S</orig><reg type="capit" resp="editor">s</reg></choice>onder
+					<lb edRef="#K2" facs="#K2_024r_a_05"/>wart van allen mÿnschen
+					<lb edRef="#K2" facs="#K2_024r_a_06"/>geheyschen die offenbair
+					<lb edRef="#K2" facs="#K2_024r_a_07"/>sündersche<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Dÿsse tzweÿ süs<lb edRef="#K2" facs="#K2_024r_a_08"/>teren quamen zosamen zo
+					<lb edRef="#K2" facs="#K2_024r_a_09"/><name rend="rubr_underline">Betania</name> vnd <name rend="rubr_underline"><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agdalena</name>
+					<lb edRef="#K2" facs="#K2_024r_a_10"/>wolde besehen<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> wair yre suster
+					<lb edRef="#K2" facs="#K2_024r_a_11"/>yre wesen oder <choice><abbr>w<am>o&#x305;</am>nunge</abbr><expan>w<ex>on</ex>nunge</expan></choice>
+					<lb edRef="#K2" facs="#K2_024r_a_12"/>hedde<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> So hieß sÿ <name rend="rubr_underline">Martha</name> wÿl<lb edRef="#K2" facs="#K2_024r_a_13"/>kom<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd sach sÿ gar droeüich
+					<lb edRef="#K2" facs="#K2_024r_a_14"/>an<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd dacht ÿn ÿren <choice><abbr>hertz<am>e&#x305;</am></abbr><expan>hertz<ex>en</ex></expan></choice><pc resp="editor">:</pc>
+				<pb edRef="#K2" facs="#K2_024v" n="fol. 24v"></pb> <cb n="fol. 24v"></cb>
+					<lb edRef="#K2" facs="#K2_024v_a_01"/><pc resp="editor">"</pc>Ach almechtÿger <hi rend="rubr_underline">hÿmelscher</hi>
+					<lb edRef="#K2" facs="#K2_024v_a_02"/><choice><orig>g</orig><reg type="capit" resp="editor">G</reg></choice>ott<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> <choice><orig>D</orig><reg type="capit" resp="editor">d</reg></choice>er du bÿst eyn schepper
+					<lb edRef="#K2" facs="#K2_024v_a_03"/>aller <choice><orig>C</orig><reg type="capit" resp="editor">c</reg></choice>reatüren<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Ich bydden
+					<lb edRef="#K2" facs="#K2_024v_a_04"/>dÿch<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> doe mÿch doch die
+					<lb edRef="#K2" facs="#K2_024v_a_05"/>genaid vnd bekeer doch dÿsse
+					<lb edRef="#K2" facs="#K2_024v_a_06"/>meyne süÿster dair<pc resp="editor">,</pc> zo dat sÿ
+					<lb edRef="#K2" facs="#K2_024v_a_07"/>werden sall<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> nemlÿchen eÿn
+					<lb edRef="#K2" facs="#K2_024v_a_08"/>lieffhauerschen dÿner <hi rend="rubr_underline">gottlich</hi><lb edRef="#K2" facs="#K2_024v_a_09"/>er lieffden<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Dan yre sünden
+					<lb edRef="#K2" facs="#K2_024v_a_10"/>haüen sÿ gezogen van dÿr<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc>
+					<lb edRef="#K2" facs="#K2_024v_a_11"/>vnd also lang sÿ ÿn dem sun<lb edRef="#K2" facs="#K2_024v_a_12"/>dÿgen stait is<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><orig>s</orig><reg type="capit" resp="editor">S</reg></choice>o en is sÿ Io mÿ<lb edRef="#K2" facs="#K2_024v_a_13"/>ne suster nÿt<pc source="manuscript">.</pc> Ach du ewÿge
+					<lb edRef="#K2" facs="#K2_024v_a_14"/>barmhertzÿger <hi rend="rubr_underline"><choice><orig>g</orig><reg type="capit" resp="editor">G</reg></choice>ott</hi><pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> warumb
+				<pb edRef="#K2" facs="#K2_025r" n="fol. 25r"></pb> <cb n="fol. 25r"></cb>
+					<lb edRef="#K2" facs="#K2_025r_a_01"/>haistu eÿne so schone vnd <add place="above">so</add> edde<lb edRef="#K2" facs="#K2_025r_a_02"/>le seel dair ÿn geschaffen<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> <choice><orig>D</orig><reg type="capit" resp="editor">d</reg></choice>ie
+					<lb edRef="#K2" facs="#K2_025r_a_03"/>du ließ so <choice><abbr>i<am>e&#x305;</am>merlÿchen</abbr><expan>i<ex>em</ex>merlÿchen</expan></choice> dwelen
+					<lb edRef="#K2" facs="#K2_025r_a_04"/>in den suntlÿchen stait der ver<lb facs="#K2_025r_a_05"/>doemenÿsse<pc><choice><orig>:</orig><reg type="punct" resp="editor">?</reg></choice></pc><pc resp="editor">"</pc> In dem dat <name type="person" nymRef="Martha" rend="rubr_underline">Mar</name><lb facs="#K2_025r_a_06"/><name type="person" nymRef="Martha" rend="rubr_underline">ta</name> alsüs stont vnd sach <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Mari</name><lb facs="#K2_025r_a_07"/><name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">en</name> ÿre süster an<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> So stont
+					<lb edRef="#K2" facs="#K2_025r_a_08"/><name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Maria</name> vnd zoich die kleyder
+					<lb edRef="#K2" facs="#K2_025r_a_09"/>vss<pc resp="editor">,</pc> dair sÿ ÿnnen gerieden
+					<lb edRef="#K2" facs="#K2_025r_a_10"/>hadde<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> vnd zoich andere
+					<lb edRef="#K2" facs="#K2_025r_a_11"/>kostelÿche kleÿder an<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd
+					<lb edRef="#K2" facs="#K2_025r_a_12"/>gÿnck do vür eÿnen spiegel
+					<lb edRef="#K2" facs="#K2_025r_a_13"/>stain<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd flechten ÿre schoene
+					<lb edRef="#K2" facs="#K2_025r_a_14"/>haire<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd zÿrden ÿre <choice><abbr>lÿch<am>a&#x305;</am></abbr><expan>lÿch<ex>am</ex></expan></choice>
+				<pb edRef="#K2" facs="#K2_025v" n="fol. 25v"></pb> <cb n="fol. 25v"></cb>
+					<lb edRef="#K2" facs="#K2_025v_a_01"/>vnd ere hoüfft in grosser houer<lb edRef="#K2" facs="#K2_025v_a_02"/>deÿen<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Do wart <name type="person" nymRef="Martha" rend="rubr_underline">Marta</name> such<lb edRef="#K2" facs="#K2_025v_a_03"/>tende<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd sprach mÿt klege<lb edRef="#K2" facs="#K2_025v_a_04"/>lÿcher <choice><abbr>st<am>y&#x305;</am>men</abbr><expan>st<ex>ym</ex>men</expan></choice><pc source="manuscript">:</pc> <pc resp="editor">"</pc>O <name rend="rubr_underline">Maria</name> lie<lb edRef="#K2" facs="#K2_025v_a_05"/>ue süster<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> wie magstu doch
+					<lb edRef="#K2" facs="#K2_025v_a_06"/>so seher behangen sÿn mÿt
+					<lb edRef="#K2" facs="#K2_025v_a_07"/>der welt pracht<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd dÿn
+					<lb edRef="#K2" facs="#K2_025v_a_08"/>leüen so ellendÿch verslÿssen
+					<lb edRef="#K2" facs="#K2_025v_a_09"/>mÿt der groisser hoüerdÿen
+					<lb edRef="#K2" facs="#K2_025v_a_10"/>dÿsser werlt<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd dyne reÿ<lb edRef="#K2" facs="#K2_025v_a_11"/>ne seel<pc resp="editor">,</pc> die doch schoen is<pc resp="editor">,</pc> <choice><abbr>v<am>n&#x305;</am></abbr><expan>v<ex>nd</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_025v_a_12"/>geschaffen na dem bÿlde <hi rend="rubr_underline">gad</hi><lb edRef="#K2" facs="#K2_025v_a_13"/><hi rend="rubr_underline">es</hi> <del rend="strikethrough">bÿlde</del><pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> dattu die so gans
+					<lb edRef="#K2" facs="#K2_025v_a_14"/>vnd gar beflecks mÿt dÿnen
+				<pb edRef="#K2" facs="#K2_026r" n="fol. 26r"></pb> <cb n="fol. 26r"></cb>
+					<lb edRef="#K2" facs="#K2_026r_a_01"/>grossen sünden<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Ich <choice><abbr>bÿdd<am>e&#x305;</am></abbr><expan>bÿdd<ex>en</ex></expan></choice> dich<pc resp="editor">,</pc>
+					<lb edRef="#K2" facs="#K2_026r_a_02"/>lieue <del rend="strikethrough">her</del><pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> süister<pc resp="editor">,</pc> denck doch<pc resp="editor">,</pc>
+					<lb edRef="#K2" facs="#K2_026r_a_03"/>dattu steruen mois<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc><pc resp="editor">,</pc> vnd dat
+					<lb edRef="#K2" facs="#K2_026r_a_04"/>deÿn schone lÿcham<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> den dü
+					<lb edRef="#K2" facs="#K2_026r_a_05"/>so zÿrest mÿt sÿluer <choice><abbr>v<am>n&#x305;</am></abbr><expan>v<ex>nd</ex></expan></choice> golt<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc>
+					<lb edRef="#K2" facs="#K2_026r_a_06"/><choice><orig>D</orig><reg type="capit" resp="editor">d</reg></choice>as dat doch werden mois
+					<lb edRef="#K2" facs="#K2_026r_a_07"/>eÿn spÿs der woerme<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd
+					<lb edRef="#K2" facs="#K2_026r_a_08"/>dÿn seel<pc resp="editor">,</pc> die doch ewÿch <choice><abbr>leü<am>e&#x305;</am></abbr><expan>leü<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_026r_a_09"/>sal<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> die en zirestu nÿt noch
+					<lb edRef="#K2" facs="#K2_026r_a_10"/>en achtes nÿt dairop<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc><pc resp="editor">"</pc> Do ant<lb edRef="#K2" facs="#K2_026r_a_11"/>worde <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Magdalena</name><pc resp="editor">,</pc> ÿrer süs<lb edRef="#K2" facs="#K2_026r_a_12"/>ter<pc source="manuscript">:</pc> <pc resp="editor">"</pc><choice><orig>l</orig><reg type="capit" resp="editor">L</reg></choice>ieue süister<pc resp="editor">,</pc> bÿn ÿch so
+					<lb edRef="#K2" facs="#K2_026r_a_13"/>schon als du mÿch sachs <choice><abbr>v<am>n&#x305;</am></abbr><expan>v<ex>nd</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_026r_a_14"/><choice><orig>vnd</orig><reg type="punct" resp="editor"></reg></choice> haüen so grosse rÿch <fw type="catch" place="bot_right">dum</fw>
+				<pb edRef="#K2" facs="#K2_026v" n="fol. 26v"></pb> <cb n="fol. 26v"></cb>
+					<lb edRef="#K2" facs="#K2_026v_a_01"/>düm dÿsser werlt<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> So bÿdden ÿch
+					<lb edRef="#K2" facs="#K2_026v_a_02"/>dÿch<pc resp="editor">,</pc> bÿs zu vrÿdden mÿt
+					<lb edRef="#K2" facs="#K2_026v_a_03"/>mÿr<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd lais mych <choice><abbr>m<am>y&#x305;</am></abbr><expan>m<ex>yn</ex></expan></choice> güt
+					<lb edRef="#K2" facs="#K2_026v_a_04"/>verzeren mÿt gnoechten dÿs<lb edRef="#K2" facs="#K2_026v_a_05"/>ser werlt<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> mÿt freüden vnd
+					<lb edRef="#K2" facs="#K2_026v_a_06"/>mÿt lieffhauers dÿsser werlt
+					<lb edRef="#K2" facs="#K2_026v_a_07"/><pc source="manuscript">(</pc>dat is mÿt jongen gesellen<pc source="manuscript">)</pc><pc resp="editor">,</pc>
+					<lb edRef="#K2" facs="#K2_026v_a_08"/><choice><orig>d</orig><reg type="capit" resp="editor">D</reg></choice>ewiel dat ÿch noch jünck
+					<lb edRef="#K2" facs="#K2_026v_a_09"/>bÿn<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><orig>w</orig><reg type="capit" resp="editor">W</reg></choice>en ÿch nu alt <choice><abbr>werd<am>e&#x305;</am></abbr><expan>werd<ex>en</ex></expan></choice><pc resp="editor">,</pc>
+					<lb edRef="#K2" facs="#K2_026v_a_10"/>so sal ÿch es wol laissen <pc source="manuscript">(</pc>off sÿ
+					<lb edRef="#K2" facs="#K2_026v_a_11"/>sagen wol<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc><pc source="manuscript">)</pc><pc resp="editor">.</pc> <choice><orig>w</orig><reg type="capit" resp="editor">W</reg></choice>en ÿch alt <choice><abbr>werd<am>e&#x305;</am></abbr><expan>werd<ex>en</ex></expan></choice><pc resp="editor">,</pc>
+					<lb edRef="#K2" facs="#K2_026v_a_12"/>so ÿst mÿr die freud <choice><abbr>verg<am>a&#x305;</am>g<am>e&#x305;</am></abbr><expan>verg<ex>an</ex>g<ex>en</ex></expan></choice><pc resp="editor">.</pc>
+					<lb edRef="#K2" facs="#K2_026v_a_13"/><choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd sag mÿr hie nÿt mehr
+					<lb edRef="#K2" facs="#K2_026v_a_14"/>van<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd laiss vns nu zosa <fw type="catch" place="bot_right"><choice><abbr>m<am>e&#x305;</am></abbr><expan>m<ex>en</ex></expan></choice></fw>
+				<pb edRef="#K2" facs="#K2_027r" n="fol. 27r"></pb> <cb n="fol. 27r"></cb>
+					<lb edRef="#K2" facs="#K2_027r_a_01"/>men froelÿchen seÿn<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><abbr>D<am>a&#x305;</am></abbr><expan>D<ex>an</ex></expan></choice> wer
+					<lb edRef="#K2" facs="#K2_027r_a_02"/>weÿss wie lang<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc><pc resp="editor">"</pc> Des <choice><abbr>ander<am>e&#x305;</am></abbr><expan>ander<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_027r_a_03"/>dages do zoch <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Maria <choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agda</name><lb edRef="#K2" facs="#K2_027r_a_04"/><name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">lena</name> wÿdderummb zo hoüß
+					<lb edRef="#K2" facs="#K2_027r_a_05"/>op yre slos <name type="place" subtype="residence" nymRef="Magdalum"><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agdalüm</name><pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> vnd
+					<lb edRef="#K2" facs="#K2_027r_a_06"/><name type="person" nymRef="Martha" rend="rubr_underline">Martha</name> die soech<add place="above">t</add>e vnd weÿn<lb edRef="#K2" facs="#K2_027r_a_07"/>den bÿtterlÿchen<pc resp="editor">,</pc> dat yre süster
+					<lb edRef="#K2" facs="#K2_027r_a_08"/>also wÿlde was<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> 
+				</ab>
+				<ab xml:id="K2_MaryMagdalene_lovers">Dair na oeuer
+					<lb edRef="#K2" facs="#K2_027r_a_09"/>tzweÿ mainden<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> so <choice><abbr>hadd<am>e&#x305;</am></abbr><expan>hadd<ex>en</ex></expan></choice> die
+					<lb edRef="#K2" facs="#K2_027r_a_10"/><del rend="strikethrough">jungeren</del> jünge heren vnd
+					<lb edRef="#K2" facs="#K2_027r_a_11"/>jüng gesellen der rÿcher bur<lb edRef="#K2" facs="#K2_027r_a_12"/>gers kÿnder <choice><abbr>b<am>y&#x305;</am>n<am>e&#x305;</am></abbr><expan>b<ex>yn</ex>n<ex>en</ex></expan></choice> <name type="place" nymRef="Jerusalem" rend="rubr_underline"><choice><abbr>Iherusal<am>e&#x305;</am></abbr><expan>Iherusal<ex>em</ex></expan></choice></name>
+					<lb edRef="#K2" facs="#K2_027r_a_13"/>eÿn hochzÿtt vnd gestereÿ<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><orig>d</orig><reg type="capit" resp="editor">D</reg></choice>air
+					<lb edRef="#K2" facs="#K2_027r_a_14"/>zo ward <choice><abbr>gebedd<am>e&#x305;</am></abbr><expan>gebedd<ex>en</ex></expan></choice> <choice><abbr>v<am>n&#x305;</am></abbr><expan>v<ex>nd</ex></expan></choice> <choice><abbr>gelad<am>e&#x305;</am></abbr><expan>gelad<ex>en</ex></expan></choice>
+				<pb edRef="#K2" facs="#K2_027v" n="fol. 27v"></pb> <cb n="fol. 27v"></cb>
+					<lb edRef="#K2" facs="#K2_027v_a_01"/><name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Maria <choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agdalena</name><pc resp="editor">.</pc> <choice><orig>d</orig><reg type="capit" resp="editor">D</reg></choice>air qüam
+					<lb edRef="#K2" facs="#K2_027v_a_02"/>sÿ mÿt grosser kostelycheÿt vnd
+					<lb edRef="#K2" facs="#K2_027v_a_03"/>zyrheÿt yres lÿchams<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> In
+					<lb edRef="#K2" facs="#K2_027v_a_04"/>groissen hochmoit<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> glÿch als
+					<lb edRef="#K2" facs="#K2_027v_a_05"/>eÿn lieffhauerschen dysser we<lb edRef="#K2" facs="#K2_027v_a_06"/>rlt<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> vnd dansten vnd spranck
+					<lb edRef="#K2" facs="#K2_027v_a_07"/>dair yn den hoichzÿtt<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> tzweÿ
+					<lb edRef="#K2" facs="#K2_027v_a_08"/>dage vnd tzweÿ nachten<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> na<lb edRef="#K2" facs="#K2_027v_a_09"/>ülychen dat sÿ die zÿtt <choice><abbr>zeind<am>e&#x305;</am></abbr><expan>zeind<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_027v_a_10"/><add place="lmargin">notorfft</add> satt zo essen van grosser wÿl<lb edRef="#K2" facs="#K2_027v_a_11"/>dÿcheÿt<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc>
+				</ab>
+				<ab xml:id="K2_market_scene"><choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd vnder dÿsser zÿt<pc resp="editor">,</pc>
+					<lb edRef="#K2" facs="#K2_027v_a_12"/>so vernam <name type="person" nymRef="Martha" rend="rubr_underline">Marta</name><pc resp="editor">,</pc> dat <choice><abbr>d<am>'</am></abbr><expan>d<ex>er</ex></expan></choice> <hi rend="rubr_underline">her</hi>
+					<lb edRef="#K2" facs="#K2_027v_a_13"/><name type="person" nymRef="Jesus_Christ" rend="rubr_underline">Jhesüs</name> yn dem <name type="place" nymRef="Galilee"><choice><abbr>gallileitzsch<am>e&#x305;</am></abbr><expan>gallileitzsch<ex>en</ex></expan></choice></name>
+					<lb edRef="#K2" facs="#K2_027v_a_14"/>lande was vnd wolde zu <name type="person" nymRef="Martha"><hi rend="rubr_underline">Mar</hi></name> <fw type="catch" place="bot_right">ta</fw>
+				<pb edRef="#K2" facs="#K2_028r" n="fol. 28r"></pb> <cb n="fol. 28r"></cb>
+					<lb edRef="#K2" facs="#K2_028r_a_01"/><name type="person" nymRef="Martha">tam</name> <choice><abbr>k<am>o&#x305;</am>men</abbr><expan>k<ex>om</ex>men</expan></choice><pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Do gÿnck <name type="person" nymRef="Martha" rend="rubr_underline">Marta</name>
+					<lb edRef="#K2" facs="#K2_028r_a_02"/>mÿt ÿrer magt<pc resp="editor">,</pc> <name type="person" nymRef="Martilla" rend="rubr_underline">Martilla</name> ge<lb edRef="#K2" facs="#K2_028r_a_03"/>heyschen<pc resp="editor">,</pc> des morgen froech in
+					<lb edRef="#K2" facs="#K2_028r_a_04"/>die stat <name type="place" nymRef="Jerusalem" rend="rubr_underline">Iherüsalem</name> spÿs zu gel<lb edRef="#K2" facs="#K2_028r_a_05"/>den<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd wes sÿ behoffden vmb
+					<lb edRef="#K2" facs="#K2_028r_a_06"/>des <hi rend="rubr_underline">heren</hi> wÿllen<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> also dat <name type="person" nymRef="Martha" rend="rubr_underline">Mar</name><lb edRef="#K2" facs="#K2_028r_a_07"/><name type="person" nymRef="Martha" rend="rubr_underline">ta</name> gynck vnd kam an den
+					<lb edRef="#K2" facs="#K2_028r_a_08"/>mart<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Do qüamen die jünge
+					<lb edRef="#K2" facs="#K2_028r_a_09"/>heren vnd ryche burgers <choice><abbr>k<am>y&#x305;</am></abbr><expan>k<ex>yn</ex></expan></choice><lb edRef="#K2" facs="#K2_028r_a_10"/>der van dem raithüß mÿt
+					<lb edRef="#K2" facs="#K2_028r_a_11"/>peÿffen vnd basaunen<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd
+					<lb edRef="#K2" facs="#K2_028r_a_12"/>vor an der spÿs dair gÿnck
+					<lb edRef="#K2" facs="#K2_028r_a_13"/><name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Maria magdalena</name> <choice><abbr>tüÿsch<am>e&#x305;</am></abbr><expan>tüÿsch<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_028r_a_14"/>tzweÿ schone jüngelÿng<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> die
+				<pb edRef="#K2" facs="#K2_028v" n="fol. 28v"></pb> <cb n="fol. 28v"></cb>
+					<lb edRef="#K2" facs="#K2_028v_a_01"/>sÿ leÿten myt grosser houerdicheit
+					<lb edRef="#K2" facs="#K2_028v_a_02"/>koestelÿch gezÿrtt<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> vnd die selbÿ<lb edRef="#K2" facs="#K2_028v_a_03"/><choice><abbr>g<am>e&#x305;</am></abbr><expan>g<ex>en</ex></expan></choice> <choice><abbr>hadd<am>e&#x305;</am></abbr><expan>hadd<ex>en</ex></expan></choice> mÿt ÿhr gedantz<pc resp="editor">,</pc> die
+					<lb edRef="#K2" facs="#K2_028v_a_04"/>vürÿ gegantze nacht oeüer<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc>
+					<lb edRef="#K2" facs="#K2_028v_a_05"/>bÿs dat it schon heller dach
+					<lb edRef="#K2" facs="#K2_028v_a_06"/>was<pc resp="editor">.</pc> Dÿt sach <name type="person" nymRef="Martilla" rend="rubr_underline">martilla</name> die
+					<lb edRef="#K2" facs="#K2_028v_a_07"/>maget <name type="person" nymRef="Martha" rend="rubr_underline">Marta</name><pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> <choice><orig>D</orig><reg type="capit" resp="editor">d</reg></choice>at <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Maria</name> so
+					<lb edRef="#K2" facs="#K2_028v_a_08"/>geleÿt wartt yn grosser <choice><abbr>ehr<am>e&#x305;</am></abbr><expan>ehr<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_028v_a_09"/>na der werlt<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Do sprach <name type="person" nymRef="Martilla" rend="rubr_underline">Mar</name><lb edRef="#K2" facs="#K2_028v_a_10"/><name type="person" nymRef="Martilla" rend="rubr_underline">tÿlla</name> zu erer <choice><orig>I</orig><reg type="capit" resp="editor">i</reg></choice>onffrauwen
+					<lb edRef="#K2" facs="#K2_028v_a_11"/><name type="person" nymRef="Martha" rend="rubr_underline">Marten</name><pc source="manuscript">:</pc> <pc resp="editor">"</pc>Ach<pc resp="editor">,</pc> nu sehet vre
+					<lb edRef="#K2" facs="#K2_028v_a_12"/>süister <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Maria</name><pc resp="editor">,</pc> wie die da ge<lb edRef="#K2" facs="#K2_028v_a_13"/>leÿt wÿrtt<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc><pc resp="editor">"</pc> Do sach sych <name type="person" nymRef="Martha" rend="rubr_underline">Mar</name><lb edRef="#K2" facs="#K2_028v_a_14"/><name>ta</name> vmb vnd wart bÿtterlÿch <fw type="catch" place="bot_right">en</fw>
+				<pb edRef="#K2" facs="#K2_029r" n="fol. 29r"></pb> <cb n="fol. 29r"></cb>
+					<lb edRef="#K2" facs="#K2_029r_a_01"/>en weÿnen vnd sprach<pc source="manuscript">:</pc> <pc resp="editor">"</pc>O güe<lb edRef="#K2" facs="#K2_029r_a_02"/>dÿger vader<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> myn here <name type="person" nymRef="Jesus_Christ">Iesu</name>
+					<lb edRef="#K2" facs="#K2_029r_a_03"/><name type="person" nymRef="Jesus_Christ" rend="rubr_underline">Chrÿst</name><pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> wen dÿch nu dünckt<pc resp="editor">,</pc>
+					<lb edRef="#K2" facs="#K2_029r_a_04"/>dat myn süster den deuüel
+					<lb edRef="#K2" facs="#K2_029r_a_05"/>genoch gedient hadt<pc resp="editor">.</pc> So bÿd<lb edRef="#K2" facs="#K2_029r_a_06"/>den ÿch dÿch<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> <choice><orig>D</orig><reg type="capit" resp="editor">d</reg></choice>attu sÿ wÿls
+					<lb edRef="#K2" facs="#K2_029r_a_07"/>ansehen mÿt dynen <hi rend="rubr_underline"><choice><abbr>gotlÿch<am>e&#x305;</am></abbr><expan>gotlÿch<ex>en</ex></expan></choice></hi>
+					<lb edRef="#K2" facs="#K2_029r_a_08"/>ougen der <hi rend="rubr_underline">barmhertzÿcheÿtt</hi><pc><choice><orig>.</orig><reg type="punct" resp="editor"></reg></choice></pc>
+					<lb edRef="#K2" facs="#K2_029r_a_09"/><choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd geuen yhr <choice><abbr>eÿn<am>e&#x305;</am></abbr><expan>eÿn<ex>en</ex></expan></choice> ande<lb edRef="#K2" facs="#K2_029r_a_10"/>ren syn<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> op dat sÿ yhr leüen
+					<lb edRef="#K2" facs="#K2_029r_a_11"/>besseren moecht<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc><pc resp="editor">"</pc> <choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nde mÿt <choice><abbr>d<am>e&#x305;</am></abbr><expan>d<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_029r_a_12"/>worde<pc resp="editor">,</pc> so bleÿff <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Marta</name> staende
+					<lb edRef="#K2" facs="#K2_029r_a_13"/>vnd beÿden ÿrer süster<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Do
+					<lb edRef="#K2" facs="#K2_029r_a_14"/><name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Maria</name> bÿ ÿhr süster kam<pc resp="editor">,</pc>
+				<pb edRef="#K2" facs="#K2_029v" n="fol. 29v"></pb> <cb n="fol. 29v"></cb>
+					<lb edRef="#K2" facs="#K2_029v_a_01"/>so vragden sÿ ere süister<pc resp="editor">,</pc> wat
+					<lb edRef="#K2" facs="#K2_029v_a_02"/>sÿ so froech ÿn der stat dede<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <name type="person" nymRef="Martha" rend="rubr_underline">Mar</name><lb edRef="#K2" facs="#K2_029v_a_03"/><name type="person" nymRef="Martha" rend="rubr_underline">ta</name><pc resp="editor">,</pc> die lieue jonffrauwe<pc resp="editor">,</pc> ant<lb edRef="#K2" facs="#K2_029v_a_04"/>worde erer süyster mÿt groÿsser
+					<lb edRef="#K2" facs="#K2_029v_a_05"/>oitmoedÿcheÿt vnd sacht<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> <choice><orig>D</orig><reg type="capit" resp="editor">d</reg></choice>at
+					<lb edRef="#K2" facs="#K2_029v_a_06"/>sÿ gecommen were spÿß zü <choice><abbr>geld<am>e&#x305;</am></abbr><expan>geld<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_029v_a_07"/>vur yre geste<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Do sprach <name type="person" nymRef="Mary_Magdalene">Ma</name><lb edRef="#K2" facs="#K2_029v_a_08"/><name type="person" nymRef="Mary_Magdalene">ria</name> mÿt lachenden nonde<pc source="manuscript">:</pc>
+					<lb edRef="#K2" facs="#K2_029v_a_09"/><pc resp="editor">"</pc><choice><orig>g</orig><reg type="capit" resp="editor">G</reg></choice>elt aüch vur mÿch<pc resp="editor">,</pc> lieüe
+					<lb edRef="#K2" facs="#K2_029v_a_10"/>süister<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Ich wÿll auch zo dÿr
+					<lb edRef="#K2" facs="#K2_029v_a_11"/><choice><abbr>k<am>o&#x305;</am>men</abbr><expan>k<ex>om</ex>men</expan></choice> vnd wÿl mÿt dÿr
+					<lb edRef="#K2" facs="#K2_029v_a_12"/>essen<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc><pc resp="editor">"</pc> Do en <choice><abbr>hielt<am>e&#x305;</am></abbr><expan>hielt<ex>en</ex></expan></choice> die tzweÿ
+					<lb edRef="#K2" facs="#K2_029v_a_13"/><add place="lmargin"><choice><abbr>gesüster<am>e&#x305;</am></abbr><expan>gesüster<ex>en</ex></expan></choice></add> <del rend="strikethrough">gesu<add place="above">st</add>eren</del> nÿt vÿl spraich
+					<lb edRef="#K2" facs="#K2_029v_a_14"/>zosamen<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vmb des volcks <fw type="catch" place="bot_right"><choice><abbr>wÿll<am>e&#x305;</am></abbr><expan>wÿll<ex>en</ex></expan></choice></fw>
+				<pb edRef="#K2" facs="#K2_030r" n="fol. 30r"></pb> <cb n="fol. 30r"></cb>
+					<lb edRef="#K2" facs="#K2_030r_a_01"/><choice><abbr>wÿll<am>e&#x305;</am></abbr><expan>wÿll<ex>en</ex></expan></choice><pc resp="editor">,</pc> dat dair vmb stont<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><orig>a</orig><reg type="capit" resp="editor">A</reg></choice>uer
+					<lb edRef="#K2" facs="#K2_030r_a_02"/><name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Maria</name> die gynck vort an mit
+					<lb edRef="#K2" facs="#K2_030r_a_03"/>der geselschaft<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><orig>h</orig><reg type="capit" resp="editor">H</reg></choice>ÿr sprÿcht <choice><abbr><choice><orig>s</orig><reg type="capit" resp="editor">S</reg></choice><am>e&#x305;</am>t</abbr><expan><choice><orig>s</orig><reg type="capit" resp="editor">S</reg></choice><ex>en</ex>t</expan></choice>
+					<lb edRef="#K2" facs="#K2_030r_a_04"/><name type="person" nymRef="Augustine" rend="rubr_underline">Aügüstinüs</name><pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> <choice><orig>d</orig><reg type="capit" resp="editor">D</reg></choice>at <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Maria</name> do
+					<lb edRef="#K2" facs="#K2_030r_a_05"/>scheyden van <name type="place" nymRef="Jerusalem">Jherusalem</name> <choice><abbr>v<am>n&#x305;</am></abbr><expan>v<ex>nd</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_030r_a_06"/>wolde do rÿden op yre sloss <choice><abbr>od<am>'</am></abbr><expan>od<ex>er</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_030r_a_07"/><choice><abbr>won<am>u&#x305;</am>g</abbr><expan>won<ex>un</ex>g</expan></choice> <name type="place" subtype="residence" nymRef="Magdalum"><choice><abbr><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agdal<am>u&#x305;</am></abbr><expan><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agdal<ex>um</ex></expan></choice></name><pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><orig>s</orig><reg type="capit" resp="editor">S</reg></choice>o qüam
+					<lb edRef="#K2" facs="#K2_030r_a_08"/>sÿ ÿrsten zu ere süister <name type="person" nymRef="Martha" rend="rubr_underline">Mar</name><lb edRef="#K2" facs="#K2_030r_a_09"/><name type="person" nymRef="Martha" rend="rubr_underline">ten</name> vnd als mÿt ÿhr<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> <choice><orig>A</orig><reg type="capit" resp="editor">a</reg></choice>n
+					<lb edRef="#K2" facs="#K2_030r_a_10"/>secht <choice><abbr><choice><orig>s</orig><reg type="capit" resp="editor">S</reg></choice><am>e&#x305;</am>t</abbr><expan><choice><orig>s</orig><reg type="capit" resp="editor">S</reg></choice><ex>en</ex>t</expan></choice> <name type="person" nymRef="Augustine" rend="rubr_underline"><choice><abbr>Augustin<am>&#42864;</am></abbr><expan>Augustin<ex>us</ex></expan></choice></name><pc resp="editor">,</pc> dat <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Maria</name>
+					<lb edRef="#K2" facs="#K2_030r_a_11"/><name type="person" nymRef="Mary_Magdalene" rend="rubr_underline"><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agdalena</name> al ere dage <choice><abbr>g<am>e&#x305;y&#x305;</am></abbr><expan>g<ex>eyn</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_030r_a_12"/>besser mailtzÿtt en hadde ges<lb edRef="#K2" facs="#K2_030r_a_13"/>sen<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Dan dÿsse en was<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> want
+					<lb edRef="#K2" facs="#K2_030r_a_14"/>hÿr wart sÿ bekert <choice><abbr>v<am>a&#x305;</am></abbr><expan>v<ex>an</ex></expan></choice> <choice><abbr>yr<am>e&#x305;</am></abbr><expan>yr<ex>en</ex></expan></choice> <fw type="catch" place="bot_right">sünd</fw>
+				<pb edRef="#K2" facs="#K2_030v" n="fol. 30v"></pb> <cb n="fol. 30v"></cb>
+					<lb edRef="#K2" facs="#K2_030v_a_01"/>sünden<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc>
+				</ab>
+				<ab xml:id="K2_Mary_at_Marthas_house"><choice><orig>d</orig><reg type="capit" resp="editor">D</reg></choice>es <choice><abbr>ander<am>e&#x305;</am></abbr><expan>ander<ex>en</ex></expan></choice> dags so <choice><abbr>scheÿd<am>e&#x305;</am></abbr><expan>scheÿd<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_030v_a_02"/>sÿ vs <name type="place" nymRef="Jerusalem">Iherüsalem</name> van groisser
+					<lb edRef="#K2" facs="#K2_030v_a_03"/>müitheÿt heymelÿchen<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd
+					<lb edRef="#K2" facs="#K2_030v_a_04"/>quam zo ere süister <name type="person" nymRef="Martha" rend="rubr_underline"><choice><abbr>Mart<am>e&#x305;</am></abbr><expan>Mart<ex>en</ex></expan></choice></name> zu
+					<lb edRef="#K2" facs="#K2_030v_a_05"/><name type="place" nymRef="Bethany"><choice><orig>b</orig><reg type="capit" resp="editor">B</reg></choice>etanien</name><pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> <choice><orig>d</orig><reg type="capit" resp="editor">D</reg></choice>ie sÿ <choice><abbr>lyfflÿch<am>e&#x305;</am></abbr><expan>lyfflÿch<ex>en</ex></expan></choice> ent<lb edRef="#K2" facs="#K2_030v_a_06"/>fÿnck<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd hiess sÿ sÿtzen <choice><abbr>ga<am>i&#x305;</am></abbr><expan>ga<ex>in</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_030v_a_07"/>vnd alle zÿt wen <name type="person" nymRef="Martha" rend="rubr_underline">Marta</name> <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Ma</name><lb edRef="#K2" facs="#K2_030v_a_08"/><name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">ria</name> ansach<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> so <choice><abbr>bedroeffd<am>e&#x305;</am></abbr><expan>bedroeffd<ex>en</ex></expan></choice> sÿ sich
+					<lb edRef="#K2" facs="#K2_030v_a_09"/>sehr vmb ÿres staitz wyllen<pc resp="editor">,</pc> <choice><abbr>d<am>e&#x305;</am></abbr><expan>d<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_030v_a_10"/>sÿ hadde<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Do <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Maria</name> <choice><abbr>sitz<am>e&#x305;</am></abbr><expan>sitz<ex>en</ex></expan></choice> gÿnck<pc resp="editor">.</pc>
+					<lb edRef="#K2" facs="#K2_030v_a_11"/>sprach sÿ zo <name type="person" nymRef="Martha" rend="rubr_underline">Marten</name><pc source="manuscript">:</pc> <pc resp="editor">"</pc>Ach lieue
+					<lb edRef="#K2" facs="#K2_030v_a_12"/>suister<pc resp="editor">,</pc> des <choice><abbr>sitz<am>e&#x305;</am>s</abbr><expan>sitz<ex>en</ex>s</expan></choice> is mÿr wol
+					<lb edRef="#K2" facs="#K2_030v_a_13"/>sehr noedÿch<pc resp="editor">,</pc> op dat ÿch mich
+					<lb edRef="#K2" facs="#K2_030v_a_14"/>mach resten<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> went ych <choice><abbr>haü<am>e&#x305;</am></abbr><expan>haü<ex>en</ex></expan></choice>
+				<pb edRef="#K2" facs="#K2_031r" n="fol. 31r"></pb> <cb n="fol. 31r"></cb>
+					<lb edRef="#K2" facs="#K2_031_a_01"/>gewest tzwey dage <choice><abbr>v<am>n&#x305;</am></abbr><expan>v<ex>nd</ex></expan></choice> tzwëy na<lb edRef="#K2" facs="#K2_031_a_02"/><choice><abbr>cht<am>e&#x305;</am></abbr><expan>cht<ex>en</ex></expan></choice> <choice><abbr>sond<am>'</am></abbr><expan>sond<ex>er</ex></expan></choice> rast<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><orig>d</orig><reg type="capit" resp="editor">D</reg></choice>at ÿch aüch nit
+					<lb edRef="#K2" facs="#K2_031_a_03"/>vÿl <choice><abbr>gess<am>e&#x305;</am></abbr><expan>gess<ex>en</ex></expan></choice> en <choice><abbr>haü<am>e&#x305;</am></abbr><expan>haü<ex>en</ex></expan></choice> vnd aüch nit
+					<lb edRef="#K2" facs="#K2_031_a_04"/>vÿl <choice><abbr>geslaiff<am>e&#x305;</am></abbr><expan>geslaiff<ex>en</ex></expan></choice> en <choice><abbr>haü<am>e&#x305;</am></abbr><expan>haü<ex>en</ex></expan></choice> <choice><abbr>v<am>n&#x305;</am></abbr><expan>v<ex>nd</ex></expan></choice> <choice><abbr>haü<am>e&#x305;</am></abbr><expan>haü<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_031_a_05"/>gesprongen<pc resp="editor">,</pc> gesongen<pc resp="editor">,</pc> vnd ge<lb edRef="#K2" facs="#K2_031_a_06"/>dantzst vnd mÿch froelych ge<lb edRef="#K2" facs="#K2_031_a_07"/>macht<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd dair mÿt <choice><abbr>haü<am>e&#x305;</am></abbr><expan>haü<ex>en</ex></expan></choice> ich
+					<lb edRef="#K2" facs="#K2_031_a_08"/>dat volck ÿn der stat <name type="place" nymRef="Jerusalem" rend="rubr_underline">Iherüsalem</name>
+					<lb edRef="#K2" facs="#K2_031_a_09"/>froelÿch gemacht<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd aüch
+					<lb edRef="#K2" facs="#K2_031_a_10"/>so en hau ÿch die zÿt nÿt ge<lb edRef="#K2" facs="#K2_031_a_11"/>zempt<pc resp="editor">,</pc> dat ÿch eyn rechte mail<lb edRef="#K2" facs="#K2_031_a_12"/>zÿt hedde gessen<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc><pc resp="editor">"</pc> <choice><orig>o</orig><reg type="capit" resp="editor">O</reg></choice>ff <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Maria</name> wol<lb edRef="#K2" facs="#K2_031_a_13"/>den <choice><abbr>sag<am>e&#x305;</am></abbr><expan>sag<ex>en</ex></expan></choice><pc source="manuscript">:</pc> <pc resp="editor">"</pc><choice><orig>n</orig><reg type="capit" resp="editor">N</reg></choice>u en dantzen ÿch
+					<lb edRef="#K2" facs="#K2_031_a_14"/><choice><abbr>n<am>u&#x305;</am>mer</abbr><expan>n<ex>um</ex>mer</expan></choice> mehr<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc><pc resp="editor">"</pc> <name type="person" nymRef="Martha" rend="rubr_underline">Marta</name> die
+				<pb edRef="#K2" facs="#K2_031v" n="fol. 31v"></pb> <cb n="fol. 31v"></cb>
+					<lb edRef="#K2" facs="#K2_031v_a_01"/>antworden ÿhr vnd sprach<pc source="manuscript">:</pc> <pc resp="editor">"</pc><choice><orig>l</orig><reg type="capit" resp="editor">L</reg></choice>ie<lb edRef="#K2" facs="#K2_031v_a_02"/>ue süister<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> had ÿhr aüch by üch
+					<lb edRef="#K2" facs="#K2_031v_a_03"/>den <hi rend="red_crown">k</hi>oenÿnck<pc resp="editor">,</pc> der alle bedroeff<lb edRef="#K2" facs="#K2_031v_a_04"/>de hertzer froelÿch macht<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> <choice><orig>D</orig><reg type="capit" resp="editor">d</reg></choice>er
+					<lb edRef="#K2" facs="#K2_031v_a_05"/>da dat schoensten is bouen alle
+					<lb edRef="#K2" facs="#K2_031v_a_06"/>koenÿngen<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc><pc resp="editor">"</pc> Do sprach <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline"><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria</name><pc resp="editor">:</pc>
+					<lb edRef="#K2" facs="#K2_031v_a_07"/><pc resp="editor">"</pc><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>ÿt vns in der hochzÿt en <choice><abbr>war<am>e&#x305;</am></abbr><expan>war<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_031v_a_08"/>geÿn <choice><hi rend="red_crown">k</hi><abbr>oen<am>y&#x305;</am>g<am>e&#x305;</am></abbr><expan>koen<ex>yn</ex>g<ex>en</ex></expan></choice><pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><orig>w</orig><reg type="capit" resp="editor">W</reg></choice>en meynstu<pc><choice><orig>:</orig><reg type="punct" resp="editor">?</reg></choice></pc>
+					<lb edRef="#K2" facs="#K2_031v_a_09"/><choice><abbr>D<am>e&#x305;</am></abbr><expan>D<ex>en</ex></expan></choice> <hi rend="red_crown">k</hi>eyser <name type="person" nymRef="Tiberius" rend="rubr_underline"><choice><abbr>Tiberi<am>u&#x305;</am></abbr><expan>Tiberi<ex>um</ex></expan></choice></name> zo <name type="place" nymRef="Rome" rend="rubr_underline"><choice><abbr>Rom<am>e&#x305;</am></abbr><expan>Rom<ex>en</ex></expan></choice></name> off
+					<lb edRef="#K2" facs="#K2_031v_a_10"/>meÿnstu <choice><abbr>d<am>e&#x305;</am></abbr><expan>d<ex>en</ex></expan></choice> <choice><abbr>koen<am>y&#x305;</am>ck</abbr><expan>koen<ex>yn</ex>ck</expan></choice> zo <name type="place" nymRef="Galilee" rend="rubr_underline"><choice><orig>g</orig><reg type="capit" resp="editor">G</reg></choice>allilea</name><pc resp="editor">,</pc>
+					<lb edRef="#K2" facs="#K2_031v_a_11"/><name nymRef="Herod"><choice><orig>h</orig><reg type="capit" resp="editor">H</reg></choice>erode</name><pc><choice><orig>:</orig><reg type="punct" resp="editor">?</reg></choice></pc><pc resp="editor">"</pc> <name type="person" nymRef="Martha" rend="rubr_underline">Marta</name> die berÿchten sÿ
+					<lb edRef="#K2" facs="#K2_031v_a_12"/>vnd sprach<pc resp="editor">:</pc> <pc resp="editor">"</pc><choice><orig>y</orig><reg type="capit" resp="editor">Y</reg></choice>ch en meÿn nÿt
+					<lb edRef="#K2" facs="#K2_031v_a_13"/><name type="person" nymRef="Tiberius" rend="rubr_underline"><choice><abbr>Tiberi<am>u&#x305;</am></abbr><expan>Tiberi<ex>um</ex></expan></choice></name> noch <name type="person" nymRef="Herod" rend="rubr_underline"><choice><orig>h</orig><reg type="capit" resp="editor">H</reg></choice>erodem</name><pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> <choice><orig>D</orig><reg type="capit" resp="editor">d</reg></choice>ie da
+					<lb edRef="#K2" facs="#K2_031v_a_14"/>sÿnt <choice><hi rend="red_crown">k</hi><abbr>oenÿng<am>e&#x305;</am></abbr><expan>koenÿng<ex>en</ex></expan></choice> der sterfflicher <fw type="catch" place="bot_right"><choice><abbr>mÿnsch<am>e&#x305;</am></abbr><expan>mÿnsch<ex>en</ex></expan></choice></fw>
+				<pb edRef="#K2" facs="#K2_032r" n="fol. 32r"></pb> <cb n="fol. 32r"></cb>
+					<lb edRef="#K2" facs="#K2_032r_a_01"/><choice><abbr>mÿnsch<am>e&#x305;</am></abbr><expan>mÿnsch<ex>en</ex></expan></choice><pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> <choice><orig>S</orig><reg type="capit" resp="editor">s</reg></choice>onder ych <choice><abbr>meÿn<am>e&#x305;</am></abbr><expan>meÿn<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_032r_a_02"/>den grossen <hi rend="red_crown">k</hi>oenÿnck aller koe<lb edRef="#K2" facs="#K2_032r_a_03"/>nÿngen<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd den rÿchter des <hi rend="rubr_underline"><choice><abbr>h<am>y&#x305;</am></abbr><expan>h<ex>ym</ex></expan></choice></hi><lb edRef="#K2" facs="#K2_032r_a_04"/><hi rend="rubr_underline">mmelrÿchs</hi> vnd ertrÿchs<pc resp="editor">,</pc> vnd <del rend="strikethrough">das</del>
+					<lb edRef="#K2" facs="#K2_032r_a_05"/>der an sych dreght alle schoin<lb edRef="#K2" facs="#K2_032r_a_06"/>heÿt der werlt<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc><pc resp="editor">"</pc> Do sprach <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline"><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria</name><pc resp="editor">:</pc>
+					<lb edRef="#K2" facs="#K2_032r_a_07"/><pc resp="editor">"</pc><choice><orig>l</orig><reg type="capit" resp="editor">L</reg></choice>ieue süister<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> berycht mÿch<pc resp="editor">,</pc> wer
+					<lb edRef="#K2" facs="#K2_032r_a_08"/>is der schone vnd mechtÿger koe<lb edRef="#K2" facs="#K2_032r_a_09"/><choice><abbr>n<am>y&#x305;</am>ck</abbr><expan>n<ex>yn</ex>ck</expan></choice><pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> dair du so groiß <choice><abbr>v<am>a&#x305;</am></abbr><expan>v<ex>an</ex></expan></choice> sprichs<pc resp="editor">?</pc>
+					<lb edRef="#K2" facs="#K2_032r_a_10"/><choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd is heÿ so schoin als du mÿr
+					<lb edRef="#K2" facs="#K2_032r_a_11"/>sagest<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd kan ych zo ÿm <choice><abbr>k<am>o&#x305;</am>m<am>e&#x305;</am></abbr><expan>k<ex>om</ex>m<ex>en</ex></expan></choice><pc><choice><orig>:</orig><reg type="punct" resp="editor">?</reg></choice></pc>
+					<lb edRef="#K2" facs="#K2_032r_a_12"/><choice><orig>s</orig><reg type="capit" resp="editor">S</reg></choice>o wÿll ÿch ym zu mÿch <choice><abbr>treck<am>e&#x305;</am></abbr><expan>treck<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_032r_a_13"/>mÿt <choice><abbr>mÿn<am>e&#x305;</am></abbr><expan>mÿn<ex>em</ex></expan></choice> gelt vnd güt<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd
+					<lb edRef="#K2" facs="#K2_032r_a_14"/>wÿll sÿn fruntschaff krÿgen<pc resp="editor">.</pc> <fw type="catch" place="bot_right"><choice><orig>ÿ</orig><reg type="capit" resp="editor">Y</reg></choice>st</fw>
+				<pb edRef="#K2" facs="#K2_032v" n="fol. 32v"></pb> <cb n="fol. 32v"></cb>
+					<lb edRef="#K2" facs="#K2_032v_a_01"/><choice><orig>y</orig><reg type="capit" resp="editor">Y</reg></choice>st moegelÿch<pc><choice><orig>:</orig><reg type="punct" resp="editor">?</reg></choice></pc><pc resp="editor">"</pc> Do <choice><abbr>antword<am>e&#x305;</am></abbr><expan>antword<ex>en</ex></expan></choice> yhr
+					<lb edRef="#K2" facs="#K2_032v_a_02"/><name type="person" nymRef="Martha" rend="rubr_underline"><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>artha</name> vnd sprach<pc source="manuscript">:</pc> <pc resp="editor">"</pc><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>ÿn lie<lb edRef="#K2" facs="#K2_032v_a_03"/>ue suster<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> den koenÿnck<pc resp="editor">,</pc> den
+					<lb edRef="#K2" facs="#K2_032v_a_04"/>ÿch meÿn<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> <choice><orig>D</orig><reg type="capit" resp="editor">d</reg></choice>at is mÿn here
+					<lb edRef="#K2" facs="#K2_032v_a_05"/><name type="person" nymRef="Jesus_Christ" rend="rubr_underline">Jhesus Chrÿstüs</name><pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> der dair is <choice><abbr>e<am>y&#x305;</am></abbr><expan>e<ex>yn</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_032v_a_06"/>artzer der krancken seelen<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc><pc resp="editor">"</pc> <choice><abbr><choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice><am>n&#x305;</am></abbr><expan><choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice><ex>nd</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_032v_a_07"/>mÿt dÿssen worden<pc resp="editor">,</pc> so weÿnden
+					<lb edRef="#K2" facs="#K2_032v_a_08"/><name type="person" nymRef="Martha" rend="rubr_underline">Marta</name> gar bÿtterlÿch <choice><orig>D</orig><reg type="capit" resp="editor">d</reg></choice>arümb<pc resp="editor">,</pc>
+					<lb edRef="#K2" facs="#K2_032v_a_09"/>dat <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Maria</name> des nÿt en konde
+					<lb edRef="#K2" facs="#K2_032v_a_10"/>verstain <choice><orig>I</orig><reg type="capit" resp="editor">i</reg></choice>n geÿstlÿche bedudnis<lb edRef="#K2" facs="#K2_032v_a_11"/>se<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> mer sÿ verstont es van eÿnem
+					<lb edRef="#K2" facs="#K2_032v_a_12"/><choice><abbr>wertlÿch<am>e&#x305;</am></abbr><expan>wertlÿch<ex>en</ex></expan></choice> <choice><abbr>koen<am>y&#x305;</am>ck</abbr><expan>koen<ex>yn</ex>ck</expan></choice><pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Do <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Maria</name>
+					<lb edRef="#K2" facs="#K2_032v_a_13"/>sach<pc resp="editor">,</pc> dat ÿhr süister so sehre weÿn<lb edRef="#K2" facs="#K2_032v_a_14"/>den<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><orig>s</orig><reg type="capit" resp="editor">S</reg></choice>o vragden sÿ ÿhr <choice><abbr>v<am>n&#x305;</am></abbr><expan>v<ex>nd</ex></expan></choice> sacht<pc resp="editor">:</pc>
+				<pb edRef="#K2" facs="#K2_033r" n="fol. 33r"></pb> <cb n="fol. 33r"></cb>
+					<lb edRef="#K2" facs="#K2_033r_a_01"/><pc resp="editor">"</pc>Ach lieue süster<pc resp="editor">,</pc> warümb weinstu
+					<lb edRef="#K2" facs="#K2_033r_a_02"/>alzÿt vnd süchtes wan ÿch zo dÿr <choice><abbr>k<am>o&#x305;</am></abbr><expan>k<ex>om</ex></expan></choice><lb edRef="#K2" facs="#K2_033r_a_03"/>men<pc><choice><orig>:</orig><reg type="punct" resp="editor">?</reg></choice></pc> Ist mÿn scholt<pc resp="editor">?</pc> <choice><orig>s</orig><reg type="capit" resp="editor">S</reg></choice>o saget mir<pc resp="editor">.</pc>
+					<lb edRef="#K2" facs="#K2_033r_a_04"/><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agstu mÿch nÿt lÿden ader ha<lb edRef="#K2" facs="#K2_033r_a_05"/>uen ÿch dÿch iet mÿsdaen dar<lb edRef="#K2" facs="#K2_033r_a_06"/>umb du mÿch nÿt lyden ma<lb edRef="#K2" facs="#K2_033r_a_07"/>chs<pc resp="editor">?</pc> <choice><orig>d</orig><reg type="capit" resp="editor">D</reg></choice>at sag mÿr<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Ich wyl wol so
+					<lb edRef="#K2" facs="#K2_033r_a_08"/>lang van dÿr blyüen<pc resp="editor">,</pc> dat du
+					<lb edRef="#K2" facs="#K2_033r_a_09"/>vmb mÿnent wÿllen nÿt me<lb edRef="#K2" facs="#K2_033r_a_10"/>hr weynen en sals<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc><pc resp="editor">"</pc> <name type="person" nymRef="Martha" rend="rubr_underline">Marta</name> die
+					<lb edRef="#K2" facs="#K2_033r_a_11"/>antworde do ÿhrer süster <choice><abbr>v<am>n&#x305;</am></abbr><expan>v<ex>nd</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_033r_a_12"/>sprach<pc source="manuscript">:</pc> <pc resp="editor">"</pc>Ach lieue süister<pc resp="editor">,</pc> solde
+					<lb edRef="#K2" facs="#K2_033r_a_13"/>ych mych nÿt <choice><abbr>bedroeü<am>e&#x305;</am></abbr><expan>bedroeü<ex>en</ex></expan></choice> vnd
+					<lb edRef="#K2" facs="#K2_033r_a_14"/>weÿnen<pc source="manuscript">?</pc> Dair ÿch alzÿt hoer<pc resp="editor">,</pc> <fw type="catch" place="bot_right">dat</fw>
+				<pb edRef="#K2" facs="#K2_033v" n="fol. 33v"></pb> <cb n="fol. 33v"></cb>
+					<lb edRef="#K2" facs="#K2_033v_a_01"/>dat deyn güt gerücht<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> dat bes<lb edRef="#K2" facs="#K2_033v_a_02"/>ser was dan sÿluer vnd golt<pc resp="editor">,</pc> dat
+					<lb edRef="#K2" facs="#K2_033v_a_03"/>dü dat selüige so vnnütze<lb edRef="#K2" facs="#K2_033v_a_04"/>lÿchen hast verlorren vnd
+					<lb edRef="#K2" facs="#K2_033v_a_05"/>dyne geselschaff en is nÿt güt<pc resp="editor">,</pc>
+					<lb edRef="#K2" facs="#K2_033v_a_06"/>dair du mÿt vmb geyß oder
+					<lb edRef="#K2" facs="#K2_033v_a_07"/>dair du myt conuersiers<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc>
+					<lb edRef="#K2" facs="#K2_033v_a_08"/><choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd du beflecks deyne scho<lb edRef="#K2" facs="#K2_033v_a_09"/>ne eddele seele mÿt den sch<lb edRef="#K2" facs="#K2_033v_a_10"/>entlÿchen<pc resp="editor">,</pc> jemmerlÿchen
+					<lb edRef="#K2" facs="#K2_033v_a_11"/>sünden vnd alzÿt moiß ich
+					<lb edRef="#K2" facs="#K2_033v_a_12"/>dÿn bo<add place="above">e</add>se gerücht verwÿß
+					<lb edRef="#K2" facs="#K2_033v_a_13"/>hoeren<pc resp="editor">,</pc> war ych bÿn oder
+					<lb edRef="#K2" facs="#K2_033v_a_14"/><choice><abbr>k<am>o&#x305;</am>men</abbr><expan>k<ex>om</ex>men</expan></choice><pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc><pc resp="editor">"</pc> Do sacht <name type="person" nymRef="Mary_Magdalene">Maria</name><pc source="manuscript">:</pc> <fw type="catch" place="bot_right"><choice><orig>n</orig><reg type="capit" resp="editor">N</reg></choice>eÿn</fw>
+			  <pb edRef="#K2" facs="#K2_034r" n="fol. 34r"></pb> <cb n="fol. 34r"></cb>
+					<lb edRef="#K2" facs="#K2_034r_a_01"/><pc resp="editor">"</pc><choice><orig>n</orig><reg type="capit" resp="editor">N</reg></choice>eÿn<pc resp="editor">,</pc> lieüe süster<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Ich stain
+					<lb edRef="#K2" facs="#K2_034r_a_02"/>alzÿt nach grosser ehren <choice><abbr>v<am>n&#x305;</am></abbr><expan>v<ex>nd</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_034r_a_03"/>herlÿcheÿt dysser werlt<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><orig>w</orig><reg type="capit" resp="editor">W</reg></choice>er
+					<lb edRef="#K2" facs="#K2_034r_a_04"/>solt mÿch dat ver wÿssen<pc resp="editor">,</pc> dat
+					<lb edRef="#K2" facs="#K2_034r_a_05"/>ych bÿnnen <name type="place" nymRef="Jerusalem" rend="rubr_underline">Jherüsalem</name> <choice><abbr>haü<am>e&#x305;</am></abbr><expan>haü<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_034r_a_06"/>gewest<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd haüen dair so
+					<lb edRef="#K2" facs="#K2_034r_a_07"/>sehr gedantz <choice><abbr>v<am>n&#x305;</am></abbr><expan>v<ex>nd</ex></expan></choice> <choice><abbr>gesong<am>e&#x305;</am></abbr><expan>gesong<ex>en</ex></expan></choice> <choice><abbr>v<am>n&#x305;</am></abbr><expan>v<ex>nd</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_034r_a_08"/>gesprongen<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> op dat ych dair
+					<lb edRef="#K2" facs="#K2_034r_a_09"/>gern eÿnen grossen loff <choice><abbr>v<am>n&#x305;</am></abbr><expan>v<ex>nd</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_034r_a_10"/>prÿß aff wolt brengen in
+					<lb edRef="#K2" facs="#K2_034r_a_11"/>dysser welt<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd man wirt
+					<lb edRef="#K2" facs="#K2_034r_a_12"/>van wÿr wÿssen zü <choice><abbr>sprech<am>e&#x305;</am></abbr><expan>sprech<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_034r_a_13"/>in vremden landen<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> dat
+					<lb edRef="#K2" facs="#K2_034r_a_14"/>ÿch mÿch so hoeffelychen <fw type="catch" place="bot_right"><choice><abbr>halt<am>e&#x305;</am></abbr><expan>halt<ex>en</ex></expan></choice></fw>
+				<pb edRef="#K2" facs="#K2_034v" n="fol. 34v"></pb> <cb n="fol. 34v"></cb>
+					<lb edRef="#K2" facs="#K2_034v_a_01"/>halten kan<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Do sprach <name type="person" nymRef="Martha" rend="rubr_underline">Marta</name><pc resp="editor">:</pc>
+					<lb edRef="#K2" facs="#K2_034v_a_02"/><pc resp="editor">"</pc>Ach lieüe süster<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> wolt dych <hi rend="rubr_underline"><choice><orig>g</orig><reg type="capit" resp="editor">G</reg></choice>ot</hi>
+					<lb edRef="#K2" facs="#K2_034v_a_03"/>der here die gnaidt geüen<pc resp="editor">,</pc> dat
+					<lb edRef="#K2" facs="#K2_034v_a_04"/>du dÿch selüer koendes
+					<lb edRef="#K2" facs="#K2_034v_a_05"/><choice><abbr>bekenn<am>e&#x305;</am></abbr><expan>bekenn<ex>en</ex></expan></choice><pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> wie groesselÿchen
+					<lb edRef="#K2" facs="#K2_034v_a_06"/>dat du dyn eddel seel besnutzt
+					<lb edRef="#K2" facs="#K2_034v_a_07"/>heffs mÿt sünden mÿt die
+					<lb edRef="#K2" facs="#K2_034v_a_08"/>ydelheÿt dÿsser werlt<pc resp="editor">,</pc> op dat
+					<lb edRef="#K2" facs="#K2_034v_a_09"/>du dÿch moechts bekeren
+					<lb edRef="#K2" facs="#K2_034v_a_10"/>zu <hi rend="rubr_underline"><choice><orig>g</orig><reg type="capit" resp="editor">G</reg></choice>ode</hi><pc resp="editor">,</pc> dÿnen <hi rend="rubr_underline">heren</hi><pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> den
+					<lb edRef="#K2" facs="#K2_034v_a_11"/>du so swerlÿchen verzornt
+					<lb edRef="#K2" facs="#K2_034v_a_12"/>hast mÿt dynen sündenn<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc>
+					<lb edRef="#K2" facs="#K2_034v_a_13"/><choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd ÿch sagen dÿch vur<lb edRef="#K2" facs="#K2_034v_a_14"/>wair<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> wo du dÿne sün <fw type="catch" place="bot_right">den</fw>
+				<pb edRef="#K2" facs="#K2_035r" n="fol. 35r"></pb> <cb n="fol. 35r"></cb>
+					<lb edRef="#K2" facs="#K2_035r_a_01"/>den nÿt en bekens vnd dair
+					<lb edRef="#K2" facs="#K2_035r_a_02"/><choice><abbr>ynn<am>e&#x305;</am></abbr><expan>ynn<ex>en</ex></expan></choice> blÿüest stechen<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> so bÿstü
+					<lb edRef="#K2" facs="#K2_035r_a_03"/>ewelÿchen verdoempt<pc source="manuscript">.</pc>
+					<lb edRef="#K2" facs="#K2_035r_a_04"/>Do sprach <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Maria</name> mÿt weÿ<lb edRef="#K2" facs="#K2_035r_a_05"/>nenden oügen vnd mit be<lb edRef="#K2" facs="#K2_035r_a_06"/>droeffden hertzen<pc source="manuscript">:</pc> <pc resp="editor">"</pc>Ach lieue
+					<lb edRef="#K2" facs="#K2_035r_a_07"/><choice><orig>S</orig><reg type="capit" resp="editor">s</reg></choice>üster<pc resp="editor">,</pc> <name type="person" nymRef="Martha" rend="rubr_underline">Marta</name><pc resp="editor">.</pc> Na dem
+					<lb edRef="#K2" facs="#K2_035r_a_08"/>mail<pc resp="editor">,</pc> dat ych mÿn ehr so
+					<lb edRef="#K2" facs="#K2_035r_a_09"/>grosselychen verlorren <choice><abbr>haü<am>e&#x305;</am></abbr><expan>haü<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_035r_a_10"/>vnd mÿn gut gerüch qüÿt
+					<lb edRef="#K2" facs="#K2_035r_a_11"/>bÿn vnd <hi rend="rubr_underline"><choice><orig>g</orig><reg type="capit" resp="editor">G</reg></choice>ot</hi> mynen <hi rend="rubr_underline">heren</hi> so
+					<lb edRef="#K2" facs="#K2_035r_a_12"/>sehr verzornt haüen<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> so gÿff
+					<lb edRef="#K2" facs="#K2_035r_a_13"/>mÿch doch güden rait<pc resp="editor">,</pc> dat
+					<lb edRef="#K2" facs="#K2_035r_a_14"/>ÿch doch mÿn leüen mach <fw type="catch" place="bot_right"><choice><abbr>besser<am>e&#x305;</am></abbr><expan>besser<ex>en</ex></expan></choice></fw>
+				<pb edRef="#K2" facs="#K2_035v" n="fol. 35v"></pb> <cb n="fol. 35v"></cb>
+					<lb edRef="#K2" facs="#K2_035v_a_01"/>besseren vnd mÿn sünden<pc resp="editor">,</pc> die so
+					<lb edRef="#K2" facs="#K2_035v_a_02"/>ouer vloessich sÿnt<pc resp="editor">,</pc> dair ÿch <choice><abbr><am>y&#x305;</am>n<am>e&#x305;</am></abbr><expan><ex>yn</ex>n<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_035v_a_03"/>byn mach boissen<pc resp="editor">.</pc><pc resp="editor">"</pc> Van stont
+					<lb edRef="#K2" facs="#K2_035v_a_04"/>an antworde <choice><orig>I</orig><reg type="capit" resp="editor">i</reg></choice>hr <name type="person" nymRef="Martha" rend="rubr_underline">Marta</name> <choice><abbr>v<am>n&#x305;</am></abbr><expan>v<ex>nd</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_035v_a_05"/>sprach<pc source="manuscript">:</pc> <pc resp="editor">"</pc><choice><orig>l</orig><reg type="capit" resp="editor">L</reg></choice>ieue süster<pc resp="editor">,</pc> ich en <choice><abbr>k<am>a&#x305;</am></abbr><expan>k<ex>an</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_035v_a_06"/>dÿr geÿnen besseren rait ge<lb edRef="#K2" facs="#K2_035v_a_07"/>geüen dem<pc resp="editor">,</pc> dattu beÿdes vnd
+					<lb edRef="#K2" facs="#K2_035v_a_08"/>bliües hÿr bÿ mÿr eyn kleÿ<lb edRef="#K2" facs="#K2_035v_a_09"/>ne wÿle zÿtz<pc resp="editor">,</pc> want hüidt
+					<lb edRef="#K2" facs="#K2_035v_a_10"/>off morgen<pc resp="editor">,</pc> so koempt der
+					<lb edRef="#K2" facs="#K2_035v_a_11"/>artzer der krancken <choice><abbr>sel<am>e&#x305;</am></abbr><expan>sel<ex>en</ex></expan></choice><pc resp="editor">,</pc>
+					<lb edRef="#K2" facs="#K2_035v_a_12"/><choice><orig>D</orig><reg type="capit" resp="editor">d</reg></choice>at ys <name type="person" nymRef="Jesus_Christ" rend="rubr_underline">Iesüs Chrystüs</name><pc resp="editor">,</pc> <choice><abbr>m<am>y&#x305;</am></abbr><expan>m<ex>yn</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_035v_a_13"/>hoegster troÿst vnd <choice><abbr>m<am>y&#x305;</am></abbr><expan>m<ex>yn</ex></expan></choice> alre
+					<lb edRef="#K2" facs="#K2_035v_a_14"/>lieüeste here vnd <choice><orig>g</orig><reg type="capit" resp="editor">G</reg></choice>ott<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Bÿtt <fw type="catch" place="bot_right">ÿm</fw>
+				<pb edRef="#K2" facs="#K2_036r" n="fol. 36r"></pb> <cb n="fol. 36r"></cb>
+					<lb edRef="#K2" facs="#K2_036r_a_01"/>ÿm<pc resp="editor">,</pc> dat heÿ dÿr vergeüe <choice><abbr>v<am>n&#x305;</am></abbr><expan>v<ex>nd</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_036r_a_02"/>aff wesche dÿn sünden vnd vß
+					<lb edRef="#K2" facs="#K2_036r_a_03"/>tÿlge deÿne myßthait<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc><pc resp="editor">"</pc> 
+				</ab>
+				<ab xml:id="K2_Jesus_enters">Do
+					<lb edRef="#K2" facs="#K2_036r_a_04"/><name type="person" nymRef="Mary_Magdalene">Maria</name> dÿsse wort hort van
+					<lb edRef="#K2" facs="#K2_036r_a_05"/>ÿrer süster<pc resp="editor">,</pc> dat sÿ so antwor<lb edRef="#K2" facs="#K2_036r_a_06"/>de<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> So sach die maget <name type="person" nymRef="Martilla" rend="rubr_underline"><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>artilla</name>
+					<lb edRef="#K2" facs="#K2_036r_a_07"/>zu der doerren heraüß <choice><abbr>v<am>n&#x305;</am></abbr><expan>v<ex>nd</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_036r_a_08"/>sach<pc resp="editor">,</pc> dat der her <name type="person" nymRef="Jesus_Christ" rend="rubr_underline">Ihesus</name> <choice><abbr>qü<am>a&#x305;</am></abbr><expan>qü<ex>am</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_036r_a_09"/>mÿt seÿnen heilgen <hi rend="rubr_underline">jünge</hi><lb edRef="#K2" facs="#K2_036r_a_10"/><hi rend="rubr_underline">ren</hi><pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> So sprach die magt zu
+					<lb edRef="#K2" facs="#K2_036r_a_11"/>Marten<pc source="manuscript">:</pc> <pc resp="editor">"</pc>Der her koempt<pc resp="editor">.</pc><pc resp="editor">"</pc>
+					<lb edRef="#K2" facs="#K2_036r_a_12"/>Do stont <name type="person" nymRef="Martha" rend="rubr_underline">Marta</name> aüff mÿt
+					<lb edRef="#K2" facs="#K2_036r_a_13"/>grosser froelÿcheÿt<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd
+					<lb edRef="#K2" facs="#K2_036r_a_14"/><name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Maria</name> mÿt grosser <choice><abbr>frucht<am>e&#x305;</am></abbr><expan>frucht<ex>en</ex></expan></choice><pc resp="editor">.</pc> <fw type="catch" place="bot_right">do</fw>
+				<pb edRef="#K2" facs="#K2_036v" n="fol. 36v"></pb> <cb n="fol. 36v"></cb>
+					<lb edRef="#K2" facs="#K2_036v_a_01"/>Do sprach <name type="person" nymRef="Martha" rend="rubr_underline">Martha</name><pc resp="editor">:</pc> <pc resp="editor">"</pc><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>ÿn lieüe
+					<lb edRef="#K2" facs="#K2_036v_a_02"/>süster<pc resp="editor">,</pc> bÿs nu froelÿchen vnd
+					<lb edRef="#K2" facs="#K2_036v_a_03"/>frücht dÿch nÿt<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> want der
+					<lb edRef="#K2" facs="#K2_036v_a_04"/>here is so lüstÿch ÿn synen
+					<lb edRef="#K2" facs="#K2_036v_a_05"/>worden<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> dat du alle dÿne
+					<lb edRef="#K2" facs="#K2_036v_a_06"/>dage sÿnes glychen nÿt en
+					<lb edRef="#K2" facs="#K2_036v_a_07"/>hast gesehen oder gehort<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc><pc resp="editor">"</pc>
+					<lb edRef="#K2" facs="#K2_036v_a_08"/>Do sprach <name type="person" nymRef="Mary_Magdalene">Maria</name><pc source="manuscript">:</pc> <pc resp="editor">"</pc><choice><orig>l</orig><reg type="capit" resp="editor">L</reg></choice>ieue
+					<lb edRef="#K2" facs="#K2_036v_a_09"/>süster<pc resp="editor">,</pc> wylcher is der here<pc><choice><orig>:</orig><reg type="punct" resp="editor">?</reg></choice></pc><pc resp="editor">"</pc>
+					<lb edRef="#K2" facs="#K2_036v_a_10"/>Do gaff ÿhr <name type="person" nymRef="Martha" rend="rubr_underline">Martha</name> eÿn
+					<lb edRef="#K2" facs="#K2_036v_a_11"/>tzeÿchen<pc resp="editor">,</pc> dat sÿ yn <choice><abbr>erk<am>a&#x305;</am>t</abbr><expan>erk<ex>an</ex>t</expan></choice>
+					<lb edRef="#K2" facs="#K2_036v_a_12"/>vnder den <hi rend="rubr_underline">Apostelen</hi><pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Do
+					<lb edRef="#K2" facs="#K2_036v_a_13"/>der her <name type="person" nymRef="Jesus_Christ" rend="rubr_underline">Iesüs</name> ÿn <name type="person" nymRef="Martha" rend="rubr_underline">Marten</name>
+					<lb edRef="#K2" facs="#K2_036v_a_14"/>hoüß gÿnck<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><orig>d</orig><reg type="capit" resp="editor">D</reg></choice>o stont <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Ma</name> <fw type="catch" place="bot_right">ria</fw>
+				<pb edRef="#K2" facs="#K2_037r" n="fol. 37r"></pb> <cb n="fol. 37r"></cb>
+					<lb edRef="#K2" facs="#K2_037r_a_01"/><name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">ria</name> bÿ der dürren <choice><abbr>v<am>n&#x305;</am></abbr><expan>v<ex>nd</ex></expan></choice> scham<lb facs="#K2_037r_a_02"/>den sÿch<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Aüer <name type="person" nymRef="Martha" rend="rubr_underline">Martha</name>
+					<lb edRef="#K2" facs="#K2_037r_a_03"/>die gÿnck den <choice><abbr>her<am>e&#x305;</am></abbr><expan>her<ex>en</ex></expan></choice> ent<lb facs="#K2_037r_a_04"/>geen mÿt geboegten kne<lb facs="#K2_037r_a_05"/>en vnd hÿeß den heren
+					<lb edRef="#K2" facs="#K2_037r_a_06"/>wÿlkom<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd vntfÿnck
+					<lb edRef="#K2" facs="#K2_037r_a_07"/>den heren mÿt grosser er<lb facs="#K2_037r_a_08"/>werdÿcheÿt vnd lÿefden<pc resp="editor">.</pc>
+					<lb edRef="#K2" facs="#K2_037r_a_09"/>Der her <name type="person" nymRef="Jesus_Christ" rend="rubr_underline">Iesüs</name> gÿnck vür
+					<lb edRef="#K2" facs="#K2_037r_a_10"/><name type="person" nymRef="Mary_Magdalene" rend="rubr_underline"><choice><abbr>Mari<am>e&#x305;</am></abbr><expan>Mari<ex>en</ex></expan></choice></name> hÿn <choice><abbr>v<am>n&#x305;</am></abbr><expan>v<ex>nd</ex></expan></choice> sprach ÿhr
+					<lb edRef="#K2" facs="#K2_037r_a_11"/>nÿt zo<pc source="manuscript">.</pc> noch heÿ en sach sÿ
+					<lb edRef="#K2" facs="#K2_037r_a_12"/>nÿt an<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Do sprach <name type="person" nymRef="Martha" rend="rubr_underline">Martha</name>
+					<lb edRef="#K2" facs="#K2_037r_a_13"/>zu dem heren<pc source="manuscript">:</pc> <pc resp="editor">"</pc>Dat ÿs <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Ma</name><lb edRef="#K2" facs="#K2_037r_a_14"/><name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">ria</name><pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc><pc resp="editor">"</pc> off sÿ sagen wolde<pc resp="editor">.</pc>
+					  <figure>
+ 						  <figDesc>Vessel drawn in red, bottom margin.</figDesc>
+					</figure>
+				<pb edRef="#K2" facs="#K2_037v" n="fol. 37v"></pb> <cb n="fol. 37v"></cb>
+					<lb edRef="#K2" facs="#K2_037v_a_01"/><pc resp="editor">"</pc>Dat is die selüÿge darrümb
+						<figure>
+ 						  <figDesc>Reclining Mary Magdalene with book and vessel.</figDesc>
+					</figure>
+				<lb edRef="#K2" facs="#K2_037v_a_02"/><choice><orig>I</orig><reg type="capit" resp="editor">i</reg></choice>ch <choice><abbr>we<am>y&#x305;</am>den</abbr><expan>we<ex>yn</ex>den</expan></choice> vnd die so swerlich<lb edRef="#K2" facs="#K2_037v_a_03"/>en hat gesündigt<pc resp="editor">.</pc> <hi rend="rubr">O</hi> lieüe he<lb edRef="#K2" facs="#K2_037v_a_04"/>re<pc resp="editor">,</pc> wÿl sÿ doch an sien mÿt 
+				<lb edRef="#K2" facs="#K2_037v_a_05"/><choice><abbr>deÿn<am>e&#x305;</am></abbr><expan>deÿn<ex>en</ex></expan></choice> oügen der barmhert<lb edRef="#K2" facs="#K2_037v_a_06"/>zÿcheÿt<pc><choice><orig>.</orig><reg type="punct" resp="editor"></reg></choice></pc> <choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd vergÿff yhr
+				<lb edRef="#K2" facs="#K2_037v_a_07"/>ÿre sünden<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc><pc resp="editor">"</pc> Do kierden
+				<lb edRef="#K2" facs="#K2_037v_a_08"/>sych der her vmb vnd sach
+				<lb edRef="#K2" facs="#K2_037v_a_09"/>sÿ an<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> <choice><orig>N</orig><reg type="capit" resp="editor">n</reg></choice>ÿt alleyn mÿt <choice><abbr>seÿn<am>e&#x305;</am></abbr><expan>seÿn<ex>en</ex></expan></choice>
+				<lb edRef="#K2" facs="#K2_037v_a_10"/>leyffelychen aügen<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> mer <fw type="catch" place="bot_right">auch</fw>
+				<pb edRef="#K2" facs="#K2_038r" n="fol. 38r"></pb> <cb n="fol. 38r"></cb>
+					<lb edRef="#K2" facs="#K2_038r_a_01"/>aüch mÿt den aügen seÿner
+					<lb edRef="#K2" facs="#K2_038r_a_02"/>barmhertzÿcheÿt<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> <choice><orig>D</orig><reg type="capit" resp="editor">d</reg></choice>air mÿt
+					<lb edRef="#K2" facs="#K2_038r_a_03"/>hey an sach <hi rend="rubr_underline"><choice><orig>s</orig><reg type="capit" resp="editor">S</reg></choice>ent</hi> <name type="person" nymRef="Peter" rend="rubr_underline"><choice><orig>p</orig><reg type="capit" resp="editor">P</reg></choice>ÿtter</name><pc resp="editor">,</pc> als heÿ
+					<lb edRef="#K2" facs="#K2_038r_a_04"/>ym drÿ mail verleügnett
+					<lb edRef="#K2" facs="#K2_038r_a_05"/>hadde<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc>
+				</ab>
+				<ab xml:id="K2_Mary_retreats"><name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Maria</name> van grosser
+					<lb edRef="#K2" facs="#K2_038r_a_06"/>schemden<pc resp="editor">,</pc> wegen die seÿ
+					<lb edRef="#K2" facs="#K2_038r_a_07"/>entfÿnck van den ange<lb edRef="#K2" facs="#K2_038r_a_08"/>sÿcht des heren<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> <choice><orig>D</orig><reg type="capit" resp="editor">d</reg></choice>at sy <name type="person" nymRef="Jesus_Christ" rend="rubr_underline"><choice><abbr><am>xp&#x305;</am>s</abbr><expan><ex>Christu</ex>s</expan></choice></name>
+					<lb edRef="#K2" facs="#K2_038r_a_09"/>der her ansach<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Do gÿnck
+					<lb edRef="#K2" facs="#K2_038r_a_10"/>sÿ yn die slaiff kamer yrer
+					<lb edRef="#K2" facs="#K2_038r_a_11"/>süister <name type="person" nymRef="Martha"><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>arten</name> vnd fiel in
+					<lb edRef="#K2" facs="#K2_038r_a_12"/>die <choice><abbr>k<am>a&#x305;</am>mer</abbr><expan>k<ex>am</ex>mer</expan></choice> op dat ertrÿch
+					<lb edRef="#K2" facs="#K2_038r_a_13"/>nÿdder mÿt grossen <choice><abbr>schrei<am>e&#x305;</am></abbr><expan>schrei<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_038r_a_14"/>vnd <choice><abbr>weÿn<am>e&#x305;</am></abbr><expan>weÿn<ex>en</ex></expan></choice><pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> <choice><abbr>vn<am>&#8483;</am>kreÿch</abbr><expan>vn<ex>ver</ex>kreÿch</expan></choice> <fw type="catch" place="bot_right">do</fw>
+				<pb edRef="#K2" facs="#K2_038v" n="fol. 38v"></pb> <cb n="fol. 38v"></cb>
+					<lb edRef="#K2" facs="#K2_038v_a_01"/>do dürch dat ansehen des heren
+					<lb edRef="#K2" facs="#K2_038v_a_02"/>grossen rouwen ÿrer sünden<pc resp="editor">,</pc>
+					<lb edRef="#K2" facs="#K2_038v_a_03"/>die sÿ gedain hadde alle die
+					<lb edRef="#K2" facs="#K2_038v_a_04"/>dage ÿhres leüens vnd wor<lb edRef="#K2" facs="#K2_038v_a_05"/>den yhr sehr leÿt<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <name type="person" nymRef="Martha" rend="rubr_underline">Marta</name>
+					<lb edRef="#K2" facs="#K2_038v_a_06"/>auer bleÿff bÿ dem heren in
+					<lb edRef="#K2" facs="#K2_038v_a_07"/>dem hoüß<pc resp="editor">,</pc> stain vnd sach ÿm
+					<lb edRef="#K2" facs="#K2_038v_a_08"/>früntlychen an<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd in der
+					<lb edRef="#K2" facs="#K2_038v_a_09"/>selüyger stonden<pc resp="editor">,</pc> so qüam <choice><abbr>d<am>'</am></abbr><expan>d<ex>er</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_038v_a_10"/>uß setzÿger <name type="person" nymRef="Simon" rend="rubr_underline">Symeon</name><pc resp="editor">,</pc> den der
+					<lb edRef="#K2" facs="#K2_038v_a_11"/>her vorzÿtz gesunt hadde
+					<lb edRef="#K2" facs="#K2_038v_a_12"/>gemacht<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Dysser <name type="person" nymRef="Simon" rend="rubr_underline">Sÿmeon</name>
+					<lb edRef="#K2" facs="#K2_038v_a_13"/>bat den heren zu gast mÿt
+					<lb edRef="#K2" facs="#K2_038v_a_14"/>synen <hi rend="rubr_underline">jüngeren</hi><pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd do <fw type="catch" place="bot_right">es zyt</fw>
+				<pb edRef="#K2" facs="#K2_039r" n="fol. 39r"></pb> <cb n="fol. 39r"></cb>
+					<lb edRef="#K2" facs="#K2_039r_a_01"/>es nu zÿt was zu der mail<lb edRef="#K2" facs="#K2_039r_a_02"/>zÿt<pc resp="editor">.</pc> Do gÿnck der here dair
+					<lb edRef="#K2" facs="#K2_039r_a_03"/>hÿn yn dat hoüß <name type="person" nymRef="Simon" rend="rubr_underline">Simonis</name>
+					<lb edRef="#K2" facs="#K2_039r_a_04"/><choice><orig>l</orig><reg type="capit" resp="editor">L</reg></choice>eprosÿ<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> 
+				</ab>
+				<ab xml:id="K2_Martha_encourages_Mary">vnd <name type="person" nymRef="Martha" rend="rubr_underline">Martha</name><pc resp="editor">,</pc> die
+					<lb edRef="#K2" facs="#K2_039r_a_05"/>gÿnck zu ÿhrer süster in
+					<lb edRef="#K2" facs="#K2_039r_a_06"/>die kamer vnd fant seÿ
+					<lb edRef="#K2" facs="#K2_039r_a_07"/>weÿnende<pc><choice><orig>.</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd sacht zu
+					<lb edRef="#K2" facs="#K2_039r_a_08"/>ÿhr<pc source="manuscript">:</pc> <pc resp="editor">"</pc><name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Maria</name><pc resp="editor">,</pc> der her der is
+					<lb edRef="#K2" facs="#K2_039r_a_09"/>ewegh gegangen<pc resp="editor">.</pc><pc resp="editor">"</pc> Do spr<lb edRef="#K2" facs="#K2_039r_a_10"/>ach <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Maria</name><pc source="manuscript">:</pc> <pc resp="editor">"</pc>Ach lieüe süs<lb edRef="#K2" facs="#K2_039r_a_11"/>ter<pc resp="editor">,</pc> <choice><orig>D</orig><reg type="capit" resp="editor">d</reg></choice>u sach<add place="above">s</add> mÿr<pc resp="editor">,</pc> dat der her
+					<lb edRef="#K2" facs="#K2_039r_a_12"/>so lüstych were in seÿnen
+					<lb edRef="#K2" facs="#K2_039r_a_13"/>angesÿcht<pc resp="editor">,</pc> dattu des nyt en
+					<lb edRef="#K2" facs="#K2_039r_a_14"/>koendes vß gesprechen<pc resp="editor">.</pc> Auer <fw type="catch" place="bot_right">ÿch</fw>
+				<pb edRef="#K2" facs="#K2_039v" n="fol. 39v"></pb> <cb n="fol. 39v"></cb>
+					<lb edRef="#K2" facs="#K2_039v_a_01"/>Aüer ich sagen üch<pc resp="editor">,</pc> dat vürwair<pc resp="editor">,</pc>
+					<lb edRef="#K2" facs="#K2_039v_a_02"/>dat ÿch alle mÿn dage nie<lb edRef="#K2" facs="#K2_039v_a_03"/>geÿn grÿfftÿger oder <choice><abbr>gr<am>y&#x305;</am>mÿ</abbr><expan>gr<ex>ym</ex>mÿ</expan></choice><lb edRef="#K2" facs="#K2_039v_a_04"/>ger angesÿcht nÿt en sach<pc resp="editor">,</pc> als
+					<lb edRef="#K2" facs="#K2_039v_a_05"/>mych der here zoünte<pc source="manuscript">.</pc> <choice><orig>d</orig><reg type="capit" resp="editor">D</reg></choice>o heÿ
+					<lb edRef="#K2" facs="#K2_039v_a_06"/>mÿch ansach<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> want mÿch
+					<lb edRef="#K2" facs="#K2_039v_a_07"/>docht vnd is wair<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> dat er mich
+					<lb edRef="#K2" facs="#K2_039v_a_08"/>dürch mÿn hertz sach<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> <choice><orig>A</orig><reg type="capit" resp="editor">a</reg></choice>lso
+					<lb edRef="#K2" facs="#K2_039v_a_09"/>dat ych mÿne sünden nü
+					<lb edRef="#K2" facs="#K2_039v_a_10"/><choice><orig>nu</orig><reg resp="editor"></reg></choice> alle bekennen<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd mich
+					<lb edRef="#K2" facs="#K2_039v_a_11"/>gruelt oder eÿset vur <choice><abbr>d<am>e&#x305;</am></abbr><expan>d<ex>en</ex></expan></choice> <choice><abbr>her<am>e&#x305;</am></abbr><expan>her<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_039v_a_12"/>van mÿnen sünden <choice><abbr>weg<am>e&#x305;</am></abbr><expan>weg<ex>en</ex></expan></choice><pc resp="editor">.</pc>
+					<lb edRef="#K2" facs="#K2_039v_a_13"/><choice><orig>w</orig><reg type="capit" resp="editor">W</reg></choice>ant er hat mÿr meÿne
+					<lb edRef="#K2" facs="#K2_039v_a_14"/>seele beuende gemacht vnd <fw type="catch" place="bot_right">mÿn</fw>
+				<pb edRef="#K2" facs="#K2_040r" n="fol. 40r"></pb> <cb n="fol. 40r"></cb>
+					<lb edRef="#K2" facs="#K2_040r_a_01"/>mÿn hertz hat er bew<add place="above">e</add>gt <choice><abbr>alle<am>y&#x305;</am></abbr><expan>alle<ex>yn</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_040r_a_02"/>van seÿnen ansehen<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Ach lie<lb edRef="#K2" facs="#K2_040r_a_03"/>ue süster<pc resp="editor">,</pc> is heÿ so streng in sÿ<lb edRef="#K2" facs="#K2_040r_a_04"/>nem ansehende<pc><choice><orig>.</orig><reg type="punct" resp="editor">,</reg></choice></pc> wat mach
+					<lb edRef="#K2" facs="#K2_040r_a_05"/>heÿ dan sÿn ÿn seÿnem wor<lb edRef="#K2" facs="#K2_040r_a_06"/>den<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc><pc resp="editor">"</pc> Do sprach <name type="person" nymRef="Martha" rend="rubr_underline">Martha</name><pc resp="editor">:</pc> <pc resp="editor">"</pc><choice><orig>l</orig><reg type="capit" resp="editor">L</reg></choice>iebe
+					<lb edRef="#K2" facs="#K2_040r_a_07"/>süster<pc resp="editor">,</pc> bÿs getroist der here is
+					<lb edRef="#K2" facs="#K2_040r_a_08"/><choice><orig>S</orig><reg type="capit" resp="editor">s</reg></choice>o güdertieren<pc resp="editor">,</pc> güettlÿch vnd
+					<lb edRef="#K2" facs="#K2_040r_a_09"/>so barmhertzÿch vnd so mech<lb edRef="#K2" facs="#K2_040r_a_10"/>tÿch dair beÿ<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> dat heÿ dÿr kan
+					<lb edRef="#K2" facs="#K2_040r_a_11"/>vnd wÿll vergeuen alle deÿ<lb edRef="#K2" facs="#K2_040r_a_12"/>ne sünden<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd ÿch wÿl <choice><abbr>ga<am>e&#x305;</am></abbr><expan>ga<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_040r_a_13"/>vnd wÿll ym deÿenen zo der
+					<lb edRef="#K2" facs="#K2_040r_a_14"/>taiffelen<pc resp="editor">.</pc> In <name type="person" nymRef="Simon" rend="rubr_underline">Simonis</name> hoüß<pc resp="editor">,</pc> dair <fw type="catch" place="bot_right"><choice><abbr>will<am>e&#x305;</am></abbr><expan>will<ex>en</ex></expan></choice></fw>
+				<pb edRef="#K2" facs="#K2_040v" n="fol. 40v"></pb> <cb n="fol. 40v"></cb>
+					<lb edRef="#K2" facs="#K2_040v_01"/>wÿllen wÿr essen<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc><pc resp="editor">"</pc> Dan <choice><abbr><choice><orig>s</orig><reg type="capit" resp="editor">S</reg></choice>ÿm<am>o&#x305;</am></abbr><expan><choice><orig>s</orig><reg type="capit" resp="editor">S</reg></choice>ÿm<ex>on</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_040v_02"/>hat ÿm (den heren) zü gast ge<lb edRef="#K2" facs="#K2_040v_03"/>laden vnd kompt ÿhr aüch
+					<lb edRef="#K2" facs="#K2_040v_04"/>dair<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Aüer <name type="person" nymRef="Mary_Magdalene">Maria</name> die sloich
+					<lb edRef="#K2" facs="#K2_040v_05"/>ÿre angesÿcht zü der erden
+					<lb edRef="#K2" facs="#K2_040v_06"/>vnd gaff ÿrer suster geÿn
+					<lb edRef="#K2" facs="#K2_040v_07"/>antwort<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc>
+				</ab>
+				<ab xml:id="K2_Martha_in_Simons_house"><name type="person" nymRef="Martha" rend="rubr_underline">Marta</name> die gÿnck
+					<lb edRef="#K2" facs="#K2_040v_08"/><choice><orig>I</orig><reg type="capit" resp="editor">i</reg></choice>n <name type="person" nymRef="Simon" rend="rubr_underline">Sÿmonis</name> hoüß vnd <choice><abbr>di<am>e&#x305;</am>t<am>e&#x305;</am></abbr><expan>di<ex>en</ex>t<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_040v_09"/>dem heren<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Der here fragde
+					<lb edRef="#K2" facs="#K2_040v_10"/><name type="person" nymRef="Martha" rend="rubr_underline">Marten</name> vnd sachte<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> zü yhr<pc resp="editor">:</pc>
+					<lb edRef="#K2" facs="#K2_040v_11"/><pc resp="editor">"</pc><name type="person" nymRef="Martha" rend="rubr_underline">Martha</name><pc resp="editor">,</pc> war is deÿn süester
+					<lb edRef="#K2" facs="#K2_040v_12"/><name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Maria</name><pc><choice><orig>:</orig><reg type="punct" resp="editor">?</reg></choice></pc> <choice><orig>w</orig><reg type="capit" resp="editor">W</reg></choice>ÿl sÿ auch <choice><abbr>herk<am>o&#x305;</am></abbr><expan>herk<ex>om</ex></expan></choice><lb edRef="#K2" facs="#K2_040v_13"/>men<pc><choice><orig>:</orig><reg type="punct" resp="editor">?</reg></choice></pc><pc resp="editor">"</pc> <choice><orig>w</orig><reg type="capit" resp="editor">W</reg></choice>ie woll der here doch
+					<lb edRef="#K2" facs="#K2_040v_14"/>wal wÿste<pc resp="editor">,</pc> wat dair gesch <fw type="catch" place="bot_right">een</fw>
+				<pb edRef="#K2" facs="#K2_041r" n="fol. 41r"></pb> <cb n="fol. 41r"></cb>
+					<lb edRef="#K2" facs="#K2_041r_a_01"/>een solde<pc resp="editor">,</pc> so vragten heÿ doch
+					<lb edRef="#K2" facs="#K2_041r_a_02"/><name type="person" nymRef="Martha" rend="rubr_underline">Marten</name> euen wol<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <name type="person" nymRef="Martha" rend="rubr_underline">Martha</name>
+					<lb edRef="#K2" facs="#K2_041r_a_03"/>die antworde dem <hi rend="rubr_underline">heren</hi> do
+					<lb edRef="#K2" facs="#K2_041r_a_04"/>vnd sprach<pc><choice><orig>.</orig><reg type="punct" resp="editor">:</reg></choice></pc> <pc resp="editor">"</pc><hi rend="rubr">O</hi> lieue <hi rend="rubr_underline">here</hi><pc resp="editor">,</pc> <choice><abbr>m<am>y&#x305;</am></abbr><expan>m<ex>yn</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_041r_a_05"/>suester<pc resp="editor">,</pc> die lÿcht gar jemmer<lb edRef="#K2" facs="#K2_041r_a_06"/>lÿchen vnd weÿnt so bÿtter<lb edRef="#K2" facs="#K2_041r_a_07"/>lychen<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd klacht<pc resp="editor">,</pc> dat ÿhr
+					<lb edRef="#K2" facs="#K2_041r_a_08"/>sÿ also grÿfftÿch angesehen
+					<lb edRef="#K2" facs="#K2_041r_a_09"/>hait<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> dat alle ÿhr lÿff <choice><abbr>v<am>n&#x305;</am></abbr><expan>v<ex>nd</ex></expan></choice> seel
+					<lb edRef="#K2" facs="#K2_041r_a_10"/>verstoirt ÿs<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd sÿ beüet <choice><abbr>v<am>a&#x305;</am></abbr><expan>v<ex>an</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_041r_a_11"/>grossem schrecken vnd <choice><abbr>frücht<am>e&#x305;</am></abbr><expan>frücht<ex>en</ex></expan></choice><pc resp="editor">.</pc>
+					<lb edRef="#K2" facs="#K2_041r_a_12"/><choice><orig>h</orig><reg type="capit" resp="editor">H</reg></choice>erümb so bÿtten ÿch dÿch<pc resp="editor">,</pc> dü
+					<lb edRef="#K2" facs="#K2_041r_a_13"/><pc><choice><orig>du</orig><reg type="punct" resp="editor"></reg></choice></pc> troister aller dedroeffder her<lb edRef="#K2" facs="#K2_041r_a_14"/>tzer<pc source="manuscript">:</pc> wÿlt sÿ doch nÿt <choice><abbr>verlaiss<am>e&#x305;</am></abbr><expan>verlaiss<ex>en</ex></expan></choice> <fw type="catch" place="bot_right">vnd</fw>
+				<pb edRef="#K2" facs="#K2_041v" n="fol. 41v"></pb> <cb n="fol. 41v"></cb>
+					<lb edRef="#K2" facs="#K2_041v_a_01"/>vnd ist sach<pc resp="editor">,</pc> dat sÿ herkoemt<pc resp="editor">?</pc>
+					<lb edRef="#K2" facs="#K2_041v_a_02"/><choice><orig>s</orig><reg type="capit" resp="editor">S</reg></choice>o beweÿß jhr doch deÿne
+					<lb edRef="#K2" facs="#K2_041v_a_03"/>gnaidt vnd barmhertzÿch<lb edRef="#K2" facs="#K2_041v_a_04"/>eÿt vnd sprech yhr doch eÿn
+					<lb edRef="#K2" facs="#K2_041v_a_05"/>güedÿch wort zo<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc><pc resp="editor">"</pc> Der her
+					<lb edRef="#K2" facs="#K2_041v_a_06"/>geloften do <name type="person" nymRef="Martha" rend="rubr_underline">Marten</name> <choice><abbr>v<am>n&#x305;</am></abbr><expan>v<ex>nd</ex></expan></choice> sacht<pc resp="editor">:</pc>
+					<lb edRef="#K2" facs="#K2_041v_a_07"/><pc resp="editor">"</pc><name type="person" nymRef="Martha" rend="rubr_underline">Marta</name><pc resp="editor">,</pc> meÿn wierdÿnne<pc resp="editor">,</pc>
+					<lb edRef="#K2" facs="#K2_041v_a_08"/>ÿst dat dÿn süster hercoempt<pc resp="editor">?</pc>
+					<lb edRef="#K2" facs="#K2_041v_a_09"/><choice><orig>s</orig><reg type="capit" resp="editor">S</reg></choice>o wÿll ych ihr liefflÿch <choice><abbr>v<am>n&#x305;</am></abbr><expan>v<ex>nd</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_041v_a_10"/>früntlychen zu sprechen<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc>
+				</ab>
+				<ab xml:id="K2_Gregory_comment"><lb edRef="#K2" facs="#K2_041v_a_11"/><choice><orig>h</orig><reg type="capit" resp="editor">H</reg></choice>yr op sprÿcht der heilger
+					<lb edRef="#K2" facs="#K2_041v_a_12"/>lerer<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> <hi rend="rubr_underline">Sent <name type="person" nymRef="Gregory">Gregoriüs</name></hi> vnd
+					<lb edRef="#K2" facs="#K2_041v_a_13"/>sagt alsüs<pc source="manuscript">:</pc> <pc resp="editor">"</pc>Wen ych ande<lb edRef="#K2" facs="#K2_041v_a_14"/>chtych bÿn dÿsser wort des <fw type="catch" place="bot_right"><choice><abbr>her<am>e&#x305;</am></abbr><expan>her<ex>en</ex></expan></choice></fw>
+				<pb edRef="#K2" facs="#K2_042r" n="fol. 42r"></pb> <cb n="fol. 42r"></cb>
+					<lb edRef="#K2" facs="#K2_042r_a_01"/>heren<pc resp="editor">,</pc> die heÿ zu <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Marien</name>
+					<lb edRef="#K2" facs="#K2_042r_a_02"/>sprach<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> so en moegen sÿch
+					<lb edRef="#K2" facs="#K2_042r_a_03"/>meyne ougen nÿt vnthal<lb edRef="#K2" facs="#K2_042r_a_04"/>ten van weÿnen<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> want
+					<lb edRef="#K2" facs="#K2_042r_a_05"/>heÿ sprach zu <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Marien</name><pc respo="editor">.</pc> <choice><orig>d</orig><reg type="capit" resp="editor">D</reg></choice>o
+					<lb edRef="#K2" facs="#K2_042r_a_06"/><choice><orig>do</orig><reg resp="editor"></reg></choice> sÿ zu <choice><orig>I</orig><reg type="capit" resp="editor">i</reg></choice>m kam frawe<pc resp="editor">.</pc> <choice><orig>i</orig><reg type="capit" resp="editor">I</reg></choice>ch
+					<lb edRef="#K2" facs="#K2_042r_a_07"/>vergeuen dÿr alle deÿne
+					<lb edRef="#K2" facs="#K2_042r_a_08"/>sünden<pc resp="editor">.</pc> <choice><orig>g</orig><reg type="capit" resp="editor">G</reg></choice>anck in <choice><abbr>frÿdd<am>n&#x305;</am></abbr><expan>frÿdd<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_042r_a_09"/>vnd en wÿll nÿt mehr
+					<lb edRef="#K2" facs="#K2_042r_a_10"/>sündÿgen<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc><pc resp="editor">"</pc> <choice><orig>w</orig><reg type="capit" resp="editor">W</reg></choice>en eÿn ieder
+					<lb edRef="#K2" facs="#K2_042r_a_11"/>sunder oder sündersche dÿsse
+					<lb edRef="#K2" facs="#K2_042r_a_12"/>wort gedecht<pc><choice><orig>.</orig><reg type="punct" resp="editor">,</reg></choice></pc> wie dat
+					<lb edRef="#K2" facs="#K2_042r_a_13"/><name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Maria</name> gÿnck ÿn dat hoüß
+					<lb edRef="#K2" facs="#K2_042r_a_14"/><name type="person" nymRef="Simon" rend="rubr_underline">Sÿmonis</name> <choice><abbr>vngelad<am>e&#x305;</am></abbr><expan>vngelad<ex>en</ex></expan></choice> vnd <fw type="catch" place="bot_right">vnge</fw>
+				<pb edRef="#K2" facs="#K2_042v" n="fol. 42v"></pb> <cb n="fol. 42v"></cb>
+					<lb edRef="#K2" facs="#K2_042v_a_01"/>vngebeden<pc><choice><orig>.</orig><reg type="punct" resp="editor">,</reg></choice></pc> vnd wie dat
+					<lb edRef="#K2" facs="#K2_042v_a_02"/>sÿ ere bÿttere trainen vß
+					<lb edRef="#K2" facs="#K2_042v_a_03"/>goiß op die voiß des <choice><abbr>her<am>e&#x305;</am></abbr><expan>her<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_042v_a_04"/>vnd dringten sÿ mÿt
+					<lb edRef="#K2" facs="#K2_042v_a_05"/>ÿren haire<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> so en koent
+					<lb edRef="#K2" facs="#K2_042v_a_06"/>sÿch doch der mynsch nit
+					<lb edRef="#K2" facs="#K2_042v_a_07"/>vnthalden van <choice><abbr>weÿn<am>e&#x305;</am></abbr><expan>weÿn<ex>en</ex></expan></choice><pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc>
+				</ab>
+				<ab xml:id="K2_Mary_in_Simons_house"><lb edRef="#K2" facs="#K2_042v_a_08"/><add place="lmargin"><name type="person" nymRef="Pseudo_Isidore" rend="rubr"><choice><abbr>Isidor<am>&#42864;</am></abbr><expan>Isidor<ex>us</ex></expan></choice></name></add> vnd <name type="person" nymRef="Pseudo_Isidore" rend="rubr_underline">Isidorus</name> der schrifft<pc resp="editor">,</pc>
+					<lb edRef="#K2" facs="#K2_042v_a_09"/><choice><orig>D</orig><reg type="capit" resp="editor">d</reg></choice>o do der here wolt <choice><abbr>sÿtz<am>e&#x305;</am></abbr><expan>sÿtz<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_042v_a_10"/>gain zu dem essen<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><orig>d</orig><reg type="capit" resp="editor">D</reg></choice>o
+					<lb edRef="#K2" facs="#K2_042v_a_11"/>gÿnck heÿ yrsten sitzen
+					<lb edRef="#K2" facs="#K2_042v_a_12"/>op seÿne <hi rend="rubr_underline">gebenedyde</hi> knee
+					<lb edRef="#K2" facs="#K2_042v_a_13"/>vnd lofften seÿnen <hi rend="rubr_underline">hÿm</hi><lb edRef="#K2" facs="#K2_042v_a_14"/><hi rend="rubr_underline">melschen vatter</hi><pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd mÿt <fw type="catch" place="bot_right">dem</fw>
+				<pb edRef="#K2" facs="#K2_043r" n="fol. 43r"></pb> <cb n="fol. 43r"></cb>
+					<lb edRef="#K2" facs="#K2_043r_a_01"/>dem so gÿnck <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Maria</name> in dat
+					<lb edRef="#K2" facs="#K2_043r_a_02"/>hoüß myt <choice><abbr>roüw<am>e&#x305;</am></abbr><expan>roüw<ex>en</ex></expan></choice> ÿhrer <choice><abbr>sünd<am>e&#x305;</am></abbr><expan>sünd<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_043r_a_03"/>vnd mÿt gantzen <choice><abbr>frücht<am>e&#x305;</am></abbr><expan>frücht<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_043r_a_04"/>eres hertzens<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> vnd goß <choice><abbr>d<am>e&#x305;</am></abbr><expan>d<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_043r_a_05"/>heren die wolrüchende salb
+					<lb edRef="#K2" facs="#K2_043r_a_06"/>off seÿn <hi rend="rubr_underline">gebenedÿde hoüfft</hi>
+					<lb edRef="#K2" facs="#K2_043r_a_07"/>vnd viel vur die voess des
+					<lb edRef="#K2" facs="#K2_043r_a_08"/>heren nÿdder zu küssen
+					<lb edRef="#K2" facs="#K2_043r_a_09"/>vnd zu weÿnen<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> <choice><orig>A</orig><reg type="capit" resp="editor">a</reg></choice>lso <choice><abbr>l<am>a&#x305;</am>g</abbr><expan>l<ex>an</ex>g</expan></choice>
+					<lb edRef="#K2" facs="#K2_043r_a_10"/>bys der her sprach<pc resp="editor">:</pc> <pc resp="editor">"</pc><name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Mar</name><lb edRef="#K2" facs="#K2_043r_a_11"/><name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">ia</name><pc resp="editor">,</pc> dyr seint vergeuen al<lb edRef="#K2" facs="#K2_043r_a_12"/>le dyne sünden<pc resp="editor">.</pc> <choice><orig>g</orig><reg type="capit" resp="editor">G</reg></choice>anck in
+					<lb edRef="#K2" facs="#K2_043r_a_13"/>vreden<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc><pc resp="editor">"</pc> Do stont <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Maria</name>
+					<lb edRef="#K2" facs="#K2_043r_a_14"/>op in grosser freüden vnd <fw type="catch" place="bot_right">lÿff</fw>
+					  <figure>
+ 						  <figDesc>Vessel drawn in red, bottom margin.</figDesc>
+					</figure>
+				<pb edRef="#K2" facs="#K2_043v" n="fol. 43v"></pb> <cb n="fol. 43v"></cb>
+					<lb edRef="#K2" facs="#K2_043v_a_01"/>lieffden<pc resp="editor">,</pc> die sÿ zu dem <choice><abbr>her<am>e&#x305;</am></abbr><expan>her<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_043v_a_02"/>hadde<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd was do gesünt
+					<lb edRef="#K2" facs="#K2_043v_a_03"/>an leiff <choice><abbr>v<am>n&#x305;</am></abbr><expan>v<ex>nd</ex></expan></choice> an der seelen
+					<lb edRef="#K2" facs="#K2_043v_a_04"/>vnd gÿnck do <choice><abbr>wydder<am>u&#x305;</am>b</abbr><expan>wydder<ex>um</ex>b</expan></choice>
+					<lb edRef="#K2" facs="#K2_043v_a_05"/><choice><orig>I</orig><reg type="capit" resp="editor">i</reg></choice>n yhrer suster hoüß<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> 
+				</ab>
+				<ab xml:id="K2_VirginMary_visits">Do
+					<lb edRef="#K2" facs="#K2_043v_a_06"/>volgten ÿhr na <name type="person" nymRef="Virgin_Mary" rend="rubr_underline">Maria</name><pc resp="editor">,</pc>
+					<lb edRef="#K2" facs="#K2_043v_a_07"/>de moder des heren<pc resp="editor">,</pc> <choice><orig>I</orig><reg type="capit" resp="editor">i</reg></choice>hr
+					<lb edRef="#K2" facs="#K2_043v_a_08"/>zu troesten <choice><orig>I</orig><reg type="capit" resp="editor">i</reg></choice>n dem <choice><abbr>güd<am>e&#x305;</am></abbr><expan>güd<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_043v_a_09"/>goetlÿchen loff<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd do die
+					<lb edRef="#K2" facs="#K2_043v_a_10"/>moder des heren in dat
+					<lb edRef="#K2" facs="#K2_043v_a_11"/>houß qüam vnd wolde
+					<lb edRef="#K2" facs="#K2_043v_a_12"/><name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Maria <choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agdalena</name> mÿt
+					<lb edRef="#K2" facs="#K2_043v_a_13"/>vß gereckten armen
+					<lb edRef="#K2" facs="#K2_043v_a_14"/>vmbfangen<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> Do rieff <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Ma</name> <fw type="catch" place="bot_right">ria</fw>
+				<pb edRef="#K2" facs="#K2_044r" n="fol. 44r"></pb> <cb n="fol. 44r"></cb>
+					<lb edRef="#K2" facs="#K2_044r_a_01"/><name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">ria <choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agdalena</name><pc resp="editor">:</pc> <pc resp="editor">"</pc><hi rend="rubr">O</hi> du aller
+					<lb edRef="#K2" facs="#K2_044r_a_02"/><hi rend="rubr_underline">heyllÿchste</hi> jüngfraw <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Ma</name><lb edRef="#K2" facs="#K2_044r_a_03"/><name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">ria</name><pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> <choice><orig>D</orig><reg type="capit" resp="editor">d</reg></choice>u schrÿn des aller
+					<lb edRef="#K2" facs="#K2_044r_a_04"/>heÿllÿchste <hi rend="rubr_underline">gades son</hi><pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> <choice><abbr>g<am>a&#x305;</am>ck</abbr><expan>g<ex>an</ex>ck</expan></choice>
+					<lb edRef="#K2" facs="#K2_044r_a_05"/>van mÿr<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> want meÿne
+					<lb edRef="#K2" facs="#K2_044r_a_06"/>sündÿch lÿcham en is des
+					<lb edRef="#K2" facs="#K2_044r_a_07"/>nÿt werdÿch dÿch an zu
+					<lb edRef="#K2" facs="#K2_044r_a_08"/>rüren oder zu <choice><abbr>vmbfang<am>e&#x305;</am></abbr><expan>vmfang<ex>en</ex></expan></choice><pc resp="editor">.</pc><pc resp="editor">"</pc>
+					<lb edRef="#K2" facs="#K2_044r_a_09"/>Do antworden ÿhr die mo<lb edRef="#K2" facs="#K2_044r_a_10"/>der <name type="person" nymRef="Jesus_Christ" rend="rubr_underline"><choice><abbr><am>xp&#x305;</am>i</abbr><expan><ex>Christ</ex>i</expan></choice></name> des heren<pc resp="editor">:</pc> <pc resp="editor">"</pc><hi rend="rubr">O</hi> meÿne
+					<lb edRef="#K2" facs="#K2_044r_a_11"/>lieue fründÿnne meÿnes
+					<lb edRef="#K2" facs="#K2_044r_a_12"/>sons vnd heren <name type="person" nymRef="Jesus_Christ" rend="rubr_underline"><choice><abbr>ih<am>ü</am></abbr><expan>Ih<ex>esu</ex></expan></choice> <choice><abbr><am>xp&#x305;</am>i</abbr><expan><ex>Christ</ex>i</expan></choice></name><pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc>
+					<lb edRef="#K2" facs="#K2_044r_a_13"/><choice><orig>I</orig><reg type="capit" resp="editor">i</reg></choice>ch bekennen dat<pc resp="editor">,</pc> van <hi rend="rubr_underline">gades</hi>
+					<lb edRef="#K2" facs="#K2_044r_a_14"/>wegen<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc> dat dy bÿst reÿne <fw type="catch" place="bot_right">an</fw>
+				<pb edRef="#K2" facs="#K2_044v" n="fol. 44v"></pb> <cb n="fol. 44v"></cb>
+					<lb edRef="#K2" facs="#K2_044v_a_01"/>an dem lÿeff vnd an der <choice><abbr>seel<am>e&#x305;</am></abbr><expan>seel<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_044v_a_02"/>vnd dü bÿst gereÿnget <choice><abbr>v<am>a&#x305;</am></abbr><expan>v<ex>an</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_044v_a_03"/>aller befleckünge der <choice><abbr>sünd<am>e&#x305;</am></abbr><expan>sünd<ex>en</ex></expan></choice><pc resp="editor">.</pc><pc resp="editor">"</pc>
+					<lb edRef="#K2" facs="#K2_044v_a_04"/><choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd do nam <add place="above">sÿ</add> <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Maria</name> <choice><abbr>fr<am>u&#x305;</am>t</abbr><expan>fr<ex>un</ex>t</expan></choice><lb edRef="#K2" facs="#K2_044v_a_05"/>lÿchen ÿn ÿhre armen
+					<lb edRef="#K2" facs="#K2_044v_a_06"/>vnd vmbfÿnck sÿ vnd
+					<lb edRef="#K2" facs="#K2_044v_a_07"/>küsten sÿ vur <choice><abbr><choice><orig>I</orig><reg type="capit" resp="editor">i</reg></choice>hr<am>e&#x305;</am></abbr><expan><choice><orig>I</orig><reg type="capit" resp="editor">i</reg></choice>hr<ex>en</ex></expan></choice> mont<pc resp="editor">.</pc>
+					<lb edRef="#K2" facs="#K2_044v_a_08"/>Do saigen die <choice><orig>I</orig><reg type="capit" resp="editor">i</reg></choice>üngfraw<lb edRef="#K2" facs="#K2_044v_a_09"/>en<pc resp="editor">,</pc> die mÿt <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Marien</name> wa<lb edRef="#K2" facs="#K2_044v_a_10"/>ren <choice><abbr>gek<am>o&#x305;</am>men</abbr><expan>gek<ex>om</ex>men</expan></choice> <choice><abbr>v<am>n&#x305;</am></abbr><expan>v<ex>nd</ex></expan></choice> aüch
+					<lb edRef="#K2" facs="#K2_044v_a_11"/><name type="person" nymRef="Martilla" rend="rubr_underline">Martilla</name><pc resp="editor">,</pc> die magt in <choice><abbr>d<am>e&#x305;</am></abbr><expan>d<ex>em</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_044v_a_12"/>hoüß<pc resp="editor">,</pc> dat dÿsse tzweÿ <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Ma</name><lb edRef="#K2" facs="#K2_044v_a_13"/><name type="person" nymRef="Virgin_Mary" rend="rubr_underline">rien</name> op worden <choice><abbr>gehaü<am>e&#x305;</am></abbr><expan>gehaü<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_044v_a_14"/>van der erden tzweÿ <choice><abbr>ell<am>e&#x305;</am></abbr><expan>ell<ex>en</ex></expan></choice> <fw type="catch" place="bot_right"><choice><abbr>bog<am>e&#x305;</am></abbr><expan>bog<ex>en</ex></expan></choice></fw>
+				<pb edRef="#K2" facs="#K2_045r" n="fol. 45r"></pb> <cb n="fol. 45r"></cb>
+					<lb edRef="#K2" facs="#K2_045r_a_01"/>bogen hoeghe<pc><choice><orig>.</orig><reg type="punct" resp="editor"></reg></choice></pc> van den
+					<lb edRef="#K2" facs="#K2_045r_a_02"/><hi rend="rubr_underline">heÿlgen Engelen</hi><pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd wor<lb edRef="#K2" facs="#K2_045r_a_03"/>den wÿdderümb nÿdder
+					<lb edRef="#K2" facs="#K2_045r_a_04"/>gesatzt <choice><abbr>ehrwerdÿchlÿch<am>e&#x305;</am></abbr><expan>ehrwerdÿchlÿch<ex>en</ex></expan></choice><pc resp="editor">.</pc>
+				</ab>
+				<ab xml:id="K2_Mary_rest_of_life">
+					<lb edRef="#K2" facs="#K2_045r_a_05"/>Dair na was <name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">Maria <choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>a</name><lb edRef="#K2" facs="#K2_045r_a_06"/><name type="person" nymRef="Mary_Magdalene" rend="rubr_underline">gdalena</name> alzeÿt stede in <choice><abbr>d<am>e&#x305;</am></abbr><expan>d<ex>em</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_045r_a_07"/>dienst vnsers heren vnd
+					<lb edRef="#K2" facs="#K2_045r_a_08"/>volgten ÿm na vnd hort
+					<lb edRef="#K2" facs="#K2_045r_a_09"/>seÿne lehr<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd bleyff beÿ
+					<lb edRef="#K2" facs="#K2_045r_a_10"/>ÿm bÿs ÿn den doit<pc resp="editor">,</pc> dat heÿ
+					<lb edRef="#K2" facs="#K2_045r_a_11"/>gecrüÿtzÿget wart<pc source="manuscript">.</pc> <choice><orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nd
+					<lb edRef="#K2" facs="#K2_045r_a_12"/>na seÿner <hi rend="rubr_underline">hÿmelfart</hi> dede
+					<lb edRef="#K2" facs="#K2_045r_a_13"/>seÿ grosse boiß vnd <choice><abbr>penit<am>e&#x305;</am></abbr><expan>penit<ex>en</ex></expan></choice><lb edRef="#K2" facs="#K2_045r_a_14"/>cie<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vur <choice><orig>I</orig><reg type="capit" resp="editor">i</reg></choice>hre sünden in der <fw type="catch" place="bot_right">wuste</fw>
+				<pb edRef="#K2" facs="#K2_045v" n="fol. 45v"></pb> <cb n="fol. 45v"></cb>
+					<lb edRef="#K2" facs="#K2_045v_a_01"/>wüstenien<pc><choice><orig>:</orig><reg type="punct" resp="editor"></reg></choice></pc> vnd sÿ en nam
+					<lb edRef="#K2" facs="#K2_045v_a_02"/>geÿn spyeß zu sÿch<pc source="manuscript">.</pc> <choice><orig>s</orig><reg type="capit" resp="editor">S</reg></choice>onder
+					<lb edRef="#K2" facs="#K2_045v_a_03"/>die heÿlge <hi rend="rubr_underline">Engelen</hi> <choice><abbr>nam<am>e&#x305;</am></abbr><expan>nam<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_045v_a_04"/>sÿ des dags zo seuen mai<lb edRef="#K2" facs="#K2_045v_a_05"/>ll op van der erden vnd
+					<lb edRef="#K2" facs="#K2_045v_a_06"/>hielten syn in die <choice><abbr>hoegt<am>e&#x305;</am></abbr><expan>hoegt<ex>en</ex></expan></choice>
+					<lb edRef="#K2" facs="#K2_045v_a_07"/>vnd songen vnd lofften
+					<lb edRef="#K2" facs="#K2_045v_a_08"/><name type="person" nymRef="God" rend="rubr_underline">got</name> den heren<pc source="manuscript">.</pc> Dairna
+					<lb edRef="#K2" facs="#K2_045v_a_09"/>do sÿ starff<pc><choice><orig>:</orig><reg type="punct" resp="editor">.</reg></choice></pc> <choice><orig>d</orig><reg type="capit" resp="editor">D</reg></choice>o namen sÿ
+					<lb edRef="#K2" facs="#K2_045v_a_10"/>die heylger <hi rend="rubr_underline">Engelen</hi> ere se<lb edRef="#K2" facs="#K2_045v_a_11"/>le mÿt grosser eheren vnd
+					<lb edRef="#K2" facs="#K2_045v_a_12"/>brachten sÿ in dat ewÿch
+					<lb edRef="#K2" facs="#K2_045v_a_13"/>leüen yn die entgegene
+					<lb edRef="#K2" facs="#K2_045v_a_14"/>wordÿcheÿt des <choice><abbr>gotlÿch<am>e&#x305;</am></abbr><expan>gotlÿch<ex>en</ex></expan></choice> <fw type="catch" place="bot_right">ang</fw>
+				<pb edRef="#K2" facs="#K2_046r" n="fol. 46r"></pb> <cb n="fol. 46r"></cb>
+					<lb edRef="#K2" facs="#K2_046r_a_01"/>angesÿchs<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc>
+				</ab>
+				<ab xml:id="K2_epilogue"><choice><orig>D</orig><reg type="capit" resp="editor">d</reg></choice>at wyr aüch
+					<lb edRef="#K2" facs="#K2_046r_a_02"/>nach dyssem leuen dairzo
+					<lb edRef="#K2" facs="#K2_046r_a_03"/>morgen <choice><abbr>k<am>o&#x305;</am>men</abbr><expan>k<ex>om</ex>men</expan></choice> des goen<lb facs="#K2_046r_a_04"/>ne vns <choice><orig>g</orig><reg type="capit" resp="editor">G</reg></choice>ott der <hi rend="rubr">+</hi> vader
+					<lb edRef="#K2" facs="#K2_046r_a_05"/><choice><orig>g</orig><reg type="capit" resp="editor">G</reg></choice>ot der <hi rend="rubr">+</hi> son vnd <choice><orig>g</orig><reg type="capit" resp="editor">G</reg></choice>ot der
+					<lb edRef="#K2" facs="#K2_046r_a_06"/><hi rend="rubr">+</hi>  <choice><orig>h</orig><reg type="capit" resp="editor">H</reg></choice>eylger <choice><orig>g</orig><reg type="capit" resp="editor">G</reg></choice>eÿst<pc resp="editor">,</pc> Amen<pc resp="editor">.</pc>
+				</ab>
+		</body>
+	</text>
+</TEI>
