@@ -727,7 +727,7 @@
 				<pb edRef="#K2" facs="#K2_046r" n="fol. 46r"></pb> <cb n="fol. 46r"></cb>
 					<lb edRef="#K2" facs="#K2_046r_a_01"/>angesÿchs<pc><choice><orig>:</orig><reg type="punct" resp="editor">,</reg></choice></pc>
 				</ab>
-				<ab xmli:id="epilogue"><choice><orig>D</orig><reg type="capit" resp="editor">d</reg></choice>at wyr aüch
+				<ab xml:id="epilogue"><choice><orig>D</orig><reg type="capit" resp="editor">d</reg></choice>at wyr aüch
 					<lb edRef="#K2" facs="#K2_046r_a_02"/>nach dyssem leuen dairzo
 					<lb edRef="#K2" facs="#K2_046r_a_03"/>morgen <choice><abbr>k<am>o&#x305;</am>men</abbr><expan>k<ex>om</ex>men</expan></choice> des goen<lb facs="#K2_046r_a_04"/>ne vns <choice><orig>g</orig><reg type="capit" resp="editor">G</reg></choice>ott der <hi rend="rubr">+</hi> vader
 					<lb edRef="#K2" facs="#K2_046r_a_05"/><choice><orig>g</orig><reg type="capit" resp="editor">G</reg></choice>ot der <hi rend="rubr">+</hi> son vnd <choice><orig>g</orig><reg type="capit" resp="editor">G</reg></choice>ot der

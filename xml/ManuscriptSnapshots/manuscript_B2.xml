@@ -2272,7 +2272,7 @@
         <lb facs="#B2_163r_a_17"/>dat gotlike anschouwen<pc resp="editor">.</pc>
         <hi rend="rubr">A</hi>men <!-- there is a space here; tag: space quantity="4" unit="chars"/?-->
         </ab>
-        <ab xmli:id="epilogue"><hi rend="rubr">E</hi>er bekerin<lb facs="#B2_163r_a_18"/>ghe
+        <ab xml:id="epilogue"><hi rend="rubr">E</hi>er bekerin<lb facs="#B2_163r_a_18"/>ghe
         ghescheide<pc resp="editor">,</pc> als de lerre beschriuen<pc resp="editor">,</pc>
         vp den ø
         <choice>

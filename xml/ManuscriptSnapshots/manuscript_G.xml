@@ -740,7 +740,7 @@
 					<lb edRef="#G" facs="#G_168r_b_20"/>gheest <choice><abbr>e<am>e&#x305;</am></abbr><expan>e<ex>en</ex></expan></choice> <choice><orig>g</orig><reg type="capit" resp="editor">G</reg></choice>od ewelic
 					<lb edRef="#G" facs="#G_168r_b_21"/>sonder eynde<pc><choice><orig>.</orig><reg type="punct" resp="editor">,</reg></choice></pc> Amen<pc resp="editor">.</pc>
 					</ab>
-        <ab xmli:id="epilogue">
+        <ab xml:id="epilogue">
           <lb edRef="#G" facs="#G_168r_b_22"/>Sinte <name type="person" nymRef="Mary_Magdalene"><hi rend="rubr_underline"><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria</hi> <choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>ag</name><lb edRef="#G" facs="#G_168r_b_23"/><name type="person" nymRef="Mary_Magdalene">dalena</name> bekeringhe<pc resp="editor">,</pc>
 					<lb edRef="#G" facs="#G_168r_b_24"/>Als die leerres <add place="rmargin">gheschiede be</add><choice><abbr>scriu<am>e&#x305;</am></abbr><expan>scriu<ex>en</ex></expan></choice>
 					<lb edRef="#G" facs="#G_168r_b_25"/>opten eersten dach <choice><abbr>v<am>a&#x305;</am></abbr><expan>v<ex>an</ex></expan></choice>
