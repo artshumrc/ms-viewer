@@ -1,0 +1,2282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+	  <fileDesc>
+		  <titleStmt>
+			  <title>Mary Magdalene Conversion Legend</title>
+			  <author ref="#PseudoIsidore">Pseudo Isidore</author>
+			  <respStmt>
+				  <name xml:id="Hans_Pech">Hans Martin Pech</name>
+				  <resp>TEI encoder</resp>
+			  </respStmt>
+		  </titleStmt>
+		  <editionStmt>
+			  <edition>
+				  <title>Mary Magdalene Conversion Legend – 
+				  Digital Edition</title>
+				  <date when="2017-08-25">August 25, 2017</date>
+			  </edition>
+		  </editionStmt>
+		  <publicationStmt>
+			  <authority>
+				  <ref target=""></ref>
+			  </authority>
+			  <availability status="free">
+				  <p>Published under 
+					<ref target=""></ref>
+				  </p>
+			  </availability>
+		  </publicationStmt>
+		  <sourceDesc>
+			  <msDesc>
+				  <msIdentifier>
+					  <country>Germany</country>
+					  <region>Berlin</region>
+					  <settlement>Berlin</settlement>
+					  <institution>Stiftung Preußischer Kulturbesitz</institution>
+					  <repository>Staatsbibliothek zu Berlin</repository>
+					  <idno>mgr 524</idno>
+					  <altIdentifier type="?">
+						  <idno>Ms. Germ. Quart. 524</idno>
+					  </altIdentifier>
+				  </msIdentifier>
+				  <history>
+					  <origin>
+						  <p>Written in the <origDate>15th Century</origDate></p>
+					  </origin>
+				  </history>
+				  <physDesc>
+					  <objectDesc form="??">
+						  <supportDesc>
+							  <p>A mix of <material>paper</material>
+							  and <material>parchment</material></p>
+							  <extent>196 fols.</extent>
+							  <condition>
+								  <p>Well preserved.</p>
+							  </condition>
+						  </supportDesc>
+						  <layout>
+							  <p>Written in one column throughout;
+							  between 33 and 35 lines</p>
+						  </layout>						  
+					  </objectDesc>
+					  <handDesc>
+					  <!--provide description of hand-->
+					  </handDesc>
+				  </physDesc>
+				  <msContents>
+					  <msItem n="1">
+						  <locus>??</locus>
+						  <title>Christina von Hane??</title>
+					  </msItem>
+					  <msItem n="2">
+						  <locus>fols. 159r-163r</locus>
+						  <title>Hijr beghijnt de bekeringhe Sunte marien 
+						  Magdalenen</title>
+						  <incipit>
+							  <locus>fol. 159r</locus>
+							  Maria magdalena was gheboren
+						  </incipit>
+						  <explicit>
+							  <locus>fol. 163r</locus>
+							  my soluen nummermer vorgheuen
+						  </explicit>
+						  <textLang mainlang="MLG">Middle Low 
+						  German</textLang>
+						  <decoNote type="initial">
+							  <p>One six(?)-line Lombard Initial</p>
+						  </decoNote>
+					  </msItem>
+					  <msItem n="3">
+						  <locus>fols. 187r-196v??</locus>
+						  <title>Van der gloriosen
+						  Jungferen Marien</title>
+					  </msItem>
+				  </msContents>
+			  </msDesc>
+			  <listWit>
+				  <witness xml:id="B2">B2</witness>
+			  </listWit>
+		  </sourceDesc>
+	  </fileDesc>
+	  <encodingDesc>
+		<schemaRef n="lbp-critical-1.0.0" url="https://raw.githubusercontent.com/lombardpress/lombardpress-schema/develop/src/out/critical.rng"/>
+		<editorialDecl>
+			<!-- (editorial practice declaration) provides details of editorial principles and practices applied during the encoding of a text. -->  
+			<p>Encoding of this text has followed the published guidlines on...</p>
+			<correction>
+				<p>All names have been capitalized. Capitalization has been
+				added or removed in accordance with punctuation.</p>
+			</correction>
+			<punctuation>
+				<p>Punctuation has been provided by the editor in
+				accordance with New High German punctuation rules.</p>
+			</punctuation>
+		</editorialDecl>
+	  </encodingDesc>
+	  <!-- (revision description) summarizes the revision history for a file.  -->
+	  <revisionDesc status="draft">
+		<!-- listChange groups a number of change descriptions (in reverse order!) associated with either the creation of a source text or the revision of an encoded text. -->
+		<listChange>
+			<change when="2017-08-25" status="draft" n="0.0.0"><p>Created file for the first time.</p></change>
+			<change when="2018-12-13" status="draft" n="0.0.0"><p>added name tag for David; changed attr value "organization" to "org"
+			"horizontalStrike" --> "strikethrough"</p></change>                                
+		</listChange>
+	  </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+		<pb edRef="#B2" facs="#B2_159r" n="fol. 159ra"/>
+		<cb n="fol. 159r"/>
+		<lb facs="#B2_159r_a_08"/>
+        <ab xml:id="legend_title">
+          <head rend="rubr"><w xml:id="B2_159r_a_08_01">Hijr</w> beghijnt de bekeringhe
+            <name type="person" nymRef="Mary_Magdalene">Sunte<lb facs="#B2_159r_a_09"/>
+				<choice>
+					<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>arien 
+				<w xml:id="B2_159r_a_09_02">Magdalenen</w>
+			</name>
+		  </head>
+        </ab>
+        <app from="#B2_159r_a_08_01" to="B2_159r_a_09_02">
+			<rdg wit="#B1_legend_title">Dyt is dat leven der seliger Marien Magdalenen</rdg>
+			<rdg wit="#D_legend_title">Dit is de bekeirunge sante Marien Magdalenen der viuryger vrundynnen gotz</rdg>
+			<rdg wit="#K1_legend_title">Her begynt die bekeirunge Sanck Maria Magdalena der helger vruntynen uns lieuen heren</rdg>
+			<rdg wit="#K2_legend_title">Her nach volgt eyn schoene hystori von der hilger ionfferen Maria Magdalena</rdg>
+			<rdg wit="#N_legend_title">Dit is die bekeirynge sent Marien Magdalena als Ysiderus beschryfft</rdg>
+			<rdg wit="#S_legend_title">Die bekeronge der selicher Marien Magdalenen ist geschehet, als die lerer schrybent, vff den irsten dags des mertze</rdg>
+		</app>
+
+        <!-- previous line different color and seperated from main text;
+         also different hand? -->
+        
+        <ab xml:id="genealogy">
+			<lb facs="#B2_159r_a_10"/>
+			<name type="person" nymRef="Mary_Magdalene"><hi 
+			rend="init_lombard"><hi rend="rubr">M</hi></hi><hi rend="rubr">A</hi>ria
+				<choice>
+					<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agdalena
+			</name> was gheboren van
+			<choice>
+				<abbr>en<am>e&#x304;</am>
+				</abbr>
+				<expan>en<ex>en</ex></expan><!--Dative m and n ending consistently in -n!!!-->
+			</choice>
+			<lb facs="#B2_159r_a_11"/>edelen
+			<choice>
+				<abbr>sta<am>m&#x304;</am>e</abbr>
+				<expan>sta<ex>mm</ex>e</expan>
+			</choice>
+			 <choice>
+				<abbr>v<am>n&#x304;</am></abbr>
+				<expan>v<ex>nd</ex></expan>
+			</choice>
+			eerliken gheslechte<pc resp="editor">.</pc> <hi rend="rubr">E</hi>er 
+			<lb facs="#B2_159r_a_12"/>vader hette <name type="person" nymRef="Syrus"><hi rend="rubr">C</hi>irus</name>
+			 <choice>
+				<abbr>
+					<choice>
+						<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><am>n&#x304;</am>
+				</abbr>
+				<expan>
+					<choice>
+						<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><ex>nd</ex>
+				</expan>
+			</choice>
+			<choice>
+				<orig>E</orig><reg type="capit" resp="editor">e</reg></choice>er moder hette 
+			<lb facs="#B2_159r_a_13"/><name type="person" nymRef="Eucharia"><hi rend="rubr">E</hi>ucharia</name>
+			<choice>
+				<abbr>
+					<choice>
+						<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><am>n&#x304;</am>
+				</abbr>
+				<expan>
+					<choice><orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><ex>nd</ex>
+				</expan>
+			</choice>
+			se hadden twe dochtere vnde 
+			<lb facs="#B2_159r_a_14"/>enen sone<pc resp="editor">.</pc> <hi rend="rubr">D</hi>e ene dochter hette
+			<name type="person" nymRef="Martha"><hi rend="rubr">M</hi>artha</name><pc 
+			resp="editor">,</pc>
+			<choice>
+				<orig><hi rend="rubr">D</hi></orig><reg type="capit" resp="editor">d</reg></choice>e ander
+			het<lb facs="#B2_159r_a_15"/>te <name type="person" 
+			nymRef="Mary_Magdalene"><hi rend="rubr">M</hi>aria</name><pc resp="editor">,</pc>
+			<choice>
+				<orig><hi rend="rubr">D</hi></orig><reg type="capit" resp="editor">d</reg></choice>e sone hette
+			<name type="person" nymRef="Lazarus">
+				<choice>
+					<orig>l</orig><reg type="capit" resp="editor">L</reg></choice>azarus
+			</name>
+			<choice>
+				<abbr>
+					<choice>
+						<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><am>n&#x304;</am>
+				</abbr>
+				<expan>
+					<choice>
+						<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><ex>nd</ex>
+				</expan>
+			</choice>
+			was de<pc resp="editor">,</pc> den vnse
+			<lb facs="#B2_159r_a_16"/><name type="person" nymRef="Jesus_Christ">here</name> vpweckede van der doet<pc resp="editor">,</pc>
+			do he veer daghe in
+			<choice>
+				<abbr>d<am>e&#x304;</am></abbr>
+				<expan>d<ex>en<!--I´m resolving it with "n"
+				because in other instances the dative seems to be "den" (e.g.
+				159v)--></ex></expan>
+			</choice>
+			gra<lb facs="#B2_159r_a_17"/>ue
+			hadde ghewesen<pc resp="editor">.</pc>
+        </ab>
+        <ab xml:id="heritage">
+			<choice>
+				<abbr><hi rend="rubr">V</hi><am>n&#x304;</am></abbr>
+				<expan><hi rend="rubr">V</hi><ex>nd</ex></expan>
+			</choice>
+			na den dode erre
+			olders
+			<choice>
+				<abbr>deeld<am>e&#x304;</am></abbr>
+				<expan>deeld<ex>en</ex></expan>
+			</choice>
+			<lb facs="#B2_159r_a_18"/>de kynder
+			<choice>
+				<orig><hi rend="rubr">E</hi></orig><reg type="capit" resp="editor">e</reg></choice>r 
+			vaderlike erue<pc resp="editor">.</pc>
+			<name type="person" nymRef="Lazarus"><hi rend="rubr">L</hi>azarus</name> nam en
+			groet deel
+			<lb facs="#B2_159r_a_19"/>in der stat von <name type="place" 
+			nymRef="Jerusalem"><hi rend="decor">J</hi>herusalem</name>
+			<choice>
+				<abbr>v<am>n&#x304;</am></abbr>
+				<expan>v<ex>nd</ex></expan>
+			</choice>
+			oeffende em <!-- "übte sich?"-->in ridderschap<pc resp="editor">,</pc>
+			<lb facs="#B2_159r_a_20"/>wante he was eyn ridder<pc resp="editor">.</pc>
+			<name type="person" nymRef="Martha"><hi rend="rubr">M</hi>artha</name> louede den
+			heren to
+			<lb facs="#B2_159r_a_21"/>deynen in reynicheit
+			<choice>
+				<abbr>
+					<choice>
+						<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><am>n&#x304;</am>
+				</abbr>
+				<expan>
+					<choice>
+						<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><ex>nd</ex>
+				</expan>
+			</choice>
+			plach de pelegrime to herber<lb facs="#B2_159r_a_22"/>ghen<pc resp="editor">,</pc>
+			<choice>
+				<abbr>
+					<choice>
+						<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><am>n&#x304;</am>
+				</abbr>
+				<expan>
+					<choice>
+						<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><ex>nd</ex>
+				</expan>
+			</choice>
+			sunderlinghe
+			<choice>
+				<abbr>v<am>m&#x304;</am>e</abbr>
+				<expan>v<ex>mm</ex>e</expan>
+			</choice>
+			eres hillighen leuens
+			<choice>
+				<abbr>will<am>e&#x304;</am></abbr>
+				<expan>will<ex>en</ex></expan>
+			</choice>
+			<lb facs="#B2_159r_a_23"/>was se werdich to herberghen vnsen leuen heren
+			<name type="name" nymRef="Jesus_Christ"><hi rend="rubr">J</hi>hesum
+			<lb facs="#B2_159r_a_24"/>
+			<choice>
+				<abbr><am>xpm&#x304;</am></abbr>
+				<expan>
+					<ex>
+						<choice>
+							<orig>c</orig><reg type="capit" resp="editor">C</reg></choice>ristum
+					</ex>
+				</expan>
+			</choice></name>
+			<choice>
+				<abbr>
+					<choice>
+						<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><am>n&#x304;</am>
+				</abbr>
+				<expan>
+					<choice>
+						<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><ex>nd</ex>
+				</expan>
+			</choice>
+			syne leue moder
+			<name type="person" nymRef="Virgin_Mary">
+				<choice>
+					<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>arien
+			</name>
+			<choice>
+				<abbr>v<am>n&#x304;</am></abbr>
+				<expan>v<ex>nd</ex></expan>
+			</choice> alle
+			de hillighen
+			<lb facs="#B2_159r_a_25"/><hi rend="rubr">A</hi>postele<pc resp="editor">.</pc>
+			<choice>
+				<abbr><hi rend="rubr">V</hi><am>n&#x304;</am></abbr>
+				<expan><hi rend="rubr">V</hi><ex>nd</ex></expan>
+			</choice>
+			eer ander deel was dat stedeken van
+			<name type="place" nymRef="Bethany">
+				<choice>
+					<orig>b</orig><reg type="capit" resp="editor">B</reg></choice>e<lb facs="#B2_163r_a_26"/>thanien
+			</name>
+			gheleghen na bij <name type="place" 
+			nymRef="Jerusalem"><hi rend="rubr">J</hi>herusalem</name><pc resp="editor">.</pc>
+			<choice>
+				<abbr><hi rend="rubr">V</hi><am>n&#x304;</am></abbr>
+				<expan><hi rend="rubr">V</hi><ex>nd</ex></expan>
+			</choice>
+			wat er ouer
+			<lb facs="#B2_159r_a_27"/>quam van eren renthen<pc resp="editor">,</pc> dat
+			ghaff se den armen
+			<choice>
+				<abbr>v<am>m&#x304;</am>e</abbr>
+				<expan>v<ex>mm</ex>e</expan>
+			</choice>
+			<lb facs="#B2_159r_a_28"/>godes willen<pc resp="editor">.</pc> <name type="person" 
+			nymRef="Mary_Magdalene"><hi rend="rubr">M</hi>aria</name> nam to eren deel
+			dat slot
+			<choice>
+				<abbr>gheheit<am>e&#x304;</am></abbr>
+				<expan>gheheit<ex>en</ex></expan>
+			</choice>
+			<lb facs="#B2_159r_a_29"/><name type="place" subtype="residence"
+			nymRef="Magdalum"><hi rend="rubr">M</hi>agdalon</name><pc resp="editor">,</pc>
+			<choice>
+				<abbr>
+					<choice>
+						<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><am>n&#x304;</am>
+				</abbr>
+				<expan>
+					<choice>
+						<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><ex>nd</ex>
+				</expan>
+			</choice>
+			dar wart eer de name <name type="person" 
+			nymRef="Mary_Magdalene"><hi rend="rubr">M</hi>aria <hi rend="rubr">M</hi>agdalena</name>
+			<lb facs="#B2_159r_a_30"/>aff<!--MLG afgeven = NHG abgeben, 
+			bezahlen, abliefern; MLG Adverb af = NHG ab,
+			herunter, von, davon--> ghegeuen<pc resp="editor">.</pc>
+        </ab>
+        <ab xml:id="MaryMagdalene_mismanagement">
+			<choice>
+				<abbr><hi rend="rubr">V</hi><am>n&#x304;</am></abbr>
+				<expan><hi rend="rubr">V</hi><ex>nd</ex></expan>
+			</choice>
+			al eer guet brachte se to in groten
+			<lb facs="#B2_159r_a_31"/>swaren sunden myt boeser gheselschap
+			<choice>
+				<abbr>v<am>n&#x304;</am></abbr>
+				<expan>v<ex>nd</ex></expan>
+			</choice>
+			de bose gheest
+			<lb facs="#B2_159r_a_32"/>brachte se to valle
+			<choice>
+				<abbr>v<am>n&#x304;</am></abbr>
+				<expan>v<ex>nd</ex></expan>
+			</choice>
+			eer quade<!--mlg 'quat' = böse, schlecht, überl, verdorben, 
+			sündig, falsch, verräterisch, gefährlich, zornig, übel gesinnt, 
+			von böser Natur seiend, unmorlaisch, verwerflich, ...-->
+			eghene wille in mani<lb facs="#B2_159r_a_33"/>ghe
+			sunde<pc resp="editor">.</pc> 
+			<unclear reason="illegible" cert="medium"><hi rend="rubr">Z</hi></unclear>en 
+			ersten male in houerdien<pc resp="editor">,</pc> wante 
+			se so ho<lb facs="#B2_159r_a_34"/>uerdich
+			van herten was<pc resp="editor">,</pc> dat eer 
+			duchte<pc resp="editor">,</pc>
+			dat nymant eer
+			
+			<!-- next page -->
+			<pb edRef="#B2" facs="#B2_159v" n="fol. 159va"/>
+			<cb n="fol. 159v"/><lb facs="#B2_159v_a_01"/>ghelijck en was 
+			in schoenheit<pc resp="editor">,</pc> in edelheit
+			<choice>
+				<abbr>v<am>n&#x304;</am></abbr>
+				<expan>v<ex>nd</ex></expan>
+			</choice>
+			in rijcheiden<pc resp="editor">.</pc>
+			<lb facs="#B2_159v_a_02"/><hi rend="rubr">O</hi>ck so was se houerdich in worden
+			<choice>
+				<abbr>v<am>n&#x304;</am></abbr>
+				<expan>v<ex>nd</ex></expan>
+			</choice>
+			in werken myt
+			<lb facs="#B2_159v_a_03"/>clederen<pc resp="editor">,</pc> myt cijrheit eres
+			lichames<pc resp="editor">.</pc>
+			<hi rend="rubr">S</hi>e was ock gij<lb facs="#B2_159v_a_04"/>rijch
+			van dynghen desser werlt als in gude meer
+			<choice>
+				<abbr>v<am>n&#x304;</am></abbr>
+				<expan>v<ex>nd</ex></expan>
+			</choice>
+			<lb facs="#B2_159v_a_05"/>in wallust<pc resp="editor">.</pc>
+			<hi rend="rubr">O</hi>ck was se vnreyne
+			myt worden
+			<choice>
+				<abbr>v<am>n&#x304;</am></abbr>
+				<expan>v<ex>nd</ex></expan>
+			</choice>
+			myt
+			<lb facs="#B2_159v_a_06"/>werken<pc resp="editor">,</pc>
+			<choice>
+				<orig><hi rend="rubr">A</hi></orig><reg type="capit" resp="editor">a</reg></choice>lso dat se eer
+			gude gheruchte
+			<choice>
+				<abbr>v<am>n&#x304;</am></abbr>
+				<expan>v<ex>nd</ex></expan>
+			</choice>
+			eren
+			<choice>
+				<abbr>gud<am>e&#x304;</am></abbr>
+				<expan>gud<ex>en</ex></expan>
+			</choice>
+			<lb facs="#B2_159v_a_07"/>namen
+			<choice>
+				<abbr><am>v&#xa770;</am></abbr>
+				<expan><ex>vor</ex></expan>
+			</choice>loes
+			<choice>
+				<abbr>v<am>n&#x304;</am></abbr>
+				<expan>v<ex>nd</ex></expan>
+			</choice>
+			eren eghenen namen
+			also swaerlike
+			<lb facs="#B2_159v_a_08"/>vorloren hadde<pc resp="editor">,</pc> dat se ene openbare
+			sundersche wart
+			<lb facs="#B2_159v_a_09"/>gheheiten<pc resp="editor">,</pc>
+			<choice>
+				<orig><hi rend="rubr">A</hi></orig><reg type="capit" resp="editor">a</reg></choice>ls vns de ewangelista
+			<choice>
+				<orig>s</orig><reg type="capit" resp="editor">S</reg></choice>ante
+			<name type="name" nymRef="Luke">
+				<choice>
+					<orig>l</orig>
+					<reg type="capit" resp="editor">L</reg></choice>ucas
+			</name>
+			secht<pc resp="editor">,</pc>
+			<lb facs="#B2_159v_a_10"/>
+			<choice>
+				<orig><hi rend="rubr">W</hi></orig><reg type="capit" resp="editor">w</reg></choice>ante se 
+			sundighede swaerlike myt eren ghesichte
+			<lb facs="#B2_159v_a_11"/>
+			<choice>
+				<abbr>v<am>n&#x304;</am></abbr>
+				<expan>v<ex>nd</ex></expan>
+			</choice>
+			handelinghe der vngheliker 
+			<choice>
+				<abbr><am>&#42833;</am></abbr>
+				<expan><ex>per</ex></expan></choice>sonen<pc resp="editor">.</pc>
+			<hi rend="rubr">E</hi>er suster
+			<lb facs="#B2_159v_a_12"/>
+			<name type="person" nymRef="Martha"><hi rend="rubr">M</hi>artha</name>
+			claghede dat leuen erre suster der
+			<name type="name" nymRef="Virgin_Mary">moder<!--check all references of virgin: include mother in nametag-->
+				<choice>
+					<abbr><am>xpi&#x304;</am></abbr>
+					<expan>
+						<ex>
+							<choice>
+								<orig>c</orig><reg type="capit" resp="editor">C</reg></choice>risti
+						</ex>
+					</expan>
+				</choice>
+			</name>
+			<lb facs="#B2_159v_a_13"/>myt schreyenden oghen
+			<choice>
+				<abbr>v<am>n&#x304;</am></abbr>
+				<expan>v<ex>nd</ex></expan>
+			</choice>
+			bad eer<pc resp="editor">,</pc>
+			dat se wolde
+			<name type="person" nymRef="Jesus_Christ">
+				<choice>
+					<abbr><am>xpm&#x304;</am></abbr>
+					<expan>
+						<ex>
+							<choice>
+								<orig>c</orig><reg type="capit" resp="editor">C</reg></choice>ristum
+						</ex>
+					</expan>
+				</choice>
+			</name>
+			<lb facs="#B2_159v_a_14"/>vor eer bidden<pc resp="editor">.</pc>
+        </ab>
+        <ab xml:id="Martha_confronts_Mary"><hi rend="rubr">D</hi>e lerre
+        <name type="name" nymRef="Pseudo_Isodore">
+			<choice>
+				<orig>y</orig><reg type="capit" resp="editor">Y</reg></choice>sidorus</name><pc resp="editor">,</pc>
+        de dijt leuen beschre<lb facs="#B2_159v_a_15"/>uen
+        heuet in den boeke<pc resp="editor">,</pc> dat dar gheheiten is
+        dat boeck
+        <lb facs="#B2_159v_a_16"/>van den dode der hillighen<pc resp="editor">,</pc> sprack
+        voert aldus<pc resp="editor">,</pc>
+        <choice>
+			<orig><hi rend="rubr">D</hi></orig><reg type="capit" resp="editor">d</reg></choice>at
+        <lb facs="#B2_159v_a_17"/>desse susteren quemen so<!--o is illegible, but high certitude: tag accordingly--> tosamene to
+        <name type="place" nymRef="Bethany">
+			<choice>
+				<orig>b</orig><reg type="capit" resp="editor">B</reg></choice>ethanien</name><pc resp="editor">.</pc>
+        <choice>
+			<abbr><hi rend="rubr">V</hi><am>n&#x304;</am></abbr>
+			<expan><hi rend="rubr">V</hi><ex>nd</ex></expan>
+		</choice>	
+        <lb facs="#B2_159v_a_18"/><name type="person" 
+        nymRef="Mary_Magdalene"><hi rend="rubr">M</hi>aria
+        <hi rend="rubr">M</hi>agdalena</name> ghenck sytten vor dat speigel
+        <lb facs="#B2_159v_a_19"/>
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		vlechtede eer schone haer
+		<choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		cijrde eer
+        licham<pc resp="editor">.</pc>
+        <lb facs="#B2_159v_a_20"/><hi rend="rubr">D</hi>ar sprack 
+        <choice>
+			<orig><hi rend="rubr">E</hi></orig>
+			<reg type="capit" resp="editor">e</reg></choice>er
+        <name type="person" nymRef="Martha"><hi rend="rubr">M</hi>artha</name>
+        eer suster to myt clagheli<lb facs="#B2_159v_a_21"/>ker
+        <choice>
+			<abbr>ste<am>m&#x304;</am>e</abbr>
+			<expan>ste<ex>mm</ex>e</expan>
+		</choice>
+		aldus<pc resp="editor">: "</pc><hi rend="rubr">L</hi>eue
+        suster<pc resp="editor">,</pc>
+        <choice>
+			<orig><hi rend="rubr">N</hi></orig>
+			<reg type="capit" resp="editor">n</reg></choice>u
+			sijrestu dynen lic<lb facs="#B2_159v_a_22"/>ham
+        also seer na den vleesche<pc resp="editor">,</pc>
+        <choice>
+			<abbr>
+				<choice>
+					<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><am>n&#x304;</am>
+			</abbr>
+			<expan>
+				<choice>
+					<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><ex>nd</ex>
+			</expan>
+		</choice>
+		dyne schone Zeile<pc resp="editor">,</pc>
+        <lb facs="#B2_159v_a_23"/>de gheschapen is na den
+        belde <name type="person" nymRef="God">godes</name><pc resp="editor">,</pc>
+        beuleckestu
+        <lb facs="#B2_159v_a_24"/>myt dynen groten sunden<pc resp="editor">.</pc>
+        <hi rend="rubr">I</hi>ck bidde dy<pc resp="editor">,</pc> leue
+        suster<pc resp="editor">,</pc>
+        <lb facs="#B2_159v_a_25"/>ghedencke<pc resp="editor">,</pc> dat dyn licham heft de
+        <subst>
+          <del rend="erasure" status="incomplete"><!-- erasure does not 
+          cover the s--> <add rend="overline_with_cross_on_right" 
+          spanTo="#end_o_c"/>schult</del>
+          <add place="lmargin">
+            <unclear cert="high">schon<!--word is split here in the margin-->heit</unclear></add>
+        </subst>v<anchor xml:id="end_o_c"/>an der
+        <lb facs="#B2_159v_a_26"/>seilen<pc resp="editor">,</pc>
+        <choice>
+			<abbr>
+				<choice>
+					<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><am>n&#x304;</am>
+			</abbr>
+			<expan>
+				<choice>
+					<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><ex>nd</ex>
+			</expan>
+		</choice>
+        ghedencke<pc resp="editor">,</pc>
+        dat de schone licham<pc resp="editor">,</pc> dat du
+        <lb facs="#B2_159v_a_27"/>cijrst myt golde
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr><expan>v<ex>nd</ex></expan></choice>
+		myt suluer<pc resp="editor">,</pc>
+        sal werden en spise
+        <lb facs="#B2_159v_a_28"/>der worme<pc resp="editor">."</pc>
+        <hi rend="rubr">D</hi>o antworde
+        <choice>
+			<orig>E</orig><reg type="capit" resp="editor">e</reg></choice>r
+        <name type="person" nymRef="Mary_Magdalene">
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria</name><pc resp="editor">: "</pc>myn 
+		leue
+        wt<sic>u</sic>er<lb facs="#B2_159v_a_29"/>corne<!--utverkorne?? - probably uterkorne-->
+        suster<pc resp="editor">,</pc> na den dat ick also schone byn in
+        mynen <lb facs="#B2_159v_a_30"/>licham
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		in rijcheit desser werlt
+        oueruloye<!--MLG "overvloien = NHG "überfließen; 
+        in riechlichem Maße haben"--><pc resp="editor">,</pc> so
+        bid<lb facs="#B2_159v_a_31"/>de
+        ick dy<pc resp="editor">,</pc> wes to vreden
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		laet my myn
+        guet vor<lb facs="#B2_159v_a_32"/>teren
+        myt vrouden
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		myt<!--do we emendate this?-->ten liefhebbers
+        dosser
+        <lb facs="#B2_159v_a_33"/>werlt<pc resp="editor">,</pc>
+        <choice>
+			<abbr>
+				<choice>
+					<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><am>n&#x304;</am>
+			</abbr>
+			<expan>
+				<choice>
+					<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><ex>nd</ex>
+			</expan>
+		</choice>
+		laet vns nu vrolick
+        wesen to gadder<pc resp="editor">,</pc> we
+        <lb facs="#B2_159v_a_34"/>weet w<unclear cert="high">u</unclear><!--wa is the other option; MLG has "wa" and "we" for NHG "wie"-->
+        langhe<pc resp="editor">."</pc> <hi rend="rubr">D</hi>es anderen daghes toech
+        <name type="person" nymRef="Mary_Magdalene">
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria
+		</name> to
+        <lb facs="#B2_159v_a_35"/>hues
+        <choice>
+			<abbr>
+				<choice>
+					<orig><hi rend="rubr">V</hi></orig>
+					<reg type="capit" resp="editor">v</reg>
+				</choice><am>n&#x304;</am>
+			</abbr>
+			<expan>
+				<choice>
+					<orig><hi rend="rubr">V</hi></orig>
+					<reg type="capit" resp="editor">v</reg>
+				</choice><ex>nd</ex>
+			</expan>
+		</choice>
+		<name type="person" nymRef="Martha"><hi rend="rubr">M</hi>artha</name>
+        wart schreyende
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		weynende<pc resp="editor">,</pc>
+        
+              <!-- next page -->
+        <pb edRef="#B2" facs="#B2_160r" n="fol. 160ra"/>
+        <cb n="fol. 160r"/>
+        <lb facs="#B2_160r_a_01"/>dat eer suster so wilde
+        was<pc resp="editor">.</pc>
+        </ab>
+        <ab xml:id="MaryMagdalene_lovers"><hi rend="rubr">D</hi>ar na ouer twen
+        <choice>
+			<abbr>maend<am>e&#x304;</am></abbr>
+			<expan>maend<ex>en</ex></expan>
+		</choice>
+        <lb facs="#B2_160r_a_02"/>hadden de Juncheren
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		constaueren van 
+        <name type="place" nymRef="Jerusalem">
+			<choice>
+				<abbr><hi rend="rubr">J</hi>herusal<am>e&#x304;</am></abbr>
+				<expan><hi rend="rubr">J</hi>herusal<ex>em</ex></expan>
+			</choice>
+		</name>
+        <lb facs="#B2_160r_a_03"/>een hof
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		ene vrolicheit<pc resp="editor">,</pc> dar
+        wart to ghebeden
+        <name type="person" nymRef="Mary_Magdalene"><hi rend="rubr">M</hi>a<lb facs="#B2_160r_a_04"/>ria
+        <hi rend="rubr">M</hi>agdalena</name>
+        <choice>
+			<abbr>
+				<choice>
+					<orig><hi rend="rubr">V</hi></orig>
+					<reg type="capit" resp="editor">v</reg>
+				</choice><am>n&#x304;</am>
+			</abbr>
+			<expan>
+				<choice>
+					<orig><hi rend="rubr">V</hi></orig>
+					<reg type="capit" resp="editor">v</reg>
+				</choice><ex>nd</ex>
+			</expan>
+		</choice>
+		dar quam se myt groter costelic<lb facs="#B2_160r_a_05"/>heit
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		cijrheit eres lichames als ene liefhebber<lb facs="#B2_160r_a_06"/>sche
+        desser werlt
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		spranck
+		<choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		dansede twe daghe
+        <lb facs="#B2_160r_a_07"/>
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		twe nachte<pc resp="editor">,</pc> so dat se
+        nouwe spise nemen en moch<lb facs="#B2_160r_a_08"/>te
+        van vrolicheit
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		van wildicheit<pc resp="editor">.</pc>
+		</ab>
+		<ab xml:id="market_scene"><hi rend="rubr">J</hi>n
+        der soluen
+        <lb facs="#B2_160r_a_09"/>tijd vornam 
+        <name type="person" 
+        nymRef="Martha"><hi rend="rubr">M</hi>artha</name><pc resp="editor">,</pc>
+        eer suster<pc resp="editor">,</pc> 
+        <del rend="strikethrough"><!--which 
+		attribute name?-->vor</del>tijdinghe<pc resp="editor">,</pc> dat
+        <lb facs="#B2_160r_a_10"/>de here
+        <name type="person" nymRef="Jesus_Christ">
+			<choice>
+				<abbr><am><hi rend="rubr">J</hi>hu&#x304;</am>s</abbr>
+				<expan><ex><hi rend="rubr">J</hi>hesu</ex>s</expan>
+			</choice>
+			<choice>
+				<abbr><am>xpu&#x304;</am>s</abbr>
+				<expan>
+					<ex>
+						<choice>
+							<orig>c</orig><reg type="capit" resp="editor">C</reg></choice>ristu</ex>s
+				</expan>
+			</choice>
+		</name> was in den 
+		<name type="place" nymRef="Galilee">galileschen lande</name>
+		<!--tag only the adjective?-->
+        <lb facs="#B2_160r_a_11"/><choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		wolde to eer comen to
+        <name type="place" nymRef="Bethany">
+			<choice>
+				<orig>b</orig><reg type="capit" resp="editor">B</reg></choice>ethanien</name><pc resp="editor">.</pc>
+        <hi rend="rubr">D</hi>o ghenghen
+        <lb facs="#B2_160r_a_12"/><name type="person" nymRef="Martha"><hi rend="rubr">M</hi>artha</name>
+			<choice>
+				<abbr>v<am>n&#x304;</am></abbr>
+				<expan>v<ex>nd</ex></expan>
+			</choice>
+        <name type="person" nymRef="Martilla"><hi rend="rubr">M</hi>arcella</name><pc 
+        resp="editor">,</pc>
+        de
+        <name type="person" nymRef="Martha">
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>arthen
+		</name>
+        maghet was<pc resp="editor">,</pc>
+        <lb facs="#B2_160r_a_13"/>des morghens vro in de stat van 
+        <name type="place" nymRef="Jerusalem"><hi rend="rubr">J</hi>herusalem</name><pc resp="editor">,</pc>
+        <choice>
+			<abbr>v<am>m&#x304;</am>e</abbr>
+			<expan>v<ex>mm</ex>e</expan>
+		</choice>
+        <lb facs="#B2_160r_a_14"/>spise to copen vor den heren<pc resp="editor">.</pc> <hi rend="rubr">A</hi>lse 
+        <name type="person" nymRef="Martha"><hi rend="rubr">M</hi>artha</name> ghenck
+        <lb facs="#B2_160r_a_15"/>ouer dat market<pc resp="editor">,</pc> so quam van den
+        raethuse myt
+        <lb facs="#B2_160r_a_16"/>pipen
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		myt basunen
+        <name type="person" nymRef="Mary_Magdalene">Maria
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agdalena
+		</name>
+        vor in
+        <choice>
+			<abbr>d<am>e&#x304;</am></abbr>
+			<expan>d<ex>en</ex></expan>
+		</choice>
+        <lb facs="#B2_160r_a_17"/>reye<!--"MM kam ... vorn in dem Reigen"-->
+        myt houerdien<pc resp="editor">.</pc> 
+        <choice>
+			<orig>d</orig>
+			<reg type="capit" resp="editor">D</reg></choice>ijt sach
+        <name type="person" nymRef="Martilla">
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>arcella</name><pc resp="editor">,</pc>
+        <choice>
+			<orig><hi rend="rubr">D</hi></orig><reg type="capit" resp="editor">d</reg></choice>at
+		<name type="person" nymRef="Mary_Magdalene">
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria
+		</name>
+        <lb facs="#B2_160r_a_18"/>ghelet wart myt groter eren
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		vrolicheit<pc 
+        resp="editor">,</pc>
+        <choice>
+			<orig><hi rend="rubr">D</hi></orig><reg type="capit" resp="editor">d</reg></choice>o se<lb facs="#B2_160r_a_19"/>ghede
+		se to erre vrouwen
+        <hi rend="rubr">J</hi>uncfer<pc resp="editor">: "</pc><hi rend="rubr">S</hi>eit
+        <choice>
+			<orig>I</orig>
+			<reg type="capit" resp="editor">i</reg></choice>u
+        suster<pc resp="editor">."</pc>
+        <lb facs="#B2_160r_a_20"/><hi rend="rubr">D</hi>o sach
+        <name type="person" nymRef="Martha"><hi rend="rubr">M</hi>artha</name>
+        <choice>
+			<abbr>v<am>m&#x304;</am>e</abbr>
+			<expan>v<ex>mm</ex>e</expan>
+		</choice>
+		<choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		wart bitterliken seer schre<lb facs="#B2_160r_a_21"/>yende
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		wranck eer hande
+		<choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		sprack ynnichlike<pc 
+        resp="editor">: "</pc><hi rend="rubr">O</hi>ch
+        <lb facs="#B2_160r_a_22"/>myn <name type="person" nymRef="God">god</name>
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		myn
+        schepper<pc resp="editor">,</pc>
+        wu<!--MLG has "wa" and "we" for NHG "wie"; emendation?-->
+        wal mach my noch
+        <lb facs="#B2_160r_a_23"/>duncken<pc resp="editor">,</pc> dat myn suster heft den
+        bosen gheest noch<pc resp="editor">,</pc>
+        <lb facs="#B2_160r_a_24"/>tan bidde ick dy<pc resp="editor">,</pc> dattu se anseen 
+        willest myt
+        <choice>
+			<abbr>dyn<am>e&#x304;</am></abbr>
+			<expan>dyn<ex>en</ex></expan>
+		</choice>
+        <lb facs="#B2_160r_a_25"/>barmhertighen oghen
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		ghijf eer enen anderen
+        <lb facs="#B2_160r_a_26"/>syn<pc resp="editor">,</pc> dat se eer leuen
+        better<pc resp="editor">."</pc>
+        <choice>
+			<abbr><hi rend="rubr">V</hi><am>n&#x304;</am></abbr>
+			<expan><hi rend="rubr">V</hi><ex>nd</ex></expan>
+		</choice>
+		mit desser bedinghe
+        <lb facs="#B2_160r_a_27"/>bleef
+        <name type="person" nymRef="Martha">
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>artha
+		</name>
+        staende
+        <choice>
+			<abbr>
+				<choice>
+					<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><am>n&#x304;</am>
+				</abbr>
+			<expan>
+				<choice>
+					<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><ex>nd</ex>
+			</expan>
+		</choice>
+		beide na erre suster
+        <name type="person" nymRef="Mary_Magdalene">
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>a<lb facs="#B2_160r_a_28"/>rien</name><pc resp="editor">.</pc>
+        <hi rend="rubr">D</hi>o
+        <name type="person" nymRef="Mary_Magdalene"><hi rend="rubr">M</hi>aria</name>
+        bij eer quam<pc resp="editor">,</pc> do sprack se to erre
+        <lb facs="#B2_160r_a_29"/>suster
+        <name type="person" nymRef="Martha"><hi rend="rubr">M</hi>arthen</name>
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		vraghede eer<pc resp="editor">,</pc> waer se so vro in
+        <lb facs="#B2_160r_a_30"/>der stad wolde<pc resp="editor">.</pc>
+        <name type="person" nymRef="Martha"><hi rend="rubr">M</hi>artha</name><pc 
+        resp="editor">,</pc>
+        de hillighe <hi rend="rubr">J</hi>uncfrouwe<pc resp="editor">,</pc>
+        ant<lb facs="#B2_160r_a_31"/>worde
+        eer myt groter oetmodicheit<pc resp="editor">,</pc> dat se
+        we<unclear reason="illegible" cert="high">r</unclear>
+        <lb facs="#B2_160r_a_32"/>ghecomen<pc resp="editor">,</pc> to copen spise to eren
+        gesten<pc resp="editor">.</pc>
+        <choice>
+			<orig>d</orig><reg type="capit" resp="editor">D</reg></choice>o en had<lb facs="#B2_160v_a_33"/>den
+        de twe susteren nijcht vele woerde to gadder
+        
+              <!-- next page -->
+        <pb edRef="#B2" facs="#B2_160v" n="fol. 160va"/>
+        <cb n="fol. 160v"/><lb facs="#B2_160v_a_01"/>
+        <choice>
+			<abbr>v<am>m&#x304;</am>e</abbr>
+			<expan>v<ex>mm</ex>e</expan>
+		</choice> des volkes
+        willen<pc resp="editor">,</pc> dat dar bij ein
+        stont<pc resp="editor">.</pc>
+        <hi rend="rubr">M</hi>er
+        <name type="person" nymRef="Mary_Magdalene">
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria
+		</name>
+        <lb facs="#B2_160v_a_02"/>sprack myt lachenden
+        munde<pc resp="editor">: "</pc>suster
+        leue<pc resp="editor">,</pc> koepet <!--NB the variable spelling 
+        of the word: copen - koepet-->ock wat
+        <lb facs="#B2_160v_a_03"/>vor my<pc resp="editor">.</pc>
+        <choice>
+			<orig>i</orig><reg type="capit" resp="editor">I</reg></choice>ck will to dy comen
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		myt dy etten<pc resp="editor">."</pc> <hi rend="rubr">H</hi>ijr aff spre<lb facs="#B2_160v_a_04"/>ket
+        de hillighe gloriose lerre
+		<choice>
+			<abbr>S<am>c&#x304;</am>
+				<del rend="rubr_erasure">
+					<unclear reason="illegible" cert="high">i
+					</unclear>
+				</del><!--since i would be the wrong case ending, this seems reasonable-->
+			</abbr>
+			<expan>S<ex>anct</ex>
+				<del rend="rubr_erasure"><unclear reason="illegible" cert="high">i</unclear></del></expan>
+		</choice>
+		<name type="person" nymRef="Augustine"><hi rend="rubr">A</hi>ugustinus</name><pc resp="editor">,</pc>
+        <choice>
+			<orig><hi rend="rubr">D</hi></orig><reg type="capit" resp="editor">d</reg></choice>at
+		<name type="person" nymRef="Mary_Magdalene"><hi rend="rubr">M</hi>a<lb facs="#B2_160v_a_05"/>ria</name>
+        ny bynnen al eren daghen better maeltijt
+        enat<pc resp="editor">,</pc> dan
+        <lb facs="#B2_160v_a_06"/>desse<pc resp="editor">,</pc> wante hijr wart se
+        bekeert van eren sundighen
+        <lb facs="#B2_160v_a_07"/>leuene<pc resp="editor">.</pc>
+        </ab>
+        <ab xml:id="Mary_at_Marthas_house"><hi rend="rubr">D</hi>es anderen daghes ghenck
+        <name type="person" nymRef="Mary_Magdalene"><hi rend="rubr">M</hi>aria</name> van
+        gro<lb facs="#B2_160v_a_08"/>ter
+        moetheit al hemelike wt<!--resolve into 'ut'?-->
+        <name type="place" nymRef="Jerusalem"><hi 
+        rend="rubr">J</hi>herusalem</name>
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+        quam to
+        <lb facs="#B2_160v_a_09"/><name type="person" nymRef="Martha"><hi rend="rubr">M</hi>arthen</name> erre
+        suster hues to
+        <name type="place" nymRef="Bethany">
+			<choice>
+				<orig>b</orig><reg type="capit" resp="editor">B</reg></choice>ethanijen</name><pc resp="editor">,</pc>
+        de se lieflike
+        <lb facs="#B2_160v_a_10"/>vntfenck myt vrolicheit
+        <choice>
+			<abbr>
+				<choice>
+					<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><am>n&#x304;</am>
+			</abbr>
+			<expan>
+				<choice>
+					<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><ex>nd</ex>
+			</expan>
+		</choice>
+		hette se gaen
+        sytten<pc resp="editor">.</pc> <hi rend="rubr">D</hi>o
+        <lb facs="#B2_160v_a_11"/>sprack
+        <name type="person" nymRef="Mary_Magdalene"><hi rend="rubr">M</hi>aria</name><pc 
+        resp="editor">: "</pc><choice><orig>o</orig><reg type="capit" resp="editor">O</reg></choice>ch
+        leue suster<pc resp="editor">,</pc> des is my groet noet
+        <lb facs="#B2_160v_a_12"/><choice>
+			<abbr><hi rend="rubr">v</hi><am>n&#x304;</am></abbr>
+			<expan><hi rend="rubr">v</hi><ex>nd</ex></expan>
+		</choice>
+		ick behouet wal<pc resp="editor">,</pc> dat ick
+        my mochte
+        rosten<!--MLG for NHD "rasten, ruhen, sich
+         erholen"--><pc resp="editor">,</pc>
+        want
+        <lb facs="#B2_160v_a_13"/>ick hebbe twe gansse daghe
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		nachte
+		<choice>
+			<abbr>ghesprongh<am>e&#x304;</am></abbr>
+			<expan>ghesprongh<ex>en</ex></expan>
+		</choice>
+        <lb facs="#B2_160v_a_14"/><choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		vrolick ghewesen myt den <hi rend="rubr">J</hi>uncheren van
+        <name type="place" nymRef="Jerusalem"><hi 
+        rend="rubr">J</hi>he<lb facs="#B2_160v_a_15"/>rusalem</name>
+        <choice>
+			<abbr>V
+				<choice>
+					<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><am>n&#x304;</am>
+			</abbr>
+			<expan>
+				<choice>
+					<orig><hi rend="rubr">V</hi></orig><reg type="capit" resp="editor">v</reg></choice><ex>nd</ex>
+			</expan>
+		</choice>
+        en hebbe nu<!--abbreviation above? unlikely--> van<!--unclear 
+        which word--> alle
+        den daghen mynes
+        <lb facs="#B2_160v_a_16"/>leuens up ene tijt also vrolick ghewesen alse nu
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+        <lb facs="#B2_160v_a_17"/>ick habbe de gansse stat van
+        <name type="place" nymRef="Jerusalem"><hi
+        rend="rubr">J</hi>herusalem</name>
+        vrolick
+        ghe<lb facs="#B2_160v_a_18"/>maket<pc resp="editor">,"</pc>
+        recht of se segghen wolde<pc resp="editor">: "</pc><choice><orig>n</orig><reg type="capit" resp="editor">N</reg></choice>u
+        endanse ick
+        <lb facs="#B2_160v_a_19"/>
+        <choice>
+			<abbr>nu<am>m&#x304;</am>er</abbr>
+			<expan>nu<ex>mm</ex>er</expan>
+		</choice>
+        mer<pc resp="editor">."</pc>
+        <name type="person" nymRef="Martha"><hi rend="rubr">M</hi>artha</name><pc 
+        resp="editor">,</pc> de
+        hillighe Juncfer<pc resp="editor">,</pc> antworde
+        <lb facs="#B2_160v_a_20"/>erre suster
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		vraghede<pc resp="editor">: "</pc><hi rend="rubr">L</hi>eue
+        suster<pc resp="editor">,</pc> na den dattu
+        <lb facs="#B2_160v_a_21"/>so vrolick bijst
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		nu ghewesen hebbest<pc resp="editor">,</pc> 
+        <choice>
+			<orig><hi rend="rubr">H</hi></orig>
+			<reg type="capit" resp="editor">h</reg></choice>edde
+        gij<!--MLG gi = NHG ihr; Dutch gij = NHG du, ihr-->
+        <lb facs="#B2_160v_a_22"/>nu ock den conynck
+        <choice>
+			<abbr>leeff<am>&#x31b;</am></abbr> <!-- is this actually an abbreviation or just the loop of the f?-->
+			<expan>leeff<ex>er</ex></expan></choice><pc resp="editor">,</pc>
+        de alle herten vrolick ma<lb facs="#B2_160v_a_23"/>ket
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		de de schoenste is bouen<!--MLG for NHG "oben, 
+        oberhalb, über, über hinaus, 
+        mehr als, außer, abgesehen von, trotz, gegen, wider"--> alle
+        konynghe<pc resp="editor">."</pc> <hi rend="rubr">D</hi>o
+        <lb facs="#B2_160v_a_24"/>sprack
+        <name type="person" nymRef="Mary_Magdalene"><hi rend="rubr">M</hi>aria</name><pc 
+        resp="editor">: "</pc><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>yt vns
+        en weren ghijne conyncge<pc resp="editor">.</pc><!--NB the 
+        variations in spelling 'king'-->
+        <lb facs="#B2_160v_a_25"/>Wen menstu<pc resp="editor">,</pc> den keiser
+        <name type="name" nymRef="Tiberius">
+			<choice>
+				<orig>t</orig><reg type="capit" resp="editor">T</reg></choice>yberius</name><pc resp="editor">?"</pc> 
+		<name type="name" nymRef="Martha"><hi rend="rubr">M</hi>artha</name>
+        <del rend="strikethrough">de</del> ant<lb facs="#B2_160v_a_26"/>worde
+        eer
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		seghede<pc resp="editor">: "</pc><hi rend="rubr">J</hi>ck
+        en meyne <del rend="rubr_strikethrough">nycht</del>
+        <choice>
+			<abbr>
+				<choice>
+					<orig>t</orig><reg type="capit" resp="editor">T</reg></choice>iberi<am>&#xa76e;</am>
+			</abbr>
+			<expan>
+				<choice>
+					<orig>t</orig><reg type="capit" resp="editor">T</reg></choice>iberi<ex>us</ex>
+			</expan>
+		</choice>
+        <lb facs="#B2_160v_a_27"/>nycht<!-- should we group this nycht 
+        with the deleted one? --><pc resp="editor">,</pc>
+        de dar is eyn conynck der menschen<pc resp="editor">,</pc> meer
+        <lb facs="#B2_160v_a_28"/>ick meyne den konynck alre konyncghe
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		den
+        <lb facs="#B2_160v_a_29"/>richter hemelrikes
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		eertrikes
+		<choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		de dar is en
+        <lb facs="#B2_160v_a_30"/>vorloser der <name type="org" nymRef="Children_of_Israel">kynder
+        van <name type="place" nymRef="Israel"><hi 
+        rend="rubr">J</hi>srahel</name></name>
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		de dar an em
+        <lb facs="#B2_160v_a_31"/>draghet alle schoenheit
+        der werlt<pc resp="editor">,</pc>
+        <choice>
+			<orig><hi rend="rubr">W</hi></orig><reg type="capit" resp="editor">w</reg></choice>ante
+		syn va<lb facs="#B2_160v_a_32"/>der is <name type="person" nymRef="God">god</name>
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		syn moder is ene reyne
+        <hi rend="rubr">J</hi>unckfrouwe<pc resp="editor">,</pc>
+        <lb facs="#B2_160v_a_33"/>de dar gheboren is van den konyncliken
+        <name type="org" subtype="religion" nymRef="Tribe_of_David">
+			<choice>
+				<abbr>sta<am>m&#x304;</am>e</abbr>
+				<expan>sta<ex>mm</ex>e</expan>
+			</choice>heer
+                         
+              <!-- next page -->
+		<pb edRef="#B2" facs="#B2_161r" n="fol. 161ra"/>
+		<cb n="fol. 161r"/><lb facs="#B2_161r_a_01"/>
+		<name type="person" nymRef="David"><choice>
+			<orig>d</orig><reg type="capit" resp="editor">D</reg></choice>auytes</name></name><pc resp="editor">."</pc>
+        <hi rend="rubr">D</hi>o vraghede
+        <name type="person" nymRef="Mary_Magdalene"><hi rend="rubr">M</hi>aria</name>
+        van den leefhebbers
+        <lb facs="#B2_161r_a_02"/>desser werlt <!--meaning: from the perspective of the lovers/with their mindset-->
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+        seghede<pc resp="editor">: "</pc><choice><orig>o</orig><reg type="capit" resp="editor">O</reg></choice>ch
+        leue suster<pc resp="editor">,</pc> waer is he des<lb facs="#B2_161r_a_03"/>se
+        schone conynck<pc resp="editor">,</pc> dar du also grote
+        dynghe van spre<lb facs="#B2_161r_a_04"/>kest?
+        <choice>
+			<orig>i</orig><reg type="capit" resp="editor">I</reg></choice>s he also schone<pc resp="editor">,</pc> 
+		<choice>
+			<orig><hi rend="rubr">J</hi></orig><reg type="capit" resp="editor">j</reg></choice>ck wil ene
+        <choice>
+			<abbr>v<am>m&#x304;</am>er</abbr>
+			<expan>v<ex>mm</ex>er</expan>
+		</choice>
+		myt mynen
+        <lb facs="#B2_161r_a_05"/>ghelde
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		gude to myner vrentschap noeden<pc resp="editor">."</pc>
+        <name type="person" nymRef="Martha"><hi rend="rubr">M</hi>artha</name>
+        <lb facs="#B2_161r_a_06"/>antworde<pc resp="editor">: "</pc><hi rend="rubr">D</hi>en
+        konynck<pc resp="editor">,</pc> den ick meyne<pc 
+        resp="editor">,</pc> dat is myn
+        <lb facs="#B2_161r_a_07"/>leue here
+        <name type="person" nymRef="Jesus_Christ">
+			<choice>
+				<abbr><am><hi rend="rubr">J</hi>hu&#x304;</am>s</abbr>
+				<expan><ex><hi rend="rubr">J</hi>hesu</ex>s</expan>
+			</choice>
+			<choice>
+				<abbr><am>xpu&#x304;</am>s</abbr>
+				<expan>
+					<ex>
+						<choice>
+							<orig>c</orig><reg type="capit" resp="editor">C</reg></choice>ristu</ex>s</expan></choice></name><pc resp="editor">,</pc> de dar is eyn
+        arste der Zeilen<pc resp="editor">,"</pc>
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+        <lb facs="#B2_161r_a_08"/>myt ten worden weynede <hi rend="rubr">M</hi>artha dar
+        <choice>
+			<abbr>v<am>m&#x304;</am>e</abbr>
+			<expan>v<ex>mm</ex>e</expan></choice><pc resp="editor">,</pc>
+        dat
+        <name type="person" nymRef="Mary_Magdalene">
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria
+		</name>
+        <lb facs="#B2_161r_a_09"/>dat nycht gheestlike en vorstont<pc resp="editor">,</pc>
+        mer vleeschlike<pc resp="editor">.</pc>
+        <lb facs="#B2_161r_a_10"/><hi rend="rubr">D</hi>o sach 
+        <name type="person" nymRef="Mary_Magdalene">
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria</name><pc resp="editor">,</pc> dat
+		<name type="person" nymRef="Martha">
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>artha
+		</name> eer
+        suster weynede<pc resp="editor">.</pc> <hi rend="rubr">D</hi>o vra<lb facs="#B2_161r_a_11"/>ghede
+        <choice>
+				<orig><hi rend="rubr">E</hi></orig><reg type="capit" resp="editor">e</reg></choice>er
+        <name type="person" nymRef="Mary_Magdalene">
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria
+		</name>
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		seghede<pc resp="editor">: "</pc><choice><orig>l</orig><reg type="capit" resp="editor">L</reg></choice>eue
+        suster<pc resp="editor">,</pc> waer
+        <choice>
+			<abbr>v<am>m&#x304;</am>e</abbr>
+			<expan>v<ex>mm</ex>e</expan>
+		</choice>
+        <lb facs="#B2_161r_a_12"/>weynestu alle tijt<pc resp="editor">,</pc> alse
+        ick to dy kome<!-- uncertain? --><pc resp="editor">?</pc>
+        <hi rend="rubr">J</hi>s dat al myn
+        <lb facs="#B2_161r_a_13"/>schult<pc resp="editor">,</pc> so seghe my
+        dat<pc resp="editor">,</pc> so wil
+        ick gherne van dy bli<lb facs="#B2_161r_a_14"/>uen<pc resp="editor">."</pc>
+        <hi rend="rubr">D</hi>o sprack 
+        <name type="person" nymRef="Martha"><hi rend="rubr">M</hi>artha</name><pc 
+        resp="editor">: "</pc><choice><orig>o</orig><reg type="capit" resp="editor">O</reg></choice>ch
+        leue suster<pc resp="editor">,</pc> en mach ick
+        <lb facs="#B2_161r_a_15"/>nycht wal schreyen
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		weynen
+		<choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		my bedrouen<!--MLG bedröven = NHG betrüben,
+		 beunruhigen, bekümmern--><pc resp="editor">,</pc>
+        <choice>
+			<abbr>wa<am>t&#x304;</am></abbr>
+			<expan>wa<ex>nt</ex></expan>
+		</choice>
+        <lb facs="#B2_161r_a_16"/>ick alle tijt horen moet<pc resp="editor">,</pc>
+        dattu dyn gude gheruchte<pc resp="editor">,</pc>
+        <lb facs="#B2_161r_a_17"/>dat better is dan suluer
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		golt<pc resp="editor">,</pc>
+        vorloren heuest<pc resp="editor">,</pc>
+        <lb facs="#B2_161r_a_18"/><choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		dyne gheselschap en is nycht
+        guet<pc resp="editor">,</pc>
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		dattu
+        <lb facs="#B2_161r_a_19"/>beuleckest dyne Zeile myt groten sunden<pc resp="editor">,</pc>
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+        altoes<!-- meaning? MLG "altoges" = NHD "stets, immerwährend" -->
+        <lb facs="#B2_161r_a_20"/>moet ick dyn boese gheruchte horen<pc resp="editor">,</pc>
+        waer ick byn<pc resp="editor">."</pc>
+        <lb facs="#B2_161r_a_21"/><name type="person" nymRef="Mary_Magdalene"><hi rend="rubr">M</hi>aria
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agdalena
+		</name>
+        en conde sick nycht langher
+        <lb facs="#B2_161r_a_22"/>vntholden<pc resp="editor">,</pc>
+        do se eer leuen suster
+        <name type="person" nymRef="Martha">
+			<choice>
+				<orig><hi rend="rubr">m</hi></orig><reg type="capit" resp="editor">M</reg></choice>arthen
+		</name> so sere
+        <lb facs="#B2_161r_a_23"/>sach weynen<pc resp="editor">.</pc>
+        <hi rend="rubr">D</hi>o sprack se myt weynenden
+        <choice>
+			<abbr>ogh<am>e&#x304;</am></abbr>
+			<expan>ogh<ex>en</ex></expan></choice><pc resp="editor">: "</pc><lb facs="#B2_161r_a_24"/><hi rend="rubr">O</hi>ch leue
+        suster<pc resp="editor">,</pc>
+        al ist<pc resp="editor">,</pc> dat ick vorloren hebbe myne
+        <lb facs="#B2_161r_a_25"/>eer
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		myn gude gheruchte<pc resp="editor">,</pc>
+        ghijff my doch enen
+        <lb facs="#B2_161r_a_26"/>guden raet<pc resp="editor">,</pc> dat ick myn leuen
+        mach betteren
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+        <lb facs="#B2_161r_a_27"/>myne groten sunde<pc resp="editor">,</pc> dat ick
+        <choice>
+			<abbr>y<am>n&#x304;</am>e</abbr>
+			<expan>y<ex>nn</ex>e</expan>
+		</choice>
+		byn<pc resp="editor">."</pc> <hi rend="rubr">D</hi>o
+        antwor<lb facs="#B2_161r_a_28"/>de
+        <name type="person" nymRef="Martha"><hi rend="rubr">M</hi>artha</name><pc 
+        resp="editor">: "</pc><choice><orig>l</orig><reg type="capit" resp="editor">L</reg></choice>eue
+        suster<pc resp="editor">,</pc> ick en kan dy gynen<!-- note that
+        below it´s "gijne" -->
+        <choice>
+			<abbr>better<am>e&#x304;</am></abbr>
+			<expan>better<ex>en</ex></expan>
+		</choice>
+        <lb facs="#B2_161r_a_29"/>raet ghegeuen<pc resp="editor">,</pc>
+        dan beide<!-- NHD "beten"? -->
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		blijf hijr myt my
+        <lb facs="#B2_161r_a_30"/>ene corte stunde huden ofte
+        morghen<pc resp="editor">,</pc> so comet
+        <lb facs="#B2_161r_a_31"/>de arste der seilen 
+        <name type="person" nymRef="Jesus_Christ">
+			<choice>
+			<abbr><am>xpu&#x304;</am>s</abbr>
+			<expan>
+				<ex>
+					<choice>
+						<orig>c</orig><reg type="capit" resp="editor">C</reg></choice>ristu</ex>s
+			</expan>
+		</choice>
+		<hi rend="rubr">J</hi>esus</name><pc resp="editor">,</pc> myn hogheste
+        <lb facs="#B2_161r_a_32"/>troest
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		myn alre leueste
+        gast<pc resp="editor">.</pc>
+        <choice>
+			<orig>b</orig>
+			<reg type="capit" resp="editor">B</reg></choice>idde em<pc resp="editor">,</pc> dat
+        <lb facs="#B2_161r_a_33"/>he dy vorgheue all dyne sunde<pc resp="editor">."</pc>
+        </ab>
+        <ab xml:id="Jesus_enters"><hi rend="rubr">D</hi>o
+        <name type="person" nymRef="Mary_Magdalene">
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria
+		</name> desse
+        
+              <!-- next page -->
+        <pb edRef="#B2" facs="#B2_161v" n="fol. 161va"/>
+        <cb n="fol. 161v"/><lb facs="#B2_161v_a_01"/>worde
+        hoerde<pc resp="editor">,</pc>
+        eer dat se eer antworde<pc resp="editor">,</pc> so sach
+        <lb facs="#B2_161v_a_02"/>de maghet wt der doer
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		sach<pc resp="editor">,</pc> dat
+        <name type="person" nymRef="Jesus_Christ">
+			<choice>
+				<abbr><am>Jhu&#x304;</am>s</abbr>
+				<expan><ex>Jhesu</ex>s</expan>
+			</choice>
+		</name> quam
+        <lb facs="#B2_161v_a_03"/>myt synen hillighen Jungeren<pc resp="editor">.</pc>
+        <hi rend="rubr">D</hi>o sprack se to
+        <lb facs="#B2_161v_a_04"/><name type="person" nymRef="Martha"><hi rend="rubr">M</hi>arthen</name><pc 
+        resp="editor">: "</pc>Juncfer<pc resp="editor">,</pc>
+        de here comet<pc resp="editor">."</pc>
+        <choice>
+			<orig>d</orig><reg type="capit" resp="editor">D</reg></choice>o stont
+        <name type="person" nymRef="Martha"><hi rend="rubr">M</hi>ar<lb facs="#B2_161v_a_05"/>tha</name>
+        myt groter vrolicheit up
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		ock
+        <name type="person" nymRef="Mary_Magdalene">
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria</name><pc resp="editor">.</pc>
+		<hi rend="rubr">D</hi>o 
+        <lb facs="#B2_161v_a_06"/>seghede
+        <name type="person" nymRef="Martha"><hi rend="rubr">M</hi>artha</name><pc 
+        resp="editor">: "</pc><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>yn
+        leue suster<pc resp="editor">,</pc> wes nu vrolick
+        <lb facs="#B2_161v_a_07"/><choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		vorvrouwe dy<pc resp="editor">,</pc>
+        wante he is so lustelick in
+        <choice>
+			<abbr>syn<am>e&#x304;</am></abbr>
+			<expan>syn<ex>en</ex></expan>
+		</choice>
+        <lb facs="#B2_161v_a_08"/>worden<pc resp="editor">,</pc> dattu
+        in alle dynen daghen nu synes ghe<lb facs="#B2_161v_a_09"/>likes
+        enhebbest ghehoert<pc resp="editor">."</pc> <hi rend="rubr">D</hi>o sprack
+        <hi rend="rubr">M</hi>aria<pc resp="editor">: "</pc><choice><orig>l</orig><reg type="capit" resp="editor">L</reg></choice>eue
+        <lb facs="#B2_161v_a_10"/>suster<pc resp="editor">,</pc> welck is de
+        here<pc resp="editor">?"</pc>
+        <hi rend="rubr">D</hi>o gaff se eer en teiken<pc resp="editor">,</pc>
+        <lb facs="#B2_161v_a_11"/>dat se ene
+        eer<choice>
+			<abbr>ke<am>n&#x304;</am>ende</abbr>
+			<expan>ke<ex>nn</ex>ende</expan>
+		</choice> makede 
+        buten<!-- MLG Präp. for NHD "außerhalb, außen, draußen, auswärts" -> 
+        ~dass sie ihn von den anderen unterscheiden möge?--> den
+        <choice>
+			<abbr>ander<am>e&#x304;</am></abbr>
+			<expan>ander<ex>en</ex></expan>
+		</choice>
+        <lb facs="#B2_161v_a_12"/>apostelen<pc resp="editor">.</pc> <hi rend="rubr">D</hi>o de here
+        <name type="person" nymRef="Jesus_Christ"><hi 
+        rend="rubr">J</hi>hesus
+        <choice>
+			<abbr><am>xpu&#x304;</am>s</abbr>
+			<expan>
+				<ex>
+					<choice>
+						<orig>c</orig><reg type="capit" resp="editor">C</reg></choice>ristu</ex>s
+			</expan>
+		</choice></name>
+        in ghenck in
+        <lb facs="#B2_161v_a_13"/>dat hues<pc resp="editor">,</pc>
+        <name type="person" nymRef="Mary_Magdalene"><hi rend="rubr">M</hi>aria</name>
+        de stont by der doren
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		scha<lb facs="#B2_161v_a_14"/>mede
+        eer seer<pc resp="editor">.</pc>
+        <name type="person" nymRef="Martha"><hi rend="rubr">M</hi>artha</name>
+        ghenck den heren
+        <choice>
+			<abbr>entegh<am>e&#x304;</am></abbr>
+			<expan>entegh<ex>en</ex></expan>
+		</choice>
+        <lb facs="#B2_161v_a_15"/>myt ghebogheden kneen
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		hette den heren wil<lb facs="#B2_161v_a_16"/>lecome
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		vntfenck ene myt groter erwerdic<lb facs="#B2_161v_a_17"/>heit
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		louede vnsen leuen heren<pc resp="editor">.</pc>
+        <name type="person" nymRef="Jesus_Christ"><hi 
+        rend="rubr">J</hi>hesus
+			<choice>
+				<orig>c</orig><reg type="capit" resp="editor">C</reg></choice>ristus
+		</name>
+        <lb facs="#B2_161v_a_18"/>ghenck vor bij
+        <name type="person" nymRef="Mary_Magdalene">
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>arien
+		</name>
+        in dat hues
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		en sprack
+        <lb facs="#B2_161v_a_19"/>eer nycht to<pc resp="editor">.</pc> <hi rend="rubr">D</hi>o sprack
+        <name type="person" nymRef="Martha"><hi rend="rubr">M</hi>artha</name> to vnsen heren
+        <lb facs="#B2_161v_a_20"/><choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		seghede<pc resp="editor">: "</pc><choice><orig>h</orig><reg type="capit" resp="editor">H</reg></choice>ere<pc resp="editor">,</pc>
+        sue<pc resp="editor">,</pc> dijt is myn suster
+        <name type="person" nymRef="Mary_Magdalene">
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria</name><pc resp="editor">,"</pc>
+        <lb facs="#B2_161v_a_21"/><hi rend="rubr">r</hi>echt ofte se segghen
+        wolde<pc resp="editor">: "</pc><hi rend="rubr">D</hi>ijt
+        is se<pc resp="editor">,</pc> dar ick
+        <lb facs="#B2_161v_a_22"/>
+        <choice>
+			<abbr>v<am>m&#x304;</am>e</abbr>
+			<expan>v<ex>mm</ex>e</expan>
+		</choice>
+		weyne
+		<choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+        schreye<pc resp="editor">,</pc>
+        <choice>
+			<orig><hi rend="rubr">D</hi></orig><reg type="capit" resp="editor">d</reg></choice>ijt
+		is se<pc resp="editor">,</pc> de also swaerli<lb facs="#B2_161v_a_23"/>ke
+        heft ghesundighet <del rend="erasure">heft</del><pc 
+        resp="editor">.</pc>
+        <choice>
+			<orig>s</orig><reg type="capit" resp="editor">S</reg></choice>ue se an myt ten
+        <choice>
+			<abbr>ogh<am>e&#x304;</am></abbr>
+			<expan>ogh<ex>en</ex></expan>
+		</choice>
+        <lb facs="#B2_161v_a_24"/>dynre barmherticheit
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		vorghijff eer al ere
+        <lb facs="#B2_161v_a_25"/>sunde<pc resp="editor">."</pc> <hi rend="rubr">D</hi>o keerde ein de
+        here
+        <choice>
+			<abbr>v<am>m&#x304;</am>e</abbr>
+			<expan>v<ex>mm</ex>e</expan>
+		</choice>
+		<choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		sach se an
+        <lb facs="#B2_161v_a_26"/>myt ten oghen synre
+        barmherticheit<pc resp="editor">,</pc> dar he mede
+        <lb facs="#B2_161v_a_27"/>an sach den hillighen apostel
+        <name type="person" nymRef="Peter">
+			<choice>
+				<orig>s</orig><reg type="capit" resp="editor">S</reg></choice>unte
+			<choice>
+				<orig>p</orig><reg type="capit" resp="editor">P</reg></choice>eter
+		</name> in der
+        <lb facs="#B2_161v_a_28"/>tijt<pc resp="editor">,</pc> do he em
+        vorsakede<pc resp="editor">.</pc>
+        </ab>
+        <ab xml:id="Mary_retreats">
+        <name type="person" nymRef="Mary_Magdalene"><hi rend="rubr">M</hi>aria</name>
+        van groter scha<lb facs="#B2_161v_a_29"/>mede<pc resp="editor">,</pc>
+        de se krech in den anseyne vnses heren<pc resp="editor">,</pc>
+        <lb facs="#B2_161v_a_30"/>ghenck in de slaepcamer erre suster
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		vel myt
+        <lb facs="#B2_161v_a_31"/>groten weynen vp de eerden<choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		eer sunden
+        <lb facs="#B2_161v_a_32"/>berouweden er van gansen herten
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		se dach<lb facs="#B2_161v_a_33"/>te
+        ouer al eer sunden<pc resp="editor">,</pc> de se ghedaen
+        hadde al eer
+  
+  
+              <!-- next page -->
+        <pb edRef="#B2" facs="#B2_162r" n="fol. 162ra"/>
+        <cb n="fol. 162r"/>daghe<pc resp="editor">.</pc>
+        <name type="person" nymRef="Martha"><hi rend="rubr">M</hi>artha</name>
+        bleeff myt den heren staende
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		sprack
+        <lb facs="#B2_162r_a_02"/>vreintlike myt em<pc resp="editor">.</pc> <hi rend="rubr">J</hi>n
+        der soluen tijd quam
+        <name type="person" nymRef="Simon">
+			<choice>
+				<orig>s</orig><reg type="capit" resp="editor">S</reg></choice>ymon
+			<choice>
+				<orig>l</orig><reg type="capit" resp="editor">L</reg></choice>epro<lb facs="#B2_162r_a_03"/>sus
+		</name>
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		bat den heren to gaste myt synen Jungeren<pc resp="editor">.</pc>
+		<choice>
+				<orig>v</orig><reg type="capit" resp="editor">V</reg></choice>nde
+        <lb facs="#B2_162r_a_04"/>do et quam bij der maeltijt<!--see D for similar, and
+         particularly G for identical rendition ('do et' appears to be 'doet'--><pc resp="editor">,</pc>
+        ghenck de here in
+        <name type="person" nymRef="Simon">
+			<choice>
+				<orig>s</orig><reg type="capit" resp="editor">S</reg></choice>ymons
+		</name>
+        <lb facs="#B2_162r_a_05"/>hues<pc resp="editor">.</pc>
+        </ab>
+        <ab xml:id="Martha_encourages_Mary">
+        <choice>
+			<abbr><hi rend="rubr">V</hi><am>n&#x304;</am></abbr>
+			<expan><hi rend="rubr">V</hi><ex>nd</ex></expan>
+		</choice>
+        <name type="person" nymRef="Martha">
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>artha
+		</name> quam to
+        eere suster
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		seghede eer<pc resp="editor">,</pc>
+        <lb facs="#B2_162r_a_06"/>dat de here were en wechghegaen<pc resp="editor">.</pc>
+        <hi rend="rubr">D</hi>o sprack
+        <name type="person" nymRef="Mary_Magdalene">
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria</name><pc resp="editor">: "</pc><lb facs="#B2_162r_a_07"/><hi rend="rubr">O</hi>ch leue
+        suster<pc resp="editor">,</pc>
+        du haddest my ghesecht<pc resp="editor">,</pc> dat de here also
+        <lb facs="#B2_162r_a_08"/>lieflick was in synen anghesichte<pc resp="editor">.</pc>
+        <hi rend="rubr">J</hi>ck segghe dy<pc resp="editor">,</pc> dat
+        <lb facs="#B2_162r_a_09"/>ick in alle mynen leuene ny
+        vrefeliker<!-- MLG for NHG "trotzig, zornig, verwegen, frech,
+        vermessen"; MLG "vreiselik" = NHG "schrecklich,
+        grimmig, furchtbar, gewaltig, Gefahr bringend -->
+        anghesichte en 
+        <lb facs="#B2_162r_a_10"/>sach<pc resp="editor">,</pc> alse my de here
+        bewisede<pc resp="editor">,</pc>
+        do he my ansach<pc resp="editor">.</pc>
+        <choice>
+			<orig>w</orig><reg type="capit" resp="editor">W</reg></choice>ante he
+        <lb facs="#B2_162r_a_11"/>sach my doer myn herte<pc resp="editor">,</pc>
+        also dat ick bekande alle myne
+        <lb facs="#B2_162r_a_12"/>sunde<pc resp="editor">,</pc> de ick ghedaen
+        hebbe<pc resp="editor">."</pc> 
+        <name type="person" nymRef="Martha"><hi rend="rubr">M</hi>artha</name>
+        sprack<pc resp="editor">: "</pc><choice><orig>l</orig><reg type="capit" resp="editor">L</reg></choice>eue
+        suster<pc resp="editor">,</pc>
+        <lb facs="#B2_162r_a_13"/>hebbet berouwen<pc resp="editor">.</pc>
+        <choice>
+			<orig>d</orig><reg type="capit" resp="editor">D</reg></choice>e here
+        sal iu noch
+        <choice>
+			<abbr><am>v&#xa770;</am></abbr>
+			<expan><ex>vor</ex></expan>
+		</choice>gheuen alle yu<lb facs="#B2_162r_a_14"/>we<!--weird form-->
+        sunde<!-- is there a punctuation here? (probably not)--><pc resp="editor">.</pc>
+        <choice>
+			<abbr><hi rend="rubr">V</hi><am>n&#x304;</am></abbr>
+			<expan><hi rend="rubr">V</hi><ex>nd</ex></expan>
+		</choice>
+		ich wil
+        gaen
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		deynen em ter tafelen in
+        <lb facs="#B2_162r_a_15"/><name type="person" nymRef="Simon">
+			<choice>
+				<orig>s</orig><reg type="capit" resp="editor">S</reg></choice>ymons
+		</name>
+        hues<pc resp="editor">,</pc> dar sal he
+        etten<pc resp="editor">.</pc> <hi rend="rubr">C</hi>um du dar ock
+        mede<pc resp="editor">."</pc>
+        <lb facs="#B2_162r_a_16"/><name type="person" nymRef="Mary_Magdalene"><hi rend="rubr">M</hi>aria</name>
+        sloech eer anghesichte ter eerden
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		en antwor<lb facs="#B2_162r_a_17"/>de
+        eer nycht<pc resp="editor">.</pc>
+        </ab>
+        <ab xml:id="Martha_in_Simons_house"><hi rend="rubr">E</hi>er suster
+        <name type="person" nymRef="Martha">
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>artha
+		</name> ghenck
+        in dat hues
+        <lb facs="#B2_162r_a_18"/><name type="person" nymRef="Simon">
+			<choice>
+				<orig>s</orig><reg type="capit" resp="editor">S</reg></choice>ymons</name><pc resp="editor">,</pc> den heren to
+        deynen<pc resp="editor">.</pc> <hi rend="rubr">D</hi>e here
+        <name type="person" nymRef="Jesus_Christ"><hi 
+        rend="rubr">J</hi>hesus</name> vraghede
+        <lb facs="#B2_162r_a_19"/>eer<pc resp="editor">: "</pc><name type="person" nymRef="Martha"><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>artha</name><pc resp="editor">,</pc>
+        waer is dyn suster?
+        <choice>
+			<orig>w</orig><reg type="capit" resp="editor">W</reg></choice>ilse
+		ock comen<pc resp="editor">?"</pc>
+        <name type="person" nymRef="Martha"><hi rend="rubr">M</hi>artha</name>
+        <lb facs="#B2_162r_a_20"/>antworde den heren
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		sprack<pc resp="editor">: "</pc><hi rend="rubr">O</hi>ch
+        leue here<pc resp="editor">,</pc> myn sus<lb facs="#B2_162r_a_21"/>ter
+        licht
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		schreyet
+		<choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		claghet<pc resp="editor">,</pc>
+        dattu se also strengeli<lb facs="#B2_162r_a_22"/>ke
+        hebbest angheseen<pc resp="editor">.</pc> <hi rend="rubr">H</hi>ijr
+        <choice>
+			<abbr>v<am>m&#x304;</am>e</abbr>
+			<expan>v<ex>mm</ex>e</expan>
+		</choice>
+		bidde ick dy<pc resp="editor">,</pc> du
+        troes<lb facs="#B2_162r_a_23"/>ter
+        aller bedroueden herten<pc resp="editor">:</pc>
+        <hi rend="decor">J</hi>st<pc resp="editor">,</pc>
+        dat se hijr comet<pc resp="editor">,</pc> spreck
+        <lb facs="#B2_162r_a_24"/>eer doch eyn guetlick wort to<pc resp="editor">."</pc>
+        <hi rend="rubr">D</hi>e here
+        <name type="person" nymRef="Jesus_Christ">
+			<choice>
+				<abbr><am><hi rend="rubr">J</hi>hu&#x304;</am>s</abbr>
+				<expan><ex><hi rend="rubr">J</hi>hesu</ex>s</expan>
+			</choice>
+			<choice>
+				<abbr><am>xpu&#x304;</am>s</abbr>
+				<expan>
+					<ex>
+						<choice>
+							<orig>c</orig><reg type="capit" resp="editor">C</reg></choice>ristu</ex>s
+				</expan>
+			</choice>
+		</name>
+        seghe<lb facs="#B2_162r_a_25"/>de<pc resp="editor">: "</pc><name type="person" 
+        nymRef="Martha">Martha</name><pc resp="editor">,</pc> myn
+        leue
+        <choice>
+			<abbr>vrendy<am>n&#x304;</am>e</abbr>
+			<expan>vrendy<ex>nn</ex>e</expan></choice><pc resp="editor">,</pc> ick
+        loue dy<pc resp="editor">.</pc><!-- "ich gelobe dir," or 
+        "ich lobe dich."; MLG di can be accusative or dative; other Mss interpret it one way or the other--> <hi rend="rubr">C</hi>omet
+        <lb facs="#B2_162r_a_26"/>dyn suster<pc resp="editor">,</pc> ick wil eer vrentlike
+        to spreken<pc resp="editor">."</pc>
+        </ab>
+        <ab xml:id="Gregory_comment">
+        <hi rend="rubr">S</hi>ante<name type="person" nymRef="Gregory">
+        <choice>
+			<abbr><hi rend="rubr">G</hi>re<lb facs="#B2_162r_a_27"/>gori<am>&#42864;</am></abbr>
+			<expan><hi rend="rubr">G</hi>re<lb facs="#B2_162r_a_28"/>gori<ex>us</ex></expan>
+		</choice></name>
+        secht<pc resp="editor">: "</pc><choice><orig>a</orig><reg type="capit" resp="editor">A</reg></choice>lse ick
+        dencke<pc resp="editor">,</pc> wu<!-- see above -->
+        <name type="person" nymRef="Mary_Magdalene">
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria 
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agdalena
+		</name>
+        ghenck
+        <lb facs="#B2_162r_a_29"/>in dat hues
+        <name type="person" nymRef="Simon">
+			<choice>
+				<orig>s</orig><reg type="capit" resp="editor">S</reg></choice>ymons
+		</name>
+        vngheladen
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		vnghebeden vnde
+        <lb facs="#B2_162r_a_30"/>wu<!--see above--> dat se eer trane wtgoet 
+        vp de voete vnses heren
+        <lb facs="#B2_162r_a_31"/><choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		wo<!-- sic --> dat se myt eren haer de
+        vote vnses heren drughede<pc resp="editor">,</pc>
+        <lb facs="#B2_162r_a_32"/>so en kan ick myn herte
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		myn oghen nycht langher
+        <lb facs="#B2_162r_a_33"/>vntholden van screyene
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		van weynen<pc resp="editor">."</pc>
+		</ab>
+		<ab xml:id="Mary_in_Simons_house">
+        <name rend="rubr_underline" type="person"
+        nymRef="Pseudo_Isidore"><hi rend="rubr">J</hi>sodorus</name>
+        be<lb facs="#B2_162r_a_34"/>schriuet<pc resp="editor">:</pc>
+        <!-- should this be in quotation marks? -->
+        <choice>
+			<orig>d</orig><reg type="capit" resp="editor">D</reg></choice>o de here
+        wolde gaen sytten ter tafelen<pc resp="editor">,</pc> do
+        <lb facs="#B2_162r_a_35"/>stont he eerst vp synen hillighen ghebenediden kneen
+        
+        
+              <!-- next page -->
+        <pb edRef="#B2" facs="#B2_162v" n="fol. 162va"/>
+        <cb n="fol. 162v"/><choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		louede synen
+        hemelschen vader<pc resp="editor">.</pc> <hi rend="rubr">D</hi>o so ghenck in dat
+        <lb facs="#B2_162v_a_01"/>hues to den heren van achter 
+        <choice>
+			<orig><hi rend="rubr">D</hi></orig><reg type="capit" resp="editor">d</reg></choice>e edele vrouwe
+        <name type="person" nymRef="Mary_Magdalene"><hi rend="rubr">M</hi>aria
+        <lb facs="#B2_162v_a_02"/>
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agdalena
+		</name> myt groten rouwen erre sunde
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		goet
+        <lb facs="#B2_162v_a_03"/>den heren de walrukenden<!-- MLG "wolruken" for NHG 
+        "wohlriechen, duften" -->
+        crude<!-- MLG "krude" for NHG "Kraut, Pflanze, Gewächs" -->
+        u<!--interesting rendition!-->p syn houet
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		veel
+        <lb facs="#B2_162v_a_04"/>vor de vote des heren
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		weynede
+        <del rend="strikethrough">ol</del> also
+        <choice>
+			<abbr>o<am>u&#xa770;</am></abbr>
+			<expan>o<ex>uer</ex></expan></choice>ulodeliken<!-- MLG "overvlodelike" 
+        for NHG "reichlich, in großer Menge,
+        in Fülle, im Überfluss" --><pc resp="editor">,</pc>
+        <lb facs="#B2_162v_a_05"/>dat se de vote dar mede wosch<pc resp="editor">,</pc>
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		se drughede se myt
+        <lb facs="#B2_162v_a_06"/>den haer eres houedes
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		cussede se myt groten
+        begher<lb facs="#B2_162v_a_07"/>ten
+        eres herten also langhe<pc resp="editor">,</pc> dat de here
+        sprack<pc resp="editor">: "</pc><name type="person" nymRef="Mary_Magdalene"><choice><orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria</name><pc resp="editor">,</pc>
+        <lb facs="#B2_162v_a_08"/>dy syn alle dyne sunde vorgheuen<pc resp="editor">,</pc>
+        ganck in vreden<pc resp="editor">."</pc> <hi rend="rubr">D</hi>o
+        <lb facs="#B2_162v_a_09"/>stont
+        <name type="person" nymRef="Mary_Magdalene"><hi rend="rubr">M</hi>aria</name>
+        vp in gotliker leeften
+         <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		was ghesunt in
+        <lb facs="#B2_162v_a_10"/>Zeile
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		in liue<pc resp="editor">.</pc>
+        <choice>
+			<abbr><hi rend="rubr">V</hi><am>n&#x304;</am></abbr>
+			<expan><hi rend="rubr">V</hi><ex>nd</ex></expan>
+		</choice>
+		se ghenck weder in erre suster
+        <name type="person" nymRef="Martha"><hi rend="rubr">M</hi>ar<lb facs="#B2_162v_a_11"/>then</name>
+        hues
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		vel up de eerden
+		<choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		danckede myt wey<lb facs="#B2_162v_a_12"/>nenden
+        oghen <name type="person" nymRef="God">gode</name> vor
+        syne waldade<pc resp="editor">.</pc>
+        </ab>
+        <ab xml:id="VirginMary_visits">
+        <hi rend="rubr">J</hi>n der
+        soluen tijd
+        <lb facs="#B2_162v_a_13"/>hoerde
+        <name type="person" nymRef="Virgin_Mary">
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria</name><pc 
+        resp="editor">,</pc> de moder
+        <choice>
+			<abbr><am>xpi<!--here the macron appears to be above the p -->&#x304;</am></abbr>
+			<expan><ex><choice><orig>c</orig><reg type="capit" resp="editor">C</reg></choice>risti</ex></expan></choice><pc resp="editor">,</pc>
+        <choice>
+			<orig><hi rend="rubr">D</hi></orig><reg type="capit" resp="editor">d</reg></choice>at
+			de here<pc resp="editor">,</pc>
+		<choice>
+			<orig><hi rend="rubr">E</hi></orig><reg type="capit" resp="editor">e</reg></choice>er ghebe<lb facs="#B2_162v_a_14"/>nedide
+        sone<pc resp="editor">,</pc> was to
+        <name type="place" nymRef="Bethany">
+			<choice>
+				<orig>b</orig><reg type="capit" resp="editor">B</reg></choice>ethanien</name><pc resp="editor">.</pc>
+        <hi rend="rubr">H</hi>ijr
+        <choice>
+			<abbr>v<am>m&#x304;</am>e</abbr>
+			<expan>v<ex>mm</ex>e</expan>
+		</choice>
+		quam se dar<pc resp="editor">,</pc> den
+        <lb facs="#B2_162v_a_15"/>heren to te spreken
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		se vornam<pc resp="editor">,</pc> 
+        <del rend="strikethrough">h</del><!-- my guess is that the 
+        scribe skipped the 'dat' --> dat he
+        <name type="person" nymRef="Mary_Magdalene">
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>arien
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>ag<lb facs="#B2_162v_a_16"/>dalenen
+		</name>
+        al eer sunde 
+        <choice>
+			<abbr><am>v&#xa770;</am></abbr>
+			<expan><ex>vor</ex></expan></choice>gheuen
+        hadde<pc resp="editor">.</pc> <hi rend="rubr">D</hi>o ghenck se to
+        <name type="person" nymRef="Mary_Magdalene">
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>a<lb facs="#B2_162v_a_17"/>rien
+		</name>
+        in dat hues erre suster<pc resp="editor">,</pc>
+        <choice>
+			<abbr>v<am>m&#x304;</am>e</abbr>
+			<expan>v<ex>mm</ex>e</expan>
+		</choice>
+        se to troesten to enen
+        <lb facs="#B2_162v_a_18"/>guden gotliken leuene<pc resp="editor">.</pc>
+        <name type="person" nymRef="Virgin_Mary"><hi rend="rubr">M</hi>aria</name><pc 
+        resp="editor">,</pc> de werdighe moder
+        <choice>
+			<abbr><am>xpi<!--same as before-->&#x304;</am></abbr>
+			<expan><ex><choice><orig>c</orig><reg type="capit" resp="editor">C</reg></choice>risti</ex></expan></choice><pc resp="editor">,</pc>
+        <lb facs="#B2_162v_a_19"/>de to allen tijden vul oetmodicheit
+        was<pc resp="editor">,</pc> ghenck in dat
+        <lb facs="#B2_162v_a_20"/>hues
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		wolde myt wtghereckeden armen
+        <choice>
+			<abbr>v<am>m&#x304;</am>e</abbr>
+			<expan>v<ex>mm</ex>e</expan>
+		</choice>begri<lb facs="#B2_162v_a_21"/>pen
+        <name type="person" nymRef="Mary_Magdalene"><hi rend="rubr">M</hi>arien
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agdalenen</name><pc resp="editor">.</pc>
+        <hi rend="rubr">D</hi>o sprack
+        <name type="person" nymRef="Mary_Magdalene">
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agdale<lb facs="#B2_162v_a_22"/>na</name><pc resp="editor">: "</pc><hi rend="rubr">O</hi> du alre hilligheste
+        vnbeuleckedeste maghet<pc resp="editor">,</pc>
+        <lb facs="#B2_162v_a_23"/>reyne tempel des hillighen gheestes
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		schreyn des
+        <lb facs="#B2_162v_a_24"/>hoghesten
+        <name type="person" nymRef="God">godes</name><pc resp="editor">,</pc> gaet
+        van my<pc resp="editor">,</pc> wante myn licham en
+        <lb facs="#B2_162v_a_25"/>is nycht werdich<pc resp="editor">,</pc> dat vul
+        sunden is<pc resp="editor">,</pc> an to grijpen dat 
+        <lb facs="#B2_162v_a_26"/>reyne licham<pc resp="editor">,</pc> dar
+        myn salichmaker in besloten heuet
+        <lb facs="#B2_162v_a_27"/>ghewesen<pc resp="editor">,</pc> myn leue here
+        <name type="person" nymRef="Jesus_Christ">
+			<choice>
+				<abbr><am><hi rend="decor">J</hi>hu&#x304;</am>s</abbr>
+				<expan><ex><hi rend="decor">J</hi>hesu</ex>s</expan>
+			</choice>
+			<choice>
+				<abbr><am>xpu&#x304;</am>s</abbr>
+				<expan><ex><choice><orig>c</orig><reg type="capit" resp="editor">C</reg></choice>ristu</ex>s</expan></choice></name><pc resp="editor">,</pc> al der werlde
+        <lb facs="#B2_162v_a_28"/>troest<pc resp="editor">."</pc> <hi rend="rubr">D</hi>o sprack
+        <name type="person" nymRef="Virgin_Mary">
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria</name><pc resp="editor">,</pc> de reyne maghet
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		moder
+        <lb facs="#B2_162v_a_29"/>vnses heren
+        <name type="person" nymRef="Jesus_Christ">
+			<choice>
+				<abbr><am>Jhu&#x304;</am></abbr>
+				<expan><ex>Jhesu</ex></expan>
+			</choice>
+			<choice>
+				<abbr><am>xpi<!--same as before-->&#x304;</am></abbr>
+				<expan><ex><choice><orig>c</orig><reg type="capit" resp="editor">C</reg></choice>risti</ex></expan></choice></name><pc resp="editor">: "</pc>O
+        du funteyne mynes leuen
+        <lb facs="#B2_162v_a_30"/>kyndes
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		mynes leuen
+        heren<pc resp="editor">,</pc> 
+        <choice>
+			<orig>
+				<hi rend="rubr">J</hi></orig><reg type="capit" resp="editor">j</reg></choice>ck
+        <choice>
+			<abbr>beke<am>n&#x304;</am>e</abbr>
+			<expan>beke<ex>nn</ex>e</expan>
+		</choice>
+		van <name type="person" nymRef="God">godes</name> 
+        <lb facs="#B2_162v_a_31"/>weghen<pc resp="editor">,</pc> dattu
+        bijst reyne an Zeile
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		an liue van
+		<choice>
+			<abbr>all<am>e&#x304;</am></abbr>
+			<expan>all<ex>en</ex></expan>
+		</choice>
+        <lb facs="#B2_162v_a_32"/>vlecken<pc resp="editor">."</pc>
+        <choice>
+			<abbr><hi rend="rubr">V</hi><am>n&#x304;</am></abbr>
+			<expan><hi rend="rubr">V</hi><ex>nd</ex></expan>
+		</choice>
+		de moder <name type="person" nymRef="God">godes</name> nam se
+		<choice>
+			<abbr>my<am>n&#x304;</am>entlike</abbr>
+			<expan>my<ex>nn</ex>entlike</expan>
+		</choice>
+        <choice>
+			<abbr>v<am>m&#x304;</am>e</abbr>
+			<expan>v<ex>mm</ex>e</expan>
+		</choice>
+        <lb facs="#B2_162v_a_33"/><choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		beuenck se vrentlike in eren armen
+		<choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		cussede
+        
+        
+              <!-- next page -->
+        <pb edRef="#B2" facs="#B2_163r" n="fol. 163ra"/>
+        <cb n="fol. 163r"/>se<pc resp="editor">.</pc>
+        <hi rend="rubr">D</hi>o seghen de twe susteren vnser leuen
+        vrouwen<pc resp="editor">,</pc> de
+        <lb facs="#B2_163r_a_02"/>myt eer ghecomen weren to vnsen 
+        leuen heren<pc resp="editor">,</pc> vnde
+        <lb facs="#B2_163r_a_03"/><name type="person" nymRef="Martilla">
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>arcella</name><pc resp="editor">,</pc> dat desse
+        twe<pc resp="editor">,</pc>
+        <name type="person" nymRef="Virgin_Mary">
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria</name><pc resp="editor">,</pc>
+        de moder <name type="person" nymRef="God">godes</name><pc resp="editor">,</pc>
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+        <name type="person" nymRef="Mary_Magdalene">
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>aria
+        <lb facs="#B2_163r_a_04"/><choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agdalena</name><pc resp="editor">,</pc> worden vp
+        vorheuen van der erden twe 
+        <lb facs="#B2_163r_a_05"/>elen hoghe
+        <choice>
+			<abbr><hi rend="rubr">v</hi><am>n&#x304;</am></abbr>
+			<expan><hi rend="rubr">v</hi><ex>nd</ex></expan>
+		</choice>
+		worden 
+		<choice>
+			<orig><hi rend="rubr">E</hi></orig><reg type="capit" resp="editor">e</reg></choice>erwerdeliken weder neder
+        <lb facs="#B2_163r_a_06"/>ghesat to der eerden<pc resp="editor">.</pc>
+        </ab>
+        <ab xml:id="Mary_rest_of_life"><hi rend="rubr">D</hi>ar na was
+        <name type="person" nymRef="Mary_Magdalene"><hi rend="rubr">M</hi>aria
+			<choice>
+				<orig>m</orig><reg type="capit" resp="editor">M</reg></choice>agdalena
+		</name> 
+        <lb facs="#B2_163r_a_07"/>alle de tijt eres leuens in den
+        denste <name type="person" nymRef="God">godes</name>
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		volghede
+        <lb facs="#B2_163r_a_08"/>em na horende syne guden leer
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		was bij em to synre
+        <lb facs="#B2_163r_a_09"/>doet to<pc resp="editor">.</pc>
+        <choice>
+			<abbr><hi rend="rubr">V</hi><am>n&#x304;</am></abbr>
+			<expan><hi rend="rubr">V</hi><ex>nd</ex></expan>
+		</choice>
+		na der hemeluaert vnses leuen heren toech
+        <lb facs="#B2_163r_a_10"/>se in ene woesteme<pc resp="editor">,</pc>
+        dar se grote penetencie dede in gro<lb facs="#B2_163r_a_11"/>ter
+        strengicheit eres leuens in den denste
+        <name type="person" nymRef="God">godes</name><pc resp="editor">,</pc>
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice> 
+        <lb facs="#B2_163r_a_12"/>eyn nam dar gijne spise in alle eren
+        leue daghen meer<pc resp="editor">.</pc>
+        <lb facs="#B2_163r_a_13"/><choice>
+			<orig>d</orig><reg type="capit" resp="editor">D</reg></choice>e hillighen 
+		engele nemen se vp to den seuen
+        <choice>
+			<abbr>ghetid<am>e&#x304;</am></abbr>
+			<expan>ghetid<ex>en</ex></expan>
+		</choice><!--'sieben Gebetsstunden' (see Dutch getijde and MLG getide-->
+        <lb facs="#B2_163r_a_14"/>des daghes
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		sunghen
+		<choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+		loueden den
+        heren<pc resp="editor">.</pc> <hi rend="rubr">D</hi>ar na
+        <lb facs="#B2_163r_a_15"/>do se starff<pc resp="editor">,</pc> nemen
+        de hillighen engele err Zeile
+        <choice>
+			<abbr>v<am>n&#x304;</am></abbr>
+			<expan>v<ex>nd</ex></expan>
+		</choice>
+        <lb facs="#B2_163r_a_16"/>voerden se myt groter eren in dat ewighe leuen in
+        <lb facs="#B2_163r_a_17"/>dat gotlike anschouwen<pc resp="editor">.</pc>
+        <hi rend="rubr">A</hi>men <!-- there is a space here; tag: space quantity="4" unit="chars"/?-->
+        </ab>
+        <ab xml:id="epilogue"><hi rend="rubr">E</hi>er bekerin<lb facs="#B2_163r_a_18"/>ghe
+        ghescheide<pc resp="editor">,</pc> als de lerre beschriuen<pc resp="editor">,</pc>
+        vp den ø
+        <choice>
+			<abbr>eerst<am>e&#x304;</am></abbr>
+			<expan>eerst<ex>en</ex></expan>
+		</choice>
+        <lb facs="#B2_163r_a_19"/>dach van der meerte<pc resp="editor">.</pc>
+        <!-- space here again: 4 characters -->
+        <hi rend="rubr">S</hi>ancte
+        <name type="person" nymRef="Mary_Magdalene">
+        <hi rend="rubr">M</hi>aria <hi rend="rubr">M</hi>agdale<lb facs="#B2_163r_a_20"/>na</name>
+        secht<pc resp="editor">: "</pc><choice><orig>a</orig><reg type="capit" resp="editor">A</reg></choice>l heft
+        my <name type="person" nymRef="God">god</name> myne 
+        sunde vorgheuen<pc resp="editor">,</pc>
+        <choice>
+			<orig><hi rend="rubr">J</hi></orig><reg type="capit" resp="editor">j</reg></choice>ck
+        <lb facs="#B2_163r_a_21"/>en sal se my soluen nummermer vorgheuen<pc resp="editor">."</pc>
+        <!--rendition of a horizontal cross marks end; roughly: -:• • •-->
+        </ab>
+    </body>
+  </text>
+</TEI>

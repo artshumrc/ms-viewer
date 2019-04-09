@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mary Magdalene Conversion Legend</title>
+                <author ref="#PseudoIsidore">Pseudo Isidore</author>
+                <respStmt>
+                    <name xml:id="Philip Liston-Kraft">Philip Liston-Kraft</name>
+                    <resp>TEI encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <title>Mary Magdalene Conversion Legend – Digital Edition</title>
+                    <date when="017-08-25">February 26, 2019</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <authority>
+                    <ref target=""></ref>
+                </authority>
+                <availability status="free"><p>Published under <ref target=""></ref></p></availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Brussels</settlement>
+                        <repository>Bibliothèque de la Société des Bollandistes</repository>
+                        <idno>Cod. 347, Fol.23-24=BHL 5502, Anal. Boll. 24, 450:16</idno>
+                    </msIdentifier>
+                    <history>
+                        <p>The catalogue provides the following introductory comment: In folio 99v leitur: Liber monasterii Beate Marie reparatus per fratrem Lucam
+                            Iohannis Eyck post unionem monasteriorum. Anno.1597</p> <!-- not sure whether this should be here-->
+                        <origin>
+                            <p>
+                                <origPlace></origPlace>
+                                <origDate>15th cent.</origDate>
+                            </p>
+                        </origin>
+                    </history>
+                    <physDesc>
+                        <objectDesc form="??">
+                            <supportDesc material="??">
+                                <support><!-- todo --></support>
+                                <extent><!-- todo -->
+                                    <dimensions scope="??" type="??" unit="??">
+                                        <height><!-- todo --></height>
+                                        <width><!-- todo --></width>
+                                    </dimensions>
+                                </extent>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout columns="??" ruledLines="??"><!-- todo --></layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <p><!-- todo --></p>
+                        </handDesc>
+                        <material>paper</material>:99 folios<!-- is this the extent? what is the meaning of the colon? -->
+                    </physDesc>
+                    <msContents><p>36 items predominantly Passions of various saints; e.g., St. Lucia, Ignatius, Thomas the apostle, Agatha, etc.</p>
+                        <p> The following is a complete list of items contained within the codex:</p>
+                        <msItem>
+                            <locus>Fol. 1-2v</locus>
+                            <title>Passio S. Luciae virginis et martyris Christi. = BHL. 4992</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 7-8v</locus>
+                            <title>Passio SS. Innocentum. = BHL. 4277.</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 8v-9v</locus>
+                            <title>Passio S. Thomae archiepiscopi Canthuariensis. = BHL. 8215. Deest prologus</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 9v-10v</locus>
+                            <title>Legenda S. Felicis presbyteri. = BHL. 2885. Ian. 22.</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 10v-13v</locus>
+                            <title>Passio S. Ignacii episcopi et martyris, qui fuit discipulus S. Iohannis evangelistae. = BHL. 4256.</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 14-14v</locus>
+                            <title> Item de eodem in historia ecclesiastica in libro tertio, capitulo vicesimo non, Eusebius Caesariensis.
+                                Hist. eccl., lib. III, cap. 36 (ed. Mommsen, p. 275-81. Inc. Sed in nostra quoque tempora. . . </title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 14v-16v</locus>
+                            <title>Passio S. Agathae virginis et martyris. = BHL. 133. Inc. Quintianus consularis. . .</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 16v-18v</locus>
+                            <title>Passio S. Iulianae virginis. = BHL. 4522.</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 19-19v</locus>
+                            <title>De SS. Iohanne et Paulo. Legendae aureae cap. 87 (82). Omissis ultimis verbis, des. quo dicto, ab oculis eius sunt ablati.</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 19v-20</locus>
+                            <title> De S. Leone papa. = BHL. 4817.</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 20-20v</locus>
+                            <title>De translatione S. Martini.
+                                Brevis libellus, in quo narrantur: 1o Translatio facta saec. V a Perpetuo ep. Turonensi (ex Gregorio Turonensi,
+                                "De virtutibus S. Martini", I 6); 2o Miracula S. Martini saec. IX, paucis excerpta ex opusculo BHL. 5653. cap. 1, 2, 5, 6, 8-10;
+                                3o Vulgata narratiuncula de Clodoveo, quae multis in libris legitur, v.g. om "Libro historiae Francorum," c. 17 (MG., Scr. rer.
+                                merov. t. II, p. 270-71)
+                                Inc. Translatio corporis beati Martini episcopi facta est anno sexagesimo quarto post sacrum eius obitum -- Des.
+                                quibus datis, statim equus solutus abiit.  Tunc rex cum laetitia ait: "Vere beatus Martinus bonus est in auxilio, sed 
+                                carus in negotio."</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 20v-21v</locus>
+                            <title>Passio Septem Fratrum. = BHL. 2853.</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 21v-22v</locus>
+                            <title>Passio B. Margaretae virginis. = BHL. 5309.
+                                Deest prologus. Ceteris omissis, desinit: Passa est autem beat virgo tertius idus iulii; alibi tamen legitur quod tertio
+                                kalendas augusti.</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 22v-23</locus>
+                            <title>De Praxede virgine. Brevis narratio excerpta partim ex martyrologio Adonis ad d. 21 iulii, partim ex Legenda aurea, c. 95(91).</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 23-24</locus>
+                            <title>Ysidorus refert sic libro de ortu et obitu sanctorum, de conversione B. Mariae Magdlenae. = BHL. 5452.</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 24-27v</locus>
+                            <title>Vita beatae Mariae Magdalendae. = BHL. 5501.
+                                Deest prologus. Ultimarum narrationum ordo perversus est ita: 1, 2, 6, 3, 4, 8, 10, 5, 7, 9. Post quae scriba hanc
+                                clausulam addidit: Haec igitur et multa alia miracula ob meritum beatae Mariae Magdalenae facta in diversis libris 
+                                narrantur, praestante domino nostro Iesu Christo, qui cum Deo Patre et Spritu sancto vivit et regnat per infinita saecula
+                                saeculorum. Amen.</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 27v-30</locus>
+                            <title>Passio S. Apollinaris episcopi. = BHL. 623.</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 30-33</locus>
+                            <title>Passio S. Christinae virginis, quae acta est non kalendas augusti. = BHL. 1749.
+                                Inc. Erat quaedam sancta et sacra puella de Tyro, quae spem habebat in Domino ut virginitatem suam Domino consecraret;
+                                nondum enim habebat annos undecim. -- Des. Requiescit autem corpus eius in quodam castro qudo Bulsennum vocatur inter Urbem Veterem
+                                et Viterbium. Tirus autem, quae iuxta castrum erat, funditus est destructa.</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol 33-35)<!--what does this parenthesis mean? --></locus>
+                            <title>De S. Iacobo apostolo.
+                                Legendae aureae cap.99(94) Sec 1. Verum libellus hic amplior est, cum in priore parte aucta sit ipsa epitome, quam confecerat
+                                Iacobus de Vorgine, multis locis desumptis ex passione primigenia. BHL. 4057.</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 35-37v</locus>
+                            <title>Passio S. Christophori.
+                                Inc. ut BHL. 1779. Des. ut BHL 1778. Nimirum pars prior (f. 35-36 extr.: Cristoforus genere Chananaeus. . . sui autem diris tormentis
+                                consumeris) desumpta est vix non ad verbum ex Legendae aureae c. 100 [95], (ed. Graesse, p. 430-33 post med.).
+                                Inde, relicta Legenda aurea, continuo subiungitur pars altera (f. 36 extr.-38v) desumpta ex Passione BHL. 1778.</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 38-38v</locus>
+                            <title>Passio SS. Nazarii et Celsi. = BHL. 6049. Omissa sunt prologus, ultima pars et quaedam etiam hinc inde sententiae.</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 38v-39</locus>
+                            <title>Passio SS. Abdon et Sennis. = BHL. 6. Praemissa est epitome Passionis S. Polychronii (BHL. 6884).
+                                Inc. Ea tempestate sub Decio Caesare multi christianorum necati. . . </title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 39-40v</locus>
+                            <title>Passio sanctissimi Germani confessoris et Antisiodorensis episcopi (ex BHL. 3454).
+                                Cap. 1, 9-16, 38, 39, 41, 45, 46, 49 (init.), 50-55, 70, 71, 74-76. Verum plurima hinc inde omissa sunt vel in
+                                brevem epitomen contracta.  Inter cap. 39 et 41 inserta est brevis narratio desumpta ex Vita S. Lupi trecensis BHL. 5089, cap. 45.</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 40v-42v</locus>
+                            <title>Ad vincula S. Petri apostoli. = BHL. 6684.</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 42v</locus>
+                            <title> De SS. Machabeis fratribus. Legenda aurea, c. 109 (114).</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 42v</locus>
+                            <title>Passio S. Eusebii episcopi. = BHL. 2751. Deest prologus. Folio perdito, superest sola pars prior narrationis.</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 43-53</locus>
+                            <title>Vita sancti beati Roberti primi abbatis Molismensis. = DHL. 7265.</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 54-77v</locus>
+                            <title>Vita beatissimi Petri Tarentasiensis archiepiscopi edita a domino Gaufrido abbate. = BHL. 6773, 6774.
+                                Sequuntur (fol. 73v-77v) epistulae decem, quae editae sunt et quidem eodem ordine in Act. SS., Mai t. II, p. 322-23, num. 1-3, et p. 345-48.</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 78-80v</locus>
+                            <title>De inventione sanctae crucis. = BHL. 4169.</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 80v-84</locus>
+                            <title>Passio S. Barnabae apostoli. = BHL. 985. Des. ut BHL. 983.</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 85-87</locus>
+                            <title>De nativitate domini nostri Iesu Christi. Legenda aurea, c. 6.</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 87-88v</locus>
+                            <title>Passio S. Stephani prothomartyris.
+                                Legenda aurea, c. 8, Sec. 1, omisso prologo et addita hac sententia: Multa namque miracula per beatum Stephanum facta sunt,
+                                sicut beatus Augustinus in quodam suo referi sermone.</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 88v-91</locus>
+                            <title>De circumcisione domino nostri Iesu Christi. Legenda aurea, c. 13.</title>
+                        </msItem>
+                        <msItem>
+                            <locus>Fol. 91-93</locus>
+                            <title>De festo Epiphaniae Domini. Legenda aurea, c. 14. Omissa ultima sententia, des.: sed nunc Coloniae quiescunt, ubi eorum meritis divina
+                                choruscant miracula per Christum. . .</title>
+                        </msItem> 
+                        <msItem>
+                            <locus>Fol. 93-96</locus>
+                            <title>De festo Purificationis B. Mariae Virginis.
+                                Legenda aurea, c. 37. Omissa, Sec. 3, des.: protinus liberantur, Mariae igitur purificationem devote celebremus, ut cum
+                                ardentibus cereis regnum caelorum intrare valeamus per Christum Dominum nostrum. Amen.</title>
+                        </msItem>
+                    </msContents>
+                </msDesc>
+                <listWit>
+                    <witness xml:id="B">B</witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <schemaRef n="lbp-critical-1.0.0" url="https://raw.githubusercontent.com/lombardpress/lombardpress-schema/develop/src/out/critical.rng"/>
+                <editorialDecl>
+                    <p>Encoding of this text has followed the published guidelines on…</p>
+                </editorialDecl>
+        </encodingDesc>
+        <revisionDesc status="draft">
+            <listChange>
+                <change when="2019-03-20" status="draft" n="0.0.0">
+                    <p>Change date when editing file for the first time</p> <!-- to do -->
+                </change>
+                <change when="2017-08-25" status="draft" n="0.0.0"> <!-- to do -->
+                    <p>Created file for the first time.</p> 
+                </change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb edRef="#Latin-B" facs="#Latin-B_23r" n="fol. 23r"/><cb edRef="#Latin-B" facs="#Latin-B_23r_a" n="fol. 23ra"/>
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_a_16"/>
+            <hi rend="rubr">
+                <name type="person" nymRef="Pseudo_Isidore">
+                    <choice>
+                        <orig>y</orig><reg resp="editor" type="capit">Y</reg></choice>sido<choice><abbr><am>r&#xA770;</am></abbr><expan><ex>rus</ex></expan></choice>
+                </name>
+                <choice><abbr><am>r&#x31B;</am></abbr><expan><ex>re</ex></expan></choice>fert sic libro<pc source="manuscript">,</pc> 
+                <lb edRef="#Latin-B" facs="#Latin-B_23r_a_17"/>de ortu et obitu <choice><abbr>sc<am>o&#x305;</am>r<am>&#xA76A;</am></abbr><expan>sanctorum</expan></choice> de <choice><abbr><am>&#xA76F;</am><am>u&#x31B;</am>sio<am>e&#x305;</am></abbr><expan>conversione</expan></choice> <choice><abbr>bt<am>e&#x305;</am></abbr><expan>beate</expan></choice> <name type="person" nymRef="Mary_Magdalene">
+                <choice>
+                    <abbr>
+                    <choice>
+                        <orig>m</orig>
+                        <reg resp="editor" type="capit">M</reg>
+                        </choice>a<am>i&#x31B;</am>e</abbr>
+                        <expan>
+                            <choice>
+                                <orig>m</orig>
+                                <reg resp="editor" type="capit">M</reg>
+                            </choice><ex>ari</ex>e</expan>
+                </choice>
+                <choice>
+                    <orig>m</orig>
+                    <reg resp="editor" type="capit">M</reg>
+                </choice>agdalene</name>
+            </hi><pc source="editor">.</pc>
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_a_18"/><hi rend="rubr">F<choice><orig>U</orig><reg resp="editor" type="capit">u</reg></choice></hi>it in
+            <name type="place" nymRef="Jerusalem">
+                <choice>
+                    <abbr>
+                        <choice>
+                            <orig>i</orig>
+                            <reg resp="editor" type="capit">I</reg>
+                        </choice>hr<am>l&#x312;</am>m</abbr>
+                    <expan>
+                        <choice>
+                            <orig>i</orig>
+                            <reg resp="editor" type="capit">I</reg>
+                        </choice>h<ex>erusale</ex>m</expan>
+                </choice>
+            </name> nobilis quid<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> de
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_a_19"/>stirpe regia<pc resp="editor">,</pc> <choice><abbr>noi<am>e&#x305;</am></abbr><expan><ex>nomine</ex></expan></choice> <name type="person" nymRef="Lazarus">
+            <choice>
+                <orig>l</orig>
+                <reg resp="editor" type="capit">L</reg>
+            </choice>azarus</name><pc resp="editor">,</pc> habens 
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_a_20"/>duas sorores<pc resp="editor">,</pc> <choice><abbr>sciz</abbr><expan>scilicet</expan></choice> <name type="person" nymRef="Martha">
+            <choice>
+                <orig>m</orig>
+                <reg resp="editor" type="capit">M</reg>
+            </choice>artham</name><choice> <abbr><am>v&#x312;</am></abbr><expan><ex>vir</ex></expan></choice> gin<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice><pc resp="editor">,</pc> vi
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_a_21"/>ta et moribus religios<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice><pc source="manuscript">,</pc> sed <name type="person" nymRef="Mary_Magdalene"> <choice>
+                <orig>m</orig>
+                <reg resp="editor" type="capit">M</reg>
+            </choice>ariam</name><pc resp="editor">,</pc> las
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_a_22"/>civ<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> puell<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice><pc resp="editor">,</pc> ad m<choice><abbr><am>u&#x304;</am></abbr><expan><ex>un</ex></expan></choice>di pomp<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> totali
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_a_23"/>ter dedit<choice><abbr><am>a&#x31B;</am></abbr><expan><ex>am</ex></expan></choice><pc resp="editor">.</pc> <name type="person" nymRef="Martha"><hi rend="rubr">M</hi>artha</name> <choice><abbr>a<am>t&#x305;</am></abbr><expan>atque</expan></choice> german<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice><pc resp="editor">, <choice><abbr>sciz</abbr><expan>scilicet</expan></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_a_24"/><name type="person" nymRef="Lazarus"> <choice>
+                <orig>l</orig>
+                <reg resp="editor" type="capit">L</reg>
+            </choice>azar<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice></name><pc resp="editor">,</pc> armis militaribus cern<choice><abbr><am>e&#x304;</am></abbr><expan><ex>en</ex></expan></choice>s impli
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_a_25"/>cat<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice><pc resp="editor">,</pc> <name type="person" nymRef="Mary_Magdalene">
+            <choice>
+                <orig>m</orig>
+                <reg resp="editor" type="capit">M</reg>
+            </choice>ari<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice></name> quo<choice> <abbr><am>&#xA759;</am></abbr><expan><ex>que</ex></expan></choice> soror<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice> su<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> <choice> <abbr><am>&#xA753;</am></abbr><expan><ex>pro</ex></expan></choice>dig<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice><pc resp="editor">, </pc>
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_a_26"/>velud fidelissima mater <choice><abbr><am>r&#x31B;</am></abbr><expan><ex>re</ex></expan></choice>ddit<choice><abbr><am>&#xA76F;</am></abbr><expan><ex>us</ex></expan></choice> tem<choice><abbr><am>&#xA751;</am></abbr><expan><ex>por</ex></expan></choice>a
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_a_27"/>lia prud<choice><abbr><am>e&#x304;</am></abbr><expan><ex>en</ex></expan></choice>ter <choice> <abbr><am>&#xA76F;</am></abbr><expan><ex>con</ex></expan></choice>servabat<pc source="manuscript">,</pc> sagaci tuiti
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_a_28"/>one rei publicae <choice><abbr><am>p&#x303;</am></abbr><expan><ex>prae</ex></expan></choice>fuit<pc source="manuscript">,</pc>  
+            <choice>
+                <orig>c</orig>
+                <reg resp="editor" type="capit">C</reg>
+            </choice>astr<choice> <abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> <name type="place" subtype="residence" nymRef="Magdalum">
+                <choice>
+                <orig>m</orig>
+                <reg resp="editor" type="capit">M</reg>
+            </choice>ag
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_a_29"/>dal<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice></name> nomine sorori pro dote deputat<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_a_30"/>et <name type="place" nymRef="Bethany">
+            <choice>
+                <orig>b</orig>
+                <reg resp="editor" type="capit">B</reg>
+            </choice>ethani<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice></name> cum parte <name type="place" nymRef="Jerusalem">
+                <choice>
+                <abbr>
+                    <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                </choice>ihr<am>l&#x312;</am>m</abbr>
+                <expan>
+                <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                </choice>h<ex>erusale</ex>m</expan>
+                </choice></name> civitate
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_a_31"/><choice><abbr><am>&#xA751;</am></abbr><expan><ex>pro</ex></expan></choice>spicaci regimine gu<choice><abbr><am>b&#x31B;</am></abbr><expan><ex>ber</ex></expan></choice>navit<pc source="manuscript">:</pc> c<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> celi
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_a_32"/>regina 
+            <name type="person" nymRef="Virgin_Mary">matre
+                <choice>
+                    <abbr>
+                    <choice>
+                        <orig>x</orig>
+                        <reg resp="editor" type="capit">X</reg>
+                    </choice>p<am>i&#x305;</am></abbr>
+                    <expan>
+                        <choice>
+                        <orig>c</orig>
+                        <reg resp="editor" type="capit">C</reg>
+                        </choice><ex>hrist</ex>i</expan></choice>
+            </name> affetuose <choice><abbr><am>v&#x312;</am></abbr><expan><ex>ver</ex></expan></choice>ba
+            <name type="person" nymRef="Jesus_Christ">
+                <choice>
+                    <abbr>
+                    <choice>
+                        <orig>x</orig>
+                        <reg resp="editor" type="capit">X</reg>
+                    </choice>p<am>i&#x305;</am></abbr>
+                    <expan>
+                        <choice>
+                        <orig>c</orig>
+                        <reg resp="editor" type="capit">C</reg>
+                        </choice><ex>hrist</ex>i</expan>
+                </choice>    
+            </name>
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_a_33"/><choice><abbr><am>&#xA76F;</am></abbr><expan><ex>con</ex></expan></choice>servabat lasciv<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> aut<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice><pc resp="editor">,</pc> soror<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice> su<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice><pc source="manuscript">,</pc></pc>
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_a_34"/><choice><abbr>nu<am>c&#x305;</am></abbr><expan>nu<ex>nc</ex></expan></choice> blandis sermonibus <choice><abbr>nu<am>c&#x305;</am></abbr><expan>nu<ex>nc</ex></expan></choice> diris cor
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_a_35"/>reptionibus redarguit [corrected]<pc resp="editor">.</pc> <hi rend="rubr">Q</hi>u<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> c<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> una
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_a_36"/>dier<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> vultu tamen non sereno ad 
+            <choice>
+                <orig>d</orig>
+                <reg resp="editor" type="capit">D</reg></choice>e
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_a_37"/>um colend<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> alliceret<pc source="manuscript">:</pc> inter multa <choice><abbr><am>q&#x304;</am></abbr><expan><ex>quae</ex></expan></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_a_38"/>locuta est ait <hi rend="rubr">S</hi>oror mea <choice><abbr><am>p&#x303;</am></abbr><expan><ex>prae</ex></expan></choice>dilecta<pc source="manuscript">,</pc> 
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_a_39"/>stature tue elegancia<pc source="manuscript">,</pc> faciei tue pul
+            <cb edRef="#Latin-B" facs="#Latin-B_23r_b" n="fol. 23rb"/><lb edRef="#Latin-B" facs="#Latin-B_23r_b_01"/>chritudo cor<choice><abbr><am>&#xA751;</am></abbr><expan><ex>por</ex></expan></choice>alis<pc resp="editor">,</pc> uni<choice><abbr><am>v&#x312;</am></abbr><expan><ex>v<choice><abbr></abbr></choice>er</ex></expan></choice>se <choice><abbr>t<am>r&#x312;</am>e</abbr><expan>t<ex>err</ex>e</expan></choice> <choice><abbr>om<am>n&#x305;</am></abbr><expan>om<ex>nium</ex></expan></choice> mu
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_02"/>lier<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> decor<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice> excellit<pc resp="editor">.</pc>  <hi rend="rubr">U</hi>nde <choice><abbr>t<am>n&#x305;</am></abbr><expan>t<ex>amen</ex></expan></choice> cor<choice><abbr><am>&#xA751;</am></abbr><expan><ex>por</ex></expan></choice>i
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_03"/>tantus decor<pc source="manuscript">,</pc> nisi ab illo qui foris pul
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_04"/>chritudin<choice><abbr><am>i&#x304;</am></abbr><expan><ex>ini</ex></expan></choice>s est<pc source="manuscript">?</pc> <hi rend="rubr">H</hi>oc corpus <choice><abbr><am>v&#x312;</am></abbr><expan><ex>ver</ex></expan></choice>mibus
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_05"/>devorand<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> auro et margaretis ornas<pc source="manuscript">,</pc>
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_06"/>an<choice><abbr><am>i&#x304;</am></abbr><expan><ex>ima</ex></expan></choice>m vero sole chorusc<choice><abbr><am>a&#x304;</am></abbr><expan><ex>an</ex></expan></choice>te clariorem<pc resp="editor">,</pc>
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_07"/>c<choice><abbr><am>u&#x304;</am></abbr><expan><ex>un</ex></expan></choice>ctis astris pulchrior<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice><pc resp="editor">,</pc> turpiter mori
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_08"/>bus lascivis et vita <choice><abbr><am>r&#x312;</am></abbr><expan><ex>re</ex></expan></choice>prehensibili o<choice><abbr><am>m&#x304;</am></abbr><expan><ex>mn</ex></expan></choice>i
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_09"/>puritate privas<pc resp="editor">.</pc>  <hi rend="rubr">H</hi>ec et hiis <choice><abbr>sil<am>i&#x31B;</am>a</abbr><expan>similia</expan></choice> <choice><abbr>sc<am>a&#x305;</am></abbr><expan>sancta</expan></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_10"/><name type="person" nymRef="Martha">
+            <choice>
+                <orig>m</orig>
+                <reg resp="editor" type="capit">M</reg></choice>artha</name> sorori dixit<pc resp="editor">.</pc> <hi rend="rubr">R</hi>espondit <name type="person" nymRef="Mary_Magdalene">
+                <choice>
+                    <orig>m</orig>
+                    <reg resp="editor" type="capit">M</reg></choice>ag
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_11"/>dalena</name> <hi rend="rubr"><pc resp="editor">:</pc> S</hi>oror mea dilecta<pc resp="editor">,</pc> quia me
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_12"/>tam pulchr<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> asseris<pc resp="editor">,</pc> et ego ut video
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_13"/>a m<choice><abbr><am>u&#x304;</am></abbr><expan><ex>un</ex></expan></choice>di flosculis iunioribus militibus
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_14"/>amor<pc source="manuscript">,</pc> deliciis hab<choice><abbr><am>u&#x304;</am></abbr><expan><ex>un</ex></expan></choice>do<pc source="manuscript">,</pc> dies meos c<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_15"/>paternali h<choice><abbr><am>e&#x312;</am></abbr><expan><ex>ere</ex></expan></choice>ditate mente letissima <choice><abbr><am>&#xA76F;</am></abbr><expan>con</expan></choice>su
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_16"/>m<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice><pc resp="editor">.</pc>  <hi rend="rubr">H</hi>iis et aliis dictis<pc resp="editor">,</pc> <choice><abbr><am>&#xA76F;</am></abbr><expan>con</expan></choice>tigit ill<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> una
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_17"/>dier<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> de <name type="place" nymRef="Jerusalem">
+                <choice>
+                    <abbr>
+                        <choice>
+                        <orig>i</orig>
+                        <reg resp="editor" type="capit">I</reg>
+                        </choice>hr<am>l&#x312;</am>m</abbr>
+                    <expan>
+                        <choice>
+                            <orig>i</orig>
+                            <reg resp="editor" type="capit">I</reg></choice><ex>herusale</ex>m</expan></choice></name><pc resp="editor">,</pc> ubi illo die m<choice><abbr><am>u&#x304;</am></abbr><expan><ex>un</ex></expan></choice>di va
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_18"/>nitatibus occupata <choice><abbr><am>i&#x304;</am></abbr><expan><ex>in</ex></expan></choice>stiterat<pc resp="editor">,</pc> et sine fati
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_19"/>gatione chore<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> duxerat<pc source="manuscript">.</pc> ad soror<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice> su<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_20"/><name type="person" nymRef="Martha">
+            <choice>
+                <orig>m</orig>
+                <reg resp="editor" type="capit">M</reg>
+            </choice>arth<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice></name> redire<pc source="manuscript">:</pc> c<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> saltibus edem <choice><abbr><am>i&#x304;</am></abbr><expan><ex>in</ex></expan></choice>gre
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_21"/>diens<pc resp="editor">,</pc> sorori occurrens ait<pc resp="editor">:</pc> <hi rend="rubr">E</hi>go hodie
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_22"/>corda <choice><abbr>oi<am>m&#x305;</am></abbr><expan>omnium</expan></choice> <name type="place" subtype="residence" nymRef="Jerusalem">
+            <choice>
+                <orig>i</orig>
+                <reg resp="editor" type="capit">I</reg>
+            </choice>herosolimitar<choice><abbr><am>&#xA76A;</am></abbr><expan><ex>um</ex></expan></choice></name> leta feci<pc source="manuscript">,</pc> et
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_23"/>ipsa magis <choice><abbr><am>&#xA759;</am></abbr><expan><ex>quam</ex></expan></choice> in vita mea <choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice><choice><abbr><am>&#xA759;&#x303;</am></abbr><expan><ex>quam</ex></expan></choice> habui
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_24"/>gaudi<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> sum <choice><abbr><am>&#xA76F;</am></abbr><expan><ex>con</ex></expan></choice>secuta<pc source="manuscript">;</pc> et credo non ma
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_25"/>ius fore gaudi<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> <choice><abbr><am>&#xA759;&#x303;</am></abbr><expan><ex>quam</ex></expan></choice> <choice><abbr>ho<am>i&#x305;</am>em</abbr><expan><ex>hominem</ex></expan></choice> vit<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> su<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> in
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_26"/>letitia et gaudio <choice><abbr><am>&#xA76F;</am></abbr><expan><ex>con</ex></expan></choice>s<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice>mare<pc resp="editor">.</pc>  <hi rend="rubr">C</hi>ui<name type="person" nymRef="Martha"> 
+            <choice>
+                <orig>m</orig><reg resp="editor" type="capit">M</reg></choice>ar
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_27"/>tha</name><pc resp="editor">:</pc>  <hi rend="rubr">N</hi><choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice><choice><abbr><am>&#xA759;&#x303;</am></abbr><expan><ex>quid</ex></expan></choice><pc resp="editor">,</pc> soror mea <choice><abbr><am>p&#x304;</am></abbr><expan><ex>prae</ex></expan></choice>dilecta<pc resp="editor">,</pc> ioc<choice><abbr><am>u&#x304;</am></abbr><expan><ex>un</ex></expan></choice>di
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_28"/>ssim<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> et pulcherrim<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> reg<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice> <choice><abbr>om<am>i&#x305;</am></abbr><expan><ex>omnium</ex></expan></choice> corda
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_29"/>letificant<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice> hodie vidisti in tua ioc<choice><abbr><am>u&#x304;</am></abbr><expan><ex>un</ex></expan></choice>di
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_30"/>tate<pc source="manuscript">?</pc> <hi rend="rubr">A</hi>t illa<pc resp="editor">:</pc> <hi rend="rubr">R</hi>eges nobisc<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> non fu
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_31"/>er<choice><abbr><am>u&#x304;</am></abbr><expan><ex>un</ex></expan></choice>t<pc resp="editor">.</pc>  <name type="person" nymRef="Martha"><hi rend="rubr">M</hi>artha</name> <choice><abbr>r<am>n&#x305;</am>dit</abbr><expan>r<ex>espondit</ex></expan></choice><pc resp="editor">:</pc>  <hi rend="rubr">N</hi><choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice><choice><abbr><am>&#xA759;&#x31B;</am></abbr><expan><ex>quid</ex></expan></choice> reg<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice> ill<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_32"/>nosti<pc resp="editor">,</pc> cu<choice><abbr><am>i&#xA770;</am></abbr><expan><ex>ius</ex></expan></choice> vultus <choice><abbr>om<am>e&#x305;</am>m</abbr><expan>omnem</expan></choice> intu<choice><abbr><am>e&#x304;</am></abbr><expan><ex>en</ex></expan></choice>tem deco
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_33"/>rat<pc><choice><orig>.</orig><reg resp="editor" type="punct">,</reg></choice></pc> cu<choice><abbr><am>i&#xA770;</am></abbr><expan><ex>ius</ex></expan></choice> pulchritudin<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice> omnis ratio
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_34"/>nalis creatura miratur<pc source="manuscript">,</pc> qu<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice> si respex
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_35"/>eris letissim<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> te dimitteret<pc source="manuscript">?</pc> <hi rend="rubr">C</hi>ui
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_36"/>
+            <choice>
+            <orig>m</orig>
+            <reg resp="editor" type="capit">M</reg>
+            </choice>aria<pc resp="editor">:</pc> <hi rend="rubr">Q</hi>uis est iste tam pulcher<pc source="manuscript">,</pc>
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_37"/>tam formosus<pc source="manuscript">?</pc> <hi rend="rubr">N</hi><choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice><choice><abbr><am>&#xA759;&#x31B;</am></abbr><expan><ex>quid</ex></expan></choice><name type="person" nymRef="Tiberius" > 
+            <choice>
+            <orig>t</orig>
+            <reg resp="editor" type="capit">T</reg>
+            </choice>iberius </name> 
+            <choice>
+                <orig>c</orig>
+                <reg resp="editor" type="capit">C</reg>
+            </choice>esar
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_38"/>est ille<pc source="manuscript">?</pc> <hi rend="rubr">R</hi>espondit <name type="person" nymRef="Martha">
+            <choice>
+                <orig>m</orig>
+                <reg resp="editor" type="capit">M</reg>
+            </choice>artha</name><pc resp="editor">:</pc> <hi rend="rubr">N</hi>on
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_39"/>est <choice><abbr><am>i&#x304;</am></abbr><expan><ex>im</ex></expan></choice><choice><abbr><am>&#xA751;</am></abbr><expan><ex>per</ex></expan></choice>ator <name type="person" 
+            nymRef="Tiberius" >
+            <choice>
+                <orig>t</orig>
+                <reg resp="editor" type="capit">T</reg>
+            </choice>iberius</name><pc resp="editor">,</pc> rex genti<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice><pc source="manuscript">,</pc> sed est
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_40"/>rex reg<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> et <choice><abbr>d<am>n&#x305;</am>s</abbr><expan>dominus</expan></choice> <choice><abbr>d<am>n&#x305;</am>anti<am>u&#x304;</am></abbr><expan>dominantium</expan></choice><pc><choice><orig>.</orig><reg resp="editor" type="punct">,</reg></choice></pc> red<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice>ptor fi
+            <lb edRef="#Latin-B" facs="#Latin-B_23r_b_41"/>lior<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> <name type="place" nymRef="Israel">
+            <choice>
+                <abbr>
+                <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                </choice>sr<am>l&#x31B;</am></abbr>
+                <expan>
+                    <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                    </choice>sr<ex>ahel</ex></expan></choice></name><pc source="manuscript">,</pc> potens in <choice><abbr><am>p&#x305;</am></abbr><expan><ex>proe</ex></expan></choice>lio<pc><choice><orig>:</orig><reg resp="editor" type="punct">,</reg></choice></pc> et quasi de
+            <pb edRef="#Latin-B" facs="#Latin-B_23v" n="fol. 23v"/><cb edRef="#Latin-B" facs="#Latin-B_23v_a" n="fol. 23va"/>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_01"/>nobilibus ortus est parentibus<pc resp="editor">.</pc>  <hi rend="rubr">P</hi>ater
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_02"/>illi<choice><abbr><am>&#xA76F;</am></abbr><expan><ex>us</ex></expan></choice> est<name type="person" nymRef="God"> 
+            <choice>
+            <orig>d</orig>
+            <reg resp="editor" type="capit">D</reg>
+            </choice>eus in celis</name><pc resp="editor">,</pc> femin<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> nesci<choice><abbr><am>e&#x304;</am></abbr><expan><ex>en</ex></expan></choice>s
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_03"/>in terris<pc source="manuscript">:</pc>  <choice><orig>m</orig><reg resp="editor" type="capit">M</reg></choice>ater eius virgo davitica
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_04"/>stirpe <choice><abbr><am>&#xA753;</am></abbr><expan><ex>pro</ex></expan></choice>grediens a genitura hui<choice><abbr><am>&#xA76F;</am></abbr><expan><ex>ius</ex></expan></choice> flor<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_05"/>salvator<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice> m<choice><abbr><am>u&#x304;</am></abbr><expan><ex>un</ex></expan></choice>di <choice><abbr><am>&#xA753;</am></abbr><expan><ex>pro</ex></expan></choice>duxit<pc resp="editor">.</pc>  <hi rend="rubr">T</hi>unc<name type="person" nymRef="Mary_Magdalene"> 
+            <choice>
+            <orig>m</orig>
+            <reg resp="editor" type="capit">M</reg>
+            </choice>agda
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_06"/>lena</name> amore <choice><abbr>scl<am>i&#x31B;</am></abbr><expan><ex>saeculi</ex></expan></choice> tam decor<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> et nobil<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_07"/>vid<choice><abbr><am>e&#x31B;</am></abbr><expan><ex>ere</ex></expan></choice> desiderans ait<pc resp="editor">:</pc>  <hi rend="rubr">I</hi>ndica michi<pc resp="editor">,</pc> so
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_08"/>ror mea dilecta<pc resp="editor">,</pc> ubi ill<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> inveni<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> <choice><abbr><am>q&#x31B;</am></abbr><expan><ex>qui</ex></expan></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_09"/>tanta <choice><abbr><am>p&#x304;</am></abbr><expan><ex>prae</ex></expan></choice>stabit <del rend="rubr_strikethrough">solabit</del> solacia<pc><choice><orig>.</orig><reg resp="editor" type="punct">,</reg></choice></pc> et
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_10"/>c<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> <choice><abbr><am>q&#x304;</am></abbr><expan><ex>quae</ex></expan></choice>situm et invent<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> <choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice>plexibus meis
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_11"/>et muneribus pre <choice><abbr>om<am>i&#x305;</am>b<am>&#xA76A;</am></abbr><expan><ex>omnibus</ex></expan></choice> m<choice><abbr><am>u&#x304;</am></abbr><expan><ex>un</ex></expan></choice>di viris a
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_12"/>more meo allici<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice><pc source="manuscript">,</pc> ut eius deliciis <choice><abbr><am>&#xA75D;</am></abbr><expan><ex>et</ex></expan><choice></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_13"/>ioc<choice><abbr><am>u&#x304;</am></abbr><expan><ex>un</ex></expan></choice>ditate <choice><abbr><am>&#xA751;</am></abbr><expan><ex>per</ex></expan></choice>fruar<pc resp="editor">.</pc> <name type="person" nymRef="Martha"><hi rend="rubr">M</hi>artha</name> <choice><abbr>r<am>n&#x305;</am>dit</abbr><expan>r<ex>espon</ex>dit</expan></choice><pc resp="editor">:</pc>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_14"/><choice><abbr><hi rend="rubr">D</hi><am>n&#x305;</am>s</abbr><expan>D<ex>ominu</ex>s</expan> meus<name type="person" nymRef="Jesus_Christ"> 
+            <choice>
+            <orig>i</orig>
+            <reg resp="editor" type="capit">I</reg>
+            </choice><choice><abbr><am>h&#x305;</am></abbr><expan><ex>hesu</ex></expan></choice>s 
+            <choice>
+            <abbr>
+                x<am>r&#x305;</am>us</abbr>
+            <expan>
+            <choice>
+                <orig>c</orig>
+                <reg resp="editor" type="capit">C</reg>
+            </choice><ex>hrist</ex></expan></choice>us</name> est ille<pc resp="editor">.</pc>  <hi rend="rubr">E</hi>t ait
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_15"/><name type="person" nymRef="Mary_Magdalene">
+            <choice>
+                <orig>m</orig>
+                <reg resp="editor" type="capit">M</reg>
+            </choice>aria</name><pc resp="editor">:</pc> <hi rend="rubr">N</hi>unc<name type="person" nymRef="Jesus_Christ">
+                <choice>
+                <abbr>
+                    <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                    </choice><am>h&#x305;</am></abbr>
+                    <expan>
+                    <choice>
+                        <orig>i</orig>
+                        <reg resp="editor" type="capit">I</reg>
+                    </choice><ex>hesu</ex>m</expan></choice></name> fili<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> fabri et<name type="person" nymRef="Virgin_Mary"> 
+                    <choice>
+                        <orig>m</orig>
+                        <reg resp="editor" type="capit">M</reg>
+                    </choice>a
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_16"/>rie<pc resp="editor">,</pc> fili<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> 
+            <choice>
+            <orig>i</orig>
+            <reg resp="editor" type="capit">I</reg>
+            </choice>oachim</name><pc resp="editor">,</pc> novim<choice><abbr><am>&#xA76F;</am></abbr><expan><ex>us</ex></expan></choice><pc source="manuscript">.</pc> 
+            <choice>
+            <orig>e</orig>
+            <reg resp="editor" type="capit">E</reg>
+            </choice>t quom<choice><abbr><am>o&#x304;</am></abbr><expan><ex>odo</ex></expan></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_17"/>tu e<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> <name type="person" nymRef="God">
+            <choice>
+                <orig>d</orig>
+                <reg resp="editor" type="capit">D</reg>
+            </choice>ei</name> fili<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> et fili<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> <choice><abbr><am>v&#x31B;</am></abbr><expan><ex>vir</ex></expan></choice>ginis asse
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_18"/>rere <choice><abbr><am>p&#x304;</am></abbr><expan><ex>prae</ex></expan></choice>sumis<pc source="manuscript">?</pc> <name type="person" nymRef="Martha"><hi rend="rubr">M</hi>artha</name> respondit<pc resp="editor">:</pc>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_19"/><name type="person" nymRef="Joseph"><hi rend="rubr">J</hi>oseph</name> pater putativus<pc resp="editor">,</pc> non natura
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_20"/>lis fuit<pc resp="editor">.</pc>  <hi rend="rubr">E</hi>t multis doctrinis cor soro
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_21"/>ris madefaciens<pc><choice><orig>:</orig><reg resp="editor" type="punct">,</reg></choice></pc> <choice><abbr>la<am>c&#x31B;</am>mata</abbr><expan>la<ex>cri</ex>mata</expan></choice> est <name type="person" nymRef="Mary_Magdalene">
+            <choice>
+                <orig>m</orig>
+                <reg resp="editor" type="capit">M</reg>
+            </choice>aria</name><pc resp="editor">.</pc>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_22"/><hi rend="rubr">E</hi>t ecce don<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> <name type="person" nymRef="Holy_Spirit"><choice><abbr>sp<am>u&#x305;</am><am>&#xA76A;</am></abbr><expan>sp<ex>irit</ex><ex>us</ex></expan></choice> sancti</name> est repente
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_23"/>su<choice><abbr><am>&#xA751;</am></abbr><expan><ex>per</ex></expan></choice> <name type="person" nymRef="Mary_Magdalene">
+            <choice>
+                <orig>m</orig>
+                <reg resp="editor" type="capit">M</reg>
+            </choice>ari<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice></name> corruens<pc source="manuscript">,</pc> tangens e<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> dex
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_24"/>tero <name type="person" nymRef="God">
+            <choice>
+                <orig>d</orig>
+                <reg resp="editor">D</reg>
+            </choice>ei</name> digito<pc resp="editor">.</pc>  <hi rend="rubr">S</hi>tabat aut<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice><name type="person" nymRef="Mary_Magdalene"> 
+            <choice>
+                <orig>m</orig>
+                <reg resp="editor" type="capit">M</reg>
+            </choice>aria</name>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_25"/>cor<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> sorore sua<pc resp="editor">,</pc> erecto collo<pc resp="editor">,</pc> nitida fa
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_26"/>cie<pc><choice><orig>.</orig><reg resp="editor" type="punct">,</reg></choice></pc> t<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice><choice><abbr><am>&#xA759;&#x303;</am></abbr><expan><ex>quam</ex></expan></choice> fantasiis obruta<pc source="manuscript">,</pc> velut de
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_27"/>raptu (correction from captu) ad se rediens<pc resp="editor">.</pc> 
+            <choice>
+            <orig>h</orig>
+            <reg resp="editor">H</reg>
+            </choice>eu<pc resp="editor">,</pc> heu<pc resp="editor">,</pc> inquit
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_28"/>quid michi dulce vivere fuit<pc resp="editor">,</pc> que e
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_29"/>tern<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> merui mort<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice><pc source="manuscript">?</pc>  <hi rend="rubr">Q</hi>uid me de
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_30"/>lectatio m<choice><abbr><am>u&#x304;</am></abbr><expan><ex>un</ex></expan></choice>di ultra delectabit<pc><choice><orig>.</orig><reg resp="editor" type="punct">?</reg></choice></pc>
+            <choice>
+            <abbr>
+                <choice>
+                <orig>q</orig>
+                <reg resp="editor">Q</reg>
+                </choice><am>n&#x305;</am></abbr>
+                <expan>
+                <choice>
+                    <orig>q</orig>
+                    <reg resp="editor" type="capit">Q</reg>
+                </choice><ex>uando</ex></expan></choice> cru
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_31"/>riatibus <hi rend="rubr">iehe</hi>nnalib<choice><abbr><am>&#xA76F;</am></abbr><expan><ex>us</ex></expan></choice> tradar<pc source="manuscript">?</pc> <choice><abbr><am>Q&#x31B;</am>d</abbr><expan><ex>qui</ex>d</expan></choice> 
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_32"/>michi hircor<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> et camelo<choice><abbr><am>r&#xA75D;;</am></abbr><expan><ex>rum</ex></expan></choice> saltus<pc><choice><orig>.</orig><reg resp="editor" type="punct">,</reg></choice></pc><choice><abbr><am>q&#x303;</am></abbr><expan><ex>quae</ex></expan></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_33"/>subito in flamm<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> ignis precipitabor<pc source="manuscript">?</pc>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_34"/><hi rend="rubr">O</hi> vita misera<pc source="manuscript">,</pc>  et miserrima hono
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_35"/>ris mei privatrix<pc resp="editor">!</pc>  <hi rend="rubr">C</hi>ur te dilexi<pc><choice><orig>.</orig><reg resp="editor" type="punct">,</reg></choice></pc> c<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_36"/>sis michi turpissisma diffamatrix<pc source="manuscript">?</pc>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_37"/><hi rend="rubr">E</hi>cce nomen me<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> solempne eradicas
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_38"/>ti<pc source="manuscript">,</pc>  public<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> meretric<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice> pro <choice><abbr><am>v&#x312;</am></abbr><expan><ex>vir</ex></expan></choice>gine me
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_39"/>appellari <choice><abbr><am>&#xA753;</am>curasti</abbr><expan><ex>pro</ex>curasti</expan></choice><pc resp="editor">.</pc><hi rend="rubr"> E</hi>t <choice><abbr><am>&#xA76F;</am></abbr><expan><ex>con</ex></expan></choice>versa ad so
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_40"/>ror<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice> dixit<pc resp="editor">:</pc>  <hi rend="rubr">U</hi>bi est salus nostra et
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_41"/><choice><abbr>red<am>e&#x304;</am>ptio</abbr><expan>red<ex>em</ex>ptio</expan></choice> <name type="place" nymRef="Israel">
+            <choice>
+                <abbr>
+                <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                </choice>isr<am>l&#x31B;</am></abbr>
+                <expan>
+                    <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                    </choice>sr<ex>ahel</ex></expan></choice></name> <choice><abbr>d<am>n&#x305;</am>s</abbr><expan>d<ex>ominus</ex></expan></choice> <name type="person" nymRef="Jesus_Christ">
+                    <choice>
+                        <abbr>
+                        <choice>
+                        <orig>i</orig>
+                        <reg resp="editor" type="capit">I</reg>
+                    </choice>h<am>u&#x305;</am>s</abbr>
+                    <expan>
+                        <choice>
+                        <orig>i</orig>
+                        <reg resp="editor" type="capit">I</reg>
+                        </choice>h<ex>esu</ex>s</expan></choice></name><pc source="manuscript">?</pc> <hi rend="rubr">V</hi>ulnera
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_42"/>ta eius caritate ego sum<pc resp="editor">.</pc>  <hi rend="rubr">O</hi> m<choice><abbr><am>u&#x304;</am></abbr><expan><ex>un</ex></expan></choice>de
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_43"/><choice><abbr><am>i&#x304;</am></abbr><expan><ex>in</ex></expan></choice>m<choice><abbr><am>u&#x304;</am></abbr><expan><ex>un</ex></expan></choice>de<pc source="manuscript">,</pc> qui vult manere in te<pc resp="editor">,</pc> <choice><abbr>s<am>&#xA751;</am></abbr><expan>s<ex>emper</ex></expan></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_a_44"/>manebit <choice><abbr><am>i&#x304;</am></abbr><expan><ex>in</ex></expan></choice>m<choice><abbr><am>u&#x304;</am></abbr><expan><ex>un</ex></expan></choice>dus<pc resp="editor">.</pc>  <hi rend="rubr">H</hi>ic malicie  plu
+            <cb edRef="#Latin-B" facs="#Latin-B_23v_b" n="fol. 23vb"/>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_01"/>rim<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice><pc resp="editor">,</pc> sapi<choice><abbr><am>e&#x304;</am></abbr><expan><ex>en</ex></expan></choice>cie modic<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice><pc resp="editor">,</pc> viscosa <choice><abbr>om<am>i&#x305;</am>a</abbr><expan>om<ex>ni</ex>a</expan></choice><pc resp="editor">,</pc> 
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_02"/>lubrica singula<pc source="manuscript">,</pc> in te <choice><abbr>o<am>i&#x305;</am>a</abbr><expan>o<ex>mni</ex>a</expan></choice> obiecta te
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_03"/>nebris obsessa laqueis<pc source="manuscript">,</pc> in te <choice><abbr><am>&#xA751;</am></abbr><expan><ex>per</ex></expan></choice>iclitant<choice><abbr><am>r&#x31B;</am></abbr><expan><ex>ur</ex></expan></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_04"/><choice><abbr>a<am>i&#x305;</am>e</abbr><expan>a<ex>nima</ex>e</expan></choice><pc source="manuscript">,</pc> afflig<choice><abbr><am>u&#x304;</am></abbr><expan><ex>un</ex></expan></choice>tur cor<choice><abbr><am>&#xA751;</am></abbr><expan><ex>por</ex></expan></choice>a<pc resp="editor">.</pc>  <hi rend="rubr">O</hi> <name type="person" nymRef="Jesus_Christ">i<choice><abbr><am>h&#x305;</am></abbr><expan><ex>hes</ex></expan></choice>u</name> mi dul
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_05"/>cissime<pc resp="editor">,</pc> ubi te quer<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice><pc><choice><orig>.</orig><reg resp="editor" type="punct">,</reg></choice></pc> ubi te <choice><abbr><am>i&#x304;</am></abbr><expan><ex>in</ex></expan></choice>veni<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice><pc source="manuscript">?</pc>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_06"/><hi rend="rubr">R</hi>espondit<name type="person" nymRef="Martha"> 
+            <choice>
+            <orig>m</orig>
+            <reg resp="editor" type="capit">M</reg>
+            </choice>artha</name><pc resp="editor">:</pc> <hi rend="rubr">P</hi>rope est <choice><abbr>d<am>n&#x305;</am>s</abbr><expan>d<ex>ominu</ex>s</expan></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_07"/><choice><abbr>o<am>i&#x305;</am>bus</abbr><expan>o<ex>mni</ex>bus</expan></choice> <choice><abbr><am>i&#x304;</am></abbr><expan><ex>in</ex></expan></choice>vocantib<choice><abbr><am>&#xA76F;</am></abbr><expan><ex>bus</ex></expan></choice> e<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice><pc source="manuscript">,</pc> <choice><abbr>o<am>i&#x305;</am>bus</abbr><expan>o<ex>mni</ex>bus</expan></choice> <choice><abbr><am>i&#x304;</am></abbr><expan><ex>in</ex></expan></choice>vocanti
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_08"/>bus e<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> in veritate<pc><choice><orig></orig><reg resp="editor" type="punct">.</reg></choice></pc> [erasure]  <hi rend="rubr">E</hi>xpecta e<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice><pc resp="editor">,</pc> so
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_09"/>ror mea<pc source="manuscript">,</pc>  <choice><abbr><am>q&#x303;</am></abbr><expan><ex>qui</ex></expan></choice>a veniens veniet et n<choice><abbr><am>o&#x304;</am></abbr><expan><ex>on</ex></expan></choice> tar
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_10"/>dabit<pc resp="editor">.</pc>  <hi rend="rubr">A</hi>dhuc illa loqu<choice><abbr><am>e&#x304;</am></abbr><expan><ex>en</ex></expan></choice>te<pc source="manuscript">,</pc> ecce <name type="person" nymRef="Jesus_Christ">
+            <choice>
+                <abbr>
+                <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                </choice>h<am>u&#x305;</am>s</abbr>
+                <expan>
+                    <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                    </choice>h<ex>esu</ex>s</expan></choice></name>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_11"/>cu<choice><abbr><am>m&#x304;</am></abbr><expan><ex>um</ex></expan></choice> <name type="person" nymRef="Lazarus">
+            <choice>
+                <orig>l</orig>
+                <reg resp="editor" type="capit">L</reg>
+            </choice>azaro</name> venit<pc resp="editor">.</pc> <hi rend="rubr">E</hi>od<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice> en<choice><abbr><am>i&#x304;</am></abbr><expan><ex>im</ex></expan></choice> die <name type="person" nymRef="Lazarus">
+                <choice>
+                <orig>l</orig>
+                <reg resp="editor" type="capit">L</reg>
+                </choice>azarus</name>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_12"/>de armator<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> comitatu veniens<pc resp="editor">,</pc> in via
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_13"/>turb<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> magn<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> <name type="person" nymRef="Jesus_Christ">
+            <choice>
+                <abbr>
+                <choice>
+                <orig>i</orig>
+                <reg resp="editor" type="capit">I</reg>
+                </choice><am>h&#x305;</am>m</abbr>
+                <expan>
+                    <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                    </choice><ex>hesu</ex>m</expan></choice></name> se<choice><abbr><am>&#xA759;&#x305;</am></abbr><expan><ex>quen</ex></expan></choice>t<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice> ad audi<choice><abbr><am>e&#x304;</am></abbr><expan><ex>en</ex></expan></choice>d<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_14"/>verb<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> eius et doctrin<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> viderat<pc source="manuscript">,</pc>  et ip
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_15"/>se secutus dulciter lo<choice><abbr><am>q&#x303;</am></abbr><expan><ex>qua</ex></expan></choice>batur c<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> <name type="person" nymRef="Jesus_Christ">
+            <choice>
+                <abbr>
+                <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                </choice>h<am>u&#x305;</am></abbr>
+                <expan>
+                    <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                    </choice>h<ex>esu</ex></expan></choice></name><pc resp="editor">.</pc>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_16"/><hi rend="rubr">E</hi>t in tant<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> sermo <name type="person" nymRef="Jesus_Christ">
+            <choice>
+                <abbr>
+                <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                </choice>h<am>u&#x305;</am></abbr>
+                <expan>
+                    <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                    </choice>h<ex>esu</ex></expan></choice></name> [erasure]<name type="person" nymRef="Lazarus"> 
+                    <choice>
+                    <orig>l</orig>
+                    <reg resp="editor" type="capit">L</reg>
+                    </choice>azaro</name> placuit<pc source="manuscript">,</pc>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_17"/>ut turba dimissa <name type="person" nymRef="Jesus_Christ"><choice><abbr>d<am>n&#x305;</am>m</abbr><expan>d<ex>ominu</ex>m</expan></choice></name> in dom<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> su<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_18"/>introduxit<pc resp="editor">.</pc>  <hi rend="rubr">S</hi>tabat aut<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice> <name type="person" nymRef="Martha">
+            <choice>
+                <orig>m</orig>
+                <reg resp="editor" type="capit">M</reg>
+            </choice>artha</name> c<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_19"/><name type="person" nymRef="Mary_Magdalene">
+            <choice>
+                <orig>m</orig>
+                <reg resp="editor" type="capit">M</reg>
+            </choice>aria</name><pc source="manuscript">,</pc>  videntes<choice><abbr><am>&#xA759;</am></abbr><expan><ex>que</ex></expan></choice> <name type="person" nymRef="Jesus_Christ">
+                <choice>
+                <abbr>
+                    <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                    </choice><am>h&#x305;</am>m</abbr>
+                    <expan>
+                    <choice>
+                        <orig>i</orig>
+                        <reg resp="editor" type="capit">I</reg>
+                    </choice><ex>hesu</ex>m</expan></choice></name> plorabant <choice><abbr><am>&#xA751;</am></abbr><expan><ex>prae</ex></expan></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_20"/>iubilo<pc resp="editor">.</pc>  <hi rend="rubr">R</hi>ecepit aut<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice><name type="person" nymRef="Martha"> 
+            <choice>
+            <orig>m</orig>
+            <reg resp="editor" type="capit">M</reg>
+            </choice>artha</name> <name type="person" nymRef="Jesus_Christ">
+            <choice>
+                <abbr>
+                <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                </choice><am>h&#x305;</am>m</abbr>
+                <expan>
+                    <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                    </choice><ex>hesu</ex>m</expan></choice></name> re
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_21"/>verenter<pc resp="editor">,</pc> <name type="person" nymRef="Mary_Magdalene"><hi rend="rubr">M</hi>aria</name> n<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice><choice><abbr><am>&#xA759;</am></abbr><expan><ex>que</ex></expan></choice> reput<choice><abbr><am>a&#x304;</am></abbr><expan><ex>an</ex></expan></choice>s se in
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_22"/>dign<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> <choice><abbr><am>&#xA753;</am></abbr><expan><ex>pro</ex></expan></choice>pter <choice><abbr>pc<am>t&#x305;</am>a</abbr><expan>p<ex>eccat</ex>a</expan></choice><pc><choice><orig>,</orig><reg resp="editor" type="punct"></reg></choice></pc>stabat verecunda<pc resp="editor">.</pc>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_23"/><hi rend="rubr">V</hi>ult<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> regirare a <name type="person" nymRef="Jesus_Christ">
+            <choice>
+                <orig>c</orig>
+                <reg resp="editor" type="capit">C</reg>
+            </choice>risto</name> conata est<pc source="manuscript">,</pc>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_24"/>sed prius<choice><abbr><am>&#xA759;&#x303;</am></abbr><expan><ex>quam</ex></expan></choice> caput movere poterat<pc source="manuscript">,</pc> <name type="person" nymRef="Jesus_Christ">
+            <choice>
+                <abbr>
+                <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                </choice><am>h&#x305;</am>s</abbr>
+                <expan>
+                    <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                    </choice><ex>hesu</ex>s</expan></choice></name>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_25"/>e<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> cor<choice><abbr><am>&#xA751;</am></abbr><expan><ex>por</ex></expan></choice>alibus oculis intuens<pc><choice><orig>.</orig><reg resp="editor" type="punct">,</reg></choice></pc> ac eci<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_26"/>oculis pietatis ac misericordie <hi rend="rubr">^</hi><add place="rmargin">respexit</add><pc resp="editor">.</pc> <hi rend="rubr">E</hi><choice><abbr><am>a&#x31B;</am>t</abbr><expan><hi rend="rubr">E</hi><ex>ra</ex>t</expan></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_27"/>aut<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice> facies <name type="person" nymRef="Jesus_Christ">
+            <choice>
+                <abbr>
+                <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                </choice>h<am>u&#x305;</am></abbr>
+                <expan>
+                    <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                    </choice>h<ex>esu</ex></expan></choice></name> pulchra valde. et as
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_28"/>pectus supra mod<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> delectabilis<pc source="manuscript">,</pc>  ita <choice><abbr><am>&#xA759;</am></abbr><expan><ex>quod</ex></expan></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_29"/>nemo intu<choice><abbr><am>e&#x304;</am></abbr><expan><ex>en</ex></expan></choice>t<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> ill<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> esset qui non su
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_30"/>pra mod<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> ^c<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> <choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice>plexatus fuisset<pc resp="editor">.</pc> <hi rend="rubr">E</hi>x illo
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_31"/>igitur gracioso intuitu<name type="person" nymRef="Mary_Magdalene"> 
+            <choice>
+            <orig>m</orig>
+            <reg resp="editor" type="capit">M</reg>
+            </choice>aria</name> conce
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_32"/>pit gracie exuberanti<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> et contritionis
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_33"/>su<choice><abbr><am>&#xA751;</am></abbr><expan><ex>per</ex></expan></choice>hab<choice><abbr><am>u&#x304;</am></abbr><expan><ex>un</ex></expan></choice>d<choice><abbr><am>a&#x304;</am></abbr><expan><ex>an</ex></expan></choice>ci<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice><pc source="manuscript">,</pc>  ex hoc quo<choice><abbr><am>&#xA759;</am></abbr><expan><ex>que</ex></expan></choice> sei<choice><abbr><am>p&#x305;</am></abbr><expan><ex>ps</ex></expan></choice>am
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_34"/>tam<choice><abbr><am>&#xA759;&#x303;</am></abbr><expan><ex>quam</ex></expan></choice> lepros<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> aspiciens<pc><choice><orig>.</orig><reg resp="editor" type="punct">,</reg></choice></pc> pre nimia
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_35"/>verec<choice><abbr><am>u&#x304;</am></abbr><expan><ex>un</ex></expan></choice>dia de <choice><abbr><am>p&#x304;</am></abbr><expan><ex>pre</ex></expan></choice>sencia salvatoris se
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_36"/>subtrahens triclini<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> intravit<pc source="manuscript">,</pc> su<choice><abbr><am>&#xA751;</am></abbr><expan><ex>per</ex></expan></choice> se
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_37"/>osti<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> clausit<pc source="manuscript">,</pc> <choice><abbr>a<am>i&#x305;</am>m</abbr><expan>a<ex>nima</ex>m</expan></choice> su<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> <choice><abbr><am>&#xA76F;</am></abbr><expan><ex>con</ex></expan></choice>solari ren
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_38"/>nuit<pc resp="editor">.</pc> <hi rend="rubr">O</hi> <choice><abbr>pc<am>c&#x305;</am>or</abbr><expan>p<ex>eccat</ex>or</expan></choice></choice><pc resp="editor">,</pc> si n<choice><abbr><am>u&#x304;</am></abbr><expan><ex>un</ex></expan></choice>c <choice><abbr><am>&#xA76F;</am></abbr><expan><ex>con</ex></expan></choice>trition<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice> et effu
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_39"/>sion<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice> lacrimar<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> hui<choice><abbr><am>&#xA76F;</am></abbr><expan><ex>us</ex></expan></choice> mulieris vidis
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_40"/>ses<pc source="manuscript">,</pc> c<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> ea <choice><abbr><am>&#xA76F;</am></abbr><expan><ex>con</ex></expan></choice>versus fuisses<pc resp="editor">.</pc> <hi rend="rubr">S</hi>i eciam
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_41"/>ut ita dic<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> adamantin<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> cor habuisses<pc source="manuscript">,</pc>
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_42"/>t<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice><choice><abbr><am>&#xA759;&#x303;</am></abbr><expan><ex>quam</ex></expan></choice> cera mollis mollit<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> fuisset<pc resp="editor">.</pc> <hi rend="rubr">E</hi>t sic
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_43"/>tot<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> noct<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice> capillo<choice><abbr><am>&#xA75D;</am></abbr><expan><ex>rum</ex></expan></choice> depilacione et lacri
+            <lb edRef="#Latin-B" facs="#Latin-B_23v_b_44"/>macione<pc><choice><orig>.</orig><reg resp="editor" type="punct">,</reg></choice></pc> manu<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> plicacione<pc><choice><orig>.</orig><reg resp="editor" type="punct">,</reg></choice></pc> maxilla<choice><abbr><am>r&#xA75D;</am></abbr><expan><ex>rum</ex></expan></choice>
+            <pb edRef="#Latin-B" facs="#Latin-B_24r" n="fol. 24r"/><cb edRef="#Latin-B" facs="#Latin-B_24r_a" n="fol. 24ra"/>
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_01"/> alapacione<pc><choice><orig>.</orig><reg resp="editor" type="punct">,</reg></choice></pc> denci<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> stridore<pc><choice><orig>.</orig><reg resp="editor" type="punct">,</reg></choice></pc> fletu<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> ardo
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_02"/>re<pc source="manuscript">,</pc> duxit insompn<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice><pc resp="editor">.</pc>  <hi rend="rubr">I</hi>lla hora roga
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_03"/>bat<name type="person" nymRef="Simon"> 
+            <choice>
+            <orig>s</orig>
+            <reg resp="editor" type="capit">S</reg>
+            </choice>ymon pharizeus</name> <name type="person" nymRef="Jesus_Christ">
+            <choice>
+                <abbr>
+                <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                </choice><am>h&#x305;</am>m</abbr>
+                <expan>
+                    <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                    </choice><ex>hesu</ex>m</expan></choice></name><pc resp="editor">,</pc> ut altera die
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_04"/>m<choice><abbr><am>a&#x304;</am></abbr><expan><ex>an</ex></expan></choice>ducaret c<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> illo<pc resp="editor">.</pc><hi rend="rubr">V</hi>enit ergo<name type="person" nymRef="Jesus_Christ"></name> 
+            <choice>
+            <abbr>
+                <choice>
+                <orig>i</orig>
+                <reg resp="editor" type="capit">I</reg>
+                </choice>h<am>u&#x305;</am>s</abbr>
+                <expan>
+                <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                </choice>h<ex>esu</ex>s</expan></choice> al
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_05"/>tera die ad dom<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> <name type="person" nymRef="Simon">pharizei</name><pc resp="editor">,</pc> que erat
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_06"/><choice><abbr><am>&#xA76F;</am></abbr><expan><ex>con</ex></expan></choice>i<choice><abbr><am>u&#x304;</am></abbr><expan><ex>un</ex></expan></choice>cta domui<name type="person" nymRef="Lazarus"> 
+            <choice>
+            <orig>l</orig>
+            <reg resp="editor" type="capit">L</reg>
+            </choice>azari</name> et soro<choice><abbr><am>r&#xA75D;</am></abbr><expan><ex>rum</ex></expan></choice> eius<pc source="manuscript">,</pc>
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_07"/>ut epularetur ibi c<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> multis nobili<choice><abbr><am>b&#xA770;</am></abbr><expan><ex>bus</ex></expan></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_08"/>invitatis<pc resp="editor">.</pc> <name type="person" nymRef="Martha"> <hi rend="rubr">M</hi>artha</name> aut<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice> c<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> vidisset
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_09"/><choice><abbr><am>&#xA759;</am></abbr><expan><ex>quod</ex></expan></choice> <name type="person" nymRef="Jesus_Christ">
+            <choice>
+                <orig>i</orig>
+                <reg resp="editor" type="capit">I</reg>
+            </choice>hesus</name> venisset<pc><choice><orig>.</orig><reg resp="editor" type="punct">,</reg></choice></pc> venit ad soror<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice> su<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice><pc resp="editor">,</pc>
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_10"/>ut <choice><abbr><am>&#xA76F;</am></abbr><expan><ex>con</ex></expan></choice>solaretur e<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice><pc><choice><orig>.</orig><reg resp="editor" type="punct">,</reg></choice></pc> qu<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> in pluribus <choice><abbr><am>p&#x304;</am></abbr><expan><ex>prae</ex></expan></choice> do
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_11"/>lore anxi<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> <choice><abbr><am>i&#x304;</am></abbr><expan><ex>in</ex></expan></choice>venit <choice><abbr><am>&#xA753;</am></abbr><expan><ex>pro</ex></expan></choice>stratam<pc source="manuscript">,</pc> erexit ca
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_12"/>put eius et ait<pc resp="editor">:</pc> <hi rend="rubr">M</hi>agister adest epula
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_13"/>turus in domo <name type="person" nymRef="Simon">
+            <choice>
+                <orig>s</orig>
+                <reg resp="editor" type="capit">S</reg>
+            </choice>ymonis<pc resp="editor">.</pc></name> <name type="person" nymRef="Mary_Magdalene"> <hi rend="rubr">M</hi>aria</name> suspi
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_14"/>rans nichil respondit<pc resp="editor">.</pc> <name type="person" nymRef="Martha"><hi rend="rubr">M</hi>artha</name> soror<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_15"/>humo <choice><abbr><am>&#xA753;</am></abbr><expan><ex>pro</ex></expan></choice>strat<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> relinqu<choice><abbr><am>e&#x304;</am></abbr><expan><ex>en</ex></expan></choice>s<pc source="manuscript">,</pc> ad ministr<choice><abbr><am>a&#x304;</am></abbr><expan><ex>an</ex></expan></choice>d<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_16"/><name type="person" nymRef="Jesus_Christ"><choice><abbr>d<am>n&#x305;</am>o</abbr><expan>d<ex>omin</ex>o</expan></choice></name> est reversa<pc resp="editor">.</pc> <hi rend="rubr">C</hi>onsuevit en<choice><abbr><am>i&#x304;</am></abbr><expan><ex>im</ex></expan></choice><name type="person" nymRef="Martha"> 
+            <choice>
+            <orig>m</orig>
+            <reg resp="editor" type="capit">M</reg>
+            </choice>artha</name>
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_17"/>in <choice><abbr><am>&#xA753;</am></abbr><expan><ex>pro</ex></expan></choice>pria <choice><abbr><am>&#xA751;</am></abbr><expan><ex>per</ex></expan></choice>sona ministrare <name type="person" nymRef="Jesus_Christ"><choice><abbr>d<am>n&#x305;</am>o</abbr><expan>d<ex>omin</ex>o</expan></choice></name><pc resp="editor">.</pc> <hi rend="rubr">C</hi>onve
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_18"/>nientibus igitur <choice><abbr><am>&#xA76F;</am></abbr><expan><ex>con</ex></expan></choice>vivis ante<choice><abbr><am>&#xA759;&#x303;</am></abbr><expan><ex>quam</ex></expan></choice> <name type="person" nymRef="Jesus_Christ">
+            <choice>
+                <abbr>
+                <orig>x</orig>
+                <reg resp="editor" type="capit">X</reg>
+                <am>p&#x305;</am>s</abbr>
+                <expan>
+                    <choice>
+                    <orig>c</orig>
+                    <reg resp="editor" type="capit">C</reg>
+                    </choice><ex>hristu</ex>s</expan></choice></name>
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_19"/>cib<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> sumeret<pc source="manuscript">,</pc> solitus erat <choice><abbr>s<am>&#xA751;</am></abbr><expan><ex>semper</ex></expan></choice> orare ad
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_20"/>patr<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice><pc resp="editor">,</pc> <hi rend="rubr">C</hi>eteris aut<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice> iam in mensa resi
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_21"/>dentibus<pc source="manuscript">,</pc> solus <name type="person" nymRef="Jesus_Christ">
+            <choice>
+                <abbr>
+                <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                </choice>h<am>u&#x305;</am>s</abbr>
+                <expan>
+                    <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                    </choice><ex>hesu</ex>s</expan></choice></name> flexis genibus o
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_22"/>rabat<pc resp="editor">.</pc> <hi rend="rubr">E</hi>t ecce<name type="person" nymRef="Mary_Magdalene"> 
+            <choice>
+            <orig>m</orig>
+            <reg resp="editor" type="capit">M</reg>
+            </choice>aria</name> dom<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> intrat<pc resp="editor">,</pc>
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_23"/>secus pedes <name type="person" nymRef="Jesus_Christ">
+            <choice>
+                <abbr>
+                <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                </choice>h<am>u&#x305;</am></abbr>
+                <expan>
+                    <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                    </choice>h<ex>esu</ex></expan></choice></name> <choice><abbr><am>&#xA751;</am></abbr><expan><ex>pro</ex></expan></choice>c<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice>bit<pc source="manuscript">,</pc> lavit la<choice><abbr><am>c&#x31B;</am></abbr><expan><ex>cri</ex></expan></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_24"/>mis guttas t<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice><choice><abbr><am>&#xA759;&#x303;</am></abbr><expan><ex>quam</ex></expan></choice> rivul<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> copios<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> eff<choice><abbr><am>u&#x304;</am></abbr><expan><ex>un</ex></expan></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_25"/>dit<pc resp="editor">,</pc> circuiens osculabatur<pc source="manuscript">,</pc> cri
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_26"/>nibus tersit<pc><choice><orig>.</orig><reg resp="editor" type="punct"></reg></choice></pc> et ungu<choice><abbr><am>e&#x304;</am></abbr><expan><ex>en</ex></expan></choice>to unxit<pc resp="editor">.</pc> <hi rend="rubr">S</hi>ur
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_27"/>gens aut<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice> <name type="person" nymRef="Jesus_Christ">
+            <choice>
+                <abbr>
+                <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                </choice>h<am>u&#x305;</am>s</abbr>
+                <expan>
+                    <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                    </choice>h<ex>esu</ex>s</expan></choice></name> et ad mens<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> <choice><abbr><am>&#xA753;</am></abbr><expan><ex>pro</ex></expan></choice>per<choice><abbr><am>a&#x304;</am></abbr><expan><ex>an</ex></expan></choice>s<pc source="manuscript">,</pc>
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_28"/>c<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> <name type="person" nymRef="Mary_Magdalene">
+            <choice>
+                <orig>m</orig>
+                <reg resp="editor" type="capit">M</reg>
+            </choice>aria</name> dulciter lo<choice><abbr><am>q&#x305;</am></abbr><expan><ex>qua</ex></expan></choice>batur<pc source="manuscript">.</pc>  <hi rend="rubr">D</hi>e qu<sup>o</sup>
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_29"/><name type="person" nymRef="Simon">pharizeus</name> scandalizabatur et a <name type="person" nymRef="Jesus_Christ"><choice><abbr>d<am>n&#x305;</am>o</abbr><expan>d<ex>omin</ex>o</expan></choice></name>
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_30"/>corripi<choice><abbr><am>t&#xA770;</am></abbr><expan><ex>tur</ex></expan></choice> argum<choice><abbr><am>e&#x304;</am></abbr><expan><ex>en</ex></expan></choice>tose<pc><choice><orig>.</orig><reg resp="editor" type="punct">,</reg></choice></pc> ut <choice><abbr><am>&#xA753;</am></abbr><expan><ex>pro</ex></expan></choice>batur in e
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_31"/>v<choice><abbr><am>a&#x304;</am></abbr><expan><ex>an</ex></expan></choice>gelio<pc><choice><orig>,</orig><reg resp="editor" type="punct">.</reg></choice></pc> <hi rend="rubr">E</hi>t peccatrici <choice><abbr>om<am>i&#x305;</am>a</abbr><expan>o<ex>mni</ex>a</expan></choice> <choice><abbr>pc<am>c&#x305;</am>a</abbr><expan><ex>peccata</ex></expan></choice> di
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_32"/>mitt<choice><abbr><am>u&#x304;</am></abbr><expan><ex>un</ex></expan></choice>tur<pc resp="editor"></pc>  <hi rend="rubr">E</hi>xurg<choice><abbr><am>e&#x304;</am></abbr><expan><ex>en</ex></expan></choice>s <choice><abbr><am>a&#x305;</am>t</abbr><expan><ex>autem</ex></expan></choice> <name type="person" nymRef="Mary_Magdalene">
+            <choice>
+                <orig>m</orig>
+                <reg resp="editor" type="capit">M</reg>
+            </choice>agdalena</name>
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_33"/>gracias <name type="person" nymRef="God">
+            <choice>
+                <orig>d</orig>
+                <reg resp="editor" type="capit">D</reg>
+            </choice>eo</name> <choice><abbr>hu<am>i&#x305;</am>liter</abbr><expan>hu<ex>mi</ex>liter</expan></choice> egit<pc source="manuscript">,</pc>  <choice><abbr><am>&#xA76F;</am></abbr><expan><ex>con</ex></expan></choice>viv<choice><abbr><am>a&#x304;</am></abbr><expan><ex>an</ex></expan></choice>tes
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_34"/>relinqu<choice><abbr><am>e&#x304;</am></abbr><expan><ex>en</ex></expan></choice>s<pc resp="editor">,</pc>  <hi rend="rubr">
+            <choice>
+                <orig>T</orig>
+                <reg resp="editor" type="capit">t</reg>
+            </choice>
+            </hi>riclini<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> <choice><abbr><am>&#xA753;</am></abbr><expan><ex>pro</ex></expan></choice>prie do<choice><abbr><am>m&#xA76F;</am></abbr><expan><ex>mus</ex></expan></choice> intra
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_35"/>vit<pc source="manuscript">,</pc> orat<pc><choice><orig>.</orig><reg resp="editor" type="punct">,</reg></choice></pc> plorat<pc><choice><orig>.</orig><reg resp="editor" type="punct">,</reg></choice></pc> ingemiscit<pc><choice><orig>,</orig><reg resp="editor" type="punct">.</reg></choice></pc> <name type="person" nymRef="Martha"> 
+            <choice>
+            <orig>m</orig>
+            <reg resp="editor" type="capit">M</reg>
+            </choice>artha</name>
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_36"/>letatur<pc resp="editor">,</pc> <hi rend="rubr">
+            <choice>
+                <orig>E</orig>
+                <reg resp="editor" type="capit">e</reg>
+            </choice>
+            </hi>t <choice><abbr><am>q&#x312;</am></abbr><expan><ex>qui</ex></expan></choice>a <name type="person" nymRef="Martha">
+            <choice>
+                <orig>m</orig>
+                <reg resp="editor" type="capit">M</reg>
+            </choice>artha</name> ministravit<pc source="manuscript">,</pc>
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_37"/>adiit  <name type="person" nymRef="Virgin_Mary">
+            <choice>
+                <orig>m</orig>
+                <reg resp="editor" type="capit">M</reg>
+            </choice>ari<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice><pc resp="editor">,</pc> 
+            <choice>
+                <abbr>
+                <choice>
+                    <orig>x</orig>
+                    <reg resp="editor" type="capit">X</reg>
+                </choice>xp<am>i&#x305;</am></abbr>
+                <expan>
+                    <choice>
+                    <orig>c</orig>
+                    <reg resp="editor" type="capit">C</reg>
+                    </choice><ex>hristi</ex></expan></choice> matr<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice></name><pc resp="editor">,</pc> dicens<pc resp="editor">:</pc> <hi rend="rubr">M</hi>a
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_38"/>gister meus<pc resp="editor">,</pc> filius tuus<pc><choice><orig>:</orig><reg resp="editor" type="punct"></reg></choice></pc> sorori mee
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_39"/><choice><abbr>om<am>i&#x305;</am>a</abbr><expan>o<ex>mni</ex>a</expan></choice></choice> <choice><abbr>pc<am>c&#x305;</am>a</abbr><expan>p<ex>eccata</ex></expan></choice> dimisit<pc resp="editor">.</pc>  <name type="person" nymRef="Virgin_Mary"><hi rend="rubr">V</hi>irgo</name> respondit
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_40"/>gloriosa<pc resp="editor">:</pc> <hi rend="rubr">B</hi>enedictus <choice><abbr>d<am>n&#x305;</am>s</abbr><expan>d<ex>ominu</ex>s</expan></choice><pc resp="editor">,</pc> 
+            <choice>
+            <orig>d</orig>
+            <reg resp="editor" type="capit">D</reg>
+            </choice>eus<name type="place" nymRef="Israel">
+            <choice>
+                <abbr>
+                <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                </choice>sr<am>l&#x31B;</am></abbr>
+                <expan>
+                    <choice>
+                    <orig>i</orig>
+                    <reg resp="editor" type="capit">I</reg>
+                    </choice>sr<ex>ahel</ex></expan></choice></name><pc source="manuscript">,</pc>
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_41"/>quia visitavit et fecit red<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice>ption<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice> ple
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_42"/>bis sue<pc resp="editor">.</pc> <hi rend="rubr">Q</hi>ui et de <choice><abbr>pc<am>c&#x305;</am>oribus</abbr><expan>p<ex>eccato</ex>ribus</expan></choice> et de pec
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_43"/>catricib<choice><abbr><am>&#xA76A;</am></abbr><expan><ex>us</ex></expan></choice> iustos facit<pc source="manuscript">,</pc> et n<choice><abbr><am>o&#x304;</am></abbr><expan><ex>on</ex></expan></choice> derel<choice><abbr><am>i&#x304;</am></abbr><expan><ex>in</ex></expan></choice>quit
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_a_44"/>sper<choice><abbr><am>a&#x304;</am></abbr><expan><ex>an</ex></expan></choice>tes in se<pc resp="editor">.</pc> <hi rend="rubr">A</hi>ss<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice>psit ergo <name type="person" nymRef="Virgin_Mary"><choice><abbr>bt<am>a&#x304;</am></abbr><expan><ex></ex>beata<ex></ex></expan></choice>
+            <choice>
+            <abbr>
+                <choice>
+                <orig>m</orig>
+                <reg resp="editor" type="capit">M</reg>
+                </choice> a<am>i&#x31B;</am>a</abbr>
+                <expan>
+                <choice>
+                <orig>m</orig>
+                <reg resp="editor" type="capit">M</reg>
+                </choice>a<ex>ri</ex>a</expan></choice>
+            <cb edRef="#Latin-B" facs="#Latin-B_24r_b" n="fol. 24rb"/><lb edRef="#Latin-B" facs="#Latin-B_24r_b_01"/>virgo gloriosa</name> duas sorores 
+            <choice>
+                <orig>m</orig><reg resp="editor" type="capit">M</reg></choice>arias<pc resp="editor">,</pc>
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_b_02"/>scilicet <name type="person" nymRef="Mary_of_Zebedee"><!-- A has "Zebedaeus"-->
+            <choice>
+                <orig>z</orig>
+                <reg resp="editor" type="capit">Z</reg>
+            </choice>ebedei</name> et ali<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> <name type="person" nymRef="Mary_of_Jacob">
+                <choice>
+                <orig>m</orig>
+                <reg resp="editor" type="capit">M</reg>
+                </choice>ari<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice> 
+                <choice>
+                <orig>i</orig>
+                <reg resp="editor" type="capit">I</reg>
+                </choice>acobi</name><pc source="manuscript">,</pc>
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_b_03"/>et veni<choice><abbr><am>u&#x304;</am></abbr><expan><ex>un</ex></expan></choice>t ad <name type="person" nymRef="Mary_Magdalene">
+            <choice>
+                <orig>m</orig>
+                <reg resp="editor" type="capit">M</reg>
+            </choice>agdalen<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice></name><pc resp="editor">,</pc> ut <choice><abbr><am>&#xA76F;</am></abbr><expan><ex>con</ex></expan></choice>solar<choice><abbr><am>e&#x304;</am></abbr><expan><ex>en</ex></expan></choice><choice><abbr><am>t&#xA770;</am></abbr><expan><ex>tur</ex></expan></choice>
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_b_04"/>eam<pc resp="editor">.</pc> <hi rend="rubr">C</hi>ui c<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> <choice><abbr>bt<am>a&#x304;</am></abbr><expan><ex></ex>beata<ex></ex></expan></choice> <name type="person" nymRef="Virgin_Mary"> 
+            <choice>
+            <orig>m</orig>
+            <reg resp="editor" type="capit">M</reg>
+            </choice>aria virgo glorio
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_b_05"/>sa</name> sola in domo obviaret<pc><choice><orig>:</orig><reg resp="editor" type="punct">,</reg></choice></pc>  
+            <choice>
+            <orig>m</orig>
+            <reg resp="editor" type="capit">M</reg>
+            </choice>agdale
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_b_06"/>na alta voce clamavit<pc resp="editor">:</pc> <hi rend="rubr">O</hi> <name type="person" nymRef="Virgin_Mary">virgo <hi rend="rubr">s<choice><abbr><am>a&#x304;</am></abbr><expan><ex>an</ex></expan></choice>s</hi> (erased)
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_b_07"/><choice><abbr>sc<am>i&#x303;</am>ssima</abbr><expan>s<ex>anc</ex>tissima</expan></choice></name><pc resp="editor">,</pc> recede a me<pc source="manuscript">,</pc> <choice><abbr>n<am>o&#x304;</am></abbr><expan><ex>on</ex></expan></choice> en<choice><abbr><am>i&#x304;</am></abbr><expan><ex>im</ex></expan></choice> est <choice><abbr><am>&#xA76F;</am></abbr><expan><ex>con</ex></expan></choice>gru<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice><pc resp="editor">,</pc>
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_b_08"/>ut peccatrix maior tocius <choice><abbr>scl<am>i&#x31B;</am></abbr><expan>s<ex>eculi</ex></expan></choice><pc resp="editor">,</pc> corpore
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_b_09"/>subdito <choice><abbr>pc<am>c&#x305;</am>is</abbr><expan>p<ex>eccati</ex>s</expan></choice> <choice><abbr><am>i&#x304;</am></abbr><expan><ex>in</ex></expan></choice>fecto et inm<choice><abbr><am>u&#x304;</am></abbr><expan><ex>un</ex></expan></choice>do<pc resp="editor">,</pc> appropin
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_b_10"/>quet <choice><abbr><am>v&#x312;</am></abbr><expan><ex>vir</ex></expan></choice>gini illibate<pc resp="editor">.</pc> <hi rend="rubr">R</hi>espondit <name type="person" nymRef="Virgin_Mary">
+            <choice>
+                <orig>m</orig>
+                <reg resp="editor" type="capit">M</reg>
+            </choice>aria
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_b_11"/>virgo</name><pc resp="editor">:</pc> <hi rend="rubr">O</hi> amica mea amica <name type="person" nymRef="Jesus_Christ">filii 
+            <choice>
+            <orig>d</orig>
+            <reg resp="editor" type="capit">D</reg>
+            </choice>ei</name><pc><choice><orig>:</orig><reg resp="editor" type="punct">,</reg></choice></pc>
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_b_12"/>video in <choice><abbr><am>v&#x312;</am></abbr><expan><ex>ver</ex></expan></choice>bo in quo clara noticia viden
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_b_13"/>tur <choice><abbr>om<am>i&#x305;</am>a</abbr><expan>om<ex>ni</ex>a</expan></choice> nuda et <choice><abbr>a<am>&#xA751;</am>ta</abbr><expan>a<ex>per</ex>ta</expan></choice><pc resp="editor">,</pc> te ab omni
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_b_14"/>sorde <choice><abbr>pc<am>c&#x305;</am>i</abbr><expan>p<ex>eccat</ex>i</expan></choice> m<choice><abbr><am>u&#x304;</am></abbr><expan><ex>un</ex></expan></choice>dat<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice><pc resp="editor">.</pc>  <hi rend="rubr">E</hi>t n<choice><abbr><am>o&#x304;</am></abbr><expan><ex>on</ex></expan></choice> minus miror
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_b_15"/>te ab omni macula purificat<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice><pc><choice><orig>:</orig><reg resp="editor" type="punct">,</reg></choice></pc>  <choice><abbr><am>&#xA759;&#x303;</am></abbr><expan><ex>quam</ex></expan></choice> me
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_b_16"/>a labe <hi rend="rubr"><choice><abbr><am>p&#x305;</am>sert<am>a&#x305;</am></abbr><expan><ex>prae</ex>sert<ex>am</ex></expan></choice></hi> (erased) <choice><abbr><am>p&#x304;</am></abbr><expan><ex>prae</ex></expan></choice>servat<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice><pc resp="editor">.</pc>  <hi rend="rubr">E</hi>t <choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice>plexata
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_b_17"/>est e<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice><pc source="manuscript">,</pc> et osculata<pc resp="editor">.</pc>  <hi rend="rubr">S</hi>orores vero <name type="person" nymRef="Virgin_Mary">glori
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_b_18"/>ose <choice><abbr><am>v&#x312;</am></abbr><expan><ex>vir</ex></expan></choice>ginis</name> vider<choice><abbr><am>u&#x304;</am></abbr><expan><ex>un</ex></expan></choice>t <choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice>bas <choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice>plexib<choice><abbr><am>&#xA76F;</am></abbr><expan><ex>us</ex></expan></choice> col
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_b_19"/>lo<choice><abbr><am>q&#x305;</am></abbr><expan><ex>quen</ex></expan></choice>tes<pc resp="editor">,</pc> <choice><abbr>sciz</abbr><expan><ex>scilicet</ex></expan></choice> <name type="person" nymRef="Virgin_Mary">matr<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice>
+            <choice>
+            <abbr>
+                <choice>
+                <orig>x</orig>
+                <reg resp="editor" type="capit">X</reg>
+                </choice><am>p&#x305;</am>i</abbr>
+                <expan>
+                <choice>
+                    <orig>c</orig>
+                    <reg resp="editor" type="capit">C</reg>
+                </choice><ex>hristi</ex></expan></choice></name> et <name type="person" nymRef="Mary_Magdalene">
+                    <choice>
+                    <orig>m</orig>
+                    <reg resp="editor" type="capit">M</reg>
+                    </choice>agdalen<choice><abbr><am>a&#x304;</am></abbr><expan><ex>am</ex></expan></choice></name><pc resp="editor">,</pc>
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_b_20"/>et a sanctis angelis us<choice><abbr><am>&#xA759;</am></abbr><expan><ex>que</ex></expan></choice> ad tect<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> do
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_b_21"/>mus elevari a terra<pc source="manuscript">,</pc> et in aere susten
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_b_22"/>tari et c<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> omni reverencia iter<choice><abbr><am>u&#x304;</am></abbr><expan><ex>um</ex></expan></choice> <choice><abbr><am>i&#x304;</am></abbr><expan><ex>in</ex></expan></choice>fe
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_b_23"/>rius collocari<pc><choice><orig>:</orig><reg resp="editor" type="punct">,</reg></choice></pc>  sicut postea sorores
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_b_24"/>
+            <name type="person" nymRef="Virgin_Mary">matris 
+                <choice>
+                    <abbr>
+                        <choice>
+                        <orig>x</orig>
+                        <reg resp="editor" type="capit">X</reg><!-- is this capitalization necessary if it´s only part of the abbreviation? particularly since it´s again resolved in the expansion -->
+                        </choice><am>p&#x305;</am>i
+                    </abbr>
+                    <expan>
+                        <choice>
+                            <orig>c</orig>
+                            <reg resp="editor" type="capit">C</reg></choice><ex>hrist</ex>i
+                    </expan>
+                </choice>
+            </name><pc resp="editor">,</pc> que hec vider<choice><abbr><am>u&#x304;</am></abbr><expan><ex>un</ex></expan></choice>t<pc resp="editor">,</pc> fidelibus
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_b_25"/>retuler<choice><abbr><am>u&#x304;</am></abbr><expan><ex>un</ex></expan></choice>t<pc><choice><orig>/</orig><reg resp="editor" type="punct">,</reg></choice></pc> ad laud<choice><abbr><am>e&#x304;</am></abbr><expan><ex>em</ex></expan></choice> et <choice><abbr>gl<am>a&#x31B;</am>m</abbr><expan>gl<ex>oria</ex>m</expan></choice> eius<pc resp="editor">,</pc> qui
+            <lb edRef="#Latin-B" facs="#Latin-B_24r_b_26"/>est benedictus 
+            <choice>
+                <orig>d</orig><reg resp="editor" type="capit">D</reg></choice>eus in secula<pc resp="editor">.</pc> <hi rend="rubr">A</hi>men<pc resp="editor">.</pc>
+        </body>
+    </text>
+</TEI>

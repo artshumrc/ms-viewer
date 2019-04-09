@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+      <fileDesc>
+          <titleStmt>
+              <title>Mary Magdalene Conversion Legend</title>
+              <author ref="#PseudoIsidore">Pseudo Isidore</author>
+              <respStmt>
+                  <name xml:id="NS">Zach Hayworth</name>
+                  <resp>TEI encoder</resp>
+              </respStmt>
+          </titleStmt>
+          <editionStmt>
+              <edition>
+                  <title>Mary Magdalene Conversion Legend – 
+                  Digital Edition</title>
+                  <date when="2017-08-25">August 25, 2017</date>
+              </edition>
+          </editionStmt>
+          <publicationStmt>
+              <authority>
+                  <ref target=""></ref>
+              </authority>
+              <availability status="free">
+                  <p>Published under 
+                    <ref target=""></ref>
+                  </p>
+              </availability>
+          </publicationStmt>
+          <sourceDesc>
+              <msDesc>
+                  <msIdentifier>
+                      <country>Germany</country>
+                      <region>North Rhine-Westphalia    </region>
+                      <settlement>Cologne</settlement>
+                      <institution>Historisches Archiv</institution>
+                      <repository>Staatsbibliothek zu Berlin</repository>
+                      <idno>mgr 524</idno>
+                      <altIdentifier type="?">
+                          <idno>Ms. Germ. Quart. 524</idno>
+                      </altIdentifier>
+                  </msIdentifier>
+                  <history>
+                      <origin>
+                          <p>Written in the 15th Century</p>
+                      </origin>
+                  </history>
+                  <physDesc>
+                      <objectDesc form="??">
+                          <supportDesc>
+                              <p>A mix of <material>paper</material>
+                              and <material>parchment</material></p>
+                              <extent>72 fols.</extent>
+                              <condition>
+                                  <p>The manuscript cannot be opened again
+                                  due to extensive mold</p>
+                              </condition>
+                          </supportDesc>
+                          <layout>
+                              <p>Written in one column throughout;
+                              between 33 and 35 lines</p>
+                          </layout>                       
+                      </objectDesc>
+                      <handDesc>
+                      <!--provide description of hand-->
+                      </handDesc>
+                  </physDesc>
+                  <msContents>
+                      <msItem n="1">
+                          <locus>??</locus>
+                          <title>Christina von Hane??</title>
+                      </msItem>
+                      <msItem n="2">
+                          <locus>fols. 159r-163r</locus>
+                          <title>Hijr beghijnt de bekeringhe Sunte marien 
+                          Magdalenen</title>
+                          <incipit>
+                              <locus>fol. 159r</locus>
+                              Maria magdalena was gheboren
+                          </incipit>
+                          <explicit>
+                              <locus>fol. 163r</locus>
+                              my soluen nummermer vorgheuen
+                          </explicit>
+                          <textLang mainlang="MLG">Middle Low 
+                          German</textLang>
+                          <decoNote type="initial">
+                              <p>One six(?)-line Lombard Initial</p>
+                          </decoNote>
+                      </msItem>
+                      <msItem n="3">
+                          <locus>fols. 187r-196v??</locus>
+                          <title>Van der gloriosen
+                          Jungferen Marien</title>
+                      </msItem>
+                  </msContents>
+              </msDesc>
+              <listWit>
+                  <witness xml:id="B2">B2</witness>
+              </listWit>
+          </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+        <schemaRef n="lbp-critical-1.0.0" url="https://raw.githubusercontent.com/lombardpress/lombardpress-schema/develop/src/out/critical.rng"/>
+        <editorialDecl>
+            <!-- (editorial practice declaration) provides details of editorial principles and practices applied during the encoding of a text. -->  
+            <p>Encoding of this text has followed the published guidlines on...</p>
+            <correction>
+                <p>All names have been capitalized. Capitalization has been
+                added or removed in accordance with punctuation.</p>
+            </correction>
+            <punctuation>
+                <p>Punctuation has been provided by the editor in
+                accordance with New High German punctuation rules.</p>
+            </punctuation>
+        </editorialDecl>
+      </encodingDesc>
+      <!-- (revision description) summarizes the revision history for a file.  -->
+      <revisionDesc status="draft">
+        <!-- listChange groups a number of change descriptions (in reverse order!) associated with either the creation of a source text or the revision of an encoded text. -->
+        <listChange>
+            <change when="2017-08-25" status="draft" n="0.0.0"><p>Created file for the first time.</p></change>
+            <change when="2018-12-14" status="draft" n="0.0.0"><p>corrected mistakes: "MAryMagdalene_lovers"--> "MaryMagdalene_lovers"; "nymRef"-->"nymRef"; "underlined" --> "underline"
+            "jhesus_christ" --> "Jesus_Christ"; deleted: "role="mother"" for Eucharia; added: tag for tribe of David</p></change>                                
+        </listChange>
+      </revisionDesc>
+  </teiHeader>
+  <text>
+    <body><pb edRef="#K1" facs="#K1_187r" n="fol. 187r"/>
+        <ab xml:id="legend_title">Her be<lb edRef="#K1" facs="K1_187r_1"/>gynt die bekeirunge Sanck<lb/>
+            <name type="person" nymRef="Mary_Magdalene">maria magdalena
+            </name> der hel<lb/>ger vruntynen uns 
+                <choice>
+                    <abbr>lieu<am>ē</am>
+                    </abbr>
+                    <expan>lieu<ex>en</ex>
+                    </expan>
+                </choice> 
+                <choice>
+                    <abbr>her<am>ē</am>
+                    </abbr>
+                    <expan>her<ex>en</ex>
+                    </expan>
+                </choice><pc resp="editor">.</pc>
+        </ab><lb/>
+        <ab xml:id="genealogy">
+            <name type="person" nymRef="Mary_Magdalene" role="saint">
+                <decoNote type="majuscule">S
+                </decoNote>ancte maria magdalena
+            </name>
+            <pc resp="editor">,</pc><lb/>Die daer geboren is van<pb edRef="#K1" facs="#K1_187v"/><lb/>edellem 
+            <choice>
+                <abbr>st<am>ā</am>men
+                </abbr>
+                <expan>sta<ex>mm</ex>en
+                </expan>
+            </choice> van erlichem<lb/>geslechte der stat van 
+            <name type="place" nymRef="Jerusalem">
+                <choice>
+                    <abbr>Jherusal<am>ē</am>
+                    </abbr>
+                    <expan>Jherusal<ex>em</ex>
+                    </expan>
+                </choice>
+            </name>
+            <lb/><pc resp="editor">,</pc> Ir vader 
+            <name type="person" nymRef="Syrus">cyrus</name> 
+            vnd ir moder<lb/>
+            <name type="person" nymRef="Eucharia">efncharia</name> vnd sy hadden zwae<lb/>doechter vnd eynen son
+            <pc resp="editor">.</pc> Die eyn<lb/>dochter heisch 
+            <name type="person" nymRef="Martha">Martha</name>
+            <pc resp="editor">,</pc> Die ander<lb/>
+            <name type="person" nymRef="Mary_Magdalene" role="saint">maria Magdalena</name>
+            <pc resp="editor">.</pc> Der sonn<lb/>heisch 
+            <name type="person" nymRef="Lazarus">lasarus</name> vnd hey was<lb/>der gene
+            <pc resp="editor">,</pc> Den der here 
+            <name type="person" nymRef="Jesus_Christ" rend="underline">Jesus</name><lb/>uperweckden van dem dode
+            <pc resp="editor">,</pc><lb/>do hey vier dage dort was ge<lb/>west in dem graue
+            <pc resp="editor">.</pc> 
+      	</ab>
+      	<ab xml:id="heritage">Nae dem<lb/>dode irer alderen so deilten sy<lb/>ir vedeliche erue
+            <pc resp="editor">,</pc> vnd 
+            <name type="person" nymRef="Lazarus">Lazaro</name><lb/>nam eyn grois deil bynen<lb/>
+            <name type="place" nymRef="Jerusalem">Jerusalem</name> in der stat vnde<lb/>oeffden sich in rytterschaff
+            <pc resp="editor">,</pc> da<lb/>hey was eyn ritter
+            <pc resp="editor">.</pc> 
+            <name type="person" nymRef="Martha">Martha</name><lb/>geloiffden dem heren zo dye<lb/>nen in reynicheit vnd sy was<pb edRef="#K1" facs="#K1_188r"/><lb/>eyn 
+            <choice>
+                <abbr>herberger<am>ȳ</am>ne
+                </abbr>
+                <expan>herberger<ex>yn</ex>ne
+                </expan>
+            </choice> der pilge<lb/>rum vnd sonderlich vmb irs<lb/>hilgen leuens willen
+            <pc resp="editor">.</pc> So was<lb/>sy werdich zo herbrygen <name type="person" nymRef="Jesus_Christ" rend="underline">Je<lb/>sum Crystun<pc resp="editor">,</pc> unsen lieuen<lb/>heren</name><pc resp="editor">,</pc> vnd syne lieue moder<lb/><name type="person" nymRef="Virgin_Mary">maria</name> vnd die hilge Aposte<lb/>len<pc resp="editor">.</pc> vnd ir erffdeil was dat stet<lb/>gen loekana gelegen by <name type="place" nymRef="Jerusalem">Jheru<lb/>salem</name><pc resp="editor">,</pc> vnd wat ir wart van<lb/>renten<pc resp="editor">,</pc> dat gaff sy armen luy<lb/>den um <name rend="underline">gotz</name> willen<pc resp="editor">.</pc> <name type="person" nymRef="Mary_Magdalene">Maria <lb/>magdalena</name> nam vur ir erff<lb/>deill dat sloss genannt <name type="place" subtype="residence" nymRef="Magdalum"><lb/>lum</name><pc resp="editor">,</pc> vnd daer vmb wart sy<lb/>geheischen magdalena<pc resp="editor">.</pc>
+        </ab> 
+        <ab xml:id="MaryMagdalene_mismanagement">vnde<lb/>alle ir golt gebruychden sy tzo<lb/>swaeren groissen sunden myt<lb/>boeser geselschafft vnd der boe<lb/>geist brachte sy 
+            <choice resp="editor">
+                <sic><pc source="manuscript">.</pc></sic>
+                <corr/>
+            </choice> zo valle myt<pb edRef="#K1" facs="#K1_188v"/><lb/>argem boessen willen in 
+            <choice><abbr>manch<am>ē</am></abbr><expan>manch<ex>en</ex></expan></choice><lb/>sunden<pc resp="editor">.</pc> zom eirsten in houart<pc resp="editor">,</pc><lb/>myt eynem houerdigen hertzen<pc resp="editor">,</pc><lb/>Sy meynte<pc resp="editor">,</pc> dat ir nemant<lb/>gelich en were in schoynheit<pc resp="editor">,</pc><lb/>in edelheit vnd richdum<pc resp="editor">.</pc> ouch<lb/>was sy houerdich in worden<pc resp="editor">,</pc><lb/>vnd wercken vnd in kleyder<lb/>en vnd in zeirheit irs lyffs<pc resp="editor">.</pc><lb/>Sy was ouch gyrich in Zyt<lb/>lichem goide vnd nae tzytlich<lb/>er eren vnd wallust der wer<lb/>elt<pc resp="editor">.</pc> Ouch was sy unkuysch <lb/>myt worden vnd myt geber<pc resp="editor">,</pc><lb/>Also dat sy irre goit geruycht<lb/>verlore vnd eiren eygen <lb/>namen vnd geheischen wart<lb/>eyn offenbaer sunderynne<pc resp="editor">.</pc><lb/>Ir suster marta <choice><abbr>clagd<am>ē</am></abbr><expan>clagd<ex>en</ex></expan></choice><pc resp="editor">,</pc> dat<lb/>le<add hand="hand2" place="over"><g ref="U+00A8">ü</g></add>en irer s<add hand="hand2" place="over"><g ref="U+00A8">ü</g></add>ster der moder<pb edRef="#K1" facs="#K1_189r"/><name rend="underline"> Christe</name> myt <choice><abbr>w<am>ȳ</am>nenden</abbr><expan>w<ex>yn</ex>nenden</expan></choice> <choice><abbr>oug<am>ē</am></abbr><expan>oug<ex>en</ex></expan></choice><lb/>vnd bat sy<pc resp="editor">,</pc> dat sy <name type="person" nymRef="Jesus_Christ" rend="underline">Jhes<add hand="hand2" place="over"><g ref="U+00A8">ü</g></add>s</name> v<add hand="hand2" place="over"><g ref="U+00A8">ü</g></add>r<lb/>sy woulde bidden<pc resp="editor">.</pc>
+        </ab> 
+        <ab xml:id="Martha_confronts_Mary">Der lerer<lb/>
+            <name type="person" nymRef="Pseudo_Isidore">ysidorus</name> spricht in dem boich<lb/>der hilgen doit vnd dese ge<lb/>susteren quaemen zosamen<lb/>zo <name type="place" nymRef="Bethany">betanyen</name> vnd <name type="person" nymRef="Mary_Magdalene">maria mag<lb/>dalena</name> gynck sytzen v<add hand="hand2" place="over"><g ref="U+00A8">ü</g></add>r <choice><abbr>eyn<am>e</am></abbr><expan>eyn<ex>en</ex></expan></choice><lb/>spegel vnd zeirden ir schon haer<lb/>vnd iren licham<pc resp="editor">.</pc> Do spr<add hand="hand1">a</add>ch ir<lb/>suster <name type="person" nymRef="Martha">Martha</name><pc resp="editor">,</pc> <pc resp="editor">"</pc> lieue suster<pc resp="editor">,</pc> we<lb/>steist<add hand="hand2" place="over"><g ref="U+00A8">ü</g></add> so sere nae eren vnde<lb/>Zeirheit dyns lichams vnde<lb/>dyne schoyn sele<pc resp="editor">,</pc> die dae geschaf<lb/>fen is nae dem bilde <name rend="underline">gotz</name><pc resp="editor">,</pc> die<lb/>beflecktesu myt dynen <choice><abbr>groiss<am>ē</am></abbr><expan>groiss<ex>en</ex></expan></choice><lb/>sunden<pc resp="editor">.</pc> Ich bidden dich<pc resp="editor">,</pc> lieue<lb/>suster<pc resp="editor">,</pc> gedenke<pc resp="editor">,</pc> dat dyn <choice><abbr>lich<am>ā</am></abbr><expan>lich<ex>am</ex></expan></choice><lb/>hat die schoynheit van der se<lb/>len<pc resp="editor">,</pc> vnd dencke<pc resp="editor">,</pc> dat dyn schon<pb edRef="#K1" facs="#K1_189v"/><lb/>licham<pc resp="editor">,</pc> dat du zeirest myt golde<lb/>vnd siluer<pc resp="editor">,</pc> sal werden eyn spyse<lb/>der worme<pc resp="editor">.</pc><pc resp="editor">"</pc> Do antworden ir<lb/><name type="person" nymRef="Mary_Magdalene">maria</name><pc resp="editor">,</pc> <pc resp="editor">"</pc>myn usserkoren suster<pc resp="editor">,</pc><lb/>nae dem dat ich schoyn byn in<lb/>mynem licham vnd in <choice><abbr>richd<am>ū</am></abbr><expan>richd<ex>um</ex></expan></choice><lb/>deser werelt<pc resp="editor">,</pc> so bidden ich dich<pc resp="editor">,</pc><lb/>bis zo vreden vnd laes mych<lb/>nu vroelich myns goitz ge<lb/>bruychen myt vr<add hand="hand2" place="over"><g ref="U+00A8">ü</g></add>nden vnd<lb/>lyeffhaueren deser werelt <lb/>vnd laes uns nü vroelich syn<lb/>zo samen<pc resp="editor">,</pc> wer weis we lange<pc resp="editor">.</pc><pc resp="editor">"</pc><lb/>Des anderen dages<pc resp="editor">,</pc> zouch <name type="person" nymRef="Mary_Magdalene">ma<lb/>ria</name> zo huyss<pc resp="editor">,</pc> vnd <name type="person" nymRef="Martha">Martha</name> weyn<lb/>den vnd schre<pc resp="editor">,</pc> Dat ir suster so<lb/>wilde was
+            <pc resp="editor">.
+            </pc> 
+        </ab>
+        <ab xml:id="MaryMagdalene_lovers">Daer nae oüer
+            <pc source="manuscript">:
+            </pc><lb/>tzwen maende hadden de Ionck<lb/>eren des constanauels van 
+            <name type="place" nymRef="Jerusalem">Ieru<lb/>salem
+            </name> eynen hoff vnd vroelich<pb edRef="#K1" facs="#K1_190r"/><lb/>eit
+            <pc resp="editor">.</pc> daer zo wart geladen ma<lb/>ria magdalena<pc resp="editor">.</pc> Daer quam sy<lb/>myt groisser kostlicheit vnd zeir<lb/>heit irs lyffs als eyn lieffha<lb/>uersche deser werelt vnd spranck<lb/>vnd danssden tzwen dage vnd<lb/>tzwae nacht<pc resp="editor">,</pc> dat sy kom spyse<lb/>zo sich nam van vroelicheit<pc resp="editor">.</pc> <lb/>
+        <ab/>
+        <ab xml:id="market_scene">vnder des vernam 
+            <name type="person" nymRef="Martha">Martha</name>,<lb/>Dat der here <name type="person" nymRef="Jesus_Christ" rend="underline">Jesus</name> was in<lb/>dem galleschen lande vnd<lb/>woulde zo ir komen zo be<lb/>thanyen<pc resp="editor">,</pc> Do <choice>g<abbr><am>ȳ</am>ck</abbr><expan>g<ex>yn</ex>ck</expan></choice> sy des<lb/>morgens vroe in die stat<lb/>umb spyse zo gelden dem<lb/>heren<pc resp="editor">.</pc> als nu <name type="person" nymRef="Martha">martha</name> gynck<lb/>ouer den mart<pc resp="editor">,</pc> Do quam<lb/>eyn groisse schar volcks <lb/>myt pyffen vnd basünen<lb/>van dem raethuys vnde<pb edRef="#K1" facs="#K1_190v"/><lb/>vur in der spytzen gynck <name type="person" nymRef="Mary_Magdalene">ma<lb/>ria</name> myt groisser <choice>houerdey<abbr><am>ē</am></abbr><expan>houerdey<ex>en</ex></expan></choice><pc resp="editor">.</pc><lb/>Do sach <name type="person" nymRef="Martilla">marcilla</name><pc resp="editor">,</pc> die dae was<lb/>eyn magt <name type="person" nymRef="Martha">marthen</name><pc resp="editor">,</pc> dat <name type="person" nymRef="Mary_Magdalene">maria</name><lb/>geleit geynck myt groisser 
+            <choice>er
+                <abbr>
+                    <am>ē</am>
+                </abbr>
+                <expan>er
+                    <ex>en</ex>
+                </expan>
+            </choice><pc resp="editor">.</pc><lb/>Doe sacht sy zo <name type="person" nymRef="Martha">martha</name> ionffer<pc resp="editor">,</pc><lb/><pc resp="editor">"</pc>seit dae vrre suster<pc resp="editor">"</pc><pc resp="editor">"</pc> Doe sach<lb/><name type="person" nymRef="Martha">martha</name> vmb vnd wart bit<lb/>terlichen sere schryen vnde<lb/>valden ir hende zo <choice>sam<abbr><am>ē</am></abbr><expan>sam<ex>en</ex></expan></choice> vnd<lb/>sprach myt ynnicheit <pc resp="editor">"</pc>[A]ch<pc resp="editor">,</pc> <choice>m<abbr><am>ȳ</am></abbr><expan>m<ex>yn</ex></expan></choice><lb/>lieue here vnd <unclear>spepper</unclear><pc resp="editor">,</pc> wan<lb/>it dich genoich duyncket<pc resp="editor">,</pc> dat<lb/>myn suster gedeynt hat dem<lb/>boesen geist<pc resp="editor">,</pc> So bidden ich dich<pc resp="editor">,</pc><lb/>dat du sy an wils seyn myt <choice>s<abbr><am>ē</am></abbr><expan>d<ex>en</ex></expan></choice><lb/>ougen dynre barmhertzicheit<lb/>vnd geuen ir eynen anderen<lb/>syn<pc resp="editor">,</pc> dat sy ir leuen besser<pc resp="editor">.</pc><pc resp="editor">"</pc> vnd<lb/>myt desem gebede bleiff sy <choice>sta<abbr><am>ē</am></abbr><expan>sta<ex>en</ex></expan></choice><pb edRef="#K1" facs="#K1_191r"/><lb/>vnd warden irer suster <name type="person" nymRef="Mary_Magdalene">maria</name><pc resp="editor">.</pc><lb/>Do <name type="person" nymRef="Mary_Magdalene">maria</name> irer suster genyckden<pc resp="editor">,</pc><lb/>do sprach sy zo ir vnd vraegden<lb/>sy<pc resp="editor">,</pc> wat ir wercke also vroege in<lb/>der stat were<pc resp="editor">.</pc> <name type="person" nymRef="Martha">Martha</name> antwor<lb/>de myt groisser oitmoedicheit<lb/>vnd sprach<pc resp="editor">,</pc> sy were komen zo<lb/>gelden spyse vur ire geste<pc resp="editor">.</pc> Do<lb/>en hadden de tzwae gesusteren<lb/>neit vil reden zo samen<pc resp="editor">,</pc> Son<lb/>der <name type="person" nymRef="Mary_Magdalene">maria</name> sachte myt lachendem<lb/>monde<pc resp="editor">,</pc> <pc resp="editor">"</pc>lieue suster<pc resp="editor">,</pc> geylt ouch<lb/>get vur mych<pc resp="editor">,</pc> ich wil ouch by<lb/>dich komen vnd wil myt dir<lb/>essen<pc resp="editor">.</pc><pc resp="editor">"</pc> Her up spricht der hilge<lb/>leirer <name type="person" nymRef="Augustine" role="saint"></name>Sent Augustynus<pc resp="editor">,</pc> dat<lb/><name type="person" nymRef="Mary_Magdalene">maria</name> nee besser maeltzyten<lb/>dede dan dese was<pc resp="editor">,</pc> want her<lb/>wart sy bekeirt van irem <choice><abbr>s<am>ū</am><lb/>digen</abbr><expan>s<ex>un</ex>digen</expan></choice> leuen<pc resp="editor">.</pc> 
+        </ab>
+        <ab xml:id="Mary_at_Marthas_house">Des anderen
+            <pb edRef="#K1" facs="#K1_191v"/><lb/>dags<pc resp="editor">,</pc> van groisser moedicheit<lb/>wegen<pc resp="editor">,</pc> so gynck <name type="person" nymRef="Mary_Magdalene">maria</name> vff <name type="place" nymRef="Jerusalem">Ie<lb/>rusalem</name> heymlich vnd gynck<lb/>zo <name type="person" nymRef="Martha">martha</name> irer suster zo <name type="place" nymRef="Bethany">betha<lb/>nya</name><pc resp="editor">.</pc> vnd sy ontfeynck sy lieff<lb/>lichen myt groisser vroelicheit<lb/>vnd heisch sy neder sytzen<pc resp="editor">.</pc> Doy<lb/>sprach <name type="person" nymRef="Mary_Magdalene">maria</name><pc resp="editor">,</pc> <pc resp="editor">"</pc>suster des is<lb/>myr grois van noeden<pc resp="editor">,</pc> ich be<lb/>houe wal dat ich mych <choice><abbr>rest<am>ē</am></abbr><expan>rest<ex>en</ex></expan></choice><pc resp="editor">,</pc><lb/>want ich han zweyn dage <choice><abbr><am>ū</am>d</abbr><expan><ex>un</ex>d</expan></choice><lb/>tzwae nacht gesprongen vnd<lb/>vroelich gewest myt den <choice><abbr>I<am>ō</am>ck<lb/>eren</abbr><expan>I<ex>on</ex></expan>ckeren</choice> van <name type="place" nymRef="Jerusalem">Ierusalem</name> vnd ich<lb/>en han alle myn dage up geyn<lb/>tzyt so vroelich gewest als nu<pc resp="editor">.</pc><lb/>Also han ich nu vroelichen ge<lb/>macht die gantze stat van <name type="place" nymRef="Jerusalem">ihe<lb/>rusalem</name><pc resp="editor">,</pc> off sy sagen soulde nu <lb/>en dantzen ich nunmer besser<pc resp="editor">.</pc><pc resp="editor">"</pc> <pb edRef="#K1" facs="#K1_192r"/><lb/><name type="person" nymRef="Martha">Martha</name> antworde irer suster<pc resp="editor">,</pc><lb/><pc resp="editor">"</pc>nae dem dat ir so vroelichen<lb/>syt<pc resp="editor">,</pc> hadt ir ouch by vch den <lb/>koenynck<pc resp="editor">,</pc> der alle hertzen vroe<lb/>lich macht vnd der dat schoen<lb/>ste is bouen allen creaturen<pc resp="editor">?</pc><pc resp="editor">"</pc><lb/>Doe sprach <name type="person" nymRef="Mary_Magdalene">maria</name> vnd sachte<pc resp="editor">,</pc><lb/><pc resp="editor">"</pc>myt vns en waeren geyne<lb/>koenyngen<pc resp="editor">.</pc> meynstu den key<lb/>ser <name type="person" role="emperor" nymRef="Tiberius" >Teberyus</name><pc resp="editor">?</pc><pc resp="editor">"</pc> <name type="person" nymRef="Martha">martha</name> vnder<lb/>wyste sy vnd sachte<pc resp="editor">,</pc> <pc resp="editor">"</pc>ich en mey<lb/>nen neit <name type="person" role="emperor" nymRef="Tiberius" >tyberyus</name><pc resp="editor">,</pc> der daer is<lb/>eyn koenynck der mynschen<pc resp="editor">;</pc><lb/>mer ich meynen den <choice><abbr>groiss<am>ē</am></abbr><expan>groiss<ex>en</ex></expan></choice><lb/>koenynck vnd regeirer hemel<lb/>richs vnd ertrichs vnd der<lb/>daer is eyn verloeser der <name type="org" subtype="religion" nymRef="Children_of_Israel">kyn<lb/>der van <name type="place" nymRef="Israel">Israhel</name></name> vnd der dae<lb/>an sich dragt alle schoynheit<lb/>der werelt<pc resp="editor">,</pc> want syn vader<pb edRef="#K1" facs="#K1_192v"/><lb/>is <name type="person" nymRef="God">got</name> vnd syn moder is eyn<lb/>eyn reyne ionffer geboren<lb/>van conyncklichem <name type="org" subtype="religion" nymRef="tribe_of_David">stam her<lb/>
+            <name type="person" nymRef="David">dauytzs
+            </name></name>
+            <pc resp="editor">.</pc><pc resp="editor">"</pc> Do vraegede <name type="person" nymRef="Mary_Magdalene">maria</name><lb/>nae wyssen der lieffhauer de<lb/>ser werelt<pc resp="editor">,</pc> <pc resp="editor">"</pc>O lieue suster nu<lb/>derwyse mych<pc resp="editor">,</pc> waer is der<lb/>schone coenynck<pc resp="editor">,</pc> Daer du myr<lb/>so groisse dyngen van sages<lb/>is hey also schoyn<pc resp="editor">,</pc> so wil ich in<lb/>myt gelde vnd goide zo myr<lb/>zeyn zo miner lyeffden vnde<lb/>wil syn vruntschaff krygen<pc resp="editor">.</pc><pc resp="editor">"</pc><lb/>Do antworde <name type="person" nymRef="Martha">martha</name><pc resp="editor">,</pc> <pc resp="editor">"</pc>den ich<lb/>meynen<pc resp="editor">,</pc> dat is myn here <name type="person" nymRef="Jesus_Christ" rend="underline">Ihe<lb/>sus <choice><abbr>yp<am>ū</am>s</abbr><expan>yp<ex>un</ex>s</expan></choice></name><pc resp="editor">,</pc> der daer eyn artzet<lb/>ter der selen is<pc resp="editor">.</pc><pc resp="editor">"</pc> vnd myt den<lb/>worden weynden <name type="person" nymRef="Martha">Martha</name> dar<lb/>umb<pc resp="editor">,</pc> dat <name type="person" nymRef="Mary_Magdalene">maria</name> dat <choice><abbr>vleischlich<am>ē</am></abbr><expan>vleischlich<ex>en</ex></expan></choice><lb/>verstont<pc resp="editor">.</pc> Do <name type="person" nymRef="Mary_Magdalene">maria</name> dat sach<pc resp="editor">,</pc><pb edRef="#K1" facs="#K1_193r"/><lb/>dat <name type="person" nymRef="Martha">martha</name> weynden<pc resp="editor">,</pc> doe vraeg<lb/>den sy Sy vnd sacht<pc resp="editor">,</pc> <pc resp="editor">"</pc>O lieue suster<pc resp="editor">,</pc><lb/>waer vmb weynstu altzyt als ich<lb/>by dich komen? is dat myn schoult<pc resp="editor">,</pc><lb/>so wil ich van dir blyuen.<pc resp="editor">"</pc> Do sprach<lb/><name type="person" nymRef="Martha">Martha</name><pc resp="editor">,</pc> <pc resp="editor">"</pc>Och lieue syster<pc resp="editor">,</pc> en soulde<lb/>ich neit weynen<pc resp="editor">,</pc> want ich hoeren<lb/>alle dage<pc resp="editor">,</pc> dat dyn geruycht<pc resp="editor">,</pc> dat<lb/>dyn beste kleynoit is<pc resp="editor">,</pc> Dat hastu<lb/>verloren? vnd dyn geselschaff<lb/>en is neit goit<pc resp="editor">;</pc>  du befleckes dyn<lb/>edel sele<pc resp="editor">,</pc> die suuerlich is<pc resp="editor">,</pc> myt<lb/>groissen sunden<pc resp="editor">.</pc> vnd altzyt so<lb/>mois ich boese geruycht van<lb/>dir hoeren<pc resp="editor">,</pc> waer dat ich byn.<pc resp="editor">"</pc><lb/><name type="person" nymRef="Mary_Magdalene">maria</name> en konde sich neit langer<lb/>vnthalden<pc resp="editor">.</pc> do sy ire suster <name type="person" nymRef="Martha">martha</name><lb/>also seir sach weynen<pc resp="editor">,</pc> do sprach<lb/>sy myt weynender <choice><abbr>st<am>ȳ</am>men</abbr><expan>st<ex>ym</ex>men</expan></choice><pc resp="editor">,</pc> <pc resp="editor">"</pc>O<lb/>lieue suster<pc resp="editor">,</pc> nae dem dat ich so<pb edRef="#K1" facs="#K1_193v"/><lb/>groeslichen verloren han <choice>m<abbr><am>ȳ</am>e</abbr><expan>m<ex>yn</ex>e</expan></choice><lb/>ere vnde myn goit geruycht<pc resp="editor">,</pc> so<lb/>gyff myr doch goiden raet<pc resp="editor">,</pc> dat<lb/>ich myn sundlich leuen moege<lb/>besseren vnd myn groisse sun<lb/>den<pc resp="editor">,</pc> daer ich in byn.<pc resp="editor">"</pc> Do sprach<lb/>marta <pc resp="editor">"</pc>lieue suster<pc resp="editor">,</pc> ich en kan<lb/>dir geynen besser raet <choice>gegev<abbr><am>ē</am></abbr><expan>gegev<ex>en</ex></expan></choice><pc resp="editor">,</pc><lb/>dan bleyff her eyn korte tzyt<lb/>myt myr<pc resp="editor">:</pc> want huyde off<lb/> morgen So koempt der ar<lb/>zeter der selen<pc resp="editor">,</pc> <name type="person" nymRef="Jesus_Christ" rend="underline">christus Ie<lb/>sus</name><pc resp="editor">,</pc> myn here vnd myn soisse<lb/>troist vnd myn alre lieffste<lb/>gast<pc resp="editor">.</pc> bydde yn<pc resp="editor">,</pc> dat hey dyr aff<lb/>wesche alle dyn sunden vnd<lb/>vergeue dyr dyn mysdaet<pc resp="editor">.</pc><pc resp="editor">"</pc><lb/>
+        </ab>
+        <ab xml:id="Jesus_enters">Do 
+            <name type="person" nymRef="Mary_Magdalene">maria</name> dese wort hoirde,<lb/>ee sy ir antworde<pc resp="editor">,</pc> so sach die<lb/>magt zo der doeren vff vnd<pb edRef="#K1" facs="#K1_194r"/><lb/>sach<pc resp="editor">,</pc> dat <name type="person" nymRef="Jesus_Christ" rend="underline">der here Iesus</name> quam<lb/>myt synen Ioengeren<pc resp="editor">.</pc> Doe<lb/>sprach sy zo <name type="person" nymRef="Martha">marthen</name><pc resp="editor">,</pc> hilge<lb/>Jonffrauwe<pc resp="editor">,</pc> <pc resp="editor">"</pc>der here koempt<pc resp="editor">.</pc><pc resp="editor">"</pc><lb/>do stont <name type="person" nymRef="Martha">martha</name> up myt grois<lb/>ser vroelicheit vnd <name type="person" nymRef="Mary_Magdalene">maria</name> myt<lb/>groisser voerten<pc resp="editor">.</pc> Do sacht mar<lb/>tha<pc resp="editor">,</pc> <pc resp="editor">"</pc>bis nu vroelich<pc resp="editor">,</pc> myn lie<lb/>ue suster<pc resp="editor">,</pc> vnd vroecht dich neit,<lb/>want hey is so genoechlich in<lb/>synen worden<pc resp="editor">,</pc> dattu alle dyn<lb/>dage syns geliche nee <choice>gese<abbr><am>ȳ</am></abbr><expan>gese<ex>yn</ex></expan></choice><lb/>noch gehort en has.<pc resp="editor">"</pc> Do sprach<lb/><name type="person" nymRef="Mary_Magdalene">maria</name><pc resp="editor">,</pc> lieue suster<pc resp="editor">,</pc> wilch is<lb/>der here?<pc resp="editor">"</pc> Doe gaff sy ir eyn<lb/>zeichen<pc resp="editor">,</pc> das sy in by kante<lb/>vur den Apostellen<pc resp="editor">.</pc> doe der<lb/>here <name type="person" nymRef="Jesus_Christ" rend="underline">Jesus</name> in dat huyss quam<pc resp="editor">,</pc><lb/>do stont <name type="person" nymRef="Mary_Magdalene">maria</name> achter der<lb/>duyr vnd schamden sich<pc resp="editor">.</pc> mar<pb edRef="#K1" facs="#K1_194v"/><lb/>tha gynck dem heren vntge<lb/>gen myt gebuygden kneen<lb/>vnd heisch in wilkome syn<lb/>vnd vntfeynck in myt eir<lb/>en vnd werdicheit vnd in<lb/>groisser lieffden<pc resp="editor">.</pc> Der here<lb/><name type="person" nymRef="Jesus_Christ" rend="underline">Jhesus</name> geynck vur <name type="person" nymRef="Mary_Magdalene">maria</name><lb/>hyn in dat huyss vnd sprach<lb/>ir neit zo vnd sach sy neit<lb/>an<pc resp="editor">.</pc> Doe sprach <name type="person" nymRef="Martha">martha</name> zo<lb/>dem heren<pc resp="editor">,</pc> <pc resp="editor">"</pc>suych here<pc resp="editor">,</pc> dit is<lb/><name type="person" nymRef="Mary_Magdalene">Maria</name><pc resp="editor">,</pc> off sy sagen woulde<pc resp="editor">,</pc><lb/>O here<pc resp="editor">,</pc> dit is die gene<pc resp="editor">,</pc> dar<lb/>ich vmb weynen<pc resp="editor">.</pc> Dit is die<lb/>gene<pc resp="editor">,</pc> die so sweirlichen gesun<lb/>diget hat<pc resp="editor">.</pc> Suych sy doch an<lb/>myt den ougen dynre barm<lb/>hertzicheit vnd vergyff ir alle<lb/>ir sunden.<pc resp="editor">"</pc> Doe keirden sich<lb/>der here vmb vnd sach <name type="person" nymRef="Mary_Magdalene">maria</name><pb edRef="#K1" facs="#K1_195r"/><lb/>an myt den ougen synre <choice><abbr>ba<am>ṝ</am><lb/>hertzicheit</abbr><expan>ba<ex>rm</ex>herzicheit</expan></choice><pc resp="editor">.</pc> dae hey ouch myt<lb/>an sach den hilgen Apostel,<lb/><name type="person" nymRef="Peter" >sent peter</name><pc resp="editor">.</pc> In der tzyt synre<lb/>verleunynge<pc resp="editor">,</pc>
+        </ab>
+        <ab xml:id="Mary_retreats">
+            <name type="person" nymRef="Mary_Magdalene">Maria</name><pc resp="editor">,</pc> van<lb/>groisser schemden<pc resp="editor">,</pc> wegen de<lb/>sy kreich van dem anseyn<lb/>des heren<pc resp="editor">,</pc> so geynck sy in<lb/>die slaeffkamer irer suster<lb/>vnd veil myt groissem schry<lb/>en vnd weynen vp die erde<lb/>vnd berouden ire sunden gans<lb/>sere vnd ouerdacht alle ire<lb/>sunden<pc resp="editor">,</pc> Die sy alle irre leue<lb/>dage begangen hadde<pc resp="editor">.</pc> <name type="person" nymRef="Martha">Martha</name><lb/>bleyff by dem heren vnd kal<lb/>den lyefflichen myt eme<pc resp="editor">.</pc> Zu<lb/>der vren quam der ussetziche (??)<lb/><name type="person" nymRef="Simon" >symon</name> vnd bat den heren zo<lb/>gast myt synen iongeren<pc resp="editor">.</pc> <choice><abbr><am>ū</am>d</abbr><expan><ex>un</ex>d</expan></choice><pb edRef="#K1" facs="#K1_195v"/><lb/>do it quam zo der tzyt<pc resp="editor">,</pc> Doe<lb/>geynck hey in dat huyss <name type="person" nymRef="Simon" >symo=<lb/>nes</name> 
+        </ab>
+        <ab xml:id="Martha_encourages_Mary">vnd 
+            <name type="person" nymRef="Martha">martha</name> geynck zo<lb/>irer suster vnd sacht ir wer<lb/>der here were enwech <choice><abbr>geg<am>ā</am></abbr><expan>geg<ex>an</ex></expan></choice><lb/>gen<pc resp="editor">.</pc> Do sprach <name type="person" nymRef="Mary_Magdalene">maria</name><pc resp="editor">,</pc> <pc resp="editor">"</pc>O lie<lb/>ue suster<pc resp="editor">,</pc> du sachtes myr<lb/>we dat der here also liefflich<lb/>were in synem gesicht<pc resp="editor">.</pc> ich<lb/>sagen dir dat ich alle myn<lb/>leue dage ne greysselicher<lb/>angesicht en han geseyn<lb/>dan der here myr bewysde<pc resp="editor">,</pc><lb/>do hey mych ansach<pc resp="editor">,</pc> Want<lb/>hey sach myr durch myne<lb/>hertz<pc resp="editor">,</pc> dat ich bekante alle<lb/>myn sunden die ich ee gedaen<lb/>han<pc resp="editor">.</pc> <name type="person" nymRef="Martha">martha</name> sprach<pc resp="editor">,</pc> <pc resp="editor">"</pc>lieue<lb/>suster<pc resp="editor">,</pc> gehalt dich wal<pc resp="editor">.</pc> der<lb/>here sal dir vergeuen alle<pb edRef="#K1" facs="#K1_196r"/><lb/>dyn sunden vnd mysdaet<pc resp="editor">.</pc><lb/>ich wil gaen vnd will eme<lb/>deynen zo der taeffelen<lb/>in dem huysse 
+            <name type="person" nymRef="Simon" >symones
+            </name>
+            <pc resp="editor">.
+            </pc><lb/>dar wils hey komen 
+            <choice><abbr>ess<am>ē</am></abbr><expan>ess<ex>en</ex></expan></choice><pc resp="editor">.</pc><lb/>come du ouch daer hyn<pc resp="editor">!</pc><pc resp="editor">"</pc><lb/><name type="person" nymRef="Mary_Magdalene">Maria</name> sloich ir ougen ne<lb/>der zo der erden vnd en<lb/>antworden irer suster<pc resp="editor">,</pc><lb/><pc resp="editor">"</pc>neit<pc resp="editor">,</pc> 
+        </ab>
+        <ab xml:id="Martha_in_Simons_house">
+            <name type="person" nymRef="Martha">martha</name><pc resp="editor">,</pc> geynck in sy<lb/>meons huyß<pc resp="editor">,</pc> dem heren<lb/>zo deynen.<pc resp="editor">"</pc> Der here<name type="person" nymRef="Jesus_Christ" rend="underline">Ie<lb/>sus</name> vraegden <name type="person" nymRef="Martha">martha</name><pc resp="editor">,</pc><lb/><pc resp="editor">"</pc>waer is dyn suster wilt<lb/>sy ouch her komen<pc resp="editor">?</pc><pc resp="editor">"</pc> wee<lb/>wal<pc resp="editor">,</pc> dat hey alle dynck,<lb/>wal wiste <name type="person" nymRef="Martha">martha</name> antwor<lb/>den dem heren vnd sprach<pc resp="editor">,</pc><lb/><pc resp="editor">"</pc>O lieue here myn suster<lb/>ligt vnd weynt vnd klagt<pb edRef="#K1" facs="#K1_196v"/><lb/>Dat du sy also schrecklichen ange<lb/>seyn has<pc resp="editor">.</pc> her vmb bidden ich dich<pc resp="editor">,</pc><lb/>du troister aller bedroiffter hertz<lb/>en<pc resp="editor">,</pc> ist<pc resp="editor">,</pc> dat sy her koemt<pc resp="editor">,</pc> sprich<lb/>ir doch eyn vruntlich vnd goitlich<lb/>wort zo.<pc resp="editor">"</pc> Der here geloiffde mar<lb/>tha vnd sachte<pc resp="editor">,</pc> <pc resp="editor">"</pc>ich gelouen dir ist<lb/>sach dat syn suster her koempt<lb/>ich wil ir vruntlichen zo sprech<lb/>en.
+        </ab>
+        <ab xml:id="Gregory_comment">
+            <pc resp="editor">"</pc> Sent gregoryus spricht vp<lb/>dese wort<pc resp="editor">,</pc> Wan ich andechtich<lb/>byn deser wort des heren<pc resp="editor">,</pc> die<lb/>hey zo <name type="person" nymRef="Mary_Magdalene">maria</name> sprach<pc resp="editor">,</pc> <pc resp="editor">"</pc>Ich verge<lb/>uen dir alle dyne sunden<pc resp="editor">.</pc><lb/>ganck in vreden vnd sundige<lb/>neit meir<pc resp="editor">.</pc><pc resp="editor">"</pc> Die leirer sprechen<lb/>vort an<pc resp="editor">,</pc> wan ich andencken<pc resp="editor">,</pc><lb/>wee <name type="person" nymRef="Mary_Magdalene">maria</name> geynck in dat<lb/>huys <name type="person" nymRef="Simon" >Symons</name> ungeladen und<lb/>vngebeden vnd we sy ir trae<pb edRef="#K1" facs="#K1_197r"/><lb/>nen vss gouss vp die voisse<lb/>vns heren<pc resp="editor">.</pc> So en kan ich myn<lb/>hertz vnd myn ougen neit <choice><abbr>l<am>ā</am></abbr><expan>l<ex>an</ex></expan></choice><lb/>ger vnthalden van weynen<pc resp="editor">.</pc><lb/>
+        </ab>
+        <ab xml:id="Mary_in_Simons_house">
+            <name type="person" nymRef="Pseudo_Isidore">ysidoris</name> spricht vort an: Do<lb/>der here woulde gaen syzen<lb/>zo der traeffelen<pc resp="editor">,</pc> do gynck der<lb/>here eirst sytzen vp syne kneen<lb/>vnd louenden synen <choice><abbr>hemelsch<am>ē</am></abbr><expan>hemelsch<ex>en</ex></expan></choice><lb/>vader<pc resp="editor">.</pc> Doe geynck die edel vrau<lb/>we <name type="person" nymRef="Mary_Magdalene">maria</name> in dat huyss halff zo<lb/>ruycke myt groisser vorten und<lb/>gouss dem heren walruychende<lb/>salue vp syn hilge houfft vnde<lb/>veille van achter zo an die voisse<lb/>uns heren vnd began die zo kuys<lb/>sen vnd zo weschen also lange<pc resp="editor">,</pc><lb/>Dat der here do sprach<pc resp="editor">,</pc> <pc resp="editor">"</pc><name type="person" nymRef="Mary_Magdalene">Maria</name><pc resp="editor">,</pc><lb/>dir synt vergeuen alle dyn sun<pb edRef="#K1" facs="#K1_197v"/><lb/>den<pc resp="editor">.</pc> ganck in vreden<pc resp="editor">"</pc> <name type="person" nymRef="Mary_Magdalene">maria</name> stont<lb/>vp in gotlicher lieffden vnd was<lb/>gesont an sele vnd an lyue vnd<lb/>geynck weder in dat huys irer<lb/>suster <name type="person" nymRef="Martha">martha</name> vnd feil weder<lb/>neder vp die erde vnd danckden<lb/>gode myt wynenden ougen vur<lb/>syne groisse waldedicheit und<lb/>gaeuen<pc resp="editor">.</pc> 
+        </ab>
+        <ab xml:id="VirginMary_visits">zo der seluer stont<pc resp="editor">,</pc> hor<lb/>te 
+            <name type="person" nymRef="Virgin_Mary">Maria
+                <pc resp="editor">,
+                </pc> die moder 
+                    <name type="person" nymRef="God" rend="underline">gotz
+                    </name>
+            </name>
+                <pc resp="editor">,</pc> dat<lb/>ir lieue kynt zo bethanyen was
+                <pc resp="editor">.</pc><lb/>Daer um quam sy daer
+                <pc resp="editor">,</pc> ymb<lb/>In ir lieue kynt zo seyn vnde<lb/>zo sprechen
+                <pc resp="editor">.</pc> vnd sy vernam
+                <pc resp="editor">,</pc><lb/>dat hey 
+                <name type="person" nymRef="Mary_Magdalene">maria magdalena</name><lb/>had vergeuen alle iure sunden
+                <pc resp="editor">.</pc><lb/>Do geynck sy by 
+                <name type="person" nymRef="Mary_Magdalene">maria</name> in dat<lb/>huys irer suster
+                <pc resp="editor">,</pc> sy zo troesten<lb/>ind zo stercken in eynem got<lb/>lichen leuen<pc resp="editor">.</pc> Do <name type="person" nymRef="Virgin_Mary" rend="underline">Maria<pc resp="editor">,</pc> die<pb edRef="#K1" facs="#K1_198r"/><lb/>moder <name type="person" nymRef="God" rend="underline">gotz</name></name> in geynck in dat<lb/>huys vnd woulde <name type="person" nymRef="Mary_Magdalene">maria mag<lb/>dalena</name> umgryffen myt ussge<lb/>reckden armen<pc resp="editor">,</pc> Do reiff <name type="person" nymRef="Mary_Magdalene">maria<lb/>magdalena</name> myt luyder <choice><abbr>st<am>ȳ</am>men</abbr><expan>st<ex>ym</ex>men</expan></choice><pc resp="editor">,</pc><lb/><pc resp="editor">"</pc>O aller hillichste Jonffrauwe<pc resp="editor">,</pc><lb/>du schuyn des hoichsten goitz<lb/>ganck van myr want myn sun<lb/>dich licham en is neit wedich<lb/>dich zo roeren daer myn schep<lb/>per vnd selich mecher in gerast<lb/>hat <name type="person" nymRef="Jesus_Christ" render="underline">Jhesus christus</name> myn here<pc resp="editor">"</pc><pc resp="editor">.</pc><lb/>Do antworde <name type="person" nymRef="Virgin_Mary">maria die moder<lb/>gotz</name> vnd sprach <pc resp="editor">"</pc>O du vrundyn<lb/>de myns kyndes vnd ouch die<lb/>myne nu <choice><abbr>bek<am>ē</am>nen</abbr><expan>bek<ex>en</ex>nen</expan></choice> ich van go<lb/>des wegen dattu bis reyn an<lb/>sele vnd an liue vnd bys gerei<lb/>nyget van allen flecken off ma<lb/>culen<pc resp="editor">"</pc> vnd nam sy <choice><abbr>vruntlich<am>ē</am></abbr><expan>vruntlich<ex>en</ex></expan></choice><pb edRef="#K1" facs="#K1_198v"/><lb/>in ir armen vnd kuyssden<lb/>sy vur iren mont<pc resp="editor">.</pc> Do sach <name type="person" nymRef="Martha">mar<lb/>tha</name> vnd <name type="person" nymRef="Martilla">marcella</name> ire m<add place="above" hand="hand2">a</add>gt<pc resp="editor">,</pc> dat<lb/>dese tzwae marien Alle<pc resp="editor">,</pc> <name type="person" nymRef="Virgin_Mary" rend="underline">Maria<lb/>die moder <name type="person" nymRef="God" rend="underline">gotz</name></name> vnd <name type="person" nymRef="Mary_Magdalene">maria mag<lb/>dalena</name><pc resp="editor">,</pc> zosamen worden vp ge<lb/>hauen van der erden tzweyn<lb/>ellenbogen hoge vnd worden<lb/>weder neder gesat vp de erde
+                <pc resp="editor">.</pc>
+        </ab>
+        <ab xml:id="Mary_rest_of_life"><lb/>Daer nae was 
+            <name type="person" nymRef="Mary_Magdalene">maria magda<lb/>lena</name> in dem deynst des heren<lb/>vnd volgden eme nae bis in<lb/>synen doit
+            <pc resp="editor">.</pc> vnd nae Der hemel<lb/>uart geynck sy vnd dede groisse<lb/>penetencie vnd bossden ire sun<lb/>den in der woestenyen vnde<lb/>nam nee spyse zo ir alle ire le<lb/>uen lanck<pc resp="editor">,</pc> Want die hilge<lb/><hi rend="underline">engelen</hi> naemen sy vp in der<lb/>woestenyen zo seuen maellen<pb edRef="#K1" facs="#K1_199r"/><lb/>in dem dage vnd songen vnd<lb/>loffden <name type="person" nymRef="God">Got</name> den heren<pc resp="editor">.</pc> Daer<lb/>nae doe sy starff<pc resp="editor">,</pc> naemen die<lb/>hilge engelen Ire edel sele mit<lb/>groisser eren vnd brachten sy<lb/>in dat ewige leuen vur dat<lb/>gotliche angesicht uns heren<pc resp="editor">.</pc><lb/>Dat wir ouch zosamen daer<lb/>comen<pc resp="editor">,</pc> des helffe uns der va<lb/>der vnd der son vnd der hilge<lb/>geist <hi rend="underline">Amen</hi>
+            <pc resp="editor">.</pc>
+        </ab>
+        <ab xml:id="epilogue">
+        </ab>
+        </ab>
+    </body>
+  </text>
+</TEI>
