@@ -5,110 +5,6 @@
     <link rel="stylesheet" href="js/CETEIcean/test/CETEIcean.css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="css/ti-ta-toggle/titatoggle-dist.css" />
     <link rel="stylesheet" href="css/viewer.css"/>
-    <style media="screen">
-      html {
-        padding-top: 0px;
-        margin-right: 2em;
-      }
-      @font-face{
-        font-family: "Embossed Germanica";
-        src: url("css/fonts/germanica_family/EmbossedGermanica.ttf")
-      }
-      @import url('https://fonts.googleapis.com/css?family=Germania+One');
-      tei-g[ref="char:cmbAbbrStroke"] {
-        display: inline-block;
-        width: 0px;
-      }
-      tei-g.cmbAbbr {
-        display:inline;
-        margin-left: -.5em;
-      }
-      tei-hi {
-        /**
-        font-style: italic
-        **/
-      }
-      /**tei-pb + tei-pb {
-        display: none;
-      }**/
-      tei-seg[rend="decorInit"] {
-        font-family: cursive;
-        font-size: 300%;
-        float:left;
-        line-height: 1em;
-        padding-right: 10px;
-      }
-      tei-trailer {
-        display: block;
-        text-align: center;
-      }
-
-      tei-del {
-        text-decoration: line-through;
-      }
-
-      *[rend*="rubr"] {
-        color: red;
-      }
-
-      *[rend*="underline"] {
-        text-decoration: underline;
-      }
-
-      *[rend*="init"] {
-        font-size: 150%;
-      }
-      *[rend*="lombard"]{
-        font-family: "Embossed Germanica", 'Germania One', serif;
-      }
-      *[source*='manuscript']{
-        display: none;
-      }
-      /**Remove ( and ) around editor punctuation**/
-      tei-pc > tei-choice > tei-reg::before, tei-pc > tei-choice > tei-reg::after, tei-choice > tei-reg::before, tei-choice > tei-reg::after {
-        content: none !important;
-      }
-
-      /** Default: editor punctuation shown, hide orig **/
-      tei-pc > tei-choice > tei-orig {
-        display:none;
-      }
-
-      /** Remove ( and ) around editor capitalization **/
-      tei-choice > tei-reg[type="capit"]::before {
-        content: none !important;
-      }
-      tei-choice > tei-reg[type="capit"]::after {
-        content: none !important;
-      }
-
-      /** Default: editor cap shown, hide orig **/
-      tei-choice > tei-orig {
-        display:none;
-      }
-
-      /**Hide TEI Header completely **/
-      tei-teiheader {
-        display:none;
-      }
-      /**Starting with line beginnings off; <ab> should flow in one unbroken text **/
-      tei-ab {
-        display:inline;
-      }
-
-      /** No space above and below foliation; beginning hidden **/
-      tei-cb {
-        margin-top:0px;
-        margin-bottom:0px;
-        display: none;
-      }
-      tei-pc::before {
-        content: none;
-      }
-      tei-head {
-        font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-      }
-    </style>
 
   </head>
   <body>
@@ -154,6 +50,9 @@
       <div class="col-3 btn-group" id="texts_checkbox">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Manuscript Toggle <span class="caret"></span></button>
           <ul class="dropdown-menu">
+            <input type="checkbox" name="manuscript" value="Latin-A" checked> Latin-A<br>
+            <input type="checkbox" name="manuscript" value="Latin-B" checked> Latin-B<br>
+            <input type="checkbox" name="manuscript" value="Latin-C" checked> Latin-C<br>
             <input type="checkbox" name="manuscript" value="B1" checked> B1<br>
             <input type="checkbox" name="manuscript" value="B2" checked> B2<br>
             <input type="checkbox" name="manuscript" value="D" checked> D<br>
@@ -188,38 +87,6 @@
     </div>
 
     <div class="row" class="options-menu" id="row2">
-      <div class="col-3 btn-group" id="download_xml">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Download XML <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <div id="dl-B1">
-              <a href="xml/manuscripts_2019-02-20/manuscript_B1_HP.xml" download>B1</a>
-            </div>
-            <div id="dl-B2">
-              <a href="xml/manuscripts_2019-02-20/manuscript_B2_HansPech_HP.xml" download>B2</a>
-            </div>
-            <div id="dl-D">
-              <a href="xml/manuscripts_2019-02-20/manuscript_D_AnnaKelner_HP.xml" download>D</a>
-            </div>
-            <div id="dl-G">
-                <a href="xml/manuscripts_2019-02-20/manuscript_G_EleanorGoerss_HP.xml" download>G</a>
-            </div>
-            <div id="dl-K1">
-                <a href="xml/manuscripts_2019-02-20/manuscript_K1_ZacharyHayworth_HP.xml" download>K1</a>
-            </div>
-            <div id="dl-K2">
-              <a href="xml/manuscripts_2019-02-20/manuscript_K2_EleanorGoerss_HP.xml" download>K2</a>
-            </div>
-            <div id="dl-N">
-                <a href="xml/manuscripts_2019-02-20/manuscript_N_SusanneZwierlein_HP.xml" download>N</a>
-            </div>
-            <div id="dl-S">
-              <a href="xml/manuscripts_2019-02-20/manuscript_S_RachaKirakosian_HP.xml" download>S</a>
-            </div>
-            <div id="dl-all">
-              <a href="xml/manuscripts_2019-02-20/all-manuscripts.zip" download>All</a>
-            </div>
-          </ul>
-      </div>
       <div class="col-3" id="linebeginnings">
         <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
            <label>
@@ -231,6 +98,20 @@
         <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
            <label>
                <input type="checkbox" name="editor-punctuation-toggle" checked><span id="editor-punctuation-span" class="toggle">Editor Punctuation</span>
+           </label>
+         </div>
+      </div>
+      <div class="col-3" id="images">
+        <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
+           <label>
+               <input type="checkbox" name="images-toggle"><span id="images-toggle-span" class="toggle">Manuscript Images</span>
+           </label>
+         </div>
+      </div>
+      <div class="col-3" id="translations">
+        <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
+           <label>
+               <input type="checkbox" name="translations-toggle"><span id="translations-toggle-span" class="toggle">Translations</span>
            </label>
          </div>
       </div>
@@ -249,296 +130,37 @@
       </div>
     </div>
 
-    <div class="container-fluid" id ="texts">
-      <div class="row ms-row">
-        <div class="col ms-col">
-          <h3 class-"ms-title">Manuscript B1</h3>
-          <div class="manuscript" id="B1">
-            Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
-          </div>
-        </div>
-        <div class="col ms-col">
-          <h3 class-"ms-title">Manuscript B2</h3>
-          <div class="manuscript" id="B2">
-            Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
-          </div>
-        </div>
-        <div class="col ms-col">
-          <h3 class-"ms-title">Manuscript D</h3>
-          <div class="manuscript" id="D">
-            Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
-          </div>
-        </div>
-        <div class="col ms-col">
-          <h3 class-"ms-title">Manuscript G</h3>
-          <div class="manuscript" id="G">
-            Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
-          </div>
+    <!-- Template for Manuscript Divs -->
+    <template id="ms-template">
+      <div class="ms-col ms">
+        <h3 class="ms-title"></h3>
+        <div class="manuscript">
+          Sadly, this page will not work in Internet Explorer, due to outdated Javascript support. We suggest you use Chrome or Firefox.
         </div>
       </div>
-      <div class="row ms-row">
-        <div class="col ms-col">
-          <h3 class-"ms-title">Manuscript K1</h3>
-          <div class="manuscript" id="K1">
-            Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
-          </div>
-        </div>
-        <div class="col ms-col">
-          <h3 class-"ms-title">Manuscript K2</h3>
-          <div class="manuscript" id="K2">
-            Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
-          </div>
-        </div>
-        <div class="col ms-col">
-          <h3 class-"ms-title">Manuscript N</h3>
-          <div class="manuscript" id="N">
-            Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
-          </div>
-        </div>
-        <div class="col ms-col">
-          <h3 class-"ms-title">Manuscript S</h3>
-          <div class="manuscript" id="S">
-            Sadly, this page will not work in Internet Explorer, due to its outdated Javascript support. We suggest you use Chrome or Firefox.
-          </div>
-        </div>
+    </template>
+
+    <!-- Template for Mirador divs -->
+    <template id="mirador-template">
+      <div class="ms-col ms-mirador">
+        <div class="ms-container-mirador"></div>
       </div>
-    </div>
+    </template>
+
+    <!-- Template for translation divs -->
+    <template id ="translation-template">
+      <div class="ms-col ms-translation">
+        <div class="ms-container-translation"></div>
+      </div>
+    </template>
+
+    <div class="container-fluid" id="texts"></div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/CETEIcean/dist/CETEI.js"></script>
-    <script>
-
-    //Variables
-    var CETEIcean = new CETEI();
-    var manuscripts = {
-      "B1" : {
-        "name": "B1",
-        "resource" : "xml/manuscripts_2019_02_20/manuscript_B1_HP.xml",
-        "manifest": "http://digital-editing.fas.harvard.edu/manifests/B1"
-      },
-      "B2" : {
-        "name": "B2",
-	"resource" : "xml/manuscripts_2019_02_20/manuscript_B2_HansPech_HP.xml",
-        "manifest": "http://digital-editing.fas.harvard.edu/manifests/B2"
-      },
-      "D" : {
-        "name": "D",
-	"resource" : "xml/manuscripts_2019_02_20/manuscript_D_AnnaKelner_HP.xml",
-        "manifest": "http://digital-editing.fas.harvard.edu/manifests/D"
-      },
-      "G" : {
-        "name": "G",
-	"resource" : "xml/manuscripts_2019_02_20/manuscript_G_EleanorGoerss_HP.xml",
-        "manifest": "http://digital-editing.fas.harvard.edu/manifests/G"
-      },
-      "K1" : {
-        "name": "K1",
-	"resource" : "xml/manuscripts_2019_02_20/manuscript_K1_ZacharyHayworth_HP.xml",
-        "manifest": "http://digital-editing.fas.harvard.edu/manifests/K1"
-      },
-      "K2" : {
-        "name": "K2",
-	"resource" : "xml/manuscripts_2019_02_20/manuscript_K2_EleanorGoerss_HP.xml",
-        "manifest": "http://digital-editing.fas.harvard.edu/manifests/K2"
-      },
-      "N" : {
-        "name": "N",
-	"resource" : "xml/manuscripts_2019_02_20/manuscript_N_SusanneZwierlein_HP.xml",
-        "manifest": "http://digital-editing.fas.harvard.edu/manifests/N"
-      },
-      "S" : {
-        "name": "S",
-	"resource" : "xml/manuscripts_2019_02_20/manuscript_S_RachaKirakosian_HP.xml",
-        "manifest": "http://digital-editing.fas.harvard.edu/manifests/S"
-      }
-    };
-
-    var sectionsSet = new Set();
-
-    //Object for all options. Not currently used, but is updated in toggle functions
-    var options = {
-      "expanded_abbreviations":true,
-      "foliation":false,
-      "linebeginnings":false,
-      "editor_punctuation":true,
-      "editor_capitalization":true
-    };
-
-    var legend_episodes = [
-      ["legend_title", "Legend Title"],
-      ["genealogy", "Genealogy"],
-      ["heritage", "Inheritance"],
-      ["MaryMagdalene_mismanagement", "Mary Magdalene's heritage management"],
-      ["Martha_confronts_Mary", "Martha's reaction"],
-      ["MaryMagdalene_lovers", "Mary Magdaelene in the world"],
-      ["market_scene", "Martha and Mary Magdalene meet on the market"],
-      ["Mary_at_Marthas_house", "Mary Magdalene visits Martha"],
-      ["Jesus_enters", "Jesus visits Martha"],
-      ["Mary_retreats", "Mary Magdalene retreats"],
-      ["Martha_encourages_Mary", "Martha encourages Mary Magdalene to go to Jesus"],
-      ["Martha_in_Simons_house", "Martha in Simon's house"],
-      ["Gregory_comment", "Discursive comment attributed to Gregory the Great"],
-      ["Mary_in_Simons_house", "Mary Magdalene in Simon's house"],
-      ["VirginMary_visits", "Virgin Mary meets Mary Magdalene"],
-      ["Mary_rest_of_life", "Mary Magdalene after her conversion"],
-      ["epilogue", "Epilogue"]
-    ];
-
-    //Functions
-    function addManuscript(ms){
-      CETEIcean.getHTML5(ms.resource, function(data){
-        var ms_el = "#"+ms.name;
-        $(ms_el).html("");
-        $(ms_el).append(data);
-        CETEIcean.addStyle(document, data);
-
-        //Add facs div to each cb (foliation) with valid attribute
-        addFoliation(ms_el);
-
-        $(ms_el + " tei-lb").toggle(); //Start off manuscripts with line beginnings off
-
-        //Fix weird hard carriage returns - costly to run this regex
-        //var s = $(ms_el).html();
-        //var s2 = s.replace(/<\/tei-choice>[\s][\n\r\s\t]+</g,'</tei-choice><');
-        //var s2 = s.replace(/>[\n\r\s\t]+</g,'><');
-        //$(ms_el).html(s2);
-        //$(ms_el).html(s.replace(/[\n\r]+/g, " "));
-        //console.log($(ms_el));
-      });
-    }
-
-
-    function addFoliation(ms_el) {
-      $(ms_el+" tei-cb").each(function(){
-        var n = $(this).attr("n");
-        var pb = "";
-        if(typeof(n) === "undefined"){
-          var facs = $(this).attr("facs");
-          if(typeof(facs) != "undefined"){
-            pb = facs;
-          }
-        } else {
-          pb = n;
-        }
-        $(this).html("<span class='page-break'>" + pb + "</span>");
-      });
-    }
-
-    //Add all manuscripts
-    for (var ms in manuscripts) {
-      addManuscript(manuscripts[ms]);
-    }
-
-    //Add ms sections to jump menu
-    for (var i = 0; i < legend_episodes.length; i++){
-      $('#jump-select').append($('<option>', {
-        value: legend_episodes[i][0],
-        text: legend_episodes[i][1]
-      }));
-    }
-
-    //Show and hide manuscripts
-    $("input[name='manuscript'").change(function(){
-      var manuscript = $(this).val();
-      var checked = $(this).is(":checked");
-      $("#"+manuscript).parent(".ms-col").toggle();
-    });
-
-    //Function to toggle abbreviations
-    $("input[name='abbreviations-toggle'").change(function(){
-      $("tei-choice").each(function(){
-        $(this).children("tei-expan").toggle();
-        $(this).children("tei-abbr").toggle();
-      })
-      options.expanded_abbreviations = $(this).is(":checked");
-    });
-
-    //Function to toggle foliation
-    $("input[name='foliation-toggle'").change(function(){
-      options.foliation = $(this).is(":checked");
-      if(options.foliation){
-        if(options.linebeginnings){
-          $("tei-cb").css("display", "block");
-        } else {
-          $("tei-cb").css("display", "inline");
-        }
-      } else {
-        $("tei-cb").hide();
-      }
-    });
-
-    //Function to toggle line beginnings
-    $("input[name='linebeginnings-toggle'").change(function(){
-      options.linebeginnings = $(this).is(":checked");
-      if(options.linebeginnings){
-        $("tei-lb").show();
-        if(options.foliation){
-          $("tei-cb").css("display", "block");
-        }
-      } else {
-        $("tei-lb").hide();
-        if(options.foliation){
-          $("tei-cb").css("display", "inline");
-        }
-      }
-    });
-
-    //Function to toggle punctuation
-    $("input[name='editor-punctuation-toggle'").change(function(){
-      options.editor_punctuation = $(this).is(":checked");
-      console.log($(this).is(":checked"));
-      if(options.editor_punctuation){
-        $("tei-pc[resp='editor']").show();
-        $("tei-pc[source='manuscript']").hide();
-        $("tei-pc > tei-choice > tei-reg[resp='editor'][type='punct']").show();
-        $("tei-pc > tei-choice > tei-orig").hide();
-      } else {
-        $("tei-pc[resp='editor']").hide();
-        $("tei-pc[source='manuscript']").show();
-        $("tei-pc > tei-choice > tei-reg[resp='editor'][type='punct']").hide();
-        $("tei-pc > tei-choice > tei-orig").show();
-      }
-    });
-
-    //Function to toggle capitalization
-    $("input[name='editor-capitalization-toggle'").change(function(){
-      options.editor_capitalization = $(this).is(":checked");
-      if(options.editor_capitalization){
-        $("tei-choice > tei-reg[resp='editor'][type='capit']").show();
-        $("tei-choice > tei-orig").hide();
-      } else {
-        $("tei-choice > tei-reg[resp='editor'][type='capit']").hide();
-        $("tei-choice > tei-orig").show();
-      }
-    });
-
-    function scroll_manuscripts(xmlid){
-      for(ms in manuscripts){
-        var ms_el = "#" + manuscripts[ms].name;
-	var ms_name = manuscripts[ms].name;
-	var jump_position = "#" + ms_name + "_" + xmlid;
-	console.log("ms_el " + ms_el);
-        if( $(ms_el).find(jump_position).length > 0){
-          var topPosition = $(jump_position).position().top;
-          //$(ms_el).scrollTop(topPosition);
-          $(ms_el).animate({
-            scrollTop: topPosition
-          }, 300)
-        }
-      }
-    }
-
-    //Jump menu change
-    $("#jump-select").change(function(){
-      var xmlid = $(this).val();
-      console.log("xmlid " + xmlid);
-      if(xmlid !== null && xmlid !== ''){
-        scroll_manuscripts(xmlid);
-      }
-    })
-
-    </script>
+    <script src="js/mirador-2.7/mirador.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/viewer.js"></script>
   </body>
 </html>
