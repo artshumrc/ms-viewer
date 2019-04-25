@@ -114,6 +114,13 @@ function addManuscript(ms){
     addFoliation(ms_el);
 
     $(ms_el + " tei-lb").toggle(); //Start off manuscripts with line beginnings off
+    if(!$(`${ms_el}-display`).is(":checked")){
+      $(`${ms_el}`).parent(".ms-col").toggle();
+    }
+    // $("input[name='manuscript'").change(function(){
+    //   var manuscript = $(this).val();
+    //   var checked = $(this).is(":checked");
+    //   $("#"+manuscript).parent(".ms-col").toggle();
 
     //Fix weird hard carriage returns - costly to run this regex
     //var s = $(ms_el).html();

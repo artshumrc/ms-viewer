@@ -1,5 +1,5 @@
 .ms-col {
-  height: 400px;
+  height: 650px;
   color: #000;
   border-style: solid;
   border-color: rgba(0,0,0,0.3);
@@ -8,7 +8,7 @@
 }
 .manuscript{
   overflow: scroll;
-  max-height:360px;
+  max-height:600px;
 }
 .ms-title{
   line-height: 30px;
