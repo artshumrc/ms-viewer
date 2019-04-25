@@ -47,22 +47,53 @@
 
     <div class="row" class="options-menu" id="row1">
 
-      <div class="col-3 btn-group" id="texts_checkbox">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Manuscript Toggle <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <input type="checkbox" name="manuscript" value="Latin-A" checked> Latin-A<br>
-            <input type="checkbox" name="manuscript" value="Latin-B" checked> Latin-B<br>
-            <input type="checkbox" name="manuscript" value="Latin-C" checked> Latin-C<br>
-            <input type="checkbox" name="manuscript" value="B1" checked> B1<br>
-            <input type="checkbox" name="manuscript" value="B2" checked> B2<br>
-            <input type="checkbox" name="manuscript" value="D" checked> D<br>
-            <input type="checkbox" name="manuscript" value="G" checked> G<br>
-            <input type="checkbox" name="manuscript" value="K1" checked> K1<br>
-            <input type="checkbox" name="manuscript" value="K2" checked> K2<br>
-            <input type="checkbox" name="manuscript" value="N" checked> N<br>
-            <input type="checkbox" name="manuscript" value="S" checked> S<br>
-          </ul>
+      <div class="col-3 " id="texts_checkbox">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="Latin-A-display" value="Latin-A">
+          <label class="form-check-label" for="Latin-A-display">Latin-A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="Latin-B-display" value="Latin-B">
+          <label class="form-check-label" for="Latin-B-display">Latin-B</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="Latin-C-display" value="Latin-C">
+          <label class="form-check-label" for="Latin-C-display">Latin-C</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="B1-display" value="B1">
+          <label class="form-check-label" for="B1-display">B1</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="B2-display" value="B2">
+          <label class="form-check-label" for="B2-display">B2</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="D-display" value="D">
+          <label class="form-check-label" for="D-display">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="G-display" value="G">
+          <label class="form-check-label" for="G-display">G</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="K1-display" value="K1">
+          <label class="form-check-label" for="K1-display">K1</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="K2-display" value="K2">
+          <label class="form-check-label" for="K2-display">K2</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="N-display" value="N">
+          <label class="form-check-label" for="N-display">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="S-display" value="S">
+          <label class="form-check-label" for="S-display">S</label>
+        </div>
       </div>
+
       <div class="col-3" id="foliation">
         <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
            <label>
@@ -117,7 +148,7 @@
       </div>
     </div>
 
-    <div class="row" class="options-menu" id="row2">
+    <div class="row" class="options-menu" id="row3">
       <div class="col-3" id="jump">
         <div class="input-group mb-3">
           <div class="input-group-prepend">
