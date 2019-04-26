@@ -197,30 +197,23 @@ document.addEventListener('DOMContentLoaded', () => {
               "slotBelow" : false,
           }
         }
-
-        // "windowObjects":[{
-        //   loadedManifest: ms["manifest"],
-        //   canvasID: manifest.sequences[0].canvases[0]["@id"],
-        //   viewType: "ImageView",
-        //   bottomPanelVisible: "false",
-        //   sidePanel: "false",
-        //   sidePanelVisible: "false"
-        // }],
       });
 
       mirador_instances[`mirador-viewer-${el}`] = m;
+      let ms_desc = manifest.description;
+
+      let template = document.querySelector("#ms-template").content.cloneNode(true);
+      template.querySelector(".ms-title").innerText = `Manuscript ${ms.name}`;
+      template.querySelector(".manuscript").setAttribute("id", ms.name);
+      template.querySelector(".ms-desc").innerText = ms_desc;
+      document.querySelector("#texts").appendChild(template);
+      addManuscript(ms);
+
+      let translation = document.querySelector("#translation-template").content.cloneNode(true);
+      translation.querySelector(".ms-container-translation").setAttribute("id", "test");
+      translation.querySelector(".ms-container-translation").innerText = ms.translation;
+      document.querySelector("#texts").appendChild(translation);
     });
-
-    let template = document.querySelector("#ms-template").content.cloneNode(true);
-    template.querySelector(".ms-title").innerText = `Manuscript ${ms.name}`;
-    template.querySelector(".manuscript").setAttribute("id", ms.name);
-    document.querySelector("#texts").appendChild(template);
-    addManuscript(ms);
-
-    let translation = document.querySelector("#translation-template").content.cloneNode(true);
-    translation.querySelector(".ms-container-translation").setAttribute("id", "test");
-    translation.querySelector(".ms-container-translation").innerText = ms.translation;
-    document.querySelector("#texts").appendChild(translation);
   })
 
   //Add ms sections to jump menu

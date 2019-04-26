@@ -182,3 +182,8 @@ tei-head {
 .ms-translation {
   display: none;
 }
+
+.ms-desc-container {
+  height: 2.5em;
+  border-bottom: 1px solid grey;
+}
