@@ -151,6 +151,11 @@ function addFoliation(el) {
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  //Bind modal
+  $("#options-modal-button").click(function(){
+    $("#optionsModal").modal("show");
+  })
+
   //Add all manuscripts
   var msOrdered = ["Latin-A", "Latin-B", "Latin-C", "B1", "B2", "D", "G", "K1", "K2", "N", "S"];
   var mirador_instances = {}
