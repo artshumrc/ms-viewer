@@ -1,14 +1,17 @@
 .ms-col {
-  height: 650px;
+  height: 80vh;
   color: #000;
   border-style: solid;
   border-color: rgba(0,0,0,0.3);
   border-width:thin;
   margin-top: 25px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  min-height: 500px;
 }
 .manuscript{
   overflow: scroll;
-  max-height:600px;
+  max-height: 95%;
 }
 .ms-title{
   line-height: 30px;
@@ -59,10 +62,25 @@ tei-cb::before {
   content: none !important;
 }
 
+.line-break {
+  color:grey;
+  padding-right: 5px;
+}
+
+tei-lb::after {
+  content: none !important;
+  margin-right:10px;
+}
+tei-lb::before {
+    content: '\a';
+    white-space: pre;
+}
+
 #texts {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 25px;
 }
 #texts > div {
   /* flex: 0 50%; */

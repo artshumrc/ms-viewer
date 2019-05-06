@@ -79,7 +79,20 @@ var options = {
   "editor_punctuation":true,
   "editor_capitalization":true,
   "images": false,
-  "translations": false
+  "translations": false,
+  "manuscripts": {
+    "Latin-A": true,
+    "Latin-B": false,
+    "Latin-C": false,
+    "B1": false,
+    "B2": true,
+    "D": false,
+    "G": false,
+    "K1": false,
+    "K2": false,
+    "N": false,
+    "S": false
+  }
 };
 
 var legend_episodes = [
@@ -112,6 +125,9 @@ function addManuscript(ms){
 
     //Add facs div to each cb (foliation) with valid attribute
     addFoliation(ms_el);
+
+    // Add spans for line break display
+    addLineBreaks(ms_el);
 
     $(ms_el + " tei-lb").toggle(); //Start off manuscripts with line beginnings off
     if(!$(`${ms_el}-display`).is(":checked")){
@@ -146,6 +162,25 @@ function addFoliation(el) {
       pb = n;
     }
     $(this).html("<span class='page-break'>" + pb + "</span>");
+  });
+}
+
+function addLineBreaks(el){
+  $(el+" tei-lb").each(function(){
+    let n = $(this).attr("n");
+    let pb = "";
+    if(typeof(n) === "undefined"){
+      let facs = $(this).attr("facs");
+      if(typeof(facs) != "undefined"){
+        let trimmed = facs.substring(facs.lastIndexOf("_") + 1);
+        if(typeof(trimmed) != "undefined"){
+          pb = trimmed;
+        }
+      }
+    } else {
+      pb = n;
+    }
+    $(this).html("<span class='line-break'>" + pb + "</span>");
   });
 }
 
@@ -227,8 +262,13 @@ document.addEventListener('DOMContentLoaded', () => {
   //Show and hide manuscripts
   $("input[name='manuscript'").change(function(){
     var manuscript = $(this).val();
-    var checked = $(this).is(":checked");
-    $("#"+manuscript).parent(".ms-col").toggle();
+    options.manuscripts[manuscript] = $(this).is(":checked");
+    if(options.manuscripts[manuscript]){
+      $("#"+manuscript).parent(".ms-col").show();
+    } else {
+      $("#"+manuscript).parent(".ms-col").hide();
+    }
+
   });
 
   //Function to toggle abbreviations
