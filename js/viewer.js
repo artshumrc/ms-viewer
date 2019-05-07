@@ -5,67 +5,67 @@ var manuscripts = {
     "name": "Latin-A",
     "resource": "xml/LatinTexts/Latin-A.xml",
     "manifest": "http://digital-editing.fas.harvard.edu/manifests/Latin-A",
-    "translation": "Placeholder ..."
+    "translation": "xml/Translations-MM/Latin-A.xml"
   },
   "Latin-B": {
     "name": "Latin-B",
     "resource": "xml/LatinTexts/Latin-B.xml",
     "manifest": "http://digital-editing.fas.harvard.edu/manifests/Latin-B",
-    "translation": "Placeholder ..."
+    "translation": "xml/Translations-MM/Latin-B.xml"
   },
   "Latin-C": {
     "name": "Latin-C",
     "resource": "xml/LatinTexts/Latin-C.xml",
     "manifest": "http://digital-editing.fas.harvard.edu/manifests/Latin-C",
-    "translation": "Placeholder ..."
+    "translation": "xml/Translations-MM/Latin-C.xml"
   },
   "B1" : {
     "name": "B1",
     "resource" : "xml/manuscripts_2019_02_20/manuscript_B1_HP.xml",
     "manifest": "http://digital-editing.fas.harvard.edu/manifests/B1",
-    "translation": "Placeholder ..."
+    "translation": "xml/Translations-MM/B1.xml"
   },
   "B2" : {
     "name": "B2",
     "resource" : "xml/manuscripts_2019_02_20/manuscript_B2_HansPech_HP.xml",
     "manifest": "http://digital-editing.fas.harvard.edu/manifests/B2",
-    "translation": "Placeholder ..."
+    "translation": "xml/Translations-MM/B2.xml"
   },
   "D" : {
     "name": "D",
     "resource" : "xml/manuscripts_2019_02_20/manuscript_D_AnnaKelner_HP.xml",
     "manifest": "http://digital-editing.fas.harvard.edu/manifests/D",
-    "translation": "Placeholder ..."
+    "translation": "xml/Translations-MM/D.xml"
   },
   "G" : {
     "name": "G",
     "resource" : "xml/manuscripts_2019_02_20/manuscript_G_EleanorGoerss_HP.xml",
     "manifest": "http://digital-editing.fas.harvard.edu/manifests/G",
-    "translation": "Placeholder ..."
+    "translation": "xml/Translations-MM/G.xml"
   },
   "K1" : {
     "name": "K1",
     "resource" : "xml/manuscripts_2019_02_20/manuscript_K1_ZacharyHayworth_HP.xml",
     "manifest": "http://digital-editing.fas.harvard.edu/manifests/K1",
-    "translation": "Placeholder ..."
+    "translation": "xml/Translations-MM/K1.xml"
   },
   "K2" : {
     "name": "K2",
     "resource" : "xml/manuscripts_2019_02_20/manuscript_K2_EleanorGoerss_HP.xml",
     "manifest": "http://digital-editing.fas.harvard.edu/manifests/K2",
-    "translation": "Placeholder ..."
+    "translation": "xml/Translations-MM/K2.xml"
   },
   "N" : {
     "name": "N",
     "resource" : "xml/manuscripts_2019_02_20/manuscript_N_SusanneZwierlein_HP.xml",
     "manifest": "http://digital-editing.fas.harvard.edu/manifests/N",
-    "translation": "Placeholder ..."
+    "translation": "xml/Translations-MM/N.xml"
   },
   "S" : {
     "name": "S",
     "resource" : "xml/manuscripts_2019_02_20/manuscript_S_RachaKirakosian_HP.xml",
     "manifest": "http://digital-editing.fas.harvard.edu/manifests/S",
-    "translation": "Placeholder ..."
+    "translation": "xml/Translations-MM/S.xml"
   }
 };
 
@@ -148,6 +148,15 @@ function addManuscript(ms){
   });
 }
 
+function addTranslation(ms){
+  CETEIcean.getHTML5(ms.translation, function(data){
+    var ms_el = `#${ms.name}-translation`;
+    $(ms_el).html("");
+    $(ms_el).append(data);
+    CETEIcean.addStyle(document, data);
+  });
+}
+
 
 function addFoliation(el) {
   $(el+" tei-cb").each(function(){
@@ -190,10 +199,11 @@ document.addEventListener('DOMContentLoaded', () => {
   $("#options-modal-button").click(function(){
     $("#optionsModal").modal("show");
   })
+  //TODO - all Mirador divs showing up first
 
   //Add all manuscripts
   var msOrdered = ["Latin-A", "Latin-B", "Latin-C", "B1", "B2", "D", "G", "K1", "K2", "N", "S"];
-  var mirador_instances = {}
+  var mirador_instances = {};
   msOrdered.forEach(function(el){
     let ms = manuscripts[el];
 
@@ -201,6 +211,10 @@ document.addEventListener('DOMContentLoaded', () => {
     miradorTemplate.querySelector(".ms-container-mirador").setAttribute("id", `mirador-viewer-${el}`);
     document.querySelector("#texts").appendChild(miradorTemplate);
     $.getJSON(ms["manifest"]).done(function(manifest){
+
+      let canvas = manifest.sequences[0].canvases[0]["@id"];
+      console.log(canvas);
+
       let m = Mirador({
         "id": `mirador-viewer-${el}`,
         "layout": "1x1",
@@ -208,14 +222,19 @@ document.addEventListener('DOMContentLoaded', () => {
           "show": false
         },
         "openManifestsPage" : true,
-        "buildPath": "js/mirador-2.7/",
+        "buildPath": "js/mirador-2.7-nobootstrap/",
         "data": [
           {"manifestUri": ms["manifest"]}
         ],
+        "windowObjects": [{
+          "loadedManifest": ms["manifest"],
+          "canvasID": canvas,
+          "viewType": "ImageView"
+        }],
         'windowSettings' : {
-          "availableViews" : ['ThumbnailsView', 'ImageView'],
+          "availableViews" : ['ThumbnailsView', 'ImageView', 'BookView'],
           "sidePanel" : false,
-          "bottomPanelVisible" : false,
+          "bottomPanelVisible" : true,
           "canvasControls": { // The types of controls available to be displayed on a canvas
             "annotations" : {
               "annotationLayer" : false
@@ -224,8 +243,8 @@ document.addEventListener('DOMContentLoaded', () => {
           "fullScreen" : false,
           "displayLayout" : true,
           "layoutOptions" : {
-              "newObject" : true,
-              "close" : true,
+              "newObject" : false,
+              "close" : false,
               "slotRight" : false,
               "slotLeft" : false,
               "slotAbove" : false,
@@ -245,9 +264,9 @@ document.addEventListener('DOMContentLoaded', () => {
       addManuscript(ms);
 
       let translation = document.querySelector("#translation-template").content.cloneNode(true);
-      translation.querySelector(".ms-container-translation").setAttribute("id", "test");
-      translation.querySelector(".ms-container-translation").innerText = ms.translation;
+      translation.querySelector(".ms-container-translation").setAttribute("id", `${ms.name}-translation`);
       document.querySelector("#texts").appendChild(translation);
+      addTranslation(ms);
     });
   })
 
@@ -346,23 +365,52 @@ document.addEventListener('DOMContentLoaded', () => {
           $("#texts > div").css("flex-basis", "50%");
       }
   }
-
+  function toggleMirador(){
+    options.images = $(this).is(":checked");
+    if(options.images){
+        // $(".ms-mirador").show();
+        Object.keys(options.manuscripts).forEach(function(key, index){
+          if(options.manuscripts[key]){
+            console.log(`#mirador-viewer-${key}`);
+            $(`#mirador-viewer-${key}`).parent().show();
+          }
+        })
+    } else {
+        $(".ms-mirador").hide();
+    }
+    change_columns();
+  }
   //Function to toggle Mirador viewers
   $("input[name='images-toggle']").change(function(){
      options.images = $(this).is(":checked");
      if(options.images){
-         $(".ms-mirador").show();
+         // $(".ms-mirador").show();
+         Object.keys(options.manuscripts).forEach(function(key, index){
+           if(options.manuscripts[key]){
+             console.log(`#mirador-viewer-${key}`);
+             $(`#mirador-viewer-${key}`).parent().show();
+           }
+         })
      } else {
          $(".ms-mirador").hide();
      }
      change_columns();
   });
 
+  //Just for testing
+  $("input[name='mirador-display']").change(toggleMirador);
+
   //Function to toggle translations
   $("input[name='translations-toggle']").change(function(){
      options.translations = $(this).is(":checked");
      if(options.translations){
-         $(".ms-translation").show();
+       // $(".ms-translation").show();
+       Object.keys(options.manuscripts).forEach(function(key, index){
+         if(options.manuscripts[key]){
+           console.log(`#${key}-translation`);
+           $(`#${key}-translation`).parent().show();
+         }
+       })
      } else {
          $(".ms-translation").hide();
      }
