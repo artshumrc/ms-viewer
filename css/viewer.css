@@ -194,7 +194,7 @@ tei-head {
 }
 
 .ms-mirador {
-  display: none;
+  padding-bottom: 0px;
 }
 
 .ms-translation {
