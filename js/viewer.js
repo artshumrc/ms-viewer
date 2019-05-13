@@ -378,12 +378,6 @@ function addLineBreaks(el){
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-
-  //Bind modal
-  // $("#options-modal-button").click(function(){
-  //   $("#optionsModal").modal("show");
-  // })
-
   // Bind vanilla JS modal
   var modal = $("#optionsModal");
   $("#options-modal-button").click(function(){
@@ -401,23 +395,33 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  async function loadAll(){
+    const promises = []
+    for(let el of msOrdered){
+      let ms = manuscripts[el];
+      await addMirador(ms,el);
+      await addManuscript(ms,el);
+      await addTranslation(ms);
+    }
+  }
+  loadAll()
+    .then(function(){
+      $(".ms-mirador").hide();
+      // $('html,body').css('overflow','auto');
+      $("#loading").hide();
+    });
+  // msOrdered.forEach(async function(el){
+  //   let ms = manuscripts[el];
+  //
+  //   // const man = await loadManifests();
+  //   // console.log(man);
+  //
+  //   // addMirador(ms,el).then(addManuscript(ms,el)).then(addTranslation(ms));
+  //   await addMirador(ms,el);
+  //   await addManuscript(ms,el);
+  //   await addTranslation(ms);
+  // });
 
-  // Change to use promises or callback?
-  msOrdered.forEach(async function(el){
-    let ms = manuscripts[el];
-
-    // const man = await loadManifests();
-    // console.log(man);
-
-    // addMirador(ms,el).then(addManuscript(ms,el)).then(addTranslation(ms));
-    await addMirador(ms,el)
-    await addManuscript(ms,el)
-    await addTranslation(ms);
-  });
-
-  // setTimeout(function(){
-  //   $(".ms-mirador").hide();
-  // }, 5000)
 
 
   //Add ms sections to jump menu
