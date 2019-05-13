@@ -2,9 +2,9 @@
   <head>
     <meta charset="utf-8">
     <!-- <link rel="stylesheet" href="js/mirador-2.7/css/mirador-combined.css" /> -->
-    <!-- <link rel="stylesheet" href="js/mirador-2.7-nobootstrap/css/mirador-combined.css" /> -->
+    <link rel="stylesheet" href="js/mirador-2.7-nobootstrap/css/mirador-combined.css" />
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-hVpXlpdRmJ+uXGwD5W6HZMnR9ENcKVRn855pPbuI/mwPIEKAuKgTKgGksVGmlAvt" crossorigin="anonymous">
-    <link rel="stylesheet" href="js/CETEIcean/test/CETEIcean.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="js/CETEIcean-1.0.0/test/CETEIcean.css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="css/ti-ta-toggle/titatoggle-dist.css" />
     <link rel="stylesheet" href="css/viewer.css"/>
 
@@ -93,9 +93,18 @@
           <input class="form-check-input" type="checkbox" id="S-display" value="S" name="manuscript">
           <label class="form-check-label" for="S-display">S</label>
         </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="mirador-display" name="mirador-display">
+          <label for="mirador-display">Mir</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="translation-display" name="translation-display">
+          <label for="translation-display">Tr</label>
+        </div>
       </div>
 
-      <input class="form-check-input" type="checkbox" id="mirador-display" name="mirador-display">
+
+
 
       <div class="col-4" id="jump">
         <div class="input-group mb-3">
@@ -113,8 +122,76 @@
         </button>
       </div>
 
+      <!-- MODAL -->
+      <div id="optionsModal" class="vanilla-js-modal">
+        <div class="vanilla-js-modal-content">
+          <header class="vanilla-js-modal-header">
+            <h5 class="vanilla-js-modal-title modal-title">Options</h5>
+            <button type="button" class="close vanilla-js-close" id="closeModal">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </header>
+          <div class="vanilla-js-modal-body">
+            <div class="container">
+              <div class="col" id="foliation">
+                <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
+                   <label>
+                       <input type="checkbox" name="foliation-toggle"><span id="foliation-toggle-span" class="toggle">Foliation</span>
+                   </label>
+                 </div>
+              </div>
+              <div class="col" id="abbreviations">
+                <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
+                   <label>
+                       <input type="checkbox" name="abbreviations-toggle" checked><span id="abbreviations-toggle-span" class="toggle">Expand Abbrevs</span>
+                   </label>
+                 </div>
+              </div>
+              <div class="col" id="capitalization">
+                <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
+                   <label>
+                       <input type="checkbox" name="editor-capitalization-toggle" checked><span id="editor-capitalization-span" class="toggle">Editor Capitalization</span>
+                   </label>
+                 </div>
+              </div>
+              <div class="col" id="linebeginnings">
+                <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
+                   <label>
+                       <input type="checkbox" name="linebeginnings-toggle"><span id="linebeginnings-toggle-span" class="toggle">Line Beginnings</span>
+                   </label>
+                 </div>
+              </div>
+              <div class="col" id="punctuation">
+                <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
+                   <label>
+                       <input type="checkbox" name="editor-punctuation-toggle" checked><span id="editor-punctuation-span" class="toggle">Editor Punctuation</span>
+                   </label>
+                 </div>
+              </div>
+              <div class="col" id="images">
+                <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
+                   <label>
+                       <input type="checkbox" name="images-toggle"><span id="images-toggle-span" class="toggle">Manuscript Images</span>
+                   </label>
+                 </div>
+              </div>
+              <div class="col" id="translations">
+                <div class="checkbox checkbox-slider--a-rounded checkbox-slider-md">
+                   <label>
+                       <input type="checkbox" name="translations-toggle"><span id="translations-toggle-span" class="toggle">Translations</span>
+                   </label>
+                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="vanilla-js-modal-footer modal-footer">
+            <button type="button" class="btn btn-secondary" id="closeModalFooter">Close</button>
+          </div>
+        </div>
+      </div>
+
       <!-- Modal -->
-      <div class="modal fade" id="optionsModal" tabindex="-1" role="dialog" aria-labelledby="optionsModalLabel" aria-hidden="true">
+      <!-- <div class="modal fade" id="optionsModal" tabindex="-1" role="dialog" aria-labelledby="optionsModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -182,7 +259,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
     <!-- Template for Manuscript Divs -->
     <template id="ms-template">
@@ -216,7 +293,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <!-- <script src="js/mirador-2.7/mirador.js"></script> -->
     <script src="js/mirador-2.7-nobootstrap/mirador.js"></script>
-    <script src="js/CETEIcean/dist/CETEI.js"></script>
+    <script src="js/CETEIcean-1.0.0/dist/CETEI.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="js/viewer.js"></script>

@@ -2,6 +2,7 @@ import behaviors from './behaviors';
 class CETEI {
 
     constructor(base){
+        this.logging = false;
         this.els = [];
         this.behaviors = [];
         this.hasStyle = false;
@@ -51,7 +52,9 @@ class CETEI {
         })
         .catch( function(reason) {
             // TODO: better error handling?
-            console.log(reason);
+            if(this.logging){
+                console.log(reason);
+            }
         });
 
         return promise.then((TEI) => {
