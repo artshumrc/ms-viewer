@@ -127,10 +127,6 @@ tei-trailer {
   text-align: center;
 }
 
-tei-del {
-  text-decoration: line-through;
-}
-
 *[rend*="rubr"] {
   color: red;
 }
@@ -192,6 +188,13 @@ tei-pc::before {
 tei-head {
   font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
 }
+
+/** Editor corrections **/
+tei-del {
+  text-decoration: line-through;
+  display: none;
+}
+
 
 .ms-mirador {
   padding-bottom: 0px;

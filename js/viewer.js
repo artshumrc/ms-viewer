@@ -81,6 +81,7 @@ var options = {
   "linebeginnings":false,
   "editor_punctuation":true,
   "editor_capitalization":true,
+  "scribal_corrections":true,
   "images": false,
   "translations": false,
   "manuscripts": {
@@ -533,6 +534,25 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   $("input[name='editor-capitalization-toggle'").change(toggleCapitalization);
 
+  function toggleScribalCorrections(){
+    console.log("toggleScribalCorrections()");
+    options.scribal_corrections = $(this).is(":checked");
+    if(options.scribal_corrections){
+      //Does not display text tagged with <del> and displays text tagged with <add> as normal letters integrated into the body of the text
+      $("tei-del").hide();
+      $("tei-add").css("vertical-align", "baseline");
+      $("tei-add").css("font-size", "unset");
+    } else {
+      //Shows text tagged with <del> as crossed-out words and text tagged with <add> as superscript letters
+      $("tei-add").css("vertical-align", "super");
+      $("tei-add").css("font-size", "smaller");
+      $("tei-del").show();
+      $("tei-del").css("display", "inline");
+      $("tei-del").css("text-decoration", "line-through");
+    }
+  }
+  $("input[name='scribal-corrections-toggle']").change(toggleScribalCorrections);
+
   // Helper function for changing number of columns
   function change_columns(){
       if(options.images && options.translations){
@@ -543,7 +563,6 @@ document.addEventListener('DOMContentLoaded', () => {
           $("#texts > div").css("width", "50%");
       }
   }
-
 
   function toggleMirador(override){
     if(typeof override === "boolean"){
