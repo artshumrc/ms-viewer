@@ -455,6 +455,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function toggleManuscripts(){
+    console.log("toggleManuscripts");
     let manuscript = $(this).val();
     options.manuscripts[manuscript] = $(this).is(":checked");
     if(options.manuscripts[manuscript]){
@@ -571,11 +572,11 @@ document.addEventListener('DOMContentLoaded', () => {
       options.images = $(this).is(":checked");
     }
     if(options.images){
-        // $(".ms-mirador").show();
         Object.keys(options.manuscripts).forEach(function(key, index){
           if(options.manuscripts[key]){
-            console.log(`#mirador-viewer-${key}`);
             $(`#mirador-viewer-${key}`).parent().show();
+          } else {
+            $(`#mirador-viewer-${key}`).parent().hide();
           }
         })
     } else {
