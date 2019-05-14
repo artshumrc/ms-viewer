@@ -203,7 +203,7 @@ tei-head {
 }
 
 .ms-desc-container {
-  height: 2.5em;
+  min-height: 2.5em;
   border-bottom: 1px solid grey;
 }
 
@@ -313,4 +313,16 @@ html, body, .viewport {
   height: 100%;
   margin: 0;
   /* overflow:hidden; */
+}
+
+#loading-bar{
+  width: 0%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: large;
+}
+.progress {
+  margin-top:45vh;
+  height: 35px;
+  background-color: inherit;
 }

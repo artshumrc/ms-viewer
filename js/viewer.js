@@ -71,6 +71,7 @@ var manuscripts = {
 
 var msOrdered = ["Latin-A", "Latin-B", "Latin-C", "B1", "B2", "D", "G", "K1", "K2", "N", "S"];
 var mirador_instances = {};
+var loaded = 0;
 
 var sectionsSet = new Set();
 
@@ -156,6 +157,7 @@ const addManuscript = async (ms, el) => {
       $(`${ms_el}`).parent(".ms-col").toggle();
     }
   })
+  advanceProgressBar("#loading-bar");
 }
 // function addManuscript(ms, el){
 //   console.log("Adding Manuscript");
@@ -223,6 +225,7 @@ const addTranslation = async (ms) => {
     $(ms_el).append(data);
     CETEIcean.addStyle(document, data);
   });
+  advanceProgressBar("#loading-bar");
 }
 
 const addMirador = async (ms, el) => {
@@ -281,6 +284,7 @@ const addMirador = async (ms, el) => {
   });
   mirador_instances[`mirador-viewer-${el}`] = m;
   console.log(`Mirador ${el} finished`)
+  advanceProgressBar("#loading-bar");
 }
 
 // function addMirador(ms, el){
@@ -341,6 +345,19 @@ const addMirador = async (ms, el) => {
 //   });
 // }
 
+function advanceProgressBar(bar){
+  const elements = (Object.keys(manuscripts).length * 3);
+  const advance = Math.round(100 / elements);
+  loaded += advance;
+  $(bar).html(`${loaded}%`)
+  $(bar).css('width', loaded + '%').attr('aria-valuenow', loaded);
+}
+
+function msOverflowCorrect(){
+  let correctHeight = $(".ms-col.ms").first().outerHeight() - $(".ms-desc-container").first().outerHeight() - $(".ms-title").first().outerHeight() - 4;
+  $(".manuscript").css({"maxHeight":correctHeight});
+}
+$( window ).resize(msOverflowCorrect);
 
 function addFoliation(el) {
   $(el+" tei-cb").each(function(){
@@ -396,6 +413,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   async function loadAll(){
+    $("html, body, .viewport").css("overflow","hidden");
     const promises = []
     for(let el of msOrdered){
       let ms = manuscripts[el];
@@ -406,9 +424,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   loadAll()
     .then(function(){
+      $("html, body, .viewport").css("overflow","initial");
       $(".ms-mirador").hide();
-      // $('html,body').css('overflow','auto');
+      $("#loading-bar").css('width', '100%').attr('aria-valuenow', 100);
+      $("#loading-bar").html("100%")
       $("#loading").hide();
+      msOverflowCorrect();
     });
   // msOrdered.forEach(async function(el){
   //   let ms = manuscripts[el];
