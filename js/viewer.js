@@ -119,21 +119,6 @@ var legend_episodes = [
   ["epilogue", "Epilogue"]
 ];
 
-//Functions
-//
-// async function loadManifests(){
-//   const urls = msOrdered.map(function(i){ return manuscripts[i]["manifest_url"]})
-//   const promises = [];
-//   for(let url of urls){
-//     promises.push(fetch(url, {mode:"cors"}).then((response) => response.json()));
-//   }
-//   let data = await Promise.all(promises);
-//   // msOrdered.forEach(function(ms, index){
-//   //   manuscripts[ms]["manifest_data"] = data[index];
-//   // })
-//   return data;
-// }
-
 const addManuscript = async (ms, el) => {
   console.log("async - adding MS");
   const ms_desc = manuscripts[el]["manifest_data"]["description"];
@@ -160,60 +145,6 @@ const addManuscript = async (ms, el) => {
   })
   advanceProgressBar("#loading-bar");
 }
-// function addManuscript(ms, el){
-//   console.log("Adding Manuscript");
-//   // return new Promise(function(resolve){
-//     let ms_desc = manuscripts[el]["manifest_data"];
-//     console.log(`MS_DESC ${ms_desc}`)
-//     // let ms_desc;
-//     let template = document.querySelector("#ms-template").content.cloneNode(true);
-//     template.querySelector(".ms-title").innerText = `Manuscript ${ms.name}`;
-//     template.querySelector(".manuscript").setAttribute("id", ms.name);
-//     template.querySelector(".ms-desc").innerText = ms_desc;
-//     document.querySelector("#texts").appendChild(template);
-//
-//     CETEIcean.getHTML5(ms.resource, function(data){
-//       var ms_el = "#"+ms.name;
-//       $(ms_el).html("");
-//       $(ms_el).append(data);
-//       CETEIcean.addStyle(document, data);
-//
-//       //Add facs div to each cb (foliation) with valid attribute
-//       addFoliation(ms_el);
-//
-//       // Add spans for line break display
-//       addLineBreaks(ms_el);
-//
-//       $(ms_el + " tei-lb").toggle(); //Start off manuscripts with line beginnings off
-//       if(!$(`${ms_el}-display`).is(":checked")){
-//         $(`${ms_el}`).parent(".ms-col").toggle();
-//       }
-//
-//       console.log(`Add MS ${ms_el}`)
-//
-//       //Fix weird hard carriage returns - costly to run this regex
-//       //var s = $(ms_el).html();
-//       //var s2 = s.replace(/<\/tei-choice>[\s][\n\r\s\t]+</g,'</tei-choice><');
-//       //var s2 = s.replace(/>[\n\r\s\t]+</g,'><');
-//       //$(ms_el).html(s2);
-//       //$(ms_el).html(s.replace(/[\n\r]+/g, " "));
-//       //console.log($(ms_el));
-//     });
-//   // });
-// }
-
-// function addTranslation(ms){
-//   let ms_el = `#${ms.name}-translation`;
-//   console.log(`Add Translation ${ms_el}`)
-//   let translation = document.querySelector("#translation-template").content.cloneNode(true);
-//   translation.querySelector(".ms-container-translation").setAttribute("id", `${ms.name}-translation`);
-//   document.querySelector("#texts").appendChild(translation);
-//   CETEIcean.getHTML5(ms.translation, function(data){
-//     $(ms_el).html("");
-//     $(ms_el).append(data);
-//     CETEIcean.addStyle(document, data);
-//   });
-// }
 
 const addTranslation = async (ms) => {
   const ms_el = `#${ms.name}-translation`
@@ -288,64 +219,6 @@ const addMirador = async (ms, el) => {
   advanceProgressBar("#loading-bar");
 }
 
-// function addMirador(ms, el){
-//   console.log(`Add Mirador ${el}`)
-//   let miradorTemplate = document.querySelector("#mirador-template").content.cloneNode(true);
-//   miradorTemplate.querySelector(".ms-col.ms-mirador").setAttribute("id", `mirador-container-${el}`);
-//   miradorTemplate.querySelector(".ms-container-mirador").setAttribute("id", `mirador-viewer-${el}`);
-//   document.querySelector("#texts").appendChild(miradorTemplate);
-//   $.getJSON(ms["manifest_url"]).done(function(manifest){
-//
-//     manuscripts[el]["manifest_data"] = manifest;
-//     console.log(`Manifest data loaded ${el}`)
-//
-//     let canvas = manifest.sequences[0].canvases[0]["@id"];
-//     console.log(canvas);
-//
-//     let m = Mirador({
-//       "id": `mirador-viewer-${el}`,
-//       "layout": "1x1",
-//       "mainMenuSettings": {
-//         "show": false
-//       },
-//       "openManifestsPage" : true,
-//       "buildPath": "js/mirador-2.7-nobootstrap/",
-//       "data": [
-//         {"manifestUri": ms["manifest_url"]}
-//       ],
-//       "windowObjects": [{
-//         "loadedManifest": ms["manifest_url"],
-//         "canvasID": canvas,
-//         "viewType": "ImageView"
-//       }],
-//       'windowSettings' : {
-//         "availableViews" : ['ThumbnailsView', 'ImageView', 'BookView'],
-//         "sidePanel" : false,
-//         "bottomPanelVisible" : true,
-//         "canvasControls": { // The types of controls available to be displayed on a canvas
-//           "annotations" : {
-//             "annotationLayer" : false
-//           }
-//         },
-//         "fullScreen" : false,
-//         "displayLayout" : true,
-//         "layoutOptions" : {
-//             "newObject" : false,
-//             "close" : false,
-//             "slotRight" : false,
-//             "slotLeft" : false,
-//             "slotAbove" : false,
-//             "slotBelow" : false,
-//         }
-//       }
-//     });
-//     mirador_instances[`mirador-viewer-${el}`] = m;
-//     return new Promise(function(resolve){
-//
-//     });
-//   });
-// }
-
 function advanceProgressBar(bar){
   const elements = (Object.keys(manuscripts).length * 3);
   const advance = Math.round(100 / elements);
@@ -355,8 +228,11 @@ function advanceProgressBar(bar){
 }
 
 function msOverflowCorrect(){
-  let correctHeight = $(".ms-col.ms").first().outerHeight() - $(".ms-desc-container").first().outerHeight() - $(".ms-title").first().outerHeight() - 4;
-  $(".manuscript").css({"maxHeight":correctHeight});
+  let mss = $(".ms-col.ms");
+  mss.each(function(){
+    let correctHeight = $(this).outerHeight() - $(this).find(".ms-desc-container").outerHeight() - $(this).find(".ms-title").outerHeight() - 3;
+    $(this).find(".manuscript").css({"maxHeight": correctHeight});
+  })
 }
 $( window ).resize(msOverflowCorrect);
 
@@ -413,6 +289,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  function resizeAllMiradorViewers(){
+    Object.keys(mirador_instances).forEach(function(key, index){
+      mirador_instances[key].eventEmitter.publish("resizeMirador");
+    });
+  }
+  $( window ).resize(resizeAllMiradorViewers);
+
   async function loadAll(){
     $("html, body, .viewport").css("overflow","hidden");
     const promises = []
@@ -426,25 +309,13 @@ document.addEventListener('DOMContentLoaded', () => {
   loadAll()
     .then(function(){
       $("html, body, .viewport").css("overflow","initial");
+      resizeAllMiradorViewers()
       $(".ms-mirador").hide();
       $("#loading-bar").css('width', '100%').attr('aria-valuenow', 100);
       $("#loading-bar").html("100%")
       $("#loading").hide();
       msOverflowCorrect();
     });
-  // msOrdered.forEach(async function(el){
-  //   let ms = manuscripts[el];
-  //
-  //   // const man = await loadManifests();
-  //   // console.log(man);
-  //
-  //   // addMirador(ms,el).then(addManuscript(ms,el)).then(addTranslation(ms));
-  //   await addMirador(ms,el);
-  //   await addManuscript(ms,el);
-  //   await addTranslation(ms);
-  // });
-
-
 
   //Add ms sections to jump menu
   for (var i = 0; i < legend_episodes.length; i++){
@@ -559,9 +430,11 @@ document.addEventListener('DOMContentLoaded', () => {
       if(options.images && options.translations){
           $("#texts > div").css("flex-basis", "33%");
           $("#texts > div").css("width", "33%");
+          resizeAllMiradorViewers();
       } else {
           $("#texts > div").css("flex-basis", "50%");
           $("#texts > div").css("width", "50%");
+          resizeAllMiradorViewers();
       }
   }
 
@@ -594,11 +467,11 @@ document.addEventListener('DOMContentLoaded', () => {
       options.translations = $(this).is(":checked");
     }
     if(options.translations){
-      // $(".ms-translation").show();
       Object.keys(options.manuscripts).forEach(function(key, index){
         if(options.manuscripts[key]){
-          console.log(`#${key}-translation`);
           $(`#${key}-translation`).parent().show();
+        } else {
+          $(`#${key}-translation`).parent().hide();
         }
       })
     } else {

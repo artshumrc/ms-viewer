@@ -5,13 +5,14 @@
   border-color: rgba(0,0,0,0.3);
   border-width:thin;
   margin-top: 25px;
-  padding-bottom: 40px;
   box-sizing: border-box;
   min-height: 500px;
 }
 .manuscript{
   overflow: scroll;
   max-height: 95%;
+  padding: 10px;
+  border-bottom: solid 15px rgba(0, 0, 0, 0); /** overflow not respecting padding **/
 }
 .ms-title{
   line-height: 30px;
@@ -215,9 +216,12 @@ tei-del {
     height: 100%;
     position: relative;
     top: 0;
+    letter-spacing: 0px;
 }
 
-
+.mirador-container .hud-control {
+  color: white !important;
+}
 
 /** MODAL **/
 .vanilla-js-modal {
