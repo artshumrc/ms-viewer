@@ -336,6 +336,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     toggleMirador(options.images);
     toggleTranslations(options.translations);
+    msOverflowCorrect()
   }
   $("input[name='manuscript']").change(toggleManuscripts);
 
@@ -456,6 +457,7 @@ document.addEventListener('DOMContentLoaded', () => {
         $(".ms-mirador").hide();
     }
     change_columns();
+    msOverflowCorrect()
   }
   $("input[name='images-toggle']").change(toggleMirador);
   $("input[name='mirador-display']").change(toggleMirador);
@@ -478,6 +480,7 @@ document.addEventListener('DOMContentLoaded', () => {
         $(".ms-translation").hide();
     }
     change_columns();
+    msOverflowCorrect()
   }
   $("input[name='translations-toggle']").change(toggleTranslations);
   $("input[name='translation-display']").change(toggleTranslations);

@@ -16,7 +16,7 @@
 }
 .ms-title{
   line-height: 30px;
-  padding:0px;
+  padding:5px;
   margin-bottom:0px;
 }
 .navbar {
@@ -196,7 +196,6 @@ tei-del {
   display: none;
 }
 
-
 .ms-mirador {
   padding-bottom: 0px;
 }
@@ -209,6 +208,11 @@ tei-del {
 .ms-desc-container {
   min-height: 2.5em;
   border-bottom: 1px solid grey;
+}
+
+.ms-desc {
+    padding: 5px;
+    margin-bottom: 0px;
 }
 
 .ms-container-mirador {
