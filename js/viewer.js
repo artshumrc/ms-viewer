@@ -151,6 +151,7 @@ const addTranslation = async (ms) => {
   console.log(`async Translation ${ms_el}`)
   const template = document.querySelector("#translation-template").content.cloneNode(true);
   template.querySelector(".ms-container-translation").setAttribute("id", `${ms.name}-translation`);
+  template.querySelector(".translation-title").innerText = `${ms.name} Translation`;
   document.querySelector("#texts").appendChild(template);
   const cet = await CETEIcean.getHTML5(ms.translation, function(data){
     $(ms_el).empty()

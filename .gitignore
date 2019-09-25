@@ -1,0 +1,13 @@
+xml/
+js/mirador-2.7
+!js/mirador-2.7/mirador.js
+!js/mirador-2.7/mirador.min.js
+!js/mirador-2.7/mirador.min.js.map
+!js/mirador-2.7/css/
+js/mirador-2.7-nobootstrap
+!js/mirador-2.7-nobootstrap/mirador.js
+!js/mirador-2.7-nobootstrap/mirador.min.js
+!js/mirador-2.7-nobootstrap/mirador.min.js.map
+!js/mirador-2.7-nobootstrsp/css/
+!xml/OtherSeamless.pdf
+!xml/remove_line_breaks.py

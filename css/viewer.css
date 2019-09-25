@@ -14,7 +14,7 @@
   padding: 10px;
   border-bottom: solid 15px rgba(0, 0, 0, 0); /** overflow not respecting padding **/
 }
-.ms-title{
+.ms-title, .translation-title {
   line-height: 30px;
   padding:5px;
   margin-bottom:0px;
@@ -205,7 +205,7 @@ tei-del {
   overflow:scroll;
 }
 
-.ms-desc-container {
+.ms-desc-container, .translation-desc-container {
   min-height: 2.5em;
   border-bottom: 1px solid grey;
 }
