@@ -21,49 +21,49 @@ var manuscripts = {
   },
   "B1" : {
     "name": "B1",
-    "resource" : "https://digital-editing.fas.harvard.edu/xml/MaryMagdalene/manuscript_B1_HP.xml",
+    "resource" : "https://digital-editing.fas.harvard.edu/xml/MaryMagdalene/B1.xml",
     "manifest_url": "https://digital-editing.fas.harvard.edu/manifests/B1",
     "translation": "https://digital-editing.fas.harvard.edu/xml/Translations-MM/B1.xml"
   },
   "B2" : {
     "name": "B2",
-    "resource" : "https://digital-editing.fas.harvard.edu/xml/MaryMagdalene/manuscript_B2_HansPech_HP.xml",
+    "resource" : "https://digital-editing.fas.harvard.edu/xml/MaryMagdalene/B2.xml",
     "manifest_url": "https://digital-editing.fas.harvard.edu/manifests/B2",
     "translation": "https://digital-editing.fas.harvard.edu/xml/Translations-MM/B2.xml"
   },
   "D" : {
     "name": "D",
-    "resource" : "https://digital-editing.fas.harvard.edu/xml/MaryMagdalene/manuscript_D_AnnaKelner_HP.xml",
+    "resource" : "https://digital-editing.fas.harvard.edu/xml/MaryMagdalene/D.xml",
     "manifest_url": "https://digital-editing.fas.harvard.edu/manifests/D",
     "translation": "https://digital-editing.fas.harvard.edu/xml/Translations-MM/D.xml"
   },
   "G" : {
     "name": "G",
-    "resource" : "https://digital-editing.fas.harvard.edu/xml/MaryMagdalene/manuscript_G_EleanorGoerss_HP.xml",
+    "resource" : "https://digital-editing.fas.harvard.edu/xml/MaryMagdalene/G.xml",
     "manifest_url": "https://digital-editing.fas.harvard.edu/manifests/G",
     "translation": "https://digital-editing.fas.harvard.edu/xml/Translations-MM/G.xml"
   },
   "K1" : {
     "name": "K1",
-    "resource" : "https://digital-editing.fas.harvard.edu/xml/MaryMagdalene/manuscript_K1_ZacharyHayworth_HP.xml",
+    "resource" : "https://digital-editing.fas.harvard.edu/xml/MaryMagdalene/K1.xml",
     "manifest_url": "https://digital-editing.fas.harvard.edu/manifests/K1",
     "translation": "https://digital-editing.fas.harvard.edu/xml/Translations-MM/K1.xml"
   },
   "K2" : {
     "name": "K2",
-    "resource" : "https://digital-editing.fas.harvard.edu/xml/MaryMagdalene/manuscript_K2_EleanorGoerss_HP.xml",
+    "resource" : "https://digital-editing.fas.harvard.edu/xml/MaryMagdalene/K2.xml",
     "manifest_url": "https://digital-editing.fas.harvard.edu/manifests/K2",
     "translation": "https://digital-editing.fas.harvard.edu/xml/Translations-MM/K2.xml"
   },
   "N" : {
     "name": "N",
-    "resource" : "https://digital-editing.fas.harvard.edu/xml/MaryMagdalene/manuscript_N_SusanneZwierlein_HP.xml",
+    "resource" : "https://digital-editing.fas.harvard.edu/xml/MaryMagdalene/N.xml",
     "manifest_url": "https://digital-editing.fas.harvard.edu/manifests/N",
     "translation": "https://digital-editing.fas.harvard.edu/xml/Translations-MM/N.xml"
   },
   "S" : {
     "name": "S",
-    "resource" : "https://digital-editing.fas.harvard.edu/xml/MaryMagdalene/manuscript_S_RachaKirakosian_HP.xml",
+    "resource" : "https://digital-editing.fas.harvard.edu/xml/MaryMagdalene/S.xml",
     "manifest_url": "https://digital-editing.fas.harvard.edu/manifests/S",
     "translation": "https://digital-editing.fas.harvard.edu/xml/Translations-MM/S.xml"
   }
