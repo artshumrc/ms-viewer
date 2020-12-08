@@ -135,7 +135,6 @@ const addManuscript = async (ms, el) => {
     console.log(`HERE ${ms_el}`);
     $(ms_el).empty()
     $(ms_el).append(data)
-    CETEIcean.addStyle(document, data)
     addFoliation(ms_el)
     addLineBreaks(ms_el);
     $(ms_el + " tei-lb").toggle(); //Start off manuscripts with line beginnings off
@@ -156,7 +155,6 @@ const addTranslation = async (ms) => {
   const cet = await CETEIcean.getHTML5(ms.translation, function(data){
     $(ms_el).empty()
     $(ms_el).append(data);
-    CETEIcean.addStyle(document, data);
   });
   advanceProgressBar("#loading-bar");
 }

@@ -14,3 +14,4 @@ js/mirador-2.7-nobootstrap
 
 js/CETEIcean/*
 !js/CETEIcean/dist/
+!js/CETEIcean/mary-help.md
