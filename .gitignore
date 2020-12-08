@@ -11,3 +11,6 @@ js/mirador-2.7-nobootstrap
 !js/mirador-2.7-nobootstrsp/css/
 !xml/OtherSeamless.pdf
 !xml/remove_line_breaks.py
+
+js/CETEIcean/*
+!js/CETEIcean/dist/
